@@ -1,0 +1,5 @@
+# 上游 vercel-plugin 的克隆，不入库；用 bash .agents/sync.sh 拉取
+.agents/vendor/
+
+# macOS
+.DS_Store

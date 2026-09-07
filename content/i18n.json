@@ -1,0 +1,144 @@
+{
+  "zh": {
+    "LANG_HTML": "zh-CN",
+    "OG_LOCALE": "zh_CN",
+    "SITE_NAME": "远征尼朋",
+    "SITE_TITLE": "远征尼朋 · 玉海舰队",
+    "NAV_ARIA": "主导航",
+    "NAV_HOME": "简介",
+    "NAV_LOG": "更新记录",
+    "NAV_FAQ": "常见问题",
+    "NAV_WORKSHOP": "创意工坊",
+    "SKIP_TO_CONTENT": "跳到正文",
+    "WORKSHOP_URL": "https://steamcommunity.com/workshop/filedetails/?id=3790908242",
+    "PAGES": {
+      "home": {
+        "TITLE": "远征尼朋 · 玉海舰队 — 《战锤3》派系 MOD",
+        "DESCRIPTION": "《战锤3》mod「远征尼朋 · 玉海舰队」：新的震旦可玩派系、远征同伴系统、8 个新兵种，以及两条分叉的长期胜利路线。"
+      },
+      "changelog": {
+        "TITLE": "更新记录 — 远征尼朋 · 玉海舰队",
+        "DESCRIPTION": "《战锤3》mod「远征尼朋 · 玉海舰队」的版本更新记录，含本体与各个子 mod。"
+      },
+      "faq": {
+        "TITLE": "常见问题 — 远征尼朋 · 玉海舰队",
+        "DESCRIPTION": "《战锤3》mod「远征尼朋 · 玉海舰队」的常见问题：商队与建筑的解锁条件、合邦、与其他 mod 的兼容，以及后续计划。"
+      }
+    },
+    "HERO_CTA_LABEL": "在创意工坊订阅",
+    "LOG_HEADING": "更新记录",
+    "FAQ_HEADING": "常见问题",
+    "FAQ_CURRENT": "答案对应 v{version}",
+    "FAQ_TAIL_LINK": "更新记录",
+    "LATEST": "最新版本",
+    "LOG_VIEWS_LABEL": "显示哪些更新记录",
+    "LOG_VIEWS": {
+      "main": "本体",
+      "submod": "子 mod"
+    },
+    "EMPTY": "还没有更新记录。",
+    "UNTRANSLATED": "本条目暂无中文版本，以下为英文原文。",
+    "FOOTER_LEDE": "沈长风率领舰队远征尼朋，她需要在新的土地上寻找立足之地。",
+    "FOOTER_DEPLOYED": "最后部署：",
+    "WS_MAIN_ZH": "本体（中文）",
+    "WS_MAIN_EN": "English Translation",
+    "WS_AI": "AI 强化",
+    "WS_NRS": "NRS 兼容包",
+    "WS_CATHAY": "震旦兼容包",
+    "WS_YINYIN": "胤隐兼容包",
+    "WS_WUH": "兵戈天下兼容包",
+    "TYPE": {
+      "release": "版本发布",
+      "content": "内容更新",
+      "balance": "平衡调整",
+      "hotfix": "紧急修复"
+    },
+    "FAQ_COUNT": {
+      "one": "1 问",
+      "other": "{n} 问"
+    },
+    "FAQ_STATUS": {
+      "updated": "v{version} 已更新",
+      "fixed": "v{version} 已修复"
+    },
+    "TAGS": {
+      "main": "本体",
+      "stronger-ai": "AI 强化",
+      "nrs-compat": "NRS 兼容包",
+      "cathay-compat": "震旦兼容包",
+      "yinyin-compat": "胤隐兼容包",
+      "wuh-compat": "兵戈天下兼容包"
+    }
+  },
+  "en": {
+    "LANG_HTML": "en",
+    "OG_LOCALE": "en_US",
+    "SITE_NAME": "Nippon Expedition",
+    "SITE_TITLE": "Nippon Expedition · The Jade Sea Fleet",
+    "NAV_ARIA": "Main navigation",
+    "NAV_HOME": "Overview",
+    "NAV_LOG": "Changelog",
+    "NAV_FAQ": "FAQ",
+    "NAV_WORKSHOP": "Workshop",
+    "SKIP_TO_CONTENT": "Skip to content",
+    "WORKSHOP_URL": "https://steamcommunity.com/workshop/filedetails/?id=3790908523",
+    "PAGES": {
+      "home": {
+        "TITLE": "Nippon Expedition · The Jade Sea Fleet — a Total War: WARHAMMER III mod",
+        "DESCRIPTION": "A new playable Grand Cathay faction for Total War: WARHAMMER III: the Expedition Companions system, 8 new units, and two long victories that fork."
+      },
+      "changelog": {
+        "TITLE": "Changelog — Nippon Expedition · The Jade Sea Fleet",
+        "DESCRIPTION": "Version history for the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet and its submods."
+      },
+      "faq": {
+        "TITLE": "FAQ — Nippon Expedition · The Jade Sea Fleet",
+        "DESCRIPTION": "Frequently asked questions about the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet: unlock conditions, confederation, compatibility with other mods, and what is planned."
+      }
+    },
+    "HERO_CTA_LABEL": "Subscribe on the Workshop",
+    "LOG_HEADING": "Changelog",
+    "FAQ_HEADING": "Frequently asked questions",
+    "FAQ_CURRENT": "Answers current as of v{version}",
+    "FAQ_TAIL_LINK": "changelog",
+    "LATEST": "Latest",
+    "LOG_VIEWS_LABEL": "Which entries to show",
+    "LOG_VIEWS": {
+      "main": "Main mod",
+      "submod": "Submods"
+    },
+    "EMPTY": "No entries yet.",
+    "UNTRANSLATED": "No English version of this entry yet — showing the Chinese original.",
+    "FOOTER_LEDE": "Shen Changfeng leads her fleet east to Nippon, where she must carve out a foothold on new soil.",
+    "FOOTER_DEPLOYED": "Last deployed: ",
+    "WS_MAIN_ZH": "Main mod (Chinese)",
+    "WS_MAIN_EN": "English Translation",
+    "WS_AI": "Stronger AI",
+    "WS_NRS": "NRS Compatibility Patch",
+    "WS_CATHAY": "Cathay Compatibility Patch",
+    "WS_YINYIN": "Yin-Yin Compatibility Patch",
+    "WS_WUH": "War under Heaven Compatibility Patch",
+    "TYPE": {
+      "release": "Release",
+      "content": "Content",
+      "balance": "Balance",
+      "hotfix": "Hotfix"
+    },
+    "FAQ_COUNT": {
+      "one": "1 question",
+      "other": "{n} questions"
+    },
+    "FAQ_STATUS": {
+      "updated": "Updated in v{version}",
+      "fixed": "Fixed in v{version}"
+    },
+    "TAGS": {
+      "main": "Main mod",
+      "stronger-ai": "Stronger AI",
+      "nrs-compat": "NRS compat",
+      "cathay-compat": "Cathay compat",
+      "yinyin-compat": "Yin-Yin compat",
+      "wuh-compat": "War under Heaven compat"
+    }
+  }
+}

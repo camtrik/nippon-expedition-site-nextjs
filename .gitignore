@@ -1,10 +1,54 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- 本项目自己的 ----
+
 # 上游 vercel-plugin 的克隆，不入库；用 bash .agents/sync.sh 拉取
 .agents/vendor/
 
-# macOS
-.DS_Store
-
-# design-input/ 是私有 mod 仓库的材料快照（角色设计书含未上线的排期与废弃方案），
+# design/source/ 是私有 mod 仓库的材料快照（角色设计书含未上线的排期与废弃方案），
 # 随本仓库一起入库——所以这个仓库必须保持 private。
 
 docs/local
+
+# Claude Code 的个人覆盖（settings.json 本身入库，local 那份不入）
+.claude/settings.local.json

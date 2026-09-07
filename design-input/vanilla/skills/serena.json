@@ -1,0 +1,571 @@
+{
+  "subject": "serena",
+  "name_cn": "瑟兰娜",
+  "role": "hero_legendary",
+  "set_key": "cth_npex_skill_set_serena",
+  "agent_type": "engineer",
+  "agent_subtype": "cth_npex_serena",
+  "node_count": 39,
+  "vanilla_skill_count": 29,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_serena_mount_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_mount_armored_ithilmar_steed",
+      "tier": 0,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_survivor",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_0",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_01_mathlanns_spite",
+      "tier": 0,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_1",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_assist_army_increase_mobility",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_texing",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_texing",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_scrolls_of_power",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_node_hef_unique_scrolls_of_power_mist_mage",
+      "tier": 0,
+      "indent": 7,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_actions_dummy",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_dummy_actions_hef_mist_mage",
+      "tier": 0,
+      "indent": 8,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_immortality",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_immortality_hero",
+      "tier": 0,
+      "indent": 9,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_mount_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_mount_ithilmar_chariot",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_veteran_navigator",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_1_1",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_03_lore_attribute",
+      "tier": 1,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_2",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_passive_boost_income",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_mount_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_mount_moon_dragon",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_fleet_drill",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_personal_0",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_hef_mist_mage_move_at_dawn",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_1_2",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud",
+      "tier": 2,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_3",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_settlement_damage_walls",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_generic_1",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_hef_generic_lileaths_blessing",
+      "tier": 3,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_first_strike",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_personal_1_1",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_hef_mist_mage_discreet_agent",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_personal_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_1_3",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_05_flensing_haar",
+      "tier": 3,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_4",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_generic_2",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_hef_generic_warding_of_loec",
+      "tier": 4,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_wave_rider",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_personal_1_2",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_hef_mist_mage_mist_shaper",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_personal_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_1_4",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds",
+      "tier": 4,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_5",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_army_block_army",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_generic_3",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_hef_generic_warding_of_hoeth",
+      "tier": 5,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_unique_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_serena_unique_sea_archmage",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_unique_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_unique_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_unique_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_personal_2",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_hef_mist_mage_cloaked_in_mist",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_personal_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_personal_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 5,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_campaign_6",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_3_1",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps",
+      "tier": 6,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_3_2",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_07_the_writhing_mist",
+      "tier": 7,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "tier": 8,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "tier": 9,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 10,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_serena_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_serena_magic_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_serena_magic_dummy",
+      "node_source": "npex",
+      "skill": "wh3_dlc27_skill_all_magic_mists_mathlanns_spite_dummy",
+      "tier": 11,
+      "indent": 3,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_all_mentor_hero",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_mentor_hero",
+      "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    }
+  ]
+}

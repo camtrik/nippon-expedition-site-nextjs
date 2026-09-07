@@ -1,0 +1,5001 @@
+{
+  "_note": "按 DB key 索引的事实表。source 区分原版复用与本 mod 原创；icon.source 是另一回事——自制技能大量复用 CA 图标。",
+  "assets": {
+    "anti_large": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "反大型部队",
+        "en": "Anti-Large"
+      },
+      "desc": {
+        "zh": "反大型部队可以有效应对体积至少等同马匹的目标。这一特性会有很多具体表现形式，如面对大型目标时的[[img:ui/skins/default/modifier_icon_bonus_vs_large.png]][[/img]]伤害加成，或者可以集聚到很小一片区域的强力攻击等等。然而鉴于大型部队的攻击一般过于缓慢且容易在近战中闪避开，所以很多部队天生便可更有效地应对这些敌军",
+        "en": "Anti-large units have an advantage against targets that are at least as large as a horse. This advantage can be a [[img:ui/skins/default/modifier_icon_bonus_vs_large.png]][[/img]]damage bonus against large targets or an attack that focuses on a very small area. However, some units are simply better against large targets because their attacks are slow and easy to dodge by skilled melee combatants."
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    },
+    "armour_piercing": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "破甲杀伤",
+        "en": "Armour-Piercing"
+      },
+      "desc": {
+        "zh": "具有[[img:icon_ap]][[/img]]破甲属性的武器可在大多数情况下无视目标的护甲，这让他们成为了对抗重甲部队时的有效选择。但这些部队一般较为重型，且攻击频率不高，这也让他们在对抗轻装部队时显得有些吃力",
+        "en": "The damage of [[img:icon_ap]][[/img]]armour-piercing weapons mostly ignores the armour of the target, making them the ideal choice against heavily-armoured enemies. They are often heavier and attack at a slower rate though, making them less efficient against poorly-armoured targets."
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/hatamoto-raijin.json",
+        "units/tide-guard.json"
+      ]
+    },
+    "armoured": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "装备重甲",
+        "en": "Armoured"
+      },
+      "desc": {
+        "zh": "重甲部队可以扣减除了[[img:icon_ap]][[/img]]破甲杀伤之外的所有种类的杀伤",
+        "en": "Armoured units can block damage from any source apart from [[img:icon_ap]][[/img]]Armour-Piercing damage."
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/hatamoto-raijin.json",
+        "units/tide-guard.json"
+      ]
+    },
+    "causes_fear": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受[[img:icon_morale]][[/img]]领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their [[img:icon_morale]][[/img]]leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/causes_fear.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json"
+      ]
+    },
+    "charge_defense_vs_large": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "抵御冲锋（大型部队）",
+        "en": "Charge Defence vs. Large"
+      },
+      "desc": {
+        "zh": "当[[img:icon_braced]][[/img]]阵列齐整时，这支部队在对抗大型部队冲锋时会无视其所有的[[img:icon_charge]][[/img]]冲锋加成",
+        "en": "When bracing[[img:icon_braced]][[/img]], this unit negates the [[img:icon_charge]][[/img]]charge bonus of any large attacker."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/charge_defense_vs_large.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    },
+    "charge_reflection": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "冲锋反制",
+        "en": "Charge Reflection"
+      },
+      "desc": {
+        "zh": "当[[img:icon_braced]][[/img]]阵列齐整时，这支部队可以对冲锋而来的敌军造成额外伤害 ",
+        "en": "When [[img:icon_braced]][[/img]]bracing, this unit causes additional damage when attacking charging enemies. "
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/charge_reflection.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_choleric": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "烈性",
+        "en": "Choleric"
+      },
+      "desc": {
+        "zh": "怒气一旦烧起来，就只能拿敌人的血去浇熄。",
+        "en": "Once his anger catches fire, only the enemy's blood can put it out."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_honourable": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "重义",
+        "en": "Honourable"
+      },
+      "desc": {
+        "zh": "言出必践，赏罚不私。故而部下肯把后背交给他。",
+        "en": "He keeps every word he gives, and metes out reward and punishment without favour. That is why his men trust him to guard their backs."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_inspector": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "明察秋毫",
+        "en": "Keen Eye"
+      },
+      "desc": {
+        "zh": "他相信秽乱起于人心的缝隙，因此从不放过任何一句支吾其词。",
+        "en": "He believes corruption takes root in the smallest cracks of the human heart, and so he never lets a single evasive word pass unnoticed."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_learned": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "好学",
+        "en": "Learned"
+      },
+      "desc": {
+        "zh": "兵法、汉籍、异国海图，凡是能读的他都读，凡是读过的他都记得。",
+        "en": "Treatises of war, Cathayan classics, charts from foreign seas: whatever can be read, he reads, and whatever he has read, he remembers."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_martial": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武艺精熟",
+        "en": "Martial Mastery"
+      },
+      "desc": {
+        "zh": "弓马刀枪自幼日课，未曾一日间断。纵使刀折矢尽，这具身体本身仍是他最后一件兵器。",
+        "en": "Bow, horse, blade and spear have been his daily discipline since childhood, without a single day's interruption. Even should his sword break and his arrows run out, his own body remains his last weapon."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_steward": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "奉行之才",
+        "en": "Magistrate's Talent"
+      },
+      "desc": {
+        "zh": "账簿、工役、仓廪，在他眼里与阵图无异。治所井然，军势才养得起来。",
+        "en": "Ledgers, labour and granaries are, to him, no different from battle maps. Only a well-ordered domain can sustain an army."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_stout": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "筋骨",
+        "en": "Stout"
+      },
+      "desc": {
+        "zh": "一身重甲穿了半辈子，如今倒像是长在身上，卸下来反而不自在。",
+        "en": "Half a lifetime spent in heavy armour has made it feel almost part of him; taking it off now feels stranger than wearing it."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_tactician": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "军略",
+        "en": "Tactician"
+      },
+      "desc": {
+        "zh": "阵形尚未动，胜负已在他心里排演过一遍。",
+        "en": "Before the formation even moves, he has already rehearsed the battle's outcome in his mind."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_innate_nippon_unyielding": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "不折",
+        "en": "Unyielding"
+      },
+      "desc": {
+        "zh": "身后是海，退无可退——所以他从来不退。",
+        "en": "The sea is at his back, with nowhere left to retreat – so he never does."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_miko_actions_dummy": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ],
+      "desc_missing_reason": "loc 里没有该 key"
+    },
+    "cth_npex_skill_miko_byakue": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "白衣",
+        "en": "White Vestment"
+      },
+      "desc": {
+        "zh": "净袍加身，浊世之秽不沾其上。",
+        "en": "Clad in pure white robes, untouched by the corruption of the mundane world."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/resistance_ward_save.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_miko_choushi": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "調息",
+        "en": "Breath Control"
+      },
+      "desc": {
+        "zh": "一呼一吸皆有其度，神事自始至终不乱。",
+        "en": "Every breath in, every breath out, has its measure, so the sacred rite unfolds without disorder from start to end."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/effect_bundles/magic_cooldown_character.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/effect_bundles",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_miko_fuma_fuda": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "封魔之札",
+        "en": "Sealing Ofuda"
+      },
+      "desc": {
+        "zh": "御札钉处，邪祟俯首——纵是千军之将，寸步难行。",
+        "en": "Where the ofuda is pinned, evil spirits bow their heads; even a general commanding a thousand troops cannot take a single step."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_fuma_fuda.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_hamaya": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "破魔矢",
+        "en": "Hamaya"
+      },
+      "desc": {
+        "zh": "巫女虚挽神弓，以破魔矢之咒射出净光。",
+        "en": "The Miko draws a sacred bow from empty air and looses a bolt of purifying light with the rite of Hamaya."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_hamaya.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_kamikakushi": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神隐",
+        "en": "Spirited Away"
+      },
+      "desc": {
+        "zh": "铃声一止，阵中便少了一个人；再一止，又少了一个。",
+        "en": "The instant the bell falls silent, one soldier vanishes from the line; when it falls silent again, another follows."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_kamikakushi.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_magic_dummy": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "巫女初传",
+        "en": "Miko Initiation"
+      },
+      "desc": {
+        "zh": "初执神乐铃者所受的第一课：破魔之矢自此在手。",
+        "en": "The first lesson for any who takes up the kagura bells: from this day, the Hamaya is hers to wield."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_human.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_misogi": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "禊祓",
+        "en": "Misogi"
+      },
+      "desc": {
+        "zh": "御币一振，月露般的清辉落在伤者之间。",
+        "en": "With a single sweep of her gohei, a radiance like moonlit dew settles over the wounded."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_misogi.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_reikitsune": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神使召来：灵狐",
+        "en": "Summon Divine Envoy: Spirit Fox"
+      },
+      "desc": {
+        "zh": "狐群闻铃而至，替巫女扑向阵前。",
+        "en": "The fox pack hears the bell and comes, pouncing on the enemy line in the Miko's stead."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_reikitsune.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_senbonzakura": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "千本樱",
+        "en": "Senbonzakura"
+      },
+      "desc": {
+        "zh": "千瓣落樱皆是刃，过处不留邪祟。",
+        "en": "Each of the thousand falling petals is a blade, and no evil spirit survives their passing."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_senbonzakura.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_taima": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "退魔",
+        "en": "Demon Warding"
+      },
+      "desc": {
+        "zh": "神事既起，邪祟自退。",
+        "en": "Once the sacred rite begins, evil spirits retreat of their own accord."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_taima.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_miko_unique_1_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "依代",
+        "en": "Yorishiro"
+      },
+      "desc": {
+        "zh": "巫女以身为依代，神明暂寄其中。",
+        "en": "The Miko offers her body as a yorishiro, a vessel where the gods may briefly dwell."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_miko_unique_1_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "卜占",
+        "en": "Divination"
+      },
+      "desc": {
+        "zh": "灼骨观兆，先知者不惊。",
+        "en": "Scorching bone to read the omens: one who foresees is never caught off guard."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_3.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_miko_unique_1_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神饌",
+        "en": "Divine Offering"
+      },
+      "desc": {
+        "zh": "神饌既备，神使自来。",
+        "en": "Once the divine offering is prepared, the divine envoy comes of its own accord."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_4.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_miko_unique_1_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "注連縄",
+        "en": "Shimenawa"
+      },
+      "desc": {
+        "zh": "绳既张，界既立——自此内为神域，外为浊世。",
+        "en": "Once the rope is strung and the boundary set – all within it becomes divine domain, all beyond it the mundane world."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "cth_npex_skill_naotora_texing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武士领袖",
+        "en": "Samurai Leader"
+      },
+      "desc": {
+        "zh": "家系战败、领地尽失，她仍是那个亲提双刀率旗本冲阵的当主——名分能被夺走，治军用人的本事夺不走。她驻扎之处，营造有度，刀锋有主。",
+        "en": "Her house defeated and her lands lost, she is still the head of the house who charges into battle with twin blades and her hatamoto at her back; her title may be stripped from her, but her skill in commanding troops cannot be taken. Wherever she makes camp, order takes hold, and every blade knows its master."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc24_hero_passive_assume_command.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_black_mount_kirin": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "麒麟",
+        "en": "Kirin"
+      },
+      "desc": {
+        "zh": "只在圣木林间现身的祥瑞，唯有德望者能得其俯首。",
+        "en": "An auspicious beast that appears only within sacred groves, bowing its head to none but those of virtue and renown."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_unicorn.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_black_mount_warhorse": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战马",
+        "en": "Warhorse"
+      },
+      "desc": {
+        "zh": "武家将领的坐骑，久经阵战，闻鼓不惊。",
+        "en": "The mount of a samurai commander, seasoned in battle and unshaken by the sound of war drums."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_mount_kirin": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "麒麟",
+        "en": "Kirin"
+      },
+      "desc": {
+        "zh": "只在圣木林间现身的祥瑞，唯有德望者能得其俯首。",
+        "en": "An auspicious beast that appears only within sacred groves, bowing its head to none but those of virtue and renown."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_unicorn.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_mount_warhorse": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战马",
+        "en": "Warhorse"
+      },
+      "desc": {
+        "zh": "武家将领的坐骑，久经阵战，闻鼓不惊。",
+        "en": "The mount of a samurai commander, seasoned in battle and unshaken by the sound of war drums."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武器大师",
+        "en": "Weapon Master"
+      },
+      "desc": {
+        "zh": "剑豪不止精通于刀剑一种武器。他们熟练掌握各种武器并有所应对。",
+        "en": "Master swordsmen are not limited to the blade alone. They are well versed in every weapon, and know how to counter any of them."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_samurai_taisho_unique_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "三段击",
+        "en": "Three-Rank Volley"
+      },
+      "desc": {
+        "zh": "火器不仅讲究熟练度，更讲究纪律。",
+        "en": "Firearms demand not only skill, but discipline above all."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ranged_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武士传统",
+        "en": "Samurai Tradition"
+      },
+      "desc": {
+        "zh": "武家的传统不在血统，而在刀锋相传的一念。",
+        "en": "The samurai tradition lies not in bloodline, but in a single resolve passed down from blade to blade."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_bonus_vs_large.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "灵兽御者",
+        "en": "Divine Beast Rider"
+      },
+      "desc": {
+        "zh": "只有强大的英雄才能驾驭麒麟。",
+        "en": "Only a hero of great strength can master a Kirin."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/beast_tamer.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "风林火山",
+        "en": "Wind, Forest, Fire, Mountain"
+      },
+      "desc": {
+        "zh": "疾如风，徐如林，侵掠如火，不动如山。",
+        "en": "Swift as the wind, quiet as the forest, fierce as fire, immovable as the mountain."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_army.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_samurai_taisho_unique_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "向死而生",
+        "en": "Death Gives Life"
+      },
+      "desc": {
+        "zh": "武士大将已参透死亡，向死而生。",
+        "en": "The Samurai Taisho has made peace with death itself, and finds life by facing it."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_samurai_taisho_unique_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "cth_npex_skill_sayo_actions_dummy": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ],
+      "desc_missing_reason": "loc 里没有该 key"
+    },
+    "cth_npex_skill_sayo_generic_nippon": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "尼朋巫女",
+        "en": "Nipponese Miko"
+      },
+      "desc": {
+        "zh": "所属军队的全部尼朋单位近战攻击、近战防御与领导力提升。",
+        "en": "Increases melee attack, melee defence and leadership for all Nipponese units in the army."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_generic_nippon.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_moli": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "灵息",
+        "en": "Spirit Breath"
+      },
+      "desc": {
+        "zh": "调息以维持阴阳术的流转。",
+        "en": "Regulating her breath to keep the flow of her onmyo arts steady."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/effect_bundles/magic_cooldown_character.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/effect_bundles",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_pilao": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "守镜",
+        "en": "Mirror Warden"
+      },
+      "desc": {
+        "zh": "镜山传承的护身修持。",
+        "en": "A protective discipline handed down by Kagamiyama."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/resistance_ward_save.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_texing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "镜山末代",
+        "en": "Last of the Kagamiyama"
+      },
+      "desc": {
+        "zh": "镜山神社最后一位传人的基础能力：魔法之风法力储量提升，法术失误几率降低，并解锁被动技能\"生命绽放\"。",
+        "en": "The base ability of the last heir of the Kagamiyama shrine: increased Winds of Magic power reserves, reduced miscast chance, and unlocks the passive ability \"Life Bloom\"."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_main_lore_passive_power_of_yin.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "阴阳之巫",
+        "en": "Onmyo Miko"
+      },
+      "desc": {
+        "zh": "阴以夺其坚，阳以壮我锋——一镜之内，两气同行。",
+        "en": "Yin to strip away their defence, yang to sharpen our blade – within a single mirror, both energies flow as one."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "镜映",
+        "en": "Mirrored Reflection"
+      },
+      "desc": {
+        "zh": "镜能映照两界，也让军团的灵性与生机相互流转。",
+        "en": "The mirror reflects both worlds, letting spirit and vitality flow freely through the army."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_1.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神楽奉納",
+        "en": "Kagura Offering"
+      },
+      "desc": {
+        "zh": "神乐一奏，土地与人心一同安定下来。",
+        "en": "As the kagura dance begins, both land and hearts are set at ease."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_2.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御守授与",
+        "en": "Bestow Omamori"
+      },
+      "desc": {
+        "zh": "出阵前，尼朋的每一支队伍都从巫女手里接过一枚御守。",
+        "en": "Before marching to battle, every Nipponese unit receives an omamori from the hands of the miko."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_3.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神明庇护",
+        "en": "Divine Protection"
+      },
+      "desc": {
+        "zh": "神乐铃引来诸神的微光，护佑近旁的同伴。",
+        "en": "The kagura bells draw the gods' faint light, warding the allies nearby."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_4.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "封印之钥",
+        "en": "Key of Sealing"
+      },
+      "desc": {
+        "zh": "师父留下的神乐铃既是法器，也是松动封印的钥匙。",
+        "en": "The kagura bells left by her master are both a ritual implement and a key that loosens the seal."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_sayo_unique_1_6": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神兽召来：麒麟",
+        "en": "Summon Divine Beast: Kirin"
+      },
+      "desc": {
+        "zh": "神乐铃三振，云气自镜面翻涌而出。",
+        "en": "Three shakes of the kagura bells, and clouds surge forth from the mirror's surface."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_6.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "25",
+      "referenced_by": [
+        "skills/sayo.json"
+      ]
+    },
+    "cth_npex_skill_serena_mount_armored_ithilmar_steed": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "披甲伊瑟拉玛银战马",
+        "en": "Barded Ithilmar Steed"
+      },
+      "desc": {
+        "zh": "伊瑟拉玛银制的披甲战马，迅捷而坚韧。",
+        "en": "A barded warhorse of Ithilmar, swift and enduring."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_mount_ithilmar_chariot": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "伊瑟拉玛银战车",
+        "en": "Ithilmar Chariot"
+      },
+      "desc": {
+        "zh": "由银战马牵引的轻型战车，冲击凌厉。",
+        "en": "A light chariot drawn by silver steeds, fierce in its charge."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_ithilmar_chariot.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_mount_moon_dragon": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "银月龙",
+        "en": "Moon Dragon"
+      },
+      "desc": {
+        "zh": "一头银月龙的庞大身躯，俯瞰整个战场。",
+        "en": "The colossal form of a Moon Dragon looks down upon the entire battlefield."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_moon_dragon.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_texing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海神眷顾",
+        "en": "Favour of the Sea God"
+      },
+      "desc": {
+        "zh": "海神马瑟兰庇佑她所在的舰队，凡她参战的海战全军皆受护佑，她指引的航路亦更长远。",
+        "en": "The Sea God Mathlann watches over her fleet: every naval battle she takes part in brings protection to the whole force, and the routes she charts stretch farther still."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_first_strike": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "身经百战",
+        "en": "Battle-Hardened"
+      },
+      "desc": {
+        "zh": "久经海战与囚禁磨砺的战斗本能。",
+        "en": "Combat instincts honed by years of naval battle and captivity."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_fleet_drill": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "舰队操练",
+        "en": "Fleet Drill"
+      },
+      "desc": {
+        "zh": "艾斯林舰队传承的操练之道，让凡人水手如臂使指。",
+        "en": "A drilling tradition passed down through the Aesling fleets, making mortal sailors answer her command as surely as her own hands."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_lord_passive_naval_discipline.png",
+        "size": "71x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_sea_archmage": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海上大法师",
+        "en": "Sea Archmage"
+      },
+      "desc": {
+        "zh": "凌驾普通迷雾法师之上的终极形态，被海神庇佑、掌握迷雾的迷雾大魔导师。",
+        "en": "The ultimate form beyond an ordinary Mist Mage, a Mist Archmage blessed by the Sea God and master of the mists."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_serena_unique_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_survivor": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "幸存者",
+        "en": "Survivor"
+      },
+      "desc": {
+        "zh": "跨洋漂流三十载、幽囚十二年而不倒，海与囚笼都未能磨灭她的复原力。",
+        "en": "Thirty years adrift across the ocean and twelve years in captivity failed to break her; neither the sea nor the cage could wear down her resilience."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_serena_unique_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_veteran_navigator": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "资深领航员",
+        "en": "Veteran Navigator"
+      },
+      "desc": {
+        "zh": "曾任海上巡逻队迷雾法师副官，星象与海流在她脑中如掌纹般清晰。",
+        "en": "A former deputy to a Mist Mage of a sea patrol, she knows the stars and currents as well as the lines of her own palm."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_serena_unique_wave_rider": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "驭潮者",
+        "en": "Wave Rider"
+      },
+      "desc": {
+        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她召唤的潮汐之灵。",
+        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits she calls forth."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "cth_npex_skill_shen_mount_jade_longma": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉龙马",
+        "en": "Jade Longma"
+      },
+      "desc": {
+        "zh": "唯有值得追随的统帅，才驾驭得了这匹玉龙马。",
+        "en": "Only a commander worth following can master this Jade Longma."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_mount_lingtao": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "凌涛",
+        "en": "Tidestrider"
+      },
+      "desc": {
+        "zh": "吸收了海元素的玉龙马，被海军视作能够凌云破浪的祥瑞坐骑。",
+        "en": "A Jade Longma that has absorbed a Sea Elemental, regarded by the navy as an auspicious mount capable of soaring past the clouds and cutting through the waves."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_texing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "镇海提督",
+        "en": "Sea-Quelling Admiral"
+      },
+      "desc": {
+        "zh": "玉海舰队的统帅受到远东海洋的庇护。",
+        "en": "The commander of the Jade Sea Fleet is protected by the seas of the Far East."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_lord_passive_naval_discipline.png",
+        "size": "71x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉海剑圣",
+        "en": "Jade Sea Swordmaster"
+      },
+      "desc": {
+        "zh": "真正的剑圣往往精通数种不同的武器，比如刀剑和长枪。",
+        "en": "A true swordmaster is often skilled in several different weapons, such as swords and spears."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_1_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉海旧部",
+        "en": "Jade Sea Veterans"
+      },
+      "desc": {
+        "zh": "随提督征战的老兵们身经百战。",
+        "en": "The veterans who have campaigned alongside the admiral are battle-hardened."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_lord_passive_naval_discipline.png",
+        "size": "71x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_1_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "剑道导师",
+        "en": "Kendo Mentor"
+      },
+      "desc": {
+        "zh": "震旦的剑法在尼朋的战士之间仍然通用。",
+        "en": "Cathayan swordsmanship is still widely practised among Nipponese warriors."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_1_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "震旦航海术",
+        "en": "Cathayan Seamanship"
+      },
+      "desc": {
+        "zh": "震旦航海术历史悠久，声名远扬。",
+        "en": "Cathayan seamanship boasts a long history and a far-reaching reputation."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_1_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战略大师",
+        "en": "Master Strategist"
+      },
+      "desc": {
+        "zh": "先发制人，攻其不备。",
+        "en": "Strike first, and catch the enemy unprepared."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ambush.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_1_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "枪炮与魔法",
+        "en": "Powder and Sorcery"
+      },
+      "desc": {
+        "zh": "「要火药还是魔法？」——「为何不能都要？」",
+        "en": "\"Powder or sorcery?\" - \"Why not both?\""
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_1_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "无冕之师",
+        "en": "The Uncrowned Host"
+      },
+      "desc": {
+        "zh": "虽已不受朝廷承认，但仍是远东海域最为强大的水师。",
+        "en": "No longer recognised by the court, it remains the mightiest fleet in the far eastern seas."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_2.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "破浪之帅",
+        "en": "Wavebreaker"
+      },
+      "desc": {
+        "zh": "久历风浪的统帅最明白如何在远征中维持补给与军心。",
+        "en": "A commander seasoned by wind and wave knows best how to keep supplies flowing and morale high on a long expedition."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_3.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_unique_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "万里长风",
+        "en": "The Long Wind"
+      },
+      "desc": {
+        "zh": "凌云破浪，万里长风。",
+        "en": "He soars past the clouds and cuts through the waves, borne by a wind that carries for ten thousand miles."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_4.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_weapon_nizushio": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "逆潮",
+        "en": "Sakashio"
+      },
+      "desc": {
+        "zh": "缴获自尼朋的名刀「逆潮」，逆流而上，随她一路远征。",
+        "en": "A famed Nipponese blade taken as a war trophy. Sakashio cuts against the current, and has followed her the whole way on this expedition."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_main_aura_of_majesty.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_shen_weapon_zhenlan": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "镇澜",
+        "en": "Wave-Queller"
+      },
+      "desc": {
+        "zh": "卫东水师的制式佩枪「镇澜」重新回到她手里——朝廷收得回兵权，收不回一杆枪。",
+        "en": "The Wei-Dong Fleet's standard-issue spear, Wave-Queller, is back in her hand – the court could reclaim her command, but never this spear."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_main_aura_of_majesty.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_actions_dummy": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ],
+      "desc_missing_reason": "loc 里没有该 key"
+    },
+    "cth_npex_skill_tachibana_unique_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "二刀流",
+        "en": "Two-Sword Style"
+      },
+      "desc": {
+        "zh": "双刀攻防一体，滴水不漏。",
+        "en": "With two blades, offence and defence merge as one, leaving not a single opening."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_0.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武士典范",
+        "en": "Exemplar of the Samurai"
+      },
+      "desc": {
+        "zh": "率旗本征战的当主，她的武范是麾下武士的标尺。",
+        "en": "As head of the house leading her hatamoto into battle, her martial example sets the standard for the samurai under her command."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_1.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "铲奸除恶",
+        "en": "Scourge of the Wicked"
+      },
+      "desc": {
+        "zh": "隐姓埋名于乡野铲奸除恶的岁月，练就了一身安民治地的本事。",
+        "en": "Years spent living incognito in the countryside, rooting out corruption and evil, honed her skill in pacifying the land and its people."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_public_order.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "雷神祝福",
+        "en": "Blessing of Raijin"
+      },
+      "desc": {
+        "zh": "同承雷神之契的旗本与她心意相通。",
+        "en": "The hatamoto who share her pact with Raijin are of one mind with her."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_spell_heavens_urannons_thunderbolt.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "雷厉风行",
+        "en": "Swift as Thunder"
+      },
+      "desc": {
+        "zh": "雷刃剑豪的高速突阵，雷厉而至，一击破阵。",
+        "en": "The Thunderblade master swordsman's high-speed charge arrives like thunder, breaking the enemy line with a single strike."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh2_dlc11_lord_abilities_lightning_reflexes.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "紫电一闪",
+        "en": "Shiden Flash"
+      },
+      "desc": {
+        "zh": "紫电一闪，斩雷断阵。",
+        "en": "A flash of Shiden splits the thunder and shatters the enemy line."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_5.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "cth_npex_unit_passive_blade_unison": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "人剑合一",
+        "en": "Unity of Blade and Self"
+      },
+      "desc": {
+        "zh": "能成为旗本的武士早已在剑术上登峰造极。",
+        "en": "A samurai who has risen to become a hatamoto has already mastered swordsmanship to its very peak."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/ability_icons/unit_passive_blade_unison.png",
+        "size": "38x38",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json"
+      ]
+    },
+    "cth_npex_unit_passive_bushido": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "武士道",
+        "en": "Bushido"
+      },
+      "desc": {
+        "zh": "若无法守护应当守护之人，纵使苟活，武士亦与死人无异。",
+        "en": "A samurai who cannot protect those they are duty-bound to protect is no different from the dead, even if they cling to life."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/ability_icons/unit_passive_bushido.png",
+        "size": "38x38",
+        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json"
+      ]
+    },
+    "deflect_shots": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "斩箭术",
+        "en": "Deflect Shots"
+      },
+      "desc": {
+        "zh": "使用巨剑斩开射来的箭矢，这是一项很难学习的技术：剑刃领主们并不鼓励这种训练，但真正的剑圣可不会让谨慎占了荣誉的上风",
+        "en": "The art of deflecting arrows with a greatsword is painful to learn; such training is discouraged by Bladelord officers, but no true Swordmaster will let caution best his pride."
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/hatamoto-raijin.json"
+      ]
+    },
+    "fatigue_immune": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "体力充沛",
+        "en": "Perfect Vigour"
+      },
+      "desc": {
+        "zh": "纵使执行的是最令人筋疲力尽的行动，这支部队也永远不会损失体力",
+        "en": "Even when performing the most fatiguing actions, this unit never loses vigour. "
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/fatigue_immune.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json",
+        "units/tide-guard.json"
+      ]
+    },
+    "hide_forest": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/hide_forest.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json",
+        "units/tide-guard.json"
+      ]
+    },
+    "hybrid": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "混合武器部队",
+        "en": "Hybrid Unit"
+      },
+      "desc": {
+        "zh": "这支部队的主要职责是近战部队，但也可以进行远程攻击",
+        "en": "This unit is primarily a melee unit, but has missile capability too"
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    },
+    "immune_to_psychology": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "心理免疫",
+        "en": "Immune to Psychology"
+      },
+      "desc": {
+        "zh": "这支部队免疫心理攻击（恐惧与惊骇）",
+        "en": "The unit is immune to psychological attacks (Fear & Terror)."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/immune_to_psychology.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/hatamoto-raijin.json",
+        "units/tide-guard.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_blade_master": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "剑术大师",
+        "en": "Blade Master",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名战士倚剑而生，利剑便是其手臂的延伸，这使其成为了战场上一股不容忽视的力量",
+        "en": "This warrior is one with their blade; it is an extension of their will, making them a worthy foe in combat.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_blade_shield": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "刃之盾",
+        "en": "Blade Shield"
+      },
+      "desc": {
+        "zh": "在防御战中，一把灵活运转的利剑绝不会让自己的主人被轻易刺穿",
+        "en": "A blade that sings in defence will not let its wielder be penetrated."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_deadly_blade": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "人斩之剑",
+        "en": "Deadly Blade"
+      },
+      "desc": {
+        "zh": "当使用者是一名真正的杀手与屠夫时，人斩之剑将成为真正致命的神兵！",
+        "en": "A deadly blade is especially lethal when in the hands of this master death-maker, killer and slaughterer!"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_devastating_charge": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "致命冲锋",
+        "en": "Devastating Charge",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "有些生物非常擅长将满腔的怒火灌注到冲锋中去，就连周遭的大地都会在其足下颤动不已！",
+        "en": "Some creatures charge home with such fury that the very ground shakes beneath their feet.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_charge.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_fleet-footed": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "快如疾风",
+        "en": "Fleet-Footed"
+      },
+      "desc": {
+        "zh": "那些跑得特别快的家伙会更快地到达敌军那里",
+        "en": "Those who are fleet of foot can reach the enemy faster."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_speed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_full_plate_armour": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "全身板甲",
+        "en": "Full Plate Armour"
+      },
+      "desc": {
+        "zh": "全身板甲可将穿戴者从头到尾包裹得严严实实，有许多板甲都曾受过祝福或是拥有奥术之力",
+        "en": "Full-Plate armour protects the wearer from head-to-foot. Many such suits are blessed or imbued with arcane abilities."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_armour.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_hard_to_hit": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "躲闪腾挪",
+        "en": "Hard to Hit",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "一对一的肉搏战自是一场劈砍与挑刺技术的生死对决。然而，诸如格挡回避等防御性动作也会为你赢得生存的机会",
+        "en": "Hand-to-hand combat is a lethal match of cut and thrust. However, it’s not all about offensive strikes; parries and other defensive moves can also win the day.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_scarred_veteran": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "疤面老兵",
+        "en": "Scarred Veteran",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名历战老兵身上的累累伤痕是多场战斗遗留下的记忆，逃脱死神魔爪是此人的家常便饭，因此他值得众人的尊重与畏惧",
+        "en": "The scars on this storied warrior reveal a veteran of many battles, a being not easy to kill and one worthy of respect and fear.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_health.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_self_indomitable": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "坚定不移",
+        "en": "Indomitable"
+      },
+      "desc": {
+        "zh": "身为领主，要有钢铁般的意志与绝不服输的气势，这样在面临险境时，麾下众将的立场才会坚定，并追随其至天涯海角",
+        "en": "The iron will and indomitable presence of this leader ensures their followers remain steadfast when facing peril."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_morale.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_tenacity": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "坚韧",
+        "en": "Tenacity"
+      },
+      "desc": {
+        "zh": "此人绝不会轻易屈膝，除非他的意志与躯体全部被彻底地毁灭",
+        "en": "This one will not go down easily - it will be necessary to break both the will and the body first."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_health.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_lord_self_wound-maker": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "杀伤猛士",
+        "en": "Wound-Maker",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "杀伤猛士力大无穷、凶狠残暴，会将一切敌人彻底地撕碎、蹂躏、践踏，直至战场上只剩下他自己为止！",
+        "en": "Such is their power and ferocity, a wound-maker will ravage the foe, cutting and pulverising until there is only one exit - death.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "海潮之唤",
+        "en": "Tidecall"
+      },
+      "desc": {
+        "zh": "潮水会减慢敌人的前进速度",
+        "en": "The tidal currents shall slow the foe's advance."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh2_dlc11_spell_deep_tidecall.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_dlc11_skill_all_magic_deep_10_ghost_ship_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "瓦格赫斯特的复仇",
+        "en": "Vangheist’s Revenge"
+      },
+      "desc": {
+        "zh": "这艘鬼气森森的船上，竟是空无一人",
+        "en": "No one sails this ship of fools."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh2_dlc11_spell_deep_ghost_ship.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_assist_army_increase_mobility": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "增加行动力",
+        "en": "Increase Mobility",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "不论是加强训练，轻装行进，减少进食还是提高睡眠质量，人总有办法在一天中做成更多事",
+        "en": "Whether it be training harder, travelling lighter, eating less or sleeping better, there's always a way to draw more from the day."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_assist_army_replenish_troops": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "补充军队",
+        "en": "Replenish Troops",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "军中战士可以在这位冠军勇士的力量下得到救助或补充",
+        "en": "Those in the army can find succour or be replenished by the power of this champion."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_replenishment.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_assist_army_training": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "军事训练",
+        "en": "Training",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "该勇士崇尚军纪，害怕走上战场的同时却又害怕远离战场",
+        "en": "This champion extols discipline and fear away from the battlefield as much as on it."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_experience.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_agent_wound": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "击伤人员",
+        "en": "Wound",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名冠军勇士从不知屈服为何物，只懂得以领主之名陷阵厮杀",
+        "en": "Such a champion will not bend or break, but slay in their Lord's name."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_wound_time.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_army_assault_units": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "袭击全队",
+        "en": "Assault Units",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "等待需要的是经验与耐心，这样才能在最出其不意时发动突袭",
+        "en": "Lying in wait, experienced and patient, striking when the foe least expects."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_disaster.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_army_block_army": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "阻碍敌军",
+        "en": "Block Army",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "引发敌人的纷争和混乱，诱导他们走错方向或迷惑他们的理智",
+        "en": "To sow discord and confuse the enemy, sending them down the wrong route or befuddling their senses."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_army_hinder_replenishment": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "妨碍补员",
+        "en": "Hinder Replenishment",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "赞美死亡、亵渎神灵的强者足以让敌人的整支军队跪地求饶",
+        "en": "The sight of a powerful figure extolling death and blasphemies can bring enemy ranks to their knees."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_replenishment.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_settlement_assault_garrison": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "袭击驻军",
+        "en": "Assault Garrison",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "『若敌人发现我的到来，那就最好不过了！』",
+        "en": "\"If they know I'm coming then more's the better!\""
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_siege_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_hinder_settlement_damage_walls": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "破坏城墙",
+        "en": "Damage Walls",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "他们无法阻止自己看不到的家伙",
+        "en": "They cannot stop what they cannot see."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_siege_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_passive_boost_income": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "提振收入",
+        "en": "Boost Income",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这些魔法师聪明过人，并且能够提供不少明智的建议，尤其在他们已经占卜过该区域的情况下",
+        "en": "Such magic-users may be wise and able to offer sage advice, especially if they have scried the region."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_military_spending.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_passive_spread_corruption": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "净化腐蚀",
+        "en": "Cleanse Corruption",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "当地人会注意到此人的来临，并在激励或恐吓下遂行此人的意愿",
+        "en": "The locals take notice and will be inspired or frightened into action."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_untainted.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_passive_spread_public_order": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "散播掌控力",
+        "en": "Spread Control",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名战士一旦出现，其外貌、内涵甚至恶名，都将起到安定军心的效果",
+        "en": "The sight of this warrior, their stature, import or infamy, can have a calming effect."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_public_order.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_hero_reduce_action_cost": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "行家里手",
+        "en": "Specialist"
+      },
+      "desc": {
+        "zh": "这名英雄技艺超群，熟知各种常见错误，并知道如何才能避免犯错",
+        "en": "An expert in their craft, this Hero knows all the mistakes that can be made and how to best avoid making them."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_military_spending.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh2_main_skill_all_immortality_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "长生久视",
+        "en": "Immortality"
+      },
+      "desc": {
+        "zh": "谁想永生呢？其实大多数人都不会拒绝的…",
+        "en": "Who wants to live forever? As it turns out, most beings wouldn't say no…"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_wound_time.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "19",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_all_immortality_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "长生久视",
+        "en": "Immortality"
+      },
+      "desc": {
+        "zh": "谁想永生呢？其实大多数人都不会拒绝的…",
+        "en": "Who wants to live forever? As it turns out, most beings wouldn't say no…"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_wound_time.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "19",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh2_main_skill_hef_alastar_unique_heroic_killing_blow": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "英武必杀",
+        "en": "Heroic Killing Blow"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_character_abilities_heroic_killing_blow.png",
+        "size": "59x59",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh2_main_skill_hef_generic_lileaths_blessing": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "莉莉丝之佑",
+        "en": "Lileath's Blessing"
+      },
+      "desc": {
+        "zh": "当面对挑战、抉择或单纯只是需要运气之时，人们都会向梦境与幸运女神祈祷",
+        "en": "Those facing a great challenge, a difficult decision, or simply in need of luck, may call upon the Goddess of Dreams and Fortune."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_magic.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "3",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_hef_generic_warding_of_hoeth": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "荷斯护法",
+        "en": "Ward of Hoeth"
+      },
+      "desc": {
+        "zh": "知识可以用来当做对抗魔法攻击的护盾",
+        "en": "Knowledge can be used as a shield against magical attack."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ward_save.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "7",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh2_main_skill_hef_generic_warding_of_loec": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "洛依克护法",
+        "en": "Ward of Loec"
+      },
+      "desc": {
+        "zh": "欺诈之神熟知各种可以对抗远程攻击的计谋",
+        "en": "The Trickster God knows all manner of ploys and ruses that can be used to counter missile attacks."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ward_save.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "7",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc24_skill_all_all_self_colossal_strike": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc24",
+      "name": {
+        "zh": "恢弘打击",
+        "en": "Colossal Strike",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "个头越大，就摔得越狠！",
+        "en": "The bigger they are, the harder they fall.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_dlc24_character_abilities_colossal_strike.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_dummy_actions_hef_mist_mage": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_dlc27_skill_all_magic_mists_01_mathlanns_spite": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "玛瑟兰之怨",
+        "en": "Mathlann’s Spite",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "海神之怒使幻影咸雾充斥肺腑，这般滋味正是他的军锋艾斯林当年险些遭遇的宿命",
+        "en": "The Sea God's wrath fills your lungs with phantom brine, a taste of the fate that nearly claimed his Herald, Aislinn.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_dlc27_spell_mists_mathlanns_spite.png",
+        "size": "57x57",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "拉德莉莉之麾",
+        "en": "Ladrielle's Shroud",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
+        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_dlc27_spell_mists_ladrielles_shroud.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_03_lore_attribute": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "蔽目烟云",
+        "en": "Obscuring Haze",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "水汽云雾在选定之地升起，水滴不断凝结和蒸发，干扰并减缓来袭箭矢的轨迹",
+        "en": "Clouds of droplets manifest to continuously form and evaporate around a chosen locale, dampening the path of incoming missiles.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_lore_passive_obscuring_mist.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "寰宇步虚",
+        "en": "Walk Between Worlds",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
+        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_spell_mists_walk_between_worlds.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_05_flensing_haar": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "剖皮凛雾",
+        "en": "Flensing Haar",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "凭借对航海巫术的冷酷诠释，柯思奎的贤者们学会了以凝冰封冻猎物，从而令其疲敝无力的能力",
+        "en": "Through callous interpretation of sea-faring sorcery, Cothiquan loremasters have learned to glaciate their quarry to lethargic helplessness.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_dlc27_spell_mists_flensing_haar.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "深海情人",
+        "en": "Mistress of the Deeps",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
+        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_07_the_writhing_mist": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "盘桓迷雾",
+        "en": "The Writhing Mist",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "带有腐蚀性盐晶的诡异迷雾笼罩战场，瓦解敌军斗志的同时以灵质触须庇护阿苏尔",
+        "en": "A salt-scented mist rolls in across the battlefield, corroding the enemy's resolve and shrouding the Asur with ethereal caress.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_spell_mists_the_writhing_mist.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_mathlanns_spite_dummy": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_spell_great_maw_braingobbler.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_dlc27_skill_hef_mist_mage_cloaked_in_mist": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "露珠披风",
+        "en": "Cloak of Dew"
+      },
+      "desc": {
+        "zh": "编织虚无缥缈的海雾是一项多变而难以捉摸的工作，但它能带来保护，免受变幻莫测的深渊之主的伤害",
+        "en": "Braiding the ethereal sea mists is a fickle and wayward endeavour, but it brings protection from the mercurial Lord of the Depths."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_hef_mist_mage_discreet_agent": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "出自迷雾",
+        "en": "From the Fog"
+      },
+      "desc": {
+        "zh": "转移和操纵自然雾气涡流以隐匿他们的行动，迷雾法师会通过无形的谋划占据优势",
+        "en": "Shifting and manipulating natural eddies of fog to obscure their movements, the Mist Mage gains an edge through unseen machinations."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_agent.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_hef_mist_mage_mist_shaper": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "超凡迷雾",
+        "en": "Supernatural Mist",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "附魔蒸汽随咒语聚集，渐织成无可穿透之帷幔，覆于白衣军团之上",
+        "en": "The ensorceled vapours gather with each incantation, gradually weaving an impenetrable shroud upon the white-garbed host.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_dlc27_character_passive_supernatural_mist.png",
+        "size": "72x71",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_hef_mist_mage_move_at_dawn": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "雾影弥蒙",
+        "en": "Envelop in Mist",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "迷雾笼罩之时，战士们会变得身手迅捷、适性优秀，直到发起进攻时才被敌人所发现",
+        "en": "Once swathed in the mists, the warriors become swift, adaptable, and unseen until the moment they strike.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_skill_node_hef_unique_scrolls_of_power_mist_mage": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": null,
+      "desc": null,
+      "icon": null,
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/serena.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_agent_action_success_scaling": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": null,
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/mount_hellsteed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/sayo.json",
+        "skills/tachibana-naotora.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_all_mentor_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "导师",
+        "en": "Mentor",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "在多年的服役中，此人学到了很多东西，现在他将精力放在了培训其他同僚身上",
+        "en": "Having learned much in their long years of service, this character now turns their attention to training others.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_experience.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json"
+      ]
+    },
+    "wh3_main_skill_all_mentor_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "导师",
+        "en": "Mentor"
+      },
+      "desc": {
+        "zh": "在多年的服役中，此人学到了很多东西，现在他将精力放在了培训其他同僚身上",
+        "en": "Having learned much in their long years of service, this character now turns their attention to training others."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_experience.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh3_main_skill_cth_all_unique_magic_resist": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "宁和之风",
+        "en": "Wind Harmony"
+      },
+      "desc": {
+        "zh": "对于身处惊涛骇浪，犹弄潮儿的人来说，狂暴的魔法之风也无非如此而已",
+        "en": "The turbulent Winds of Magic can do little harm to those who have found harmony amidst its raging currents."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ward_save.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/sayo.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh3_main_skill_cth_all_unique_missile_resist": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "不动如山",
+        "en": "Ranged Discipline"
+      },
+      "desc": {
+        "zh": "秩序、纪律和一排坚固的盾牌，这就是击垮混沌远程火力的不二法门",
+        "en": "The best way to repel the chaotic flurry of missile fire is to meet it with order, discipline, and a stalwart row of shields."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_ward_save.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/sayo.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_1": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "宁折不弯",
+        "en": "Unyielding"
+      },
+      "desc": {
+        "zh": "龙帝指挥着北方各省的每一把剑和矛，他的力量与他的意志相得益彰",
+        "en": "The Dragon Emperor guides every sword and spear of the northern provinces, inspiring a strength of arms to match an unflinching strength of will."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_2": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "控弦破的",
+        "en": "Sure Aim"
+      },
+      "desc": {
+        "zh": "从低贱的农民到熟练的射手，东方的每一支箭都会带着龙的力量与优雅尽情翱翔",
+        "en": "From lowly peasant to expert marksman, every arrow of the east soars with a Draconic power and grace."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_ranged_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_3": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "东方业炎",
+        "en": "Eastern Fires"
+      },
+      "desc": {
+        "zh": "古老的震旦在历史上从未被征服，而轰鸣的大炮与爆炸的火箭将有助于将这一记录延续下去",
+        "en": "Ancient Cathay stands historically unconquered. Booming cannons and rockets of exploding fire help ensure it will remain so."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_ammo.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_4": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "势若奔雷",
+        "en": "Mighty Charge"
+      },
+      "desc": {
+        "zh": "百蹄烈奔，试问何人可承？",
+        "en": "Who can withstand a charge with the sweeping force of a hundred hooves in unison?"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_charge.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_5": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "坚岩凝视",
+        "en": "Stone Gaze"
+      },
+      "desc": {
+        "zh": "震旦酷吏冷眼之下，氓隶徒属亦可聚而成军",
+        "en": "Even the most inexperienced peasant rallies under the cold-eyed gaze of Cathay's most stoic guardians."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_1_6": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "苍穹之火",
+        "en": "Sky Fire"
+      },
+      "desc": {
+        "zh": "烈焰焚天之时，死亡将如雨而至",
+        "en": "When fire hangs in the sky above the battlefield, death is sure to rain down upon it."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_speed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_3_1": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "长垣之剑",
+        "en": "Blades of the Bastion"
+      },
+      "desc": {
+        "zh": "震旦军队久经沙场，其战技在无尽的乱世血战中早已饱经历练",
+        "en": "Cathayan armies have been tested time and again, their skills proven in a tumultuous arena of bloodshed and near-constant war."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_morale.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_3_2": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "迅捷一手",
+        "en": "Fast Hands"
+      },
+      "desc": {
+        "zh": "战端既启，身手敏捷便是于远程对射中保身的秘诀了。",
+        "en": "When the raging of battle begins, swift hands and swifter feet are the keys to surviving at range."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_ranged_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_3_3": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "齐步冲锋",
+        "en": "Unified Charge"
+      },
+      "desc": {
+        "zh": "震旦将士们敏捷、稳重、与子同袍，共赴战场",
+        "en": "Swift, steady and moving as one, the hardy warriors of Cathay race headlong into battle."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_speed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_army_buff_3_4": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "影绰天灯",
+        "en": "Looming Lanterns"
+      },
+      "desc": {
+        "zh": "云层中炽热的光芒，定会令下方任何震旦将士心情激荡",
+        "en": "A blanket of glowing lights amidst the clouds is sure to stir the heart of every Cathayan warrior beneath them."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_ward_save.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_campaign_army": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "长垣守望",
+        "en": "The Great Bastion"
+      },
+      "desc": {
+        "zh": "北方诸省的血腥战场，乃是震旦最强战士磨练技艺的舞台",
+        "en": "The blood-soaked battlefields of the northern provinces are the proving grounds upon which the mightiest warriors of Cathay have honed their craft."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_army.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_campaign_irrepressible": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "战欲难抑",
+        "en": "Irrepressible"
+      },
+      "desc": {
+        "zh": "吃一堑，长一智",
+        "en": "Every wound that is not fatal is but a lesson to learn from."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_wound_time.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_lord_campaign_recruitment_cost": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "荣誉招募",
+        "en": "Inspiring Recruitment"
+      },
+      "desc": {
+        "zh": "所有心怀荣誉的战士都渴望在龙帝麾下战斗",
+        "en": "All warriors of honour and pride are eager to fight under the Dragon-Emperor's banners."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_military_spending.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh3_main_skill_cth_magic_yang_02_jade_shield_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "翠御诀",
+        "en": "Jade Shield"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_spell_yang_jade_shield.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_cth_magic_yang_03_wall_of_wind_and_fire_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "风火诀",
+        "en": "Wall of Wind & Fire"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_spell_yang_wall_of_wind_and_fire.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_cth_magic_yang_04_stone_ground_stance_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "坚岩诀",
+        "en": "Stone Ground Stance"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_spell_yang_stone_ground_stance.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_cth_magic_yang_05_strength_of_yang": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "阳之强",
+        "en": "Strength of Yang"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh3_main_lore_passive_strength_of_yang.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_cth_magic_yang_08_constellation_of_the_dragon_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "龙星诀",
+        "en": "Constellation of the Dragon"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_spell_yang_constellation_of_the_dragon.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh3_main_skill_innate_cathay_1_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "武术家",
+        "en": "Martial Artist"
+      },
+      "desc": {
+        "zh": "纵使刀折矢尽，猛士仍能以精武之躯力战不已，死中求生",
+        "en": "When the arrows are spent and the blades are all blunted, this perfect warrior can rely on their well-trained body to keep death from their door."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cathay_2_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "调谐师",
+        "en": "Harmoniser"
+      },
+      "desc": {
+        "zh": "各司其职，各尽其责。只要谨遵这句箴言，混沌便会无所遁形",
+        "en": "A place for everything and everything in its place. Live by this motto and Chaos will stand out like the proverbial sore thumb."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cathay_3_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "官员",
+        "en": "Bureaucrat"
+      },
+      "desc": {
+        "zh": "有些人可能认为行政是项令人厌倦的事务，但这位昊天龙帝的臣民很清楚，有序的社会组织定会高效高能",
+        "en": "Some may consider administration a tiresome process, but this servant of the Celestial Emperor knows that a tidy society makes for an efficient, effective one."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cathay_5_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "尽责谒者",
+        "en": "Fervent Questioner"
+      },
+      "desc": {
+        "zh": "龙神谒者的职责是保证天朝遍及宁和，而好奇的天性只是担任这一职务所需技能的一部分",
+        "en": "An inquisitive nature is only part of the skillset required for the Dragon's questioner, tasked with ensuring harmony prevails over Celestial lands."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_aggressive_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "暴力",
+        "en": "Violent"
+      },
+      "desc": {
+        "zh": "暴力永远都是答案，不是也是！",
+        "en": "Violence is always the answer, even when it's not."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_confident_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "稳健",
+        "en": "Sure-Footed"
+      },
+      "desc": {
+        "zh": "认识自身的能力并没什么错，尤其是自身确实很有能力时",
+        "en": "There's nothing wrong with being aware of one's capabilities - particularly when one is capable of so much."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_cunning_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "狡猾",
+        "en": "Crafty"
+      },
+      "desc": {
+        "zh": "欺骗会让人蹙眉，但前提是你被识破了",
+        "en": "Deception is frowned upon, but only if you're found out."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_determined_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "发愤图强",
+        "en": "Driven"
+      },
+      "desc": {
+        "zh": "意志的交锋绝不容畏缩",
+        "en": "In a battle of wills, one must not falter."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_disciplined_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "训练有素",
+        "en": "Trained"
+      },
+      "desc": {
+        "zh": "即使是色孽，也无法击垮这个人的自制力",
+        "en": "Even Slaanesh would be unable to break this one's self control."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_fleet_footed_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "健步如飞",
+        "en": "Fleet of Foot"
+      },
+      "desc": {
+        "zh": "无人能够杀死不可捕捉之物",
+        "en": "No being can kill what it cannot catch."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_intelligent_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "睿智",
+        "en": "Wise"
+      },
+      "desc": {
+        "zh": "明断则慎行",
+        "en": "Discerning judgement begets prudent action."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_knowledgeable_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "博学多才",
+        "en": "Lettered"
+      },
+      "desc": {
+        "zh": "如果知识就是力量，那么此人力量十足",
+        "en": "If knowledge is power, then this one is powerful indeed."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_strategist_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "策略家",
+        "en": "Strategist"
+      },
+      "desc": {
+        "zh": "『诀窍就是要提前想两步…然后再提前想一步』",
+        "en": "\"The trick is to think two steps ahead… and then think one step ahead of that.\""
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_strong_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "结实",
+        "en": "Solid"
+      },
+      "desc": {
+        "zh": "这家伙能跟食人魔较量掰手腕",
+        "en": "This one could challenge an Ogre to an arm-wrestling match."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_tactician_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "战术专家",
+        "en": "Tactician"
+      },
+      "desc": {
+        "zh": "若是说兵法还有哪里值得学习，那么此人应该还没碰到呢",
+        "en": "If there is anything left to learn about military planning, this one has yet to come across it."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yang.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_tough_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "刚毅",
+        "en": "Enured"
+      },
+      "desc": {
+        "zh": "此人坚定不移，韧性十足，泰然直面所有的挑战",
+        "en": "Hardy and resilient, this being stands firm in the face of all challenges."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_skill_innate_cth_weapon_master_hero": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "武器专家",
+        "en": "Weapons Specialist"
+      },
+      "desc": {
+        "zh": "此人还有用得不精熟的兵器？它还没锻造出来呢！",
+        "en": "No arms have yet been forged that this warrior has been unable to master."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/trait_cathay_yin.png",
+        "size": "24x24",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json"
+      ]
+    },
+    "wh3_main_unit_passive_battle_harmony_yin": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "passive",
+      "name": {
+        "zh": "武道宁和：阴",
+        "en": "Battle Harmony: Yin"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh3_main_unit_passive_battle_harmony_yin.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_blade_master_starter": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "剑术大师",
+        "en": "Blade Master",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名战士倚剑而生，利剑便是其手臂的延伸，这使其成为了战场上一股不容忽视的力量",
+        "en": "This warrior is one with their blade; it is an extension of their will, making them a worthy foe in combat.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_blade_shield": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "刃之盾",
+        "en": "Blade Shield"
+      },
+      "desc": {
+        "zh": "在防御战中，一把灵活运转的利剑绝不会让自己的主人被轻易刺穿",
+        "en": "A blade that sings in defence will not let its wielder be penetrated."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_deadly_blade": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "人斩之剑",
+        "en": "Deadly Blade"
+      },
+      "desc": {
+        "zh": "当使用者是一名真正的杀手与屠夫时，人斩之剑将成为真正致命的神兵！",
+        "en": "A deadly blade is especially lethal when in the hands of this master death-maker, killer and slaughterer!"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_deadly_onslaught": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "致命突袭",
+        "en": "Deadly Onslaught"
+      },
+      "desc": {
+        "zh": "战火无穷无尽。冲锋、交兵、一对一的血战，这便是无尽的循环，永无止息",
+        "en": "The war is endless. The cycle of charging, clashing, and bloody hand-to-hand fighting is without end. It will never stop."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_character_abilities_deadly_onslaught.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_devastating_charge": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "致命冲锋",
+        "en": "Devastating Charge"
+      },
+      "desc": {
+        "zh": "有些生物非常擅长将满腔的怒火灌注到冲锋中去，就连周遭的大地都会在其足下颤动不已！",
+        "en": "Some creatures charge home with such fury that the very ground shakes beneath their feet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_charge.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_foe-seeker": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "索敌者",
+        "en": "Foe-Seeker"
+      },
+      "desc": {
+        "zh": "眼前的敌人倒下，鲜血四溅，他随即锁定下一个猎物",
+        "en": " From one bloodied, lifeless corpse to the next, this one is always looking for the next adversary to best."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh_main_character_abilities_foe_seeker.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_hard_to_hit": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "躲闪腾挪",
+        "en": "Hard to Hit"
+      },
+      "desc": {
+        "zh": "一对一的肉搏战自是一场劈砍与挑刺技术的生死对决。然而，诸如格挡回避等防御性动作也会为你赢得生存的机会",
+        "en": "Hand-to-hand combat is a lethal match of cut and thrust. However, it’s not all about offensive strikes; parries and other defensive moves can also win the day."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_hard_to_hit_starter": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "躲闪腾挪",
+        "en": "Hard to Hit",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "一对一的肉搏战自是一场劈砍与挑刺技术的生死对决。然而，诸如格挡回避等防御性动作也会为你赢得生存的机会",
+        "en": "Hand-to-hand combat is a lethal match of cut and thrust. However, it’s not all about offensive strikes; parries and other defensive moves can also win the day.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_scarred_veteran_2": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "疤面老兵",
+        "en": "Scarred Veteran",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "这名历战老兵身上的累累伤痕是多场战斗遗留下的记忆，逃脱死神魔爪是此人的家常便饭，因此他值得众人的尊重与畏惧",
+        "en": "The scars on this storied warrior reveal a veteran of many battles, a being not easy to kill and one worthy of respect and fear.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_health.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_all_self_wound-maker": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "杀伤猛士",
+        "en": "Wound-Maker"
+      },
+      "desc": {
+        "zh": "杀伤猛士力大无穷、凶狠残暴，会将一切敌人彻底地撕碎、蹂躏、践踏，直至战场上只剩下他自己为止！",
+        "en": "Such is their power and ferocity, a wound-maker will ravage the foe, cutting and pulverising until there is only one exit - death."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_lord_battle_inspiring_presence": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "威风凛凛",
+        "en": "Inspiring Presence"
+      },
+      "desc": {
+        "zh": "有那么些领主，他们身上散发着力量、自信和威严，激励着他们的追随者执行伟大或可怕的行动",
+        "en": "There are Lords that radiate power, confidence and fear, inspiring their followers to great or terrible acts."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/battle_morale.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_lord_battle_rally": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "重整！",
+        "en": "Rally!"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/wh_main_character_abilities_rally.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh_main_skill_all_lord_battle_stand_your_ground": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "坚守阵地！",
+        "en": "Stand Your Ground!"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_character_abilities_stand_your_ground.png",
+        "size": "59x59",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh_main_skill_all_lord_campaign_alert": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "敏锐直觉",
+        "en": "Alert"
+      },
+      "desc": {
+        "zh": "无数的冲突令这位领主的直觉变得无比敏锐，这使得此人极难落入陷阱",
+        "en": "Countless conflicts and a keen sense of awareness have made this Lord difficult to entrap."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_ambush.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_lord_campaign_lightning_strike": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "闪击战",
+        "en": "Lightning Strike"
+      },
+      "desc": {
+        "zh": "『现在正是发动突袭的时刻！』",
+        "en": "\"The time to strike is now!\""
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_subterfuge.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_lord_campaign_route_marcher": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "赶路人",
+        "en": "Route Marcher"
+      },
+      "desc": {
+        "zh": "对土地的了解自是一种优势，一种能够让你跑得比别人快的优势",
+        "en": "Those who know the land and its secrets will travel faster and further than the foes who don't."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_lord_self_full_plate_armour_2": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "全身板甲",
+        "en": "Full Plate Armour"
+      },
+      "desc": {
+        "zh": "全身板甲可将穿戴者从头到尾包裹得严严实实，有许多板甲都曾受过祝福或是拥有奥术之力",
+        "en": "Full-plate armour protects the wearer from head-to-foot. Many such suits are blessed or imbued with arcane abilities."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_armour.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ]
+    },
+    "wh_main_skill_all_magic_all_06_evasion": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "闪避",
+        "en": "Evasion"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_character_passive_evasion.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh_main_skill_all_magic_all_07_earthing": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "缚风大地",
+        "en": "Earthing"
+      },
+      "desc": {
+        "zh": "将法杖或是某种奥术导体插入大地之后，有经验的施法者便会有效地束缚魔法之风，从而大大降低施法事故的触发概率",
+        "en": "By stabbing a staff or some arcane conduit into the ground, an accomplished magic-user can earth or tether the Winds and hopefully reduce a chance of miscasting."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_magic.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_magic_all_08_power_drain": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "魔力储备",
+        "en": "Magical Reserves"
+      },
+      "desc": {
+        "zh": "一些魔法使用者有能力储存魔法之风以备日后使用，从而强化他们的施法能力",
+        "en": "A few magic-users have the ability to store the Winds of Magic for later use, increasing their spellcasting power when it really counts."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/character_magic.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_all_magic_all_11_arcane_conduit": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "奥术导体",
+        "en": "Arcane Conduit"
+      },
+      "desc": null,
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/wh_main_character_abilities_arcane_conduit.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/miko.json",
+        "skills/sayo.json",
+        "skills/serena.json",
+        "skills/shen-changfeng.json"
+      ],
+      "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）"
+    },
+    "wh_main_skill_emp_lord_campaign_fervent": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "无限热忱",
+        "en": "Fervent"
+      },
+      "desc": {
+        "zh": "诸神将通过我们的努力净化大地",
+        "en": "Through our acts, the gods will cleanse the lands."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_untainted.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_emp_lord_campaign_iron_disciplinarian": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "钢铁纪律",
+        "en": "Iron Disciplinarian"
+      },
+      "desc": {
+        "zh": "该领主希望得到平民的绝对服从，这样他们就没时间策划暴动或小规模叛乱了",
+        "en": "This Lord expects utter obedience from the smallfolk, and has little time for insurrections or petty revolts."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_public_order.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_emp_lord_campaign_logistician": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "兵站官",
+        "en": "Logistician"
+      },
+      "desc": {
+        "zh": "该领主及其部下皆精于军需统筹，因此即使在逆境中也能满足军队的需求",
+        "en": "Proficient with figures, this Lord, or his subordinates, can keep his army fulfilled, even in dire circumstances."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_replenishment.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_emp_lord_campaign_quartermaster": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "军需官",
+        "en": "Quartermaster"
+      },
+      "desc": {
+        "zh": "一名优秀的军需官能有效率地配发装备和粮食，让补给能持续得更久",
+        "en": "A good quartermaster can ration equipment and foodstuffs efficiently, making supplies last longer."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_military_spending.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "wh_main_skill_lord_all_campaign_reassuring_presence": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "鼓舞军心",
+        "en": "Reassuring Presence"
+      },
+      "desc": {
+        "zh": "这个领主一旦出现，追随者就会感到安心，从而安抚军心并降低开小差的概率",
+        "en": "The presence of this Lord ensures a measure of calm, reducing panic and desertion amongst followers."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/skills/campaign_disaster.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "unlocked_at_rank": "0",
+      "referenced_by": [
+        "skills/samurai-taisho-black.json",
+        "skills/samurai-taisho.json",
+        "skills/shen-changfeng.json"
+      ]
+    },
+    "yin": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "阴",
+        "en": "Yin"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阴",
+        "en": "This unit counts as a Yin unit for the purpose of Battle Harmony proximity."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/abilities/yin.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "_reference_packs/_vanilla_wh3"
+      },
+      "referenced_by": [
+        "units/tide-guard.json"
+      ]
+    }
+  }
+}

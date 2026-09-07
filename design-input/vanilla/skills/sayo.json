@@ -1,0 +1,497 @@
+{
+  "subject": "sayo",
+  "name_cn": "纱代",
+  "role": "hero_legendary",
+  "set_key": "cth_npex_skill_set_sayo",
+  "agent_type": "engineer",
+  "agent_subtype": "cth_npex_sayo",
+  "node_count": 34,
+  "vanilla_skill_count": 14,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_hamaya",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_pilao",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_pilao",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_01",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_assist_army_replenish_troops",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_trait_texing",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_texing",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_actions_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_actions_dummy",
+      "tier": 0,
+      "indent": 8,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_agent_action_scaling",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_taima",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_moli",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_moli",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_02",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_army_hinder_replenishment",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_generic_0",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_2",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_1_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_reikitsune",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_03",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_settlement_damage_walls",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_generic_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 3,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_1_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_senbonzakura",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_04",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_generic_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_generic_nippon",
+      "tier": 4,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_4",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_fuma_fuda",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_05",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_passive_spread_corruption",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_5",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_unique_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_campaign_06",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_unique_1_6",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_6",
+      "tier": 6,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_3_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_misogi",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_3_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_kamikakushi",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_sayo_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_sayo_magic_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_magic_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_magic_dummy",
+      "tier": 11,
+      "indent": 2,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_all_mentor_hero",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_mentor_hero",
+      "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "subject": "miko",
+  "name_cn": "巫女",
+  "role": "hero_generic",
+  "set_key": "cth_npex_skill_set_miko",
+  "agent_type": "dignitary",
+  "agent_subtype": "cth_npex_miko",
+  "node_count": 49,
+  "vanilla_skill_count": 32,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_unique_1_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_hamaya",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_choushi",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_choushi",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_01",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_assist_army_replenish_troops",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_01",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_aggressive_hero",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_actions_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_actions_dummy",
+      "tier": 0,
+      "indent": 8,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_agent_action_scaling",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_2",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_taima",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_byakue",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_byakue",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_02",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_army_hinder_replenishment",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_02",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_confident_hero",
+      "tier": 1,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_generic_0",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_unique_1_3",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_1_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_reikitsune",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_03",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_settlement_damage_walls",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_03",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_cunning_hero",
+      "tier": 2,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_generic_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 3,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_unique_1_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_1_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_senbonzakura",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_04",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_04",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_determined_hero",
+      "tier": 3,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_unique_1_4",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_fuma_fuda",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_05",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_passive_spread_corruption",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_05",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_disciplined_hero",
+      "tier": 4,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_unique_1_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_unique_1_5",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_unique_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_campaign_06",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_06",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_fleet_footed_hero",
+      "tier": 5,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_3_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_misogi",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_07",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_intelligent_hero",
+      "tier": 6,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_3_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_kamikakushi",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_08",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_knowledgeable_hero",
+      "tier": 7,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_09",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_strategist_hero",
+      "tier": 8,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_10",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_strong_hero",
+      "tier": 9,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_miko_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_miko_magic_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_11",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_tactician_hero",
+      "tier": 10,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_magic_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_miko_magic_dummy",
+      "tier": 11,
+      "indent": 2,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_12",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_tough_hero",
+      "tier": 11,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_13",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_weapon_master_hero",
+      "tier": 12,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_14",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_1_hero",
+      "tier": 13,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_15",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_2_hero",
+      "tier": 14,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_16",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_3_hero",
+      "tier": 15,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_miko_innate_17",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_5_hero",
+      "tier": 16,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_generic_immortality_hero",
+      "node_source": "vanilla",
+      "skill": "wh2_main_skill_all_immortality_hero",
+      "tier": 29,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_all_mentor_hero",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_mentor_hero",
+      "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    }
+  ]
+}

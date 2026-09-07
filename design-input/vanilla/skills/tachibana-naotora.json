@@ -1,0 +1,431 @@
+{
+  "subject": "tachibana-naotora",
+  "name_cn": "立花直虎",
+  "role": "hero_legendary",
+  "set_key": "cth_npex_skill_set_tachibana_naotora",
+  "agent_type": "champion",
+  "agent_subtype": "cth_npex_tachibana_naotora",
+  "node_count": 28,
+  "vanilla_skill_count": 20,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_master_starter",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_01",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_assist_army_training",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_texing",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_naotora_texing",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_actions_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_actions_dummy",
+      "tier": 0,
+      "indent": 8,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_agent_action_scaling",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_generic_0",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_1_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_devastating_charge",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_02",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_passive_spread_public_order",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_generic_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_2",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_1_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_self_full_plate_armour_2",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_03",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_settlement_assault_garrison",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_1_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_hard_to_hit",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_04",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_4",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_1_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_blade",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_05",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_army_assault_units",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_unique_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_unique_5",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_campaign_06",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_3_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_wound-maker",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_3_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_scarred_veteran_2",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_3_3",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_fleet-footed",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_shield",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_tachibana_combat_4",
+      "node_source": "npex",
+      "skill": "wh3_dlc24_skill_all_all_self_colossal_strike",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_tachibana_combat_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    }
+  ]
+}

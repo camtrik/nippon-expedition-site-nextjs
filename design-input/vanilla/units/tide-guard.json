@@ -1,0 +1,81 @@
+{
+  "unit": "cth_npex_tide_guard_0",
+  "name_cn": "潮汐禁卫",
+  "slug": "tide-guard",
+  "doc": "_docs/data/units/潮汐禁卫兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh3_main_unit_passive_battle_harmony_yin",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "charge_defense_vs_large"
+    },
+    {
+      "ref": "charge_reflection"
+    },
+    {
+      "ref": "fatigue_immune"
+    },
+    {
+      "ref": "hide_forest"
+    },
+    {
+      "ref": "immune_to_psychology"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "反大型部队",
+      "ref": "anti_large",
+      "section": "特性"
+    },
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "混合武器部队",
+      "ref": "hybrid",
+      "section": "特性"
+    },
+    {
+      "doc_name": "装备重甲",
+      "ref": "armoured",
+      "section": "特性"
+    },
+    {
+      "doc_name": "宁和：阴",
+      "ref": "yin",
+      "section": "特性"
+    },
+    {
+      "doc_name": "抵御冲锋（大型部队）",
+      "ref": "charge_defense_vs_large",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "冲锋反制",
+      "ref": "charge_reflection",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "心理免疫",
+      "ref": "immune_to_psychology",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "精力充沛",
+      "ref": "fatigue_immune",
+      "section": "部队属性"
+    }
+  ]
+}

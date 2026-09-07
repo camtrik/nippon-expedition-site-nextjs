@@ -1,0 +1,1059 @@
+{
+  "subject": "shen-changfeng",
+  "name_cn": "沈长风",
+  "role": "lord_legendary",
+  "set_key": "cth_npex_skill_set_shen_changfeng",
+  "agent_type": "general",
+  "agent_subtype": "cth_npex_shen_changfeng",
+  "node_count": 62,
+  "vanilla_skill_count": 48,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_shen_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_master_starter",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_inspiring_presence",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_route_marcher",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_texing",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_texing",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_generic_0",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_1_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_1_1",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_devastating_charge",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_1",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_1_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_iron_disciplinarian",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_generic_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_1_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_1_5",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_1_2",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_hard_to_hit",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_0",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord",
+      "tier": 2,
+      "indent": 3,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_2",
+      "tier": 2,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_recruitment_cost",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_mount_jade_longma",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_mount_jade_longma",
+      "tier": 3,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_1_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_1_2",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_1_3",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_1_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yang_05_strength_of_yang",
+      "tier": 3,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_3",
+      "tier": 3,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_1_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_lord_all_campaign_reassuring_presence",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_mount_lingtao",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_mount_lingtao",
+      "tier": 4,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_1_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_1_3",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_1_4",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_full_plate_armour",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_1_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yang_02_jade_shield_lord",
+      "tier": 4,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_4",
+      "tier": 4,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_1_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_fervent",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_1_4",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yang_03_wall_of_wind_and_fire_lord",
+      "tier": 5,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_5",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_5",
+      "tier": 5,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_irrepressible",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_2",
+      "tier": 6,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "3",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_unique_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_unique_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_unique_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_unique_1_5",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_3_1",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_1_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yang_04_stone_ground_stance_lord",
+      "tier": 6,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_1_6",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_6",
+      "tier": 6,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_3_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_lightning_strike",
+      "tier": 6,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_3",
+      "tier": 7,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_3_2",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_fleet-footed",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_rally",
+      "tier": 7,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "6",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_1_5",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_1_6",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_3_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_quartermaster",
+      "tier": 7,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_unique_4",
+      "tier": 8,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_unique_3",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_3_3",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_deadly_blade",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 8,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_3_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_1",
+      "tier": 8,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_logistician",
+      "tier": 8,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_3_4",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_tenacity",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_3_1",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_magic_deep_10_ghost_ship_lord",
+      "tier": 9,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_3_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_2",
+      "tier": 9,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_alert",
+      "tier": 9,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_combat_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_onslaught",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_combat_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_combat_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_3_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yang_08_constellation_of_the_dragon_lord",
+      "tier": 10,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_3_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_3",
+      "tier": 10,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_campaign_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_army",
+      "tier": 10,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_campaign_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_campaign_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_weapon_nizushio",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_weapon_nizushio",
+      "tier": 11,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "tier": 11,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_3_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_4",
+      "tier": 11,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_weapon_zhenlan",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_weapon_zhenlan",
+      "tier": 12,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "tier": 12,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_army_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_stand_your_ground",
+      "tier": 12,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_army_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_army_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_shen_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 13,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_shen_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_shen_magic_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    }
+  ]
+}

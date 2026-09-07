@@ -431,7 +431,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_fuma_fuda.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -455,7 +455,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_hamaya.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -479,7 +479,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_kamikakushi.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -528,7 +528,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_misogi.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -552,7 +552,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_reikitsune.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -576,7 +576,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_senbonzakura.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -600,7 +600,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_taima.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -624,7 +624,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -647,7 +647,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_3.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -670,7 +670,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_4.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -693,7 +693,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_miko_unique_1_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -836,7 +836,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_samurai_taisho_unique_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -960,7 +960,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_samurai_taisho_unique_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1003,7 +1003,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_generic_nippon.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1098,7 +1098,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1121,7 +1121,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_1.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1144,7 +1144,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_2.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1168,7 +1168,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_3.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1192,7 +1192,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_4.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1215,7 +1215,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1238,7 +1238,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_6.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "25",
       "referenced_by": [
@@ -1405,7 +1405,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_serena_unique_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1428,7 +1428,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_serena_unique_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1571,7 +1571,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1690,7 +1690,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_1_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1713,7 +1713,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_2.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1736,7 +1736,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_3.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1759,7 +1759,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_shen_unique_4.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1849,7 +1849,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_0.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1872,7 +1872,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_1.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1967,7 +1967,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_5.png",
         "size": "72x72",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
       "referenced_by": [
@@ -1991,7 +1991,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/ability_icons/unit_passive_blade_unison.png",
         "size": "38x38",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "referenced_by": [
         "units/hatamoto-raijin.json"
@@ -2014,7 +2014,7 @@
         "source": "npex",
         "file": "nippon_expedition/ui/ability_icons/unit_passive_bushido.png",
         "size": "38x38",
-        "note": "本 mod 原创图标，用 design-input 里已有的那份"
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "referenced_by": [
         "units/hatamoto-raijin.json"

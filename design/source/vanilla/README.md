@@ -68,8 +68,8 @@ icons/effect_bundles/     1 张，效果图
 图标（`character_attack.png` 之类）。要标"原版素材"就看 `icon.source`，
 要标"原版技能"就看外层 `source`。
 
-`icon.source: "npex"` 的 33 条不在本目录，`file` 指向 `design-input` 里已有的
-那份（`nippon_expedition/ui/skill_icons/...`），路径相对 `design-input/`，
+`icon.source: "npex"` 的 33 条不在本目录，`file` 指向 `design/source` 里已有的
+那份（`nippon_expedition/ui/skill_icons/...`），路径相对 `design/source/`，
 不是相对本目录——注意那边的文件名**去掉了 `cth_npex_` 前缀**。
 
 **3. 图标尺寸不统一，别按目录假定，读 `icon.size`。** 每条的尺寸都是从 PNG

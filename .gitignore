@@ -3,3 +3,8 @@
 
 # macOS
 .DS_Store
+
+# 私有 mod 仓库的材料快照，只给 Design agent 看，不入库
+design-input/
+
+docs/local

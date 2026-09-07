@@ -115,7 +115,7 @@
 | 兵种背景文本 | `db/unit_description_historical_texts_tables/`、`db/unit_description_short_texts_tables/` |
 | 兵种中英名 | `text/db/cth_npex_land_units_onscreen_names.loc.tsv` |
 | 人物技能 / 特质 / 剧情 | `db/character_skills_tables/` 等 + `text/db/cth_npex_companions.loc.tsv`、`cth_npex_lord_traits.loc.tsv`、`cth_npex_quests.loc.tsv` |
-| 背景故事原料 | `steam_description_zh.txt`、`DESIGN.md`、`text/db/cth_npex_loading_screen_quotes.loc.tsv`（读条引文，本来就是写好的 lore 碎片） |
+| 背景故事原料 | `steam_description_zh.txt`、`DESIGN.md`、`_docs/lore/`（背景考据、派系设计、4 份角色设计书）。⚠️ **别去翻 `cth_npex_loading_screen_quotes.loc.tsv`**——2026-09-06 查过，那 41 行全是 `{{tr:}}` 交叉引用和属性图标标记，是读条界面的新单位提示卡，**没有一句原创 lore** |
 
 **三条纪律**：
 

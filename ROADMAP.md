@@ -1,7 +1,7 @@
 # 远征尼朋 · 新站建设路线
 
 **起草：2026-09-06**　　本文件记录**做什么、按什么顺序做、为什么这么定**。
-想知道「怎么通过这个项目学 Next.js」看 [LEARNING-NEXTJS.md](./LEARNING-NEXTJS.md)。
+想知道「怎么通过这个项目学 Next.js」看 [LEARNING-NEXTJS.md](./docs/local/LEARNING-NEXTJS.md)。
 
 ---
 
@@ -20,7 +20,8 @@
 | 1 | **全做**——内容页和数据页在同一个应用里 | 作者明确要求 |
 | 2 | **不走 `output: 'export'`** | 采样、鉴权、LLM 调用都要服务器。静态导出会关掉 RSC 取数、`use cache`、`proxy.ts`、PPR |
 | 3 | **`content/` 目录原样搬过来，一个字不改** | 中英同字段约定、手写 front matter、`changelog-entry` skill、AGENTS.md 那一整套规矩全长在这个目录上。Next 只是换一个读它的程序，写内容的体验必须零变化。**不要改成 MDX，不要塞进组件里** |
-| 4 | **CSS 原样搬成 global CSS** | 那 2092 行手写 CSS 是这站的核心资产，配色 token 是从 mod 美术里取样的。不 Tailwind 化、不拆 CSS Modules |
+| 3a | **搬一次就完，这边立刻成为唯一真源**（2026-09-07 定） | 作者不打算再更新旧站，所以没有「两边并行写」的窗口，也就不需要同步机制。搬过来之后**隔壁 `content/` 冻结**——别再往那儿写，也别拿它当源读。⚠️ 旧站本身仍然保持在线，见决定 5a。另：`design/source/nippon-expedition-site/content/` 是冻结的设计输入，不是源 |
+| 4 | **版式照 Claude Design 的设计稿重做；配色 token 与字体栈沿用旧站** | 2026-09-07 改（原文是「CSS 原样搬」）。设计稿本来就是照旧站的 token 画的——19 个颜色值和 `base/10-tokens.css` 逐一对得上，字体也是 Sofia Sans + 文楷 GB。所以「换设计」换的只有版式和组件，色板和字体栈原样保留，**别重新取样**。实现方式不变：纯 global CSS，不 Tailwind 化、不拆 CSS Modules、不 CSS-in-JS。设计稿在 `design/远征尼朋官网.dc.html` |
 | 5 | **分站路由**：`/` = 中文、`/en/` = 英文。**不做单 URL 客户端切换** | ① mod 在工坊上是中英两个独立条目（`3790908242` / `3790908523`），单 URL 会把英文条目的读者丢到中文页 ② SEO：英文页要能被单独索引 ③ 客户端切换会把**两种语言的正文都发给每个访客** ④ 「切语言整页重建」用 `<Link>` 软导航就能解，不用拿 URL 去换 |
 | 5a | **旧站不做 URL 一一对应，改成挂公告条指向新站** | ⚠️ 但**旧仓库和 GitHub Pages 一直挂着别删**：Steam 评论、贴吧、Reddit 上指向旧地址的帖子会存在很多年，公告条就是它们的落点 |
 | 5b | **图鉴页专名中英同显，正文不同显** | 玩家分裂在中英两个工坊条目上，只显示一种名字就有一半人对不上号。但**只限专名**（兵种名 / 技能名 / 特质名）——正文也双语并排会让页面长一倍，读起来像没做完的翻译稿 |
@@ -54,7 +55,7 @@
 新站在功能上追平旧站的第一步。
 
 - Next 项目起起来，Turbopack 跑通
-- `content/` 从隔壁搬过来（原样），CSS 搬成 global CSS
+- `content/` 从隔壁搬过来（原样）；CSS 照设计稿新写成 global CSS，色板与字体栈从旧站 `base/10-tokens.css` 搬
 - 写 loader：front matter 双语键、`inline_md()`、releases 排序
 - `app/[lang]/` 路由骨架，`generateStaticParams` 展开 zh / en
 - rewrite 把 `/` 映射到 `/zh`，保住 `/` = 中文、`/en/` = 英文的形状
@@ -72,6 +73,10 @@
 - 首访语言判断**一辈子只做一次**（用过语言开关后写 `localStorage['npex-lang']` 就不再自动跳）。别改成每次访问都跳，会把别人分享的链接顶掉
 
 **⚠️ Markdown 解析器换了，必须全量对照。** Python-Markdown 有个坑：**列表项内部的空行会结束整个列表**，后面的 `- ` 变成裸横线。现有 releases 正文是按这个行为写的（补充说明一律缩进 4 空格写成子条目）。换成 marked / markdown-it 后行为可能不一样，**把现有全部 releases 跑一遍逐条对输出**。
+
+**⚠️ `rewrites()` 里 `beforeFiles` 的规则是链式套用的，不是命中即停。** 文档只在 `afterFiles` 那条写了「第一条解析成功的就服务」，`beforeFiles` 是**每条匹配的都依次套一遍**。所以「`/` → `/zh/`」和「`/:path*` → `/zh/:path`」两条并存时，`/` 会先被第一条变成 `/zh/`、再被第二条变成 `/zh/zh/`，然后 404。**第二条的排除项里必须带上 `zh` 本身**，这一条同时也挡掉了外面直接访问 `/zh/…` 的情况。已实测，配置见 `next.config.ts`。
+
+**⚠️ `trailingSlash: true` 是刻意开的**（2026-09-07）。旧站产出 `dir/index.html`，URL 一律带尾斜杠，而 `…/faq/#q-nrs` 这种回链散在 Steam 评论里。不开的话 Next 会把 `/faq/` 反向 308 到 `/faq`，多一跳、canonical 也得跟着改。
 
 **⚠️ `proxy.ts` 的坑**（Next 16 起 `middleware.ts` 改的名）：导出的函数也改叫 `proxy`；**只有 nodejs runtime，不支持 edge**；两个文件同时存在会构建报错，`npx @next/codemod@canary middleware-to-proxy .` 能自动迁。
 
@@ -122,6 +127,7 @@
 1. **导出产物落进 `content/`，和手写内容同一个形状**（中英同字段），这样共用一套 loader
 2. **本仓库是公开的**。兵种数值玩家在游戏里本来就看得到，公开没问题；但别把表名、字段名、db key 原样带进页面正文——那是隔壁 AGENTS.md「写玩家视角，不写实装细节」的红线
 3. **专名必须查表**。新出现的兵种名、技能名先查 `_docs/translation/术语对照_*.tsv`，查不到才自拟，拟完**回填**
+4. **技能图标按 db key 索引，别按显示名。** 设计稿里那份 `skill-icons.js` 是拿显示名当键的（`"Wavebreaker"` 和 `"破浪之帅"` 各一条指向同一张图）——改一次 loc 文案图标就静默变裂图，而且中英各断一半。`design/source/vanilla/vanilla-assets.json` 里每条都带 `ref`，照 `ref` 索引
 
 **交付**：改一个兵种的护甲值，重跑导出，页面数字跟着变；28 个页面没有一份手写副本。
 
@@ -235,6 +241,8 @@ if (!secret) return notFound()   // ⚠️ 少了这行，环境变量没配时 
 
 两条路：CI 里留一个 Python 后置步骤扫构建产物，或用 fontkit 重写。**不能省。**
 
+⚠️ **设计稿在这一点上是反的**：它 `<head>` 里直接挂 jsDelivr 的完整文楷 GB webfont（`lxgw-wenkai-gb-web@1.522.0`）。那是设计稿要能在别人机器上打开才这么写的，**不能照搬上线**——完整字重好几 MB，而且把子集护栏整个绕过去了。落地时换回自托管子集。
+
 回退栈的顺序（**简体中文字体必须排在任何日文字体之前**）见隔壁 `site/styles/base/10-tokens.css` 里 `--font-sans` 的注释——那是修过的 bug，别推翻。
 
 ⚠️ 阶段 3 的图鉴会引入大量新字（兵种名、技能名、背景文本），**是最容易触发缺字的一步**，导出脚本跑完记得重新切子集。
@@ -251,7 +259,9 @@ if (!secret) return notFound()   // ⚠️ 少了这行，环境变量没配时 
 |---|---|
 | 内容原料、专名对照表、FAQ 成稿 | `../nippon_expedition/_docs/`，规矩见 `../nippon-expedition-site/AGENTS.md` |
 | 现有渲染逻辑（要重写成 TS 的） | `../nippon-expedition-site/scripts/sitegen/` |
-| 现有 CSS（原样搬） | `../nippon-expedition-site/site/styles/` |
+| **设计稿**（版式的唯一依据） | 本目录 `design/远征尼朋官网.dc.html` |
+| 配色 token 与字体栈（照搬这一份） | `../nippon-expedition-site/site/styles/base/10-tokens.css` |
+| 旧站 CSS（只当参考，不再原样搬） | `../nippon-expedition-site/site/styles/` |
 | 7 个工坊条目的 id | `../nippon-expedition-site/scripts/sitegen/workshop.py` |
 | 兵种 / 人物数据源 | `../nippon_expedition/db/`、`../nippon_expedition/text/db/` |
 | Vercel / Next 技能包 | 本目录 `.agents/skills/` |
@@ -277,4 +287,5 @@ if (!secret) return notFound()   // ⚠️ 少了这行，环境变量没配时 
 做完一个阶段回来打勾，补记踩到的坑。**决定改了就在上面那张表里改，别只在这里加一行。**
 
 - 2026-09-06 起草。
-- 2026-09-06 重构：学习路线拆到 [LEARNING-NEXTJS.md](./LEARNING-NEXTJS.md)，采样任务拆到 [SNAPSHOT-CRON.md](./SNAPSHOT-CRON.md)。本文件改成按建设阶段组织，上线切换从最后提前到阶段 4。
+- 2026-09-06 重构：学习路线拆到 [LEARNING-NEXTJS.md](./docs/local/LEARNING-NEXTJS.md)，采样任务拆到 [SNAPSHOT-CRON.md](./SNAPSHOT-CRON.md)。本文件改成按建设阶段组织，上线切换从最后提前到阶段 4。
+- 2026-09-07 设计稿到位，改了决定 4（见上表）。`design-input/` 更名为 `design/source/`，设计稿放在 `design/` 下；隔壁 `nippon_expedition/tools/build_site_vanilla_export.py` 的默认输出路径同步改了。

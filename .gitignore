@@ -4,7 +4,7 @@
 # macOS
 .DS_Store
 
-# 私有 mod 仓库的材料快照，只给 Design agent 看，不入库
-design-input/
+# design-input/ 是私有 mod 仓库的材料快照（角色设计书含未上线的排期与废弃方案），
+# 随本仓库一起入库——所以这个仓库必须保持 private。
 
 docs/local

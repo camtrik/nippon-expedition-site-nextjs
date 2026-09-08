@@ -3,6 +3,11 @@ import type { NextConfig } from 'next'
 // 决定 5：`/` = 中文、`/en/` = 英文。实现上所有页面都住在 `app/[lang]/` 里，
 // 中文那一份靠 rewrite 把前缀藏掉——URL 的形状和实现解耦。
 const nextConfig: NextConfig = {
+  // 图已经是手工 LANCZOS + cwebp -q 90 的成品，不必再过一遍优化服务（决定 12）。
+  // 自动宽高、懒加载、blur 占位、内容哈希与 immutable 缓存都来自静态导入本身，
+  // 和这个开关无关；放弃的只是按分辨率自动生成 srcset。
+  images: { unoptimized: true },
+
   // 路由检查顺序是 redirects(2) → rewrites(4)，所以这两组不会互相咬：
   // 外面进来的 `/zh/faq/` 先被收敛到 `/faq/`，rewrite 是内部的、不重走 redirect。
   async redirects() {

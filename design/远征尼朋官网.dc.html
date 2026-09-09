@@ -598,7 +598,7 @@
           <div style="max-width:1240px;margin:0 auto;padding:128px 24px 96px">
             <a href="#/codex/units" style="display:inline-block;margin-bottom:26px;font-size:14px;font-weight:500;color:#5F5E5D;text-decoration:none" style-hover="color:#1B1C1C;text-decoration:underline">← {{ d.ui.tabUnits }}</a>
             <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,3.5vw,60px);align-items:flex-start">
-              <aside style="flex:0 0 auto;max-width:100%;position:sticky;top:104px">
+              <aside style="flex:0 0 auto;max-width:100%">
                 <div style="position:relative;width:min(30vh,320px);max-width:100%;border-radius:20px;overflow:hidden;background:#131E2C;box-shadow:0 20px 44px rgba(19,30,44,0.2)">
                   <img src="{{ u.full }}" alt="{{ u.name }}" style="display:block;width:100%;height:auto">
                   <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(19,30,44,0.28) 0%,rgba(19,30,44,0) 22%,rgba(19,30,44,0) 68%,rgba(19,30,44,0.5) 100%)"></div>
@@ -679,49 +679,6 @@
                   </section>
                 </sc-if>
 
-                <sc-for list="{{ u.groups }}" as="gp" hint-placeholder-count="3">
-                  <section style="margin:44px 0 0">
-                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ gp.head }}</h2>
-                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
-                    </div>
-                    <sc-if value="{{ gp.bullet }}" hint-placeholder-val="{{ false }}">
-                      <div style="display:flex;flex-direction:column;gap:10px">
-                        <sc-for list="{{ gp.rows }}" as="bl" hint-placeholder-count="4">
-                          <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;padding:15px 20px;border:1px solid {{ bl.bulletBorder }};border-radius:14px;background:{{ bl.bulletBg }}">
-                            <span style="font-size:12px;line-height:1.7;color:{{ bl.arrowInk }}">{{ bl.arrow }}</span>
-                            <p style="margin:0;font-size:16px;font-weight:700;letter-spacing:-0.01em;line-height:1.45;color:#1B1C1C">{{ bl.name }}</p>
-                            <span></span>
-                            <p style="margin:0;max-width:70ch;font-size:14.5px;line-height:1.8;color:#454747">{{ bl.desc }}</p>
-                          </div>
-                        </sc-for>
-                      </div>
-                    </sc-if>
-                    <sc-if value="{{ gp.iconRows }}" hint-placeholder-val="{{ true }}">
-                      <sc-for list="{{ gp.rows }}" as="sk" hint-placeholder-count="5">
-                        <div style="display:grid;grid-template-columns:42px minmax(0,1fr);gap:4px 16px;padding:16px 6px;border-bottom:1px solid #EDEAE7;transition:background 160ms ease" style-hover="background:#F5F3F1">
-                          <sc-if value="{{ sk.hasIcon }}" hint-placeholder-val="{{ true }}">
-                            <img src="{{ sk.icon }}" alt="" style="grid-row:span 2;width:44px;height:44px;object-fit:contain">
-                          </sc-if>
-                          <sc-if value="{{ sk.noIcon }}" hint-placeholder-val="{{ false }}">
-                            <span style="grid-row:span 2;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#F1F7F4;border:1px solid #DCEAE3;font-family:'LXGW WenKai GB',serif;font-size:20px;line-height:1;color:#146A5A">{{ sk.glyph }}</span>
-                          </sc-if>
-                          <p style="margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;min-width:0">
-                            <span style="font-size:16.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.4;color:#146A5A">{{ sk.name }}</span>
-                            <span style="font-size:10.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5F5E5D">{{ sk.tag }}</span>
-                          </p>
-                          <div style="min-width:0">
-                            <p style="margin:0;max-width:70ch;font-size:15px;line-height:1.8;color:#5F5E5D">{{ sk.desc }}</p>
-                            <sc-if value="{{ sk.hasEffect }}" hint-placeholder-val="{{ false }}">
-                              <p style="margin:9px 0 0;padding-left:14px;border-left:2px solid #E3D5A4;max-width:66ch;font-size:14px;line-height:1.75;color:#7A5C0B">{{ sk.effect }}</p>
-                            </sc-if>
-                          </div>
-                        </div>
-                      </sc-for>
-                    </sc-if>
-                  </section>
-                </sc-for>
-
                 <sc-for list="{{ u.lists }}" as="ls" hint-placeholder-count="0">
                   <section style="margin:44px 0 0">
                     <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
@@ -738,11 +695,53 @@
                     </ul>
                   </section>
                 </sc-for>
-                <div style="height:44px"></div>
-
-                <a href="#/codex/units" style="display:inline-block;font-size:14px;font-weight:500;color:#5F5E5D;text-decoration:none" style-hover="color:#1B1C1C;text-decoration:underline">← {{ d.ui.tabUnits }}</a>
               </div>
             </div>
+
+            <div style="display:grid;gap:clamp(30px,3vw,52px);grid-template-columns:repeat(auto-fit,minmax(min(100%,278px),1fr));align-items:start;margin-top:64px">
+                <sc-for list="{{ u.groups }}" as="gp" hint-placeholder-count="3">
+                  <section style="min-width:0">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ gp.head }}</h2>
+                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
+                    </div>
+                    <sc-if value="{{ gp.bullet }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:flex;flex-direction:column;gap:10px">
+                        <sc-for list="{{ gp.rows }}" as="bl" hint-placeholder-count="4">
+                          <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;padding:14px 18px;border:1px solid {{ bl.bulletBorder }};border-radius:14px;background:{{ bl.bulletBg }}">
+                            <span style="font-size:12px;line-height:1.7;color:{{ bl.arrowInk }}">{{ bl.arrow }}</span>
+                            <p style="margin:0;font-size:15.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.45;color:#1B1C1C">{{ bl.name }}</p>
+                            <span></span>
+                            <p style="margin:0;font-size:14.5px;line-height:1.8;color:#454747">{{ bl.desc }}</p>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ gp.iconRows }}" hint-placeholder-val="{{ true }}">
+                      <sc-for list="{{ gp.rows }}" as="sk" hint-placeholder-count="5">
+                        <div style="display:flex;align-items:flex-start;gap:14px;padding:15px 6px;border-bottom:1px solid #EDEAE7;transition:background 160ms ease" style-hover="background:#F5F3F1">
+                          <sc-if value="{{ sk.hasIcon }}" hint-placeholder-val="{{ true }}">
+                            <img src="{{ sk.icon }}" alt="" style="flex:0 0 auto;display:block;width:44px;height:44px;object-fit:contain">
+                          </sc-if>
+                          <div style="flex:1 1 auto;min-width:0">
+                            <p style="margin:0 0 3px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;min-width:0">
+                              <span style="font-size:16.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.4;color:#146A5A">{{ sk.name }}</span>
+                              <span style="font-size:10.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5F5E5D">{{ sk.tag }}</span>
+                            </p>
+                            <p style="margin:0;font-size:15px;line-height:1.8;color:#5F5E5D">{{ sk.desc }}</p>
+                            <sc-if value="{{ sk.hasEffect }}" hint-placeholder-val="{{ false }}">
+                              <p style="margin:9px 0 0;padding-left:14px;border-left:2px solid #E3D5A4;font-size:14px;line-height:1.75;color:#7A5C0B">{{ sk.effect }}</p>
+                            </sc-if>
+                          </div>
+                        </div>
+                      </sc-for>
+                    </sc-if>
+                  </section>
+                </sc-for>
+            </div>
+
+            <div style="height:44px"></div>
+            <a href="#/codex/units" style="display:inline-block;font-size:14px;font-weight:500;color:#5F5E5D;text-decoration:none" style-hover="color:#1B1C1C;text-decoration:underline">← {{ d.ui.tabUnits }}</a>
           </div>
         </sc-if>
       </div>
@@ -758,40 +757,29 @@
         </sc-if>
         <sc-if value="{{ c.found }}" hint-placeholder-val="{{ true }}">
           <div>
-            <section style="position:relative;isolation:isolate;background:#131E2C;padding:148px 0 56px;overflow:hidden">
-              <img src="{{ c.banner }}" alt="" style="position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:50% 30%;opacity:0.5">
-              <div style="position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(19,30,44,0.7) 0%,rgba(19,30,44,0.5) 40%,rgba(19,30,44,0.92) 88%,#131E2C 100%)"></div>
-              <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-end">
-                <div style="flex:999 1 340px;min-width:0;text-shadow:0 1px 20px rgba(19,30,44,0.6)">
-                  <a href="#/codex/chars" style="display:inline-block;margin-bottom:20px;font-size:14px;font-weight:500;color:#A6B5C7;text-decoration:none" style-hover="color:#E7EDF4;text-decoration:underline">← {{ d.ui.tabChars }}</a>
-                  <p style="margin:0 0 12px;display:inline-flex;align-items:center;gap:8px;padding:6px 15px;border-radius:999px;background:rgba(79,195,161,0.16);font-size:12px;font-weight:700;color:#4FC3A1"><span style="width:6px;height:6px;border-radius:50%;background:#4FC3A1"></span>{{ c.rankLabel }}</p>
-                  <sc-if value="{{ c.hasEpithet }}" hint-placeholder-val="{{ true }}">
-                    <p style="margin:0 0 4px;font-size:clamp(15px,1.6vw,19px);font-weight:500;letter-spacing:0.1em;color:#E4C08F">{{ c.epithet }}</p>
-                  </sc-if>
-                  <h1 style="margin:0 0 8px;font-size:clamp(32px,4.6vw,58px);font-weight:700;letter-spacing:-0.03em;line-height:1.05;color:#E7EDF4">{{ c.name }}</h1>
-                  <sc-if value="{{ c.showAlt }}" hint-placeholder-val="{{ true }}">
-                    <p style="margin:0 0 18px;font-size:clamp(15px,1.7vw,20px);font-weight:500;color:#A6B5C7">{{ c.alt }}</p>
-                  </sc-if>
-                  <p style="margin:0;max-width:56ch;font-size:16.5px;line-height:1.8;color:#A6B5C7">{{ c.desc }}</p>
-                </div>
-              </div>
-            </section>
-
-            <div style="max-width:1280px;margin:0 auto;padding:64px 24px 96px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
-              <aside style="flex:1 1 230px;max-width:320px;min-width:0;position:sticky;top:104px">
-                <div style="position:relative;width:min(30vh,268px);max-width:100%;border-radius:20px;overflow:hidden;background:#131E2C;box-shadow:0 20px 44px rgba(19,30,44,0.2)">
+            <div style="max-width:1280px;margin:0 auto;padding:128px 24px 0">
+              <a href="#/codex/chars" style="display:inline-block;margin-bottom:26px;font-size:14px;font-weight:500;color:#5F5E5D;text-decoration:none" style-hover="color:#1B1C1C;text-decoration:underline">← {{ d.ui.tabChars }}</a>
+              <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,3.5vw,56px);align-items:flex-start">
+              <aside style="flex:1 1 230px;max-width:320px;min-width:0">
+                <div style="position:relative;width:min(34vh,300px);max-width:100%;border-radius:20px;overflow:hidden;background:#131E2C;box-shadow:0 20px 44px rgba(19,30,44,0.2)">
                   <img src="{{ c.full }}" alt="{{ c.name }}" style="display:block;width:100%;height:auto">
                   <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(19,30,44,0.28) 0%,rgba(19,30,44,0) 22%,rgba(19,30,44,0) 68%,rgba(19,30,44,0.5) 100%)"></div>
                 </div>
-                <sc-if value="{{ c.hasKamon }}" hint-placeholder-val="{{ false }}">
-                  <div style="margin-top:16px;display:flex;align-items:center;gap:14px;padding-top:16px;border-top:1px solid #E2DFDC">
-                    <img src="{{ c.kamon }}" alt="" style="width:34px;height:34px;object-fit:contain;flex:0 0 auto">
-                    <span style="font-size:13px;line-height:1.55;color:#5F5E5D">{{ kamonLabel }}</span>
-                  </div>
-                </sc-if>
               </aside>
 
               <div style="flex:999 1 440px;min-width:0;max-width:880px">
+
+                <header style="margin-bottom:44px">
+                  <p style="margin:0 0 14px;display:inline-flex;align-items:center;gap:8px;padding:6px 15px;border-radius:999px;background:#E4F3EC;font-size:12px;font-weight:700;color:#146A5A"><span style="width:6px;height:6px;border-radius:50%;background:#2FA98A"></span>{{ c.rankLabel }}</p>
+                  <sc-if value="{{ c.hasEpithet }}" hint-placeholder-val="{{ true }}">
+                    <p style="margin:0 0 6px;font-size:clamp(15px,1.6vw,19px);font-weight:500;letter-spacing:0.1em;color:#7A5C0B">{{ c.epithet }}</p>
+                  </sc-if>
+                  <h1 style="margin:0 0 8px;font-size:clamp(32px,4.4vw,54px);font-weight:700;letter-spacing:-0.03em;line-height:1.06;color:#1B1C1C">{{ c.name }}</h1>
+                  <sc-if value="{{ c.showAlt }}" hint-placeholder-val="{{ true }}">
+                    <p style="margin:0 0 18px;font-size:clamp(15px,1.7vw,20px);font-weight:500;color:#5F5E5D">{{ c.alt }}</p>
+                  </sc-if>
+                  <p style="margin:0;max-width:58ch;font-size:17px;line-height:1.85;color:#454747">{{ c.desc }}</p>
+                </header>
 
                 <sc-if value="{{ c.hasIdentity }}" hint-placeholder-val="{{ true }}">
                   <section style="margin-bottom:48px">
@@ -849,50 +837,8 @@
                   </section>
                 </sc-if>
 
-                <sc-for list="{{ c.tiles }}" as="tg2" hint-placeholder-count="3">
-                  <section style="margin-bottom:44px">
-                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ tg2.head }}</h2>
-                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
-                    </div>
-                    <div>
-                      <sc-for list="{{ tg2.rows }}" as="sk2" hint-placeholder-count="4">
-                        <div style="display:grid;grid-template-columns:42px minmax(0,1fr);gap:4px 16px;padding:16px 6px;border-bottom:1px solid #EDEAE7;transition:background 160ms ease" style-hover="background:#F5F3F1">
-                          <span style="grid-row:span 2;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#F1F7F4;border:1px solid #DCEAE3;font-family:'LXGW WenKai GB',serif;font-size:20px;line-height:1;color:#146A5A">{{ sk2.glyph }}</span>
-                          <p style="margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;min-width:0">
-                            <span style="font-size:16.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.4;color:#146A5A">{{ sk2.name }}</span>
-                            <sc-if value="{{ sk2.hasTag }}" hint-placeholder-val="{{ false }}">
-                              <span style="font-size:10.5px;font-weight:700;letter-spacing:0.06em;color:#5F5E5D">{{ sk2.tag }}</span>
-                            </sc-if>
-                          </p>
-                          <p style="margin:0;min-width:0;max-width:70ch;font-size:15px;line-height:1.8;color:#5F5E5D">{{ sk2.desc }}</p>
-                        </div>
-                      </sc-for>
-                    </div>
-                  </section>
-                </sc-for>
-
-                <sc-if value="{{ c.hasBullets }}" hint-placeholder-val="{{ false }}">
-                  <section style="margin-bottom:44px">
-                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
-                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ c.bulletHead }}</h2>
-                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
-                    </div>
-                    <div style="display:flex;flex-direction:column;gap:10px">
-                      <sc-for list="{{ c.bullets }}" as="cb" hint-placeholder-count="3">
-                        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;padding:15px 20px;border:1px solid {{ cb.bulletBorder }};border-radius:14px;background:{{ cb.bulletBg }}">
-                          <span style="font-size:12px;line-height:1.7;color:{{ cb.arrowInk }}">{{ cb.arrow }}</span>
-                          <p style="margin:0;font-size:16px;font-weight:700;letter-spacing:-0.01em;line-height:1.45;color:#1B1C1C">{{ cb.name }}</p>
-                          <span></span>
-                          <p style="margin:0;max-width:70ch;font-size:14.5px;line-height:1.8;color:#454747">{{ cb.desc }}</p>
-                        </div>
-                      </sc-for>
-                    </div>
-                  </section>
-                </sc-if>
-
                 <sc-for list="{{ c.lists }}" as="cl2" hint-placeholder-count="2">
-                  <section style="margin-bottom:44px">
+                  <section>
                     <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
                       <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ cl2.head }}</h2>
                       <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
@@ -911,12 +857,55 @@
                   </section>
                 </sc-for>
 
-                <sc-if value="{{ c.hasGear }}" hint-placeholder-val="{{ false }}">
-                  <section style="margin-bottom:44px">
-                    <p style="margin:0 0 12px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7A5C0B">{{ d.ui.secGear }}</p>
-                    <p style="margin:0;padding:18px 0;border-top:1px solid #E3D5A4;border-bottom:1px solid #E3D5A4;max-width:68ch;font-size:15.5px;line-height:1.85;color:#4A3806">{{ c.gear }}</p>
+              </div>
+              </div>
+            </div>
+
+            <div style="max-width:1280px;margin:0 auto;padding:64px 24px 96px">
+              <div style="display:grid;gap:clamp(30px,3vw,52px);grid-template-columns:repeat(auto-fit,minmax(min(100%,278px),1fr));align-items:start">
+
+                <sc-if value="{{ c.hasBullets }}" hint-placeholder-val="{{ false }}">
+                  <section>
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ c.bulletHead }}</h2>
+                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:10px">
+                      <sc-for list="{{ c.bullets }}" as="cb" hint-placeholder-count="3">
+                        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;padding:14px 18px;border:1px solid {{ cb.bulletBorder }};border-radius:14px;background:{{ cb.bulletBg }}">
+                          <span style="font-size:12px;line-height:1.7;color:{{ cb.arrowInk }}">{{ cb.arrow }}</span>
+                          <p style="margin:0;font-size:15.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.45;color:#1B1C1C">{{ cb.name }}</p>
+                          <span></span>
+                          <p style="margin:0;font-size:14.5px;line-height:1.8;color:#454747">{{ cb.desc }}</p>
+                        </div>
+                      </sc-for>
+                    </div>
                   </section>
                 </sc-if>
+
+                <sc-for list="{{ c.tiles }}" as="tg2" hint-placeholder-count="3">
+                  <section>
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+                      <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ tg2.head }}</h2>
+                      <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
+                    </div>
+                    <div>
+                      <sc-for list="{{ tg2.rows }}" as="sk2" hint-placeholder-count="4">
+                        <div style="padding:15px 6px;border-bottom:1px solid #EDEAE7;transition:background 160ms ease" style-hover="background:#F5F3F1">
+                          <p style="margin:0 0 3px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;min-width:0">
+                            <span style="font-size:16.5px;font-weight:700;letter-spacing:-0.01em;line-height:1.4;color:#146A5A">{{ sk2.name }}</span>
+                            <sc-if value="{{ sk2.hasTag }}" hint-placeholder-val="{{ false }}">
+                              <span style="font-size:10.5px;font-weight:700;letter-spacing:0.06em;color:#5F5E5D">{{ sk2.tag }}</span>
+                            </sc-if>
+                          </p>
+                          <p style="margin:0;min-width:0;max-width:70ch;font-size:15px;line-height:1.8;color:#5F5E5D">{{ sk2.desc }}</p>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </section>
+                </sc-for>
+
+              </div>
 
                 <sc-if value="{{ c.hasSkillsNote }}" hint-placeholder-val="{{ false }}">
                   <section style="margin-bottom:44px">
@@ -927,74 +916,63 @@
 
                 <sc-if value="{{ c.hasTree }}" hint-placeholder-val="{{ false }}">
                   <section style="margin-bottom:44px">
-                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
                       <h2 style="margin:0;flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5F5E5D">{{ d.ui.secTree }}</h2>
                       <span style="flex:1 1 auto;height:1px;background:#E2DFDC"></span>
                     </div>
-                    <sc-for list="{{ c.branches }}" as="br" hint-placeholder-count="6">
-                      <div style="padding:26px 0 6px;border-top:1px solid #E2DFDC;margin-top:22px">
-                        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;margin-bottom:16px">
-                          <p style="margin:0;font-size:15px;font-weight:700;letter-spacing:-0.02em;color:#1B1C1C">{{ br.label }}</p>
-                          <p style="margin:0;flex:1 1 200px;min-width:0;font-size:13px;line-height:1.6;color:#5F5E5D">{{ br.sub }}</p>
+                    <p style="margin:0;max-width:72ch;font-size:15px;line-height:1.8;color:#5F5E5D">
+                      <sc-for list="{{ c.treeNoteSeg }}" as="g" hint-placeholder-count="2">
+                        <sc-if value="{{ g.isText }}" hint-placeholder-val="{{ true }}"><span>{{ g.text }}</span></sc-if>
+                        <sc-if value="{{ g.isBold }}" hint-placeholder-val="{{ false }}"><strong>{{ g.text }}</strong></sc-if>
+                        <sc-if value="{{ g.isLink }}" hint-placeholder-val="{{ false }}"><a href="{{ g.url }}" target="_blank" rel="noopener" style="text-decoration:underline">{{ g.text }}</a></sc-if>
+                        <sc-if value="{{ g.isCode }}" hint-placeholder-val="{{ false }}"><code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'LXGW WenKai GB',monospace;font-size:0.9em;background:#F5F3F3;padding:2px 6px;border-radius:6px">{{ g.text }}</code></sc-if>
+                      </sc-for>
+                    </p>
+                    <sc-for list="{{ c.branches }}" as="br" hint-placeholder-count="4">
+                      <div style="padding:30px 0 0;border-top:1px solid #E2DFDC;margin-top:30px">
+                        <div style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;margin-bottom:24px">
+                          <p style="margin:0;font-size:17px;font-weight:700;letter-spacing:-0.02em;color:#1B1C1C">{{ br.label }}</p>
+                          <p style="margin:0;flex:1 1 240px;min-width:0;font-size:13px;line-height:1.6;color:#5F5E5D">{{ br.sub }}</p>
                         </div>
                         <sc-if value="{{ br.pending }}" hint-placeholder-val="{{ false }}">
-                          <p style="margin:0;font-size:14px;color:#5F5E5D">{{ d.ui.pending }}</p>
+                          <p style="margin:0 0 12px;font-size:14px;color:#5F5E5D">{{ d.ui.pending }}</p>
                         </sc-if>
-                        <sc-for list="{{ br.lines }}" as="ln" hint-placeholder-count="2">
-                        <div style="display:flex;align-items:stretch;gap:0;padding:0 0 8px;width:100%;flex-direction:{{ ln.dir }}">
-                          <sc-for list="{{ ln.cols }}" as="co" hint-placeholder-count="3">
-                            <div style="position:relative;display:flex;align-items:center;flex:1 1 0;min-width:0;flex-direction:{{ co.dir }}">
-                              <span style="width:30px;flex:0 0 30px;text-align:center;font-size:14px;color:#B9B4AF;visibility:{{ co.arrowVis }}">{{ co.arrow }}</span>
-                              <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 0;min-width:0">
-                                <sc-for list="{{ co.nodes }}" as="nd" hint-placeholder-count="2">
-                                  <div style="position:relative">
-                                    <button type="button" onMouseEnter="{{ nd.over }}" onMouseLeave="{{ nd.out }}" onFocus="{{ nd.over }}" onBlur="{{ nd.out }}" onClick="{{ nd.on2 }}" style="display:flex;align-items:center;gap:11px;width:100%;padding:9px 14px 9px 10px;border:1px solid {{ nd.border }};border-radius:14px;background:{{ nd.bg }};text-align:left;box-shadow:{{ nd.shadow }};transform:{{ nd.lift }};transition:background 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease">
-                                      <sc-if value="{{ nd.hasIcon }}" hint-placeholder-val="{{ true }}">
-                                        <img src="{{ nd.icon }}" alt="" style="width:34px;height:34px;flex:0 0 auto;object-fit:contain">
-                                      </sc-if>
-                                      <sc-if value="{{ nd.noIcon }}" hint-placeholder-val="{{ false }}">
-                                        <span style="width:34px;height:34px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(31,138,112,0.32);font-family:'LXGW WenKai GB',serif;font-size:16px;color:{{ nd.dot }}">{{ nd.initial }}</span>
-                                      </sc-if>
-                                      <span style="min-width:0;display:flex;flex-direction:column;gap:2px">
-                                        <span style="font-size:13.5px;font-weight:700;line-height:1.3;letter-spacing:-0.02em;color:{{ nd.ink }}">{{ nd.name }}</span>
-                                        <sc-if value="{{ nd.isHub }}" hint-placeholder-val="{{ false }}">
-                                          <span style="font-size:11px;font-weight:700;color:{{ nd.hubInk }}">{{ nd.hub }}</span>
-                                        </sc-if>
-                                      </span>
-                                    </button>
-                                    <sc-if value="{{ nd.open }}" hint-placeholder-val="{{ false }}">
-                                      <div style="position:absolute;z-index:40;top:calc(100% + 9px);left:{{ nd.anchorL }};right:{{ nd.anchorR }};width:320px;max-width:86vw;padding:18px 20px;border-radius:18px;background:#131E2C;box-shadow:0 22px 46px rgba(19,30,44,0.32);animation:npexPop 190ms cubic-bezier(0.2,0.8,0.2,1) both;pointer-events:none">
-                                        <p style="margin:0 0 6px;font-size:10.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4FC3A1">{{ nd.branch }}</p>
-                                        <p style="margin:0 0 3px;font-size:17px;font-weight:700;letter-spacing:-0.02em;color:#E7EDF4">{{ nd.name }}</p>
-                                        <p style="margin:0;font-size:12.5px;color:#E4C08F">{{ nd.unlock }}</p>
-                                        <sc-if value="{{ nd.hasDesc }}" hint-placeholder-val="{{ false }}">
-                                          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.8;color:#C6D2E0">{{ nd.desc }}</p>
-                                        </sc-if>
-                                        <sc-if value="{{ nd.hasEffects }}" hint-placeholder-val="{{ false }}">
-                                          <ul style="list-style:none;margin:12px 0 0;padding:11px 0 0;border-top:1px solid rgba(231,237,244,0.16);display:flex;flex-direction:column;gap:7px">
-                                            <sc-for list="{{ nd.effects }}" as="ef" hint-placeholder-count="2">
-                                              <li style="position:relative;padding-left:16px;font-size:13px;line-height:1.65;color:#E7EDF4">
-                                                <span style="position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:#4FC3A1"></span>
-                                                <span>{{ ef.s }}</span>
-                                              </li>
-                                            </sc-for>
-                                          </ul>
-                                        </sc-if>
-                                      </div>
-                                    </sc-if>
-                                  </div>
-                                </sc-for>
+                        <div style="position:relative">
+                          <sc-for list="{{ br.rows }}" as="nd" hint-placeholder-count="4">
+                            <div style="position:relative;display:flex;align-items:flex-start;gap:20px;padding:0 0 30px">
+                              <span style="flex:0 0 auto;width:56px;height:56px;display:flex;align-items:center;justify-content:center">
+                                <sc-if value="{{ nd.hasIcon }}" hint-placeholder-val="{{ true }}">
+                                  <img src="{{ nd.icon }}" alt="" style="display:block;width:56px;height:56px;object-fit:contain;opacity:{{ nd.iconOpacity }}">
+                                </sc-if>
+                                <sc-if value="{{ nd.noIcon }}" hint-placeholder-val="{{ false }}">
+                                  <span style="font-family:'LXGW WenKai GB',serif;font-size:22px;line-height:1;color:#146A5A;opacity:{{ nd.iconOpacity }}">{{ nd.initial }}</span>
+                                </sc-if>
+                              </span>
+                              <div style="flex:1 1 auto;min-width:0;padding-top:2px">
+                                <p style="margin:0 0 3px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px">
+                                  <span style="font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:1.35;color:{{ nd.ink }}">{{ nd.name }}</span>
+                                  <sc-if value="{{ nd.isHub }}" hint-placeholder-val="{{ false }}">
+                                    <span style="padding:3px 10px;border-radius:999px;background:#E4F3EC;font-size:11px;font-weight:700;color:#146A5A">{{ nd.hub }}</span>
+                                  </sc-if>
+                                </p>
+                                <p style="margin:0;font-size:13px;line-height:1.6;color:#7A5C0B">{{ nd.unlock }}</p>
+                                <sc-if value="{{ nd.hasEffects }}" hint-placeholder-val="{{ true }}">
+                                  <ul style="list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:7px">
+                                    <sc-for list="{{ nd.effects }}" as="ef" hint-placeholder-count="2">
+                                      <li style="position:relative;padding-left:17px;max-width:74ch;font-size:15px;line-height:1.75;color:#3A3B3B">
+                                        <span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2FA98A"></span>
+                                        <span>{{ ef.s }}</span>
+                                      </li>
+                                    </sc-for>
+                                  </ul>
+                                </sc-if>
+                                <sc-if value="{{ nd.hasDesc }}" hint-placeholder-val="{{ false }}">
+                                  <p style="margin:12px 0 0;max-width:66ch;font-family:'LXGW WenKai GB',serif;font-size:15px;line-height:1.85;color:#5F5E5D">{{ nd.desc }}</p>
+                                </sc-if>
                               </div>
-                              <sc-if value="{{ co.tail }}" hint-placeholder-val="{{ false }}">
-                                <div style="position:absolute;left:{{ co.tailL }};right:{{ co.tailR }};top:calc(50% + 30px);bottom:-1px;display:flex;flex-direction:column;align-items:center;pointer-events:none;color:#B9B4AF">
-                                  <span style="width:1px;flex:1 1 auto;background:#DDD8D3"></span>
-                                  <span style="font-size:16px;line-height:1;margin-top:-4px">↓</span>
-                                </div>
-                              </sc-if>
                             </div>
                           </sc-for>
                         </div>
-                        </sc-for>
                       </div>
                     </sc-for>
                   </section>
@@ -1018,7 +996,6 @@
                   </section>
                 </sc-if>
 
-              </div>
             </div>
           </div>
         </sc-if>
@@ -1660,9 +1637,9 @@ class Component extends DCLogic {
     var self = this;
     var zh = lang !== "en";
     var defs = [
+      { key: "bullets", head: zh ? "兵种特性" : "Unit traits", bullet: true },
       { key: "abilities", head: zh ? "技能" : "Abilities" },
-      { key: "attrs", head: zh ? "部队属性" : "Unit attributes" },
-      { key: "bullets", head: zh ? "兵种特性" : "Unit traits", bullet: true }
+      { key: "attrs", head: zh ? "部队属性" : "Unit attributes" }
     ];
     var hv = this.state.skillHover;
     var out = [];
@@ -1941,7 +1918,6 @@ class Component extends DCLogic {
           var r = self.rowForm(t);
           return { name: r.k, desc: r.v, arrow: "▲", arrowInk: "#1F8A70", bulletBg: "#F1F7F4", bulletBorder: "#DCEAE3" };
         });
-        if (cr.recruit && cr.recruit.length) clists.push({ head: d.ui.secRecruit, rows: cr.recruit.map(self.rowForm), empty: false });
 
         var forms = cr.forms || [];
         var statRows = (cr.statRows || []).map(function (x) {
@@ -1950,64 +1926,29 @@ class Component extends DCLogic {
 
         /* skill tree */
         var branches = [];
-        var hv = self.state.skillHover;
         if (cr.tree && cr.tree.branches) {
           cr.tree.branches.forEach(function (b) {
-            /* 只列本 mod 原创的技能线；原版原样复用的链不列，魔法线例外（阵容是本 mod 的排列组合） */
-            if (b.reuse && b.id !== "magic") return;
-            var cols = (b.cols || []).map(function (col, ci) {
-              return {
-                notFirst: ci > 0,
-                nodes: col.map(function (n) {
-                  var key = "tree:" + b.id + ":" + n.id;
-                  var on = hv === key;
-                  /* 整条线都是复用节点时（魔法线）不做灰化，避免与上方线条色调不一致 */
-                  var greyed = n.reuse && b.id !== "magic";
-                  return {
-                    anchorL: ci === 0 ? "0px" : "auto", anchorR: ci === 0 ? "auto" : "0px",
-                    name: n.name, icon: n.icon || self.iconFor(n.name), hasIcon: !!(n.icon || self.iconFor(n.name)), noIcon: !(n.icon || self.iconFor(n.name)),
-                    initial: (n.name || "?").slice(0, 1),
-                    isHub: !!n.hub, hub: n.hub ? (zh ? "需 " + n.hub : n.hub) : "",
-                    bg: on ? "#0F1A26" : (greyed ? "#F3F1EE" : "#FFFFFF"),
-                    border: on ? "#0F1A26" : "#E5E1DD",
-                    shadow: on ? "0 12px 26px rgba(19,30,44,0.22)" : "none",
-                    lift: on ? "translateY(-2px)" : "none",
-                    dot: on ? "#4FC3A1" : (greyed ? "#C7C7C0" : "#D4AF37"),
-                    ink: on ? "#E7EDF4" : (greyed ? "#5F5E5D" : "#1B1C1C"),
-                    hubInk: on ? "#4FC3A1" : "#146A5A",
-                    open: on, branch: b.label,
-                    unlock: n.unlock || (zh ? "复用节点" : "Reused node"),
-                    hasDesc: !!n.desc, desc: n.desc || "",
-                    hasEffects: !!(n.effects && n.effects.length), effects: n.effects || [],
-                    over: self.skillOver(key), out: self.skillOut(), on2: self.skillToggle(key)
-                  };
-                })
-              };
-            });
-            /* 每行最多 3 组，换行处由右侧箭头引到下一行 */
-            /* 每行最多 3 组；奇数行反向排列（牛耕式），衔接更顺 */
-            var lines = [];
-            for (var q = 0, li = 0; q < cols.length; q += 3, li++) {
-              var rtl = li % 2 === 1;
-              var chunk = cols.slice(q, q + 3).map(function (co, ci) {
-                return Object.assign({}, co, {
-                  arrowVis: ci > 0 ? "visible" : "hidden",
-                  arrow: rtl ? "←" : "→",
-                  /* 首组箭头本就隐藏：让占位留在左侧，节点便与上一行末组同侧对齐 */
-                  dir: rtl && ci > 0 ? "row-reverse" : "row",
-                  /* 换行竖线要落在节点正下方，故跳过该组的箭头槽 */
-                  tailL: rtl && ci > 0 ? "0px" : "30px",
-                  tailR: rtl && ci > 0 ? "30px" : "0px"
+            /* 只列本 mod 原创的技能线；原版复用的链（含魔法线）不列 */
+            if (b.reuse) return;
+            var rows = [];
+            (b.cols || []).forEach(function (col) {
+              col.forEach(function (n) {
+                var icon = n.icon || self.iconFor(n.name);
+                var greyed = !!n.reuse;
+                rows.push({
+                  name: n.name,
+                  icon: icon, hasIcon: !!icon, noIcon: !icon,
+                  initial: (n.name || "?").slice(0, 1),
+                  isHub: !!n.hub, hub: n.hub ? (zh ? "需 " + n.hub : n.hub) : "",
+                  unlock: n.unlock || (zh ? "复用节点" : "Reused node"),
+                  hasDesc: !!n.desc, desc: n.desc || "",
+                  hasEffects: !!(n.effects && n.effects.length), effects: n.effects || [],
+                  ink: greyed ? "#5F5E5D" : "#1B1C1C",
+                  iconOpacity: greyed ? "0.5" : "1"
                 });
               });
-              var wraps = q + 3 < cols.length;
-              if (wraps && chunk.length) chunk[chunk.length - 1] = Object.assign({}, chunk[chunk.length - 1], { tail: true });
-              /* 每行都补足 3 个等宽槽位（空槽在反向行落到视觉左侧），
-                 于是换行处的 ↓ 与下一行首组严格落在同一槽位里 */
-              while (chunk.length < 3) chunk.push({ nodes: [], arrowVis: "hidden", arrow: "", dir: "row" });
-              lines.push({ cols: chunk, wraps: wraps, dir: rtl ? "row-reverse" : "row" });
-            }
-            if (lines.length || b.pending) branches.push({ label: b.label, sub: b.sub || "", pending: !!b.pending, lines: lines });
+            });
+            if (rows.length || b.pending) branches.push({ label: b.label, sub: b.sub || "", pending: !!b.pending, rows: rows });
           });
         }
 
@@ -2041,7 +1982,7 @@ class Component extends DCLogic {
           hasBullets: !!cbullets.length, bullets: cbullets, bulletHead: zh ? "特性" : "Traits",
           hasGear: !!cr.gear, gear: cr.gear || "",
           hasSkillsNote: !!cr.skillsNote, skillsNote: cr.skillsNote || "",
-          hasTree: branches.length > 0, treeNote: (cr.tree && cr.tree.note) || "", branches: branches,
+          hasTree: branches.length > 0, treeNote: (cr.tree && cr.tree.note) || "", treeNoteSeg: (cr.tree && cr.tree.note_seg) || [], branches: branches,
           hasChapters: chapters.length > 0, chapterTabs: chapterTabs,
           ch: {
             n: chCur.n || "", title: chCur.title || "", bond: chCur.bond || "", goal: chCur.goal || "",

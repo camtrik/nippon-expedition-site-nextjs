@@ -1,0 +1,102 @@
+{
+  "_comment": "站点自己的词表（ROADMAP 决定 3d 重写）。形状照设计稿 design/远征尼朋官网.dc.html 的 S.ui：每个叶子是 {zh, en} 同字段，和 content/ 其余部分一致。页面标题不在这里——由 generateMetadata() 从 ui.nav.* 和 ui.site 拼出来，手填两份会漂移。",
+
+  "ui": {
+    "site": { "zh": "远征尼朋", "en": "Nippon Expedition" },
+    "siteFull": { "zh": "远征尼朋 · 玉海舰队", "en": "Nippon Expedition · The Jade Sea Fleet" },
+    "langHtml": { "zh": "zh-CN", "en": "en" },
+    "ogLocale": { "zh": "zh_CN", "en": "en_US" },
+    "navAria": { "zh": "主导航", "en": "Main navigation" },
+    "skipToContent": { "zh": "跳到正文", "en": "Skip to content" },
+
+    "nav": {
+      "overview": { "zh": "简介", "en": "Overview" },
+      "lore": { "zh": "背景故事", "en": "Lore" },
+      "codex": { "zh": "图鉴", "en": "Codex" },
+      "log": { "zh": "更新记录", "en": "Changelog" },
+      "faq": { "zh": "常见问题", "en": "FAQ" },
+      "stats": { "zh": "兼容性", "en": "Compatibility" }
+    },
+
+    "workshop": { "zh": "创意工坊", "en": "Workshop" },
+    "workshopUrl": {
+      "zh": "https://steamcommunity.com/workshop/filedetails/?id=3790908242",
+      "en": "https://steamcommunity.com/workshop/filedetails/?id=3790908523"
+    },
+    "subscribe": { "zh": "在创意工坊订阅", "en": "Subscribe on the Workshop" },
+    "wsOpen": { "zh": "在工坊打开", "en": "Open on the Workshop" },
+    "latest": { "zh": "最新版本", "en": "Latest" },
+    "footerDeployed": { "zh": "最后部署：", "en": "Last deployed: " },
+
+    "heroActionsLabel": { "zh": "从这里开始", "en": "Start here" },
+    "packsTitle": { "zh": "可选子 mod", "en": "Optional submods" },
+    "packsHint": {
+      "zh": "点击卡片前往 Steam 创意工坊",
+      "en": "Tap a card to open it on the Steam Workshop"
+    },
+    "packKind": { "zh": "子 mod", "en": "Submod" },
+
+    "forkLabel": { "zh": "两条都能打完", "en": "Both can be finished" },
+    "moreLabel": { "zh": "详情", "en": "Details" },
+    "shareLabel": { "zh": "复制本节链接", "en": "Copy link" },
+    "copied": { "zh": "已复制", "en": "Copied" },
+
+    "tabUnits": { "zh": "兵种", "en": "Units" },
+    "tabChars": { "zh": "人物", "en": "Characters" },
+    "groupFleet": { "zh": "玉海舰队", "en": "Jade Sea Fleet" },
+    "groupNippon": { "zh": "尼朋本地", "en": "Nippon locals" },
+
+    "logViewsLabel": { "zh": "显示哪些更新记录", "en": "Which entries to show" },
+    "logMain": { "zh": "本体", "en": "Main mod" },
+    "logSubmod": { "zh": "子 mod", "en": "Submods" },
+    "types": {
+      "release": { "zh": "版本发布", "en": "Release" },
+      "content": { "zh": "内容更新", "en": "Content" },
+      "balance": { "zh": "平衡调整", "en": "Balance" },
+      "hotfix": { "zh": "紧急修复", "en": "Hotfix" }
+    },
+    "warnLabel": { "zh": "注意", "en": "Note" },
+    "empty": { "zh": "还没有更新记录。", "en": "No entries yet." },
+    "untranslated": {
+      "zh": "本条目暂无中文版本，以下为英文原文。",
+      "en": "No English version of this entry yet — showing the Chinese original."
+    },
+
+    "faqCurrent": { "zh": "答案对应 v{version}", "en": "Answers current as of v{version}" },
+    "faqTailLink": { "zh": "更新记录", "en": "changelog" }
+  },
+
+  "tagLabels": {
+    "main": { "zh": "本体", "en": "Main mod" },
+    "stronger-ai": { "zh": "AI 强化", "en": "Stronger AI" },
+    "nrs-compat": { "zh": "NRS 兼容包", "en": "NRS compat" },
+    "cathay-compat": { "zh": "震旦兼容包", "en": "Cathay compat" },
+    "yinyin-compat": { "zh": "胤隐兼容包", "en": "Yin-Yin compat" },
+    "wuh-compat": { "zh": "兵戈天下兼容包", "en": "War under Heaven compat" }
+  },
+
+  "faqCount": {
+    "one": { "zh": "1 问", "en": "1 question" },
+    "other": { "zh": "{n} 问", "en": "{n} questions" }
+  },
+
+  "faqStatus": {
+    "updated": { "zh": "v{version} 已更新", "en": "Updated in v{version}" },
+    "fixed": { "zh": "v{version} 已修复", "en": "Fixed in v{version}" }
+  },
+
+  "pageDesc": {
+    "home": {
+      "zh": "《战锤3》mod「远征尼朋 · 玉海舰队」：新的震旦可玩派系、远征同伴系统、8 个新兵种，以及两条分叉的长期胜利路线。",
+      "en": "A new playable Grand Cathay faction for Total War: WARHAMMER III: the Expedition Companions system, 8 new units, and two long victories that fork."
+    },
+    "changelog": {
+      "zh": "《战锤3》mod「远征尼朋 · 玉海舰队」的版本更新记录，含本体与各个子 mod。",
+      "en": "Version history for the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet and its submods."
+    },
+    "faq": {
+      "zh": "《战锤3》mod「远征尼朋 · 玉海舰队」的常见问题：商队与建筑的解锁条件、合邦、与其他 mod 的兼容，以及后续计划。",
+      "en": "Frequently asked questions about the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet: unlock conditions, confederation, compatibility with other mods, and what is planned."
+    }
+  }
+}

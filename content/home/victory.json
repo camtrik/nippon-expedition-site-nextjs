@@ -4,7 +4,13 @@
       "zh": "胜利目标",
       "en": "Victory Objectives"
     },
+    "_comment": "胜利目标正文全部是游戏内原文。kind / name / quote / goals 来自 ../nippon_expedition/ 的战役任务文本；三处 outcome 抄自 loc 表 text/db/cth_npex_victory.loc.tsv 与 localization/en/text/db/!cth_npex_en_victory.loc.tsv 的 effect_bundles_localised_description_cth_npex_bundle_victory_{foothold,overseas_empire,celestial_bulwark}。⚠️ 路线 B 的目标名是「天朝守护」、达成后的称号是「极东屏藩」——两个都是原文，不是笔误，别\"修\"。⚠️ 两条长期路线并行不互斥，版式和文案都不能暗示二选一。note.en 是建站时写的（note.zh 出自 _docs/lore/战役人物与派系设计.md §2），未经作者审校。",
+    "note": {
+      "zh": "短期胜利是两条长期胜利的共同前提。**两条长期路线是并列的，不是二选一**——同一局战役里可以先后打完两条。",
+      "en": "The short victory is the shared prerequisite for both long victories. **The two long routes run in parallel, not either-or** — a single campaign can finish both, one after the other."
+    },
     "short": {
+      "tag": "S",
       "kind": {
         "zh": "短期胜利",
         "en": "Short Victory"
@@ -26,7 +32,11 @@
           "zh": "通过直接占领、仆从协议或军事同盟，控制武士国度、日升之地与关东环陆全境",
           "en": "Control Samurai's Domain, Sun's Origin and the Eastern Circuit by occupation, vassalage or military alliance"
         }
-      ]
+      ],
+      "outcome": {
+        "zh": "对尼朋本土的大名们而言，沈长风仍是外来者；对那些厌倦战火的人而言，她已经是唯一能兑现秩序的人。",
+        "en": "To the daimyo of Nippon itself, Shen Changfeng remains an outsider; to those weary of war, she is already the only one who can deliver order."
+      }
     },
     "routes": [
       {
@@ -52,7 +62,11 @@
             "zh": "控制北星道、北陸道、屿北、艾利提斯失落群岛、百渡、南皋鲜、蛮荒迷域与无际环沼全境",
             "en": "Control the Hokusei Arc, Hokurikudo, North Isle, the Lost Isles of Elithis, the Hundred Counties, Nam Khosun, the Primal Labyrinth and the Great Enveloping Swamp"
           }
-        ]
+        ],
+        "outcome": {
+          "zh": "远东海域终于有了共同的主人。而这个新兴帝国与古老震旦天朝的未来犹未可知。",
+          "en": "The far eastern seas have a common master at last. What the future holds for this rising empire and for ancient Grand Cathay remains to be seen."
+        }
       },
       {
         "tag": "B",
@@ -77,7 +91,11 @@
             "zh": "控制北星道、申原、玉江三角洲、黎山、大运河、巨蛇河口与奸之林全境",
             "en": "Control the Hokusei Arc, the Plains of Xen, the Jade River Delta, Mount Li, The Great Canal, the Serpent Estuary and the Jungles of Chi'an"
           }
-        ]
+        ],
+        "outcome": {
+          "zh": "海盗、鼠患与边陲诸敌相继败退，震旦的边境终于得以平息。",
+          "en": "Pirates, the Skaven blight and the foes of the frontier have been beaten back one after another, and the borders of Cathay have found peace at last."
+        }
       }
     ]
   }

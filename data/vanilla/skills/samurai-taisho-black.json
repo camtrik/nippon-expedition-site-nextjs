@@ -479,6 +479,10 @@
       "visible_in_ui": true,
       "parents": [
         {
+          "node": "cth_npex_skill_node_admiral_campaign_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
           "node": "wh3_main_skill_node_cth_generic_campaign_1_1",
           "link_type": "SUBSET_REQUIRED"
         },

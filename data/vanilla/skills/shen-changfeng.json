@@ -5,7 +5,7 @@
   "set_key": "cth_npex_skill_set_shen_changfeng",
   "agent_type": "general",
   "agent_subtype": "cth_npex_shen_changfeng",
-  "node_count": 62,
+  "node_count": 63,
   "vanilla_skill_count": 48,
   "nodes": [
     {
@@ -58,6 +58,17 @@
       "skill": "cth_npex_skill_shen_texing",
       "tier": 0,
       "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_shen_innate_dummy",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_shen_innate_dummy",
+      "tier": 0,
+      "indent": 7,
       "points_on_creation": "1",
       "required_num_parents": "0",
       "visible_in_ui": false,
@@ -187,7 +198,7 @@
       "skill": "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord",
       "tier": 2,
       "indent": 3,
-      "points_on_creation": "1",
+      "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": []

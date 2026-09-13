@@ -1,0 +1,63 @@
+{
+  "unit": "cth_npex_jade_sea_sailors_0",
+  "name_cn": "玉海潮勇",
+  "slug": "jade-sea-sailors",
+  "doc": "_docs/data/units/玉海潮勇兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla"
+    },
+    {
+      "ref": "wh3_main_unit_passive_defensive_stance",
+      "source": "vanilla"
+    },
+    {
+      "ref": "wh_dlc03_unit_passive_drunken",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "formed_attack"
+    },
+    {
+      "ref": "hide_forest"
+    },
+    {
+      "ref": "yang"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "装备盾牌",
+      "ref": "shielded",
+      "section": "特性"
+    },
+    {
+      "doc_name": "宁和：阳",
+      "ref": "yang",
+      "section": "特性"
+    },
+    {
+      "doc_name": "水生一族",
+      "ref": "aquatic",
+      "section": "特性"
+    },
+    {
+      "doc_name": "保持阵型",
+      "ref": "formed_attack",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "阴阳调和",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "unit": "cth_npex_kirin_0",
+  "name_cn": "麒麟",
+  "slug": "kirin",
+  "doc": "_docs/data/units/麒麟兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_thunder_echo",
+      "source": "npex"
+    },
+    {
+      "ref": "wh3_main_mount_bound_celestial_lightning",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "causes_fear"
+    },
+    {
+      "ref": "causes_terror"
+    },
+    {
+      "ref": "fatigue_immune"
+    },
+    {
+      "ref": "immune_to_psychology"
+    },
+    {
+      "ref": "strider"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "引发惊骇",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "破甲杀伤（近战）",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "迅捷如风",
+      "ref": "very_fast",
+      "section": "特性"
+    },
+    {
+      "doc_name": "大型战兽",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "精力充沛",
+      "ref": "fatigue_immune",
+      "section": "特性"
+    },
+    {
+      "doc_name": "引发惊骇",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "引发恐惧",
+      "ref": "causes_fear",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "心理免疫",
+      "ref": "immune_to_psychology",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "精力充沛",
+      "ref": "fatigue_immune",
+      "section": "特性"
+    },
+    {
+      "doc_name": "全地形适行",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "攻城者",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ]
+}

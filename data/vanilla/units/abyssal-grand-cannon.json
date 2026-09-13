@@ -1,0 +1,49 @@
+{
+  "unit": "cth_npex_abyssal_grand_cannon_0",
+  "name_cn": "沧溟巨炮",
+  "slug": "abyssal-grand-cannon",
+  "doc": "_docs/data/units/沧溟巨炮兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh3_main_unit_passive_battle_harmony_yin",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "yin"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "魔法弹药",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "双弹种",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "骤雨·临空炸散",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "宁和：阴",
+      "ref": "yin",
+      "section": "特性"
+    },
+    {
+      "doc_name": "攻城者",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "宁和：阴",
+      "ref": "yin",
+      "section": "特性"
+    }
+  ]
+}

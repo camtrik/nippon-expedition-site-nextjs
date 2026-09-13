@@ -1,0 +1,43 @@
+{
+  "unit": "cth_npex_teppo_samurai_0",
+  "name_cn": "铁炮武士",
+  "slug": "teppo-samurai",
+  "doc": "_docs/data/units/铁炮武士兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_passive_teppo_drill",
+      "source": "npex"
+    },
+    {
+      "ref": "cth_npex_unit_passive_bushido",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "装备重甲",
+      "ref": "armoured",
+      "section": "特性"
+    },
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "反步兵部队",
+      "ref": "anti_infantry",
+      "section": "特性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    }
+  ]
+}

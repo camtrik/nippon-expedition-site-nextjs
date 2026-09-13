@@ -24,6 +24,9 @@
     },
     {
       "ref": "immune_to_psychology"
+    },
+    {
+      "ref": "yin"
     }
   ],
   "traits_from_doc": [
@@ -76,6 +79,11 @@
       "doc_name": "精力充沛",
       "ref": "fatigue_immune",
       "section": "部队属性"
+    },
+    {
+      "doc_name": "宁和：阴",
+      "ref": "yin",
+      "section": "特性"
     }
   ]
 }

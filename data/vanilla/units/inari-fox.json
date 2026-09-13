@@ -1,0 +1,32 @@
+{
+  "unit": "cth_npex_inari_fox_0",
+  "name_cn": "稻荷灵狐使者",
+  "slug": "inari-fox",
+  "doc": "_docs/data/units/稻荷灵狐使者兵种设计.md",
+  "abilities": [],
+  "attributes_from_db": [
+    {
+      "ref": "formed_attack"
+    },
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "魔法攻击",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "保持阵型",
+      "ref": "formed_attack",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    }
+  ]
+}

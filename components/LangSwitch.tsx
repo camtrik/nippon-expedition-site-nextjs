@@ -12,9 +12,14 @@
  * prefetch={false} 也救不了）。所以这里直接链到规范地址（getPathname 算出来的），
  * 并在点击时自己写 NEXT_LOCALE cookie——不写的话 proxy 会按旧 cookie 把 `/faq` 再送回 `/en/faq`。
  * prefetch={false} 同理：预取发生在 cookie 更新之前，取回来的会是另一种语言。
+ *
+ * #hash 要跟着带过去：HashSync 滚动时只改地址栏，usePathname 里没有它，href 里也就没有。
+ * 所以点击时现读 location.hash 拼上再导航。带修饰键的点击（新标签页打开）照常走默认行为。
  */
 import NextLink from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useLocale } from 'next-intl'
+import type { MouseEvent } from 'react'
 
 import { getPathname, usePathname } from '@/i18n/navigation'
 import { localeCookie, routing } from '@/i18n/routing'
@@ -29,27 +34,40 @@ function rememberLocale(locale: Locale) {
 export function LangSwitch() {
   const pathname = usePathname()
   const locale = useLocale()
+  const router = useRouter()
+
+  function onSwitch(e: MouseEvent<HTMLAnchorElement>, l: Locale, href: string) {
+    rememberLocale(l)
+    if (!location.hash || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+    e.preventDefault()
+    router.push(href + location.hash, { scroll: false })
+  }
+
   return (
     <div className="lang-switch">
-      {routing.locales.map((l) =>
-        l === locale ? (
-          <span key={l} className="lang-switch__item lang-switch__item--current">
-            {LOCALE_META[l].label}
-          </span>
-        ) : (
+      {routing.locales.map((l) => {
+        if (l === locale) {
+          return (
+            <span key={l} className="lang-switch__item lang-switch__item--current">
+              {LOCALE_META[l].label}
+            </span>
+          )
+        }
+        const href = getPathname({ href: pathname, locale: l })
+        return (
           <NextLink
             key={l}
             className="lang-switch__item"
-            href={getPathname({ href: pathname, locale: l })}
+            href={href}
             hrefLang={LOCALE_META[l].hreflang}
-            onClick={() => rememberLocale(l)}
+            onClick={(e) => onSwitch(e, l, href)}
             prefetch={false}
             scroll={false}
           >
             {LOCALE_META[l].label}
           </NextLink>
-        ),
-      )}
+        )
+      })}
     </div>
   )
 }

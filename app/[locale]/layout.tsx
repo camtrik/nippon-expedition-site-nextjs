@@ -3,6 +3,7 @@ import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 
 import '../globals.css'
 
+import { HashSync } from '@/components/HashSync'
 import { SiteFooter } from '@/components/SiteFooter'
 import { SiteNav } from '@/components/SiteNav'
 import { routing } from '@/i18n/routing'
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: LayoutProps<'/[locale]'>) {
             </main>
             <SiteFooter />
           </div>
+          <HashSync />
         </NextIntlClientProvider>
       </body>
     </html>

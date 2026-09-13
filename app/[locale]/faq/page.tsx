@@ -29,7 +29,7 @@ export default function FaqPage() {
 
         <div className="faq-bands">
           {faq.sections.map((section) => (
-            <section className="rail faq-band" key={section.slug} id={section.slug}>
+            <section className="rail faq-band" key={section.slug} id={section.slug} data-anchor>
               <div className="rail__head">
                 <h2 className="rail__title">{pick(section.title, locale)}</h2>
                 {/* 单复数交给 ICU（messages 里的 faqCount），不用自己分 one / other */}
@@ -40,7 +40,8 @@ export default function FaqPage() {
                   {section.items.map((item) => (
                     // ⚠️ id 是 q-<slug>，slug 直接来自 content/faq.json。
                     // 这些地址散在工坊评论里，上线之后一个都不许改。
-                    <li className="faq-item" key={item.slug} id={anchorFor(item.slug)}>
+                    // data-anchor="open"：只有展开时 HashSync 才把它写进地址栏
+                    <li className="faq-item" key={item.slug} id={anchorFor(item.slug)} data-anchor="open">
                       <details>
                         <summary className="faq-summary">
                           <span className="faq-q">

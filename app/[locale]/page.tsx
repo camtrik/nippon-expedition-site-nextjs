@@ -78,10 +78,13 @@ export default function HomePage() {
   )
 }
 
-/** 左栏标题 + 右栏内容。id 就是分享锚点——用旧站那套裸 id（#overview…#credits）。 */
+/**
+ * 左栏标题 + 右栏内容。id 就是分享锚点——用旧站那套裸 id（#overview…#credits）。
+ * data-anchor 让 HashSync 在滚到这里时把地址栏改成 #id。
+ */
 function Band({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
-    <section className="band" id={id}>
+    <section className="band" id={id} data-anchor>
       <div className="measure rail">
         <div className="rail__head">
           <h2 className="rail__title">{title}</h2>
@@ -310,7 +313,7 @@ function Victory() {
   const locale = useLocale()
   const t = useTranslations()
   return (
-    <section className="band plate--night" id="victory">
+    <section className="band plate--night" id="victory" data-anchor>
       <div className="measure rail">
         <div className="rail__head">
           <h2 className="rail__title">{pick(victory.title, locale)}</h2>

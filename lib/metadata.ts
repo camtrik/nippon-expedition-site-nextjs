@@ -1,37 +1,41 @@
 // generateMetadata 的共用部分。契约照旧站 site/partials/head.html：
 // canonical + 三条 hreflang（zh-Hans / en / x-default 指中文）+ og + twitter。
 import type { Metadata } from 'next'
+import { getLocale, getTranslations } from 'next-intl/server'
 
 import harbour from '@/assets/site/harbour-1800.webp'
-import { pageDesc, ui } from '@/lib/content/ui'
-import { DEFAULT_LANG, LANGS, hrefFor, pick, type Lang } from '@/lib/i18n'
+import { getPathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
+import { LOCALE_META, type Locale } from '@/lib/i18n'
 import { SITE_ORIGIN, pageById, type PageId } from '@/lib/site'
 
-export function buildMetadata(lang: Lang, id: PageId): Metadata {
+export async function buildMetadata(id: PageId): Promise<Metadata> {
+  const locale = await getLocale()
+  const t = await getTranslations()
   const page = pageById(id)
-  const site = pick(ui.site, lang)
-  const title =
-    id === 'overview' ? pick(ui.siteFull, lang) : `${pick(ui.nav[page.nav], lang)} · ${site}`
-  const description = pick(pageDesc[page.desc], lang)
+  const hrefIn = (l: Locale) => getPathname({ locale: l, href: page.href })
+
+  const title = id === 'overview' ? t('siteFull') : `${t(`nav.${page.nav}`)} · ${t('site')}`
+  const description = t(`pageDesc.${page.desc}`)
 
   const languages = Object.fromEntries([
-    ...LANGS.map((l) => [l === 'zh' ? 'zh-Hans' : 'en', hrefFor(l, page.path)]),
+    ...routing.locales.map((l) => [LOCALE_META[l].hreflang, hrefIn(l)]),
     // x-default 指中文：这是作者自己的语言，也是工坊主条目的语言
-    ['x-default', hrefFor(DEFAULT_LANG, page.path)],
+    ['x-default', hrefIn(routing.defaultLocale)],
   ])
 
   return {
     metadataBase: new URL(SITE_ORIGIN),
     title,
     description,
-    alternates: { canonical: hrefFor(lang, page.path), languages },
+    alternates: { canonical: hrefIn(locale), languages },
     openGraph: {
       type: 'website',
-      siteName: pick(ui.siteFull, lang),
+      siteName: t('siteFull'),
       title,
       description,
-      locale: pick(ui.ogLocale, lang),
-      url: hrefFor(lang, page.path),
+      locale: LOCALE_META[locale].ogLocale,
+      url: hrefIn(locale),
       images: [{ url: harbour.src, width: harbour.width, height: harbour.height }],
     },
     twitter: { card: 'summary_large_image', title, description },

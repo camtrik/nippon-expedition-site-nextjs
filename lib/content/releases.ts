@@ -10,7 +10,8 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import type { List, ListItem, Root } from 'mdast'
 
-import { DEFAULT_LANG, LANGS, type Lang } from '@/lib/i18n'
+import { routing } from '@/i18n/routing'
+import type { Locale } from '@/lib/i18n'
 import { segsFrom, type Inline } from './inline'
 import { FrontMatter, type FrontMatterData } from './schema'
 
@@ -27,7 +28,7 @@ export type SubmodBody = { lede?: Inline; changes: Change[] }
 
 type Base = {
   source: string
-  tags: string[]
+  tags: FrontMatterData['tags']
   sortDate: string
   launchDate: string
 }
@@ -36,14 +37,14 @@ export type MainEntry = Base & {
   version: string
   date?: string
   type: 'release' | 'content' | 'balance' | 'hotfix'
-  bodies: Partial<Record<Lang, MainBody>>
+  bodies: Partial<Record<Locale, MainBody>>
 }
 export type SubmodEntry = Base & {
   channel: 'submod'
-  title: Partial<Record<Lang, string>>
+  title: Partial<Record<Locale, string>>
   url?: string
   type?: 'release' | 'content' | 'balance' | 'hotfix'
-  bodies: Partial<Record<Lang, SubmodBody>>
+  bodies: Partial<Record<Locale, SubmodBody>>
 }
 export type Entry = MainEntry | SubmodEntry
 
@@ -164,14 +165,14 @@ function collect(): Entry[] {
   const bases = [...new Set(files.map((f) => f.replace(/\.(zh|en)\.md$/, '')))].sort()
 
   const entries = bases.map<Entry>((source) => {
-    const per = new Map<Lang, { fm: FrontMatterData; content: string }>()
-    for (const lang of LANGS) {
+    const per = new Map<Locale, { fm: FrontMatterData; content: string }>()
+    for (const lang of routing.locales) {
       const file = `${source}.${lang}.md`
       if (files.includes(file)) per.set(lang, readFrontMatter(file))
     }
-    const zh = per.get(DEFAULT_LANG)
+    const zh = per.get(routing.defaultLocale)
     // 缺中文是错误、缺英文只是回落——旧站也是这么分的（cli.py 只 warn）
-    if (!zh) throw new Error(`content/releases/${source}：缺 .${DEFAULT_LANG}.md`)
+    if (!zh) throw new Error(`content/releases/${source}：缺 .${routing.defaultLocale}.md`)
 
     const fm = zh.fm
     const dates = bodyDates(zh.content)
@@ -216,7 +217,7 @@ function collect(): Entry[] {
   })
 }
 
-function wrap<T>(source: string, lang: Lang, fn: () => T): T {
+function wrap<T>(source: string, lang: Locale, fn: () => T): T {
   try {
     return fn()
   } catch (e) {
@@ -238,11 +239,11 @@ export const latestReleased = mainReleases.find((r) => r.version && r.date)
 /** 取某语言的正文；没有就回落到中文，并告诉调用方要挂「暂无译文」的提示。 */
 export function bodyFor<T extends Entry>(
   entry: T,
-  lang: Lang,
-): { body: NonNullable<T['bodies'][Lang]>; fallback: boolean } {
+  lang: Locale,
+): { body: NonNullable<T['bodies'][Locale]>; fallback: boolean } {
   const own = entry.bodies[lang]
-  if (own) return { body: own as NonNullable<T['bodies'][Lang]>, fallback: false }
-  const zh = entry.bodies[DEFAULT_LANG]
+  if (own) return { body: own as NonNullable<T['bodies'][Locale]>, fallback: false }
+  const zh = entry.bodies[routing.defaultLocale]
   if (!zh) throw new Error(`${entry.source}：一份正文都没有`)
-  return { body: zh as NonNullable<T['bodies'][Lang]>, fallback: true }
+  return { body: zh as NonNullable<T['bodies'][Locale]>, fallback: true }
 }

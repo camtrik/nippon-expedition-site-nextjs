@@ -136,67 +136,13 @@ export const Faq = obj({
   tail: Bilingual,
 })
 
-// ---- content/ui.json --------------------------------------------------------
-
-export const Ui = obj({
-  ui: obj({
-    site: Bilingual,
-    siteFull: Bilingual,
-    langHtml: Bilingual,
-    ogLocale: Bilingual,
-    navAria: Bilingual,
-    skipToContent: Bilingual,
-    nav: obj({
-      overview: Bilingual,
-      lore: Bilingual,
-      codex: Bilingual,
-      log: Bilingual,
-      faq: Bilingual,
-      stats: Bilingual,
-    }),
-    workshop: Bilingual,
-    workshopUrl: Bilingual,
-    subscribe: Bilingual,
-    wsOpen: Bilingual,
-    latest: Bilingual,
-    footerDeployed: Bilingual,
-    heroActionsLabel: Bilingual,
-    packsTitle: Bilingual,
-    packsHint: Bilingual,
-    packKind: Bilingual,
-    forkLabel: Bilingual,
-    moreLabel: Bilingual,
-    shareLabel: Bilingual,
-    copied: Bilingual,
-    tabUnits: Bilingual,
-    tabChars: Bilingual,
-    groupFleet: Bilingual,
-    groupNippon: Bilingual,
-    logViewsLabel: Bilingual,
-    logMain: Bilingual,
-    logSubmod: Bilingual,
-    types: obj({
-      release: Bilingual,
-      content: Bilingual,
-      balance: Bilingual,
-      hotfix: Bilingual,
-    }),
-    warnLabel: Bilingual,
-    empty: Bilingual,
-    untranslated: Bilingual,
-    faqCurrent: Bilingual,
-    faqTailLink: Bilingual,
-  }),
-  tagLabels: z.record(z.string(), Bilingual),
-  faqCount: obj({ one: Bilingual, other: Bilingual }),
-  faqStatus: obj({ updated: Bilingual, fixed: Bilingual }),
-  pageDesc: obj({ home: Bilingual, changelog: Bilingual, faq: Bilingual }),
-})
-
 // ---- content/releases/*.{zh,en}.md 的 front matter ---------------------------
 
 export const RELEASE_TYPES = ['release', 'content', 'balance', 'hotfix'] as const
 export const CHANNELS = ['main', 'submod'] as const
+/** 更新记录能打的标签。每个标签在 messages/*.json 的 tagLabels 里都要有一条——键名对不上是编译错误。 */
+export const TAGS = ['main', 'stronger-ai', 'nrs-compat', 'cathay-compat', 'yinyin-compat', 'wuh-compat'] as const
+export type Tag = (typeof TAGS)[number]
 
 export const FrontMatter = z
   .strictObject({
@@ -207,7 +153,7 @@ export const FrontMatter = z
     channel: z.enum(CHANNELS).default('main'),
     url: z.string().optional(),
     type: z.enum(RELEASE_TYPES).optional(),
-    tags: z.array(z.string()).default([]),
+    tags: z.array(z.enum(TAGS)).default([]),
   })
   .refine((v) => Boolean(v.version) || Boolean(v.title), {
     message: 'front matter 需要 version，或者一个 title（不跟本体版本号走的条目）',
@@ -229,5 +175,4 @@ export type CompatData = z.infer<typeof Compat>
 export type CreditsData = z.infer<typeof Credits>
 export type FaqData = z.infer<typeof Faq>
 export type FaqItemData = z.infer<typeof FaqItem>
-export type UiData = z.infer<typeof Ui>
 export type FrontMatterData = z.infer<typeof FrontMatter>

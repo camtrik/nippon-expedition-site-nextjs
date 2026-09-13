@@ -1,0 +1,64 @@
+{
+  "site": "Nippon Expedition",
+  "siteFull": "Nippon Expedition · The Jade Sea Fleet",
+  "navAria": "Main navigation",
+  "skipToContent": "Skip to content",
+  "nav": {
+    "overview": "Overview",
+    "lore": "Lore",
+    "codex": "Codex",
+    "log": "Changelog",
+    "faq": "FAQ",
+    "stats": "Compatibility"
+  },
+  "workshop": "Workshop",
+  "workshopUrl": "https://steamcommunity.com/workshop/filedetails/?id=3790908523",
+  "subscribe": "Subscribe on the Workshop",
+  "wsOpen": "Open on the Workshop",
+  "latest": "Latest",
+  "footerDeployed": "Last deployed: ",
+  "heroActionsLabel": "Start here",
+  "packsTitle": "Optional submods",
+  "packsHint": "Tap a card to open it on the Steam Workshop",
+  "packKind": "Submod",
+  "forkLabel": "Both can be finished",
+  "moreLabel": "Details",
+  "shareLabel": "Copy link",
+  "copied": "Copied",
+  "tabUnits": "Units",
+  "tabChars": "Characters",
+  "groupFleet": "Jade Sea Fleet",
+  "groupNippon": "Nippon locals",
+  "logViewsLabel": "Which entries to show",
+  "logMain": "Main mod",
+  "logSubmod": "Submods",
+  "types": {
+    "release": "Release",
+    "content": "Content",
+    "balance": "Balance",
+    "hotfix": "Hotfix"
+  },
+  "warnLabel": "Note",
+  "empty": "No entries yet.",
+  "untranslated": "No English version of this entry yet — showing the Chinese original.",
+  "faqCurrent": "Answers current as of v{version}",
+  "faqTailLink": "changelog",
+  "tagLabels": {
+    "main": "Main mod",
+    "stronger-ai": "Stronger AI",
+    "nrs-compat": "NRS compat",
+    "cathay-compat": "Cathay compat",
+    "yinyin-compat": "Yin-Yin compat",
+    "wuh-compat": "War under Heaven compat"
+  },
+  "faqCount": "{n, plural, one {# question} other {# questions}}",
+  "faqStatus": {
+    "updated": "Updated in v{version}",
+    "fixed": "Fixed in v{version}"
+  },
+  "pageDesc": {
+    "home": "A new playable Grand Cathay faction for Total War: WARHAMMER III: the Expedition Companions system, 8 new units, and two long victories that fork.",
+    "changelog": "Version history for the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet and its submods.",
+    "faq": "Frequently asked questions about the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet: unlock conditions, confederation, compatibility with other mods, and what is planned."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "site": "远征尼朋",
+  "siteFull": "远征尼朋 · 玉海舰队",
+  "navAria": "主导航",
+  "skipToContent": "跳到正文",
+  "nav": {
+    "overview": "简介",
+    "lore": "背景故事",
+    "codex": "图鉴",
+    "log": "更新记录",
+    "faq": "常见问题",
+    "stats": "兼容性"
+  },
+  "workshop": "创意工坊",
+  "workshopUrl": "https://steamcommunity.com/workshop/filedetails/?id=3790908242",
+  "subscribe": "在创意工坊订阅",
+  "wsOpen": "在工坊打开",
+  "latest": "最新版本",
+  "footerDeployed": "最后部署：",
+  "heroActionsLabel": "从这里开始",
+  "packsTitle": "可选子 mod",
+  "packsHint": "点击卡片前往 Steam 创意工坊",
+  "packKind": "子 mod",
+  "forkLabel": "两条都能打完",
+  "moreLabel": "详情",
+  "shareLabel": "复制本节链接",
+  "copied": "已复制",
+  "tabUnits": "兵种",
+  "tabChars": "人物",
+  "groupFleet": "玉海舰队",
+  "groupNippon": "尼朋本地",
+  "logViewsLabel": "显示哪些更新记录",
+  "logMain": "本体",
+  "logSubmod": "子 mod",
+  "types": {
+    "release": "版本发布",
+    "content": "内容更新",
+    "balance": "平衡调整",
+    "hotfix": "紧急修复"
+  },
+  "warnLabel": "注意",
+  "empty": "还没有更新记录。",
+  "untranslated": "本条目暂无中文版本，以下为英文原文。",
+  "faqCurrent": "答案对应 v{version}",
+  "faqTailLink": "更新记录",
+  "tagLabels": {
+    "main": "本体",
+    "stronger-ai": "AI 强化",
+    "nrs-compat": "NRS 兼容包",
+    "cathay-compat": "震旦兼容包",
+    "yinyin-compat": "胤隐兼容包",
+    "wuh-compat": "兵戈天下兼容包"
+  },
+  "faqCount": "{n, plural, other {# 问}}",
+  "faqStatus": {
+    "updated": "v{version} 已更新",
+    "fixed": "v{version} 已修复"
+  },
+  "pageDesc": {
+    "home": "《战锤3》mod「远征尼朋 · 玉海舰队」：新的震旦可玩派系、远征同伴系统、8 个新兵种，以及两条分叉的长期胜利路线。",
+    "changelog": "《战锤3》mod「远征尼朋 · 玉海舰队」的版本更新记录，含本体与各个子 mod。",
+    "faq": "《战锤3》mod「远征尼朋 · 玉海舰队」的常见问题：商队与建筑的解锁条件、合邦、与其他 mod 的兼容，以及后续计划。"
+  }
+}

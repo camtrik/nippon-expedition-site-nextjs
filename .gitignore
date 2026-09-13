@@ -52,3 +52,6 @@ docs/local
 
 # Claude Code 的个人覆盖（settings.json 本身入库，local 那份不入）
 .claude/settings.local.json
+
+# Claude Code 的 worktree 是嵌套的完整检出，git add -A 会把它当成内嵌仓库
+.claude/worktrees/

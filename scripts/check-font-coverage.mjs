@@ -1,5 +1,5 @@
 // 缺字护栏。旧站是 sitegen/fonts.py 的 check_font_coverage()，扫最终 HTML；
-// 新站没有「一次渲染全部」那一步，改成扫内容源——content/ 下所有 JSON 字符串和
+// 新站没有「一次渲染全部」那一步，改成扫内容源——content/ 和 messages/ 下所有 JSON 字符串和
 // releases 正文。少一个字就构建失败并列出来。
 //
 // 为什么不能省：next/font 不提供这个。缺字不报错就静默回退到系统字体，
@@ -8,7 +8,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
 const COVERAGE = 'assets/fonts/coverage.txt'
-const ROOTS = ['content']
+const ROOTS = ['content', 'messages']
 
 const covered = new Set([...readFileSync(COVERAGE, 'utf8')])
 

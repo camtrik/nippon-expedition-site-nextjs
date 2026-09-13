@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // 上游 vercel-plugin 的克隆，不入库也不归我们管（见 .agents/README.md）。
+    // 不排掉的话 pnpm lint 会刷出两百多条别人代码里的报错，自己的问题反而看不见。
+    ".agents/vendor/**",
   ]),
 ]);
 

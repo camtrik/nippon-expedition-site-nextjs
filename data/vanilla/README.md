@@ -4,6 +4,13 @@
 由 `nippon_expedition/tools/build_site_vanilla_export.py` 生成，**不要手改**——
 改了下次重跑就没了。数值或技能树一变，重跑一次即可。
 
+**位置**：站点仓库 `data/vanilla/`，2026-09-14 从 `design/source/vanilla/` 挪过来。
+`design/source/` 放的是冻结的设计稿素材，管线产物不该混在里面。这里是**原料**，
+只给站点的 `pnpm export:codex` 读，页面不直接引用：页面实际用到的图标由导出脚本
+按 DB key 挑进 `assets/icons/`，文案写进 `content/codex/`。整批图标不放
+`assets/`（动态 import 会把整个目录打进构建产物），也不放 `content/`（字体覆盖
+检查会递归扫描它）。
+
 本文是**给站点看的**：产物是什么、渲染要注意什么。**要动这条导出管线本身**
 （加人物、加兵种、改取图规则）看 mod 仓库的
 `_docs/ai_docs/原版图标与文案导出到站点.md`，那份是操作手册。
@@ -68,8 +75,8 @@ icons/effect_bundles/     1 张，效果图
 图标（`character_attack.png` 之类）。要标"原版素材"就看 `icon.source`，
 要标"原版技能"就看外层 `source`。
 
-`icon.source: "npex"` 的 33 条不在本目录，`file` 指向 `design/source` 里已有的
-那份（`nippon_expedition/ui/skill_icons/...`），路径相对 `design/source/`，
+`icon.source: "npex"` 的 33 条不在本目录，`file` 指向站点仓库 `design/source` 里已有的
+那份（`nippon_expedition/ui/skill_icons/...`），路径相对站点仓库的 `design/source/`，
 不是相对本目录——注意那边的文件名**去掉了 `cth_npex_` 前缀**。
 
 **3. 图标尺寸不统一，别按目录假定，读 `icon.size`。** 每条的尺寸都是从 PNG
@@ -127,7 +134,10 @@ python tools/build_site_vanilla_export.py
 ```
 
 `--check` 只校验不写盘，退出码非 0 表示有解析不了的条目。
-`--out <目录>` 换输出位置（默认就是本目录）。
+`--out <目录>` 换输出位置。⚠️ 挪目录之后，脚本的 `DEFAULT_OUT` 还指着旧的
+`design/source/vanilla/`；另外有两处用「输出目录的上一级」反推 `design/source`
+（`_snapshot_icon()` 和 `check()` 第 2 条），也会断。这几处在 mod 仓库 backlog
+`_docs/backlog/0914_站点图鉴缺原版导出.md` 里排着，改完之前别直接重跑。
 
 加人物：在脚本的 `SUBJECTS` 里加一行 `node set key -> (slug, 中文名, role)`。
 加兵种：在 `UNITS` 里加一行 `land_unit key -> (slug, 中文名, 设计文档路径)`。

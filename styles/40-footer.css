@@ -1,0 +1,37 @@
+/* 黑底页脚。设计稿 design/远征尼朋官网.dc.html:1342-1356——一行，不是旧站那种带导语的三段式。 */
+
+.site-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 32px var(--margin-container) 40px;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--dust);
+}
+
+.site-footer__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+
+.site-footer a {
+  color: var(--white);
+  font-weight: 450;
+}
+
+.site-footer a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.site-footer time {
+  font-variant-numeric: tabular-nums;
+}

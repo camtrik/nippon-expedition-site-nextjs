@@ -1,0 +1,251 @@
+/* 更新记录。设计稿 design/远征尼朋官网.dc.html:1005-1130。
+   页签用纯 CSS radio（旧站 log/30-views.css 也是这么做的）：视觉和设计稿一样，零 JS。
+   ⚠️ 代价是深链不到子 mod 那一页——设计稿那份是组件 state，同样深链不到。 */
+
+.log-stamp {
+  margin: 0 0 28px;
+}
+
+.log-tabs__radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.log-tabs__bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: max-content;
+  min-height: 56px;
+  margin-bottom: var(--s-1);
+  border-top: 1px solid var(--dust);
+}
+
+.log-tabs__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 26px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--slate);
+  cursor: pointer;
+}
+
+.log-tabs__tab:hover {
+  color: var(--ink);
+}
+
+/* 选中标记：贴着上边那条 1px 横线画一条 2px 的。本体玉色、子 mod 金色。 */
+.log-tabs__tab::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 2px;
+  background: transparent;
+}
+
+.log-tabs__count {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--slate);
+}
+
+.log-view {
+  display: none;
+}
+
+/* radio 在 DOM 里排在最前面，所以后面的兄弟都能被 ~ 选到 */
+#logview-main:checked ~ .log-tabs__bar [for="logview-main"],
+#logview-submod:checked ~ .log-tabs__bar [for="logview-submod"] {
+  color: var(--ink);
+}
+
+#logview-main:checked ~ .log-tabs__bar [for="logview-main"]::before {
+  background: var(--clay);
+}
+
+#logview-submod:checked ~ .log-tabs__bar [for="logview-submod"]::before {
+  background: var(--gold-ink);
+}
+
+#logview-main:checked ~ .log-view--main,
+#logview-submod:checked ~ .log-view--submod {
+  display: block;
+}
+
+/* 键盘走到 radio 时，把焦点圈画在对应的页签上——radio 本身是看不见的 */
+.log-tabs__radio:focus-visible ~ .log-tabs__bar [for="logview-main"],
+.log-tabs__radio:focus-visible ~ .log-tabs__bar [for="logview-submod"] {
+  outline: 2px solid var(--clay);
+  outline-offset: -4px;
+  border-radius: var(--r-xs);
+}
+
+/* ---- 一条记录 ---- */
+
+.release {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter);
+  align-items: flex-start;
+  padding: 40px 0;
+  border-top: 1px solid var(--dust);
+}
+
+.release__head {
+  flex: 1 1 200px;
+  max-width: 280px;
+  min-width: 0;
+}
+
+.release__body {
+  flex: 999 1 420px;
+  min-width: 0;
+  max-width: 76ch;
+}
+
+.release__version {
+  margin: 0 0 var(--s-1);
+  font-family: var(--font-display);
+  font-size: clamp(34px, 3.4vw, 46px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.release__title {
+  margin: 0 0 10px;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.release__date {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  color: var(--slate);
+}
+
+.release__type {
+  margin: 0 0 10px;
+}
+
+.release__ws {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.release__chips {
+  margin-top: 12px;
+}
+
+/* type 徽章的四组底色 / 墨色 */
+.type--release {
+  background: var(--jade-soft);
+  color: var(--clay);
+}
+
+.type--content {
+  background: var(--bone);
+  color: var(--granite);
+}
+
+.type--balance {
+  background: var(--gold-soft);
+  color: var(--gold-ink);
+}
+
+.type--hotfix {
+  background: var(--hotfix-soft);
+  color: var(--down);
+}
+
+.release__lede {
+  margin: 0 0 var(--s-3);
+  font-size: 17.5px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.release__untranslated {
+  margin: 0 0 var(--s-2);
+  padding: 10px 16px;
+  border-radius: var(--r-sm);
+  background: var(--gold-soft);
+  font-size: 13.5px;
+  color: var(--gold-ink);
+}
+
+.release__group {
+  margin-bottom: var(--s-3);
+}
+
+.release__group-head {
+  margin: 0 0 10px;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+}
+
+.release__group-note {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--granite);
+}
+
+/* ---- 子 mod：按日期分条 ---- */
+
+.changes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.changes > li {
+  padding: 20px 0;
+  border-top: 1px solid var(--bone);
+}
+
+.changes > li:first-child {
+  border-top: 0;
+}
+
+/* 顶层条目开头的日期是标签，不是正文——旧站是 .entry-date，这里在结构上就分开了 */
+.entry-date {
+  display: inline-block;
+  margin: 0 0 var(--s-1);
+  padding: 4px 13px;
+  border-radius: var(--r-pill);
+  background: var(--surface-low);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--slate);
+}
+
+.changes__body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.changes__sub {
+  --dot-size: 15px;
+  --dot-r: 4px;
+  --dot-top: 16px;
+  --dot-pad-y: 6px;
+  margin-top: 10px;
+}

@@ -1,0 +1,716 @@
+/* 简介页。设计稿 design/远征尼朋官网.dc.html:73-431。
+   节奏是「夜 → 日 → 夜 → 日」：hero 夜，五个区块日，胜利路线夜，四个参考区块日。
+   ⚠️ 胜利路线夹在 buildings 和 relocations 之间，不是排在九个区块之后——
+   设计稿把它写在 bd.isBuildings 分支里（:367），和旧站 home.html 的顺序一致。 */
+
+/* ---- hero（夜） ---- */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: flex-end;
+  min-height: min(100svh, 880px);
+  padding: 152px 0 64px;
+  overflow: hidden;
+  background: var(--deep);
+}
+
+/* 背景是真的 <img> 不是 CSS background：这样才能走 next/image 拿宽高和 priority */
+.hero__art {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+
+/* 两层渐变：纵向压住上下让字浮出来，横向压左边给正文让位 */
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(19, 30, 44, 0.62) 0%,
+      rgba(19, 30, 44, 0.12) 26%,
+      rgba(19, 30, 44, 0.7) 64%,
+      var(--deep) 99%
+    ),
+    linear-gradient(to right, rgba(19, 30, 44, 0.62) 0%, rgba(19, 30, 44, 0) 62%);
+}
+
+.hero__inner {
+  position: relative;
+  text-shadow: 0 1px 20px rgba(19, 30, 44, 0.6);
+}
+
+.hero__crest {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--s-3);
+  border-radius: var(--r-xs);
+  object-fit: contain;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero__eyebrow {
+  margin: 0 0 var(--s-2);
+  letter-spacing: 0.1em;
+  color: var(--ember);
+}
+
+.hero__title {
+  margin: 0;
+  display: block;
+}
+
+/* 字标是字面量 "Nippon Expedition"，不是内容字段——中英两版都用这一个 */
+.hero__wordmark {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(58px, 11.5vw, 152px);
+  line-height: 0.82;
+  letter-spacing: 0.006em;
+  text-transform: uppercase;
+  color: var(--foam);
+}
+
+.hero__name {
+  display: block;
+  margin-top: var(--s-2);
+  font-size: clamp(18px, 2.2vw, 27px);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  line-height: 1.3;
+  color: var(--ember);
+}
+
+.hero__premise {
+  margin: var(--s-4) 0 0;
+  max-width: 44ch;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.75;
+  color: var(--foam-dim);
+}
+
+.hero__disclaimer {
+  margin: var(--s-2) 0 0;
+  font-size: 13px;
+  color: rgba(166, 181, 199, 0.75);
+}
+
+.hero__actions {
+  margin-top: var(--s-5);
+}
+
+.hero__actions-label {
+  margin: 0 0 12px;
+  letter-spacing: 0.14em;
+  color: var(--foam-dim);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding: 11px 22px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--ember);
+  background: var(--ember);
+  color: var(--deep);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cta:hover {
+  background: var(--ember-lift);
+  border-color: var(--ember-lift);
+  color: var(--deep);
+  text-decoration: none;
+}
+
+.hero__latest {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: var(--s-5);
+  font-size: 13px;
+  color: var(--foam-dim);
+  letter-spacing: 0.02em;
+}
+
+.hero__latest:hover {
+  color: var(--foam-dim);
+  text-decoration: none;
+}
+
+.hero__latest::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: var(--r-circle);
+  background: var(--jade-lift);
+}
+
+.hero__latest strong {
+  color: var(--foam);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero__latest-more {
+  color: var(--jade-lift);
+}
+
+/* ---- 日板上的区块 ---- */
+
+.band {
+  padding: 76px 0;
+}
+
+.plate--night {
+  background: var(--deep);
+  color: var(--foam);
+  padding: 96px 0;
+}
+
+.plate--night .rail__title {
+  color: var(--foam);
+}
+
+/* ---- 简介 ---- */
+
+.overview__plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overview__plain > li {
+  padding: 20px 0;
+  border-top: 1px solid var(--dust);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--granite);
+}
+
+.overview__packs-head {
+  margin: var(--s-4) 0 4px;
+}
+
+.overview__packs-hint {
+  margin: 0 0 var(--s-2);
+  font-size: 13.5px;
+  color: var(--slate);
+}
+
+.packs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+}
+
+.pack {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  background: var(--white);
+  border: 1px solid var(--rule-card);
+  border-radius: var(--r-card);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.pack__kind {
+  align-self: flex-start;
+  margin: 0 0 10px;
+  background: var(--bone);
+  color: var(--slate);
+}
+
+.pack__name {
+  margin: 0 0 var(--s-1);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.35;
+}
+
+.pack__note {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--granite);
+}
+
+.pack__points {
+  --dot-size: 14.5px;
+  --dot-pad-y: 6px;
+  --dot-top: 15px;
+  --dot-r: 4px;
+  margin-top: 10px;
+}
+
+.pack__cta {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed var(--rule-dash);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.pack__foot {
+  margin-top: 14px;
+}
+
+.overview__requires {
+  margin: var(--s-3) 0 0;
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--granite);
+}
+
+/* ---- 传奇领主 ---- */
+
+.lords {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lords > li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  align-items: flex-start;
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--dust);
+}
+
+.lords__art {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  /* ⚠️ 设计稿这里写的是 flex:0 0 auto——那一行三张卡的宽度（3×132+2×16=428px）
+     会在手机上把整页顶出横向滚动条。允许收缩，卡片自己换行。 */
+  flex: 0 1 auto;
+  max-width: 100%;
+  order: 0;
+}
+
+.lords__copy {
+  flex: 999 1 320px;
+  min-width: 0;
+  order: 1;
+}
+
+/* 美术位左右交替。设计稿按行索引算（i % 2），不是数据里的 side 字段。 */
+.lords > li:nth-child(even) .lords__art {
+  order: 2;
+}
+
+.lords__kind {
+  margin: 0 0 6px;
+  color: var(--slate);
+}
+
+.lords__kind--legendary {
+  color: var(--signal);
+}
+
+.lords__name {
+  margin: 0 0 6px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+.lords__body {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--granite);
+}
+
+/* ---- 兵牌 / 人物卡 ---- */
+
+.card {
+  display: block;
+  width: 132px;
+  text-align: center;
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 240 / 520;
+  object-fit: contain;
+  border-radius: var(--r-xs);
+}
+
+.card__name {
+  display: block;
+  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 1.35;
+  color: var(--granite);
+}
+
+/* ---- 远征同伴 ---- */
+
+.bond {
+  padding: var(--s-3) var(--s-4);
+  margin-bottom: var(--s-4);
+  border-radius: var(--r-lg);
+  background: var(--surface-low);
+}
+
+.bond__label {
+  margin: 0 0 10px;
+}
+
+.bond__tiers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 var(--s-2);
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.bond__arrow {
+  color: var(--signal);
+}
+
+.bond__notes {
+  --dot-size: 14.5px;
+  --dot-pad-y: 5px;
+  --dot-top: 14px;
+  --dot-r: 4px;
+}
+
+.companions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+}
+
+.companion__scene {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--r-md);
+  background: var(--deep);
+}
+
+.companion__name {
+  margin: 12px 0 var(--s-1);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+.chapters {
+  list-style: none;
+  margin: var(--s-1) 0 0;
+  padding: 0;
+}
+
+.chapters > li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: var(--s-1);
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--granite);
+}
+
+.chapters__num {
+  color: var(--signal);
+  font-weight: 700;
+}
+
+/* ---- 兵种 ---- */
+
+.unit-group + .unit-group {
+  margin-top: var(--s-4);
+}
+
+.units {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+/* ---- 建筑 ---- */
+
+.buildings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buildings > li {
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--dust);
+}
+
+.buildings h3 {
+  margin: 0 0 var(--s-1);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+.buildings p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--granite);
+}
+
+/* ---- 胜利路线（夜） ---- */
+
+.victory__note {
+  margin: 0 0 var(--s-4);
+  font-size: var(--prose-size);
+  line-height: var(--prose-leading);
+  color: var(--foam-dim);
+}
+
+.victory__card {
+  padding: var(--s-4);
+  border: 1px solid var(--deep-line);
+  border-radius: var(--r-lg);
+  background: var(--deep-lift);
+}
+
+.victory__card--short {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.victory__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: var(--s-2);
+  border: 1px solid var(--deep-line);
+  border-radius: var(--r-circle);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--ember);
+}
+
+.victory__kind {
+  margin: 0 0 var(--s-1);
+  color: var(--foam-dim);
+}
+
+.victory__name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--foam);
+}
+
+.victory__quote {
+  margin: var(--s-2) 0;
+  padding-left: var(--s-2);
+  border-left: 2px solid rgba(228, 192, 143, 0.45);
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--foam-dim);
+}
+
+.victory__goals {
+  --dot-color: var(--jade-lift);
+  --dot-ink: var(--foam-dim);
+  --dot-size: 15px;
+  --dot-top: 16px;
+  --dot-pad-y: 6px;
+  --dot-r: 5px;
+}
+
+.victory__outcome {
+  margin: var(--s-2) 0 0;
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--deep-line);
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--ember);
+}
+
+/*
+  分叉连接件：一条竖线从短期胜利下来，接一个开口朝下的圆角门框，两条长线各挂一边。
+  标签「两条都能打完」压在门框顶上——⚠️ 这句必须有：两条长期路线是并行不互斥的，
+  版式一旦读成二选一就是错的（隔壁 AGENTS.md 特别强调过）。
+*/
+.victory__fork {
+  position: relative;
+  width: calc(50% + 24px);
+  height: 48px;
+  margin: 64px auto 0;
+  border: 1px solid var(--deep-line);
+  border-bottom: 0;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+}
+
+.victory__fork::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -64px;
+  width: 1px;
+  height: 64px;
+  background: var(--deep-line);
+}
+
+.victory__fork-label {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  padding: 4px 14px;
+  border: 1px solid var(--deep-line);
+  border-radius: var(--r-pill);
+  background: var(--deep);
+  font-size: 12px;
+  white-space: nowrap;
+  color: var(--ember);
+}
+
+.victory__routes {
+  list-style: none;
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- 迁都表 ---- */
+
+.table-scroll {
+  overflow-x: auto;
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-card);
+  background: var(--white);
+}
+
+.reloc {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.reloc th,
+.reloc td {
+  padding: 14px 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.reloc thead th {
+  background: var(--surface-low);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--slate);
+  white-space: nowrap;
+}
+
+.reloc tbody tr + tr th,
+.reloc tbody tr + tr td {
+  border-top: 1px solid var(--bone);
+}
+
+.reloc tbody th {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.reloc tbody td {
+  color: var(--granite);
+}
+
+/* ---- AI / 兼容 / 鸣谢 ---- */
+
+.band__lede {
+  margin: 0 0 var(--s-2);
+  font-size: var(--prose-size);
+  line-height: var(--prose-leading);
+  color: var(--granite);
+}
+
+.band__tail {
+  margin: var(--s-2) 0 0;
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--granite);
+}
+
+.credits__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.credits__list a {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: var(--r-pill);
+  background: var(--white);
+  box-shadow: var(--shadow-chip);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.credits__list a:hover {
+  color: var(--clay);
+  text-decoration: none;
+}
+
+/* 只有指针设备才做悬停位移——触屏上这会变成点一下卡片跳一下 */
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 12px 20px rgba(27, 28, 28, 0.24));
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,108 @@
+/* 顶部药丸导航。设计稿 design/远征尼朋官网.dc.html:42-69。
+   ⚠️ 和旧站不同：设计稿去掉了「下滚隐藏」和 IntersectionObserver 的夜/日两套配色，
+   药丸永远是浅色 + 背景模糊，靠 .shell__main 的负边距浮在 hero 上。零 JS。 */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  padding: 20px var(--margin-container);
+  /* 药丸两侧是空的，让它下面的内容还能点到 */
+  pointer-events: none;
+}
+
+.site-nav__pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: 100%;
+  max-width: 880px;
+  padding: 12px 14px 12px 24px;
+  border: 1px solid rgba(199, 199, 192, 0.32);
+  border-radius: var(--r-pill);
+  background: rgba(252, 251, 250, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-nav);
+  pointer-events: auto;
+}
+
+.site-nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+.site-nav__logo:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav__mark {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  object-fit: contain;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.site-nav__link {
+  font-size: 15.5px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
+  white-space: nowrap;
+  color: var(--slate);
+}
+
+.site-nav__link:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav__link[aria-current="page"] {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* 语言开关：当前语言是黑底的 span，另一种是链接（决定 5——切语言是换 URL，不是换 state） */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 1;
+  border: 1px solid var(--dust);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+.lang-switch__item {
+  padding: 6px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--slate);
+}
+
+.lang-switch__item:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lang-switch__item--current {
+  background: var(--primary);
+  color: var(--canvas);
+}

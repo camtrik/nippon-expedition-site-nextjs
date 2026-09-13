@@ -1,0 +1,81 @@
+/* 响应式补丁。
+   ⚠️ 设计稿一条 @media 都没有——它靠 flex:999 + clamp() + minmax(min(100%,Npx),1fr)
+   自适应。那套手法覆盖不到的只有下面这几处，所以这个文件很短，而且应该保持很短：
+   能用 clamp/minmax 解决的就别在这里加断点。 */
+
+/* 左栏标题在窄屏上不该再吸顶——它会一路跟着滚，挡住内容 */
+@media (max-width: 900px) {
+  .rail__head {
+    position: static;
+    max-width: none;
+  }
+
+  .band {
+    padding: 56px 0;
+  }
+
+  .plate--night {
+    padding: 64px 0;
+  }
+
+  .page {
+    padding: 112px 0 64px;
+  }
+}
+
+/* 分叉连接件在单列下没有意义：两条长线是上下排的，门框会指向空处 */
+@media (max-width: 700px) {
+  .victory__fork {
+    width: 1px;
+    height: 40px;
+    margin: 40px auto 0;
+    border: 0;
+    border-left: 1px solid var(--deep-line);
+    border-radius: 0;
+  }
+
+  .victory__fork::before {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --margin-container: 18px;
+    --gutter: 28px;
+  }
+
+  .site-nav {
+    padding: 12px var(--margin-container);
+  }
+
+  .site-nav__pill {
+    gap: 12px;
+    padding: 10px 12px 10px 16px;
+  }
+
+  .site-nav__links {
+    gap: 14px;
+  }
+
+  .site-nav__link {
+    font-size: 14.5px;
+  }
+
+  .hero {
+    padding: 128px 0 48px;
+  }
+
+  .release,
+  .lords > li {
+    gap: var(--s-3);
+  }
+
+  .victory__card {
+    padding: var(--s-3);
+  }
+
+  .bond {
+    padding: var(--s-3) var(--s-2);
+  }
+}

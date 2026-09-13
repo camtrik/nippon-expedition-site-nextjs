@@ -1,0 +1,126 @@
+/* 常见问题。设计稿 design/远征尼朋官网.dc.html:1132-1188。
+   ⚠️ 设计稿是 React 手风琴（<button> + state）。这里换成原生 <details>/<summary>：
+   点击折叠是浏览器行为，零 JS，语义还更好（设计稿那份连 aria-expanded 都没有）。
+   代价是纯 CSS 没法从 :target 强制展开——#q-<slug> 直链靠 layout 里那段内联脚本补。 */
+
+.faq-stamp {
+  margin: 0 0 56px;
+}
+
+.faq-band {
+  padding: 0 0 56px;
+}
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 80ch;
+}
+
+.faq-item {
+  border-top: 1px solid var(--dust);
+}
+
+.faq-summary {
+  display: flex;
+  width: 100%;
+  gap: var(--s-2);
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 22px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Safari 会在 summary 前面画一个三角，去掉——右边有自己的 +/− */
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-q {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.faq-q__text {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.faq-status--updated {
+  background: var(--gold-soft);
+  color: var(--gold-ink);
+}
+
+.faq-status--fixed {
+  background: var(--jade-soft);
+  color: var(--clay);
+}
+
+/* 展开标记。字形由 open 状态决定，不用 JS 换文字。 */
+.faq-glyph {
+  flex: 0 0 auto;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--signal);
+}
+
+.faq-glyph::before {
+  content: "+";
+}
+
+.faq-item details[open] .faq-glyph::before {
+  content: "−";
+}
+
+.faq-answer {
+  padding: 0 0 26px;
+}
+
+.faq-answer p {
+  margin: 0 0 14px;
+  font-size: var(--prose-size);
+  line-height: var(--prose-leading);
+  color: var(--granite);
+}
+
+.faq-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.faq-links a {
+  padding: 7px 16px;
+  border-radius: var(--r-pill);
+  background: var(--white);
+  box-shadow: var(--shadow-chip);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.faq-links a:hover {
+  color: var(--clay);
+  text-decoration: none;
+}
+
+.faq-tail {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--slate);
+}
+
+.faq-tail a {
+  text-decoration: underline;
+}

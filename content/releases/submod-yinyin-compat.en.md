@@ -7,6 +7,7 @@ tags: [yinyin-compat]
 
 You only need this mod if you are also subscribed to **[Roar of the Jade Sea: Yin-Yin, the Sea Dragon](https://steamcommunity.com/sharedfiles/filedetails/?id=2989226363)**.
 
+- 2026-10-01 Updated for 9.0.
 - 2026-08-30 Released. **Cathay factions can now recruit Yin-Yin's units**: Jade Sea Pirates, Jade Sea Teppogumi, Jade Sea Ronin, Ansatsusha, Dragon Fleet Marines, Looted Cannons, Ogre Whalers and the Sea Dragon's Hatamoto.
     - The vanilla Cathay port opens a batch at tier 1 and another at tier 3; Yin-Yin's own Naval Garrison chain goes from Eastern-Provinces-only to buildable by any Cathay faction.
     - The Jade Sea Fleet's flagship gains a Corsair Berth chain, and its existing Naval Cannons chain now recruits Dragon Fleet Marines and Ogre Whalers as well.

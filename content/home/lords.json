@@ -102,6 +102,27 @@
             }
           }
         ]
+      },
+      {
+        "side": "right",
+        "items": [
+          {
+            "rank": "generic",
+            "slug": "fleet-admiral",
+            "kind": {
+              "zh": "通用领主",
+              "en": "Generic lord"
+            },
+            "name": {
+              "zh": "水师提督",
+              "en": "Fleet Admiral"
+            },
+            "body": {
+              "zh": "震旦水师提督，所有震旦派系均可招募。每控制一座主要城市港口增加招募容量；拥有旗舰建筑树。",
+              "en": "A Cathayan naval commander, recruitable by every Cathay faction. Every major city port you control raises your recruitment capacity; comes with a flagship building tree of his own."
+            }
+          }
+        ]
       }
     ]
   }

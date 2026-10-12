@@ -54,9 +54,10 @@ UNITS = {
     "kunikuzushi-oni": "kunikuzushi_oni/kunikuzushi_oni_full.png",
 }
 
-# 人物卡：key -> `_full.png`。⚠️ 多数人物的 `_full` 只有 160–260 px 宽，是游戏兵牌的原尺寸，
-# 这里放大到 240 宽；人物页的大图走下面的 CHAR_FULL。
-CHAR_CARDS = {
+# 人物：key -> `_full.png`（12:26 高清兵牌），和兵种一样同一张出人物卡与人物页大图。
+# 2026-10-12 起七张原本只有 159–257 宽的（沈长风、直虎、纱代、瑟兰娜、伊吹两形、巫女）
+# 已在 mod 那边高清化到约 709×1536（mod 提交 9b6fddc4），和武士大将、水师提督同一规格。
+CHARS = {
     "shen-changfeng": "shen_changfeng/shen_changfeng_full.png",
     "naotora": "tachibana_naotora/tachibana_naotora_full.png",
     "sayo": "sayo/sayo_full.png",
@@ -68,25 +69,6 @@ CHAR_CARDS = {
     "samurai-taisho-03": "samurai_daisho/samurai_taisho_03_full.png",
     "miko": "miko/miko_head1_full.png",
     "fleet-admiral": "admiral/admiral_01_full.png",
-}
-
-# 人物页大图：和兵种页一样用 12:26 的高清兵牌。
-# 武士大将三张与水师提督的 `_full` 本身就是高清兵牌（686–852 宽），直接缩到 640 宽。
-# 其余七张没有高清兵牌：游戏兵牌是母版上头肩那一小块（约 150–250 px 宽），母版里那块并不比兵牌清楚。
-# 所以照武士大将的做法——它的 `_full` 就是 2:3 母版整高裁出的 12:26——从母版整高裁一条 12:26，
-# 第二项是裁切中心的横向位置（占母版宽的比例）。同伴用面板那套带背景的竖图（v2，2026-10-04 重画）。
-CHAR_FULL = {
-    "shen-changfeng": ("shen_changfeng/shen_changfeng_portrait.png", 0.5),
-    "naotora": ("tachibana_naotora/tachibana_naotora_background_vertical.png", 0.5),
-    "sayo": ("sayo/sayo_background_vertical.png", 0.5),
-    "serena": ("serena/serena_background_vertical.png", 0.5),
-    "ibuki": ("ibuki/ibuki_background_vertical.png", 0.5),
-    "ibuki-yokai": ("ibuki/ibuki_yokai_vertical.png", 0.5),
-    "samurai-taisho-01": ("samurai_daisho/samurai_taisho_01_full.png", None),
-    "samurai-taisho-02": ("samurai_daisho/samurai_taisho_02_full.png", None),
-    "samurai-taisho-03": ("samurai_daisho/samurai_taisho_03_full.png", None),
-    "miko": ("miko/miko_head1_portrait.png", 0.5),
-    "fleet-admiral": ("admiral/admiral_01_full.png", None),
 }
 
 # 同伴横幅：任务弹窗插画的 16:9 母版（游戏里的 ui/eventpics 是它的 800×450 缩图）
@@ -108,13 +90,6 @@ def fit(im: Image.Image, size: tuple[int, int]) -> Image.Image:
     im = im.resize((w, h), Image.LANCZOS)
     left, top = (w - tw) // 2, (h - th) // 2
     return im.crop((left, top, left + tw, top + th))
-
-
-def card_strip(im: Image.Image, cx: float) -> Image.Image:
-    """从母版整高裁一条兵牌比例（12:26）的竖条，横向以 cx（占宽比例）为中心，出界就贴边。"""
-    w = round(im.height * CARD[0] / CARD[1])
-    left = min(max(0, round(im.width * cx - w / 2)), im.width - w)
-    return im.crop((left, 0, left + w, im.height))
 
 
 def to_width(im: Image.Image, w: int) -> Image.Image:
@@ -149,16 +124,11 @@ def main() -> None:
         save_webp(torn_card(src, mask), ROOT / "assets/units" / f"{slug}.webp", 90)
         save_webp(to_width(Image.open(src).convert("RGB"), FULL_W), ROOT / "assets/units/full" / f"{slug}.webp", 85)
 
-    print("人物卡")
-    for key, rel in CHAR_CARDS.items():
-        save_webp(torn_card(concepts / rel, mask), ROOT / "assets/chars" / f"{key}.webp", 90)
-
-    print("人物大图")
-    for key, (rel, cx) in CHAR_FULL.items():
-        im = Image.open(concepts / rel).convert("RGB")
-        if cx is not None:
-            im = card_strip(im, cx)
-        save_webp(to_width(im, FULL_W), ROOT / "assets/chars/full" / f"{key}.webp", 85)
+    print("人物")
+    for key, rel in CHARS.items():
+        src = concepts / rel
+        save_webp(torn_card(src, mask), ROOT / "assets/chars" / f"{key}.webp", 90)
+        save_webp(to_width(Image.open(src).convert("RGB"), FULL_W), ROOT / "assets/chars/full" / f"{key}.webp", 85)
 
     print("同伴横幅")
     for slug, rel in SCENES.items():

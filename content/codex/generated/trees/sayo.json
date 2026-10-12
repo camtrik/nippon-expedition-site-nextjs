@@ -870,23 +870,26 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+5（尼朋单位）（英雄所在军队）",
-                  "en": "Melee attack: +5 for Nipponese units (Hero's army)"
+                  "zh": "近战攻击：+4（尼朋单位）（英雄所在军队）",
+                  "en": "Melee attack: +4 for Nipponese units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+5（尼朋单位）（英雄所在军队）",
-                  "en": "Melee defence: +5 for Nipponese units (Hero's army)"
+                  "zh": "近战防御：+4（尼朋单位）（英雄所在军队）",
+                  "en": "Melee defence: +4 for Nipponese units (Hero's army)"
                 },
                 {
-                  "zh": "领导力：+10（尼朋单位）（英雄所在军队）",
-                  "en": "Leadership: +10 for Nipponese units (Hero's army)"
+                  "zh": "领导力：+8（尼朋单位）（英雄所在军队）",
+                  "en": "Leadership: +8 for Nipponese units (Hero's army)"
                 }
               ]
             }
           ],
           "icon": "cth_npex_skill_sayo_generic_nippon.png",
           "reuse": false,
-          "unlock": null,
+          "unlock": {
+            "zh": "角色等级 12 解锁",
+            "en": "Unlocks at rank 12"
+          },
           "hub": null
         },
         {

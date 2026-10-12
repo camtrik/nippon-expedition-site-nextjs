@@ -17,6 +17,8 @@ const eslintConfig = defineConfig([
     ".agents/vendor/**",
     // Claude Code 的 worktree 是另一份完整检出，从主检出里 lint 它只会刷出一堆重复报错。
     ".claude/worktrees/**",
+    // Claude Design 导出的设计稿原样入库，只作参照，不是站点代码。
+    "design/**",
   ]),
 ]);
 

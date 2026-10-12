@@ -1,0 +1,117 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/国崩巨鬼兵种设计.md；desc / story 取 loc unit_description_short_texts / unit_description_historical_texts（中英原文；loc 长文分两段，按单行规则并成一段）；建筑、章节、同伴名照 loc 官方英文。数值依据与原版对照表不收。",
+  "slug": "kunikuzushi-oni",
+  "unit": "cth_npex_kunikuzushi_oni_0",
+  "group": "akatsuki",
+  "name": { "zh": "国崩巨鬼", "en": "Kunikuzushi Oni" },
+  "role": {
+    "zh": "怪物炮击步兵 · T4 · 短程破甲炮击，被近身时金棒反打",
+    "en": "Monstrous cannon infantry · T4 · short-range armour-piercing cannon fire, and a kanabo for anyone who gets too close"
+  },
+  "desc": {
+    "zh": "体魄异常魁梧的高大鬼族，单人即可擎起通常需数人操持的国崩大筒，以近距轰鸣的狂暴炮火与恐怖蛮力粉碎敌阵。",
+    "en": "Towering oni of prodigious strength wield Kunikuzushi cannon alone, shattering enemy ranks with close-range cannon fire and brute force."
+  },
+  "story": [
+    {"zh": "鬼族是尼朋妖怪中最为强横壮硕的一支，而其中那些血脉最为沉厚、体魄格外庞大的魁伟巨鬼，身高可近三米，动辄便有拔木裂石的惊人蛮力。", "en": "The oni are among the mightiest of Nippon's yokai. Those in whom the ancient blood runs strongest grow into hulking giants, standing almost three metres tall and possessed of the strength to uproot trees and split stone."},
+    {"zh": "尼朋曾经引入模仿旧世界的火器，仿铸名为「国崩」的重型大筒。这类火炮管壁厚重、后坐力极猛，寻常人类往往需要两到三名精壮炮手协力垫土筑台、推挽操架方能勉强击发。然而对于巨鬼而言，沉重的国崩大筒在他们粗壮如铁的双臂间不过如同随身手铳般自如，单人便能端起大筒在行进间抵近直射，实心生铁巨弹瞬间便能将敌军与城垛轰成齑粉。", "en": "When firearms from the Old World reached Nippon, its smiths cast heavy cannon in their likeness and named them Kunikuzushi. With thick barrels and a savage recoil, these guns could scarcely be fired without two or three stout men working together to bank up earth, build a platform and heave the carriage into place. Yet in the iron arms of a giant oni, a Kunikuzushi handles as easily as a hand cannon. A single warrior can carry it forward and fire at close quarters, its great balls of cast iron pounding soldiers and battlements alike into dust."}
+  ],
+  "cost": { "recruit": 1800, "upkeep": 450 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "怪物步兵 · 远程（兼顾近战）", "en": "Monstrous infantry · missile (also handy in melee)" } },
+    {
+      "k": { "zh": "武器配置", "en": "Equipment" },
+      "v": { "zh": "大筒「国崩」（实心炮弹，破甲为主）＋金棒", "en": "Kunikuzushi cannon (solid shot, mostly armour-piercing) and kanabo" }
+    },
+    {
+      "k": { "zh": "护甲与盾牌", "en": "Armour and shield" },
+      "v": { "zh": "不着甲，皮糙肉厚（护甲 50）；无盾", "en": "No armour worn, just thick hide (armour 50); no shield" }
+    },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "① 地标「晓行之里」三级「鬼灯楼」（御神木）；② 旗舰「晓行寮」链行 IV「鬼灯舱」（伊吹入队后解锁）；③ 经伊吹的同伴面板以名望征召",
+        "en": "① The Dawnbreakers' Haven landmark at the Sacred Tree, tier 3 building Tower of Oni Lanterns; ② the Oni Lantern Deck, row IV of the Dawnbreakers' Quarters chain aboard the flagship (available once Ibuki has joined); ③ bought with Renown through Ibuki on the Expedition Companions panel"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "① 御神木定居点 3 级并建成鬼灯楼；② 伊吹入队后旗舰提督居所升到行 IV 并建成鬼灯舱；③ 伊吹任务链第叁章「野太刀『无名』」完成（伊吹 12 级）",
+        "en": "① The Sacred Tree at settlement level 3, with the Tower of Oni Lanterns built; ② once Ibuki has joined, upgrade the flagship's Admiral's Residence to open row IV and build the Oni Lantern Deck; ③ completing Ibuki's Chapter III, \"The Nameless Odachi\" (Ibuki at rank 12)"
+      }
+    },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "2 回合", "en": "2 turns" } },
+    {
+      "k": { "zh": "数量限制", "en": "Unit cap" },
+      "v": {
+        "zh": "①② 无上限；③ 第叁章解锁、容量 1，第肆章 +3（其中 1 队直接入列），总容量 4；每队 6 名望",
+        "en": "①② none; ③ capacity 1 from Chapter III and +3 from Chapter IV (one of them joins outright), 4 in all; 6 Renown per unit"
+      }
+    },
+    {
+      "k": { "zh": "建筑加成", "en": "Building bonuses" },
+      "v": {
+        "zh": "鬼灯楼：新募等级 +1、招募成本 −15%、维持费 −5%（全阵营）；鬼灯舱：新募等级 +1、维持费 −10%（本军）；两处可叠加",
+        "en": "Tower of Oni Lanterns: +1 rank for new recruits, recruitment cost -15%, upkeep -5% (faction-wide); Oni Lantern Deck: +1 rank for new recruits, upkeep -10% (this army); the two stack"
+      }
+    }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "32", "n": { "zh": "接敌时妖力迸发 +10 → 42", "en": "42 in melee with Yokai Surge" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "30", "n": { "zh": "接敌时妖力迸发 +8 → 38", "en": "38 in melee with Yokai Surge" } },
+    { "k": { "zh": "近战武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "45／55", "n": { "zh": "金棒，合计 100", "en": "Kanabo, 100 in total" } },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "30" },
+    {
+      "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
+      "v": "33／88",
+      "n": { "zh": "合计 121；物理伤害", "en": "121 in total; physical damage" }
+    },
+    { "k": { "zh": "远程对大型加成", "en": "Missile bonus vs Large" }, "v": "+30", "n": { "zh": "对大型单发合计 151", "en": "151 per shot against large targets" } },
+    { "k": { "zh": "射程", "en": "Range" }, "v": "275" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "20" },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "13 秒", "en": "13 seconds" } },
+    {
+      "k": { "zh": "炮弹", "en": "Shot" },
+      "v": {
+        "zh": "实心炮弹，落地会弹跳；最多贯穿 3 个目标，遇中型即止；可伤建筑",
+        "en": "Solid shot that bounces on landing; passes through up to 3 targets but is stopped by medium-sized ones; can damage buildings"
+      }
+    },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "50", "n": { "zh": "不着甲，皮糙肉厚", "en": "No armour worn, just thick hide" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "70" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "42" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "448", "n": { "zh": "16 人合计 7168", "en": "7168 across 16 oni" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "16" }
+  ],
+  "traits": [
+    { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "金棒破甲 55 为主", "en": "The kanabo deals mostly armour-piercing damage (55)" } },
+    { "name": { "zh": "远程破甲", "en": "Armour-Piercing Missiles" }, "desc": { "zh": "炮弹约七成为破甲伤害", "en": "Around 70% of each shot's damage is armour-piercing" } },
+    {
+      "name": { "zh": "近战能手", "en": "Decent Melee Combatant" },
+      "desc": {
+        "zh": "远程部队，但被近身也打得动——金棒加妖力迸发",
+        "en": "A missile unit that can still fight back when caught in melee, thanks to its kanabo and Yokai Surge"
+      }
+    }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_yokai_burst": {
+      "zh": "近战接敌期间：近战攻击 +10、近战防御 +8、物理抗性 +10%；脱离近战即失效",
+      "en": "While in melee: melee attack +10, melee defence +8, physical resistance +10%; lost on leaving melee"
+    },
+    "cth_npex_ability_kunikuzushi_brace": {
+      "zh": "手动、仅自身：44 秒内远程破甲伤害 ×1.4、物理抗性 +20%，期间无法移动；冷却 90 秒",
+      "en": "Manual, self only: for 44 seconds, armour-piercing missile damage ×1.4 and physical resistance +20%, but the unit cannot move; 90-second cooldown"
+    }
+  },
+  "attrsExtra": [
+    {
+      "name": { "zh": "攻城者", "en": "Siege Attacker" },
+      "desc": { "zh": "无需攻城器械即可参与攻城", "en": "Can attack city gates, so a siege can begin without waiting for siege equipment" }
+    }
+  ]
+}

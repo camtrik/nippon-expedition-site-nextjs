@@ -1,0 +1,56 @@
+{
+  "unit": "cth_npex_kunikuzushi_oni_0",
+  "name_cn": "国崩巨鬼",
+  "slug": "kunikuzushi-oni",
+  "doc": "_docs/data/units/国崩巨鬼兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_ability_kunikuzushi_brace",
+      "source": "npex"
+    },
+    {
+      "ref": "cth_npex_unit_passive_yokai_burst",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "causes_fear"
+    },
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "远程破甲",
+      "ref": "armour_piercing_ranged",
+      "section": "特性"
+    },
+    {
+      "doc_name": "近战能手",
+      "ref": "decent_melee",
+      "section": "特性"
+    },
+    {
+      "doc_name": "引发恐惧",
+      "ref": "causes_fear",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "攻城者",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ]
+}

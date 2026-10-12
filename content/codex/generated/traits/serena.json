@@ -1,0 +1,43 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "serena"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_serena_texing",
+      "name": {
+        "zh": "海神眷顾",
+        "en": "Favour of the Sea God"
+      },
+      "desc": {
+        "zh": "海神马瑟兰庇佑她所在的舰队，凡她参战的海战全军皆受护佑，她指引的航路亦更长远。",
+        "en": "The Sea God Mathlann watches over her fleet: every naval battle she takes part in brings protection to the whole force, and the routes she charts stretch farther still."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "战略地图移动距离：+5%（英雄所在军队）",
+              "en": "Campaign movement range: +5% (Hero's army)"
+            },
+            {
+              "zh": "近战防御：+4（英雄所在军队）",
+              "en": "Melee defence: +4 (Hero's army)"
+            },
+            {
+              "zh": "特殊保护：+5%（英雄所在军队）",
+              "en": "Ward save: +5% (Hero's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_serena_texing.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

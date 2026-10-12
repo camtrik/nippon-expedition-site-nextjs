@@ -1,0 +1,166 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/lords/沈长风/沈长风角色与数值.md 与 沈长风技能树.md（武器说明参照 镇澜.md / 逆潮.md）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
+  "slug": "shen-changfeng",
+  "rank": "legendary-lord",
+  "name": { "zh": "沈长风", "en": "Shen Changfeng" },
+  "epithet": { "zh": "无冕提督", "en": "The Uncrowned Admiral" },
+  "rankLabel": { "zh": "传奇领主 · 法师", "en": "Legendary Lord · Wizard" },
+  "looks": [{ "key": "shen-changfeng" }],
+  "desc": {
+    "zh": "震旦海军的提督，玉海剑圣。她对来犯之敌绝不留情。",
+    "en": "An admiral of the Cathayan navy, and the Jade Sea Swordmaster. She gives no quarter to any foe who comes against her."
+  },
+  "story": {
+    "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
+    "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇领主", "en": "Legendary Lord" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，兼具近战武将身手", "en": "Wizard, with a warrior's skill in melee" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "战役初始自带（阵营领主）", "en": "Starts the campaign as faction leader" } },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "唯一", "en": "Unique" } }
+  ],
+  "stats": {
+    "forms": [
+      { "zh": "徒步", "en": "On foot" },
+      { "zh": "骑玉龙马", "en": "On Jade Longma" },
+      { "zh": "骑凌涛", "en": "On Tidestrider" }
+    ],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["90", "90", "120"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["65", "65", "65"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["45", "45", "45"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["150／300", "150／300", "150／300"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["40", "70", "85"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["5064", "6064", "6664"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["85", "85", "85"] },
+      {
+        "k": { "zh": "速度", "en": "Speed" },
+        "v": [
+          "38",
+          { "zh": "82（跑）／105（飞）", "en": "82 (run) / 105 (fly)" },
+          { "zh": "125（跑）／143（飞）", "en": "125 (run) / 143 (fly)" }
+        ]
+      }
+    ],
+    "note": {
+      "zh": "三个形态各自独立，装备坐骑即整体切换，数值不叠加。魔法攻击；阳系施法。徒步可于森林中隐蔽；两个骑乘形态可以飞行、引发恐惧。",
+      "en": "Each form stands alone: equipping a mount switches her whole profile, and the numbers do not stack. Magical attacks; casts from the Lore of Yang. Can hide in forests on foot; flies and causes fear in both mounted forms."
+    }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "「镇澜」佩枪与「逆潮」名刀 · 150／300 · 魔法攻击", "en": "Wave-Queller spear and Sakashio blade · 150 / 300 · magical" },
+      "v": {
+        "zh": "魔法属性的近战劈砍，对大型目标武器威力 +20；三个形态共用同一套武器。两件都是她的专属装备，「镇澜」7 级、「逆潮」12 级自动获得",
+        "en": "Magical cutting blows with +20 weapon strength against large targets, the same pair in all three forms. Both are her signature items: Wave-Queller arrives at rank 7, Sakashio at rank 12"
+      }
+    }
+  ],
+  "mounts": [
+    {
+      "k": { "zh": "玉龙马", "en": "Jade Longma" },
+      "v": {
+        "zh": "飞行坐骑；冲锋 +30、生命值 +1000；可以飞行、引发恐惧；不再能于森林中隐蔽",
+        "en": "A flying mount: charge bonus +30 and health +1000. She flies and causes fear, but can no longer hide in forests"
+      }
+    },
+    {
+      "k": { "zh": "凌涛", "en": "Tidestrider" },
+      "v": {
+        "zh": "终极飞行坐骑：护甲升至 120、冲锋 85、生命值再 +600、速度升至 125（跑）／143（飞）；其余差异同玉龙马；获得形态绑定被动「潮随刃动」",
+        "en": "Her ultimate flying mount: armour rises to 120, charge bonus to 85, health by a further +600 and speed to 125 (run) / 143 (fly). Otherwise as the Jade Longma, plus the Tide Follows the Blade passive while she rides it"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "宁和化生：+50%", "en": "Harmony Amplifier: +50%" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "法术吟唱者", "en": "Spellcaster" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "近战专家", "en": "Melee Expert" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "重甲", "en": "Armoured" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "可以飞行", "en": "Flying" }, "v": { "zh": "仅两个骑乘形态", "en": "Both mounted forms only" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "龙之意志", "en": "Will of the Dragons" },
+      "v": { "zh": "光环内友军领导力 +4（原版震旦领主通用被动）", "en": "Leadership +4 for allies within the aura (the standard vanilla Cathay lord passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "奥术导体", "en": "Arcane Conduit" },
+      "v": { "zh": "提升魔法之风储备的回复速度（法师通用被动）", "en": "Faster recovery of the Winds of Magic reserve (the standard wizard passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "潮随刃动", "en": "Tide Follows the Blade" },
+      "v": {
+        "zh": "陷入近战后开始充能，首次约 10 秒、其后每 15 秒自动向身前掀起一次浪涌，每次伤害 33（其中 11 破甲）；只伤敌，不误伤己方；脱离近战即停止充能",
+        "en": "Charges while she is in melee: after about 10 seconds, then every 15, a wave surges out in front of her for 33 damage (11 armour-piercing). It harms only enemies, and stops charging once she leaves melee"
+      },
+      "form": { "zh": "被动 · 仅骑凌涛", "en": "Passive · Tidestrider only" }
+    },
+    {
+      "k": { "zh": "海潮之唤", "en": "Tidecall" },
+      "v": {
+        "zh": "深渊系法术，开局即会施放基础版；技能树法术线起点那一格是升阶：冷却 −30% 并可强化施法，满级冷却 −50%、失控几率 −15%、风耗 −1／−2",
+        "en": "A Lore of the Deep spell she can cast from the start. The first node of her magic line upgrades it: cooldown −30% and overcasting, then at full rank cooldown −50%, miscast chance −15% and Winds of Magic cost −1 / −2"
+      },
+      "form": { "zh": "法术", "en": "Spell" }
+    },
+    {
+      "k": { "zh": "舷侧齐射", "en": "Broadside" },
+      "v": {
+        "zh": "开局自带。指定地面目标，2 秒后落下一轮 18 发炮弹（半径 12 内散布），3 秒内陆续落完，每发 50 伤害（其中 30 破甲）；整场 3 次，冷却 120 秒。与水师提督的同名技能相同",
+        "en": "Known from the start. Target a patch of ground: 2 seconds later a salvo of 18 shots falls within a radius of 12 over 3 seconds, each dealing 50 damage (30 armour-piercing). 3 uses per battle, 120-second cooldown. The same ability as the Fleet Admiral's"
+      },
+      "form": { "zh": "主动", "en": "Active" }
+    },
+    {
+      "k": { "zh": "玉海剑舞", "en": "Jade Blade Dance" },
+      "v": {
+        "zh": "由技能「玉海剑圣」（11 级）解锁：武器杀伤 ×1.25、近战攻击 +10、近战防御 +10、远程格挡 +25%，持续 25 秒、冷却 90 秒，仅作用于自身，不限次数",
+        "en": "Unlocked by the Jade Sea Swordmaster skill (rank 11): weapon damage ×1.25, melee attack +10, melee defence +10 and missile block chance +25% for 25 seconds. 90-second cooldown, self only, unlimited uses"
+      },
+      "form": { "zh": "主动", "en": "Active" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "提升周围友军领导力", "en": "Raises the leadership of nearby allies" } },
+    { "k": { "zh": "精气之风精通", "en": "Mastery of Elemental Winds" }, "v": { "zh": "军中多支部队共有此属性时，法术威力提升", "en": "When several units in the army share it, their spells grow stronger" } }
+  ],
+  "tree": {
+    "subject": "shen-changfeng",
+    "note": {
+      "zh": "只列本 mod 原创的节点。原版复用的法术（阳系为主，点缀两个深渊系法术）、军团与战役三条线不列；战斗线与第一行只列她自己的那几格。",
+      "en": "Only this mod's own nodes are listed. The vanilla magic line (mostly Lore of Yang, with two Lore of the Deep spells), army line and campaign line are left out; on the combat row and the top row only her own nodes are shown."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "个人专属线", "en": "Personal Line" },
+        "sub": {
+          "zh": "起点「玉海剑圣」11 级解锁，附带主动技「玉海剑舞」；其后五格分别强化舰队嫡系、舰队远程兵种、尼朋武士、航海与战术部署，可各自点出，点出任意三格即可取「无冕之师」。「破浪之帅 → 万里长风」是 15 级开放的独立支线，不需要前面的节点。",
+          "en": "Jade Sea Swordmaster opens at rank 11 and brings the Jade Blade Dance ability. The five after it boost the fleet's core troops, its missile troops, Nipponese samurai, seafaring and battle deployment, in any order; any three open The Uncrowned Host. Wavebreaker into The Long Wind is a separate branch from rank 15 that needs nothing before it."
+        }
+      },
+      {
+        "indent": 2,
+        "only": "npex",
+        "label": { "zh": "战斗线", "en": "Combat" },
+        "sub": {
+          "zh": "原版通用的自身强化线，其中只有「镇澜」是她的：7 级自动获得，不花技能点。",
+          "en": "The standard vanilla self-improvement line. Only Wave-Queller is hers, granted automatically at rank 7 without spending a point."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "坐骑与通用节点", "en": "Mounts and General" },
+        "sub": {
+          "zh": "两个坐骑到等级自动获得：玉龙马 7 级、凌涛 16 级。「登峰造极」36 级开放，共 100 级、每级生命值 +1%，用来存放多出来的技能点。",
+          "en": "Both mounts arrive on their own: the Jade Longma at rank 7, the Tidestrider at rank 16. Beyond the Summit opens at rank 36 and has 100 levels of +1% health each, a place for surplus skill points."
+        }
+      }
+    ]
+  }
+}

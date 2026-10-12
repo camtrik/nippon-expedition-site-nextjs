@@ -56,9 +56,63 @@
     "updated": "v{version} 已更新",
     "fixed": "v{version} 已修复"
   },
+  "codexLede": "兵种页共用一套数值版式，人物页共用一套技能树与羁绊版式。名字、技能描述与图标取自游戏文本，数值照 mod 的设计书。",
+  "charGroups": {
+    "legendary-lord": "传奇领主",
+    "legendary-hero": "传奇英雄 · 远征同伴",
+    "generic": "通用领主与英雄"
+  },
+  "notFound": "没有这个条目。",
+  "detail": {
+    "secType": "兵种类型",
+    "secRecruit": "招募",
+    "secStory": "背景故事",
+    "secStats": "数值",
+    "secTraits": "兵种特性",
+    "secCharTraits": "单位特性",
+    "secGameTraits": "特性",
+    "traitsFixed": "开局自带，在角色面板的「特性」一栏里，不占技能点。",
+    "traitsRandom": "招募时从下面 {n} 项里随机得到一项，在角色面板的「特性」一栏里。",
+    "traitsVariant": "{n} 种变体各带其中一项（变体怎么来见上面的解锁条件）。",
+    "traitsShow": "展开全部 {n} 项",
+    "secAbilities": "技能",
+    "secAttrs": "部队属性",
+    "secIdentity": "身份",
+    "secWeapons": "武器",
+    "secMounts": "坐骑",
+    "secTree": "技能树",
+    "secBond": "远征同伴 · 羁绊",
+    "costRecruit": "招募费",
+    "costUpkeep": "维持费",
+    "srcVanilla": "原版",
+    "srcMod": "本 MOD",
+    "reuse": "原版复用",
+    "level": "{n} 级",
+    "levelLast": "… {n} 级",
+    "looks": "外观",
+    "bondEffects": "同伴特性的数值",
+    "bondRewards": "达成奖励"
+  },
+  "lore": {
+    "routesNum": "四"
+  },
+  "compat": {
+    "open": "点击打开工坊页",
+    "via": "经由",
+    "planned": "计划中",
+    "tbd": "待定",
+    "hint": "悬停或点按节点查看说明；点击打开对应的创意工坊页面。",
+    "patches": "兼容包",
+    "connects": "接通：",
+    "langOnlyZh": "仅中文玩家",
+    "langOnlyEn": "仅英文玩家"
+  },
   "pageDesc": {
-    "home": "《战锤3》mod「远征尼朋 · 玉海舰队」：新的震旦可玩派系、远征同伴系统、8 个新兵种，以及两条分叉的长期胜利路线。",
+    "home": "《战锤3》mod「远征尼朋 · 玉海舰队」：新的震旦可玩派系、远征同伴系统、13 个新兵种，以及两条分叉的长期胜利路线。",
     "changelog": "《战锤3》mod「远征尼朋 · 玉海舰队」的版本更新记录，含本体与各个子 mod。",
-    "faq": "《战锤3》mod「远征尼朋 · 玉海舰队」的常见问题：商队与建筑的解锁条件、合邦、与其他 mod 的兼容，以及后续计划。"
+    "faq": "《战锤3》mod「远征尼朋 · 玉海舰队」的常见问题：商队与建筑的解锁条件、合邦、与其他 mod 的兼容，以及后续计划。",
+    "lore": "《战锤3》mod「远征尼朋 · 玉海舰队」的背景故事：沈长风为何抗旨出海、尼朋的乱局，以及战役的两条长期胜利路线。",
+    "codex": "《战锤3》mod「远征尼朋 · 玉海舰队」的兵种与人物图鉴：数值、技能、部队属性、技能树与远征同伴的羁绊。",
+    "compat": "《战锤3》mod「远征尼朋 · 玉海舰队」与其他 mod 的兼容关系：哪些需要兼容包、哪些可直接共存、哪些冲突。"
   }
 }

@@ -47,7 +47,8 @@ FACES = [
     ("LXGWWenKaiGB-Medium.ttf", "lxgw-wenkai-gb-medium"),
 ]
 
-SOURCE_GLOBS = ["content/*.json", "content/home/*.json", "content/releases/*.md", "messages/*.json"]
+# 和 check-font-coverage.mjs 一样递归扫 content/（图鉴在 content/codex/ 底下好几层）
+SOURCE_GLOBS = ["content/**/*.json", "content/**/*.md", "messages/*.json"]
 
 # 模板和将来的条目可能用到、但当前没有哪个文件正好含有的标点与符号。带着很便宜。
 # 「中文」是语言开关里唯一的中文字面量（组件里的，不在 content/）。

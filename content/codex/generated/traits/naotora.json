@@ -1,0 +1,39 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "tachibana-naotora"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_naotora_texing",
+      "name": {
+        "zh": "武士领袖",
+        "en": "Samurai Leader"
+      },
+      "desc": {
+        "zh": "家系战败、领地尽失，她仍是那个亲提双刀率旗本冲阵的当主——名分能被夺走，治军用人的本事夺不走。她驻扎之处，营造有度，刀锋有主。",
+        "en": "Her house defeated and her lands lost, she is still the head of the house who charges into battle with twin blades and her hatamoto at her back; her title may be stripped from her, but her skill in commanding troops cannot be taken. Wherever she makes camp, order takes hold, and every blade knows its master."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "建筑成本：所有建筑-20%（所在行省）",
+              "en": "Construction cost: -20% for all buildings (local province)"
+            },
+            {
+              "zh": "武器威力（近战+远程）：+10%（武士部队）（英雄所在军队）",
+              "en": "Weapon Strength and Missile Strength: +10% for Samurai units (Hero's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_naotora_texing.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

@@ -135,6 +135,27 @@
   text-decoration: none;
 }
 
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 次级按钮：背景故事 / 图鉴。半透明夜色底，压在头图上 */
+.cta--ghost {
+  font-weight: 500;
+  border-color: var(--deep-line);
+  background: rgba(19, 30, 44, 0.5);
+  backdrop-filter: blur(6px);
+  color: var(--foam);
+}
+
+.cta--ghost:hover {
+  background: rgba(28, 43, 62, 0.9);
+  border-color: var(--foam-dim);
+  color: var(--foam);
+}
+
 .hero__latest {
   display: inline-flex;
   align-items: center;
@@ -336,6 +357,15 @@
   color: var(--ink);
 }
 
+.lords__more,
+.units__more {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14.5px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .lords__body {
   margin: 0;
   max-width: 62ch;
@@ -421,6 +451,19 @@
   object-fit: cover;
   border-radius: var(--r-md);
   background: var(--deep);
+}
+
+.companion__link {
+  display: block;
+  color: inherit;
+}
+
+.companion__link:hover {
+  text-decoration: none;
+}
+
+.companion__link:hover .companion__name {
+  color: var(--clay);
 }
 
 .companion__name {

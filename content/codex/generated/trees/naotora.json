@@ -1,0 +1,271 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "tachibana-naotora",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_tachibana_unique_0",
+          "name": {
+            "zh": "二刀流",
+            "en": "Two-Sword Style"
+          },
+          "desc": {
+            "zh": "双刀攻防一体，滴水不漏。",
+            "en": "With two blades, offence and defence merge as one, leaving not a single opening."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+6",
+                  "en": "Melee attack: +6"
+                },
+                {
+                  "zh": "近战防御：+6",
+                  "en": "Melee defence: +6"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_tachibana_unique_1",
+          "name": {
+            "zh": "武士典范",
+            "en": "Exemplar of the Samurai"
+          },
+          "desc": {
+            "zh": "率旗本征战的当主，她的武范是麾下武士的标尺。",
+            "en": "As head of the house leading her hatamoto into battle, her martial example sets the standard for the samurai under her command."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+4（武士部队）（英雄所在军队）",
+                  "en": "Melee attack: +4 for Samurai units (Hero's army)"
+                },
+                {
+                  "zh": "近战防御：+4（武士部队）（英雄所在军队）",
+                  "en": "Melee defence: +4 for Samurai units (Hero's army)"
+                },
+                {
+                  "zh": "领导力：+5（武士部队）（英雄所在军队）",
+                  "en": "Leadership: +5 for Samurai units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：二刀流",
+            "en": "Requires Two-Sword Style"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_tachibana_unique_2",
+          "name": {
+            "zh": "铲奸除恶",
+            "en": "Scourge of the Wicked"
+          },
+          "desc": {
+            "zh": "隐姓埋名于乡野铲奸除恶的岁月，练就了一身安民治地的本事。",
+            "en": "Years spent living incognito in the countryside, rooting out corruption and evil, honed her skill in pacifying the land and its people."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "掌控力：+6（所在行省）",
+                  "en": "Control: +6 (local province)"
+                },
+                {
+                  "zh": "维持费：-5%（英雄所在军队）",
+                  "en": "Upkeep: -5% (Hero's army)"
+                },
+                {
+                  "zh": "招募成本：-10%（英雄所在军队）",
+                  "en": "Recruitment cost: -10% (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：二刀流",
+            "en": "Requires Two-Sword Style"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_tachibana_unique_3",
+          "name": {
+            "zh": "雷神祝福",
+            "en": "Blessing of Raijin"
+          },
+          "desc": {
+            "zh": "同承雷神之契的旗本与她心意相通。",
+            "en": "The hatamoto who share her pact with Raijin are of one mind with her."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+10%",
+                  "en": "Hit points: +10%"
+                },
+                {
+                  "zh": "近战武器威力：+15%（雷刃旗本）（英雄所在军队）",
+                  "en": "Weapon strength: +15% for Thunderblade Hatamoto units (Hero's army)"
+                },
+                {
+                  "zh": "冲锋加成：+10（雷刃旗本）（英雄所在军队）",
+                  "en": "Charge bonus: +10 for Thunderblade Hatamoto units (Hero's army)"
+                },
+                {
+                  "zh": "全伤害抗性：+8%（雷刃旗本）（英雄所在军队）",
+                  "en": "Ward save: +8% for Thunderblade Hatamoto units (Hero's army)"
+                },
+                {
+                  "zh": "移动速度：+20%（雷刃旗本）（英雄所在军队）",
+                  "en": "Speed: +20% for Thunderblade Hatamoto units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：二刀流",
+            "en": "Requires Two-Sword Style"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_tachibana_unique_4",
+          "name": {
+            "zh": "雷厉风行",
+            "en": "Swift as Thunder"
+          },
+          "desc": {
+            "zh": "雷刃剑豪的高速突阵，雷厉而至，一击破阵。",
+            "en": "The Thunderblade master swordsman's high-speed charge arrives like thunder, breaking the enemy line with a single strike."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "移动速度：+15%",
+                  "en": "Speed: +15%"
+                },
+                {
+                  "zh": "冲锋加成：+15",
+                  "en": "Charge bonus: +15"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：二刀流",
+            "en": "Requires Two-Sword Style"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_tachibana_unique_5",
+          "name": {
+            "zh": "紫电一闪",
+            "en": "Shiden Flash"
+          },
+          "desc": {
+            "zh": "紫电一闪，斩雷断阵。",
+            "en": "A flash of Shiden splits the thunder and shatters the enemy line."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁『紫电一闪』",
+                  "en": "Unlocks \"Shiden Flash\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_tachibana_unique_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：武士典范、铲奸除恶、雷神祝福、雷厉风行",
+            "en": "Requires Exemplar of the Samurai, Scourge of the Wicked, Blessing of Raijin, Swift as Thunder"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

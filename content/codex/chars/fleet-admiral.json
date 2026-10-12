@@ -1,0 +1,193 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/lords/水师提督/水师提督角色与数值.md（技能树未导出，不写 tree）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
+  "slug": "fleet-admiral",
+  "rank": "lord",
+  "name": { "zh": "水师提督", "en": "Fleet Admiral" },
+  "rankLabel": { "zh": "领主 · 战士", "en": "Lord · Champion" },
+  "looks": [{ "key": "fleet-admiral" }],
+  "desc": {
+    "zh": "水师提督统率艨艟斗舰，碧帆所到之处，便是震旦的海疆。",
+    "en": "A Fleet Admiral commands Cathay's war-junks, and wherever the jade sails reach, there the seas of Cathay begin."
+  },
+  "story": {
+    "zh": "震旦有一句老话：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。",
+    "en": "Cathay has an old saying: the Great Bastion does not end where the sea begins, for the sea is itself another Great Bastion. The Fleet Admiral is the warden of that bastion upon the water. Beneath the jade sails the war-junks stand in line like merlons, and the water between one hull and the next is the wall itself; pirates and monsters of the deep are held to the same measure, and none who crosses that line is given a second chance. But an admiral has more than the enemy to contend with. Storms scatter a fleet, currents drag a course astray, and by the third month at sea the crews begin to wonder why they are still out here at all. The fleet holds together because the flagship has not turned; and the flagship has not turned because nothing the sea can raise will move the one standing at her prow."
+  },
+  "identity": [
+    {
+      "k": { "zh": "角色位阶", "en": "Rank" },
+      "v": { "zh": "领主（泛用，可无限招募，数量由控制的主要港口数决定）", "en": "Lord (generic, no recruitment limit – how many you get depends on the major ports you hold)" }
+    },
+    {
+      "k": { "zh": "定位", "en": "Role" },
+      "v": {
+        "zh": "战士兼统帅：持震旦水师制式长枪的近战武将，长兵器、抵御冲锋、擅长对付大型目标",
+        "en": "Champion and commander: a melee officer armed with the Cathayan navy's standard spear – long reach, firm against charges, best against large targets"
+      }
+    },
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "领主招募面板「水师提督」页签。每解锁一位就放进领主招募池，进池后仍需花钱招募；在任何能招领主的地方都能招，不限于那座港口",
+        "en": "The Fleet Admiral tab of the lord recruitment panel. Each one unlocked is added to the lord pool and still has to be paid for; he can be recruited anywhere you can recruit lords, not only at that port"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "每控制一座主要城市港口（省会且带港口）解锁一位，按「先登 → 炮令 → 驭潮」顺次循环，无上限。对玉海舰队而言，修気寺与鉄守虽不是主要港口，也各算一座，所以打下修気寺换来的正是第一位「先登」",
+        "en": "One for every major city port you control (a province capital with a port), cycling First Aboard → Order to Fire → Tide-Reader with no upper limit. For the Jade Sea Fleet, Shuge Monastery and Tetsu Fortress also count as one each, so taking Shuge Monastery earns the first, First Aboard"
+      }
+    },
+    {
+      "k": { "zh": "开局台阶（MCT）", "en": "Head start (MCT)" },
+      "v": {
+        "zh": "装了 Mod Configuration Tool 时多一格设置「开局额外的水师提督」（0–2，默认 0）：玩家这一家的主要港口数永久按多 N 座计。AI 不受影响；可在战役中途调整，调高下一回合补发，调低不收回",
+        "en": "With Mod Configuration Tool installed, the \"Extra Fleet Admirals at the start\" setting (0–2, default 0) counts N more major ports for your faction for the whole campaign. AI factions are unaffected. It can be changed mid-campaign: raising it tops up next turn, lowering it takes nobody back"
+      }
+    },
+    {
+      "k": { "zh": "适用派系", "en": "Factions" },
+      "v": {
+        "zh": "全部震旦派系，规则与玉海舰队完全相同，港口数本身就是门槛；开局已握有主要港口的派系当场按港口数发足。不含山陽氏与奥本氏",
+        "en": "Every Cathay faction, under exactly the same rules as the Jade Sea Fleet: the ports are the only requirement, and a faction that starts with major ports gets its admirals at once. Not the Sanyo or Okumoto Clans"
+      }
+    },
+    {
+      "k": { "zh": "数量限制", "en": "Limit" },
+      "v": {
+        "zh": "无上限，天花板就是控制的主要港口数。招走一位不会自动补，要再占一座主要港口才多一位；丢了港口不收回已发出的，但也不再补新的，直到港口数重新超过已发放数。三种变体各一张脸，脸会随循环复现，同一派系内姓名一局不重",
+        "en": "None beyond the major ports you hold. Recruiting one does not bring a replacement; you need another major port for the next. Losing a port takes no admiral away, but no new ones come until your port count again exceeds the number already granted. Each of the three variants has its own face, so faces repeat as the cycle goes round, but within a faction no name is used twice in a campaign"
+      }
+    },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "招募费 1100／1400／1600，维持费 250／300／375（依次为徒步／骑玉龙马／骑海龙马）；多人对战价格 900／1300／1500",
+        "en": "Recruitment 1100 / 1400 / 1600, upkeep 250 / 300 / 375 (on foot / Jade Longma / Sea Longma); multiplayer cost 900 / 1300 / 1500"
+      }
+    },
+    {
+      "k": { "zh": "其他", "en": "Also" },
+      "v": { "zh": "招出即不朽；不可借调给盟友；随身带一艘提督舰", "en": "Immortal from the moment he is recruited; cannot be lent to allies; comes with an Admiral's Ship of his own" }
+    },
+    {
+      "k": { "zh": "提督舰", "en": "Admiral's Ship" },
+      "v": {
+        "zh": "与沈长风的旗舰同型不同级：共用整棵建筑树，但槽位上限 8（旗舰 11，十条支链只能开七条）、影响圈半径 15（旗舰 20）。同样可从海上直接进攻沿岸驻军，影响圈内能用本船的招募",
+        "en": "The same class as Shen Changfeng's flagship but a lesser one: it shares her whole building tree, but has 8 slots instead of 11 (so only 7 of the 10 branch chains) and an influence radius of 15 instead of 20. It too can attack coastal garrisons straight from the sea, and offers its own recruitment within its radius"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [
+      { "zh": "徒步", "en": "On foot" },
+      { "zh": "骑玉龙马", "en": "Jade Longma" },
+      { "zh": "骑海龙马", "en": "Sea Longma" }
+    ],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["100", "110", "110"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["56", "56", "58"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["45", "45", "45"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["120／290", "120／290", "130／300"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["30", "70", "90"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4860", "6072", "6572"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["80", "80", "80"] },
+      {
+        "k": { "zh": "速度", "en": "Speed" },
+        "v": ["38", { "zh": "82（跑）／105（飞）", "en": "82 run / 105 fly" }, { "zh": "115（跑）／133（飞）", "en": "115 run / 133 fly" }]
+      }
+    ],
+    "note": {
+      "zh": "三个形态各自独立，装备坐骑即整体切换，数值不叠加；三者共用同一杆长枪，无远程武器。徒步：鼓舞、抵御冲锋、于森林中隐蔽；两个骑乘形态：鼓舞、可以飞行、引发恐惧，骑海龙马另有形态被动「踏浪惊涛」。",
+      "en": "Three separate forms: equipping a mount switches the whole profile, nothing stacks. All three use the same spear and have no missile weapon. On foot he encourages, resists charges and can hide in forests; mounted he encourages, flies and causes fear, and on the Sea Longma he also gains the Wake of Breaking Waves passive."
+    }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "水师制式长枪 · 120／290（骑海龙马 130／300）", "en": "Naval-issue spear · 120 / 290 (Sea Longma 130 / 300)" },
+      "v": {
+        "zh": "对大型目标 +25；三个形态共用同一杆枪。不带魔法攻击，技能树里也没有一格补上——对上高魔抗目标是这一档的短板",
+        "en": "Bonus vs large +25; the same spear in all three forms. It is not magical, and no skill makes it so – targets with high magic resistance are this lord's weak spot"
+      }
+    }
+  ],
+  "mounts": [
+    {
+      "k": { "zh": "玉龙马（角色等级 10 自动获得）", "en": "Jade Longma (gained automatically at rank 10)" },
+      "v": {
+        "zh": "飞行坐骑：护甲 100→110、冲锋 30→70、生命值 +1212，近战防御与武器威力不变；速度升至 82（跑）／105（飞）；获得飞行与引发恐惧，失去抵御冲锋与森林隐蔽",
+        "en": "A flying mount: armour 100 → 110, charge 30 → 70, health +1212, melee defence and weapon strength unchanged; speed up to 82 run / 105 fly. Gains flight and Causes Fear, loses charge defence and Hide (forest)"
+      }
+    },
+    {
+      "k": { "zh": "海龙马（角色等级 19 自动获得）", "en": "Sea Longma (gained automatically at rank 19)" },
+      "v": {
+        "zh": "终极飞行坐骑：近战攻击 56→58、冲锋 30→90、生命值 +1712，武器威力升至 130／300；速度升至 115（跑）／133（飞）；其余差异同玉龙马，另获得形态被动「踏浪惊涛」",
+        "en": "His finest flying mount: melee attack 56 → 58, charge 30 → 90, health +1712, weapon strength up to 130 / 300; speed up to 115 run / 133 fly. Otherwise as the Jade Longma, plus the Wake of Breaking Waves passive"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "鼓舞", "en": "Encourage" }, "v": { "zh": "全形态；提升周围友军领导力", "en": "All forms; raises the leadership of nearby allies" } },
+    { "k": { "zh": "抵御冲锋（大型部队）", "en": "Charge Defence vs. Large" }, "v": { "zh": "仅徒步；长枪的固有能力", "en": "On foot only; comes with the spear" } },
+    { "k": { "zh": "于森林中隐蔽", "en": "Hide (forest)" }, "v": { "zh": "仅徒步", "en": "On foot only" } },
+    { "k": { "zh": "可以飞行", "en": "Can Fly" }, "v": { "zh": "仅两个骑乘形态", "en": "Both mounted forms" } },
+    { "k": { "zh": "引发恐惧", "en": "Causes Fear" }, "v": { "zh": "仅两个骑乘形态", "en": "Both mounted forms" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "龙之意志", "en": "Will of the Dragons" },
+      "v": { "zh": "光环内友军领导力 +4（原版震旦领主通用被动）", "en": "Allies within his aura gain leadership +4 (the standard vanilla Cathay lord passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "受创", "en": "Wounds" },
+      "v": { "zh": "单模型单位的原版通用被动：生命值低于 25% 时武器威力 −20%、移速 −10%", "en": "The standard vanilla passive for single-entity units: below 25% health, weapon strength −20% and speed −10%" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "踏浪惊涛", "en": "Wake of Breaking Waves" },
+      "v": {
+        "zh": "陷入近战后开始充能：首次约 15 秒，此后每 20 秒向身前掀起一次浪涌，每次造成 22 点伤害（其中 7 点破甲）；只伤敌，不误伤友军；脱离近战即停止充能",
+        "en": "Charges up once he is in melee: after about 15 seconds, and then every 20 seconds, he raises a surge of water in front of him for 22 damage (7 of it armour-piercing). It hits only enemies, and stops charging when he leaves melee"
+      },
+      "form": { "zh": "被动 · 仅骑海龙马", "en": "Passive · Sea Longma only" }
+    },
+    {
+      "k": { "zh": "耐久光环", "en": "Aura of Endurance" },
+      "v": { "zh": "半径 35 米内友军近战防御 +5、远程抗性 +5%（原版昊天将军同款）", "en": "Allies within 35 m gain melee defence +5 and missile resistance +5% (as on the vanilla Celestial General)" },
+      "form": { "zh": "被动 · 技能树「身先士卒」解锁", "en": "Passive · from the Lead from the Front skill" }
+    },
+    {
+      "k": { "zh": "先锋部署", "en": "Vanguard Deployment" },
+      "v": { "zh": "全军所有单位获得先锋部署属性（与原版经略使同名技能同款）；「兵法韬略」是个人线末端的孤立节点，23 级解锁", "en": "Every unit in his army gains Vanguard Deployment (as from the Lord Magistrate's skill of the same name). The Art of War is a standalone node at the end of his unique line, open from rank 23" },
+      "form": { "zh": "全军 · 技能树「兵法韬略」解锁", "en": "Whole army · from The Art of War skill" }
+    },
+    {
+      "k": { "zh": "舷侧齐射", "en": "Broadside" },
+      "v": { "zh": "指定地面目标，2 秒后落下一轮 18 发炮弹；每场 3 次，冷却 120 秒", "en": "Target a point on the ground; 2 seconds later a salvo of 18 cannonballs comes down on it. 3 uses per battle, cooldown 120 seconds" },
+      "form": { "zh": "主动 · 技能树起点「水师枪术」解锁", "en": "Active · from Naval Spearmanship, the first unique skill" }
+    },
+    {
+      "k": { "zh": "横江", "en": "River Sweep" },
+      "v": { "zh": "以自身为中心横扫一圈的涡流，持续 4 秒；冷却 120 秒，不限次数（原版「昊天挥扫」的同款）", "en": "A whirling sweep around himself lasting 4 seconds; cooldown 120 seconds, unlimited uses (a copy of the vanilla Celestial Sweep)" },
+      "form": { "zh": "主动 · 技能树「一枪横江」解锁", "en": "Active · from One Sweep Across the River" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "全形态；领导力光环", "en": "All forms; leadership aura" } },
+    {
+      "k": { "zh": "阴／阳", "en": "Yin / Yang" },
+      "v": {
+        "zh": "全形态，随变体固定：先登、驭潮为阳，炮令为阴。计入所在军队的宁和，与玉海潮勇、云霄禁卫（阳）及潮汐禁卫、舰队铳手、沧溟巨炮（阴）同一套",
+        "en": "All forms, fixed by variant: First Aboard and Tide-Reader are Yang, Order to Fire is Yin. Counts towards his army's Harmony alongside the Jade Sea Warriors and Empyrean Guard (Yang) and the Tide Guard, Fleet Gunners and Abyssal Grand Cannon (Yin)"
+      }
+    },
+    {
+      "k": { "zh": "宁和化生：+50%", "en": "Harmony Amplifier: +50%" },
+      "v": { "zh": "全形态；照原版泛用震旦领主的档次（和谐放大 150%），与沈长风相同", "en": "All forms; the standard rate for a generic Cathay lord, the same as Shen Changfeng" }
+    }
+  ],
+  "traitsFrom": ["admiral-01", "admiral-02", "admiral-03"]
+}

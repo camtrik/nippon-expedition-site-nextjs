@@ -176,3 +176,230 @@ export type CreditsData = z.infer<typeof Credits>
 export type FaqData = z.infer<typeof Faq>
 export type FaqItemData = z.infer<typeof FaqItem>
 export type FrontMatterData = z.infer<typeof FrontMatter>
+
+// ---- content/codex/ ----------------------------------------------------------
+//
+// 图鉴（兵种页 / 人物页）。两类文件：
+//   content/codex/{units,chars}/<slug>.json   手写，内容照 mod 仓库的设计书与 loc 整理
+//   content/codex/generated/…                 scripts/export-codex.ts 从 data/vanilla 生成，别手改
+// 手写的那份只放设计书里才有的东西（定位、招募、数值、说明文字）；技能、部队属性、
+// 技能树这些游戏里真实存在的条目一律走生成，名字、描述、图标都是游戏原文。
+
+/** 数值格：纯数字、「150／300」这类不分语言的写成字符串，带文字的写双语。 */
+export const Cell = z.union([z.string(), Bilingual])
+
+const KV = obj({ k: Bilingual, v: Bilingual })
+/** 长文。一段就写一个双语对象，多段写成数组（loc 里用空行分段的那几条）；读进来一律是数组 */
+const Paragraphs = z
+  .union([Bilingual, z.array(Bilingual).min(1)])
+  .transform((v) => (Array.isArray(v) ? v : [v]))
+/** 设计书表格的一行。form 是「生效形态」那一列（全形态就不写）。 */
+const Row = obj({ k: Bilingual, v: Bilingual, form: Bilingual.optional() })
+
+export const UNIT_GROUPS = ['fleet', 'nippon', 'akatsuki'] as const
+
+export const CodexUnit = obj({
+  slug: z.string(),
+  /** land_units key，生成那一侧按它去 data/vanilla/units 找技能与部队属性 */
+  unit: z.string(),
+  group: z.enum(UNIT_GROUPS),
+  name: Bilingual,
+  /** 战场定位，标题上方那一行 */
+  role: Bilingual,
+  /** 兵牌短文（loc unit_description_short_texts） */
+  desc: Bilingual,
+  /** 图鉴长文（loc unit_description_historical_texts）；与短文同句的不写 */
+  story: Paragraphs.optional(),
+  cost: obj({ recruit: z.number(), upkeep: z.number() }).optional(),
+  /** 设计书「兵种类型」表里给玩家看的那几行（兵种类别、武器配置、护甲与盾牌、训练等级） */
+  type: z.array(KV),
+  recruit: z.array(KV),
+  stats: z.array(obj({ k: Bilingual, v: Cell, n: Bilingual.optional() })),
+  /** 设计书「特性」一节：兵牌上那些 ▲ 条目。down 是 ▼（缺点） */
+  traits: z.array(obj({ name: Bilingual, desc: Bilingual, down: z.boolean().optional() })),
+  /** 技能的效果说明，按 unit_abilities key 挂到生成的那一条下面（设计书「技能」表的效果列） */
+  effects: z.record(z.string(), Bilingual).default({}),
+  /** 设计书「部队属性」里有、DB 的 unit_attributes 里没有的（攻城者这类派生说法） */
+  attrsExtra: z.array(obj({ name: Bilingual, desc: Bilingual })).default([]),
+})
+
+export const CHAR_RANKS = ['legendary-lord', 'legendary-hero', 'lord', 'hero'] as const
+
+export const CodexChar = obj({
+  slug: z.string(),
+  rank: z.enum(CHAR_RANKS),
+  name: Bilingual,
+  /** 『』里那个称号，不带书名号 */
+  epithet: Bilingual.optional(),
+  /** 标题上方的药丸：位阶 · 定位 */
+  rankLabel: Bilingual,
+  /** 外观。key 对应 assets/chars/<key>.webp 与 assets/chars/full/<key>.webp；第一个是默认 */
+  looks: z.array(obj({ key: z.string(), label: Bilingual.optional() })).min(1),
+  desc: Bilingual,
+  story: Paragraphs.optional(),
+  identity: z.array(KV),
+  stats: obj({
+    forms: z.array(Bilingual).min(1),
+    rows: z.array(obj({ k: Bilingual, v: z.array(Cell) })),
+    note: Bilingual.optional(),
+  })
+    .refine((s) => s.rows.every((r) => r.v.length === s.forms.length), {
+      message: '数值表每一行的格数要和 forms 一样多',
+    })
+    .optional(),
+  weapons: z.array(Row).default([]),
+  mounts: z.array(Row).default([]),
+  traits: z.array(Row).default([]),
+  abilities: z.array(Row).default([]),
+  attrs: z.array(Row).default([]),
+  /** 技能树。只列本 mod 原创的那几行；整行原版复用的不列 */
+  tree: obj({
+    /** data/vanilla/skills/<subject>.json */
+    subject: z.string(),
+    note: Bilingual.optional(),
+    branches: z.array(
+      obj({
+        /** 游戏技能树里的第几行（character_skill_nodes.indent） */
+        indent: z.number(),
+        /** 'npex'：这一行只列原创节点（原版战斗线里夹着一个专属节点的那种） */
+        only: z.literal('npex').optional(),
+        label: Bilingual,
+        sub: Bilingual.optional(),
+      }),
+    ),
+  }).optional(),
+  /** 游戏里的「特性」（开局特性 / 随机天性）从哪几套技能树取，默认就是 tree.subject。
+      多套 = 招募面板上的几位候选各带一项（水师提督三席） */
+  traitsFrom: z.array(z.string()).min(1).optional(),
+  /** 远征同伴：四档羁绊。name / desc 是同伴特性那一档的名字与风味文，rewards 是达成这一档发的奖励，
+      都照 loc（cth_npex_companions）原文；effects 是同伴特性本身的数值（设计书「同伴特性」） */
+  companion: obj({
+    trait: Bilingual,
+    tiers: z.array(obj({ name: Bilingual, desc: Bilingual, rewards: z.array(Bilingual) })).length(4),
+    effects: z.array(KV),
+  }).optional(),
+})
+
+// ---- content/codex/generated/ ------------------------------------------------
+
+const GenIcon = z.string().nullable()
+
+export const GenAbility = z.strictObject({
+  key: z.string(),
+  source: z.enum(['vanilla', 'npex']),
+  name: Bilingual,
+  desc: Bilingual.nullable(),
+  icon: GenIcon,
+})
+
+export const GenUnit = z.strictObject({
+  _comment: z.string(),
+  unit: z.string(),
+  abilities: z.array(GenAbility),
+  attrs: z.array(GenAbility),
+})
+
+export const GenNode = z.strictObject({
+  key: z.string(),
+  name: Bilingual,
+  desc: Bilingual.nullable(),
+  /** 每级一组效果行；单级技能就只有一组。级数很多的（登峰造极 100 级）只留首尾两级 */
+  levels: z.array(z.strictObject({ level: z.number(), lines: z.array(Bilingual) })),
+  icon: GenIcon,
+  /** 原版技能（这一行里复用的节点，页面上压灰） */
+  reuse: z.boolean(),
+  unlock: Bilingual.nullable(),
+  /** 「需 4/5」这种多父节点汇合 */
+  hub: Bilingual.nullable(),
+})
+
+export const GenTree = z.strictObject({
+  _comment: z.string(),
+  subject: z.string(),
+  branches: z.array(z.strictObject({ indent: z.number(), nodes: z.array(GenNode) })),
+})
+
+/** 游戏里的「特性」：技能树里藏起来（visible_in_ui = false）的第 6 行。
+    fixed：开局自带的一项（传奇人物）；random：招募时从池子里随机一项（通用领主 / 英雄）；
+    variant：每位候选各带一项（traitsFrom 列了多套树） */
+export const GenTraits = z.strictObject({
+  _comment: z.string(),
+  kind: z.enum(['fixed', 'random', 'variant']),
+  subjects: z.array(z.string()),
+  nodes: z.array(GenNode),
+})
+
+export type CodexUnitData = z.infer<typeof CodexUnit>
+export type CodexCharData = z.infer<typeof CodexChar>
+export type GenUnitData = z.infer<typeof GenUnit>
+export type GenTreeData = z.infer<typeof GenTree>
+export type GenNodeData = z.infer<typeof GenNode>
+export type GenTraitsData = z.infer<typeof GenTraits>
+export type GenAbilityData = z.infer<typeof GenAbility>
+
+// ---- content/lore.json -------------------------------------------------------
+
+/** 背景故事页。正文尽量直接用游戏里的中英原文（开场短片旁白、加载屏、图鉴长文），
+    少数串联段落照 mod 的 _docs/lore 整理。章节序号由页面按顺序给，不写在数据里。 */
+export const Lore = obj({
+  title: Bilingual,
+  lede: Bilingual,
+  chapters: z.array(
+    obj({
+      /** 锚点：/lore#<id> */
+      id: z.string(),
+      title: Bilingual,
+      /** 引文，一行一条（开场短片旁白那种分行的诗体） */
+      quote: z.array(Bilingual).default([]),
+      body: z.array(Bilingual),
+      pairs: z.array(KV).default([]),
+    }),
+  ),
+  routesTitle: Bilingual,
+})
+
+export type LoreData = z.infer<typeof Lore>
+
+// ---- content/compat.json -----------------------------------------------------
+
+/** 兼容性拓扑页。中心是本体，四类节点：前置 / 兼容包接通 / 可直接共存 / 冲突；
+    语言包挂在它本地化的那个节点下面。url 可以分语言（巧匠行会中英是两个工坊条目）。 */
+export const COMPAT_GROUPS = ['required', 'full', 'ok', 'conflict'] as const
+const Url = z.union([z.string(), Bilingual])
+
+export const CompatPage = obj({
+  lede: Bilingual,
+  hub: Bilingual,
+  hubSub: Bilingual,
+  groups: z.array(obj({ key: z.enum(COMPAT_GROUPS), label: Bilingual, desc: Bilingual })),
+  nodes: z.array(
+    obj({
+      key: z.string(),
+      group: z.enum(COMPAT_GROUPS),
+      name: Bilingual,
+      /** 节点收起时显示的短名 */
+      short: Bilingual,
+      note: Bilingual,
+      url: Url.optional(),
+      /** 经由哪个兼容包接通 */
+      via: obj({ label: Bilingual, url: z.string() }).optional(),
+      /** 还没定论（可能冲突、待实机验证） */
+      tbd: z.boolean().optional(),
+    }),
+  ),
+  langs: z.array(
+    obj({
+      key: z.string(),
+      /** 挂在哪个节点下；'hub' 是本体 */
+      of: z.string(),
+      only: z.enum(['zh', 'en']),
+      name: Bilingual,
+      short: Bilingual,
+      note: Bilingual,
+      url: z.string(),
+    }),
+  ),
+  note: Bilingual,
+})
+
+export type CompatPageData = z.infer<typeof CompatPage>

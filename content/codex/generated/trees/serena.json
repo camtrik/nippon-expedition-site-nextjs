@@ -1,0 +1,376 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "serena",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_serena_unique_survivor",
+          "name": {
+            "zh": "幸存者",
+            "en": "Survivor"
+          },
+          "desc": {
+            "zh": "跨洋漂流三十载、幽囚十二年而不倒，海与囚笼都未能磨灭她的复原力。",
+            "en": "Thirty years adrift across the ocean and twelve years in captivity failed to break her; neither the sea nor the cage could wear down her resilience."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战防御：+4",
+                  "en": "Melee defence: +4"
+                },
+                {
+                  "zh": "法术抗性：10%",
+                  "en": "Spell resistance: 10%"
+                },
+                {
+                  "zh": "物理抗性：10%",
+                  "en": "Physical resistance: 10%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_survivor.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_unique_veteran_navigator",
+          "name": {
+            "zh": "资深领航员",
+            "en": "Veteran Navigator"
+          },
+          "desc": {
+            "zh": "曾任海上巡逻队迷雾法师副官，星象与海流在她脑中如掌纹般清晰。",
+            "en": "A former deputy to a Mist Mage of a sea patrol, she knows the stars and currents as well as the lines of her own palm."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战略地图移动距离：在海上时+10%",
+                  "en": "Campaign movement range: +10% whilst at sea"
+                },
+                {
+                  "zh": "战略地图移动距离：+10%",
+                  "en": "Campaign movement range: +10%"
+                },
+                {
+                  "zh": "可贸易资源产量：+5%（派系范围）",
+                  "en": "Tradable resources produced: +5% (factionwide)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_veteran_navigator.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：幸存者",
+            "en": "Requires Survivor"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_unique_fleet_drill",
+          "name": {
+            "zh": "舰队操练",
+            "en": "Fleet Drill"
+          },
+          "desc": {
+            "zh": "艾斯林舰队传承的操练之道，让凡人水手如臂使指。",
+            "en": "A drilling tradition passed down from Sea Lord Aislinn's fleet, making mortal sailors answer her command as surely as her own hands."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "射程范围：+5%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +5% for fleet missile units (Hero's army)"
+                },
+                {
+                  "zh": "装弹时间降低：+5%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +5% for fleet missile units (Hero's army)"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "射程范围：+10%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +10% for fleet missile units (Hero's army)"
+                },
+                {
+                  "zh": "装弹时间降低：+10%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +10% for fleet missile units (Hero's army)"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "射程范围：+15%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +15% for fleet missile units (Hero's army)"
+                },
+                {
+                  "zh": "装弹时间降低：+15%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +15% for fleet missile units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_fleet_drill.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：幸存者",
+            "en": "Requires Survivor"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_unique_first_strike",
+          "name": {
+            "zh": "身经百战",
+            "en": "Battle-Hardened"
+          },
+          "desc": {
+            "zh": "久经海战与囚禁磨砺的战斗本能。",
+            "en": "Combat instincts honed by years of naval battle and captivity."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+3",
+                  "en": "Melee attack: +3"
+                },
+                {
+                  "zh": "近战防御：+3",
+                  "en": "Melee defence: +3"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "近战攻击：+6",
+                  "en": "Melee attack: +6"
+                },
+                {
+                  "zh": "近战防御：+6",
+                  "en": "Melee defence: +6"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "近战攻击：+9",
+                  "en": "Melee attack: +9"
+                },
+                {
+                  "zh": "近战防御：+9",
+                  "en": "Melee defence: +9"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_first_strike.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：幸存者",
+            "en": "Requires Survivor"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_unique_wave_rider",
+          "name": {
+            "zh": "驭潮者",
+            "en": "Wave Rider"
+          },
+          "desc": {
+            "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她召唤的潮汐之灵。",
+            "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits she calls forth."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+4（纯水精魂、海元素）（英雄所在军队）",
+                  "en": "Melee attack: +4 for Oceanids and Sea Elemental units (Hero's army)"
+                },
+                {
+                  "zh": "近战防御：+4（纯水精魂、海元素）（英雄所在军队）",
+                  "en": "Melee defence: +4 for Oceanids and Sea Elemental units (Hero's army)"
+                },
+                {
+                  "zh": "特殊抗性：+10%（纯水精魂、海元素）（英雄所在军队）",
+                  "en": "Ward save: +10% for Oceanids and Sea Elemental units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_wave_rider.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：幸存者",
+            "en": "Requires Survivor"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_unique_sea_archmage",
+          "name": {
+            "zh": "海上大法师",
+            "en": "Sea Archmage"
+          },
+          "desc": {
+            "zh": "凌驾普通迷雾法师之上的终极形态，被海神庇佑、掌握迷雾的迷雾大魔导师。",
+            "en": "The ultimate form beyond an ordinary Mist Mage, a Mist Archmage blessed by the Sea God and master of the mists."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术强度：+15%",
+                  "en": "Spell intensity: +15%"
+                },
+                {
+                  "zh": "魔法之风法力储量：+15",
+                  "en": "Winds of Magic power reserve capacity: +15"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_serena_unique_sea_archmage.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：资深领航员、舰队操练、身经百战、驭潮者",
+            "en": "Requires Veteran Navigator, Fleet Drill, Battle-Hardened, Wave Rider"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_serena_mount_armored_ithilmar_steed",
+          "name": {
+            "zh": "披甲伊瑟拉玛银战马",
+            "en": "Barded Ithilmar Steed"
+          },
+          "desc": {
+            "zh": "伊瑟拉玛银制的披甲战马，迅捷而坚韧。",
+            "en": "A barded warhorse of Ithilmar, swift and enduring."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_serena_mount_armored_ithilmar_steed.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 7 解锁",
+            "en": "Unlocks at rank 7"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_mount_ithilmar_chariot",
+          "name": {
+            "zh": "伊瑟拉玛银战车",
+            "en": "Ithilmar Chariot"
+          },
+          "desc": {
+            "zh": "由银战马牵引的轻型战车，冲击凌厉。",
+            "en": "A light chariot drawn by silver steeds, fierce in its charge."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_serena_mount_ithilmar_chariot.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 14 解锁",
+            "en": "Unlocks at rank 14"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_serena_mount_moon_dragon",
+          "name": {
+            "zh": "银月龙",
+            "en": "Moon Dragon"
+          },
+          "desc": {
+            "zh": "一头银月龙的庞大身躯，俯瞰整个战场。",
+            "en": "The colossal form of a Moon Dragon looks down upon the entire battlefield."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_serena_mount_moon_dragon.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 22 解锁",
+            "en": "Unlocks at rank 22"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

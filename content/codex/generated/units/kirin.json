@@ -1,0 +1,99 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_kirin_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_thunder_echo",
+      "source": "npex",
+      "name": {
+        "zh": "天雷回响",
+        "en": "Thunder Echo"
+      },
+      "desc": {
+        "zh": "麒麟振鬃而鸣，天雷循其角端回应，轰击近旁敌阵。",
+        "en": "The Kirin tosses its mane and roars, and heaven's thunder answers at the tip of its horn, crashing down upon the enemy ranks nearby."
+      },
+      "icon": "cth_npex_unit_passive_thunder_echo.png"
+    },
+    {
+      "key": "wh3_main_mount_bound_celestial_lightning",
+      "source": "vanilla",
+      "name": {
+        "zh": "天国闪电",
+        "en": "Celestial Lightning"
+      },
+      "desc": {
+        "zh": "战争罗盘从天堂引来致命的闪电，将敌人烧成灰烬",
+        "en": "The War Compass funnels deadly electricity from the heavens to sear and burn and smite the foe."
+      },
+      "icon": "wh3_main_mount_bound_celestial_lightning.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "causes_terror",
+      "source": "vanilla",
+      "name": {
+        "zh": "惊骇敌军",
+        "en": "Causes Terror"
+      },
+      "desc": {
+        "zh": "这支部队可惊骇敌军，令其近战目标溃逃一段时间。对于能够造成惊骇的部队来说，其自身也将免疫恐惧与惊骇效果",
+        "en": "This unit can cause terror, making its melee target rout for a short time. Units that cause terror are immune to terror and fear themselves."
+      },
+      "icon": "causes_terror.png"
+    },
+    {
+      "key": "fatigue_immune",
+      "source": "vanilla",
+      "name": {
+        "zh": "体力充沛",
+        "en": "Perfect Vigour"
+      },
+      "desc": {
+        "zh": "纵使执行的是最令人筋疲力尽的行动，这支部队也永远不会损失体力",
+        "en": "Even when performing the most fatiguing actions, this unit never loses vigour."
+      },
+      "icon": "fatigue_immune.png"
+    },
+    {
+      "key": "immune_to_psychology",
+      "source": "vanilla",
+      "name": {
+        "zh": "心理免疫",
+        "en": "Immune to Psychology"
+      },
+      "desc": {
+        "zh": "这支部队免疫心理攻击（恐惧与惊骇）",
+        "en": "The unit is immune to psychological attacks (Fear & Terror)."
+      },
+      "icon": "immune_to_psychology.png"
+    },
+    {
+      "key": "strider",
+      "source": "vanilla",
+      "name": {
+        "zh": "地形适性",
+        "en": "Strider"
+      },
+      "desc": {
+        "zh": "这支部队不受因地形导致的速度与战斗惩罚",
+        "en": "Speed and combat penalties caused by terrain are ignored by this unit."
+      },
+      "icon": "strider.png"
+    }
+  ]
+}

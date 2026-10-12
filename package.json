@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "validate": "tsx scripts/validate-content.ts",
-    "fonts": "python3 scripts/subset_fonts.py"
+    "fonts": "python3 scripts/subset_fonts.py",
+    "export:codex": "tsx scripts/export-codex.ts"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

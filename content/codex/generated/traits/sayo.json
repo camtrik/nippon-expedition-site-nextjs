@@ -1,0 +1,43 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "sayo"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_sayo_texing",
+      "name": {
+        "zh": "镜山末代",
+        "en": "Last of the Kagamiyama"
+      },
+      "desc": {
+        "zh": "镜山神社最后一位传人的基础能力：魔法之风法力储量提升，法术失误几率降低，并解锁被动技能\"生命绽放\"。",
+        "en": "The base ability of the last heir of the Kagamiyama shrine: increased Winds of Magic power reserves, reduced miscast chance, and unlocks the passive ability \"Life Bloom\"."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "法术失误基础概率：-50%",
+              "en": "Miscast base chance: -50%"
+            },
+            {
+              "zh": "被动技能：『生命绽放』",
+              "en": "Passive ability: \"Life Bloom\""
+            },
+            {
+              "zh": "魔法之风法力储量：+25",
+              "en": "Winds of Magic power reserve capacity: +25"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_sayo_texing.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/heroes/瑟兰娜/瑟兰娜角色与数值.md 与 瑟兰娜技能树.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
+  "slug": "serena",
+  "rank": "legendary-hero",
+  "name": { "zh": "瑟兰娜", "en": "Serena" },
+  "rankLabel": { "zh": "传奇英雄 · 法师", "en": "Legendary Hero · Wizard" },
+  "looks": [{ "key": "serena" }],
+  "desc": {
+    "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+    "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+  },
+  "story": {
+    "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+    "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，兼具近战武将身手", "en": "Wizard, with a warrior's skill in melee" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "远征同伴面板（召集）", "en": "The Expedition Companions panel (Summon)" } },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "序章中攻占修気寺即解锁召集；第壹章「半张面具」的目标就是招募她",
+        "en": "Taking Shuge Monastery in the Prologue unlocks her summon; recruiting her is the objective of Chapter I, \"Half a Mask\""
+      }
+    },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "唯一", "en": "Unique" } },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "召集免费，占用一个远征同伴名额；维持费随所装坐骑切换：步行 250、战马 275、战车 300、银月龙 450",
+        "en": "Summoning is free but takes one companion slot; upkeep follows her mount: 250 on foot, 275 on the steed, 300 in the chariot, 450 on the Moon Dragon"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [
+      { "zh": "步行", "en": "On foot" },
+      { "zh": "披甲伊瑟拉玛银战马", "en": "Barded Ithilmar Steed" },
+      { "zh": "伊瑟拉玛银战车", "en": "Ithilmar Chariot" },
+      { "zh": "银月龙", "en": "Moon Dragon" }
+    ],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["30", "45", "110", "70"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["52", "52", "42", "55"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["44", "44", "34", "48"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["200／180", "200／180", "200／180", "140／380"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["20", "40", "64", "50"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4208", "4508", "4808", "8208"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["80", "80", "80", "80"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["35", "84", "84", { "zh": "65（跑）／95（飞）", "en": "65 (run) / 95 (fly)" }] }
+    ],
+    "note": {
+      "zh": "四个形态各自独立，装备坐骑即整体切换，数值不叠加。施法（马瑟兰迷雾法系）。步行、战马、战车三形态可于森林中隐蔽；骑银月龙时飞行，引发恐惧与惊骇。",
+      "en": "Each form stands alone: equipping a mount switches her whole profile, and the numbers do not stack. Casts from the Lore of Mists. Can hide in forests on foot, on the steed and in the chariot; on the Moon Dragon she flies and causes fear and terror."
+    }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "瑟兰娜佩剑 · 200／180", "en": "Serena's Sword · 200 / 180" },
+      "v": {
+        "zh": "右手主武器，父亲遗留的震旦佩剑；左手另持迷雾法师法杖，只用于施法，不计入数值",
+        "en": "In her right hand, the Cathayan sword her father left her. The Mist Mage's staff in her left is for spellcasting only and adds nothing to her stats"
+      },
+      "form": { "zh": "步行／战马／战车", "en": "On foot, steed, chariot" }
+    },
+    {
+      "k": { "zh": "银月龙咬爪 · 140／380", "en": "Moon Dragon's Bite and Claws · 140 / 380" },
+      "v": {
+        "zh": "骑银月龙时主武器切换为坐骑咬爪，破甲碾压",
+        "en": "On the Moon Dragon her main weapon becomes the dragon's bite and claws, with crushing armour-piercing damage"
+      },
+      "form": { "zh": "仅银月龙", "en": "Moon Dragon only" }
+    }
+  ],
+  "mounts": [
+    {
+      "k": { "zh": "披甲伊瑟拉玛银战马", "en": "Barded Ithilmar Steed" },
+      "v": { "zh": "护甲 +15、冲锋 +20、生命值 +300，移速大幅提升", "en": "Armour +15, charge bonus +20, health +300 and far greater speed" }
+    },
+    {
+      "k": { "zh": "伊瑟拉玛银战车", "en": "Ithilmar Chariot" },
+      "v": {
+        "zh": "护甲升至 110、冲锋 +44；战车笨重，近战攻防下调（52／44 → 42／34）",
+        "en": "Armour rises to 110 and charge bonus +44, but the unwieldy chariot lowers her melee attack and defence (52 / 44 → 42 / 34)"
+      }
+    },
+    {
+      "k": { "zh": "银月龙", "en": "Moon Dragon" },
+      "v": {
+        "zh": "飞行；生命值 +4000，引发恐惧与惊骇，主武器换为龙吻；不再能于森林中隐蔽",
+        "en": "Flies; health +4000, causes fear and terror, and her main weapon becomes the dragon's jaws. She can no longer hide in forests"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "法术吟唱者", "en": "Spellcaster" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "近战专家", "en": "Melee Expert" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "重甲", "en": "Armoured" }, "v": { "zh": "仅三个骑乘形态", "en": "The three mounted forms only" } },
+    { "k": { "zh": "可飞行", "en": "Flying" }, "v": { "zh": "仅银月龙", "en": "Moon Dragon only" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "受创", "en": "Wounds" },
+      "v": { "zh": "生命值低于 25% 时武器威力 −20%、移速 −10%（原版单体单位通用减益）", "en": "Below 25% health: weapon strength −20% and speed −10% (the standard vanilla penalty for single-entity units)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "尚武造诣", "en": "Martial Prowess" },
+      "v": { "zh": "近战攻击 +2、近战防御 +12（原版高等精灵种族被动）", "en": "Melee attack +2, melee defence +12 (the vanilla High Elf racial passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "银月龙吐息", "en": "Moon Dragon's Breath" },
+      "v": { "zh": "向前方喷吐龙息，伤害 68（其中 41 破甲），射程 90（原版银月龙同款）", "en": "A breath attack to the front: 68 damage (41 armour-piercing), range 90 (the same as the vanilla Moon Dragon's)" },
+      "form": { "zh": "主动 · 仅银月龙", "en": "Active · Moon Dragon only" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "领导力光环", "en": "Leadership aura" } }
+  ],
+  "tree": {
+    "subject": "serena",
+    "note": {
+      "zh": "只列本 mod 原创的节点。原版复用的迷雾个人线、马瑟兰迷雾法系与战役行动线不列；第一行只列坐骑与「登峰造极」。",
+      "en": "Only this mod's own nodes are listed. The vanilla mist line, the Lore of Mists and the campaign-action line are left out, and the top row shows only her mounts and Beyond the Summit."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "个人专属线", "en": "Personal Line" },
+        "sub": {
+          "zh": "她一个人的漂泊与航海。「幸存者」8 级解锁；其后四格可各自点出，「舰队操练」与「身经百战」各有三级；「海上大法师」须四格全点。",
+          "en": "Her own years of wandering and seafaring. Survivor opens at rank 8; the next four can be taken in any order, with three levels each for Fleet Drill and Battle-Hardened. Sea Archmage needs all four."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "坐骑与通用节点", "en": "Mounts and General" },
+        "sub": {
+          "zh": "三个坐骑依次到等级自动获得：披甲伊瑟拉玛银战马 7 级、伊瑟拉玛银战车 14 级、银月龙 22 级。「登峰造极」36 级开放，共 100 级、每级生命值 +1%，用来存放多出来的技能点。",
+          "en": "Her three mounts arrive in turn on their own: the Barded Ithilmar Steed at rank 7, the Ithilmar Chariot at rank 14 and the Moon Dragon at rank 22. Beyond the Summit opens at rank 36 and has 100 levels of +1% health each, a place for surplus skill points."
+        }
+      }
+    ]
+  },
+  "companion": {
+    "trait": { "zh": "潮信", "en": "Tidemark" },
+    "tiers": [
+      {
+        "name": { "zh": "潮信（结缘）", "en": "Tidemark (Bound)" },
+        "desc": { "zh": "纵有戒备，她仍以法杖引动迷雾遮蔽暗礁，护佑舰队穿行风浪。", "en": "Wary as she is, she still raises mist with her staff to veil the reefs and bring the fleet safely through the storm." },
+        "rewards": [
+          { "zh": "解锁洛瑟恩海卫（持盾）", "en": "Unlocks Lothern Sea Guard (Shields)" },
+          { "zh": "解锁舰队建筑「舰上海灵祠」", "en": "Unlocks the Shipboard Sea Spirit Shrine fleet building" },
+          { "zh": "获得特有魔法护符与特性", "en": "Grants a unique magical talisman and trait" }
+        ]
+      },
+      {
+        "name": { "zh": "潮信（信任）", "en": "Tidemark (Trusted)" },
+        "desc": { "zh": "海图点明暗涌与风道，艨艟顺流疾进，再无迷航阻滞之虞。", "en": "Her charts mark hidden currents and wind lanes. The warships run with the tide and never again lose their way." },
+        "rewards": [
+          { "zh": "洛瑟恩海卫（持盾）容量 +5（可直接征召 2 队）", "en": "Lothern Sea Guard (Shields) capacity +5 (2 can be recruited directly)" },
+          { "zh": "解锁纯水精魂", "en": "Unlocks Oceanids" },
+          { "zh": "「潮信」提升至「信任」", "en": "Tidemark advances to Trusted" }
+        ]
+      },
+      {
+        "name": { "zh": "潮信（托付）", "en": "Tidemark (Sworn)" },
+        "desc": { "zh": "星象罗盘引指航路，全军皆随其风标乘风破浪、一日千里。", "en": "Her star compass charts the course, and the whole army follows her heading, running before the wind and sweeping across vast leagues." },
+        "rewards": [
+          { "zh": "洛瑟恩海卫（持盾）容量 +3", "en": "Lothern Sea Guard (Shields) capacity +3" },
+          { "zh": "纯水精魂容量 +3（可直接征召 1 队）", "en": "Oceanids capacity +3 (1 can be recruited directly)" },
+          { "zh": "解锁海元素", "en": "Unlocks Sea Elementals" },
+          { "zh": "「潮信」提升至「托付」", "en": "Tidemark advances to Sworn" }
+        ]
+      },
+      {
+        "name": { "zh": "潮信（生死之交）", "en": "Tidemark (Devoted)" },
+        "desc": { "zh": "向挚友坦露深藏的真名，手持东方罗盘，引全军驰骋浩瀚绝域。", "en": "Her hidden true name now shared with a trusted friend, she takes up the eastern compass and leads the army into the boundless deep." },
+        "rewards": [
+          { "zh": "洛瑟恩海卫（持盾）容量 +3", "en": "Lothern Sea Guard (Shields) capacity +3" },
+          { "zh": "纯水精魂容量 +2", "en": "Oceanids capacity +2" },
+          { "zh": "海元素容量 +2（可直接征召 1 队）", "en": "Sea Elemental capacity +2 (1 can be recruited directly)" },
+          { "zh": "「潮信」提升至「生死之交」", "en": "Tidemark advances to Devoted" }
+        ]
+      }
+    ],
+    "effects": [
+      { "k": { "zh": "己方军队战役移动距离", "en": "Campaign movement range for her army" }, "v": { "zh": "+5／+10／+15／+20，随档位", "en": "+5 / +10 / +15 / +20 by tier" } },
+      { "k": { "zh": "所在军队行军损耗", "en": "Attrition for her army" }, "v": { "zh": "−30%，四档恒定", "en": "−30% at every tier" } }
+    ]
+  }
+}

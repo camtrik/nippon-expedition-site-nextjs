@@ -1,0 +1,54 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/稻荷灵狐使者兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。本兵种没有技能，部队属性全部是 DB 属性。",
+  "slug": "inari-fox",
+  "unit": "cth_npex_inari_fox_0",
+  "group": "nippon",
+  "name": { "zh": "稻荷灵狐使者", "en": "Inari Fox Emissary" },
+  "role": { "zh": "高机动魔法战兽 · T2 · 侧袭骚扰", "en": "Fast magical war beasts · T2 · flanking and harassment" },
+  "desc": {
+    "zh": "稻荷神社供奉的灵狐使者，以灵力凝爪、踏阵如风，是世代守护神社的契约灵兽。",
+    "en": "Spirit-fox emissaries of the Inari shrines, claws woven of spirit and swift as the wind, guarding these sacred grounds for generations."
+  },
+  "story": {
+    "zh": "稻荷灵狐是尼朋神社世代供奉的神使之狐，侍奉稻荷信仰，是神社最忠诚的灵体眷属。它们与神社立下古老的契约，平日隐于社殿深处，听巫女的神乐铃调遣；一旦神社蒙难、邪祟犯境，便成群结队涌出鸟居，以灵力所凝的爪牙撕咬来犯之敌，誓死护卫神域的一草一木。",
+    "en": "The Inari spirit foxes are the divine messengers honoured by the shrines of Nippon for generations: servants of the Inari faith, and the most loyal of a shrine's spirit-familiars. Bound to the shrine by an ancient pact, they lie hidden in the depths of the shrine halls, hearkening to the summons of the miko's kagura bell; but the moment a shrine is beset and evil crosses its border, they pour out through the torii gates in packs, tearing at the invaders with claws and fangs wrought of raw spirit, and guarding every tree and blade of grass on the hallowed ground with their lives."
+  },
+  "cost": { "recruit": 800, "upkeep": 200 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "战争野兽（多体战兽） · 近战", "en": "War beasts (a pack) · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "灵力爪牙（魔法近战）", "en": "Spirit claws and fangs (magical melee)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 15（皮甲）；无盾", "en": "Armour 15 (leather); no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "船上神龛（1 级）→ 船上稻荷本社（2 级）→ 麟栖神宫（3 级）舰上稻荷社链；稻荷神社（1 级）／稻荷大社（2 级）陆上神社链；灵道拜殿／灵道本殿（地标）",
+        "en": "Shipboard Shrine (tier 1) → Shipboard Inari Main Shrine (2) → Kirin Roost Sanctuary (3) in the Shipboard Inari Shrine chain; Inari Shrine (tier 1) / Inari Grand Shrine (2) in the Shrine chain on land; Great Shrine Outer Sanctuary / Great Shrine Inner Sanctuary (landmark)"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": { "zh": "建成上述任一建筑（最低 1 级神龛即可招募）", "en": "Building any of the above (the tier 1 Shipboard Shrine is enough)" }
+    },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "35", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "25" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "30／20", "n": { "zh": "破甲占 40%", "en": "40% armour-piercing" } },
+    { "k": { "zh": "对步兵加成", "en": "Bonus vs. infantry" }, "v": "4" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "38" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "15", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "60" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "95" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "143", "n": { "zh": "48 只合计 6864", "en": "6864 across 48 foxes" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "48" },
+    { "k": { "zh": "远程抗性", "en": "Missile resistance" }, "v": "15%" }
+  ],
+  "traits": [
+    { "name": { "zh": "魔法攻击", "en": "Magical Attacks" }, "desc": { "zh": "灵力爪牙伤害按魔法计算", "en": "Its spirit claws and fangs deal magical damage" } }
+  ]
+}

@@ -10,13 +10,17 @@ export const SITE_ORIGIN = (
 ).replace(/\/+$/, '')
 
 /**
- * 页面清单。加一页就在这里加一条，导航、hreflang、metadata 全跟着走。
+ * 页面清单。加一页就在这里加一条，导航、hreflang、metadata 全跟着走。顺序就是导航的顺序。
  * href 是不带语言前缀的站内路径，交给 i18n/navigation 的 Link / getPathname 加前缀。
+ * also：这些路径开头的页面也算在这一项下面（导航高亮用）——兵种页、人物页都归「图鉴」。
  */
 export const PAGES = [
-  { id: 'overview', href: '/', nav: 'overview', desc: 'home' },
-  { id: 'changelog', href: '/changelog', nav: 'log', desc: 'changelog' },
-  { id: 'faq', href: '/faq', nav: 'faq', desc: 'faq' },
+  { id: 'overview', href: '/', nav: 'overview', desc: 'home', also: [] },
+  { id: 'lore', href: '/lore', nav: 'lore', desc: 'lore', also: [] },
+  { id: 'codex', href: '/codex', nav: 'codex', desc: 'codex', also: ['/units/', '/chars/'] },
+  { id: 'changelog', href: '/changelog', nav: 'log', desc: 'changelog', also: [] },
+  { id: 'faq', href: '/faq', nav: 'faq', desc: 'faq', also: [] },
+  { id: 'compat', href: '/compat', nav: 'stats', desc: 'compat', also: [] },
 ] as const
 
 export type PageId = (typeof PAGES)[number]['id']

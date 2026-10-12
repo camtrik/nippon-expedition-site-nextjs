@@ -25,10 +25,10 @@
 ## 目录
 
 ```
-vanilla-assets.json      事实表：本 mod 技能树/兵种引用到的条目，按 DB key 索引，276 条
-vanilla-catalog.json     原版整批文案（约 14MB），见下文「整批文案」
-skills/<主体>.json       7 套技能树的节点与连线
-units/<兵种>.json        10 个兵种的技能与特性
+vanilla-assets.json      事实表：本 mod 技能树/兵种引用到的条目，按 DB key 索引，331 条
+vanilla-catalog.json     原版整批文案（约 16MB），见下文「整批文案」
+skills/<主体>.json       11 套技能树的节点与连线
+units/<兵种>.json        13 个兵种的技能与特性
 icons/campaign ui/skills/           790 张，战役技能图标，整目录
 icons/battle ui/ability_icons/     2374 张，战斗能力与法术图标，整目录
 icons/campaign ui/effect_bundles/   982 张，效果图标，整目录
@@ -48,23 +48,33 @@ icons/npex/                        自制图在 design/source 快照里找不到
 
 | 主体 | 节点数 | 其中原版技能 |
 | --- | ---: | ---: |
-| 沈长风 shen-changfeng | 62 | 48 |
-| 立花直虎 tachibana-naotora | 28 | 20 |
-| 纱代 sayo | 34 | 14 |
-| 瑟兰娜 serena | 39 | 29 |
-| 武士大将 samurai-taisho | 57 | 40 |
-| 武士大将（黑）samurai-taisho-black | 57 | 40 |
-| 巫女 miko | 49 | 32 |
+| 沈长风 shen-changfeng | 65 | 49 |
+| 立花直虎 tachibana-naotora | 29 | 20 |
+| 纱代 sayo | 35 | 14 |
+| 瑟兰娜 serena | 40 | 29 |
+| 伊吹 ibuki | 31 | 20 |
+| 武士大将 samurai-taisho | 59 | 41 |
+| 武士大将（黑）samurai-taisho-black | 59 | 41 |
+| 巫女 miko | 50 | 32 |
+| 水师提督（先登）admiral-01 | 55 | 40 |
+| 水师提督（炮令）admiral-02 | 55 | 40 |
+| 水师提督（驭潮）admiral-03 | 55 | 40 |
 
-去重后：**事实表 276 条，原版复用 172 / 本 mod 原创 104。**
-（含技能效果里解锁的法术，以及 10 个兵种的能力和特性。）
+去重后：**事实表 331 条，原版复用 185 / 本 mod 原创 146。**
+（含技能效果里解锁的法术，以及 13 个兵种的能力和特性。）
 
-兵种十个：玉海潮勇 jade-sea-sailors、舰队铳手 jade-sea-fleet-gunners、
+兵种十三个：玉海潮勇 jade-sea-sailors、舰队铳手 jade-sea-fleet-gunners、
 长枪武士 yari-samurai、铁炮武士 teppo-samurai、雷刃旗本 hatamoto-raijin、
 潮汐禁卫 tide-guard、云霄禁卫 empyrean-guard、麒麟 kirin、
-稻荷灵狐使者 inari-fox、沧溟巨炮 abyssal-grand-cannon。
+稻荷灵狐使者 inari-fox、沧溟巨炮 abyssal-grand-cannon、
+晓行众（太刀）akatsuki-shu-katana、晓行众（弓）akatsuki-shu-bow、国崩巨鬼 kunikuzushi-oni。
 
-水师提督三套技能树不进图鉴，没有导出。
+武士大将改成三张脸之后（2026-10-03）仍是同一套技能树；`samurai-taisho-black`
+是旧黑甲 subtype 留下的那套，DB 里还在；除两个坐骑节点的 key 带 `_black` 外，与
+`samurai-taisho` 逐节点相同。站点只用 `samurai-taisho`。
+
+水师提督三套技能树只差开局特性（先登 / 炮令 / 驭潮），站点只拿它们的特性（2026-10-12 起导出），
+不列技能树。
 
 ## 数据来源
 
@@ -101,6 +111,13 @@ icons/npex/                        自制图在 design/source 快照里找不到
 - `text: null` 表示这个效果没有描述 loc，是隐藏管线效果，游戏里也不显示，跳过即可。
 - 解锁法术的技能带 `unlocks_abilities`（法术 key 列表，法术本身也在事实表里）。
   技能自身没有描述的，已照搬法术描述并标 `desc_via_ability`（12 条）。
+
+## 等级门槛
+
+`character_skill` 条目带 `unlocked_at_rank`（`character_skills` 表那一列）和 `level_ranks`
+（`character_skill_level_details`，按级给，只列非 0 的，例如 `{"1": 7}`）。**`level_ranks` 优先**，
+没有才看 `unlocked_at_rank`。两者都是 0 起算：`7` 在游戏里显示为角色等级 8（沈长风技能树文档里
+玉龙马 6→7、玉海剑圣 7→8、凌涛 15→16、破浪之帅 14→15 四处都对得上）。
 
 ## 整批文案 `vanilla-catalog.json`
 
@@ -188,3 +205,13 @@ python tools/build_site_vanilla_export.py
 加人物：在脚本的 `SUBJECTS` 里加一行 `node set key -> (slug, 中文名, role)`。
 加兵种：在 `UNITS` 里加一行 `land_unit key -> (slug, 中文名, 设计文档路径)`。
 其余全自动。
+
+**2026-10-12 这一版不是在 Windows 上跑的。** 原版 DB 与 loc 取自 mod 仓库
+`warhammer_3/original-game/`（09-28 游戏更新后的提取物），原版图标沿用上一版的整目录
+导出（三个整批目录与 skins 选集原样保留，没有重新从 ui pack 读）。因此
+`vanilla-catalog.json` 的 `inline_icons` 有 27 个 token 解析为 null——全是 09-28
+更新后整批文案里新出现的 token，事实表里一个都没用到。下次在 Windows 上正常跑一遍即可补齐。
+
+自制图标（`icon.source: "npex"`）只有在 `design/source` 快照里那份**像素一致**时才指过去，
+否则复制当前 mod 里的那份到 `icons/npex/`——快照是 09-06 冻结的，之后新画的图（伊吹、
+鬼线兵种等 12 张）只在 `icons/npex/` 里。

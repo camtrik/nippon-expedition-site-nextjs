@@ -5,8 +5,8 @@
   "set_key": "cth_npex_skill_set_shen_changfeng",
   "agent_type": "general",
   "agent_subtype": "cth_npex_shen_changfeng",
-  "node_count": 63,
-  "vanilla_skill_count": 48,
+  "node_count": 65,
+  "vanilla_skill_count": 49,
   "nodes": [
     {
       "node": "cth_npex_skill_node_shen_unique_0",
@@ -991,7 +991,7 @@
       "indent": 2,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
+      "visible_in_ui": true,
       "parents": []
     },
     {
@@ -1065,6 +1065,28 @@
           "link_type": "SUBSET_REQUIRED"
         }
       ]
+    },
+    {
+      "node": "wh3_main_skill_node_all_army_of_renown_legendary_lord",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_army_of_renown_legendary_lord",
+      "tier": 28,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_dump",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_dump",
+      "tier": 31,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
     }
   ]
 }

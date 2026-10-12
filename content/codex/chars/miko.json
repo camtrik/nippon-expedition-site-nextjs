@@ -1,0 +1,165 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/heroes/miko/巫女角色与数值.md 与 巫女技能树.md（法术与被动数值取技能树设计表；名额按其「其他事项」2026-10-01 的中间档 +1）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
+  "slug": "miko",
+  "rank": "hero",
+  "name": { "zh": "巫女", "en": "Miko" },
+  "rankLabel": { "zh": "英雄 · 法师", "en": "Hero · Wizard" },
+  "looks": [{ "key": "miko" }],
+  "desc": {
+    "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
+    "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
+  },
+  "story": {
+    "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
+    "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "英雄（泛用，可重复招募）", "en": "Hero (generic, can be recruited any number of times)" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，巫女法系", "en": "Wizard: Lore of the Miko" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "招募英雄面板「巫女」页签，由神社建筑解锁", "en": "The Miko tab of the hero recruitment panel, opened up by shrine buildings" } },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "玉海舰队、山陽氏与奥本氏开局即可招募；其余震旦派系需先攻占大社并完成「尼朋的祭仪」任务。下列建筑任一即可招募：岸上「稻荷神社」链 2 级「稻荷大社」（定居点 3 级）、旗舰「舰上稻荷社」链 III 行「船上稻荷本社」、地标「灵道社殿」2 级「灵道本殿」（定居点 2 级）",
+        "en": "Available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans; other Cathay factions must first take the Great Shrine and complete \"The Rites of Nippon\". Any one of these buildings lets you recruit her: the Inari Grand Shrine (tier 2 of the Inari Shrine chain, settlement level 3), the Shipboard Inari Main Shrine (row III of the flagship's Shipboard Inari Shrine chain) or the Great Shrine Inner Sanctuary (tier 2 of the Great Shrine landmark, settlement level 2)"
+      }
+    },
+    {
+      "k": { "zh": "数量限制", "en": "Limit" },
+      "v": {
+        "zh": "无全局上限；同时在役名额由建筑提供：「稻荷大社」「船上稻荷本社」各 +1，升到「灵兽神宫」（稻荷神社链 3 级，定居点 5 级）「麟栖神宫」（舰上稻荷社链 V 行）各 +2，「灵道本殿」+1；各处叠加，满配 +5",
+        "en": "No overall cap; how many can serve at once depends on buildings. The Inari Grand Shrine and the Shipboard Inari Main Shrine give +1 each, rising to +2 each at the Divine Beast Sanctuary (tier 3 of the Inari Shrine chain, settlement level 5) and the Kirin Roost Sanctuary (row V of the Shipboard Inari Shrine chain); the Great Shrine Inner Sanctuary adds +1. They stack, up to +5"
+      }
+    },
+    { "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" }, "v": { "zh": "招募费 1000，维持费 250", "en": "Recruitment 1000, upkeep 250" } }
+  ],
+  "stats": {
+    "forms": [{ "zh": "步行（唯一形态）", "en": "On foot (only form)" }],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["25"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["44"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["50"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["180／160"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["10"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4208"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["70"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["45"] }
+    ],
+    "note": { "zh": "魔法攻击；施法（巫女法系）。", "en": "Magical attacks; casts spells from the Lore of the Miko." }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "巫女法器 · 180／160 · 魔法攻击", "en": "Sacred Implements · 180 / 160 · magical" },
+      "v": { "zh": "御币、祓串与神乐铃皆可为兵，法器之击自带灵力", "en": "Gohei, purification wand or kagura bell – any of them serves as a weapon, and every blow carries spiritual power" }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "法术吟唱者", "en": "Spellcaster" }, "v": { "zh": "唯一形态", "en": "Her only form" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "神懸かり", "en": "Kamigakari" },
+      "v": { "zh": "仅本人：魔法抗性 +15%、领导力 +10", "en": "Herself only: magic resistance +15%, leadership +10" },
+      "form": { "zh": "被动 · 技能树「依代」解锁", "en": "Passive · from the Yorishiro skill" }
+    },
+    {
+      "k": { "zh": "神域", "en": "Divine Domain" },
+      "v": { "zh": "常驻光环：40 米内友军领导力 +10、魔法抗性 +10%", "en": "Permanent aura: allies within 40 m gain leadership +10 and magic resistance +10%" },
+      "form": { "zh": "被动 · 技能树「注連縄」解锁", "en": "Passive · from the Shimenawa skill" }
+    },
+    {
+      "k": { "zh": "退魔", "en": "Demon Warding" },
+      "v": { "zh": "每当巫女施放本法系任一法术：她周身 55 米内敌军领导力 −5、近战攻击 −8、移动速度 ×0.9，持续 15 秒", "en": "Whenever she casts a spell from this lore, enemies within 55 m of her suffer leadership −5, melee attack −8 and speed ×0.9 for 15 seconds" },
+      "form": { "zh": "学派被动 · 技能树解锁", "en": "Lore passive · skill tree" }
+    },
+    {
+      "k": { "zh": "破魔矢", "en": "Hamaya" },
+      "v": {
+        "zh": "直线贯穿的破魔光矢，沿途穿透多个敌方单位：伤害 150 基础／350 破甲，射程 200 米；魔风 6、冷却 43 秒。基础版 1 级即会。增幅：伤害 300／700，魔风 10",
+        "en": "A shaft of purifying light that pierces through several enemy units in a line: 150 base / 350 armour-piercing damage, range 200 m; cost 6, cooldown 43 seconds. She knows the base spell from rank 1. Overcast: 300 / 700 damage, cost 10"
+      },
+      "form": { "zh": "法术 · 低级", "en": "Spell · lesser" }
+    },
+    {
+      "k": { "zh": "神使召来：灵狐", "en": "Summon Divine Envoy: Spirit Fox" },
+      "v": {
+        "zh": "召来一队满编 48 只的稻荷灵狐使者，120 秒后灵体归座溃散；每场限 3 次，魔风 8、冷却 60 秒。增幅：每场多 1 次，施法距离 50 → 150 米，魔风 11",
+        "en": "Summons a full unit of 48 Inari Fox Emissaries, who fade back to the shrine after 120 seconds; 3 casts per battle, cost 8, cooldown 60 seconds. Overcast: one more cast per battle and range 50 → 150 m, cost 11"
+      },
+      "form": { "zh": "法术 · 低级", "en": "Spell · lesser" }
+    },
+    {
+      "k": { "zh": "千本樱", "en": "Senbonzakura" },
+      "v": {
+        "zh": "目标点半径 12 米的落樱之域，每跳 3 基础／4 破甲，持续 10 秒；施法距离 150 米，魔风 8、冷却 45 秒。增幅：半径 15 米、每跳 5／6、持续 12 秒，魔风 13",
+        "en": "A 12 m field of falling blade-petals that deals 3 base / 4 armour-piercing per tick for 10 seconds; range 150 m, cost 8, cooldown 45 seconds. Overcast: 15 m, 5 / 6 per tick for 12 seconds, cost 13"
+      },
+      "form": { "zh": "法术 · 低级", "en": "Spell · lesser" }
+    },
+    {
+      "k": { "zh": "封魔之札", "en": "Sealing Ofuda" },
+      "v": {
+        "zh": "钉住一个敌方单位：完全无法移动、近战攻击 −8，持续 16 秒；施法距离 100 米，魔风 9、冷却 38 秒。增幅改为群体：目标点 32 米内敌军全部无法移动、近战攻击 −10、近战防御 −10，魔风 18",
+        "en": "Pins one enemy unit in place: it cannot move at all and suffers melee attack −8 for 16 seconds; range 100 m, cost 9, cooldown 38 seconds. Overcast hits a group: every enemy within 32 m of the target point is rooted, with melee attack and melee defence −10, cost 18"
+      },
+      "form": { "zh": "法术 · 低级", "en": "Spell · lesser" }
+    },
+    {
+      "k": { "zh": "禊祓", "en": "Misogi" },
+      "v": {
+        "zh": "45 米内所有友军每秒治疗 0.8%、疲劳每秒 −1%，持续 20 秒，可复苏阵亡兵模；魔风 12、冷却 45 秒。增幅：范围 55 米、持续 26 秒，魔风 18",
+        "en": "All allies within 45 m heal 0.8% and recover 1% fatigue per second for 20 seconds, and fallen models can be revived; cost 12, cooldown 45 seconds. Overcast: 55 m for 26 seconds, cost 18"
+      },
+      "form": { "zh": "法术 · 高级", "en": "Spell · greater" }
+    },
+    {
+      "k": { "zh": "神隐", "en": "Spirited Away" },
+      "v": {
+        "zh": "半径 35 米的结界内，每个敌方单位每秒消失一名兵模，持续 8 秒；魔风 17、冷却 54 秒。增幅：持续 16 秒，魔风 26",
+        "en": "Inside a 35 m barrier, each enemy unit loses one model every second for 8 seconds; cost 17, cooldown 54 seconds. Overcast: 16 seconds, cost 26"
+      },
+      "form": { "zh": "法术 · 高级", "en": "Spell · greater" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "领导力光环", "en": "Leadership aura" } },
+    { "k": { "zh": "于森林中隐蔽", "en": "Hide (forest)" }, "v": { "zh": "藏身森林时不易被敌军发现", "en": "Stays hidden in forests until enemies come close" } },
+    { "k": { "zh": "精气之风精通", "en": "Mastery of Elemental Winds" }, "v": { "zh": "军中多支部队共有此属性时，法术威力提升", "en": "When several units in the army share it, their spells grow stronger" } }
+  ],
+  "tree": {
+    "subject": "miko",
+    "note": {
+      "zh": "只列本 mod 原创的技能线。原版复用的战役行动线不列。巫女法系与纱代共用，法术数值见上面的技能表。",
+      "en": "Only this mod's own skill lines are listed; the vanilla campaign-action line is left out. The Lore of the Miko is shared with Sayo; the spell numbers are in the abilities table above."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "神社巫女", "en": "Shrine Miko" },
+        "sub": {
+          "zh": "这一类巫女的职业修行：祭祀、御守、卜占、供养神使。起点「依代」8 级解锁，之后四格可各自点出，「注連縄」须四格全点；中间两格与纱代共用。",
+          "en": "The calling every miko shares: rites, charms, divination and offerings to the divine envoys. Yorishiro opens at rank 8; the next four can be taken in any order and Shimenawa needs all four. Two of the middle skills are shared with Sayo."
+        }
+      },
+      {
+        "indent": 2,
+        "label": { "zh": "巫女法系", "en": "Lore of the Miko" },
+        "sub": {
+          "zh": "六个法术与一个学派被动。法术每格三级：一级解锁基础施法，二级解锁增幅并冷却 −30%，三级冷却 −50%、增幅失误几率 −15%、魔风消耗降低；破魔矢基础版 1 级即会，节点只有后两级。",
+          "en": "Six spells and a lore passive. Each spell has three levels: the first unlocks it, the second adds the overcast and cuts the cooldown by 30%, the third cuts it by 50%, lowers the overcast's miscast chance by 15% and trims the Winds of Magic cost. Hamaya's base spell comes free at rank 1, so its node holds only the last two levels."
+        }
+      },
+      {
+        "indent": 4,
+        "label": { "zh": "調息与白衣", "en": "Breath Control and White Vestment" },
+        "sub": { "zh": "两条两级侧支：一条施法精通，一条物理抗性。", "en": "Two two-level side skills: one for spell mastery, one for physical resistance." }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "通用节点", "en": "General" },
+        "sub": { "zh": "孤立节点，不设前置。", "en": "Standalone nodes with no prerequisites." }
+      }
+    ]
+  }
+}

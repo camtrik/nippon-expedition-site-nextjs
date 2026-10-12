@@ -1,0 +1,86 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_akatsuki_shu_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_akatsuki_kirikomi",
+      "source": "npex",
+      "name": {
+        "zh": "斩入",
+        "en": "Kirikomi"
+      },
+      "desc": {
+        "zh": "看准敌阵破绽拔刀疾冲，自侧后以凌厉刀势撕裂敌线。",
+        "en": "With blades drawn, they rush a weakness in the enemy line, tearing into flank and rear with merciless strokes."
+      },
+      "icon": "cth_npex_unit_passive_akatsuki_kirikomi.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_akatsuki_will",
+      "source": "npex",
+      "name": {
+        "zh": "破晓之志",
+        "en": "Will of the Dawnbreakers"
+      },
+      "desc": {
+        "zh": "只要心中破晓信念未灭，将士的步履与刀锋便决不动摇。",
+        "en": "So long as their faith in the dawn endures, neither their stride nor their blades shall falter."
+      },
+      "icon": "cth_npex_unit_passive_akatsuki_will.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "guerrilla_deploy",
+      "source": "vanilla",
+      "name": {
+        "zh": "先锋部署",
+        "en": "Vanguard Deployment"
+      },
+      "desc": {
+        "zh": "这支部队可以在部署区域外进行部署",
+        "en": "This unit can deploy outside the deployment zone."
+      },
+      "icon": "guerrilla_deploy.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "immune_to_psychology",
+      "source": "vanilla",
+      "name": {
+        "zh": "心理免疫",
+        "en": "Immune to Psychology"
+      },
+      "desc": {
+        "zh": "这支部队免疫心理攻击（恐惧与惊骇）",
+        "en": "The unit is immune to psychological attacks (Fear & Terror)."
+      },
+      "icon": "immune_to_psychology.png"
+    },
+    {
+      "key": "strider",
+      "source": "vanilla",
+      "name": {
+        "zh": "地形适性",
+        "en": "Strider"
+      },
+      "desc": {
+        "zh": "这支部队不受因地形导致的速度与战斗惩罚",
+        "en": "Speed and combat penalties caused by terrain are ignored by this unit."
+      },
+      "icon": "strider.png"
+    }
+  ]
+}

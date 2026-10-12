@@ -1,0 +1,333 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "samurai-taisho",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_0",
+          "name": {
+            "zh": "武器大师",
+            "en": "Weapon Master"
+          },
+          "desc": {
+            "zh": "剑豪不止精通于刀剑一种武器。他们熟练掌握各种武器并有所应对。",
+            "en": "Master swordsmen are not limited to the blade alone. They are well versed in every weapon, and know how to counter any of them."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+4",
+                  "en": "Melee attack: +4"
+                },
+                {
+                  "zh": "近战防御：+4",
+                  "en": "Melee defence: +4"
+                },
+                {
+                  "zh": "解锁战场能力「武器大师」",
+                  "en": "Unlocks the battlefield ability \"Weapon Master\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_1",
+          "name": {
+            "zh": "三段击",
+            "en": "Three-Rank Volley"
+          },
+          "desc": {
+            "zh": "火器不仅讲究熟练度，更讲究纪律。",
+            "en": "Firearms demand not only skill, but discipline above all."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "远程武器威力：+10%（铁炮部队）（领主军队）",
+                  "en": "Missile strength: +10% for Teppo units (Lord's army)"
+                },
+                {
+                  "zh": "装填速度：+10%（铁炮部队）（领主军队）",
+                  "en": "Reload time reduction: +10% for Teppo units (Lord's army)"
+                },
+                {
+                  "zh": "射程：+10%（铁炮部队）（领主军队）",
+                  "en": "Range: +10% for Teppo units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：武器大师",
+            "en": "Requires Weapon Master"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_2",
+          "name": {
+            "zh": "武士传统",
+            "en": "Samurai Tradition"
+          },
+          "desc": {
+            "zh": "武家的传统不在血统，而在刀锋相传的一念。",
+            "en": "The samurai tradition lies not in bloodline, but in a single resolve passed down from blade to blade."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+4",
+                  "en": "Melee attack: +4"
+                },
+                {
+                  "zh": "武器威力：+10%",
+                  "en": "Weapon strength: +10%"
+                },
+                {
+                  "zh": "对抗大型部队加成：+5",
+                  "en": "Bonus vs Large: +5"
+                },
+                {
+                  "zh": "武器威力：+10%（近战武士部队）（领主军队）",
+                  "en": "Weapon strength: +10% for melee Samurai units (Lord's army)"
+                },
+                {
+                  "zh": "对大型单位加成：+5（近战武士部队）（领主军队）",
+                  "en": "Bonus vs Large: +5 for melee Samurai units (Lord's army)"
+                },
+                {
+                  "zh": "近战攻击：+4（近战武士部队）（领主军队）",
+                  "en": "Melee attack: +4 for melee Samurai units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：武器大师",
+            "en": "Requires Weapon Master"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_3",
+          "name": {
+            "zh": "灵兽御者",
+            "en": "Divine Beast Rider"
+          },
+          "desc": {
+            "zh": "只有强大的英雄才能让灵兽俯首。",
+            "en": "Only a hero of great strength can bend a divine beast to their will."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "冲锋加成：+10（灵兽）（领主军队）",
+                  "en": "Charge bonus: +10 for Divine Beast units (Lord's army)"
+                },
+                {
+                  "zh": "近战攻击：+6（灵兽）（领主军队）",
+                  "en": "Melee attack: +6 for Divine Beast units (Lord's army)"
+                },
+                {
+                  "zh": "近战防御：+4（灵兽）（领主军队）",
+                  "en": "Melee defence: +4 for Divine Beast units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：武器大师",
+            "en": "Requires Weapon Master"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_4",
+          "name": {
+            "zh": "风林火山",
+            "en": "Wind, Forest, Fire, Mountain"
+          },
+          "desc": {
+            "zh": "疾如风，徐如林，侵掠如火，不动如山。",
+            "en": "Swift as the wind, quiet as the forest, fierce as fire, immovable as the mountain."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "领导力：+6（领主军队）",
+                  "en": "Leadership: +6 (Lord's army)"
+                },
+                {
+                  "zh": "移动速度：+8%（领主军队）",
+                  "en": "Speed: +8% (Lord's army)"
+                },
+                {
+                  "zh": "近战防御：+4（领主军队）",
+                  "en": "Melee defence: +4 (Lord's army)"
+                },
+                {
+                  "zh": "冲锋加成：+10（领主军队）",
+                  "en": "Charge bonus: +10 (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：武器大师",
+            "en": "Requires Weapon Master"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_unique_5",
+          "name": {
+            "zh": "向死而生",
+            "en": "Death Gives Life"
+          },
+          "desc": {
+            "zh": "武士大将已参透死亡，向死而生。",
+            "en": "The Samurai Taisho has made peace with death itself, and finds life by facing it."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "「武器大师」由「向死而生」取代",
+                  "en": "\"Weapon Master\" is replaced by \"Death Gives Life\""
+                },
+                {
+                  "zh": "解锁战场能力「向死而生」",
+                  "en": "Unlocks the battlefield ability \"Death Gives Life\""
+                },
+                {
+                  "zh": "解锁属性：永不战败",
+                  "en": "Attribute: Unbreakable"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_samurai_taisho_unique_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：三段击、武士传统、灵兽御者、风林火山",
+            "en": "Requires Three-Rank Volley, Samurai Tradition, Divine Beast Rider, Wind, Forest, Fire, Mountain"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_samurai_taisho_mount_warhorse",
+          "name": {
+            "zh": "武家战马",
+            "en": "Samurai Warhorse"
+          },
+          "desc": {
+            "zh": "武家将领的坐骑，久经阵战，闻鼓不惊。",
+            "en": "The mount of a samurai commander, seasoned in battle and unshaken by the sound of war drums."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_samurai_taisho_mount_warhorse.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 5 解锁",
+            "en": "Unlocks at rank 5"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_samurai_taisho_mount_kirin",
+          "name": {
+            "zh": "麒麟",
+            "en": "Kirin"
+          },
+          "desc": {
+            "zh": "只在圣木林间现身的祥瑞，唯有德望者能得其俯首。",
+            "en": "An auspicious beast that appears only within sacred groves, bowing its head to none but those of virtue and renown."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_samurai_taisho_mount_kirin.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 16 解锁",
+            "en": "Unlocks at rank 16"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

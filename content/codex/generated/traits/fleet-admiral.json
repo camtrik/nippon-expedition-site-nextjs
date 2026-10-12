@@ -1,0 +1,133 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "variant",
+  "subjects": [
+    "admiral-01",
+    "admiral-02",
+    "admiral-03"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_admiral_innate_01",
+      "name": {
+        "zh": "先登",
+        "en": "First Aboard"
+      },
+      "desc": {
+        "zh": "他总是在接舷战中第一个跳上敌船。手下的士兵往往忠心耿耿，随他冲锋。",
+        "en": "He is always the first over the rail in a boarding action. The men under him are loyal to a fault, and follow him across."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆（领主军队）",
+              "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first (Lord's army)"
+            },
+            {
+              "zh": "近战攻击：+8",
+              "en": "Melee attack: +8"
+            },
+            {
+              "zh": "武器威力：+10%",
+              "en": "Weapon strength: +10%"
+            },
+            {
+              "zh": "领导力：近战步兵部队+8（领主军队）",
+              "en": "Leadership: +8 for Melee Infantry units (Lord's army)"
+            },
+            {
+              "zh": "近战攻击：近战步兵部队+6（领主军队）",
+              "en": "Melee attack: +6 for Melee Infantry units (Lord's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_admiral_innate_01.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_admiral_innate_02",
+      "name": {
+        "zh": "炮令",
+        "en": "Order to Fire"
+      },
+      "desc": {
+        "zh": "射角、风偏、装填节奏，全在一声令下。他的补给官同样听这一声——凡在提督舰影响力范围内的友军，伤亡补充都快上一截。",
+        "en": "Elevation, windage, the rhythm of the loading: all of it hangs on one word of command. His quartermasters answer to the same voice: any allied army within his ship's circle of influence replenishes its losses faster."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆（领主军队）",
+              "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first (Lord's army)"
+            },
+            {
+              "zh": "补员速率：+6%（此军队及影响力范围内所有军队）",
+              "en": "Casualty replenishment rate: +6% (this force and all forces in circle of influence)"
+            },
+            {
+              "zh": "弹药容量：+20%（远程部队）（领主军队）",
+              "en": "Ammunition: +20% for missile units (Lord's army)"
+            },
+            {
+              "zh": "远程伤害：+5%（远程部队，基础与破甲同时）（领主军队）",
+              "en": "Missile damage: +5% for missile units, base and armour-piercing alike (Lord's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_admiral_innate_02.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_admiral_innate_03",
+      "name": {
+        "zh": "驭潮",
+        "en": "Tide-Reader"
+      },
+      "desc": {
+        "zh": "驭潮者听得见风底下的东西，潮汐涨落有自己的语言，读得懂的人永远比风暴先到一步。凡在提督舰影响力范围内的友军，都跟着他走这条快路。",
+        "en": "One who masters the tide hears what lies beneath the wind. The ebb and flow have a language of their own, and whoever can read it is always a step ahead of the storm. Any allied army within his ship's circle of influence travels that faster road with him."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆（领主军队）",
+              "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first (Lord's army)"
+            },
+            {
+              "zh": "战略地图移动距离：+10%（此军队及影响力范围内所有军队）",
+              "en": "Campaign movement range: +10% (this force and all forces in circle of influence)"
+            },
+            {
+              "zh": "质量：+25%（骑兵与巨兽部队）（领主军队）",
+              "en": "Mass: +25% for cavalry and beast units (Lord's army)"
+            },
+            {
+              "zh": "冲锋加成：+20%（骑兵与巨兽部队）（领主军队）",
+              "en": "Charge bonus: +20% for cavalry and beast units (Lord's army)"
+            },
+            {
+              "zh": "移动速度：+8%（骑兵与巨兽部队）（领主军队）",
+              "en": "Speed: +8% for cavalry and beast units (Lord's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_admiral_innate_03.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

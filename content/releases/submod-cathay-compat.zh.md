@@ -7,6 +7,7 @@ tags: [cathay-compat]
 
 给原版震旦加机制的 mod 大多按阵营发放，名单里没有玉海舰队就用不上。这个 mod 负责把玉海舰队补进名单，之后会继续接入更多这类 mod。
 
+- 2026-10-06 与龙同行的精英部队移到「[与龙同行兼容包](https://steamcommunity.com/sharedfiles/filedetails/?id=3816610137)」，本包不再处理与龙同行。
 - 2026-08-30 接入 **[震旦机制扩展：南皋工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3723969862)**：玉海舰队可以使用南皋工坊面板。
     - 月后花园是妙影专属，未包含。
     - 没装南皋工坊那个 mod 的话，本包会自动把入口隐藏。

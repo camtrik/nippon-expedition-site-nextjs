@@ -27,9 +27,11 @@ Regular→Medium 是两级跳，看得出是粗体；旧的 PingFang 栈只能 M
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import shutil
 import subprocess
+import sys
 import tempfile
 import urllib.request
 from pathlib import Path
@@ -106,8 +108,8 @@ def fetch(file_name: str, cache: Path) -> Path:
 
 
 def main() -> None:
-    if shutil.which("pyftsubset") is None:
-        raise SystemExit("找不到 pyftsubset —— 先跑：pip install fonttools brotli")
+    if importlib.util.find_spec("fontTools") is None:
+        raise SystemExit("fonttools not found — run: pip install fonttools brotli")
 
     chars = collect_chars()
     print(f"[fonts] content/ 里有 {len(chars)} 个非 ASCII 字符")
@@ -124,7 +126,9 @@ def main() -> None:
             out = FONTS_DIR / f"{stem}.woff2"
             subprocess.run(
                 [
-                    "pyftsubset", str(src),
+                    # 不走 pyftsubset 启动器：Windows 上 Scripts/ 里的 .exe 可能被拒，
+                    # 模块本身能跑（旧站脚本为此改的，这里沿用它）
+                    sys.executable, "-m", "fontTools.subset", str(src),
                     f"--text-file={char_file}",
                     "--flavor=woff2",
                     "--layout-features=*",

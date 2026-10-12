@@ -141,7 +141,16 @@ export const Faq = obj({
 export const RELEASE_TYPES = ['release', 'content', 'balance', 'hotfix'] as const
 export const CHANNELS = ['main', 'submod'] as const
 /** 更新记录能打的标签。每个标签在 messages/*.json 的 tagLabels 里都要有一条——键名对不上是编译错误。 */
-export const TAGS = ['main', 'stronger-ai', 'nrs-compat', 'cathay-compat', 'yinyin-compat', 'wuh-compat'] as const
+export const TAGS = [
+  'main',
+  'stronger-ai',
+  'nrs-compat',
+  'cathay-compat',
+  'yinyin-compat',
+  'wuh-compat',
+  'techtree-compat',
+  'wwd-compat',
+] as const
 export type Tag = (typeof TAGS)[number]
 
 export const FrontMatter = z

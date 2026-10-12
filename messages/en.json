@@ -49,7 +49,9 @@
     "nrs-compat": "NRS compat",
     "cathay-compat": "Cathay compat",
     "yinyin-compat": "Yin-Yin compat",
-    "wuh-compat": "War under Heaven compat"
+    "wuh-compat": "War under Heaven compat",
+    "techtree-compat": "Tech-tree compat",
+    "wwd-compat": "Walking with Dragons compat"
   },
   "faqCount": "{n, plural, one {# question} other {# questions}}",
   "faqStatus": {

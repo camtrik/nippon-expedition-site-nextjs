@@ -56,7 +56,7 @@ for (const root of ROOTS) {
 if (missing.size) {
   console.error(`✗ 字体子集缺 ${missing.size} 个字——这些字会静默回退到系统字体，`)
   console.error('  同一句话里出现两套字形。补子集：')
-  console.error('    pip install fonttools brotli && python3 ../nippon-expedition-site/scripts/subset_fonts.py')
+  console.error('    pip install fonttools brotli && python3 scripts/subset_fonts.py')
   console.error('  然后把新的 woff2 和 coverage.txt 拷进 assets/fonts/。\n')
   for (const [ch, files] of [...missing].sort()) {
     console.error(`  ${ch}  U+${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}  ${[...files].join(', ')}`)

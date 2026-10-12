@@ -49,7 +49,9 @@
     "nrs-compat": "NRS 兼容包",
     "cathay-compat": "震旦兼容包",
     "yinyin-compat": "胤隐兼容包",
-    "wuh-compat": "兵戈天下兼容包"
+    "wuh-compat": "兵戈天下兼容包",
+    "techtree-compat": "科技树兼容包",
+    "wwd-compat": "与龙同行兼容包"
   },
   "faqCount": "{n, plural, other {# 问}}",
   "faqStatus": {

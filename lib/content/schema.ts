@@ -268,6 +268,9 @@ export const CodexChar = obj({
       }),
     ),
   }).optional(),
+  /** 游戏里的「特性」（开局特性 / 随机天性）从哪几套技能树取，默认就是 tree.subject。
+      多套 = 招募面板上的几位候选各带一项（水师提督三席） */
+  traitsFrom: z.array(z.string()).min(1).optional(),
   /** 远征同伴：四档羁绊。name / desc 是同伴特性那一档的名字与风味文，rewards 是达成这一档发的奖励，
       都照 loc（cth_npex_companions）原文；effects 是同伴特性本身的数值（设计书「同伴特性」） */
   companion: obj({
@@ -316,11 +319,22 @@ export const GenTree = z.strictObject({
   branches: z.array(z.strictObject({ indent: z.number(), nodes: z.array(GenNode) })),
 })
 
+/** 游戏里的「特性」：技能树里藏起来（visible_in_ui = false）的第 6 行。
+    fixed：开局自带的一项（传奇人物）；random：招募时从池子里随机一项（通用领主 / 英雄）；
+    variant：每位候选各带一项（traitsFrom 列了多套树） */
+export const GenTraits = z.strictObject({
+  _comment: z.string(),
+  kind: z.enum(['fixed', 'random', 'variant']),
+  subjects: z.array(z.string()),
+  nodes: z.array(GenNode),
+})
+
 export type CodexUnitData = z.infer<typeof CodexUnit>
 export type CodexCharData = z.infer<typeof CodexChar>
 export type GenUnitData = z.infer<typeof GenUnit>
 export type GenTreeData = z.infer<typeof GenTree>
 export type GenNodeData = z.infer<typeof GenNode>
+export type GenTraitsData = z.infer<typeof GenTraits>
 export type GenAbilityData = z.infer<typeof GenAbility>
 
 // ---- content/lore.json -------------------------------------------------------

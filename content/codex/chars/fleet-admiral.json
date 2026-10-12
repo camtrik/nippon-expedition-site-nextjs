@@ -188,5 +188,6 @@
       "k": { "zh": "宁和化生：+50%", "en": "Harmony Amplifier: +50%" },
       "v": { "zh": "全形态；照原版泛用震旦领主的档次（和谐放大 150%），与沈长风相同", "en": "All forms; the standard rate for a generic Cathay lord, the same as Shen Changfeng" }
     }
-  ]
+  ],
+  "traitsFrom": ["admiral-01", "admiral-02", "admiral-03"]
 }

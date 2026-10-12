@@ -1,0 +1,587 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "random",
+  "subjects": [
+    "miko"
+  ],
+  "nodes": [
+    {
+      "key": "wh3_main_skill_innate_cth_aggressive_hero",
+      "name": {
+        "zh": "暴力",
+        "en": "Violent"
+      },
+      "desc": {
+        "zh": "暴力永远都是答案，不是也是！",
+        "en": "Violence is always the answer, even when it's not."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战攻击：+10",
+              "en": "Melee attack: +10"
+            },
+            {
+              "zh": "武器威力：+10%",
+              "en": "Weapon strength: +10%"
+            },
+            {
+              "zh": "冲锋加成：+15",
+              "en": "Charge bonus: +15"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_aggressive_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_confident_hero",
+      "name": {
+        "zh": "稳健",
+        "en": "Sure-Footed"
+      },
+      "desc": {
+        "zh": "认识自身的能力并没什么错，尤其是自身确实很有能力时",
+        "en": "There's nothing wrong with being aware of one's capabilities - particularly when one is capable of so much."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "被动技能：『激励乌合』",
+              "en": "Passive ability: \"Rabble Rouse\""
+            },
+            {
+              "zh": "解锁属性：心理免疫",
+              "en": "Attribute: Immune to Psychology"
+            },
+            {
+              "zh": "领导力：+10",
+              "en": "Leadership: +10"
+            },
+            {
+              "zh": "领导力：+2（军中所有部队）",
+              "en": "Leadership: +2 (all units in army)"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_confident_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_cunning_hero",
+      "name": {
+        "zh": "狡猾",
+        "en": "Crafty"
+      },
+      "desc": {
+        "zh": "欺骗会让人蹙眉，但前提是你被识破了",
+        "en": "Deception is frowned upon, but only if you're found out."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "伏击成功概率：+25%（当地我占区军队）",
+              "en": "Ambush success chance: +25% (armies in local owned region)"
+            },
+            {
+              "zh": "允许进行淬毒攻击",
+              "en": "Enables poison attacks"
+            },
+            {
+              "zh": "近战防御：+10",
+              "en": "Melee defence: +10"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_cunning_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_determined_hero",
+      "name": {
+        "zh": "发愤图强",
+        "en": "Driven"
+      },
+      "desc": {
+        "zh": "意志的交锋绝不容畏缩",
+        "en": "In a battle of wills, one must not falter."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "人物获取经验：+30%",
+              "en": "Character experience gain: +30%"
+            },
+            {
+              "zh": "解锁属性：心理免疫",
+              "en": "Attribute: Immune to Psychology"
+            },
+            {
+              "zh": "生命值：+10%",
+              "en": "Hit points: +10%"
+            },
+            {
+              "zh": "领导力：+15",
+              "en": "Leadership: +15"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_determined_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_disciplined_hero",
+      "name": {
+        "zh": "训练有素",
+        "en": "Trained"
+      },
+      "desc": {
+        "zh": "即使是色孽，也无法击垮这个人的自制力",
+        "en": "Even Slaanesh would be unable to break this one's self control."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战攻击：+8",
+              "en": "Melee attack: +8"
+            },
+            {
+              "zh": "近战防御：+8",
+              "en": "Melee defence: +8"
+            },
+            {
+              "zh": "领导力：+2（军中所有部队）",
+              "en": "Leadership: +2 (all units in army)"
+            },
+            {
+              "zh": "近战攻击：+2（军中所有部队）",
+              "en": "Melee attack: +2 (all units in army)"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_disciplined_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_fleet_footed_hero",
+      "name": {
+        "zh": "健步如飞",
+        "en": "Fleet of Foot"
+      },
+      "desc": {
+        "zh": "无人能够杀死不可捕捉之物",
+        "en": "No being can kill what it cannot catch."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "移动速度：+20%",
+              "en": "Speed: +20%"
+            },
+            {
+              "zh": "被动技能：『健步』",
+              "en": "Passive ability: \"Wayfarer\""
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_fleet_footed_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_intelligent_hero",
+      "name": {
+        "zh": "睿智",
+        "en": "Wise"
+      },
+      "desc": {
+        "zh": "明断则慎行",
+        "en": "Discerning judgement begets prudent action."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "法术强度：+10%（若为施法者）",
+              "en": "Spell intensity: +10% (If Spellcaster)"
+            },
+            {
+              "zh": "人物获取经验：+50%",
+              "en": "Character experience gain: +50%"
+            },
+            {
+              "zh": "英雄自卫：杀伤进犯者概率+5%",
+              "en": "Hero self-defence: +5% chance of wounding aggressors"
+            },
+            {
+              "zh": "发现伏击概率：+10%",
+              "en": "Ambush defence chance: +10%"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_intelligent_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_knowledgeable_hero",
+      "name": {
+        "zh": "博学多才",
+        "en": "Lettered"
+      },
+      "desc": {
+        "zh": "如果知识就是力量，那么此人力量十足",
+        "en": "If knowledge is power, then this one is powerful indeed."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "人物获取经验：+75%",
+              "en": "Character experience gain: +75%"
+            },
+            {
+              "zh": "战斗掉落魔法物品概率：+15%",
+              "en": "Magic item drop chance from battle: +15%"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_knowledgeable_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_strategist_hero",
+      "name": {
+        "zh": "策略家",
+        "en": "Strategist"
+      },
+      "desc": {
+        "zh": "『诀窍就是要提前想两步…然后再提前想一步』",
+        "en": "\"The trick is to think two steps ahead… and then think one step ahead of that.\""
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "战略地图移动距离：+5%",
+              "en": "Campaign movement range: +5%"
+            },
+            {
+              "zh": "技能：『全军坚守阵地！』",
+              "en": "Ability: \"Tacticians, Stand Your Ground!\""
+            },
+            {
+              "zh": "解锁属性：先锋部署",
+              "en": "Attribute: Vanguard Deployment"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_strategist_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_strong_hero",
+      "name": {
+        "zh": "结实",
+        "en": "Solid"
+      },
+      "desc": {
+        "zh": "这家伙能跟食人魔较量掰手腕",
+        "en": "This one could challenge an Ogre to an arm-wrestling match."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "护甲强度：+15",
+              "en": "Armour: +15"
+            },
+            {
+              "zh": "近战攻击：+10",
+              "en": "Melee attack: +10"
+            },
+            {
+              "zh": "武器威力：+10%",
+              "en": "Weapon strength: +10%"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_strong_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_tactician_hero",
+      "name": {
+        "zh": "战术专家",
+        "en": "Tactician"
+      },
+      "desc": {
+        "zh": "若是说兵法还有哪里值得学习，那么此人应该还没碰到呢",
+        "en": "If there is anything left to learn about military planning, this one has yet to come across it."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "增援这支军队的援军可以将其到达地点调整 +500 米，而不会受到任何时间惩罚",
+              "en": "Reinforcements supporting this army can have their arrival point adjusted by +500 metres without incurring any time penalty"
+            },
+            {
+              "zh": "人物光环领导力影响效果：+4",
+              "en": "Character's aura leadership effect: +4"
+            },
+            {
+              "zh": "领导力光环范围：+50%",
+              "en": "Leadership aura size: +50%"
+            },
+            {
+              "zh": "被动技能：『战术专家』",
+              "en": "Passive ability: \"Tactician\""
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_tactician_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_tough_hero",
+      "name": {
+        "zh": "刚毅",
+        "en": "Enured"
+      },
+      "desc": {
+        "zh": "此人坚定不移，韧性十足，泰然直面所有的挑战",
+        "en": "Hardy and resilient, this being stands firm in the face of all challenges."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "生命值：+10%",
+              "en": "Hit points: +10%"
+            },
+            {
+              "zh": "护甲强度：+25",
+              "en": "Armour: +25"
+            },
+            {
+              "zh": "近战防御：+8",
+              "en": "Melee defence: +8"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_tough_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cth_weapon_master_hero",
+      "name": {
+        "zh": "武器专家",
+        "en": "Weapons Specialist"
+      },
+      "desc": {
+        "zh": "此人还有用得不精熟的兵器？它还没锻造出来呢！",
+        "en": "No arms have yet been forged that this warrior has been unable to master."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战攻击：+8",
+              "en": "Melee attack: +8"
+            },
+            {
+              "zh": "武器破甲杀伤：+65",
+              "en": "Armour-piercing weapon damage: +65"
+            },
+            {
+              "zh": "远程威力：+10%",
+              "en": "Missile strength: +10%"
+            },
+            {
+              "zh": "装弹时间降低：+10%",
+              "en": "Reload time reduction: +10%"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cth_weapon_master_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cathay_1_hero",
+      "name": {
+        "zh": "武术家",
+        "en": "Martial Artist"
+      },
+      "desc": {
+        "zh": "纵使刀折矢尽，猛士仍能以精武之躯力战不已，死中求生",
+        "en": "When the arrows are spent and the blades are all blunted, this perfect warrior can rely on their well-trained body to keep death from their door."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战防御：+6",
+              "en": "Melee defence: +6"
+            },
+            {
+              "zh": "物理抗性：5%",
+              "en": "Physical resistance: 5%"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cathay_1_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cathay_2_hero",
+      "name": {
+        "zh": "调谐师",
+        "en": "Harmoniser"
+      },
+      "desc": {
+        "zh": "各司其职，各尽其责。只要谨遵这句箴言，混沌便会无所遁形",
+        "en": "A place for everything and everything in its place. Live by this motto and Chaos will stand out like the proverbial sore thumb."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "领导力光环范围：防御时+30%",
+              "en": "Leadership aura size: +30% when defending"
+            },
+            {
+              "zh": "领导力：对抗混沌勇士、混沌恶魔、混沌矮人与诺斯卡时+6（军中所有部队）",
+              "en": "Leadership: +6 when fighting against Warriors of Chaos, Daemons of Chaos, Chaos Dwarfs and Norsca (all units in army)"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cathay_2_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cathay_3_hero",
+      "name": {
+        "zh": "官员",
+        "en": "Bureaucrat"
+      },
+      "desc": {
+        "zh": "有些人可能认为行政是项令人厌倦的事务，但这位昊天龙帝的臣民很清楚，有序的社会组织定会高效高能",
+        "en": "Some may consider administration a tiresome process, but this servant of the Celestial Emperor knows that a tidy society makes for an efficient, effective one."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "掌控力：+3（所在行省）",
+              "en": "Control: +3 (local province)"
+            },
+            {
+              "zh": "建筑成本：所有建筑-10%（所在行省）",
+              "en": "Construction cost: -10% for all buildings (local province)"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cathay_3_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "wh3_main_skill_innate_cathay_5_hero",
+      "name": {
+        "zh": "尽责谒者",
+        "en": "Fervent Questioner"
+      },
+      "desc": {
+        "zh": "龙神谒者的职责是保证天朝遍及宁和，而好奇的天性只是担任这一职务所需技能的一部分",
+        "en": "An inquisitive nature is only part of the skillset required for the Dragon's questioner, tasked with ensuring harmony prevails over Celestial lands."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "腐蚀：-2（所在行省）",
+              "en": "Corruption: -2 (local province)"
+            },
+            {
+              "zh": "所有建筑收入产值：+3%（所在地区）",
+              "en": "Income from all buildings: +3% (local region)"
+            }
+          ]
+        }
+      ],
+      "icon": "wh3_main_skill_innate_cathay_5_hero.png",
+      "reuse": true,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

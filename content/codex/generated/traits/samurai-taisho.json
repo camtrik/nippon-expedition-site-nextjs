@@ -1,0 +1,291 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "random",
+  "subjects": [
+    "samurai-taisho"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_innate_nippon_martial",
+      "name": {
+        "zh": "武艺精熟",
+        "en": "Martial Mastery"
+      },
+      "desc": {
+        "zh": "弓马刀枪自幼日课，未曾一日间断。纵使刀折矢尽，这具身体本身仍是他最后一件兵器。",
+        "en": "Bow, horse, blade and spear have been his daily discipline since childhood, without a single day's interruption. Even should his sword break and his arrows run out, his own body remains his last weapon."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战防御：+6",
+              "en": "Melee defence: +6"
+            },
+            {
+              "zh": "物理抗性：5%",
+              "en": "Physical resistance: 5%"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_martial.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_steward",
+      "name": {
+        "zh": "奉行之才",
+        "en": "Magistrate's Talent"
+      },
+      "desc": {
+        "zh": "账簿、工役、仓廪，在他眼里与阵图无异。治所井然，军势才养得起来。",
+        "en": "Ledgers, labour and granaries are, to him, no different from battle maps. Only a well-ordered domain can sustain an army."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "掌控力：+3（所在行省）",
+              "en": "Control: +3 (local province)"
+            },
+            {
+              "zh": "建筑成本：所有建筑-10%（所在行省）",
+              "en": "Construction cost: -10% for all buildings (local province)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_steward.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_inspector",
+      "name": {
+        "zh": "明察秋毫",
+        "en": "Keen Eye"
+      },
+      "desc": {
+        "zh": "他相信秽乱起于人心的缝隙，因此从不放过任何一句支吾其词。",
+        "en": "He believes corruption takes root in the smallest cracks of the human heart, and so he never lets a single evasive word pass unnoticed."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "腐蚀：-2（所在行省）",
+              "en": "Corruption: -2 (local province)"
+            },
+            {
+              "zh": "所有建筑收入产值：+3%（所在地区）",
+              "en": "Income from all buildings: +3% (local region)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_inspector.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_choleric",
+      "name": {
+        "zh": "烈性",
+        "en": "Choleric"
+      },
+      "desc": {
+        "zh": "怒气一旦烧起来，就只能拿敌人的血去浇熄。",
+        "en": "Once his anger catches fire, only the enemy's blood can put it out."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战攻击：+5",
+              "en": "Melee attack: +5"
+            },
+            {
+              "zh": "被动技能：『狂暴』",
+              "en": "Passive ability: \"Frenzy\""
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_choleric.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_honourable",
+      "name": {
+        "zh": "重义",
+        "en": "Honourable"
+      },
+      "desc": {
+        "zh": "言出必践，赏罚不私。故而部下肯把后背交给他。",
+        "en": "He keeps every word he gives, and metes out reward and punishment without favour. That is why his men trust him to guard their backs."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "战后俘虏数量：+5%（己方军队）",
+              "en": "Casualties captured post-battle: +5% (own army)"
+            },
+            {
+              "zh": "领导力：+10",
+              "en": "Leadership: +10"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_honourable.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_learned",
+      "name": {
+        "zh": "好学",
+        "en": "Learned"
+      },
+      "desc": {
+        "zh": "兵法、汉籍、异国海图，凡是能读的他都读，凡是读过的他都记得。",
+        "en": "Treatises of war, Cathayan classics, charts from foreign seas: whatever can be read, he reads, and whatever he has read, he remembers."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "人物获取经验：+75%",
+              "en": "Character experience gain: +75%"
+            },
+            {
+              "zh": "战斗掉落魔法物品概率：+15%",
+              "en": "Magic item drop chance from battle: +15%"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_learned.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_stout",
+      "name": {
+        "zh": "筋骨",
+        "en": "Stout"
+      },
+      "desc": {
+        "zh": "一身重甲穿了半辈子，如今倒像是长在身上，卸下来反而不自在。",
+        "en": "Half a lifetime spent in heavy armour has made it feel almost part of him; taking it off now feels stranger than wearing it."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "护甲强度：+15",
+              "en": "Armour: +15"
+            },
+            {
+              "zh": "近战攻击：+10",
+              "en": "Melee attack: +10"
+            },
+            {
+              "zh": "武器威力：+10%",
+              "en": "Weapon strength: +10%"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_stout.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_tactician",
+      "name": {
+        "zh": "军略",
+        "en": "Tactician"
+      },
+      "desc": {
+        "zh": "阵形尚未动，胜负已在他心里排演过一遍。",
+        "en": "Before the formation even moves, he has already rehearsed the battle's outcome in his mind."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "增援这支军队的援军可以将其到达地点调整 +500 米，而不会受到任何时间惩罚",
+              "en": "Reinforcements supporting this army can have their arrival point adjusted by +500 metres without incurring any time penalty"
+            },
+            {
+              "zh": "人物光环领导力影响效果：+4",
+              "en": "Character's aura leadership effect: +4"
+            },
+            {
+              "zh": "领导力光环范围：+50%",
+              "en": "Leadership aura size: +50%"
+            },
+            {
+              "zh": "被动技能：『战术专家』",
+              "en": "Passive ability: \"Tactician\""
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_tactician.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    },
+    {
+      "key": "cth_npex_skill_innate_nippon_unyielding",
+      "name": {
+        "zh": "不折",
+        "en": "Unyielding"
+      },
+      "desc": {
+        "zh": "身后是海，退无可退——所以他从来不退。",
+        "en": "The sea is at his back, with nowhere left to retreat – so he never does."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "英雄自卫：杀伤进犯者概率+10%",
+              "en": "Hero self-defence: +10% chance of wounding aggressors"
+            },
+            {
+              "zh": "解锁属性：不挠袭击",
+              "en": "Attribute: Unyielding Assault"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_innate_nippon_unyielding.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

@@ -253,7 +253,30 @@
         "size": "59x59"
       },
       "referenced_by": [
+        "skills/admiral-01.json",
         "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_ability_admiral_sweep": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "active",
+      "name": {
+        "zh": "横江",
+        "en": "River Sweep"
+      },
+      "desc": {
+        "zh": "白芒横江，水光接天",
+        "en": "A white gleam sweeps the river; the light on the water meets the sky."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_ability_admiral_sweep.png",
+        "size": "59x59"
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
       ]
     },
     "cth_npex_ability_die_to_live": {
@@ -393,6 +416,1741 @@
         "units/teppo-samurai.json"
       ]
     },
+    "cth_npex_skill_admiral_artofwar": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "兵法韬略",
+        "en": "The Art of War"
+      },
+      "desc": {
+        "zh": "兵者，诡道也。乘潮夜进，偃旗息鼓，敌未成列而炮已齐鸣。",
+        "en": "All warfare is deception. Advance on the tide with colours struck and oars muffled, and let the broadsides speak before the enemy can form."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/guerrilla_deploy.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 22
+      },
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_attribute_enable_vanguard_deployment",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁属性：先锋部署\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Vanguard Deployment\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "解锁属性：先锋部署",
+            "en": "Attribute: Vanguard Deployment"
+          },
+          "priority": 320,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_innate_01": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "先登",
+        "en": "First Aboard"
+      },
+      "desc": {
+        "zh": "他总是在接舷战中第一个跳上敌船。手下的士兵往往忠心耿耿，随他冲锋。",
+        "en": "He is always the first over the rail in a boarding action. The men under him are loyal to a fault, and follow him across."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_bonus_vs_infantry.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_patrol_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_settle_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_attack_garrisons_from_sea_dummy",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/siege_attack.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_attack",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 8.0,
+          "text": {
+            "zh": "近战攻击：+8",
+            "en": "Melee attack: +8"
+          },
+          "template": {
+            "zh": "近战攻击：%+n",
+            "en": "Melee attack: %+n"
+          },
+          "priority": 130,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_weapon_strength",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力：+10%",
+            "en": "Weapon strength: +10%"
+          },
+          "template": {
+            "zh": "武器威力：%+n%",
+            "en": "Weapon strength: %+n%"
+          },
+          "priority": 160,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_leadership_melee_infantry",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "领导力：近战步兵部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +8 for Melee Infantry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "领导力：近战步兵部队%+n",
+            "en": "Leadership: %+n for Melee Infantry units"
+          },
+          "priority": 411,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_melee_attack_infantry",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战攻击：近战步兵部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +6 for Melee Infantry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：近战步兵部队%+n",
+            "en": "Melee attack: %+n for Melee Infantry units"
+          },
+          "priority": 431,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_innate_02": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "炮令",
+        "en": "Order to Fire"
+      },
+      "desc": {
+        "zh": "射角、风偏、装填节奏，全在一声令下。他的补给官同样听这一声——凡在提督舰影响力范围内的友军，伤亡补充都快上一截。",
+        "en": "Elevation, windage, the rhythm of the loading: all of it hangs on one word of command. His quartermasters answer to the same voice: any allied army within his ship's circle of influence replenishes its losses faster."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_ammo.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_patrol_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_settle_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_attack_garrisons_from_sea_dummy",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/siege_attack.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_force_circle_of_influence_replenishment_rate",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_in_sphere_of_influence_own",
+          "value": 6.0,
+          "text": {
+            "zh": "补员速率：+6%\\n（此军队及影响力范围内所有军队）",
+            "en": "Casualty replenishment rate: +6%\\n(this force and all forces in circle of influence)"
+          },
+          "template": {
+            "zh": "补员速率：%+n%",
+            "en": "Casualty replenishment rate: %+n%",
+            "_via_tr": true
+          },
+          "priority": 200,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_gunnery_ammo",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 20.0,
+          "text": {
+            "zh": "弹药容量：+20%（远程部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ammunition: +20% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%（远程部队）",
+            "en": "Ammunition: %+n% for missile units"
+          },
+          "priority": 510,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_gunnery_damage",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程伤害：+10%（远程部队，基础与破甲同时）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile damage: +10% for missile units, base and armour-piercing alike\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "远程伤害：%+n%（远程部队，基础与破甲同时）",
+            "en": "Missile damage: %+n% for missile units, base and armour-piercing alike"
+          },
+          "priority": 540,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_innate_03": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "驭潮",
+        "en": "Tide-Reader"
+      },
+      "desc": {
+        "zh": "驭潮者听得见风底下的东西，潮汐涨落有自己的语言，读得懂的人永远比风暴先到一步。凡在提督舰影响力范围内的友军，都跟着他走这条快路。",
+        "en": "One who masters the tide hears what lies beneath the wind. The ebb and flow have a language of their own, and whoever can read it is always a step ahead of the storm. Any allied army within his ship's circle of influence travels that faster road with him."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_speed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_patrol_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_settle_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_attack_garrisons_from_sea_dummy",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "可直接从海上攻击沿海城镇的驻军，无需先行登陆",
+            "en": "Allows attacking coastal settlement garrisons directly from the sea, without needing to land first"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/siege_attack.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_force_circle_of_influence_campaign_movement_range",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_in_sphere_of_influence_own",
+          "value": 10.0,
+          "text": {
+            "zh": "战略地图移动距离：+10%\\n（此军队及影响力范围内所有军队）",
+            "en": "Campaign movement range: +10%\\n(this force and all forces in circle of influence)"
+          },
+          "template": {
+            "zh": "战略地图移动距离：%+n%",
+            "en": "Campaign movement range: %+n%",
+            "_via_tr": true
+          },
+          "priority": 200,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_tide_mass",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 25.0,
+          "text": {
+            "zh": "质量：+25%（骑兵与巨兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Mass: +25% for cavalry and beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "质量：%+n%（骑兵与巨兽部队）",
+            "en": "Mass: %+n% for cavalry and beast units"
+          },
+          "priority": 430,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/mass.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_tide_charge",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 20.0,
+          "text": {
+            "zh": "冲锋加成：+20%（骑兵与巨兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Charge bonus: +20% for cavalry and beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "冲锋加成：%+n%（骑兵与巨兽部队）",
+            "en": "Charge bonus: %+n% for cavalry and beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/charge_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_tide_speed",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "移动速度：+8%（骑兵与巨兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Speed: +8% for cavalry and beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "移动速度：%+n%（骑兵与巨兽部队）",
+            "en": "Speed: %+n% for cavalry and beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/battle_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_mount_jade_longma": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉龙马",
+        "en": "Jade Longma"
+      },
+      "desc": {
+        "zh": "朝廷配给提督的官坐骑，随印一同发下。",
+        "en": "The court's own mount, issued to an admiral along with his seal."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_admiral_mount_jade_longma_02": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉龙马",
+        "en": "Jade Longma"
+      },
+      "desc": {
+        "zh": "朝廷配给提督的官坐骑，随印一同发下。",
+        "en": "The court's own mount, issued to an admiral along with his seal."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_admiral_mount_jade_longma_03": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "玉龙马",
+        "en": "Jade Longma"
+      },
+      "desc": {
+        "zh": "朝廷配给提督的官坐骑，随印一同发下。",
+        "en": "The court's own mount, issued to an admiral along with his seal."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_admiral_mount_sea_longma": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海龙马",
+        "en": "Sea Longma"
+      },
+      "desc": {
+        "zh": "台风退去后立在礁石上的那一群。没有谁把它们发给舰队，是舰队自己收拢的。",
+        "en": "The herd that stood upon the reefs once the typhoon had passed. No one issued them to the fleet; the fleet gathered them in itself."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 18
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_ability_enable_admiral_wake",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "template": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_unit_passive_admiral_wake"
+      ]
+    },
+    "cth_npex_skill_admiral_mount_sea_longma_02": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海龙马",
+        "en": "Sea Longma"
+      },
+      "desc": {
+        "zh": "台风退去后立在礁石上的那一群。没有谁把它们发给舰队，是舰队自己收拢的。",
+        "en": "The herd that stood upon the reefs once the typhoon had passed. No one issued them to the fleet; the fleet gathered them in itself."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 18
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_ability_enable_admiral_wake",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "template": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_unit_passive_admiral_wake"
+      ]
+    },
+    "cth_npex_skill_admiral_mount_sea_longma_03": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海龙马",
+        "en": "Sea Longma"
+      },
+      "desc": {
+        "zh": "台风退去后立在礁石上的那一群。没有谁把它们发给舰队，是舰队自己收拢的。",
+        "en": "The herd that stood upon the reefs once the typhoon had passed. No one issued them to the fleet; the fleet gathered them in itself."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 18
+      },
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_ability_enable_admiral_wake",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "template": {
+            "zh": "解锁战场被动「踏浪惊涛」",
+            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_unit_passive_admiral_wake"
+      ]
+    },
+    "cth_npex_skill_admiral_personal_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "破浪枪势",
+        "en": "Wave-Cleaving Spear"
+      },
+      "desc": {
+        "zh": "提督的枪法有如海神相助",
+        "en": "The admiral handles a spear as though a sea god were guiding his hand."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 12
+      },
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_attack",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "近战攻击：+10",
+            "en": "Melee attack: +10"
+          },
+          "template": {
+            "zh": "近战攻击：%+n",
+            "en": "Melee attack: %+n"
+          },
+          "priority": 130,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_weapon_strength",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 60.0,
+          "text": {
+            "zh": "武器威力：+60%",
+            "en": "Weapon strength: +60%"
+          },
+          "template": {
+            "zh": "武器威力：%+n%",
+            "en": "Weapon strength: %+n%"
+          },
+          "priority": 160,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_bonus_vs_large",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 15.0,
+          "text": {
+            "zh": "对抗大型部队加成：+15",
+            "en": "Bonus vs Large: +15"
+          },
+          "template": {
+            "zh": "对抗大型部队加成：%+n",
+            "en": "Bonus vs Large: %+n"
+          },
+          "priority": 190,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/bonus_vs_large_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_weapon_strength",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力：+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "武器威力：%+n%",
+            "en": "Weapon strength: %+n%"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_personal_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "一枪横江",
+        "en": "One Sweep Across the River"
+      },
+      "desc": {
+        "zh": "白芒横江，水光接天",
+        "en": "A white gleam sweeps the river; the light on the water meets the sky."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_personal_1.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc10_effect_character_stat_enable_sundering_attacks",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "允许进行碎甲攻击",
+            "en": "Enables sundering attacks"
+          },
+          "template": {
+            "zh": "允许进行碎甲攻击",
+            "en": "Enables sundering attacks"
+          },
+          "priority": 140,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/phase_sunder_armour.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_ability_enable_admiral_sweep",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场能力「横江」",
+            "en": "Unlocks the battlefield ability \"River Sweep\""
+          },
+          "template": {
+            "zh": "解锁战场能力「横江」",
+            "en": "Unlocks the battlefield ability \"River Sweep\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_ability_admiral_sweep"
+      ]
+    },
+    "cth_npex_skill_admiral_personal_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "身先士卒",
+        "en": "Lead from the Front"
+      },
+      "desc": {
+        "zh": "他站的地方就是最前面那一排。",
+        "en": "Where he stands is the front rank."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh2_dlc13_skill_endurance_aura.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 10
+      },
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc13_ability_enable_endurance_aura",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『耐久光环』",
+            "en": "Passive ability: \"Aura of Endurance\""
+          },
+          "template": {
+            "zh": "被动技能：『耐久光环』",
+            "en": "Passive ability: \"Aura of Endurance\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_dlc13_lord_passive_endurance_aura"
+      ]
+    },
+    "cth_npex_skill_admiral_ship_renown": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "提督威名",
+        "en": "Admiral's Renown"
+      },
+      "desc": {
+        "zh": "水手挑船不看船，看站在船头的人是谁。",
+        "en": "A sailor picking a berth does not look at the ship. He looks at who is standing on her bow."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_dlc27_lord_passive_naval_discipline.png",
+        "size": "71x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_dragonship_growth_core",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": "龙舰舰员发展：+1",
+            "en": "Dragonship crew growth: +1"
+          },
+          "template": {
+            "zh": "龙舰舰员发展：%+n",
+            "en": "Dragonship crew growth: %+n"
+          },
+          "priority": 2,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/growth.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_dragonship_growth_core",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 2.0,
+          "text": {
+            "zh": "龙舰舰员发展：+2",
+            "en": "Dragonship crew growth: +2"
+          },
+          "template": {
+            "zh": "龙舰舰员发展：%+n",
+            "en": "Dragonship crew growth: %+n"
+          },
+          "priority": 2,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/growth.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_dragonship_growth_core",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 3.0,
+          "text": {
+            "zh": "龙舰舰员发展：+3",
+            "en": "Dragonship crew growth: +3"
+          },
+          "template": {
+            "zh": "龙舰舰员发展：%+n",
+            "en": "Dragonship crew growth: %+n"
+          },
+          "priority": 2,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/growth.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "水师枪术",
+        "en": "Naval Spearmanship"
+      },
+      "desc": {
+        "zh": "一寸长，一寸强。长枪如此，炮亦如此。",
+        "en": "An inch longer, an inch stronger. It is true of the spear, and it is true of the gun."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_0.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 8
+      },
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_attack",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战攻击：+6",
+            "en": "Melee attack: +6"
+          },
+          "template": {
+            "zh": "近战攻击：%+n",
+            "en": "Melee attack: %+n"
+          },
+          "priority": 130,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_bonus_vs_large",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "对抗大型部队加成：+10",
+            "en": "Bonus vs Large: +10"
+          },
+          "template": {
+            "zh": "对抗大型部队加成：%+n",
+            "en": "Bonus vs Large: %+n"
+          },
+          "priority": 190,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/bonus_vs_large_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_ability_enable_admiral_broadside",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场能力「舷侧齐射」",
+            "en": "Unlocks the battlefield ability \"Broadside\""
+          },
+          "template": {
+            "zh": "解锁战场能力「舷侧齐射」",
+            "en": "Unlocks the battlefield ability \"Broadside\""
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_ability_admiral_broadside"
+      ]
+    },
+    "cth_npex_skill_admiral_unique_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "接舷战法",
+        "en": "Boarding Tactics"
+      },
+      "desc": {
+        "zh": "钩锁搭上舷墙那一刻，两条船之间只剩一条规矩：先跳先赢。",
+        "en": "The moment the grapnel bites the gunwale, only one rule holds between two ships: whoever jumps first, wins."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_1.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_force_stat_weapon_strength_melee_infantry",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力：近战步兵部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10% for Melee Infantry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "武器威力：近战步兵部队%+n%",
+            "en": "Weapon strength: %+n% for Melee Infantry units"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_army_battle_infantry_charge_bonus",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "冲锋加成：近战步兵部队+8%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Charge bonus: +8% for Melee Infantry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "冲锋加成：近战步兵部队%+n%",
+            "en": "Charge bonus: %+n% for Melee Infantry units"
+          },
+          "priority": 501,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/charge.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "铳炮教习",
+        "en": "Gunnery Drill"
+      },
+      "desc": {
+        "zh": "装药、捣实、举铳、放。四个动作练到不过脑子，才准上战位。",
+        "en": "Charge, ram, level, fire. Only once all four are drilled past the need for thought is a man allowed to take his place at the guns."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_2.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_gunnery_reload",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "装填速度：+10%（火器与炮兵部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +10% for gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装填速度：%+n%（火器与炮兵部队）",
+            "en": "Reload time reduction: %+n% for gunpowder and artillery units"
+          },
+          "priority": 541,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_force_stat_missile_damage_cth_gunners_artillery",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程威力：铁雹铳手、鹤铳手、巨炮与炎霖火箭炮部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +10% for Iron Hail Gunners, Crane Gunners, Grand Cannon and Fire Rain Rocket units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "远程威力：铁雹铳手、鹤铳手、巨炮与炎霖火箭炮部队%+n%",
+            "en": "Missile strength: %+n% for Iron Hail Gunners, Crane Gunners, Grand Cannon and Fire Rain Rocket units"
+          },
+          "priority": 541,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "引航之术",
+        "en": "The Pilot's Art"
+      },
+      "desc": {
+        "zh": "暗礁和季风杀的船比敌人多。而优秀的领航者会把他们当航标。",
+        "en": "Reefs and monsoons sink more ships than any enemy ever does. A good pilot uses them as seamarks."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_3.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own_unseen",
+          "value": 15.0,
+          "text": {
+            "zh": "战略地图移动距离：在海上时+15%",
+            "en": "Campaign movement range: +15% whilst at sea"
+          },
+          "template": {
+            "zh": "战略地图移动距离：在海上时%+n%",
+            "en": "Campaign movement range: %+n% whilst at sea"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "打赢战斗后，恢复10%战役地图移动距离",
+            "en": "Replenishes 10% campaign movement range after winning a battle"
+          },
+          "template": {
+            "zh": "打赢战斗后，恢复%n%战役地图移动距离",
+            "en": "Replenishes %n% campaign movement range after winning a battle"
+          },
+          "priority": 3,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_twa03_attrition_immunity_high_seas_reef_storm",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "免疫深海、暗礁与风暴损耗\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Immune to High Seas, Reef and Storm attrition\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "免疫深海、暗礁与风暴损耗",
+            "en": "Immune to High Seas, Reef and Storm attrition"
+          },
+          "priority": 800,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attrition.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "市舶之利",
+        "en": "Profits of the Sea Trade"
+      },
+      "desc": {
+        "zh": "提督的印能签调令，也能签提货单。",
+        "en": "An admiral's seal signs marching orders. It signs bills of lading just as well."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_4.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_post_battle_loot_mod",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 20.0,
+          "text": {
+            "zh": "战后掳掠收入：+20%",
+            "en": "Income from post-battle loot: +20%"
+          },
+          "template": {
+            "zh": "战后掳掠收入：%+n%",
+            "en": "Income from post-battle loot: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/income.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_economy_trade_good_commodity_mod",
+          "effect_source": "vanilla",
+          "scope": "character_to_faction",
+          "value": 5.0,
+          "text": {
+            "zh": "可贸易资源产量：+5%\\n（派系范围）",
+            "en": "Tradable resources produced: +5%\\n(factionwide)"
+          },
+          "template": {
+            "zh": "可贸易资源产量：%+n%",
+            "en": "Tradable resources produced: %+n%"
+          },
+          "priority": 102,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/trade_agreement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "龙骧舟师",
+        "en": "The Soaring Dragon Armada"
+      },
+      "desc": {
+        "zh": "凡碧帆所向，皆为王土。凡舟师所至，皆为内海。",
+        "en": "Wherever the jade sails turn is the Emperor's land. Wherever the armada reaches is an inland sea."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_5.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "打赢战斗后，恢复10%战役地图移动距离",
+            "en": "Replenishes 10% campaign movement range after winning a battle"
+          },
+          "template": {
+            "zh": "打赢战斗后，恢复%n%战役地图移动距离",
+            "en": "Replenishes %n% campaign movement range after winning a battle"
+          },
+          "priority": 3,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_upkeep",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": -10.0,
+          "text": {
+            "zh": "维持费：-10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -10%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "维持费：%+n%",
+            "en": "Upkeep: %+n%"
+          },
+          "priority": 70,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/military_spending.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_experience_base_all",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 2.0,
+          "text": {
+            "zh": "新募部队等级：所有部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruit rank: +2 for all units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "新募部队等级：所有部队%+n",
+            "en": "Recruit rank: %+n for all units"
+          },
+          "priority": 117,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/experience.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_gunnery_ammo",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "弹药容量：+15%（远程部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ammunition: +15% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%（远程部队）",
+            "en": "Ammunition: %+n% for missile units"
+          },
+          "priority": 510,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_dump": {
       "kind": "character_skill",
       "source": "npex",
@@ -417,6 +2175,9 @@
         "1": 35
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
@@ -11545,6 +13306,32 @@
         "skills/miko.json"
       ]
     },
+    "cth_npex_unit_passive_admiral_wake": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "踏浪惊涛",
+        "en": "Wake of Breaking Waves"
+      },
+      "desc": {
+        "zh": "海龙马陷在阵中越久，蹄下攒的浪就越足，隔一阵便向身前掀出一道。",
+        "en": "The longer the Sea Longma is held in the melee, the more the swell gathers beneath its hooves, until every so often it throws a wave forward into the enemy."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_spell_deep_tidecall.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json"
+      ]
+    },
     "cth_npex_unit_passive_akatsuki_kirikomi": {
       "kind": "unit_ability",
       "source": "npex",
@@ -12127,6 +13914,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -12201,6 +13991,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -12275,6 +14068,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -12352,6 +14148,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -12501,6 +14300,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -12653,6 +14455,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -12728,6 +14533,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -12877,6 +14685,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -13428,6 +15239,30 @@
       },
       "referenced_by": [
         "skills/miko.json"
+      ]
+    },
+    "wh2_dlc13_lord_passive_endurance_aura": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_dlc13",
+      "ability_type": "passive",
+      "name": {
+        "zh": "耐久光环",
+        "en": "Aura of Endurance"
+      },
+      "desc": {
+        "zh": "这位领主能够承受长时间的战斗并展现出坚韧的意志，从而对附近的战斗产生积极的影响",
+        "en": "This Lord's ability to withstand prolonged combat and show fortitude has a positive effect on those fighting nearby."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc13_lord_passive_endurance_aura.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
       ]
     },
     "wh2_dlc17_unit_passive_wayfarer": {
@@ -15643,6 +17478,9 @@
         "1": 19
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -15694,6 +17532,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/ibuki.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
@@ -18155,6 +19996,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
@@ -19957,6 +21801,9 @@
         "3": 29
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -20162,6 +22009,9 @@
         "3": 49
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -20330,6 +22180,9 @@
         "1": 6
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
@@ -20388,6 +22241,9 @@
         "1": 6
       },
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
@@ -20444,6 +22300,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -20588,6 +22447,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -20732,6 +22594,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -20876,6 +22741,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21020,6 +22888,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21164,6 +23035,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21377,6 +23251,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21478,6 +23355,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21579,6 +23459,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21680,6 +23563,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21781,6 +23667,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21879,6 +23768,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -21977,6 +23869,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -24886,7 +26781,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/samurai-taisho.json"
+        "skills/admiral-01.json"
       ]
     },
     "wh_main_character_abilities_heroic_killing_blow": {
@@ -24910,7 +26805,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/ibuki.json"
+        "skills/admiral-01.json"
       ]
     },
     "wh_main_character_abilities_rally": {
@@ -24934,7 +26829,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/samurai-taisho.json"
+        "skills/admiral-01.json"
       ]
     },
     "wh_main_character_abilities_stand_your_ground": {
@@ -24958,7 +26853,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/samurai-taisho.json"
+        "skills/admiral-01.json"
       ]
     },
     "wh_main_character_passive_evasion": {
@@ -25405,6 +27300,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json",
@@ -25560,6 +27458,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
       ],
@@ -25903,6 +27804,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -25978,6 +27882,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -26034,6 +27941,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -26113,6 +28023,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -26259,6 +28172,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -26518,6 +28434,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -27078,6 +28997,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -27277,6 +29199,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -27375,6 +29300,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"
@@ -27473,6 +29401,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/admiral-01.json",
+        "skills/admiral-02.json",
+        "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json"

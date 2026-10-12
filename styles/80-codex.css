@@ -798,6 +798,58 @@
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr));
 }
 
+/* 特性：没有分行的标题，节点直接接在说明下面；随机池收在 <details> 里。
+   通用领主的天性图标是游戏里 24×24 的小图，拉到 56 会糊，按原尺寸放，大的才缩到 56 */
+.traits .tree__icon img {
+  width: auto;
+  height: auto;
+  max-width: 56px;
+  max-height: 56px;
+}
+
+.traits > .tree__nodes,
+.traits__pool > .tree__nodes {
+  margin-top: 26px;
+}
+
+.traits__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: 1px solid var(--rule-soft);
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.traits__more::-webkit-details-marker {
+  display: none;
+}
+
+.traits__more::after {
+  content: "+";
+  font-weight: 400;
+  color: var(--slate);
+}
+
+.traits__pool[open] > .traits__more::after {
+  content: "−";
+}
+
+.traits__more:hover {
+  border-color: var(--slate);
+}
+
+.traits__more:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
 .tree__node {
   display: flex;
   align-items: flex-start;

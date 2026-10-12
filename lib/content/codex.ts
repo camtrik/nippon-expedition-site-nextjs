@@ -11,10 +11,12 @@ import { lords, units as homeUnits } from './home'
 import {
   CodexChar,
   CodexUnit,
+  GenTraits,
   GenTree,
   GenUnit,
   type CodexCharData,
   type CodexUnitData,
+  type GenTraitsData,
   type GenTreeData,
   type GenUnitData,
 } from './schema'
@@ -38,9 +40,10 @@ const unitFiles = load('units', CodexUnit)
 const charFiles = load('chars', CodexChar)
 const genUnits = load('generated/units', GenUnit)
 const genTrees = load('generated/trees', GenTree)
+const genTraits = load('generated/traits', GenTraits)
 
 export type Unit = CodexUnitData & { gen: GenUnitData; groupName: (typeof homeUnits.groups)[number]['name'] }
-export type Char = CodexCharData & { gen?: GenTreeData }
+export type Char = CodexCharData & { gen?: GenTreeData; gameTraits?: GenTraitsData }
 
 // ---- 兵种 ----------------------------------------------------------------------
 
@@ -81,7 +84,11 @@ export const allChars: Char[] = [...charFiles.values()]
   .map((c) => {
     const gen = genTrees.get(c.slug)
     if (c.tree && !gen) throw new Error(`content/codex/generated/trees/${c.slug}.json 不存在——跑一次 pnpm export:codex`)
-    return { ...c, gen }
+    const gameTraits = genTraits.get(c.slug)
+    if ((c.tree || c.traitsFrom) && !gameTraits) {
+      throw new Error(`content/codex/generated/traits/${c.slug}.json 不存在——跑一次 pnpm export:codex`)
+    }
+    return { ...c, gen, gameTraits }
   })
 
 export const charBySlug = (slug: string) => allChars.find((c) => c.slug === slug)

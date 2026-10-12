@@ -1,0 +1,39 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "ibuki"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_ibuki_texing",
+      "name": {
+        "zh": "破晓行者",
+        "en": "Wanderer of the Dawn"
+      },
+      "desc": {
+        "zh": "行者不问虚名，唯以手中长刃引路。凡随他进军者，不论是人是妖，刀锋皆不迟疑。",
+        "en": "The Wanderer cares nothing for empty titles; he lets the odachi in his hands lead the way. Of those who march behind him, man or yokai, not one blade hesitates."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "近战攻击：攻击时+5（英雄所在军队）",
+              "en": "Melee attack: +5 when attacking (Hero's army)"
+            },
+            {
+              "zh": "领导力：+8（妖怪与武士部队）（英雄所在军队）",
+              "en": "Leadership: +8 for Yokai and Samurai units (Hero's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_ibuki_texing.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

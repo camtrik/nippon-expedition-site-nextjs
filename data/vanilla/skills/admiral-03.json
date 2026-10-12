@@ -1,0 +1,903 @@
+{
+  "subject": "admiral-03",
+  "name_cn": "水师提督（驭潮）",
+  "role": "lord_generic",
+  "set_key": "cth_npex_skill_set_admiral_03",
+  "agent_type": "general",
+  "agent_subtype": "cth_npex_admiral_03",
+  "node_count": 55,
+  "vanilla_skill_count": 40,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_admiral_mount_jade_longma_03",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_mount_jade_longma_03",
+      "tier": 0,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_all_self_hard_to_hit_starter",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_personal_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_personal_0",
+      "tier": 0,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_0",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_battle_inspiring_presence",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_0",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_campaign_route_marcher",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_agent_action_scaling",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_mount_sea_longma_03",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_mount_sea_longma_03",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_1_1",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_devastating_charge",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_personal_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_personal_1",
+      "tier": 1,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_personal_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_1",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_1",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_campaign_1_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_ship_renown",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_2",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_1_2",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_full_plate_armour",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_personal_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_personal_2",
+      "tier": 2,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_2",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_2",
+      "tier": 2,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_1_2",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_campaign_recruitment_cost",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_1_3",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_3",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_3",
+      "tier": 3,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_1_3",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_lord_all_campaign_reassuring_presence",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_4",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_1_4",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_deadly_blade",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_4",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_4",
+      "tier": 4,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_1_4",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_emp_lord_campaign_fervent",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_immortality",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_immortality_lord",
+      "tier": 5,
+      "indent": 0,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_unique_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_unique_5",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_unique_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_unique_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_5",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_5",
+      "tier": 5,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_2",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_campaign_irrepressible",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_campaign_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_artofwar",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_artofwar",
+      "tier": 6,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_3_1",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_1_6",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_6",
+      "tier": 6,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_3_1",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_campaign_lightning_strike",
+      "tier": 6,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_3_2",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_blade_master",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_2",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_battle_rally",
+      "tier": 7,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "6",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_5",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_1_6",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_3_2",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_emp_lord_campaign_quartermaster",
+      "tier": 7,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_3_3",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_self_indomitable",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_3_1",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_1",
+      "tier": 8,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_3_3",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_emp_lord_campaign_logistician",
+      "tier": 8,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_3_4",
+      "node_source": "vanilla",
+      "skill": "wh2_dlc11_skill_all_lord_self_blade_shield",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_3_2",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_2",
+      "tier": 9,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_3_4",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_campaign_alert",
+      "tier": 9,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_top_line_0",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 10,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_cth_human_combat_4",
+      "node_source": "vanilla",
+      "skill": "wh2_main_skill_hef_alastar_unique_heroic_killing_blow",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_dlc24_skill_node_cth_human_combat_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_3_3",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_3",
+      "tier": 10,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_campaign_4",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_campaign_army",
+      "tier": 10,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_campaign_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_3_4",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_4",
+      "tier": 11,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_army_4",
+      "node_source": "vanilla",
+      "skill": "wh_main_skill_all_lord_battle_stand_your_ground",
+      "tier": 12,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "wh3_main_skill_node_cth_generic_army_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "wh3_main_skill_node_cth_generic_top_line_1",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 20,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_innate_03",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_innate_03",
+      "tier": 20,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "wh3_main_skill_node_all_army_of_renown_lord",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_army_of_renown_lord",
+      "tier": 28,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "wh3_dlc24_skill_node_all_mentor_lord",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_mentor_lord",
+      "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_dump",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_dump",
+      "tier": 31,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    }
+  ]
+}

@@ -9,8 +9,8 @@
 //
 // 读：data/vanilla/{vanilla-assets.json, units/, skills/}
 //     content/codex/units/*.json   取 unit key 与站点 slug 的对应
-//     content/codex/chars/*.json   取技能树要列哪几行（tree.branches）
-// 写：content/codex/generated/units/<slug>.json、generated/trees/<slug>.json
+//     content/codex/chars/*.json   取技能树要列哪几行（tree.branches）、特性从哪几套树取（traitsFrom）
+// 写：content/codex/generated/units/<slug>.json、generated/trees/<slug>.json、generated/traits/<slug>.json
 //     assets/icons/<DB key>.png    整个目录是生成物，每次重写
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -139,10 +139,37 @@ function joinNames(names: Bi[]): Bi {
   return { zh: names.map((n) => n.zh).join('、'), en: names.map((n) => n.en).join(', ') }
 }
 
+/** 技能 -> 节点卡片：名字、风味文、每级效果行、图标。等级门槛 / 前置这些由调用方给 */
+function genNode(subject: string, skill: string, unlock: Bi | null, hub: Bi | null): GenNodeData {
+  const a = assets[skill]
+  if (!a) throw new Error(`${subject}：事实表里没有 ${skill}`)
+  const byLevel = new Map<number, Bi[]>()
+  for (const e of a.effects ?? []) {
+    const t = bi(e.text)
+    if (!t) continue // 隐藏管线效果，游戏里也不显示
+    // 中文里一个汉字都没有的是没本地化的开关效果（水师提督特性里的姿态开关 "Stance" / "(HIDDEN) Stance"）
+    if (!/[一-鿿]/.test(t.zh)) continue
+    const lv = e.level ?? 1
+    byLevel.set(lv, [...(byLevel.get(lv) ?? []), t])
+  }
+  let levels = [...byLevel.entries()].sort((x, y) => x[0] - y[0]).map(([level, lines]) => ({ level, lines }))
+  if (levels.length > MAX_LEVELS) levels = [levels[0], levels[levels.length - 1]]
+  return { key: skill, name: nameOf(skill), desc: bi(a.desc), levels, icon: iconFor(skill), reuse: a.source !== 'npex', unlock, hub }
+}
+
+const skillNodes = (subject: string): Node[] => {
+  const p = join(VANILLA, 'skills', `${subject}.json`)
+  if (!existsSync(p)) throw new Error(`data/vanilla/skills/${subject}.json 不存在`)
+  return readJson(p).nodes
+}
+
+/** 游戏技能树里放特性的那一行：character_skill_nodes.indent = 6，visible_in_ui = false */
+const TRAIT_INDENT = 6
+
 for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
   const c = CodexChar.parse(readJson(join(ROOT, 'content/codex/chars', f)))
   if (!c.tree) continue
-  const nodes: Node[] = readJson(join(VANILLA, 'skills', `${c.tree.subject}.json`)).nodes
+  const nodes = skillNodes(c.tree.subject)
   const byNode = new Map(nodes.map((n) => [n.node, n]))
   const skillName = (nodeKey: string) => {
     const n = byNode.get(nodeKey)
@@ -158,19 +185,6 @@ for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
       indent: b.indent,
       nodes: row.map((n): GenNodeData => {
         const skill = n.skill!
-        const a = assets[skill]
-        if (!a) throw new Error(`${c.tree!.subject}：事实表里没有 ${skill}`)
-
-        const byLevel = new Map<number, Bi[]>()
-        for (const e of a.effects ?? []) {
-          const t = bi(e.text)
-          if (!t) continue // 隐藏管线效果，游戏里也不显示
-          const lv = e.level ?? 1
-          byLevel.set(lv, [...(byLevel.get(lv) ?? []), t])
-        }
-        let levels = [...byLevel.entries()].sort((x, y) => x[0] - y[0]).map(([level, lines]) => ({ level, lines }))
-        if (levels.length > MAX_LEVELS) levels = [levels[0], levels[levels.length - 1]]
-
         const parents = n.parents.map((p) => p.node).filter((p) => byNode.get(p)?.visible_in_ui)
         const need = Number(n.required_num_parents) || parents.length
         const rank = rankOf(skill)
@@ -182,16 +196,12 @@ for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
           bits.push({ zh: `前置：${names.zh}`, en: `Requires ${names.en}` })
         }
 
-        return {
-          key: skill,
-          name: nameOf(skill),
-          desc: bi(a.desc),
-          levels,
-          icon: iconFor(skill),
-          reuse: a.source !== 'npex',
-          unlock: bits.length ? { zh: bits.map((x) => x.zh).join(' · '), en: bits.map((x) => x.en).join(' · ') } : null,
-          hub: parents.length > 1 ? { zh: `需 ${need}/${parents.length}`, en: `${need} of ${parents.length}` } : null,
-        }
+        return genNode(
+          c.tree!.subject,
+          skill,
+          bits.length ? { zh: bits.map((x) => x.zh).join(' · '), en: bits.map((x) => x.en).join(' · ') } : null,
+          parents.length > 1 ? { zh: `需 ${need}/${parents.length}`, en: `${need} of ${parents.length}` } : null,
+        )
       }),
     }
   })
@@ -202,6 +212,34 @@ for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
     branches,
   }
   outputs.set(`content/codex/generated/trees/${c.slug}.json`, JSON.stringify(gen, null, 2) + '\n')
+}
+
+// ---- 特性 ----------------------------------------------------------------------
+// 传奇人物：一个 points_on_creation = 1 的节点，开局自带。通用领主 / 英雄：一池 points_on_creation = 0
+// 的节点，招募时随机给一个。traitsFrom 列了多套树（水师提督三席）：每套各带一项，合起来列。
+// 没有名字的（沈长风那个解锁『海潮之唤』的空壳）游戏里也不显示，跳过。
+
+for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
+  const c = CodexChar.parse(readJson(join(ROOT, 'content/codex/chars', f)))
+  const subjects = c.traitsFrom ?? (c.tree ? [c.tree.subject] : [])
+  if (!subjects.length) continue
+  const found = subjects.flatMap((s) =>
+    skillNodes(s)
+      .filter((n) => !n.visible_in_ui && n.indent === TRAIT_INDENT && n.skill && assets[n.skill]?.name)
+      .sort((x, y) => x.tier - y.tier || x.node.localeCompare(y.node))
+      .map((n) => ({ skill: n.skill!, fixed: Number(n.points_on_creation) > 0, subject: s })),
+  )
+  const seen = new Set<string>()
+  const uniq = found.filter((t) => !seen.has(t.skill) && seen.add(t.skill))
+  if (!uniq.length) throw new Error(`${c.slug}：${subjects.join(' / ')} 里找不到特性节点`)
+  const kind = subjects.length > 1 ? 'variant' : uniq.every((t) => t.fixed) ? 'fixed' : 'random'
+  const gen = {
+    _comment: '生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。',
+    kind,
+    subjects,
+    nodes: uniq.map((t) => genNode(t.subject, t.skill, null, null)),
+  }
+  outputs.set(`content/codex/generated/traits/${c.slug}.json`, JSON.stringify(gen, null, 2) + '\n')
 }
 
 // ---- 写盘 / 比对 ---------------------------------------------------------------
@@ -216,7 +254,7 @@ for (const [rel, text] of outputs) {
     writeFileSync(p, text)
   }
 }
-for (const sub of ['units', 'trees']) {
+for (const sub of ['units', 'trees', 'traits']) {
   const dir = join(GEN, sub)
   if (!existsSync(dir)) continue
   for (const f of readdirSync(dir)) {

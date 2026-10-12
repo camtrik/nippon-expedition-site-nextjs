@@ -1,0 +1,51 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "shen-changfeng"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_shen_texing",
+      "name": {
+        "zh": "镇海提督",
+        "en": "Sea-Quelling Admiral"
+      },
+      "desc": {
+        "zh": "玉海舰队的统帅受到远东海洋的庇护。",
+        "en": "The commander of the Jade Sea Fleet is protected by the seas of the Far East."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "战略地图移动距离：在海上时+10%",
+              "en": "Campaign movement range: +10% whilst at sea"
+            },
+            {
+              "zh": "维持费：-15%（舰队兵种）（领主军队）",
+              "en": "Upkeep: -15% for fleet units (Lord's army)"
+            },
+            {
+              "zh": "武器威力：+10%（舰队兵种）（领主军队）",
+              "en": "Weapon strength: +10% for fleet units (Lord's army)"
+            },
+            {
+              "zh": "远程武器威力：+10%（舰队远程兵种）（领主军队）",
+              "en": "Missile strength: +10% for fleet missile units (Lord's army)"
+            },
+            {
+              "zh": "免疫深海、暗礁与风暴损耗（领主军队）",
+              "en": "Immune to High Seas, Reef and Storm attrition (Lord's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_shen_texing.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

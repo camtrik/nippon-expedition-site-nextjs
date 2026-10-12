@@ -25,9 +25,9 @@
 ## 目录
 
 ```
-vanilla-assets.json      事实表：本 mod 技能树/兵种引用到的条目，按 DB key 索引，308 条
+vanilla-assets.json      事实表：本 mod 技能树/兵种引用到的条目，按 DB key 索引，331 条
 vanilla-catalog.json     原版整批文案（约 16MB），见下文「整批文案」
-skills/<主体>.json       8 套技能树的节点与连线
+skills/<主体>.json       11 套技能树的节点与连线
 units/<兵种>.json        13 个兵种的技能与特性
 icons/campaign ui/skills/           790 张，战役技能图标，整目录
 icons/battle ui/ability_icons/     2374 张，战斗能力与法术图标，整目录
@@ -56,8 +56,11 @@ icons/npex/                        自制图在 design/source 快照里找不到
 | 武士大将 samurai-taisho | 59 | 41 |
 | 武士大将（黑）samurai-taisho-black | 59 | 41 |
 | 巫女 miko | 50 | 32 |
+| 水师提督（先登）admiral-01 | 55 | 40 |
+| 水师提督（炮令）admiral-02 | 55 | 40 |
+| 水师提督（驭潮）admiral-03 | 55 | 40 |
 
-去重后：**事实表 308 条，原版复用 184 / 本 mod 原创 124。**
+去重后：**事实表 331 条，原版复用 185 / 本 mod 原创 146。**
 （含技能效果里解锁的法术，以及 13 个兵种的能力和特性。）
 
 兵种十三个：玉海潮勇 jade-sea-sailors、舰队铳手 jade-sea-fleet-gunners、
@@ -70,7 +73,8 @@ icons/npex/                        自制图在 design/source 快照里找不到
 是旧黑甲 subtype 留下的那套，DB 里还在；除两个坐骑节点的 key 带 `_black` 外，与
 `samurai-taisho` 逐节点相同。站点只用 `samurai-taisho`。
 
-水师提督三套技能树不进图鉴，没有导出。
+水师提督三套技能树只差开局特性（先登 / 炮令 / 驭潮），站点只拿它们的特性（2026-10-12 起导出），
+不列技能树。
 
 ## 数据来源
 

@@ -13,7 +13,7 @@ import { altName, epithetText } from '@/components/CodexIndex'
 import { loadCard, loadFull, SkillIcon } from '@/components/art'
 import { Link } from '@/i18n/navigation'
 import { allChars, charBySlug, type Char } from '@/lib/content/codex'
-import type { Bi, GenNodeData } from '@/lib/content/schema'
+import type { Bi, GenNodeData, GenTraitsData } from '@/lib/content/schema'
 import { pick } from '@/lib/i18n'
 import { buildMetadata } from '@/lib/metadata'
 
@@ -192,6 +192,8 @@ function CharDetail({ c, looks }: { c: Char; looks: Look[] }) {
             ))}
         </div>
 
+        {c.gameTraits && <GameTraits traits={c.gameTraits} />}
+
         {c.tree && c.gen && (
           <section className="tree" id="tree">
             <h2 className="eyebrow eyebrow--rule">{t('detail.secTree')}</h2>
@@ -257,6 +259,37 @@ function CharDetail({ c, looks }: { c: Char; looks: Look[] }) {
         {back}
       </div>
     </div>
+  )
+}
+
+/**
+ * 游戏里的「特性」（生成物，见 scripts/export-codex.ts）：传奇人物开局自带一项；通用领主 / 英雄
+ * 招募时随机一项，池子长（武士大将 9、巫女 17），收在一个 <details> 里；水师提督三种变体各一项。
+ */
+function GameTraits({ traits }: { traits: GenTraitsData }) {
+  const t = useTranslations()
+  const n = traits.nodes.length
+  const list = (
+    <ol className="tree__nodes">
+      {traits.nodes.map((node) => (
+        <TreeNode n={node} key={node.key} />
+      ))}
+    </ol>
+  )
+  const note = { fixed: 'detail.traitsFixed', random: 'detail.traitsRandom', variant: 'detail.traitsVariant' } as const
+  return (
+    <section className="tree traits" id="traits">
+      <h2 className="eyebrow eyebrow--rule">{t('detail.secGameTraits')}</h2>
+      <p className="tree__note">{t(note[traits.kind], { n })}</p>
+      {traits.kind === 'random' ? (
+        <details className="traits__pool">
+          <summary className="traits__more">{t('detail.traitsShow', { n })}</summary>
+          {list}
+        </details>
+      ) : (
+        list
+      )}
+    </section>
   )
 }
 

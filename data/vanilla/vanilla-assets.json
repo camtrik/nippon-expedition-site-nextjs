@@ -804,10 +804,10 @@
           "effect": "cth_npex_effect_admiral_gunnery_damage",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 10.0,
+          "value": 5.0,
           "text": {
-            "zh": "远程伤害：+10%（远程部队，基础与破甲同时）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Missile damage: +10% for missile units, base and armour-piercing alike\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程伤害：+5%（远程部队，基础与破甲同时）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile damage: +5% for missile units, base and armour-piercing alike\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "远程伤害：%+n%（远程部队，基础与破甲同时）",
@@ -9088,10 +9088,10 @@
           "effect": "wh_main_effect_force_stat_leadership",
           "effect_source": "vanilla",
           "scope": "general_to_force_own",
-          "value": 10.0,
+          "value": 6.0,
           "text": {
-            "zh": "领导力：+10\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Leadership: +10\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "领导力：+6\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +6\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "领导力：%+n",
@@ -9111,10 +9111,10 @@
           "effect": "wh_main_effect_force_stat_speed",
           "effect_source": "vanilla",
           "scope": "general_to_force_own",
-          "value": 10.0,
+          "value": 8.0,
           "text": {
-            "zh": "移动速度：+10%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Speed: +10%\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "移动速度：+8%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Speed: +8%\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "移动速度：%+n%",
@@ -9134,10 +9134,10 @@
           "effect": "wh_main_effect_force_stat_melee_defence",
           "effect_source": "vanilla",
           "scope": "general_to_force_own",
-          "value": 8.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战防御：+8\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +8\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战防御：+4\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +4\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "近战防御：%+n",
@@ -9528,7 +9528,9 @@
         "note": "本 mod 原创图标，用 design/source 里已有的那份"
       },
       "unlocked_at_rank": "0",
-      "level_ranks": null,
+      "level_ranks": {
+        "1": 11
+      },
       "referenced_by": [
         "skills/sayo.json"
       ],
@@ -9538,10 +9540,10 @@
           "effect": "cth_npex_bihai_veterans_ma",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战攻击：+5（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee attack: +5 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战攻击：+4（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee attack: +4 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战攻击：%+n（尼朋单位）",
@@ -9561,10 +9563,10 @@
           "effect": "cth_npex_bihai_veterans_md",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战防御：+5（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +5 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战防御：+4（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee defence: +4 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战防御：%+n（尼朋单位）",
@@ -9584,10 +9586,10 @@
           "effect": "cth_npex_bihai_veterans_morale",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 10.0,
+          "value": 8.0,
           "text": {
-            "zh": "领导力：+10（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Leadership: +10 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "领导力：+8（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Leadership: +8 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "领导力：%+n（尼朋单位）",
@@ -10503,10 +10505,10 @@
           "effect": "wh_main_effect_force_stat_ward_save",
           "effect_source": "vanilla",
           "scope": "agent_to_parent_army_own",
-          "value": 10.0,
+          "value": 5.0,
           "text": {
-            "zh": "特殊保护：+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Ward save: +10%\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "特殊保护：+5%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Ward save: +5%\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "特殊保护：%+n%",
@@ -10715,91 +10717,45 @@
       "effects": [
         {
           "level": 1,
-          "effect": "cth_npex_serena_fleet_melee_damage",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 3.0,
-          "text": {
-            "zh": "近战武器威力：+3%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Weapon strength: +3% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "近战武器威力：%+n%（舰队兵种）",
-            "en": "Weapon strength: %+n% for fleet units"
-          },
-          "priority": 461,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_serena_fleet_ammo",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 8.0,
-          "text": {
-            "zh": "弹药容量：+8%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Ammunition: +8% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "弹药容量：%+n%（舰队兵种）",
-            "en": "Ammunition: %+n% for fleet units"
-          },
-          "priority": 510,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ammo.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_serena_fleet_missile_damage",
+          "effect": "cth_npex_serena_fleet_range",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
           "value": 5.0,
           "text": {
-            "zh": "远程武器威力：+5%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Missile strength: +5% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "射程范围：+5%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Range: +5% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "远程武器威力：%+n%（舰队兵种）",
-            "en": "Missile strength: %+n% for fleet units"
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
           },
-          "priority": 540,
+          "priority": 531,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
           }
         },
         {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_melee_damage",
+          "level": 1,
+          "effect": "cth_npex_serena_fleet_reload",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 7.0,
+          "value": 5.0,
           "text": {
-            "zh": "近战武器威力：+7%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Weapon strength: +7% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "装弹时间降低：+5%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Reload time reduction: +5% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战武器威力：%+n%（舰队兵种）",
-            "en": "Weapon strength: %+n% for fleet units"
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
           },
-          "priority": 461,
+          "priority": 562,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -10807,68 +10763,45 @@
         },
         {
           "level": 2,
-          "effect": "cth_npex_serena_fleet_ammo",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 12.0,
-          "text": {
-            "zh": "弹药容量：+12%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Ammunition: +12% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "弹药容量：%+n%（舰队兵种）",
-            "en": "Ammunition: %+n% for fleet units"
-          },
-          "priority": 510,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ammo.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_missile_damage",
+          "effect": "cth_npex_serena_fleet_range",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "远程武器威力：+10%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Missile strength: +10% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "射程范围：+10%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Range: +10% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "远程武器威力：%+n%（舰队兵种）",
-            "en": "Missile strength: %+n% for fleet units"
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
           },
-          "priority": 540,
+          "priority": 531,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
           }
         },
         {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_melee_damage",
+          "level": 2,
+          "effect": "cth_npex_serena_fleet_reload",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "近战武器威力：+10%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Weapon strength: +10% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "装弹时间降低：+10%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Reload time reduction: +10% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战武器威力：%+n%（舰队兵种）",
-            "en": "Weapon strength: %+n% for fleet units"
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
           },
-          "priority": 461,
+          "priority": 562,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -10876,45 +10809,45 @@
         },
         {
           "level": 3,
-          "effect": "cth_npex_serena_fleet_ammo",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 20.0,
-          "text": {
-            "zh": "弹药容量：+20%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Ammunition: +20% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "弹药容量：%+n%（舰队兵种）",
-            "en": "Ammunition: %+n% for fleet units"
-          },
-          "priority": 510,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ammo.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_missile_damage",
+          "effect": "cth_npex_serena_fleet_range",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
           "value": 15.0,
           "text": {
-            "zh": "远程武器威力：+15%（舰队兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Missile strength: +15% for fleet units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "射程范围：+15%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Range: +15% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "远程武器威力：%+n%（舰队兵种）",
-            "en": "Missile strength: %+n% for fleet units"
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
           },
-          "priority": 540,
+          "priority": 531,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "cth_npex_serena_fleet_reload",
+          "effect_source": "npex",
+          "scope": "agent_to_parent_army_own",
+          "value": 15.0,
+          "text": {
+            "zh": "装弹时间降低：+15%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Reload time reduction: +15% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -11519,12 +11452,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力：+10%（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Weapon strength: +10% for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "武器威力：+10%（潮汐禁卫、云霄禁卫）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10% for Tide Guard and Empyrean Guard\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（舰队兵种）",
-            "en": "Weapon strength: %+n% for fleet units"
+            "zh": "武器威力：%+n%（潮汐禁卫、云霄禁卫）",
+            "en": "Weapon strength: %+n% for Tide Guard and Empyrean Guard"
           },
           "priority": 461,
           "icon": {
@@ -11542,12 +11475,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程武器威力：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Missile strength: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程武器威力：+10%（潮汐禁卫）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +10% for Tide Guard\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程武器威力：%+n%（舰队远程兵种）",
-            "en": "Missile strength: %+n% for fleet missile units"
+            "zh": "远程武器威力：%+n%（潮汐禁卫）",
+            "en": "Missile strength: %+n% for Tide Guard"
           },
           "priority": 540,
           "icon": {
@@ -11603,7 +11536,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 7
+        "1": 10
       },
       "referenced_by": [
         "skills/shen-changfeng.json"
@@ -11713,10 +11646,10 @@
           "effect": "cth_npex_shen_fleet_core_ma",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 8.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战攻击：+8（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee attack: +8 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战攻击：+4（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +4 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "近战攻击：%+n（舰队兵种）",
@@ -11736,10 +11669,10 @@
           "effect": "cth_npex_shen_fleet_core_md",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 6.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战防御：+6（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +6 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战防御：+4（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +4 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "近战防御：%+n（舰队兵种）",
@@ -12142,10 +12075,10 @@
           "effect": "cth_npex_shen_fleet_ranged_missile_damage",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 10.0,
+          "value": 5.0,
           "text": {
-            "zh": "远程武器威力：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Missile strength: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程武器威力：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "远程武器威力：%+n%（舰队远程兵种）",
@@ -12191,10 +12124,10 @@
           "effect": "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
           "effect_source": "vanilla",
           "scope": "character_to_character_own",
-          "value": 10.0,
+          "value": 20.0,
           "text": {
-            "zh": "打赢战斗后，恢复10%战役地图移动距离",
-            "en": "Replenishes 10% campaign movement range after winning a battle"
+            "zh": "打赢战斗后，恢复20%战役地图移动距离",
+            "en": "Replenishes 20% campaign movement range after winning a battle"
           },
           "template": {
             "zh": "打赢战斗后，恢复%n%战役地图移动距离",
@@ -12655,7 +12588,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 7
+        "1": 9
       },
       "referenced_by": [
         "skills/tachibana-naotora.json"
@@ -12738,10 +12671,10 @@
           "effect": "cth_npex_shen_samurai_ma",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 6.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee attack: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战攻击：+4（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee attack: +4 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战攻击：%+n（武士部队）",
@@ -12761,10 +12694,10 @@
           "effect": "cth_npex_shen_samurai_md",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 6.0,
+          "value": 4.0,
           "text": {
-            "zh": "近战防御：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战防御：+4（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee defence: +4 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战防御：%+n（武士部队）",

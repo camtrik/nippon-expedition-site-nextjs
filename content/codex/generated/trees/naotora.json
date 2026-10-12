@@ -33,8 +33,8 @@
           "icon": "cth_npex_skill_tachibana_unique_0.png",
           "reuse": false,
           "unlock": {
-            "zh": "角色等级 8 解锁",
-            "en": "Unlocks at rank 8"
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
           },
           "hub": null
         },
@@ -53,12 +53,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+6（武士部队）（英雄所在军队）",
-                  "en": "Melee attack: +6 for Samurai units (Hero's army)"
+                  "zh": "近战攻击：+4（武士部队）（英雄所在军队）",
+                  "en": "Melee attack: +4 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+6（武士部队）（英雄所在军队）",
-                  "en": "Melee defence: +6 for Samurai units (Hero's army)"
+                  "zh": "近战防御：+4（武士部队）（英雄所在军队）",
+                  "en": "Melee defence: +4 for Samurai units (Hero's army)"
                 },
                 {
                   "zh": "领导力：+5（武士部队）（英雄所在军队）",

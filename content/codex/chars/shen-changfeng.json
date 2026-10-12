@@ -118,8 +118,8 @@
     {
       "k": { "zh": "玉海剑舞", "en": "Jade Blade Dance" },
       "v": {
-        "zh": "由技能「玉海剑圣」（8 级）解锁：武器杀伤 ×1.25、近战攻击 +10、近战防御 +10、远程格挡 +25%，持续 25 秒、冷却 90 秒，仅作用于自身，不限次数",
-        "en": "Unlocked by the Jade Sea Swordmaster skill (rank 8): weapon damage ×1.25, melee attack +10, melee defence +10 and missile block chance +25% for 25 seconds. 90-second cooldown, self only, unlimited uses"
+        "zh": "由技能「玉海剑圣」（11 级）解锁：武器杀伤 ×1.25、近战攻击 +10、近战防御 +10、远程格挡 +25%，持续 25 秒、冷却 90 秒，仅作用于自身，不限次数",
+        "en": "Unlocked by the Jade Sea Swordmaster skill (rank 11): weapon damage ×1.25, melee attack +10, melee defence +10 and missile block chance +25% for 25 seconds. 90-second cooldown, self only, unlimited uses"
       },
       "form": { "zh": "主动", "en": "Active" }
     }
@@ -139,8 +139,8 @@
         "indent": 1,
         "label": { "zh": "个人专属线", "en": "Personal Line" },
         "sub": {
-          "zh": "起点「玉海剑圣」8 级解锁，附带主动技「玉海剑舞」；其后五格分别强化舰队嫡系、舰队远程兵种、尼朋武士、航海与战术部署，可各自点出，点出任意三格即可取「无冕之师」。「破浪之帅 → 万里长风」是 15 级开放的独立支线，不需要前面的节点。",
-          "en": "Jade Sea Swordmaster opens at rank 8 and brings the Jade Blade Dance ability. The five after it boost the fleet's core troops, its missile troops, Nipponese samurai, seafaring and battle deployment, in any order; any three open The Uncrowned Host. Wavebreaker into The Long Wind is a separate branch from rank 15 that needs nothing before it."
+          "zh": "起点「玉海剑圣」11 级解锁，附带主动技「玉海剑舞」；其后五格分别强化舰队嫡系、舰队远程兵种、尼朋武士、航海与战术部署，可各自点出，点出任意三格即可取「无冕之师」。「破浪之帅 → 万里长风」是 15 级开放的独立支线，不需要前面的节点。",
+          "en": "Jade Sea Swordmaster opens at rank 11 and brings the Jade Blade Dance ability. The five after it boost the fleet's core troops, its missile troops, Nipponese samurai, seafaring and battle deployment, in any order; any three open The Uncrowned Host. Wavebreaker into The Long Wind is a separate branch from rank 15 that needs nothing before it."
         }
       },
       {

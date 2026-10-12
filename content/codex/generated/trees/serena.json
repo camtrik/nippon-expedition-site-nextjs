@@ -94,16 +94,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战武器威力：+3%（舰队兵种）（英雄所在军队）",
-                  "en": "Weapon strength: +3% for fleet units (Hero's army)"
+                  "zh": "射程范围：+5%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +5% for fleet missile units (Hero's army)"
                 },
                 {
-                  "zh": "弹药容量：+8%（舰队兵种）（英雄所在军队）",
-                  "en": "Ammunition: +8% for fleet units (Hero's army)"
-                },
-                {
-                  "zh": "远程武器威力：+5%（舰队兵种）（英雄所在军队）",
-                  "en": "Missile strength: +5% for fleet units (Hero's army)"
+                  "zh": "装弹时间降低：+5%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +5% for fleet missile units (Hero's army)"
                 }
               ]
             },
@@ -111,16 +107,12 @@
               "level": 2,
               "lines": [
                 {
-                  "zh": "近战武器威力：+7%（舰队兵种）（英雄所在军队）",
-                  "en": "Weapon strength: +7% for fleet units (Hero's army)"
+                  "zh": "射程范围：+10%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +10% for fleet missile units (Hero's army)"
                 },
                 {
-                  "zh": "弹药容量：+12%（舰队兵种）（英雄所在军队）",
-                  "en": "Ammunition: +12% for fleet units (Hero's army)"
-                },
-                {
-                  "zh": "远程武器威力：+10%（舰队兵种）（英雄所在军队）",
-                  "en": "Missile strength: +10% for fleet units (Hero's army)"
+                  "zh": "装弹时间降低：+10%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +10% for fleet missile units (Hero's army)"
                 }
               ]
             },
@@ -128,16 +120,12 @@
               "level": 3,
               "lines": [
                 {
-                  "zh": "近战武器威力：+10%（舰队兵种）（英雄所在军队）",
-                  "en": "Weapon strength: +10% for fleet units (Hero's army)"
+                  "zh": "射程范围：+15%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +15% for fleet missile units (Hero's army)"
                 },
                 {
-                  "zh": "弹药容量：+20%（舰队兵种）（英雄所在军队）",
-                  "en": "Ammunition: +20% for fleet units (Hero's army)"
-                },
-                {
-                  "zh": "远程武器威力：+15%（舰队兵种）（英雄所在军队）",
-                  "en": "Missile strength: +15% for fleet units (Hero's army)"
+                  "zh": "装弹时间降低：+15%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +15% for fleet missile units (Hero's army)"
                 }
               ]
             }

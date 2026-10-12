@@ -180,16 +180,16 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "领导力：+10（领主军队）",
-                  "en": "Leadership: +10 (Lord's army)"
+                  "zh": "领导力：+6（领主军队）",
+                  "en": "Leadership: +6 (Lord's army)"
                 },
                 {
-                  "zh": "移动速度：+10%（领主军队）",
-                  "en": "Speed: +10% (Lord's army)"
+                  "zh": "移动速度：+8%（领主军队）",
+                  "en": "Speed: +8% (Lord's army)"
                 },
                 {
-                  "zh": "近战防御：+8（领主军队）",
-                  "en": "Melee defence: +8 (Lord's army)"
+                  "zh": "近战防御：+4（领主军队）",
+                  "en": "Melee defence: +4 (Lord's army)"
                 },
                 {
                   "zh": "冲锋加成：+10（领主军队）",

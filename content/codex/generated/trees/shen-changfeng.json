@@ -37,8 +37,8 @@
           "icon": "cth_npex_skill_shen_unique_0.png",
           "reuse": false,
           "unlock": {
-            "zh": "角色等级 8 解锁",
-            "en": "Unlocks at rank 8"
+            "zh": "角色等级 11 解锁",
+            "en": "Unlocks at rank 11"
           },
           "hub": null
         },
@@ -57,12 +57,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+8（舰队兵种）（领主军队）",
-                  "en": "Melee attack: +8 for fleet units (Lord's army)"
+                  "zh": "近战攻击：+4（舰队兵种）（领主军队）",
+                  "en": "Melee attack: +4 for fleet units (Lord's army)"
                 },
                 {
-                  "zh": "近战防御：+6（舰队兵种）（领主军队）",
-                  "en": "Melee defence: +6 for fleet units (Lord's army)"
+                  "zh": "近战防御：+4（舰队兵种）（领主军队）",
+                  "en": "Melee defence: +4 for fleet units (Lord's army)"
                 },
                 {
                   "zh": "领导力：+5（舰队兵种）（领主军队）",
@@ -102,8 +102,8 @@
                   "en": "Ammunition: +20% for fleet missile units (Lord's army)"
                 },
                 {
-                  "zh": "远程武器威力：+10%（舰队远程兵种）（领主军队）",
-                  "en": "Missile strength: +10% for fleet missile units (Lord's army)"
+                  "zh": "远程武器威力：+5%（舰队远程兵种）（领主军队）",
+                  "en": "Missile strength: +5% for fleet missile units (Lord's army)"
                 }
               ]
             }
@@ -242,8 +242,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
-                  "en": "Replenishes 10% campaign movement range after winning a battle"
+                  "zh": "打赢战斗后，恢复20%战役地图移动距离",
+                  "en": "Replenishes 20% campaign movement range after winning a battle"
                 },
                 {
                   "zh": "武器威力：+10%（领主军队）",

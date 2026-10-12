@@ -76,8 +76,8 @@
               "en": "Ammunition: +20% for missile units (Lord's army)"
             },
             {
-              "zh": "远程伤害：+10%（远程部队，基础与破甲同时）（领主军队）",
-              "en": "Missile damage: +10% for missile units, base and armour-piercing alike (Lord's army)"
+              "zh": "远程伤害：+5%（远程部队，基础与破甲同时）（领主军队）",
+              "en": "Missile damage: +5% for missile units, base and armour-piercing alike (Lord's army)"
             }
           ]
         }

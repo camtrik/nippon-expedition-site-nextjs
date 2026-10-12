@@ -53,7 +53,7 @@ export function checkCodex(only: string[] = []): string[] {
     if (!want(c.slug)) continue
     if (`${c.slug}.json` !== f) problems.push(`${path}: 文件名和 slug 对不上`)
     for (const look of c.looks) {
-      for (const p of [`assets/chars/${look.key}.webp`, `assets/chars/portrait/${look.key}.webp`]) {
+      for (const p of [`assets/chars/${look.key}.webp`, `assets/chars/full/${look.key}.webp`]) {
         if (!existsSync(join(ROOT, p))) problems.push(`${path}: 没有 ${p}`)
       }
     }

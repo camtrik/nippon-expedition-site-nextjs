@@ -233,7 +233,7 @@ export const CodexChar = obj({
   epithet: Bilingual.optional(),
   /** 标题上方的药丸：位阶 · 定位 */
   rankLabel: Bilingual,
-  /** 外观。key 对应 assets/chars/<key>.webp 与 assets/chars/portrait/<key>.webp；第一个是默认 */
+  /** 外观。key 对应 assets/chars/<key>.webp 与 assets/chars/full/<key>.webp；第一个是默认 */
   looks: z.array(obj({ key: z.string(), label: Bilingual.optional() })).min(1),
   desc: Bilingual,
   story: Paragraphs.optional(),

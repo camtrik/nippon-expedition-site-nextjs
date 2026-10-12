@@ -1,5 +1,5 @@
 // 人物页。版式照设计稿 v.char（design/远征尼朋官网.dc.html:750-1003）：
-// 左边立绘（多套外观时下面一排卡片可切换，纯 CSS radio），右边位阶、称号、名字、短文、
+// 左边高清兵牌（多套外观时下面一排卡片可切换，纯 CSS radio），右边位阶、称号、名字、短文、
 // 身份、背景故事、分形态数值表、武器与坐骑；底下是特性 / 技能 / 部队属性三栏、
 // 技能树（只列本 mod 原创的那几行，生成物）和远征同伴的四档羁绊。
 import type { Metadata } from 'next'
@@ -36,14 +36,14 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/chars/[s
   })
 }
 
-type Look = { key: string; label?: Bi; card: StaticImageData; portrait: StaticImageData }
+type Look = { key: string; label?: Bi; card: StaticImageData; full: StaticImageData }
 
 export default async function CharPage({ params }: PageProps<'/[locale]/chars/[slug]'>) {
   const { slug } = await params
   const c = charBySlug(slug)
   if (!c) notFound()
   const looks: Look[] = await Promise.all(
-    c.looks.map(async (l) => ({ ...l, card: await loadCard('chars', l.key), portrait: await loadFull('chars', l.key) })),
+    c.looks.map(async (l) => ({ ...l, card: await loadCard('chars', l.key), full: await loadFull('chars', l.key) })),
   )
   return <CharDetail c={c} looks={looks} />
 }
@@ -261,7 +261,7 @@ function CharDetail({ c, looks }: { c: Char; looks: Look[] }) {
 }
 
 /**
- * 立绘。只有一套外观就是一张图；多套（武士大将三张脸、伊吹两种形态）时下面排一行兵牌，
+ * 大图（高清兵牌）。只有一套外观就是一张图；多套（武士大将三张脸、伊吹两种形态）时下面排一行兵牌，
  * 点哪张换哪张——纯 CSS radio，和更新记录的页签是同一个做法，零 JS。
  * 每套最多四个：CSS 里 :checked 的组合是按序号写死的（80-codex.css）。
  */
@@ -271,7 +271,7 @@ function Looks({ name, looks }: { name: string; looks: Look[] }) {
   if (looks.length === 1) {
     return (
       <div className="detail__art">
-        <Image src={looks[0].portrait} alt={name} sizes="(max-width: 700px) 80vw, 300px" priority />
+        <Image src={looks[0].full} alt={name} sizes="(max-width: 700px) 60vw, 300px" priority />
       </div>
     )
   }
@@ -291,10 +291,10 @@ function Looks({ name, looks }: { name: string; looks: Look[] }) {
       <div className="detail__art looks__stage">
         {looks.map((l, i) => (
           <Image
-            className={`looks__portrait looks__portrait--${i}`}
-            src={l.portrait}
+            className={`looks__full looks__full--${i}`}
+            src={l.full}
             alt={`${name}${l.label ? ` · ${pick(l.label, locale)}` : ''}`}
-            sizes="(max-width: 700px) 80vw, 300px"
+            sizes="(max-width: 700px) 60vw, 300px"
             priority={i === 0}
             key={l.key}
           />

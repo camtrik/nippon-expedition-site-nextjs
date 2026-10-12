@@ -683,14 +683,14 @@
 }
 
 /* ⚠️ 要压过 .detail__art img 的 display:block，所以带上 .looks__stage */
-.looks__stage .looks__portrait {
+.looks__stage .looks__full {
   display: none;
 }
 
-#look-0:checked ~ .looks__stage .looks__portrait--0,
-#look-1:checked ~ .looks__stage .looks__portrait--1,
-#look-2:checked ~ .looks__stage .looks__portrait--2,
-#look-3:checked ~ .looks__stage .looks__portrait--3 {
+#look-0:checked ~ .looks__stage .looks__full--0,
+#look-1:checked ~ .looks__stage .looks__full--1,
+#look-2:checked ~ .looks__stage .looks__full--2,
+#look-3:checked ~ .looks__stage .looks__full--3 {
   display: block;
 }
 

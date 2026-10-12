@@ -1,4 +1,4 @@
-// 兵牌、人物卡、立绘、同伴场景图、技能图标。图都由 scripts/build_art.py / export-codex.ts 生成。
+// 兵牌、人物卡、两者的高清大图、同伴场景图、技能图标。图都由 scripts/build_art.py / export-codex.ts 生成。
 //
 // ⚠️ slug 来自数据，所以只能用动态 import，而动态 import 的模板路径**必须写相对路径**——
 // `@/assets/units/${slug}.webp` 构建时会报 Cannot find module：打包器要把模板变成一个
@@ -19,12 +19,10 @@ export async function loadCard(kind: Kind, key: string): Promise<StaticImageData
   return mod.default
 }
 
-/** 兵种页的大图（不撕边）与人物页的立绘（2:3） */
+/** 兵种页 / 人物页的大图：12:26 的高清兵牌，不撕边 */
 export async function loadFull(kind: Kind, key: string): Promise<StaticImageData> {
   const mod =
-    kind === 'units'
-      ? await import(`../assets/units/full/${key}.webp`)
-      : await import(`../assets/chars/portrait/${key}.webp`)
+    kind === 'units' ? await import(`../assets/units/full/${key}.webp`) : await import(`../assets/chars/full/${key}.webp`)
   return mod.default
 }
 

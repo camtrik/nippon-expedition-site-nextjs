@@ -1,0 +1,166 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/lords/武士大将/武士大将角色与数值.md 与 武士大将技能树.md；desc / story 取 loc 中英原文（unit_description_*_texts）。",
+  "slug": "samurai-taisho",
+  "rank": "lord",
+  "name": { "zh": "武士大将", "en": "Samurai Taisho" },
+  "rankLabel": { "zh": "领主 · 战士", "en": "Lord · Champion" },
+  "looks": [
+    { "key": "samurai-taisho-02", "label": { "zh": "朱甲 · 金锹形", "en": "Red armour, gold kuwagata" } },
+    { "key": "samurai-taisho-01", "label": { "zh": "黑甲 · 双角兜", "en": "Black armour, horned kabuto" } },
+    { "key": "samurai-taisho-03", "label": { "zh": "黑甲 · 月形前立", "en": "Black armour, crescent crest" } }
+  ],
+  "desc": {
+    "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+    "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+  },
+  "story": {
+    "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+    "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "领主（泛用，可重复招募）", "en": "Lord (generic, can be recruited any number of times)" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士，近战决斗型将领，重破甲、善守", "en": "Champion: a duelling commander who relies on armour-piercing blows and holds his ground well" } },
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "领主招募面板「武士大将」页签；候选有三套外观（各是固定的一身甲胄配一顶兜），数值、技能与费用完全相同，招到哪套就一直是哪套",
+        "en": "The Samurai Taisho tab of the lord recruitment panel. Candidates come in three looks, each a fixed suit of armour and helmet; stats, skills and cost are identical, and he keeps the look he was recruited with"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "玉海舰队、山陽氏与奥本氏开局即可招募；其余震旦派系需先攻占海門并完成「武士之道」任务",
+        "en": "Available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans; other Cathay factions must first take Kaimon and complete \"The Way of the Samurai\""
+      }
+    },
+    {
+      "k": { "zh": "数量限制", "en": "Limit" },
+      "v": {
+        "zh": "无全局上限；招募池常驻 3 名候选（新档三套外观各一名），招一补一，补位按外观轮换",
+        "en": "No overall cap. The pool keeps 3 candidates (one of each look in a new campaign); each one recruited is replaced, cycling through the looks"
+      }
+    },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "招募费 1000／1100／1400，维持费 250／300／300（依次为徒步／骑战马／骑麒麟）；多人对战价格 800／1000／1300",
+        "en": "Recruitment 1000 / 1100 / 1400, upkeep 250 / 300 / 300 (on foot / Samurai Warhorse / Kirin); multiplayer cost 800 / 1000 / 1300"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [
+      { "zh": "徒步", "en": "On foot" },
+      { "zh": "骑战马", "en": "Samurai Warhorse" },
+      { "zh": "骑麒麟", "en": "Kirin" }
+    ],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["100", "110", "80"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["58", "58", "58"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["43", "48", "48"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["150／280", "160／300", "160／300"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["30", "50", "70"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4868", "5480", "6576"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["80", "80", "80"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["38", "78", "90"] }
+    ],
+    "note": {
+      "zh": "三个形态各自独立，装备坐骑即整体切换，数值不叠加。全形态魔法攻击；徒步与骑战马可于森林中隐蔽，骑麒麟则改为引发恐惧与惊骇。",
+      "en": "Three separate forms: equipping a mount switches the whole profile, nothing stacks. Magical attacks in every form; on foot and on the warhorse he can hide in forests, while on the Kirin he causes fear and terror instead."
+    }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "打刀 · 150／280 · 魔法攻击", "en": "Uchigatana · 150 / 280 · magical" },
+      "v": { "zh": "单手持打刀，破甲为主", "en": "Wielded one-handed; mostly armour-piercing" },
+      "form": { "zh": "徒步", "en": "On foot" }
+    },
+    {
+      "k": { "zh": "打刀 · 160／300 · 魔法攻击", "en": "Uchigatana · 160 / 300 · magical" },
+      "v": { "zh": "同一柄打刀，骑乘时威力略增；骑麒麟时手中另持朱漆金缨的十文字枪（仅外观）", "en": "The same blade, hitting a little harder from the saddle. On the Kirin he also carries a vermilion cross-bladed spear with a gold tassel (for looks only)" },
+      "form": { "zh": "骑战马、骑麒麟", "en": "Samurai Warhorse, Kirin" }
+    }
+  ],
+  "mounts": [
+    {
+      "k": { "zh": "武家战马（角色等级 5 自动获得）", "en": "Samurai Warhorse (gained automatically at rank 5)" },
+      "v": { "zh": "近战防御 +5、护甲 +10、冲锋 +20、生命值 +612，武器威力升至 160／300；速度升至 78", "en": "Melee defence +5, armour +10, charge +20, health +612, weapon strength up to 160 / 300; speed up to 78" }
+    },
+    {
+      "k": { "zh": "麒麟（角色等级 16 自动获得）", "en": "Kirin (gained automatically at rank 16)" },
+      "v": {
+        "zh": "无翼地面坐骑：冲锋 +40、生命值 +1708、速度升至 90；护甲降至 80；引发恐惧与惊骇，不再能于森林中隐蔽；获得形态被动「天雷回响」与攻城能力",
+        "en": "A wingless ground mount: charge +40, health +1708, speed up to 90; armour drops to 80. Causes fear and terror but can no longer hide in forests; gains the Thunder Echo passive and can attack gates as a Siege Attacker"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "近战专家", "en": "Melee Expert" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "破甲攻击", "en": "Armour-Piercing" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "重甲", "en": "Armoured" }, "v": { "zh": "全形态", "en": "All forms" } },
+    { "k": { "zh": "引发惊骇", "en": "Causes Terror" }, "v": { "zh": "仅骑麒麟", "en": "On the Kirin only" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "武士道", "en": "Bushido" },
+      "v": {
+        "zh": "生命值降至 50% 或以下时自动激活：基础与破甲武器杀伤 +15%、近战攻击 +10，持续 25 秒；期间永不败逃（不受领导力下降惩罚、绝不溃逃），生命值回升到 50% 以上即失效",
+        "en": "Triggers when his health falls to 50% or below: base and armour-piercing weapon damage +15%, melee attack +10 for 25 seconds, during which he is Unbreakable (no leadership penalties, never routs). Ends if his health climbs back above 50%"
+      },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "人剑合一", "en": "Unity of Blade and Self" },
+      "v": { "zh": "常驻：近战攻击 +10、近战防御 +10；生命值跌破 25% 时暂时失效", "en": "Always on: melee attack +10, melee defence +10; lapses while his health is below 25%" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "天雷回响", "en": "Thunder Echo" },
+      "v": {
+        "zh": "陷入近战后开始充能：进入近战 15 秒后落下第一次，此后每 15 秒一次，整场最多 20 次；每次召下 2 道天雷轰击身旁敌军，每道 672 点纯破甲魔法伤害（落点小范围溅射 68 点破甲）；不消耗魔法之风，不误伤友军",
+        "en": "Charges up once he is in melee: the first strike falls after 15 seconds, then one every 15 seconds, up to 20 per battle. Each calls down 2 thunderbolts on enemies beside him for 672 pure armour-piercing magical damage apiece, with a small 68 armour-piercing splash. Costs no Winds of Magic and never hits allies"
+      },
+      "form": { "zh": "被动 · 仅骑麒麟", "en": "Passive · Kirin only" }
+    },
+    {
+      "k": { "zh": "武器大师", "en": "Weapon Master" },
+      "v": { "zh": "只作用于自身：基础与破甲武器杀伤各 +25%、近战攻击 +10、近战防御 +10，持续 25 秒，冷却 90 秒", "en": "On himself: base and armour-piercing weapon damage +25% each, melee attack +10, melee defence +10 for 25 seconds; cooldown 90 seconds" },
+      "form": { "zh": "主动 · 技能树起点「武器大师」解锁", "en": "Active · first unique skill, Weapon Master" }
+    },
+    {
+      "k": { "zh": "向死而生", "en": "Death Gives Life" },
+      "v": { "zh": "取代「武器大师」：基础与破甲武器杀伤各 +25%、近战攻击 +12、近战防御 +12、对抗大型 +15，持续 34 秒，冷却 120 秒", "en": "Replaces Weapon Master: base and armour-piercing weapon damage +25% each, melee attack +12, melee defence +12, bonus vs large +15 for 34 seconds; cooldown 120 seconds" },
+      "form": { "zh": "主动 · 技能树终节点「向死而生」解锁", "en": "Active · final unique skill, Death Gives Life" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "全形态；领导力光环", "en": "All forms; leadership aura" } }
+  ],
+  "tree": {
+    "subject": "samurai-taisho",
+    "note": {
+      "zh": "只列本 mod 原创的技能线。直接引用原版的军团、战役与战斗三线不列，第一行只列原创节点。",
+      "en": "Only this mod's own skill lines are listed; the vanilla army, campaign and combat lines are left out, and the top row shows only the mod's own nodes."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "武士修行", "en": "The Samurai's Path" },
+        "sub": {
+          "zh": "所有武士大将共享的修行路：起点「武器大师」8 级解锁；火器、武士团、灵兽、统军四路可各自点出，「向死而生」须四路全点。",
+          "en": "The path every Samurai Taisho shares. Weapon Master opens at rank 8; the four branches – firearms, samurai, divine beasts and command – can be taken in any order, and Death Gives Life needs all four."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "坐骑与通用节点", "en": "Mounts and General" },
+        "sub": {
+          "zh": "孤立节点，不设前置；武家战马与麒麟分别在角色等级 5、16 自动获得。",
+          "en": "Standalone nodes with no prerequisites; the Samurai Warhorse and the Kirin come automatically at ranks 5 and 16."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_jade_sea_sailors_0",
+  "abilities": [
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阳",
+        "en": "Battle Harmony: Yang"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yang.png"
+    },
+    {
+      "key": "wh3_main_unit_passive_defensive_stance",
+      "source": "vanilla",
+      "name": {
+        "zh": "防御状态",
+        "en": "Defensive Stance"
+      },
+      "desc": {
+        "zh": "不动如山！随着时间的推移，这股力量会愈发强大，直至不可撼动",
+        "en": "Become like the mountain: immovable, stronger over time, and nigh-on impossible to assail."
+      },
+      "icon": "wh3_main_unit_passive_defensive_stance.png"
+    },
+    {
+      "key": "wh_dlc03_unit_passive_drunken",
+      "source": "vanilla",
+      "name": {
+        "zh": "悍猛",
+        "en": "Rowdy"
+      },
+      "desc": {
+        "zh": "在以集群方式作战、畅饮与大吃大嚼时，这些军队会更为勇悍，虽然这种『勇悍』仅能持续不长的一段时间",
+        "en": "These troops are emboldened when fighting, drinking and feasting together, although such ‘bravery’ is only temporary at best."
+      },
+      "icon": "wh_dlc03_unit_passive_drunken.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "formed_attack",
+      "source": "vanilla",
+      "name": {
+        "zh": "保持阵型",
+        "en": "Formation Attack"
+      },
+      "desc": {
+        "zh": "当进行近战时，这支部队会尽量保持阵型，从而少量增加近战防御",
+        "en": "The unit will try to stay in formation when in melee. Melee defence will be slightly increased."
+      },
+      "icon": "formed_attack.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "阳",
+        "en": "Yang"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阳",
+        "en": "This unit counts as a Yang unit for the purpose of Battle Harmony proximity"
+      },
+      "icon": "yang.png"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/沧溟巨炮兵种设计.md（战场属性表＋特性表；弹链调参推理不搬）；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts，弹种名取 loc projectile_shot_type_displays（奔流 Torrent／骤雨 Cloudburst，中英原文）。",
+  "slug": "abyssal-grand-cannon",
+  "unit": "cth_npex_abyssal_grand_cannon_0",
+  "group": "fleet",
+  "name": { "zh": "沧溟巨炮", "en": "Abyssal Grand Cannon" },
+  "role": { "zh": "魔法炮兵 · T3 · 双弹种：直射反大／迫击反步", "en": "Magical artillery · T3 · two shot types: direct-fire anti-large / mortar anti-infantry" },
+  "desc": {
+    "zh": "火药与魔法共铸的巨炮；直射可凿穿重甲，亦可炸开散作漫天水矢。",
+    "en": "Forged of powder and magic, this great cannon bores through heavy armour or bursts into a storm of water-darts."
+  },
+  "story": {
+    "zh": "据说引水咒最早由溟龙胤隐制成，可以把海水化作致命的魔法炮弹。且没有魔法天赋的凡人也可以操纵引水咒，使其得以在寻常炮组手中施展。沧溟巨炮便是震旦海军把这道古咒与震旦火器结合的产物。引水咒生成的魔法造物在炮膛中积蓄力量，再由药室里的火药爆燃轰出炮口。其威力比一般巨炮有过之而无不及。",
+    "en": "The Water-Drawing Charm is said to have been first devised by Yin-Yin the Sea Dragon; it turns seawater into a deadly magical shot. And because mortals with no gift for magic can work it all the same, the charm can be wielded by an ordinary gun crew. The Abyssal Grand Cannon is what came of the Cathayan navy joining that ancient charm to Cathayan gunpowder. The conjuration the charm raises gathers its power within the bore, and the powder in the chamber behind it hurls the whole out of the muzzle. Its force is a match for any common grand cannon, and more besides."
+  },
+  "cost": { "recruit": 1200, "upkeep": 300 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "炮兵 · 远程", "en": "Artillery · missile" } },
+    {
+      "k": { "zh": "武器配置", "en": "Equipment" },
+      "v": {
+        "zh": "魔法重炮（奔流直射／骤雨迫击触地爆，战场面板可切换弹种）＋乘员佩剑",
+        "en": "Magical heavy cannon (Torrent fires flat, Cloudburst is lobbed and bursts on impact; switch shot types on the battle panel) and crew swords"
+      }
+    },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 20（乘员皮甲）；无盾", "en": "Armour 20 (crew, leather); no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "提督议事厅（3 级）／舰队统帅厅（4 级）／玉海旗舰厅（5 级），玉海舰队游牧主城建筑链",
+        "en": "Admiral's Council Hall (tier 3) / Fleet Command Hall (4) / Jade Sea Flagship Hall (5), in the main horde building chain"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成上述任一建筑", "en": "Building any of the above" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "2 回合", "en": "2 turns" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "10", "n": { "zh": "炮组乘员", "en": "Gun crew" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "6" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "21／3" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "5" },
+    {
+      "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
+      "v": { "zh": "奔流 90／360；骤雨 63／27", "en": "Torrent 90 / 360; Cloudburst 63 / 27" },
+      "n": {
+        "zh": "两弹种皆为魔法伤害。奔流单发 450；骤雨另有触地爆炸 45／20（半径 6）与 6 枚水矢",
+        "en": "Both shot types deal magical damage. A Torrent shot totals 450; Cloudburst adds an impact blast of 45 / 20 (radius 6) and 6 water-darts"
+      }
+    },
+    {
+      "k": { "zh": "射程", "en": "Range" },
+      "v": "400",
+      "n": { "zh": "奔流直射，最小射程 10；骤雨迫击高抛，最小射程 60", "en": "Torrent fires flat, minimum range 10; Cloudburst is lobbed like a mortar shell, minimum range 60" }
+    },
+    { "k": { "zh": "弹速", "en": "Projectile speed" }, "v": { "zh": "奔流 100／骤雨 80／水矢 10", "en": "Torrent 100 / Cloudburst 80 / water-darts 10" } },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "18", "n": { "zh": "两弹种共用", "en": "Shared by both shot types" } },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "20 秒", "en": "20 s" } },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "20", "n": { "zh": "乘员皮甲", "en": "Crew, leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "65" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "30" },
+    {
+      "k": { "zh": "单模型生命值", "en": "Health per model" },
+      "v": { "zh": "炮体 475／乘员 8", "en": "Gun 475 / crew 8" },
+      "n": { "zh": "另加额外生命值 48", "en": "Plus 48 bonus hit points" }
+    },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "44", "n": { "zh": "4 门炮", "en": "4 guns" } }
+  ],
+  "traits": [
+    {
+      "name": { "zh": "魔法弹药", "en": "Magical Ammunition" },
+      "desc": {
+        "zh": "两弹种皆为魔法伤害，无视物理抗性；震旦、帝国与矮人的正统炮兵都没有魔法弹",
+        "en": "Both shot types deal magical damage and ignore physical resistance – no regular Cathayan, Empire or Dwarf artillery fires magical shot"
+      }
+    },
+    {
+      "name": { "zh": "双弹种", "en": "Two Shot Types" },
+      "desc": {
+        "zh": "战场面板底部两个按钮切换；两弹种共用同一个 18 发弹药池，这一发打奔流还是骤雨是真实的战术取舍",
+        "en": "Switch between them with the two buttons at the bottom of the battle panel. Both draw on the same pool of 18 shots, so every shot is a real choice between Torrent and Cloudburst"
+      }
+    },
+    {
+      "name": { "zh": "奔流·穿甲激流", "en": "Torrent · Armour-Piercing Jet" },
+      "desc": {
+        "zh": "奔流弹以极高速度直射呼啸而出（初速 100），对目标造成 450 点高贯穿穿甲伤害（80% 破甲），可穿透多个中小型目标及中重型单体，手感与反单体杀伤力与原版震旦巨炮持平",
+        "en": "A very fast, flat shot (muzzle velocity 100) that deals 450 damage, 80% of it armour-piercing, and punches through several small and medium targets or into a single heavy one – it handles and hits like a Cathayan Grand Cannon"
+      }
+    },
+    {
+      "name": { "zh": "骤雨·水矢迫击", "en": "Cloudburst · Water-Dart Mortar" },
+      "desc": {
+        "zh": "骤雨弹以 50° 迫击高抛弹道越过友军头顶轰击敌阵，触地爆炸（半径 6）并向四周低空泼散 6 枚水矢；水矢爆开（半径 3，5／2）只是余波，杀伤集中在主爆；散布约 160 米，覆盖一片区域、不集火单个方阵",
+        "en": "Lobbed at 50° over friendly heads like a mortar shell, it bursts on impact (radius 6) and splashes 6 water-darts out low to every side. The darts' small blasts (radius 3, 5 / 2) are only an afterwash; the main burst does the killing. With a spread of about 160 m it blankets an area rather than focusing on one regiment"
+      }
+    },
+    { "name": { "zh": "宁和：阴", "en": "Harmony: Yin" }, "desc": { "zh": "作为阴相单位参与阴阳宁和", "en": "Counts as a Yin unit for Battle Harmony" } }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_battle_harmony_yin": {
+      "zh": "阴阳宁和生效时：速度 +4%、领导力 +4、装填技能 +12",
+      "en": "While in Battle Harmony: speed +4%, leadership +4, reload skill +12"
+    }
+  },
+  "attrsExtra": [
+    {
+      "name": { "zh": "攻城者", "en": "Siege Attacker" },
+      "desc": { "zh": "可直接攻击城门，无需等待攻城塔或攻城锤即可发动攻城战", "en": "Can attack gates, so a siege battle can be launched at once without waiting for towers or battering rams" }
+    }
+  ]
+}

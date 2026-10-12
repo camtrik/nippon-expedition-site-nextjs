@@ -1,0 +1,60 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_kunikuzushi_oni_0",
+  "abilities": [
+    {
+      "key": "cth_npex_ability_kunikuzushi_brace",
+      "source": "npex",
+      "name": {
+        "zh": "据击",
+        "en": "Braced Fire"
+      },
+      "desc": {
+        "zh": "将沉重炮身深扎于地，以寸步不移为代价全力轰击敌阵。",
+        "en": "They plant their heavy cannon firmly in the earth and unleash its full fury upon the enemy ranks, yielding not a step."
+      },
+      "icon": "cth_npex_ability_kunikuzushi_brace.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_yokai_burst",
+      "source": "npex",
+      "name": {
+        "zh": "妖力迸发",
+        "en": "Yokai Surge"
+      },
+      "desc": {
+        "zh": "短兵相接激起潜藏的妖鬼蛮力，战意愈烈，筋骨愈韧。",
+        "en": "The clash of close combat rouses the savage might within; as their battle-fury rises, flesh and bone grow ever more resilient."
+      },
+      "icon": "cth_npex_unit_passive_yokai_burst.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/heroes/伊吹/伊吹角色与数值.md 与 伊吹技能树.md（行法两格按其「实装出入」）；解锁条件补自 _docs/implementation/tasks/伊吹任务链.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
+  "slug": "ibuki",
+  "rank": "legendary-hero",
+  "name": { "zh": "伊吹", "en": "Ibuki" },
+  "epithet": { "zh": "半妖行者", "en": "The Hanyo Wanderer" },
+  "rankLabel": { "zh": "传奇英雄 · 战士", "en": "Legendary Hero · Champion" },
+  "looks": [
+    { "key": "ibuki", "label": { "zh": "人形", "en": "Human form" } },
+    { "key": "ibuki-yokai", "label": { "zh": "妖形", "en": "Yokai form" } }
+  ],
+  "desc": {
+    "zh": "身上流淌鬼族之血的行者。他背负无名长刀行遍尼朋，以守护苍生之愿，辟人妖同阵之路。",
+    "en": "An oni-blooded wanderer bearing the Nameless Odachi, sworn to shield the common folk and unite men and yokai in battle."
+  },
+  "story": {
+    "zh": "伊吹是流淌着鬼族之血的半妖行者，手持长刀「无名」游历尼朋。在内战与侵入者肆虐的乱世中，他出没于各处险境，数次斩除兵匪与恶兽，庇护流离失所的平民。受其救助并相信其理念的人与妖怪追随伊吹，被称为「晓行众」，伊吹率领他们踏遍列岛，誓要在世仇之中辟出一条人妖共存的生路。",
+    "en": "Ibuki is a hanyo, a wanderer with the blood of the oni in his veins, who roams Nippon with Nameless Odachi in his hands. In an age ravaged by civil war and by invaders, he appears wherever the danger is greatest; time and again he has cut down marauding soldiers and fell beasts, and sheltered the common folk driven from their homes. The men and yokai he has saved, and who have come to believe in his cause, now follow him, and are known as the Akatsuki-shu (The Dawnbreakers). At their head Ibuki walks the length of the isles, sworn to cut through the ancient blood-feud a road by which men and yokai may live side by side."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士，人／妖双形态剑士", "en": "Champion: a swordsman with a human form and a yokai form" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "远征同伴面板（召集）", "en": "The Expedition Companions panel (Summon)" } },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "任务链解锁：将领或英雄进入御神森行省后发出序章「御神之变」，赢下「村落前的死斗」即解锁召集；第壹章「破晓之誓」的目标就是在面板里召集他",
+        "en": "His quest chain. Lead a lord or hero into Goshinmori to start the Prologue, \"Turmoil at the Sacred Tree\"; winning the Last Stand before the Village unlocks his summon, and summoning him from the panel is the objective of Chapter I, \"Oath of the Dawn\""
+      }
+    },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "唯一", "en": "Unique" } },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "召集免费，占用一个远征同伴名额；维持费 250，人形与妖形同价",
+        "en": "Summoning is free but takes one companion slot; upkeep 250, the same in either form"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [
+      { "zh": "人形", "en": "Human form" },
+      { "zh": "妖形", "en": "Yokai form" }
+    ],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["40", "110"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["65", "77"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["55", "45"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["150／320", "180／400"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["55", "55"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["6262", "7262"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["85", "100"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["58", "58"] }
+    ],
+    "note": {
+      "zh": "两形皆为魔法攻击，并引发恐惧与惊骇。人形发动「妖怪化」变为妖形，妖形期间持续损失生命值，满 120 秒后才能「归形」变回。",
+      "en": "Magical attacks and causes fear and terror in both forms. Yokai Form turns him into his yokai form, which steadily burns his health; Human Form turns him back, but only after 120 seconds."
+    }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "无名野太刀 · 150／320（妖形 180／400） · 魔法攻击", "en": "Nameless Odachi · 150 / 320 (yokai form 180 / 400) · magical" },
+      "v": {
+        "zh": "两形同持的同一柄超长野太刀，即专属装备「无名」。妖怪化只强化他的身体，怪力加身后同一柄刀刀势更沉；武器威力以破甲为主，对各类目标无专门加成",
+        "en": "The same huge odachi in both forms, and his signature item. The yokai form strengthens only his body, so the blade simply strikes harder in his hands. Most of its damage is armour-piercing, with no bonus against any particular kind of foe"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "v": { "zh": "武器伤害大多无视护甲", "en": "Most of his weapon damage ignores armour" } },
+    { "k": { "zh": "近战专家", "en": "Melee Expert" }, "v": { "zh": "近战武技娴熟，近战攻击提升", "en": "A master of close combat, with high melee attack" } },
+    { "k": { "zh": "惊骇敌军", "en": "Causes Terror" }, "v": { "zh": "引发惊骇，两种形态皆有", "en": "In both forms" } },
+    { "k": { "zh": "迅捷如风", "en": "Very Fast" }, "v": { "zh": "身法轻捷，移动速度提升", "en": "Light on his feet, with high speed" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "鬼气灼身", "en": "Searing Aura" },
+      "v": { "zh": "周身持续灼烧邻近敌军：半径 35 米、每秒 8 点伤害，每支敌部队同时最多波及 4 个实体", "en": "Constantly burns nearby enemies: 8 damage per second within 35 m, to at most 4 entities per enemy unit at a time" },
+      "form": { "zh": "被动 · 仅妖形", "en": "Passive · yokai form only" }
+    },
+    {
+      "k": { "zh": "鬼血沸腾", "en": "Boiling Oni Blood" },
+      "v": { "zh": "妖怪化的代价：妖形期间每秒损失 18 点生命值，120 秒约 2160 点，约为妖形生命值的三成；「归形」后停止", "en": "The price of the yokai form: he loses 18 health per second, about 2160 over 120 seconds or nearly a third of his yokai-form health. It stops when he takes human form again" },
+      "form": { "zh": "被动 · 仅妖形", "en": "Passive · yokai form only" }
+    },
+    {
+      "k": { "zh": "精力充沛", "en": "Perfect Vigour" },
+      "v": { "zh": "战斗中不受疲劳影响，久战属性不衰减；天生自带", "en": "Immune to fatigue, so his attributes never wear down in a long fight; innate" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "破晓之志", "en": "Will of the Dawnbreakers" },
+      "v": { "zh": "士气高于动摇时：近战攻击 +5、武器威力 +5%、移动速度 ×1.1（与晓行众共享）", "en": "While above Wavering: melee attack +5, weapon strength +5%, speed ×1.1 (shared with the Akatsuki-shu)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "妖力迸发", "en": "Yokai Surge" },
+      "v": { "zh": "近战接敌期间：近战攻击 +10、近战防御 +8、物理抗性 +10%（与妖怪部队共享）", "en": "While in melee: melee attack +10, melee defence +8, physical resistance +10% (shared with Yokai units)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "英武必杀", "en": "Heroic Killing Blow" },
+      "v": { "zh": "近战中有几率一击击杀单体目标（原版通用被动）", "en": "A chance to slay a single-entity target outright in melee (standard vanilla passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "妖怪化", "en": "Yokai Form" },
+      "v": {
+        "zh": "前摇 3 秒后变为妖形（属性见数值表）。变身瞬间以自身为中心爆发一次范围魔法伤害并把敌军震散：半径 25 米，伤害 40（其中破甲 24）。冷却 120 秒；妖形不会自动变回",
+        "en": "After a 3-second wind-up he takes his yokai form (see the stats table). The change itself bursts out around him, scattering the enemy and dealing 40 magical damage (24 of it armour-piercing) within 25 m. Cooldown 120 seconds; the yokai form never ends on its own"
+      },
+      "form": { "zh": "主动 · 人形发动", "en": "Active · from human form" }
+    },
+    {
+      "k": { "zh": "归形", "en": "Human Form" },
+      "v": { "zh": "变回人形并停止损失生命值。妖怪化后 120 秒内不可用，此后随时可切；冷却 120 秒", "en": "Returns to human form and stops the health loss. Unavailable for 120 seconds after Yokai Form, then usable at any time; cooldown 120 seconds" },
+      "form": { "zh": "主动 · 妖形发动", "en": "Active · from yokai form" }
+    },
+    {
+      "k": { "zh": "鬼力绽放", "en": "Oni Might Unleashed" },
+      "v": { "zh": "以自身为中心爆发鬼气：半径 15 米内敌军受魔法伤害 20（其中破甲 12），冷却 90 秒。二级换成强化版：半径 20 米、伤害 30（破甲 18）、冷却 68 秒", "en": "A burst of oni fury around him: 20 magical damage (12 armour-piercing) to enemies within 15 m, cooldown 90 seconds. Level 2 swaps in the upgraded version: 20 m, 30 damage (18 armour-piercing), cooldown 68 seconds" },
+      "form": { "zh": "主动 · 技能树解锁（10 级）", "en": "Active · skill tree, rank 10" }
+    },
+    {
+      "k": { "zh": "鬼威慑魂", "en": "Dread of the Oni" },
+      "v": { "zh": "55 米内敌军近战攻击 −24、近战防御 −24、领导力 −8，持续 20 秒，冷却 90 秒。二级换成强化版：70 米内 −30／−30／−12，持续 25 秒", "en": "Enemies within 55 m: melee attack −24, melee defence −24, leadership −8 for 20 seconds; cooldown 90 seconds. Level 2 swaps in the upgraded version: −30 / −30 / −12 within 70 m for 25 seconds" },
+      "form": { "zh": "主动 · 技能树解锁（10 级）", "en": "Active · skill tree, rank 10" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "引发恐惧与惊骇", "en": "Causes Fear and Terror" }, "v": { "zh": "两种形态皆有；与他交战的敌军可能溃逃", "en": "In both forms; enemies who face him in melee may rout" } },
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "两种形态皆有；领导力光环", "en": "In both forms; leadership aura" } }
+  ],
+  "tree": {
+    "subject": "ibuki",
+    "note": {
+      "zh": "只列本 mod 原创的技能线。整行复用原版的战斗线与战役行动线不列。",
+      "en": "Only this mod's own skill lines are listed; the vanilla combat and campaign-action lines are left out."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "个人线", "en": "His Own Path" },
+        "sub": {
+          "zh": "起点「出山入阵」8 级解锁；之后四格可各自点出，终节点「劈开长夜」须四格全点。",
+          "en": "Down from the Mountains opens at rank 8. The next four can be taken in any order; Cleave the Long Night needs all four."
+        }
+      },
+      {
+        "indent": 4,
+        "label": { "zh": "行法", "en": "Oni Rites" },
+        "sub": {
+          "zh": "两个战场主动技，一攻一控，互不相连；均 10 级解锁、各两级，二级换成强化版。两种形态都能用。",
+          "en": "Two battlefield abilities, one to strike and one to cow, not linked to each other. Both open at rank 10 and have two levels; the second swaps in an upgraded version. Usable in either form."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "通用节点", "en": "General" },
+        "sub": { "zh": "孤立节点，不设前置。", "en": "Standalone nodes with no prerequisites." }
+      }
+    ]
+  },
+  "companion": {
+    "trait": { "zh": "晓行", "en": "Dawnwalker" },
+    "tiers": [
+      {
+        "name": { "zh": "晓行（结缘）", "en": "Dawnwalker (Bound)" },
+        "desc": { "zh": "他坦然留角示人，手执长刀默行军前，魁伟的大鬼之躯足以令四方宵小望风自溃。", "en": "He walks openly with horns bared and odachi in hand at the vanguard; his towering oni frame is enough to scatter the faint-hearted before blow is even struck." },
+        "rewards": [
+          { "zh": "解锁晓行众（太刀）", "en": "Unlocks Akatsuki-shu (Katana)" },
+          { "zh": "解锁舰队建筑「晓行寮」", "en": "Unlocks the Dawnbreakers' Quarters fleet building" },
+          { "zh": "获得特有魔法护符与特性", "en": "Grants a unique magical talisman and trait" }
+        ]
+      },
+      {
+        "name": { "zh": "晓行（信任）", "en": "Dawnwalker (Trusted)" },
+        "desc": { "zh": "沉默笃实的赤诚逐渐融化了人间偏见，使惊惶的流民得以安居生息，三军将士亦因这位大鬼同袍而威势大振。", "en": "His steadfast sincerity slowly thaws mortal prejudice, giving frightened wanderers a haven of peace while his presence kindles fierce courage across the fleet." },
+        "rewards": [
+          { "zh": "晓行众（太刀）容量 +3（可直接征召 1 队）", "en": "Akatsuki-shu (Katana) capacity +3 (1 can be recruited directly)" },
+          { "zh": "解锁晓行众（弓）", "en": "Unlocks Akatsuki-shu (Bow)" },
+          { "zh": "「晓行」提升至「信任」", "en": "Dawnwalker advances to Trusted" }
+        ]
+      },
+      {
+        "name": { "zh": "晓行（托付）", "en": "Dawnwalker (Sworn)" },
+        "desc": { "zh": "信奉其理念的志士汇聚于『晓行众』的旗号之下，人与半妖打破宿仇并肩御敌，终使整座行省的动荡纷扰尽数平息。", "en": "Warriors sharing his conviction flock to the banner of the Akatsuki-shu; mortals and hanyo set aside ancient feuds to stand together, quelling turmoil across the province." },
+        "rewards": [
+          { "zh": "晓行众（太刀）容量 +2", "en": "Akatsuki-shu (Katana) capacity +2" },
+          { "zh": "晓行众（弓）容量 +4（可直接征召 1 队）", "en": "Akatsuki-shu (Bow) capacity +4 (1 can be recruited directly)" },
+          { "zh": "解锁国崩巨鬼", "en": "Unlocks Kunikuzushi Oni" },
+          { "zh": "「晓行」提升至「托付」", "en": "Dawnwalker advances to Sworn" }
+        ]
+      },
+      {
+        "name": { "zh": "晓行（生死之交）", "en": "Dawnwalker (Devoted)" },
+        "desc": { "zh": "洗尽旧世宿仇的无名长刀彻底托付军前，这位半妖行者誓以赤诚之躯率领三军劈开长夜，共迎破晓天光。", "en": "With old blood feuds laid to rest, his nameless odachi is pledged to your cause; the hanyo wanderer vows to lead your host through the long night and usher in the dawn." },
+        "rewards": [
+          { "zh": "晓行众（太刀）容量 +2", "en": "Akatsuki-shu (Katana) capacity +2" },
+          { "zh": "晓行众（弓）容量 +3", "en": "Akatsuki-shu (Bow) capacity +3" },
+          { "zh": "国崩巨鬼容量 +3（可直接征召 1 队）", "en": "Kunikuzushi Oni capacity +3 (1 can be recruited directly)" },
+          { "zh": "「晓行」提升至「生死之交」", "en": "Dawnwalker advances to Devoted" }
+        ]
+      }
+    ],
+    "effects": [
+      { "k": { "zh": "所在省掌控力", "en": "Control in his province" }, "v": { "zh": "+2／+4／+6／+8，随档位", "en": "+2 / +4 / +6 / +8 by tier" } },
+      { "k": { "zh": "所在军队全军引发恐惧", "en": "Causes Fear for his whole army" }, "v": { "zh": "四档恒定", "en": "At every tier" } }
+    ]
+  }
+}

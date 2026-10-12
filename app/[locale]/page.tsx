@@ -7,6 +7,7 @@ import harbour from '@/assets/site/harbour-1800.webp'
 import mon from '@/assets/site/mon.webp'
 import { ArtCard, SceneImage } from '@/components/art'
 import { Segs } from '@/components/Seg'
+import { VictoryRoutes } from '@/components/VictoryRoutes'
 import { Link } from '@/i18n/navigation'
 import {
   ai,
@@ -21,6 +22,7 @@ import {
   units,
   victory,
 } from '@/lib/content/home'
+import { charBySlug } from '@/lib/content/codex'
 import { inline } from '@/lib/content/inline'
 import { latestReleased } from '@/lib/content/releases'
 import { pick } from '@/lib/i18n'
@@ -117,10 +119,17 @@ function Hero() {
 
         <div className="hero__actions">
           <p className="eyebrow hero__actions-label">{t('heroActionsLabel')}</p>
-          {/* 设计稿这里还有指向背景故事和图鉴的两个次级按钮——那两页阶段 3 才有 */}
-          <a className="cta" href={t('workshopUrl')} target="_blank" rel="noopener">
-            {t('subscribe')}
-          </a>
+          <div className="hero__buttons">
+            <a className="cta" href={t('workshopUrl')} target="_blank" rel="noopener">
+              {t('subscribe')}
+            </a>
+            <Link className="cta cta--ghost" href="/lore">
+              {t('nav.lore')}
+            </Link>
+            <Link className="cta cta--ghost" href="/codex">
+              {t('nav.codex')}
+            </Link>
+          </div>
         </div>
 
         {/* 版本号来自 latestReleased()，不硬编码 */}
@@ -194,6 +203,7 @@ function Overview() {
 
 function Lords() {
   const locale = useLocale()
+  const t = useTranslations()
   // ⚠️ JSON 是 rows[].items[] 两层，设计稿的取数把它拍平了。这里按 JSON 的真实形状来，
   // 美术位的左右交替按「摊平后的行序」算——设计稿也是按索引算的，不是读 side 字段。
   const rows = lords.rows.flatMap((row) => row.items)
@@ -204,8 +214,15 @@ function Lords() {
         return (
           <li key={i}>
             <div className="lords__art">
+              {/* 卡面用图鉴里这个人物的第一套外观（武士大将有三张脸，这里放朱甲那张） */}
               {people.map((p) => (
-                <ArtCard key={p.slug} kind="chars" slug={p.slug} name={pick(p.name, locale)} />
+                <ArtCard
+                  key={p.slug}
+                  kind="chars"
+                  slug={charBySlug(p.slug)?.looks[0].key ?? p.slug}
+                  name={pick(p.name, locale)}
+                  href={`/chars/${p.slug}`}
+                />
               ))}
             </div>
             <div className="lords__copy">
@@ -218,6 +235,11 @@ function Lords() {
               <p className="lords__body">
                 <Segs segs={inline(pick(item.body, locale)).segs} />
               </p>
+              {item.slug && (
+                <Link className="lords__more" href={`/chars/${item.slug}`}>
+                  {t('moreLabel')} →
+                </Link>
+              )}
             </div>
           </li>
         )
@@ -255,8 +277,10 @@ function Companions() {
       <ul className="companions">
         {companions.items.map((c) => (
           <li key={c.slug}>
-            <SceneImage slug={c.slug} alt="" />
-            <h3 className="companion__name">{pick(c.name, locale)}</h3>
+            <Link className="companion__link" href={`/chars/${c.slug}`}>
+              <SceneImage slug={c.slug} alt="" />
+              <h3 className="companion__name">{pick(c.name, locale)}</h3>
+            </Link>
             <p className="eyebrow">{pick(companions.chapters_label, locale)}</p>
             <ol className="chapters">
               {c.chapters.map((ch, i) => (
@@ -275,6 +299,7 @@ function Companions() {
 
 function Units() {
   const locale = useLocale()
+  const t = useTranslations()
   return (
     <>
       {units.groups.map((group, i) => (
@@ -283,12 +308,15 @@ function Units() {
           <ul className="units">
             {group.items.map((u) => (
               <li key={u.slug}>
-                <ArtCard kind="units" slug={u.slug} name={pick(u.name, locale)} />
+                <ArtCard kind="units" slug={u.slug} name={pick(u.name, locale)} href={`/units/${u.slug}`} />
               </li>
             ))}
           </ul>
         </div>
       ))}
+      <Link className="units__more" href="/codex">
+        {t('nav.codex')} →
+      </Link>
     </>
   )
 }
@@ -311,7 +339,6 @@ function Buildings() {
 
 function Victory() {
   const locale = useLocale()
-  const t = useTranslations()
   return (
     <section className="band plate--night" id="victory" data-anchor>
       <div className="measure rail">
@@ -319,55 +346,10 @@ function Victory() {
           <h2 className="rail__title">{pick(victory.title, locale)}</h2>
         </div>
         <div className="rail__body">
-          {victory.note && (
-            <p className="victory__note">
-              <Segs segs={inline(pick(victory.note, locale)).segs} />
-            </p>
-          )}
-
-          <div className="victory__card victory__card--short">
-            <VictoryCard card={victory.short} />
-          </div>
-
-          {/* 分叉：两条长线是并行的，不是二选一——这个标签就是说这件事的，别省 */}
-          <div className="victory__fork">
-            <span className="victory__fork-label">{t('forkLabel')}</span>
-          </div>
-
-          <ul className="victory__routes">
-            {victory.routes.map((route, i) => (
-              <li className="victory__card" key={i}>
-                <VictoryCard card={route} />
-              </li>
-            ))}
-          </ul>
+          <VictoryRoutes />
         </div>
       </div>
     </section>
-  )
-}
-
-function VictoryCard({ card }: { card: (typeof victory)['short'] }) {
-  const locale = useLocale()
-  return (
-    <>
-      {card.tag && (
-        <span className="victory__tag" aria-hidden="true">
-          {card.tag}
-        </span>
-      )}
-      <p className="eyebrow victory__kind">{pick(card.kind, locale)}</p>
-      <h3 className="victory__name">{pick(card.name, locale)}</h3>
-      <p className="victory__quote">{pick(card.quote, locale)}</p>
-      <ul className="dots victory__goals">
-        {card.goals.map((g, i) => (
-          <li key={i}>
-            <Segs segs={inline(pick(g, locale)).segs} />
-          </li>
-        ))}
-      </ul>
-      {card.outcome && <p className="victory__outcome">{pick(card.outcome, locale)}</p>}
-    </>
   )
 }
 

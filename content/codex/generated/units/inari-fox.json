@@ -1,0 +1,33 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_inari_fox_0",
+  "abilities": [],
+  "attrs": [
+    {
+      "key": "formed_attack",
+      "source": "vanilla",
+      "name": {
+        "zh": "保持阵型",
+        "en": "Formation Attack"
+      },
+      "desc": {
+        "zh": "当进行近战时，这支部队会尽量保持阵型，从而少量增加近战防御",
+        "en": "The unit will try to stay in formation when in melee. Melee defence will be slightly increased."
+      },
+      "icon": "formed_attack.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ]
+}

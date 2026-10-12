@@ -1,0 +1,34 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_abyssal_grand_cannon_0",
+  "abilities": [
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yin",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阴",
+        "en": "Battle Harmony: Yin"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yin.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "yin",
+      "source": "vanilla",
+      "name": {
+        "zh": "阴",
+        "en": "Yin"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阴",
+        "en": "This unit counts as a Yin unit for the purpose of Battle Harmony proximity."
+      },
+      "icon": "yin.png"
+    }
+  ]
+}

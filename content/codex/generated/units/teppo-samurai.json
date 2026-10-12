@@ -1,0 +1,47 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_teppo_samurai_0",
+  "abilities": [
+    {
+      "key": "cth_npex_passive_teppo_drill",
+      "source": "npex",
+      "name": {
+        "zh": "铁炮操练",
+        "en": "Teppo Drill"
+      },
+      "desc": {
+        "zh": "装填、瞄准、击发，皆有法度。每秒回复弹药上限的5%。",
+        "en": "Loading, aiming, and firing all follow strict drill. Recovers 5% of maximum ammunition every second."
+      },
+      "icon": "cth_npex_passive_teppo_drill.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_bushido",
+      "source": "npex",
+      "name": {
+        "zh": "武士道",
+        "en": "Bushido"
+      },
+      "desc": {
+        "zh": "若无法守护应当守护之人，纵使苟活，武士亦与死人无异。",
+        "en": "A samurai who cannot protect those they are duty-bound to protect is no different from the dead, even if they cling to life."
+      },
+      "icon": "cth_npex_unit_passive_bushido.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ]
+}

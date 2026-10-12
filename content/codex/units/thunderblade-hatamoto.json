@@ -1,0 +1,81 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/雷刃旗本兵种设计.md；desc / story 取 loc unit_description_short_texts / unit_description_historical_texts（中英原文）；name.en 照 loc（Thunderblade Hatamoto，设计书里的 Hatamoto of the Thunderblade 已过时）；建筑、同伴名照 loc 官方英文。",
+  "slug": "thunderblade-hatamoto",
+  "unit": "cth_npex_hatamoto_raijin_0",
+  "group": "nippon",
+  "name": { "zh": "雷刃旗本", "en": "Thunderblade Hatamoto" },
+  "role": { "zh": "精锐近战步兵 · T4 · 大名近卫", "en": "Elite melee infantry · T4 · a daimyo's household guard" },
+  "desc": {
+    "zh": "大名直属的精锐武士，持雷神赐福的大太刀。刀身紫电缠绕，一挥可斩铁裂甲。",
+    "en": "Elite samurai bearing odachi blessed by Raijin; coiled in violet lightning, a single stroke shears iron and splits armour."
+  },
+  "story": {
+    "zh": "旗本是武士中的武士。他们受大名直接统辖、世袭其位的近卫，非百战之功不得入列。所执的大太刀逾寻常太刀之长，须以双手挥舞，本是阵前斩马破甲的重器。其中一脉承雷神之契：相传昔日一位剑圣于雷暴之夜登峰参悟，以身试雷，引天火入刀，自此后人与门徒所持之刃皆具唤雷之能。刀出鞘时紫电自刃脊游走，挥斩之际雷光随刀锋迸裂；此非术士之法，而是以血肉之躯承雷霆、以剑技驭雷威的武道。旗本以剑技为根本，经年苦修，一刀之威已胜寻常武士数合，雷神之力不过为这极致剑技添上最后一道锋芒。两军阵前，见紫电破阵而来者，皆知旗本至矣。",
+    "en": "The Hatamoto are samurai among samurai: the household guard of a daimyo, holding their places by hereditary right, into whose ranks none may enter without worth proven in a hundred battles. The odachi they bear runs longer than the common katana and must be swung two-handed; it was forged as a heavy weapon to hew down horses and break armour in the front rank. One line of them bears the covenant of Raijin. It is told that in ancient days a Swordmaster climbed a thunder-wracked peak in search of enlightenment, set his own body against the thunder, and drew heaven's fire into his blade; from that night on, every blade in the hands of his heirs and disciples has carried the power to call the lightning. When the blade leaves its sheath, violet lightning runs along the spine of the steel; when the stroke falls, thunder bursts along the edge. This is no sorcerer's art, but a warrior's way: a body of flesh and blood that bears the thunder, and swordsmanship that rides its fury. The Hatamoto root their art in the sword alone; through years of harsh training, the force of a single stroke already outweighs several exchanges of the common samurai, and the power of Raijin does no more than set the final edge upon that perfected craft. Before two embattled hosts, all who see violet lightning breaking upon the line know that the Hatamoto have come."
+  },
+  "cost": { "recruit": 1500, "upkeep": 375 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "双手大太刀（魔法近战，破甲为主）", "en": "Two-handed odachi (magical, mostly armour-piercing)" } },
+    {
+      "k": { "zh": "护甲与盾牌", "en": "Armour and shield" },
+      "v": { "zh": "板甲 100；无实体盾牌，30% 斩箭远程格挡", "en": "Plate, armour 100; no shield, but Deflect Shots gives 30% missile block" }
+    },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "侍大将屋形（2 级）／旗本番（2 级）／引雷之峰（地标）；另可经立花直虎的同伴面板以名望征召",
+        "en": "Samurai Taisho's Manor (tier 2) / Hatamoto Guard (2) / Thunder-Drawing Peak (landmark); also bought with Renown through Tachibana Naotora on the Expedition Companions panel"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "建成上述任一建筑；同伴征召随羁绊档位解锁并给容量",
+        "en": "Building any of the above; the companion option unlocks, and gains capacity, as your Bond tier with her rises"
+      }
+    },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "2 回合", "en": "2 turns" } },
+    {
+      "k": { "zh": "数量限制", "en": "Unit cap" },
+      "v": { "zh": "建筑招募无上限；同伴征召容量随羁绊档位", "en": "None from buildings; companion capacity grows with Bond tier" }
+    }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "52", "n": { "zh": "带魔法攻击（武器附魔）", "en": "Magical attacks (enchanted blade)" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "45" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "22／35" },
+    { "k": { "zh": "对大型单位加成", "en": "Bonus vs Large" }, "v": "14" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "32" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "100", "n": { "zh": "板甲", "en": "Plate" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "90" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "31" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "139", "n": { "zh": "80 人合计 11120", "en": "11120 across 80 men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "80" },
+    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "25%" }
+  ],
+  "traits": [
+    { "name": { "zh": "装备重甲", "en": "Armoured" }, "desc": { "zh": "护甲 100 达重甲阈值", "en": "Armour 100 counts as heavy armour" } },
+    { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "大太刀破甲 35 为主", "en": "The odachi deals mostly armour-piercing damage (35)" } },
+    {
+      "name": { "zh": "斩箭术", "en": "Deflect Shots" },
+      "desc": {
+        "zh": "30% 远程格挡——以剑技拨落箭矢，非盾牌格挡，故双手大太刀仍可挡箭",
+        "en": "30% missile block: they cut arrows from the air with the blade rather than a shield, so it works even with a two-handed odachi"
+      }
+    }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_bushido": {
+      "zh": "生命值降至 50% 或以下时自动激活：基础／破甲武器杀伤 +15%、近战攻击 +10、永不败逃，持续 25 秒",
+      "en": "Triggers at 50% health or below: base and armour-piercing weapon damage +15%, melee attack +10 and Unbreakable, for 25 seconds"
+    },
+    "cth_npex_unit_passive_blade_unison": {
+      "zh": "生命值高于 25% 时常驻：近战攻击 +10、近战防御 +10，生命跌破 25% 自动失效",
+      "en": "Always on above 25% health: melee attack +10, melee defence +10; lost once health drops below 25%"
+    }
+  }
+}

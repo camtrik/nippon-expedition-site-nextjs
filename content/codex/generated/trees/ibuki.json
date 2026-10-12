@@ -1,0 +1,352 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "ibuki",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_ibuki_unique_0",
+          "name": {
+            "zh": "出山入阵",
+            "en": "Down from the Mountains"
+          },
+          "desc": {
+            "zh": "曾以为手中的长刀只需护住一隅乡里；如今大争之世在前，这柄沉重长刃终于不再只为自守而出鞘。",
+            "en": "He once believed the odachi in his hands need guard no more than one small corner of the countryside. Now an age of great strife lies before him, and at last that heavy blade leaves its scabbard for more than the defence of his own."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战斗治疗上限：+25%",
+                  "en": "Battle healing cap: +25%"
+                },
+                {
+                  "zh": "被动技能：『狂暴』",
+                  "en": "Passive ability: \"Frenzy\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_unique_1",
+          "name": {
+            "zh": "斩铁",
+            "en": "Iron-Cutter"
+          },
+          "desc": {
+            "zh": "双手握定长柄，大鬼的气力尽数沉入刀脊。",
+            "en": "Both hands set firm upon the long hilt, and all the strength of an oni sinks into the spine of the blade."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "武器破甲杀伤：+50",
+                  "en": "Armour-piercing weapon damage: +50"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：出山入阵",
+            "en": "Requires Down from the Mountains"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_unique_2",
+          "name": {
+            "zh": "同袍",
+            "en": "Comrades in Arms"
+          },
+          "desc": {
+            "zh": "两边的血仇积了几百年，但在同一面战旗下挡过几回冷箭、分过几次干粮之后，就没人再去计较身边并肩站着的是人还是妖了。",
+            "en": "The blood-feud between the two has been centuries in the making. But once they have stopped a few stray arrows for one another beneath the same banner, and shared out their rations a time or two, no one troubles any longer over whether it is a man or a yokai standing at his shoulder."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+5（妖怪与武士部队）（英雄所在军队）",
+                  "en": "Melee attack: +5 for Yokai and Samurai units (Hero's army)"
+                },
+                {
+                  "zh": "近战防御：+5（妖怪与武士部队）（英雄所在军队）",
+                  "en": "Melee defence: +5 for Yokai and Samurai units (Hero's army)"
+                },
+                {
+                  "zh": "新募部队等级：妖怪与武士部队+2（英雄所在军队）",
+                  "en": "Recruit rank: +2 for Yokai and Samurai units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：出山入阵",
+            "en": "Requires Down from the Mountains"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_unique_3",
+          "name": {
+            "zh": "山野如砥",
+            "en": "Mountain-Bred"
+          },
+          "desc": {
+            "zh": "在深山老林里翻山越岭走了半辈子，险峰与烂泥沼泽对他而言不过是寻常路途；两军对垒箭矢如雨，抬起厚重的刀鞘便是一面大盾。",
+            "en": "He has spent half his life crossing ridge after ridge of deep mountain forest, and to him sheer peaks and sucking marsh are no more than the common road. When the battle lines close and the arrows come down like rain, he has only to raise his heavy scabbard and it serves him as a great shield."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "远程格挡概率：+20%",
+                  "en": "Missile block chance: +20%"
+                },
+                {
+                  "zh": "解锁属性：地形适性",
+                  "en": "Attribute: Strider"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：出山入阵",
+            "en": "Requires Down from the Mountains"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_unique_4",
+          "name": {
+            "zh": "鬼族血脉",
+            "en": "Blood of the Oni"
+          },
+          "desc": {
+            "zh": "鬼族血脉在筋骨中奔涌不息，皮开肉绽的刀伤睡上一觉便能愈合。",
+            "en": "The blood of the oni runs unceasing through his sinew and bone; a sword-cut that lays the flesh open has healed after a single night's sleep."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "伤势复原时间：-2回合",
+                  "en": "Wound recovery time: -2 turns"
+                },
+                {
+                  "zh": "被动技能：『鬼族血脉』（每秒恢复0.1%生命值）",
+                  "en": "Passive ability: \"Blood of the Oni\" (restores 0.1% health per second)"
+                },
+                {
+                  "zh": "补员速率：此英雄+20%",
+                  "en": "Casualty replenishment rate: +20% for this Hero"
+                },
+                {
+                  "zh": "补员速率：妖怪部队+20%（英雄所在军队）",
+                  "en": "Casualty replenishment rate: +20% for Yokai units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：出山入阵",
+            "en": "Requires Down from the Mountains"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_unique_5",
+          "name": {
+            "zh": "劈开长夜",
+            "en": "Cleave the Long Night"
+          },
+          "desc": {
+            "zh": "手中的长刀彻底放开手脚，挥斩之际势如巨木横扫。",
+            "en": "The odachi is given its head at last, and every stroke comes round with the force of a great tree trunk swung through the ranks."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "溅射击飞力度：+80%",
+                  "en": "Splash attack power: +80%"
+                },
+                {
+                  "zh": "近战攻击：+8",
+                  "en": "Melee attack: +8"
+                },
+                {
+                  "zh": "武器威力：+20%",
+                  "en": "Weapon strength: +20%"
+                },
+                {
+                  "zh": "武器威力：+10%（英雄所在军队）",
+                  "en": "Weapon strength: +10% (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_unique_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：斩铁、同袍、山野如砥、鬼族血脉",
+            "en": "Requires Iron-Cutter, Comrades in Arms, Mountain-Bred, Blood of the Oni"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_ibuki_rite_1",
+          "name": {
+            "zh": "鬼力绽放",
+            "en": "Oni Might Unleashed"
+          },
+          "desc": {
+            "zh": "猛力顿足或引刀贯地，积蓄的鬼煞之气顺着地脉狂暴涌出，把拥挤在阵中的敌军整排掀飞撕裂。",
+            "en": "With a stamp of his foot or a blade driven into the earth, the oni fury he has stored up bursts out along the veins of the ground, hurling whole ranks of the close-packed enemy into the air and tearing them apart."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁『鬼力绽放』",
+                  "en": "Unlocks \"Oni Might Unleashed\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "解锁强化版『鬼力绽放』",
+                  "en": "Unlocks the upgraded \"Oni Might Unleashed\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_rite_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ibuki_rite_2",
+          "name": {
+            "zh": "鬼威慑魂",
+            "en": "Dread of the Oni"
+          },
+          "desc": {
+            "zh": "天生的压迫感如重山压顶。对上那双赤金色的瞳孔时，哪怕最老练的兵士也会手足冰凉、刀柄打滑。",
+            "en": "He was born with a presence that bears down like the weight of a mountain. Meeting those red-gold eyes, even the most seasoned soldier finds his hands and feet gone cold and the hilt slipping in his grip."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁『鬼威慑魂』",
+                  "en": "Unlocks \"Dread of the Oni\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "解锁强化版『鬼威慑魂』",
+                  "en": "Unlocks the upgraded \"Dread of the Oni\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ibuki_rite_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

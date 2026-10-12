@@ -1,0 +1,933 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "sayo",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_sayo_unique_1_0",
+          "name": {
+            "zh": "阴阳之巫",
+            "en": "Onmyo Miko"
+          },
+          "desc": {
+            "zh": "阴以夺其坚，阳以壮我锋——一镜之内，两气同行。",
+            "en": "Yin to strip away their defence, yang to sharpen our blade – within a single mirror, both energies flow as one."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "魔法之风法力储量：+5",
+                  "en": "Winds of Magic power reserve capacity: +5"
+                },
+                {
+                  "zh": "解锁『阴阳之巫』",
+                  "en": "Unlocks \"Onmyo Miko\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_1",
+          "name": {
+            "zh": "镜映",
+            "en": "Mirrored Reflection"
+          },
+          "desc": {
+            "zh": "镜能映照两界，也让军团的灵性与生机相互流转。",
+            "en": "The mirror reflects both worlds, letting spirit and vitality flow freely through the army."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "补员速率：+6%（英雄所在军队）",
+                  "en": "Casualty replenishment rate: +6% (Hero's army)"
+                },
+                {
+                  "zh": "魔法之风耗费：阳系法术-15%",
+                  "en": "Winds of Magic cost: -15% for Lore of Yang spells"
+                },
+                {
+                  "zh": "魔法之风耗费：阴系法术-15%",
+                  "en": "Winds of Magic cost: -15% for Lore of Yin spells"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：阴阳之巫",
+            "en": "Requires Onmyo Miko"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_2",
+          "name": {
+            "zh": "神楽奉納",
+            "en": "Kagura Offering"
+          },
+          "desc": {
+            "zh": "神乐一奏，土地与人心一同安定下来。",
+            "en": "As the kagura dance begins, both land and hearts are set at ease."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "掌控力：+4（所在行省）",
+                  "en": "Control: +4 (local province)"
+                },
+                {
+                  "zh": "发展：+8（所在行省）",
+                  "en": "Growth: +8 (local province)"
+                },
+                {
+                  "zh": "腐蚀：-4（所在行省）",
+                  "en": "Corruption: -4 (local province)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：阴阳之巫",
+            "en": "Requires Onmyo Miko"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_3",
+          "name": {
+            "zh": "御守授与",
+            "en": "Bestow Omamori"
+          },
+          "desc": {
+            "zh": "出阵前，尼朋的每一支队伍都从巫女手里接过一枚御守。",
+            "en": "Before marching to battle, every Nipponese unit receives an omamori from the hands of the miko."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "魔法抗性：+10%（尼朋单位）（英雄所在军队）",
+                  "en": "Magic resistance: +10% for Nipponese units (Hero's army)"
+                },
+                {
+                  "zh": "物理抗性：+10%（尼朋单位）（英雄所在军队）",
+                  "en": "Physical resistance: +10% for Nipponese units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：阴阳之巫",
+            "en": "Requires Onmyo Miko"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_4",
+          "name": {
+            "zh": "神明庇护",
+            "en": "Divine Protection"
+          },
+          "desc": {
+            "zh": "神乐铃引来诸神的微光，护佑近旁的同伴。",
+            "en": "The kagura bells draw the gods' faint light, warding the allies nearby."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁『神明庇护』",
+                  "en": "Unlocks \"Divine Protection\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：阴阳之巫",
+            "en": "Requires Onmyo Miko"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_5",
+          "name": {
+            "zh": "封印之钥",
+            "en": "Key of Sealing"
+          },
+          "desc": {
+            "zh": "师父留下的神乐铃既是法器，也是松动封印的钥匙。",
+            "en": "The kagura bells left by her master are both a ritual implement and a key that loosens the seal."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁『封印之钥』",
+                  "en": "Unlocks \"Key of Sealing\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_unique_1_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：镜映、神楽奉納、御守授与、神明庇护",
+            "en": "Requires Mirrored Reflection, Kagura Offering, Bestow Omamori, Divine Protection"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        },
+        {
+          "key": "cth_npex_skill_sayo_unique_1_6",
+          "name": {
+            "zh": "神兽召来：麒麟",
+            "en": "Summon Divine Beast: Kirin"
+          },
+          "desc": {
+            "zh": "神乐铃三振，云气自镜面翻涌而出。",
+            "en": "Three shakes of the kagura bells, and clouds surge forth from the mirror's surface."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_sayo_unique_1_6.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 26 解锁",
+            "en": "Unlocks at rank 26"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_miko_hamaya",
+          "name": {
+            "zh": "破魔矢",
+            "en": "Hamaya"
+          },
+          "desc": {
+            "zh": "巫女虚挽神弓，以破魔矢之咒射出净光。",
+            "en": "The Miko draws a sacred bow from empty air and looses a bolt of purifying light with the rite of Hamaya."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级破魔矢』",
+                  "en": "Overcast spell: \"Hamaya Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『破魔矢』-30%",
+                  "en": "Cooldown: -30% to \"Hamaya\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级破魔矢』",
+                  "en": "Overcast spell: \"Hamaya Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『破魔矢』-50%",
+                  "en": "Cooldown: -50% to \"Hamaya\""
+                },
+                {
+                  "zh": "魔法之风耗费：『破魔矢』-1",
+                  "en": "Winds of Magic cost: -1 for \"Hamaya\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级破魔矢』-2",
+                  "en": "Winds of Magic cost: -2 for \"Hamaya Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级破魔矢』-15%",
+                  "en": "Miscast base chance: -15% for \"Hamaya Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_hamaya.png",
+          "reuse": false,
+          "unlock": null,
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_miko_taima",
+          "name": {
+            "zh": "退魔",
+            "en": "Demon Warding"
+          },
+          "desc": {
+            "zh": "神事既起，邪祟自退。",
+            "en": "Once the sacred rite begins, evil spirits retreat of their own accord."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "被动技能：『退魔』",
+                  "en": "Passive ability: \"Demon Warding\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_taima.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破魔矢",
+            "en": "Requires Hamaya"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_miko_reikitsune",
+          "name": {
+            "zh": "神使召来：灵狐",
+            "en": "Summon Divine Envoy: Spirit Fox"
+          },
+          "desc": {
+            "zh": "狐群闻铃而至，替巫女扑向阵前。",
+            "en": "The fox pack hears the bell and comes, pouncing on the enemy line in the Miko's stead."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术：『神使召来：灵狐』",
+                  "en": "Spell: \"Summon Divine Envoy: Spirit Fox\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级神使召来：灵狐』",
+                  "en": "Overcast spell: \"Summon Divine Envoy: Spirit Fox Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『神使召来：灵狐』-30%",
+                  "en": "Cooldown: -30% to \"Summon Divine Envoy: Spirit Fox\""
+                },
+                {
+                  "zh": "技能可用次数：『神使召来：灵狐』+1",
+                  "en": "Ability number of uses: +1 for \"Summon Divine Envoy: Spirit Fox\""
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级神使召来：灵狐』",
+                  "en": "Overcast spell: \"Summon Divine Envoy: Spirit Fox Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『神使召来：灵狐』-50%",
+                  "en": "Cooldown: -50% to \"Summon Divine Envoy: Spirit Fox\""
+                },
+                {
+                  "zh": "魔法之风耗费：『神使召来：灵狐』-1",
+                  "en": "Winds of Magic cost: -1 for \"Summon Divine Envoy: Spirit Fox\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级神使召来：灵狐』-2",
+                  "en": "Winds of Magic cost: -2 for \"Summon Divine Envoy: Spirit Fox Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级神使召来：灵狐』-15%",
+                  "en": "Miscast base chance: -15% for \"Summon Divine Envoy: Spirit Fox Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_reikitsune.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破魔矢",
+            "en": "Requires Hamaya"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_miko_senbonzakura",
+          "name": {
+            "zh": "千本樱",
+            "en": "Senbonzakura"
+          },
+          "desc": {
+            "zh": "千瓣落樱皆是刃，过处不留邪祟。",
+            "en": "Each of the thousand falling petals is a blade, and no evil spirit survives their passing."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术：『千本樱』",
+                  "en": "Spell: \"Senbonzakura\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级千本樱』",
+                  "en": "Overcast spell: \"Senbonzakura Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『千本樱』-30%",
+                  "en": "Cooldown: -30% to \"Senbonzakura\""
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级千本樱』",
+                  "en": "Overcast spell: \"Senbonzakura Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『千本樱』-50%",
+                  "en": "Cooldown: -50% to \"Senbonzakura\""
+                },
+                {
+                  "zh": "魔法之风耗费：『千本樱』-1",
+                  "en": "Winds of Magic cost: -1 for \"Senbonzakura\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级千本樱』-2",
+                  "en": "Winds of Magic cost: -2 for \"Senbonzakura Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级千本樱』-15%",
+                  "en": "Miscast base chance: -15% for \"Senbonzakura Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_senbonzakura.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破魔矢",
+            "en": "Requires Hamaya"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_miko_fuma_fuda",
+          "name": {
+            "zh": "封魔之札",
+            "en": "Sealing Ofuda"
+          },
+          "desc": {
+            "zh": "御札钉处，邪祟俯首——纵是千军之将，寸步难行。",
+            "en": "Where the ofuda is pinned, evil spirits bow their heads; even a general commanding a thousand troops cannot take a single step."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术：『封魔之札』",
+                  "en": "Spell: \"Sealing Ofuda\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级封魔之札』",
+                  "en": "Overcast spell: \"Sealing Ofuda Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『封魔之札』-30%",
+                  "en": "Cooldown: -30% to \"Sealing Ofuda\""
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级封魔之札』",
+                  "en": "Overcast spell: \"Sealing Ofuda Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『封魔之札』-50%",
+                  "en": "Cooldown: -50% to \"Sealing Ofuda\""
+                },
+                {
+                  "zh": "魔法之风耗费：『封魔之札』-1",
+                  "en": "Winds of Magic cost: -1 for \"Sealing Ofuda\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级封魔之札』-2",
+                  "en": "Winds of Magic cost: -2 for \"Sealing Ofuda Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级封魔之札』-15%",
+                  "en": "Miscast base chance: -15% for \"Sealing Ofuda Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_fuma_fuda.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破魔矢",
+            "en": "Requires Hamaya"
+          },
+          "hub": null
+        },
+        {
+          "key": "wh_main_skill_all_magic_all_06_evasion",
+          "name": {
+            "zh": "闪避",
+            "en": "Evasion"
+          },
+          "desc": {
+            "zh": "拥有这一技能的人能在战斗中轻松闪避掉敌人的攻击或摆脱缠斗，当然，前提是他们觉得战术上有必要这么做",
+            "en": "Those with such skills can evade enemy attacks with ease and break from combat, should they feel that it is tactically important to do so."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "被动技能：『闪避』",
+                  "en": "Passive ability: \"Evasion\""
+                }
+              ]
+            }
+          ],
+          "icon": "wh_main_skill_all_magic_all_06_evasion.png",
+          "reuse": true,
+          "unlock": {
+            "zh": "前置：退魔、神使召来：灵狐、千本樱、封魔之札",
+            "en": "Requires Demon Warding, Summon Divine Envoy: Spirit Fox, Senbonzakura, Sealing Ofuda"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        },
+        {
+          "key": "cth_npex_skill_miko_misogi",
+          "name": {
+            "zh": "禊祓",
+            "en": "Misogi"
+          },
+          "desc": {
+            "zh": "御币一振，月露般的清辉落在伤者之间。",
+            "en": "With a single sweep of her gohei, a radiance like moonlit dew settles over the wounded."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术：『禊祓』",
+                  "en": "Spell: \"Misogi\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级禊祓』",
+                  "en": "Overcast spell: \"Misogi Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『禊祓』-30%",
+                  "en": "Cooldown: -30% to \"Misogi\""
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级禊祓』",
+                  "en": "Overcast spell: \"Misogi Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『禊祓』-50%",
+                  "en": "Cooldown: -50% to \"Misogi\""
+                },
+                {
+                  "zh": "魔法之风耗费：『禊祓』-1",
+                  "en": "Winds of Magic cost: -1 for \"Misogi\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级禊祓』-2",
+                  "en": "Winds of Magic cost: -2 for \"Misogi Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级禊祓』-15%",
+                  "en": "Miscast base chance: -15% for \"Misogi Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_misogi.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：闪避",
+            "en": "Requires Evasion"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_miko_kamikakushi",
+          "name": {
+            "zh": "神隐",
+            "en": "Spirited Away"
+          },
+          "desc": {
+            "zh": "铃声一止，阵中便少了一个人；再一止，又少了一个。",
+            "en": "The instant the bell falls silent, one soldier vanishes from the line; when it falls silent again, another follows."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术：『神隐』",
+                  "en": "Spell: \"Spirited Away\""
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级神隐』",
+                  "en": "Overcast spell: \"Spirited Away Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『神隐』-30%",
+                  "en": "Cooldown: -30% to \"Spirited Away\""
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "增幅法术：『高级神隐』",
+                  "en": "Overcast spell: \"Spirited Away Upgraded\""
+                },
+                {
+                  "zh": "冷却速率：『神隐』-50%",
+                  "en": "Cooldown: -50% to \"Spirited Away\""
+                },
+                {
+                  "zh": "魔法之风耗费：『神隐』-1",
+                  "en": "Winds of Magic cost: -1 for \"Spirited Away\""
+                },
+                {
+                  "zh": "魔法之风耗费：『高级神隐』-2",
+                  "en": "Winds of Magic cost: -2 for \"Spirited Away Upgraded\""
+                },
+                {
+                  "zh": "法术失误基础概率：『高级神隐』-15%",
+                  "en": "Miscast base chance: -15% for \"Spirited Away Upgraded\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_kamikakushi.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：闪避",
+            "en": "Requires Evasion"
+          },
+          "hub": null
+        },
+        {
+          "key": "wh_main_skill_all_magic_all_07_earthing",
+          "name": {
+            "zh": "缚风大地",
+            "en": "Earthing"
+          },
+          "desc": {
+            "zh": "将法杖或是某种奥术导体插入大地之后，有经验的施法者便会有效地束缚魔法之风，从而大大降低施法事故的触发概率",
+            "en": "By stabbing a staff or some arcane conduit into the ground, an accomplished magic-user can earth or tether the Winds and hopefully reduce a chance of miscasting."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术失误基础概率：-15%",
+                  "en": "Miscast base chance: -15%"
+                }
+              ]
+            }
+          ],
+          "icon": "wh_main_skill_all_magic_all_07_earthing.png",
+          "reuse": true,
+          "unlock": {
+            "zh": "前置：闪避",
+            "en": "Requires Evasion"
+          },
+          "hub": null
+        },
+        {
+          "key": "wh_main_skill_all_magic_all_08_power_drain",
+          "name": {
+            "zh": "魔力储备",
+            "en": "Magical Reserves"
+          },
+          "desc": {
+            "zh": "一些魔法使用者有能力储存魔法之风以备日后使用，从而强化他们的施法能力",
+            "en": "A few magic-users have the ability to store the Winds of Magic for later use, increasing their spellcasting power when it really counts."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "魔法之风法力储量：+5",
+                  "en": "Winds of Magic power reserve capacity: +5"
+                }
+              ]
+            }
+          ],
+          "icon": "wh_main_skill_all_magic_all_08_power_drain.png",
+          "reuse": true,
+          "unlock": {
+            "zh": "前置：闪避",
+            "en": "Requires Evasion"
+          },
+          "hub": null
+        },
+        {
+          "key": "wh_main_skill_all_magic_all_11_arcane_conduit",
+          "name": {
+            "zh": "奥术导体",
+            "en": "Arcane Conduit"
+          },
+          "desc": {
+            "zh": "要引导魔法之风必须要有强大的心灵。那些拥有这种天赋的人便成为了奥术导体，将魔法的风暴导向他们的敌人",
+            "en": "A strong mind is needed to channel the Winds of Magic. Those that have such a gift become arcane conduits – funnelling the magical tempests to their cause."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "被动技能：『奥术导体』",
+                  "en": "Passive ability: \"Arcane Conduit\""
+                }
+              ]
+            }
+          ],
+          "icon": "wh_main_skill_all_magic_all_11_arcane_conduit.png",
+          "reuse": true,
+          "unlock": {
+            "zh": "前置：禊祓、神隐、缚风大地、魔力储备",
+            "en": "Requires Misogi, Spirited Away, Earthing, Magical Reserves"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_sayo_pilao",
+          "name": {
+            "zh": "守镜",
+            "en": "Mirror Warden"
+          },
+          "desc": {
+            "zh": "镜山传承的护身修持。",
+            "en": "A protective discipline handed down by Kagamiyama."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "物理抗性：10%",
+                  "en": "Physical resistance: 10%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "物理抗性：20%",
+                  "en": "Physical resistance: 20%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_pilao.png",
+          "reuse": false,
+          "unlock": null,
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_moli",
+          "name": {
+            "zh": "灵息",
+            "en": "Spirit Breath"
+          },
+          "desc": {
+            "zh": "调息以维持阴阳术的流转。",
+            "en": "Regulating her breath to keep the flow of her onmyo arts steady."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术强度：+10%",
+                  "en": "Spell intensity: +10%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "法术强度：+20%",
+                  "en": "Spell intensity: +20%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_moli.png",
+          "reuse": false,
+          "unlock": null,
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_sayo_generic_nippon",
+          "name": {
+            "zh": "尼朋巫女",
+            "en": "Nipponese Miko"
+          },
+          "desc": {
+            "zh": "所属军队的全部尼朋单位近战攻击、近战防御与领导力提升。",
+            "en": "Increases melee attack, melee defence and leadership for all Nipponese units in the army."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+5（尼朋单位）（英雄所在军队）",
+                  "en": "Melee attack: +5 for Nipponese units (Hero's army)"
+                },
+                {
+                  "zh": "近战防御：+5（尼朋单位）（英雄所在军队）",
+                  "en": "Melee defence: +5 for Nipponese units (Hero's army)"
+                },
+                {
+                  "zh": "领导力：+10（尼朋单位）（英雄所在军队）",
+                  "en": "Leadership: +10 for Nipponese units (Hero's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_generic_nippon.png",
+          "reuse": false,
+          "unlock": null,
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

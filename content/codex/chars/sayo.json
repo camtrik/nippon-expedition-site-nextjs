@@ -1,0 +1,149 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/heroes/纱代/纱代角色与数值.md 与 纱代技能树.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
+  "slug": "sayo",
+  "rank": "legendary-hero",
+  "name": { "zh": "纱代", "en": "Sayo" },
+  "epithet": { "zh": "阴阳之巫女", "en": "The Onmyo Miko" },
+  "rankLabel": { "zh": "传奇英雄 · 法师", "en": "Legendary Hero · Wizard" },
+  "looks": [{ "key": "sayo" }],
+  "desc": {
+    "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
+    "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+  },
+  "story": {
+    "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
+    "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师", "en": "Wizard" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "远征同伴面板（召集）", "en": "The Expedition Companions panel (Summon)" } },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "占领大社后下一回合发出第壹章「废社之铃」，同时解锁召集；第壹章的目标就是在面板里召集她",
+        "en": "Capture the Great Shrine; Chapter I, \"The Bell in the Ruined Shrine\", arrives the next turn and unlocks her summon. Summoning her from the panel is that chapter's objective"
+      }
+    },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "唯一", "en": "Unique" } },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "召集免费，占用一个远征同伴名额；维持费 250",
+        "en": "Summoning is free but takes one companion slot; upkeep 250"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [{ "zh": "步行（唯一形态）", "en": "On foot (only form)" }],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["30"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["48"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["56"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["210／190"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["15"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4516"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["80"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["55"] }
+    ],
+    "note": { "zh": "魔法攻击；施法（巫女法系）。", "en": "Magical attacks; casts spells from the Lore of the Miko." }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "神乐铃 · 210／190 · 魔法攻击", "en": "Kagura Bell · 210 / 190 · magical" },
+      "v": { "zh": "施法媒介与近战法器一体，即专属装备「镜山神乐铃」", "en": "Her focus for spellcasting and her weapon in melee at once: the Kagamiyama Kagura Bells, her signature item" }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "法术吟唱者", "en": "Spellcaster" }, "v": { "zh": "唯一形态", "en": "Her only form" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "受创", "en": "Wounds" },
+      "v": { "zh": "生命值低于 25% 时武器威力 −20%、移速 −10%（原版单体单位通用减益）", "en": "Below 25% health: weapon strength −20% and speed −10% (the standard vanilla penalty for single-entity units)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "领导力光环", "en": "Leadership aura" } },
+    { "k": { "zh": "于森林中隐蔽", "en": "Hide (forest)" }, "v": { "zh": "可在森林中隐蔽", "en": "Can hide in forests" } },
+    { "k": { "zh": "精气之风精通", "en": "Mastery of Elemental Winds" }, "v": { "zh": "军中两支以上部队共享此属性时，所施法术威力提升", "en": "When two or more units in the army share it, their spells grow stronger" } }
+  ],
+  "tree": {
+    "subject": "sayo",
+    "note": {
+      "zh": "只列本 mod 原创的技能线。原版复用的战役行动线不列；巫女法系与泛用巫女共用，法术数值以巫女那一页为准。",
+      "en": "Only this mod's own skill lines are listed; the vanilla campaign-action line is left out. The Lore of the Miko is shared with the generic Miko, whose page carries the spell numbers."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "镜山巫女传承", "en": "Kagamiyama Lineage" },
+        "sub": {
+          "zh": "她一个人的传承与神使契约。起点之后四格可各自点出，「封印之钥」须四格全点；麒麟孤立在末尾，只有等级门槛。",
+          "en": "Her own inheritance and spirit pacts. After the first node the next four can be taken in any order; Key of Sealing needs all four. The Kirin node stands alone at the end, gated only by rank."
+        }
+      },
+      {
+        "indent": 2,
+        "label": { "zh": "巫女法系", "en": "Lore of the Miko" },
+        "sub": { "zh": "六个法术、一个学派被动，与泛用巫女共用。", "en": "Six spells and a lore passive, shared with the generic Miko." }
+      },
+      {
+        "indent": 4,
+        "label": { "zh": "守镜与灵息", "en": "Mirror Warden and Spirit Breath" },
+        "sub": { "zh": "两条两级侧支：一条减伤，一条法术强度。", "en": "Two two-level side skills: one for damage resistance, one for spell power." }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "通用节点", "en": "General" },
+        "sub": { "zh": "孤立节点，不设前置。", "en": "Standalone nodes with no prerequisites." }
+      }
+    ]
+  },
+  "companion": {
+    "trait": { "zh": "灵脉", "en": "Spirit Vein" },
+    "tiers": [
+      {
+        "name": { "zh": "灵脉（结缘）", "en": "Spirit Vein (Bound)" },
+        "desc": { "zh": "清越铃音掠过甲板，神乐微光悄然拂去将士身上的创伤与阴湿。", "en": "A clear bell-chime sweeps across the decks, and the soft glow of kagura quietly soothes the crew's wounds and banishes the damp." },
+        "rewards": [
+          { "zh": "解锁稻荷灵狐使者", "en": "Unlocks Inari Fox Emissaries" },
+          { "zh": "解锁舰队建筑「舰上稻荷社」", "en": "Unlocks the Shipboard Inari Shrine fleet building" },
+          { "zh": "获得特有魔法护符与特性", "en": "Grants a unique magical talisman and trait" }
+        ]
+      },
+      {
+        "name": { "zh": "灵脉（信任）", "en": "Spirit Vein (Trusted)" },
+        "desc": { "zh": "舰尾设坛以引八方，四散的精气之风渐聚为充盈灵潮。", "en": "An altar at the stern calls from every quarter, and the scattered Winds of Magic gather into a swelling spirit tide." },
+        "rewards": [
+          { "zh": "稻荷灵狐使者容量 +4（可直接征召 1 队）", "en": "Inari Fox Emissary capacity +4 (1 can be recruited directly)" },
+          { "zh": "「灵脉」提升至「信任」", "en": "Spirit Vein advances to Trusted" }
+        ]
+      },
+      {
+        "name": { "zh": "灵脉（托付）", "en": "Spirit Vein (Sworn)" },
+        "desc": { "zh": "镜山秘传导引法门传授军中，气脉贯通，法力流转愈发顺畅。", "en": "The secret channelling arts of Kagamiyama are taught throughout the army. The spirit's pathways open, and magic flows ever more freely." },
+        "rewards": [
+          { "zh": "稻荷灵狐使者容量 +4（可直接征召 1 队）", "en": "Inari Fox Emissary capacity +4 (1 can be recruited directly)" },
+          { "zh": "解锁麒麟", "en": "Unlocks Kirin" },
+          { "zh": "「灵脉」提升至「托付」", "en": "Spirit Vein advances to Sworn" }
+        ]
+      },
+      {
+        "name": { "zh": "灵脉（生死之交）", "en": "Spirit Vein (Devoted)" },
+        "desc": { "zh": "神乐铃音与天地共鸣，浩瀚灵息随令而至，庇佑三军百战不倾。", "en": "The kagura bell rings in harmony with heaven and earth. Boundless spirit answers its call, shielding the army through a hundred battles." },
+        "rewards": [
+          { "zh": "稻荷灵狐使者容量 +3", "en": "Inari Fox Emissary capacity +3" },
+          { "zh": "麒麟容量 +3（可直接征召 1 队）", "en": "Kirin capacity +3 (1 can be recruited directly)" },
+          { "zh": "「灵脉」提升至「生死之交」", "en": "Spirit Vein advances to Devoted" }
+        ]
+      }
+    ],
+    "effects": [
+      { "k": { "zh": "己方军队魔法之风储量（每回合）", "en": "Winds of Magic reserves for her army (per turn)" }, "v": { "zh": "+3／+6／+9／+12，随档位", "en": "+3 / +6 / +9 / +12 by tier" } },
+      { "k": { "zh": "己方军队补员速率", "en": "Replenishment for her army" }, "v": { "zh": "+5%，四档恒定", "en": "+5% at every tier" } }
+    ]
+  }
+}

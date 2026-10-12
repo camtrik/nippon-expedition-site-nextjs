@@ -1,5 +1,4 @@
-// 顶部药丸导航。设计稿有 6 项（简介 / 背景故事 / 图鉴 / 更新记录 / 常见问题 / 兼容性），
-// 阶段 1 只建了 3 页，所以先渲染这 3 项，其余等对应阶段再加回来。
+// 顶部药丸导航。六项照设计稿：简介 / 背景故事 / 图鉴 / 更新记录 / 常见问题 / 兼容性。
 //
 // 这是 Server Component：词表在服务端就填好，不进浏览器。只有需要知道当前路径的
 // 两小块（高亮 NavLink、语言开关 LangSwitch）是客户端组件，边界压到叶子上。
@@ -24,7 +23,7 @@ export function SiteNav() {
 
         <div className="site-nav__links">
           {PAGES.map((p) => (
-            <NavLink key={p.id} href={p.href}>
+            <NavLink key={p.id} href={p.href} also={p.also}>
               {t(`nav.${p.nav}`)}
             </NavLink>
           ))}

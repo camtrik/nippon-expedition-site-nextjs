@@ -1,0 +1,86 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_hatamoto_raijin_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_blade_unison",
+      "source": "npex",
+      "name": {
+        "zh": "人剑合一",
+        "en": "Unity of Blade and Self"
+      },
+      "desc": {
+        "zh": "能成为旗本的武士早已在剑术上登峰造极。",
+        "en": "A samurai who has risen to become a hatamoto has already mastered swordsmanship to its very peak."
+      },
+      "icon": "cth_npex_unit_passive_blade_unison.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_bushido",
+      "source": "npex",
+      "name": {
+        "zh": "武士道",
+        "en": "Bushido"
+      },
+      "desc": {
+        "zh": "若无法守护应当守护之人，纵使苟活，武士亦与死人无异。",
+        "en": "A samurai who cannot protect those they are duty-bound to protect is no different from the dead, even if they cling to life."
+      },
+      "icon": "cth_npex_unit_passive_bushido.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "fatigue_immune",
+      "source": "vanilla",
+      "name": {
+        "zh": "体力充沛",
+        "en": "Perfect Vigour"
+      },
+      "desc": {
+        "zh": "纵使执行的是最令人筋疲力尽的行动，这支部队也永远不会损失体力",
+        "en": "Even when performing the most fatiguing actions, this unit never loses vigour."
+      },
+      "icon": "fatigue_immune.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "immune_to_psychology",
+      "source": "vanilla",
+      "name": {
+        "zh": "心理免疫",
+        "en": "Immune to Psychology"
+      },
+      "desc": {
+        "zh": "这支部队免疫心理攻击（恐惧与惊骇）",
+        "en": "The unit is immune to psychological attacks (Fear & Terror)."
+      },
+      "icon": "immune_to_psychology.png"
+    }
+  ]
+}

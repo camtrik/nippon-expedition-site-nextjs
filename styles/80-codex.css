@@ -1,0 +1,993 @@
+/* 图鉴：索引页（v.codex，设计稿 :528）、兵种页（v.unit，:589）、人物页（v.char，:750）。
+   数值照设计稿的内联 style 抄；类名是新起的，沿用全站的 BEM 风格。 */
+
+.page__lede {
+  margin: 0 0 var(--s-4);
+  max-width: 64ch;
+  font-size: var(--prose-size);
+  line-height: var(--prose-leading);
+  color: var(--slate);
+}
+
+/* ---- 索引页签：上边一条细线，当前页签压一道翠色 ---- */
+
+.codex-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: max-content;
+  max-width: 100%;
+  min-height: 52px;
+  margin-bottom: 40px;
+  border-top: 1px solid var(--dust);
+}
+
+.codex-tabs__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 26px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
+  white-space: nowrap;
+  color: var(--slate);
+}
+
+.codex-tabs__tab:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.codex-tabs__tab[aria-current='page'] {
+  color: var(--clay);
+}
+
+.codex-tabs__tab[aria-current='page']::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 2px;
+  background: var(--clay);
+}
+
+.codex-tabs__count {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--slate);
+}
+
+.codex-group {
+  margin-bottom: var(--s-5);
+}
+
+.codex-group > .eyebrow {
+  margin-bottom: 20px;
+}
+
+.codex-group__legend {
+  color: var(--signal);
+}
+
+.codex-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+
+.codex-grid .card {
+  width: 158px;
+  text-align: left;
+}
+
+.codex-grid .card__name {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+/* 设计稿：兵牌带 6px 圆角，人物卡是撕边、不加圆角 */
+.card--chars img {
+  border-radius: 0;
+}
+
+.card__sub {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--slate);
+}
+
+.card__sub--accent {
+  color: var(--signal);
+}
+
+/* ---- 详情页骨架 ---- */
+
+.detail .measure {
+  max-width: 1240px;
+}
+
+.detail__back {
+  display: inline-block;
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--slate);
+}
+
+.detail__back:hover {
+  color: var(--ink);
+}
+
+.detail .measure > .detail__back:last-child {
+  margin: 44px 0 0;
+}
+
+.detail__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(28px, 3.5vw, 60px);
+  align-items: flex-start;
+}
+
+.detail__aside {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.detail__aside--char {
+  flex: 1 1 230px;
+  max-width: 320px;
+  min-width: 0;
+}
+
+/* 大图压在夜色底上，上下各一道渐变，和设计稿一样 */
+.detail__art {
+  position: relative;
+  width: min(34vh, 300px);
+  max-width: 100%;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--deep);
+  box-shadow: 0 20px 44px rgba(19, 30, 44, 0.2);
+}
+
+.detail__art--unit {
+  width: min(30vh, 320px);
+}
+
+.detail__art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.detail__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(19, 30, 44, 0.28) 0%,
+    rgba(19, 30, 44, 0) 22%,
+    rgba(19, 30, 44, 0) 68%,
+    rgba(19, 30, 44, 0.5) 100%
+  );
+}
+
+.detail__cost {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.detail__cost dt {
+  margin: 0 0 5px;
+  letter-spacing: 0.1em;
+}
+
+.detail__cost dd {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.detail__main {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.detail__main--char {
+  flex: 999 1 440px;
+  max-width: 880px;
+}
+
+.detail__header {
+  margin-bottom: 44px;
+}
+
+.detail__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 18px;
+}
+
+.pill--jade {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 15px;
+  font-size: 12px;
+  background: var(--jade-soft);
+  color: var(--clay);
+}
+
+.detail__pills .pill--jade::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: var(--r-circle);
+  background: var(--signal-light);
+}
+
+.detail__role {
+  margin: 0 0 9px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: var(--clay);
+}
+
+.detail__epithet {
+  margin: 0 0 6px;
+  font-size: clamp(15px, 1.6vw, 19px);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--gold-ink);
+}
+
+.detail__name {
+  margin: 0 0 6px;
+  font-size: clamp(32px, 4.2vw, 52px);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tightest);
+  line-height: 1.06;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+.detail__alt {
+  margin: 0;
+  font-size: clamp(15px, 1.7vw, 20px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--slate);
+}
+
+.detail__desc {
+  margin: 22px 0 44px;
+  max-width: 58ch;
+  font-size: clamp(16.5px, 1.6vw, 19px);
+  line-height: 1.85;
+  color: var(--ink-prose);
+}
+
+.detail__header .detail__desc {
+  margin-bottom: 0;
+}
+
+.detail__section {
+  margin: 0 0 var(--s-5);
+}
+
+.detail .eyebrow--rule {
+  margin-bottom: 8px;
+  letter-spacing: 0.14em;
+}
+
+.detail__story {
+  margin: 14px 0 0;
+  max-width: 66ch;
+  font-size: 17.5px;
+  line-height: 1.95;
+  color: var(--ink-prose);
+}
+
+.detail__blocks {
+  display: grid;
+  gap: clamp(32px, 4vw, 64px);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  margin: 40px 0 60px;
+}
+
+/* 键值行：小标签在上、正文在下 */
+.kv {
+  margin: 0;
+}
+
+.kv > div {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule-row);
+  min-width: 0;
+}
+
+.kv dt {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
+
+.kv dd {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.kv--grid {
+  display: grid;
+  gap: 0 44px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+/* 兵种数值：名字左、数字右，说明换到下一行 */
+.stats {
+  max-width: 820px;
+  margin: 0;
+}
+
+.stats > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 24px;
+  align-items: baseline;
+  padding: 14px 6px;
+  border-bottom: 1px solid var(--rule-row);
+}
+
+.stats > div:hover {
+  background: var(--surface-hover);
+}
+
+.stats dt {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-prose);
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.stats .stats__note {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 0;
+  color: var(--slate);
+}
+
+/* 整句的数值格：换到名字下面，按正文排 */
+.stats > .stats__row--text dd:not(.stats__note) {
+  grid-column: 1 / -1;
+  font-size: 15.5px;
+  font-weight: 450;
+  line-height: 1.7;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+/* 人物的分形态数值表。窄屏上形态多（三列）时横向滚动 */
+.forms-scroll {
+  overflow-x: auto;
+}
+
+.forms {
+  width: 100%;
+  min-width: min(100%, 420px);
+  border-collapse: collapse;
+}
+
+.forms thead td {
+  border-bottom: 1px solid var(--dust);
+}
+
+.forms thead th {
+  padding: 8px 6px 10px;
+  border-bottom: 1px solid var(--dust);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--slate);
+}
+
+.forms tbody th,
+.forms tbody td {
+  padding: 13px 6px;
+  border-bottom: 1px solid var(--rule-row);
+  vertical-align: baseline;
+}
+
+.forms tbody tr:hover {
+  background: var(--surface-hover);
+}
+
+.forms tbody th {
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--ink-prose);
+}
+
+.forms tbody td {
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.forms__note {
+  margin: 14px 0 0;
+  max-width: 70ch;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--slate);
+}
+
+/* 武器 / 坐骑 / 技能 / 部队属性：名字一行、说明一行 */
+.rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rows > li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule-row);
+}
+
+.rows--tiles > li {
+  padding: 15px 6px;
+  transition: background 160ms ease;
+}
+
+.rows--tiles > li:hover {
+  background: var(--surface-hover);
+}
+
+.rows__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 5px;
+}
+
+.rows__name {
+  font-size: 16.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.rows--tiles .rows__name {
+  color: var(--clay);
+}
+
+.rows__form {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--clay);
+}
+
+.rows--tiles .rows__form {
+  color: var(--slate);
+}
+
+.rows__desc {
+  margin: 0;
+  max-width: 66ch;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--slate);
+}
+
+/* ---- 底下三栏 ---- */
+
+.detail__groups {
+  display: grid;
+  gap: clamp(30px, 3vw, 52px);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 278px), 1fr));
+  align-items: start;
+  margin-top: var(--s-6);
+}
+
+.detail__groups .eyebrow--rule {
+  margin-bottom: 18px;
+}
+
+/* 兵种特性：▲ 优点、▼ 缺点，各一张浅色小卡 */
+.bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bullets__item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 12px;
+  padding: 14px 18px;
+  border: 1px solid #dceae3;
+  border-radius: 14px;
+  background: #f1f7f4;
+}
+
+.bullets__item--down {
+  border-color: #f2dad3;
+  background: #fdf1ee;
+}
+
+.bullets__arrow {
+  grid-row: 1 / span 2;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--signal);
+}
+
+.bullets__item--down .bullets__arrow {
+  color: #b23a26;
+}
+
+.bullets__name {
+  margin: 0;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.bullets__desc {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--granite);
+}
+
+/* 技能 / 部队属性：带游戏图标的那种 */
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 15px 6px;
+  border-bottom: 1px solid var(--rule-row);
+  transition: background 160ms ease;
+}
+
+.skills__item:hover {
+  background: var(--surface-hover);
+}
+
+.skills__icon {
+  flex: 0 0 auto;
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.skills__icon--blank {
+  border-radius: var(--r-circle);
+  background: var(--bone);
+}
+
+.skills__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.skills__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 3px;
+}
+
+.skills__name {
+  font-size: 16.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  color: var(--clay);
+}
+
+.skills__tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.skills__desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--slate);
+}
+
+.skills__effect {
+  margin: 9px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold-line);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--gold-ink);
+}
+
+/* ---- 立绘与多套外观（纯 CSS radio） ---- */
+
+.looks__radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ⚠️ 要压过 .detail__art img 的 display:block，所以带上 .looks__stage */
+.looks__stage .looks__portrait {
+  display: none;
+}
+
+#look-0:checked ~ .looks__stage .looks__portrait--0,
+#look-1:checked ~ .looks__stage .looks__portrait--1,
+#look-2:checked ~ .looks__stage .looks__portrait--2,
+#look-3:checked ~ .looks__stage .looks__portrait--3 {
+  display: block;
+}
+
+.looks__head {
+  margin: 18px 0 10px;
+}
+
+.looks__thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.looks__thumb {
+  width: 72px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--slate);
+  opacity: 0.55;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.looks__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.looks__thumb:hover {
+  opacity: 0.85;
+}
+
+#look-0:checked ~ .looks__thumbs .looks__thumb--0,
+#look-1:checked ~ .looks__thumbs .looks__thumb--1,
+#look-2:checked ~ .looks__thumbs .looks__thumb--2,
+#look-3:checked ~ .looks__thumbs .looks__thumb--3 {
+  opacity: 1;
+  color: var(--clay);
+  font-weight: 700;
+}
+
+/* radio 本身看不见，键盘焦点画在对应的缩略图上 */
+#look-0:focus-visible ~ .looks__thumbs .looks__thumb--0,
+#look-1:focus-visible ~ .looks__thumbs .looks__thumb--1,
+#look-2:focus-visible ~ .looks__thumbs .looks__thumb--2,
+#look-3:focus-visible ~ .looks__thumbs .looks__thumb--3 {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+/* ---- 技能树 ---- */
+
+.tree {
+  margin-top: var(--s-6);
+}
+
+.tree__note {
+  margin: 12px 0 0;
+  max-width: 72ch;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--slate);
+}
+
+.tree__branch {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.tree__branch-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+  margin-bottom: var(--s-3);
+}
+
+.tree__label {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+}
+
+.tree__sub {
+  flex: 1 1 240px;
+  min-width: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--slate);
+}
+
+/* 节点两列排：宽屏一行两个，窄屏一个 */
+.tree__nodes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0 clamp(28px, 4vw, 56px);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr));
+}
+
+.tree__node {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 0 30px;
+  min-width: 0;
+}
+
+.tree__icon {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-wenkai), var(--font-sans);
+  font-size: 22px;
+  color: var(--clay);
+}
+
+.tree__icon img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.tree__node--reuse .tree__icon {
+  opacity: 0.5;
+}
+
+.tree__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.tree__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin: 0 0 3px;
+}
+
+.tree__name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.tree__node--reuse .tree__name {
+  color: var(--slate);
+}
+
+.tree__hub {
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+.tree__reuse {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.tree__unlock {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gold-ink);
+}
+
+.tree__level {
+  margin-top: 12px;
+}
+
+.tree__level-label {
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--clay);
+}
+
+.tree__level + .tree__level {
+  margin-top: 8px;
+}
+
+.tree__effects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tree__effects > li {
+  position: relative;
+  padding-left: 17px;
+  max-width: 74ch;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-prose);
+}
+
+.tree__effects > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: var(--r-circle);
+  background: var(--signal-light);
+}
+
+.tree__desc {
+  margin: 12px 0 0;
+  max-width: 66ch;
+  font-family: var(--font-wenkai), var(--font-sans);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--slate);
+}
+
+/* ---- 远征同伴的四档羁绊 ---- */
+
+.bond-detail {
+  margin-top: var(--s-6);
+}
+
+.bond-detail__tiers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0 clamp(28px, 4vw, 56px);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+}
+
+.bond-detail__tiers > li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 6px;
+  border-bottom: 1px solid var(--rule-row);
+  min-width: 0;
+}
+
+.bond-detail__num {
+  flex: 0 0 auto;
+  min-width: 1.4em;
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--clay);
+}
+
+.bond-detail__name {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.bond-detail__desc {
+  margin: 0;
+  font-family: var(--font-wenkai), var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--slate);
+}
+
+.bond-detail__rewards {
+  --dot-size: 14px;
+  --dot-pad-y: 3px;
+  --dot-top: 13px;
+  --dot-r: 4px;
+  --dot-color: var(--signal-light);
+  --dot-ink: var(--ink-prose);
+  margin-top: 8px;
+}
+
+.bond-detail__effects-head {
+  margin: var(--s-4) 0 4px;
+}

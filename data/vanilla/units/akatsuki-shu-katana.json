@@ -1,0 +1,67 @@
+{
+  "unit": "cth_npex_akatsuki_shu_0",
+  "name_cn": "晓行众（太刀）",
+  "slug": "akatsuki-shu-katana",
+  "doc": "_docs/data/units/晓行众（太刀）兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_akatsuki_kirikomi",
+      "source": "npex"
+    },
+    {
+      "ref": "cth_npex_unit_passive_akatsuki_will",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "guerrilla_deploy"
+    },
+    {
+      "ref": "hide_forest"
+    },
+    {
+      "ref": "immune_to_psychology"
+    },
+    {
+      "ref": "strider"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "反步兵部队",
+      "ref": "anti_infantry",
+      "section": "特性"
+    },
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "先锋部署",
+      "ref": "vanguard_deployment",
+      "section": "特性"
+    },
+    {
+      "doc_name": "先锋部署",
+      "ref": "vanguard_deployment",
+      "section": "特性"
+    },
+    {
+      "doc_name": "地形适性",
+      "ref": "strider",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "心理免疫",
+      "ref": "immune_to_psychology",
+      "section": "部队属性"
+    }
+  ]
+}

@@ -5,10 +5,23 @@ import type { ReactNode } from 'react'
 
 import { Link, usePathname } from '@/i18n/navigation'
 
-export function NavLink({ href, children }: { href: string; children: ReactNode }) {
+export function NavLink({
+  href,
+  also = [],
+  children,
+}: {
+  href: string
+  /** 这些路径开头的页面也高亮这一项（兵种页、人物页归「图鉴」） */
+  also?: readonly string[]
+  children: ReactNode
+}) {
   const pathname = usePathname()
+  const here =
+    pathname === href ||
+    (href !== '/' && pathname.startsWith(href + '/')) ||
+    also.some((p) => pathname.startsWith(p))
   return (
-    <Link className="site-nav__link" href={href} aria-current={pathname === href ? 'page' : undefined}>
+    <Link className="site-nav__link" href={href} aria-current={here ? 'page' : undefined}>
       {children}
     </Link>
   )

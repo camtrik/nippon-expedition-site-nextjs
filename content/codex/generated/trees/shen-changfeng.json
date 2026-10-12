@@ -1,0 +1,458 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "shen-changfeng",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_shen_unique_0",
+          "name": {
+            "zh": "玉海剑圣",
+            "en": "Jade Sea Swordmaster"
+          },
+          "desc": {
+            "zh": "真正的剑圣往往精通数种不同的武器，比如刀剑和长枪。",
+            "en": "A true swordmaster is often skilled in several different weapons, such as swords and spears."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+8",
+                  "en": "Melee attack: +8"
+                },
+                {
+                  "zh": "近战防御：+6",
+                  "en": "Melee defence: +6"
+                },
+                {
+                  "zh": "解锁战场能力「玉海剑舞」",
+                  "en": "Unlocks the battlefield ability \"Jade Blade Dance\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_1_1",
+          "name": {
+            "zh": "玉海旧部",
+            "en": "Jade Sea Veterans"
+          },
+          "desc": {
+            "zh": "随提督征战的老兵们身经百战。",
+            "en": "The veterans who have campaigned alongside the admiral are battle-hardened."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+8（舰队兵种）（领主军队）",
+                  "en": "Melee attack: +8 for fleet units (Lord's army)"
+                },
+                {
+                  "zh": "近战防御：+6（舰队兵种）（领主军队）",
+                  "en": "Melee defence: +6 for fleet units (Lord's army)"
+                },
+                {
+                  "zh": "领导力：+5（舰队兵种）（领主军队）",
+                  "en": "Leadership: +5 for fleet units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_1_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海剑圣",
+            "en": "Requires Jade Sea Swordmaster"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_1_5",
+          "name": {
+            "zh": "枪炮与魔法",
+            "en": "Powder and Sorcery"
+          },
+          "desc": {
+            "zh": "「要火药还是魔法？」——「为何不能都要？」",
+            "en": "\"Powder or sorcery?\" – \"Why not both?\""
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "法术强度：+10%",
+                  "en": "Spell intensity: +10%"
+                },
+                {
+                  "zh": "弹药容量：+20%（舰队远程兵种）（领主军队）",
+                  "en": "Ammunition: +20% for fleet missile units (Lord's army)"
+                },
+                {
+                  "zh": "远程武器威力：+10%（舰队远程兵种）（领主军队）",
+                  "en": "Missile strength: +10% for fleet missile units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_1_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海剑圣",
+            "en": "Requires Jade Sea Swordmaster"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_1_2",
+          "name": {
+            "zh": "剑道导师",
+            "en": "Kendo Mentor"
+          },
+          "desc": {
+            "zh": "震旦的剑法在尼朋的战士之间仍然通用。",
+            "en": "Cathayan swordsmanship is still widely practised among Nipponese warriors."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+6（武士部队）（领主军队）",
+                  "en": "Melee attack: +6 for Samurai units (Lord's army)"
+                },
+                {
+                  "zh": "近战防御：+4（武士部队）（领主军队）",
+                  "en": "Melee defence: +4 for Samurai units (Lord's army)"
+                },
+                {
+                  "zh": "领导力：+8（武士部队）（领主军队）",
+                  "en": "Leadership: +8 for Samurai units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_1_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海剑圣",
+            "en": "Requires Jade Sea Swordmaster"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_1_3",
+          "name": {
+            "zh": "震旦航海术",
+            "en": "Cathayan Seamanship"
+          },
+          "desc": {
+            "zh": "震旦航海术历史悠久，声名远扬。",
+            "en": "Cathayan seamanship boasts a long history and a far-reaching reputation."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战略地图移动距离：在海上时+10%",
+                  "en": "Campaign movement range: +10% whilst at sea"
+                },
+                {
+                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
+                  "en": "Replenishes 10% campaign movement range after winning a battle"
+                },
+                {
+                  "zh": "可贸易资源产量：+20%（派系范围）",
+                  "en": "Tradable resources produced: +20% (factionwide)"
+                },
+                {
+                  "zh": "港口收入产值：+10%（派系范围）",
+                  "en": "Income from Ports: +10% (factionwide)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_1_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海剑圣",
+            "en": "Requires Jade Sea Swordmaster"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_1_4",
+          "name": {
+            "zh": "战略大师",
+            "en": "Master Strategist"
+          },
+          "desc": {
+            "zh": "先发制人，攻其不备。",
+            "en": "Strike first, and catch the enemy unprepared."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁属性：为所有部队解锁先锋部署技能（领主军队）",
+                  "en": "Attribute: Vanguard Deployment for all units (Lord's army)"
+                },
+                {
+                  "zh": "伏击成功概率：+20%（领主军队）",
+                  "en": "Ambush success chance: +20% (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_1_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海剑圣",
+            "en": "Requires Jade Sea Swordmaster"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_2",
+          "name": {
+            "zh": "无冕之师",
+            "en": "The Uncrowned Host"
+          },
+          "desc": {
+            "zh": "虽已不受朝廷承认，但仍是远东海域最为强大的水师。",
+            "en": "No longer recognised by the court, it remains the mightiest fleet in the far eastern seas."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
+                  "en": "Replenishes 10% campaign movement range after winning a battle"
+                },
+                {
+                  "zh": "武器威力：+10%（领主军队）",
+                  "en": "Weapon strength: +10% (Lord's army)"
+                },
+                {
+                  "zh": "远程威力：+10%（领主军队）",
+                  "en": "Missile strength: +10% (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：玉海旧部、剑道导师、震旦航海术、战略大师、枪炮与魔法",
+            "en": "Requires Jade Sea Veterans, Kendo Mentor, Cathayan Seamanship, Master Strategist, Powder and Sorcery"
+          },
+          "hub": {
+            "zh": "需 3/5",
+            "en": "3 of 5"
+          }
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_3",
+          "name": {
+            "zh": "破浪之帅",
+            "en": "Wavebreaker"
+          },
+          "desc": {
+            "zh": "久历风浪的统帅最明白如何在远征中维持补给与军心。",
+            "en": "A commander seasoned by wind and wave knows best how to keep supplies flowing and morale high on a long expedition."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "维持费：-10%（领主军队）",
+                  "en": "Upkeep: -10% (Lord's army)"
+                },
+                {
+                  "zh": "补员速率：+5%（领主军队）",
+                  "en": "Casualty replenishment rate: +5% (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 15 解锁",
+            "en": "Unlocks at rank 15"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_unique_4",
+          "name": {
+            "zh": "万里长风",
+            "en": "The Long Wind"
+          },
+          "desc": {
+            "zh": "凌云破浪，万里长风。",
+            "en": "She crests the clouds and cleaves the surge, borne on a wind that carries across ten thousand leagues."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战略地图移动距离：+15%",
+                  "en": "Campaign movement range: +15%"
+                },
+                {
+                  "zh": "解锁属性：永不战败",
+                  "en": "Attribute: Unbreakable"
+                },
+                {
+                  "zh": "领导力：+8（领主军队）",
+                  "en": "Leadership: +8 (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破浪之帅",
+            "en": "Requires Wavebreaker"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_shen_weapon_zhenlan",
+          "name": {
+            "zh": "镇澜",
+            "en": "Wave-Queller"
+          },
+          "desc": {
+            "zh": "卫东水师的制式佩枪「镇澜」重新回到她手里——朝廷收得回兵权，收不回一杆枪。",
+            "en": "The Wei-Dong Fleet's standard-issue spear, Wave-Queller, is back in her hand – the court could reclaim her command, but never this spear."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_shen_weapon_zhenlan.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 7 解锁",
+            "en": "Unlocks at rank 7"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_shen_mount_jade_longma",
+          "name": {
+            "zh": "玉龙马",
+            "en": "Jade Longma"
+          },
+          "desc": {
+            "zh": "唯有值得追随的统帅，才驾驭得了这匹玉龙马。",
+            "en": "Only a commander worth following can master this Jade Longma."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_shen_mount_jade_longma.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 7 解锁",
+            "en": "Unlocks at rank 7"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_shen_mount_lingtao",
+          "name": {
+            "zh": "凌涛",
+            "en": "Tidestrider"
+          },
+          "desc": {
+            "zh": "吸收了海元素的玉龙马，被海军视作能够凌云破浪的祥瑞坐骑。",
+            "en": "A Jade Longma that has absorbed a Sea Elemental, regarded by the navy as an auspicious mount capable of soaring past the clouds and cutting through the waves."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁战场被动「潮随刃动」",
+                  "en": "Unlocks the battlefield passive \"Tide Follows the Blade\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_shen_mount_lingtao.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 16 解锁",
+            "en": "Unlocks at rank 16"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/铁炮武士兵种设计.md；desc / story 取 loc unit_description_short_texts / unit_description_historical_texts（中英原文）；建筑、同伴名照 loc 官方英文。",
+  "slug": "teppo-samurai",
+  "unit": "cth_npex_teppo_samurai_0",
+  "group": "nippon",
+  "name": { "zh": "铁炮武士", "en": "Teppo Samurai" },
+  "role": { "zh": "重甲火器远程步兵 · T3", "en": "Armoured gunpowder infantry · T3" },
+  "desc": {
+    "zh": "以火绳铳与佩刀列阵的尼朋重甲武士，铅丸破甲，佩刀防身。",
+    "en": "Heavily armoured samurai of Nippon who take the field with matchlock and katana: lead shot to break armour, katana to guard the body."
+  },
+  "story": {
+    "zh": "铁炮之术随海路商舶传入尼朋，已有数代。港町的铸铳匠反复仿制改良，火绳铳遂成大名武库中的常备利器；执铳上阵者，多为家禄豢养的重甲武士。此辈腰悬佩刀，手执长铳，装填与齐射之法日日操演：令下则排枪齐发，敌近则弃铳拔刀。铅丸离膛，势可穿甲，硝烟散尽后，敌阵倚仗的重甲精锐往往已倒伏于血泊。所恪守者依旧是武家旧道：以战死为荣，以退却为耻。",
+    "en": "The craft of the teppo reached Nippon aboard the merchantmen of the sea road some generations past. The gunsmiths of the port towns copied and refined it again and again, until the matchlock became a mainstay of every daimyo's arsenal; and those who carry it to war are, for the most part, heavily armoured samurai kept on a clan's stipend. With katana at the hip and long gun in hand, they drill without cease in loading and in the volley: at the word of command the ranks fire as one, and when the foe closes they cast the gun down and draw the blade. The lead ball quits the barrel with strength enough to pierce armour, and when the powder smoke drifts away, the armoured elite the enemy line relied upon often lie already felled in pools of blood. What they keep is still the old samurai code: to die in battle is honour; to fall back is shame."
+  },
+  "cost": { "recruit": 800, "upkeep": 200 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 远程", "en": "Infantry · missile" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "火绳铳（远程直射）＋佩刀（近战）", "en": "Matchlock (direct fire) and katana (melee)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "锁子甲 70；无盾", "en": "Chainmail, armour 70; no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "武者屋形（1 级）／侍大将屋形（2 级）／侍所（1 级）／旗本番（2 级）／鉄守锻冶场（地标）；另可经立花直虎的同伴面板以名望征召",
+        "en": "Warrior's Manor (tier 1) / Samurai Taisho's Manor (2) / Samurai Hall (1) / Hatamoto Guard (2) / Tetsu Fortress Forge (landmark); also bought with Renown through Tachibana Naotora on the Expedition Companions panel"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "建成上述任一建筑；同伴征召随羁绊档位解锁并给容量",
+        "en": "Building any of the above; the companion option unlocks, and gains capacity, as your Bond tier with her rises"
+      }
+    },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    {
+      "k": { "zh": "数量限制", "en": "Unit cap" },
+      "v": { "zh": "建筑招募无上限；同伴征召容量随羁绊档位", "en": "None from buildings; companion capacity grows with Bond tier" }
+    }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "34" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "28" },
+    { "k": { "zh": "近战武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "20／10", "n": { "zh": "佩刀", "en": "Katana" } },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "10" },
+    {
+      "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
+      "v": "10／24",
+      "n": { "zh": "铅丸破甲为主；命中附加「破甲」减益", "en": "Mostly armour-piercing; hits inflict Sundered Armour" }
+    },
+    { "k": { "zh": "射程", "en": "Range" }, "v": "155" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "22" },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "13 秒", "en": "13 seconds" } },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "70", "n": { "zh": "锁子甲", "en": "Chainmail" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "75" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "28" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "88", "n": { "zh": "80 人合计 7040", "en": "7040 across 80 men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "80" }
+  ],
+  "traits": [
+    { "name": { "zh": "装备重甲", "en": "Armoured" }, "desc": { "zh": "护甲 70 达重甲阈值", "en": "Armour 70 counts as heavy armour" } },
+    { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "铅丸破甲 24 为主", "en": "The lead shot deals mostly armour-piercing damage (24)" } },
+    { "name": { "zh": "反步兵部队", "en": "Anti-Infantry" }, "desc": { "zh": "佩刀对步兵杀伤加成 14", "en": "The katana has a bonus vs infantry of 14" } }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_bushido": {
+      "zh": "生命值降至 50% 或以下时自动激活：基础／破甲武器杀伤 +15%、近战攻击 +10、永不败逃，持续 25 秒",
+      "en": "Triggers at 50% health or below: base and armour-piercing weapon damage +15%, melee attack +10 and Unbreakable, for 25 seconds"
+    },
+    "cth_npex_passive_teppo_drill": {
+      "zh": "常驻被动，静止（未移动）时启用：射击精度 +40、装填技能 +10",
+      "en": "Always on while the unit stands still: accuracy +40, reload skill +10"
+    }
+  }
+}

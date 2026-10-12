@@ -1,0 +1,71 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/舰队铳手兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。",
+  "slug": "fleet-gunners",
+  "unit": "cth_npex_jade_sea_fleet_gunners_0",
+  "group": "fleet",
+  "name": { "zh": "舰队铳手", "en": "Fleet Gunners" },
+  "role": { "zh": "轻甲火器远程步兵 · T2", "en": "Lightly armoured gunpowder infantry · T2" },
+  "desc": {
+    "zh": "玉海舰队的铳手以改良火器操典列阵齐射，铅丸所至，重甲如纸。",
+    "en": "The gunners of the Jade Sea Fleet drill to fire in disciplined volleys; where their lead shot lands, no armour holds."
+  },
+  "story": {
+    "zh": "震旦东方省的水师本就善火器，船上要应付跳帮的海寇、海中的妖兽，铁雹与长铳比弓弩更靠得住。舰队铳手善用震旦火器，他们在甲板上架起长铳、在浪涌间校准仰角，以齐射把敌人钉死在射界之内。尼朋沿海多雾，风向莫测，火绳常被海潮打湿。舰队铳手据此发展出一套震旦本土没有的土法：铳管裹油布、药池封蜡、击发前以口哈气暖管，让火器在尼朋的盐风雾雨里依旧打得响。久而久之，玉海舰队的对手都学会了一件事：听见甲板上一长串火绳嘶嘶作响，便该早早寻掩护了。",
+    "en": "The navies of Cathay's Eastern Provinces have always favoured gunpowder, for at sea one must repel boarding pirates and monsters of the deep alike, and there the Iron Hail gun and the long gun serve better than bow or crossbow. The Fleet Gunners of the Jade Sea Fleet are masters of Cathayan firearms: they set up their long guns upon the deck, trim their aim between the swells, and pin the enemy within their field of fire with volley after volley. The Nipponese coast is thick with fog and fickle in its winds, and the matchcords are forever soaked by the sea. So the Fleet Gunners worked out a handful of makeshift tricks unknown in Cathay itself: barrels wrapped in oilcloth, flash pans sealed with wax, a breath of warmth blown down the barrel before the shot, all so the guns still crack and flame amid Nippon's salt wind, fog and rain. In time, every foe of the Jade Sea Fleet learned one lesson well: when a long string of matchcords begins to hiss along the deck, it is high time to find cover."
+  },
+  "cost": { "recruit": 600, "upkeep": 150 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 远程", "en": "Infantry · missile" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "长铳（远程直射）＋佩刀（近战自卫）", "en": "Long gun (direct fire) and sword (for self-defence in melee)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 30（皮甲）；无盾", "en": "Armour 30 (leather); no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "提督卧舱（2 级）／提督议事厅（3 级）／舰队统帅厅（4 级）／玉海旗舰厅（5 级），玉海舰队游牧主城建筑链",
+        "en": "Admiral's Quarters (tier 2) / Admiral's Council Hall (3) / Fleet Command Hall (4) / Jade Sea Flagship Hall (5), in the main horde building chain"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成上述任一建筑", "en": "Building any of the above" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "17" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "18" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "21／3" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "4" },
+    {
+      "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
+      "v": "5／17",
+      "n": { "zh": "铅丸以破甲为主，与帝国火枪手相同", "en": "Mostly armour-piercing, the same as Empire Handgunners" }
+    },
+    { "k": { "zh": "射程", "en": "Range" }, "v": "140" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "22" },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "13 秒", "en": "13 s" } },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "30", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "60" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "33" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "69", "n": { "zh": "90 人合计 6210", "en": "6210 across 90 men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "90" }
+  ],
+  "traits": [
+    { "name": { "zh": "远程破甲", "en": "Armour-Piercing Missiles" }, "desc": { "zh": "铅丸直射，破甲 17 为主", "en": "Direct-fire lead shot, mostly armour-piercing (17)" } },
+    { "name": { "zh": "宁和：阴", "en": "Harmony: Yin" }, "desc": { "zh": "作为阴相单位参与阴阳宁和", "en": "Counts as a Yin unit for Battle Harmony" } },
+    {
+      "name": { "zh": "水生一族", "en": "Aquatic" },
+      "desc": {
+        "zh": "浅水中近战攻击、近战防御 ×1.2，且不减速（普通步兵是攻击、速度各 ×0.8）",
+        "en": "In shallow water: melee attack and melee defence ×1.2, with no loss of speed (ordinary infantry suffer ×0.8 to attack and speed)"
+      }
+    }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_battle_harmony_yin": {
+      "zh": "阴阳宁和生效时：速度 +4%、领导力 +4、装填技能 +12",
+      "en": "While in Battle Harmony: speed +4%, leadership +4, reload skill +12"
+    }
+  }
+}

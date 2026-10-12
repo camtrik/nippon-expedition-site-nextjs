@@ -1,0 +1,93 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/晓行众（太刀）兵种设计.md；desc / story 取 loc unit_description_short_texts / unit_description_historical_texts（中英原文；loc 长文分两段，按单行规则并成一段）；建筑、章节、同伴名照 loc 官方英文。",
+  "slug": "akatsuki-shu-katana",
+  "unit": "cth_npex_akatsuki_shu_0",
+  "group": "akatsuki",
+  "name": { "zh": "晓行众（太刀）", "en": "Akatsuki-shu (Katana)" },
+  "role": { "zh": "轻甲反步突击步兵 · T3 · 冲得快、砍得疼、站不住", "en": "Lightly armoured anti-infantry shock troops · T3 · quick in, hard-hitting, not built to hold a line" },
+  "desc": {
+    "zh": "跨越宿怨的凡人游侠与半妖同心结阵，手持太刀以疾风般突入敌阵。",
+    "en": "Setting old hatreds aside, mortal swordsmen and hanyo stand as one, their katana tearing into enemy lines like a gale."
+  },
+  "story": [
+    {"zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。", "en": "The yokai of Nippon were born of its mountains and waters, and once lived in seclusion in the depths of the islands. To mortal eyes, however, their horns and scales made them little different from the Daemons of Chaos and the Beastmen. Centuries of fear and prejudice hardened into blood-feuds handed down from one generation to the next. When civil war engulfed the land and longships came ashore, men and yokai alike were caught in the blaze. Still they slew one another in the long night of hatred."},
+    {"zh": "半妖行者伊吹面对恶言冷箭从不拔刀自辩，只是固执地一次次横刀阵前庇护弱小。受其救助并信服其理念的凡人浪人、山野猎户，以及流淌着异族之血的半妖游侠纷纷主动追随伊吹，被称为『晓行众』。", "en": "Ibuki, the Hanyo Wanderer, never drew his blade to answer insults or arrows loosed against him. Time and again he simply took his stand before the helpless, stubbornly setting his odachi between them and danger. Mortal ronin and hunters of the wilds, together with hanyo wanderers bearing the blood of another kind, came willingly to his side, won over by his deeds and his beliefs. These followers became known as the Akatsuki-shu (The Dawnbreakers)."}
+  ],
+  "cost": { "recruit": 950, "upkeep": 238 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
+    {
+      "k": { "zh": "武器配置", "en": "Equipment" },
+      "v": { "zh": "太刀（双手持握；破甲为主，带对步兵加成）", "en": "Katana, held two-handed (mostly armour-piercing, with a bonus vs infantry)" }
+    },
+    {
+      "k": { "zh": "护甲与盾牌", "en": "Armour and shield" },
+      "v": { "zh": "轻甲 40（行者布衣，配笼手与草摺）；无盾", "en": "Light armour 40 (a wanderer's cloth garb with gauntlets and tassets); no shield" }
+    },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "① 地标「晓行之里」二级「晓行馆」及以上（御神木）；② 旗舰「晓行寮」（行 III，伊吹入队后解锁）；③ 经伊吹的同伴面板以名望征召",
+        "en": "① The Dawnbreakers' Haven landmark at the Sacred Tree, from its tier 2 building (Hall of the Dawnbreakers) up; ② the Dawnbreakers' Quarters aboard the flagship (row III, available once Ibuki has joined); ③ bought with Renown through Ibuki on the Expedition Companions panel"
+      }
+    },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "① 御神木定居点 2 级并建成晓行馆；② 伊吹入队后旗舰提督居所升到行 III 并建成晓行寮（开链 3 发展点）；③ 伊吹羁绊第一档「结缘」",
+        "en": "① The Sacred Tree at settlement level 2, with the Hall of the Dawnbreakers built; ② once Ibuki has joined, upgrade the flagship's Admiral's Residence to open row III and build the Dawnbreakers' Quarters (3 population surplus to open the chain); ③ the first tier of your Bond with Ibuki, Bound"
+      }
+    },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    {
+      "k": { "zh": "数量限制", "en": "Unit cap" },
+      "v": {
+        "zh": "建筑招募无上限；同伴征召每队 2 名望，总容量 8，随羁绊档位递增（第二档「信任」直接赠送 1 队）",
+        "en": "None from buildings; through the companion panel each unit costs 2 Renown, and capacity grows with Bond tier to 8 in all (the second tier, Trusted, also grants one unit outright)"
+      }
+    }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "42", "n": { "zh": "破晓之志生效时 47", "en": "47 with Will of the Dawnbreakers active" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "36" },
+    {
+      "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" },
+      "v": "16／30",
+      "n": { "zh": "合计 46，破甲为主；破晓之志生效时 ×1.05", "en": "46 in total, mostly armour-piercing; ×1.05 with Will of the Dawnbreakers active" }
+    },
+    { "k": { "zh": "对步兵加成", "en": "Bonus vs Infantry" }, "v": "16" },
+    { "k": { "zh": "近战攻击间隔", "en": "Melee attack interval" }, "v": { "zh": "4.0 秒", "en": "4.0 seconds" } },
+    {
+      "k": { "zh": "冲锋加成", "en": "Charge bonus" },
+      "v": "32",
+      "n": { "zh": "斩入期间 ×1.15，从侧后冲锋再翻倍", "en": "×1.15 during Kirikomi, and doubled again when charging the flank or rear" }
+    },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "40", "n": { "zh": "轻甲", "en": "Light armour" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "78", "n": { "zh": "心理免疫", "en": "Immune to psychology" } },
+    {
+      "k": { "zh": "速度", "en": "Speed" },
+      "v": "40",
+      "n": { "zh": "破晓之志生效时 44，斩入期间约 51", "en": "44 with Will of the Dawnbreakers active, about 51 during Kirikomi" }
+    },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "105", "n": { "zh": "80 人合计 8400", "en": "8400 across 80 men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "80", "n": { "zh": "大规模下显示 60", "en": "60 at Large unit size" } }
+  ],
+  "traits": [
+    { "name": { "zh": "反步兵部队", "en": "Anti-Infantry" }, "desc": { "zh": "太刀对步兵加成 16", "en": "The katana has a bonus vs infantry of 16" } },
+    { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "太刀破甲 30 为主", "en": "The katana deals mostly armour-piercing damage (30)" } },
+    { "name": { "zh": "先锋部署", "en": "Vanguard Deployment" }, "desc": { "zh": "可在部署区外部署", "en": "Can deploy outside the deployment zone" } }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_akatsuki_will": {
+      "zh": "领导力高于动摇时：近战攻击 +5、武器威力 +5%、移动速度 +10%；跌到动摇即失效",
+      "en": "While leadership is above Wavering: melee attack +5, weapon strength +5% and speed +10%; lost once the unit drops to Wavering"
+    },
+    "cth_npex_unit_passive_akatsuki_kirikomi": {
+      "zh": "发起冲锋时自动触发，持续 20 秒：冲锋速度 +25%、移动速度 +15%、冲锋加成 +15%，并获得「致命迂回者」（从侧后攻击时冲锋加成翻倍）；冷却 90 秒",
+      "en": "Triggers automatically when the unit charges, for 20 seconds: charge speed +25%, speed +15%, charge bonus +15% and Devastating Flanker (charge bonus doubled against the flank or rear); 90-second cooldown"
+    }
+  }
+}

@@ -5,8 +5,8 @@
   "set_key": "cth_npex_skill_set_samurai_taisho",
   "agent_type": "general",
   "agent_subtype": "cth_npex_samurai_taisho",
-  "node_count": 57,
-  "vanilla_skill_count": 40,
+  "node_count": 59,
+  "vanilla_skill_count": 41,
   "nodes": [
     {
       "node": "cth_npex_skill_node_samurai_taisho_mount_warhorse",
@@ -895,6 +895,17 @@
       "parents": []
     },
     {
+      "node": "wh3_main_skill_node_all_army_of_renown_lord",
+      "node_source": "vanilla",
+      "skill": "wh3_main_skill_all_army_of_renown_lord",
+      "tier": 28,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
       "node": "wh3_dlc24_skill_generic_immortality_lord",
       "node_source": "vanilla",
       "skill": "wh2_main_skill_all_immortality_lord",
@@ -910,6 +921,17 @@
       "node_source": "vanilla",
       "skill": "wh3_main_skill_all_mentor_lord",
       "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_dump",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_dump",
+      "tier": 31,
       "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",

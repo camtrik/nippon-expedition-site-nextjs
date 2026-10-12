@@ -1,0 +1,61 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/玉海潮勇兵种设计.md；desc 取 loc unit_description_short_texts（中英原文）。长文尚未定稿（loc 里与短文同句），不写 story。",
+  "slug": "jade-sea-warriors",
+  "unit": "cth_npex_jade_sea_sailors_0",
+  "group": "fleet",
+  "name": { "zh": "玉海潮勇", "en": "Jade Sea Warriors" },
+  "role": { "zh": "基础近战步兵 · T1 · 舰队招牌兵", "en": "Basic melee infantry · T1 · the fleet's signature troops" },
+  "desc": {
+    "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+    "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+  },
+  "cost": { "recruit": 450, "upkeep": 112 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "单手剑＋木盾", "en": "Sword and wooden shield" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 40（皮甲）；木盾，35% 远程格挡", "en": "Armour 40 (leather); wooden shield, 35% missile block" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "船长舱室（1 级）→ 提督卧舱（2 级）→ 提督议事厅（3 级）→ 舰队统帅厅（4 级）→ 玉海旗舰厅（5 级），游牧主城建筑全链",
+        "en": "Captain's Cabin (tier 1) → Admiral's Quarters (2) → Admiral's Council Hall (3) → Fleet Command Hall (4) → Jade Sea Flagship Hall (5): the whole main horde building chain"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成船长舱室（1 级）即可，船上即招", "en": "Building the Captain's Cabin (tier 1); recruited aboard ship" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "22" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "31" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "20／6" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "8" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "40", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "60" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "28" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "62", "n": { "zh": "120 人合计 7440", "en": "7440 across 120 men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "120" }
+  ],
+  "traits": [
+    { "name": { "zh": "装备盾牌", "en": "Shielded" }, "desc": { "zh": "持木盾，格挡 35% 远程杀伤", "en": "Carries a wooden shield that blocks 35% of missile damage" } },
+    { "name": { "zh": "宁和：阳", "en": "Harmony: Yang" }, "desc": { "zh": "作为阳相单位参与阴阳宁和", "en": "Counts as a Yang unit for Battle Harmony" } },
+    { "name": { "zh": "水生一族", "en": "Aquatic" }, "desc": { "zh": "可在水域地形作战", "en": "Fights in shallow water without penalty" } }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_battle_harmony_yang": {
+      "zh": "阴阳宁和生效时：近战攻击 +4、近战防御 +4、领导力 +4",
+      "en": "While in Battle Harmony: melee attack +4, melee defence +4, leadership +4"
+    },
+    "wh3_main_unit_passive_defensive_stance": {
+      "zh": "两段式：战斗起手 10 秒抵御效能 ×1.1，随后常驻抵御效能 ×1.25、护甲 +10",
+      "en": "Two stages: bracing ×1.1 for the first 10 seconds of battle, then bracing ×1.25 and armour +10 for the rest of it"
+    },
+    "wh_dlc03_unit_passive_drunken": {
+      "zh": "常驻：领导力 +4，附加精力充沛（免疫疲劳）；领导力跌至「动摇」及以下时自动失效",
+      "en": "Always on: leadership +4 and Perfect Vigour (immune to fatigue); lost once the unit's leadership drops to Wavering or lower"
+    }
+  }
+}

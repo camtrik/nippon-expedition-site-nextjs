@@ -1,0 +1,402 @@
+{
+  "_comment": "兼容性页。来源：mod 仓库 README_zh.md / README_en.md「兼容性与已知问题」「可选子 mod」两节，_docs/submods/ 各兼容包文档。工坊地址以 README 为准。",
+  "lede": {
+    "zh": "远征尼朋跑在 IEE 与 MIXER 之上。和其他 mod 的关系分四种：必须的前置、要装兼容包才能同开的、可以直接共存的，以及会冲突的。兼容包全部是可选的，只在两边同时使用时才需要。",
+    "en": "Nippon Expedition runs on top of IEE and MIXER. Other mods relate to it in four ways: required prerequisites, mods that need a compatibility patch to run alongside it, mods that simply coexist, and mods that conflict. Every patch is optional and only needed when you run both mods together."
+  },
+  "hub": {
+    "zh": "远征尼朋",
+    "en": "Nippon Expedition"
+  },
+  "hubSub": {
+    "zh": "玉海舰队",
+    "en": "The Jade Sea Fleet"
+  },
+  "groups": [
+    {
+      "key": "full",
+      "label": {
+        "zh": "兼容包接通",
+        "en": "Joined by a patch"
+      },
+      "desc": {
+        "zh": "装上对应的兼容包即可同时游玩，并接上对方的兵种、机制或面板。",
+        "en": "Install the matching patch and the two run together, with the other mod's units, mechanics or panels wired in."
+      }
+    },
+    {
+      "key": "ok",
+      "label": {
+        "zh": "可直接共存",
+        "en": "Coexists"
+      },
+      "desc": {
+        "zh": "不需要兼容包，按需订阅。",
+        "en": "No patch needed; subscribe if you want it."
+      }
+    },
+    {
+      "key": "conflict",
+      "label": {
+        "zh": "冲突",
+        "en": "Conflicts"
+      },
+      "desc": {
+        "zh": "同时开启会出问题，或可能出问题。",
+        "en": "Running these together breaks, or may break, the campaign."
+      }
+    },
+    {
+      "key": "required",
+      "label": {
+        "zh": "前置",
+        "en": "Required"
+      },
+      "desc": {
+        "zh": "必须订阅并放在本 mod 之前加载。",
+        "en": "Must be subscribed and load before this mod."
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "key": "iee",
+      "group": "required",
+      "name": {
+        "zh": "Immortal Empires Expanded (IEE)",
+        "en": "Immortal Empires Expanded (IEE)"
+      },
+      "short": {
+        "zh": "IEE",
+        "en": "IEE"
+      },
+      "note": {
+        "zh": "尼朋地图、开局布局与胜利目标都建在 IEE 上。",
+        "en": "The Nippon map, the starting layout and the victory objectives are all built on IEE."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3007996493"
+    },
+    {
+      "key": "mixer",
+      "group": "required",
+      "name": {
+        "zh": "Mixu's Unlocker (MIXER)",
+        "en": "Mixu's Unlocker (MIXER)"
+      },
+      "short": {
+        "zh": "MIXER",
+        "en": "MIXER"
+      },
+      "note": {
+        "zh": "玉海舰队借用 MIXER 的一个预留阵营位运行。",
+        "en": "The Jade Sea Fleet runs in one of MIXER's reserved faction slots."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859968660"
+    },
+    {
+      "key": "nrs",
+      "group": "full",
+      "name": {
+        "zh": "Nippon, Land of the Rising Sun",
+        "en": "Nippon, Land of the Rising Sun"
+      },
+      "short": {
+        "zh": "NRS",
+        "en": "NRS"
+      },
+      "note": {
+        "zh": "两者借用同一个阵营位，直接同开会互相顶掉传奇领主。装上兼容包后玉海舰队改用另一个阵营位，并补上一系列尼朋兵种招募建筑。⚠️ 需要新开存档。",
+        "en": "Both mods use the same faction slot, so running them together makes each overwrite the other's legendary lord. With the patch the Jade Sea Fleet moves to another slot, and a series of Nippon recruitment buildings is added. ⚠️ Needs a new campaign."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3770643554",
+      "via": {
+        "label": {
+          "zh": "NRS 兼容包",
+          "en": "NRS Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792001152"
+      }
+    },
+    {
+      "key": "yinyin",
+      "group": "full",
+      "name": {
+        "zh": "溟龙胤隐",
+        "en": "Roar of the Jade Sea: Yin-Yin"
+      },
+      "short": {
+        "zh": "溟龙胤隐",
+        "en": "Yin-Yin"
+      },
+      "note": {
+        "zh": "震旦各派系可以招募胤隐 mod 的兵种。",
+        "en": "Cathay factions can recruit the units the Yin-Yin mod adds."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2989226363",
+      "via": {
+        "label": {
+          "zh": "胤隐兵种兼容包",
+          "en": "Yin-Yin Unit Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792695478"
+      }
+    },
+    {
+      "key": "wuh",
+      "group": "full",
+      "name": {
+        "zh": "兵戈天下",
+        "en": "War under Heaven"
+      },
+      "short": {
+        "zh": "兵戈天下",
+        "en": "War under Heaven"
+      },
+      "note": {
+        "zh": "玉海舰队可以招募卫东列省的特色兵种。",
+        "en": "The Jade Sea Fleet can recruit the special units of the Eastern Provinces."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3297754796",
+      "via": {
+        "label": {
+          "zh": "兵戈天下兵种兼容包",
+          "en": "War under Heaven Unit Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3795596611"
+      }
+    },
+    {
+      "key": "wwd",
+      "group": "full",
+      "name": {
+        "zh": "与龙同行",
+        "en": "Walking with Dragons (DEER24Cathay)"
+      },
+      "short": {
+        "zh": "与龙同行",
+        "en": "Walking with Dragons"
+      },
+      "note": {
+        "zh": "玉海舰队与震旦各派系可以互相合邦；可以招募与龙同行开局开放的 14 支精英部队；不受「天朝局势」影响，顶栏显示军功，部分自制兵种可以用军功升级。",
+        "en": "The Jade Sea Fleet and the Cathay factions can confederate with each other; the fleet can recruit the 14 elite units Walking with Dragons opens at the start; it is exempt from the Celestial situation, shows military merit in the top bar, and some of its own units can be upgraded with merit."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789903784",
+      "via": {
+        "label": {
+          "zh": "与龙同行兼容包",
+          "en": "Walking with Dragons Compatibility"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816610137"
+      }
+    },
+    {
+      "key": "techtree",
+      "group": "full",
+      "name": {
+        "zh": "WH3 Tech-tree Combination",
+        "en": "WH3 Tech-tree Combination"
+      },
+      "short": {
+        "zh": "科技树合集",
+        "en": "Tech-tree Combination"
+      },
+      "note": {
+        "zh": "把该 mod 给震旦做的那条 73 节点支线接进玉海舰队的科技面板。",
+        "en": "Brings that mod's 73-node Cathay branch into the Jade Sea Fleet's technology panel."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3117083206",
+      "via": {
+        "label": {
+          "zh": "科技树兼容包",
+          "en": "Tech Tree Compatibility"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799752801"
+      }
+    },
+    {
+      "key": "compass",
+      "group": "full",
+      "name": {
+        "zh": "五行罗盘大修",
+        "en": "Cathay Compass Overhaul"
+      },
+      "short": {
+        "zh": "五行罗盘大修",
+        "en": "Compass Overhaul"
+      },
+      "note": {
+        "zh": "玉海舰队用上八向罗盘面板。",
+        "en": "The Jade Sea Fleet gets the eight-direction compass panel."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3727513610",
+      "via": {
+        "label": {
+          "zh": "震旦机制兼容包",
+          "en": "Cathay Mechanics Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792252212"
+      }
+    },
+    {
+      "key": "nangau",
+      "group": "full",
+      "name": {
+        "zh": "南皋工坊",
+        "en": "Cathay Mechanism Expansion: Nan-Gau Workshop"
+      },
+      "short": {
+        "zh": "南皋工坊",
+        "en": "Nan-Gau Workshop"
+      },
+      "note": {
+        "zh": "玉海舰队可以打开南皋工坊面板。",
+        "en": "The Jade Sea Fleet can open the Nan-Gau Workshop panel."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3723969862",
+      "via": {
+        "label": {
+          "zh": "震旦机制兼容包",
+          "en": "Cathay Mechanics Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792252212"
+      }
+    },
+    {
+      "key": "artists",
+      "group": "full",
+      "name": {
+        "zh": "巧匠行会",
+        "en": "Artists' Guild"
+      },
+      "short": {
+        "zh": "巧匠行会",
+        "en": "Artists' Guild"
+      },
+      "note": {
+        "zh": "玉海舰队挂进巧匠行会的震旦锻造组，可以花钱锻造原版物品。兼容包刚上工坊，尚待实机验证。",
+        "en": "The Jade Sea Fleet joins the Artists' Guild's Cathay forge and can pay to craft vanilla items. The patch has just gone up on the Workshop and is still awaiting in-game testing."
+      },
+      "url": {
+        "zh": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789850920",
+        "en": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789855135"
+      },
+      "via": {
+        "label": {
+          "zh": "巧匠行会兼容包",
+          "en": "Artists' Guild Compatibility"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3817854329"
+      },
+      "tbd": true
+    },
+    {
+      "key": "mct",
+      "group": "ok",
+      "name": {
+        "zh": "Mod Configuration Tool (MCT)",
+        "en": "Mod Configuration Tool (MCT)"
+      },
+      "short": {
+        "zh": "MCT",
+        "en": "MCT"
+      },
+      "note": {
+        "zh": "可选。装上后可以在 MCT 里调整本 mod 的设置，例如关闭领主搬家；不装则一律按默认值，联机时也按默认值。",
+        "en": "Optional. With it you can change this mod's settings in MCT, such as turning off the lord relocations; without it everything uses the defaults, and multiplayer always does."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927955021"
+    },
+    {
+      "key": "stronger_ai",
+      "group": "ok",
+      "name": {
+        "zh": "远征尼朋 · 周边 AI 强化",
+        "en": "Nippon Expedition · Stronger Surrounding AI"
+      },
+      "short": {
+        "zh": "周边 AI 强化",
+        "en": "Stronger AI"
+      },
+      "note": {
+        "zh": "本 mod 自己的可选子 mod：强化整体 AI，并对尼朋与震旦周边的 AI 另做强化。",
+        "en": "This mod's own optional submod: a stronger AI overall, with extra strength for the AI around Nippon and Cathay."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3790907897"
+    },
+    {
+      "key": "mixer_slot",
+      "group": "conflict",
+      "name": {
+        "zh": "占用同一 MIXER 借位槽的 mod",
+        "en": "Mods using the same MIXER slot"
+      },
+      "short": {
+        "zh": "同一借位槽",
+        "en": "Same MIXER slot"
+      },
+      "note": {
+        "zh": "本 mod 借用 MIXER 预留槽位 `mixer_nip_nipponese_expedition` 运行，与占用同一槽位的 mod 冲突。",
+        "en": "This mod runs on the MIXER reserved slot `mixer_nip_nipponese_expedition` and conflicts with any mod that uses the same slot."
+      }
+    },
+    {
+      "key": "nippon_owners",
+      "group": "conflict",
+      "name": {
+        "zh": "改动尼朋地权或派系的 mod",
+        "en": "Mods that change Nippon's regions or factions"
+      },
+      "short": {
+        "zh": "改动尼朋的 mod",
+        "en": "Nippon overhauls"
+      },
+      "note": {
+        "zh": "可能冲突，例如同样把领主搬到尼朋的 mod。",
+        "en": "May conflict, for example other mods that relocate lords to Nippon."
+      },
+      "tbd": true
+    }
+  ],
+  "langs": [
+    {
+      "key": "iee_zh",
+      "of": "iee",
+      "only": "zh",
+      "name": {
+        "zh": "IEE 汉化",
+        "en": "IEE Chinese localisation"
+      },
+      "short": {
+        "zh": "IEE 汉化",
+        "en": "IEE (Chinese)"
+      },
+      "note": {
+        "zh": "中文玩家需要同时订阅 IEE 汉化，尼朋地名照它的官方译名显示。",
+        "en": "Chinese players also need IEE's Chinese localisation; Nippon's place names follow its official translation."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3008451029"
+    },
+    {
+      "key": "npex_en",
+      "of": "hub",
+      "only": "en",
+      "name": {
+        "zh": "远征尼朋 · 英文翻译",
+        "en": "Nippon Expedition — English Translation"
+      },
+      "short": {
+        "zh": "英文翻译",
+        "en": "English Translation"
+      },
+      "note": {
+        "zh": "英文玩家在本体之外另订阅英文翻译包。",
+        "en": "English players subscribe to the English translation pack alongside the main mod."
+      },
+      "url": "https://steamcommunity.com/workshop/filedetails/?id=3790908523"
+    }
+  ],
+  "note": {
+    "zh": "发现问题请附上：载入的 mod 列表、载入顺序，以及 Warhammer3.exe 同目录下的 `script_log_*.txt`。",
+    "en": "Bug reports: please include your mod list, load order, and `script_log_*.txt` from next to Warhammer3.exe."
+  }
+}

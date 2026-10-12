@@ -56,9 +56,63 @@
     "updated": "Updated in v{version}",
     "fixed": "Fixed in v{version}"
   },
+  "codexLede": "Every unit page shares one stats layout, every character page one skill-tree and bond layout. Names, ability text and icons come straight from the game; the numbers follow the mod's design docs.",
+  "charGroups": {
+    "legendary-lord": "Legendary Lord",
+    "legendary-hero": "Legendary Heroes · Companions",
+    "generic": "Generic lords and heroes"
+  },
+  "notFound": "No such entry.",
+  "detail": {
+    "secType": "Unit type",
+    "secRecruit": "Recruitment",
+    "secStory": "Background",
+    "secStats": "Stats",
+    "secTraits": "Unit traits",
+    "secCharTraits": "Unit traits",
+    "secGameTraits": "Traits",
+    "traitsFixed": "Comes with the character from the start, under Traits on the character panel; it costs no skill points.",
+    "traitsRandom": "Each one recruited gets one of these {n} at random, under Traits on the character panel.",
+    "traitsVariant": "There are {n} variants and each comes with one of these (see Unlocked by above).",
+    "traitsShow": "Show all {n}",
+    "secAbilities": "Abilities",
+    "secAttrs": "Unit attributes",
+    "secIdentity": "Identity",
+    "secWeapons": "Weapons",
+    "secMounts": "Mounts",
+    "secTree": "Skill tree",
+    "secBond": "Companion bond",
+    "costRecruit": "Recruit",
+    "costUpkeep": "Upkeep",
+    "srcVanilla": "Vanilla",
+    "srcMod": "This mod",
+    "reuse": "Vanilla",
+    "level": "Level {n}",
+    "levelLast": "… level {n}",
+    "looks": "Looks",
+    "bondEffects": "Companion trait",
+    "bondRewards": "Rewards"
+  },
+  "lore": {
+    "routesNum": "4"
+  },
+  "compat": {
+    "open": "Click to open on the Workshop",
+    "via": "Via",
+    "planned": "Planned",
+    "tbd": "TBD",
+    "hint": "Hover or tap a node for details; click to open its Workshop page.",
+    "patches": "Compatibility patches",
+    "connects": "Connects: ",
+    "langOnlyZh": "Chinese only",
+    "langOnlyEn": "English only"
+  },
   "pageDesc": {
-    "home": "A new playable Grand Cathay faction for Total War: WARHAMMER III: the Expedition Companions system, 8 new units, and two long victories that fork.",
+    "home": "A new playable Grand Cathay faction for Total War: WARHAMMER III: the Expedition Companions system, 13 new units, and two long victories that fork.",
     "changelog": "Version history for the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet and its submods.",
-    "faq": "Frequently asked questions about the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet: unlock conditions, confederation, compatibility with other mods, and what is planned."
+    "faq": "Frequently asked questions about the Total War: Warhammer III mod Nippon Expedition · The Jade Sea Fleet: unlock conditions, confederation, compatibility with other mods, and what is planned.",
+    "lore": "The story of Nippon Expedition · The Jade Sea Fleet for Total War: WARHAMMER III: why Shen Changfeng defied the throne, the turmoil in Nippon, and the campaign's two long victories.",
+    "codex": "Units and characters of Nippon Expedition · The Jade Sea Fleet for Total War: WARHAMMER III: stats, abilities, attributes, skill trees and companion bonds.",
+    "compat": "How Nippon Expedition · The Jade Sea Fleet works with other Total War: WARHAMMER III mods: which need a compatibility patch, which run side by side, and which conflict."
   }
 }

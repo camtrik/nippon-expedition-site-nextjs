@@ -1,0 +1,79 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/云霄禁卫兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。「迅捷如风」按文档数值节现值（跑速 11.5／飞行 13.3）写，特性表里的 12.5／14.3 是 09-08 下调前的旧数。",
+  "slug": "empyrean-guard",
+  "unit": "cth_npex_empyrean_guard_0",
+  "group": "fleet",
+  "name": { "zh": "云霄禁卫（海龙马骑兵）", "en": "Empyrean Guard (Sea Longma Riders)" },
+  "role": { "zh": "顶级飞行冲击骑兵 · T5 · 舰队压轴兵种", "en": "Top-tier flying shock cavalry · T5 · the fleet's capstone unit" },
+  "desc": {
+    "zh": "乘海龙马的魔法骑兵，云生于蹄下、魔雨落于枪尖。",
+    "en": "Magical cavalry mounted upon Sea Longma: cloud gathers beneath their hooves, and a rain of magic falls from their lance-points."
+  },
+  "story": {
+    "zh": "海龙马的来历在任何谱牒与记载里都找不到交代，最初遇到他们的渔人只说台风过后，十几头鬃鬣滴水的灵兽静静立在退潮的礁石上。海龙马的速度比普通巨龙马更加迅捷，其所在之地，上方的空气会渐渐凝结成为云雾。云霄禁卫则可以通过云雾对敌人进行致命的魔法打击。",
+    "en": "No lineage-roll or chronicle accounts for where the Sea Longma came from. The fishermen who first met them said only that once the typhoon had passed, a dozen or so spirit-beasts stood silent upon the ebb-tide rocks, their manes still dripping. Sea Longma are swifter than the common Great Longma, and wherever they are, the air above them slowly thickens into cloud and mist. Through that mist the Empyrean Guard bring a deadly magical stroke down upon their foes."
+  },
+  "cost": { "recruit": 1900, "upkeep": 475 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "骑兵（飞行怪兽骑兵） · 近战", "en": "Cavalry (flying monstrous cavalry) · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "双手骑枪（魔法近战，破甲为主）", "en": "Two-handed lance (magical melee, mostly armour-piercing)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 110（板甲）；无盾（双手持枪，腾不出手持盾）", "en": "Armour 110 (plate); no shield, as the lance takes both hands" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "玉海旗舰厅（5 级），游牧主城提督居所链顶级",
+        "en": "Jade Sea Flagship Hall (tier 5), the top of the Admiral's Residence chain in the main horde"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成玉海旗舰厅", "en": "Building the Jade Sea Flagship Hall" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "2 回合", "en": "2 turns" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "53", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "48" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "22／58", "n": { "zh": "破甲占 72%", "en": "72% armour-piercing" } },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "80" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "110", "n": { "zh": "板甲", "en": "Plate" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "85" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "115", "n": { "zh": "飞行 133；冲锋 150、飞行冲锋 177", "en": "Flying 133; charge 150, flying charge 177" } },
+    {
+      "k": { "zh": "单模型生命值", "en": "Health per model" },
+      "v": "330",
+      "n": { "zh": "24 骑合计 7920，与皇家马鹫骑士总血量持平", "en": "7920 across 24 riders – the same total as Royal Hippogryph Knights" }
+    },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "24" },
+    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "25%" }
+  ],
+  "traits": [
+    {
+      "name": { "zh": "迅捷如风", "en": "Very Fast" },
+      "desc": { "zh": "跑速 115／飞行 133，快于原版巨龙马骑兵（92／105）", "en": "Runs at 115 and flies at 133, faster than Great Longma Riders (92 / 105)" }
+    },
+    { "name": { "zh": "宁和：阳", "en": "Harmony: Yang" }, "desc": { "zh": "作为阳相单位参与阴阳宁和", "en": "Counts as a Yang unit for Battle Harmony" } },
+    { "name": { "zh": "引发恐惧", "en": "Causes Fear" }, "desc": { "zh": "对周围敌军施加恐惧", "en": "Frightens nearby enemies" } }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_battle_harmony_yang": {
+      "zh": "阴阳宁和生效时：近战攻击 +4、近战防御 +4、领导力 +4",
+      "en": "While in Battle Harmony: melee attack +4, melee defence +4, leadership +4"
+    },
+    "cth_npex_unit_passive_empyrean_skywave": {
+      "zh": "冲锋撞入近战的瞬间，自本队正前方推出一道移动浪墙（20 基础／10 破甲，半径 12、前推 24 米），脱离近战即止，每 120 秒至多一次",
+      "en": "The moment the unit charges into melee, a moving wall of water surges out from its front (20 base / 10 AP damage, radius 12, travelling 24 m); it stops once the unit leaves melee. At most once every 120 seconds"
+    },
+    "cth_npex_unit_passive_empyrean_tidecall": {
+      "zh": "陷入近战后开始充能、脱离近战即停：每 20 秒在目标周围 15 米内落下 12 道浪涌，每道砸中的那个模型受 150 破甲，落点 6 米内每个敌方模型再受 10 破甲，只伤敌不误伤己方；整场至多 18 次",
+      "en": "Charges up while in melee and pauses out of it: every 20 seconds, 12 surges crash down within 15 m of the target. Each deals 150 armour-piercing damage to the model it strikes and 10 armour-piercing damage to every enemy model within 6 m; allies are never harmed. Up to 18 times per battle"
+    }
+  },
+  "attrsExtra": [
+    {
+      "name": { "zh": "攻城者", "en": "Siege Attacker" },
+      "desc": { "zh": "可直接攻击城门，无需等待攻城塔或攻城锤即可发动攻城战", "en": "Can attack gates, so a siege battle can be launched at once without waiting for towers or battering rams" }
+    }
+  ]
+}

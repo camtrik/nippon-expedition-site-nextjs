@@ -5,7 +5,7 @@
   "set_key": "cth_npex_skill_set_sayo",
   "agent_type": "engineer",
   "agent_subtype": "cth_npex_sayo",
-  "node_count": 34,
+  "node_count": 35,
   "vanilla_skill_count": 14,
   "nodes": [
     {
@@ -487,6 +487,17 @@
       "node_source": "vanilla",
       "skill": "wh3_main_skill_all_mentor_hero",
       "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_dump",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_dump",
+      "tier": 31,
       "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",

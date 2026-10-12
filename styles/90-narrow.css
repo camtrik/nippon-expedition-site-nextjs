@@ -39,6 +39,31 @@
   }
 }
 
+/* 六项导航在窄屏上放不进一行：药丸改成两行——站名与语言开关一行，链接一行横向滑动。
+   不让链接换行，否则吸顶的药丸会高到占掉小半屏。 */
+@media (max-width: 760px) {
+  .site-nav__pill {
+    gap: 8px 12px;
+    padding: 10px 12px 8px 16px;
+    border-radius: 22px;
+  }
+
+  .site-nav__links {
+    order: 3;
+    flex: 1 0 100%;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 2px 0;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, #000 88%, transparent);
+  }
+
+  .site-nav__links::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @media (max-width: 560px) {
   :root {
     --margin-container: 18px;

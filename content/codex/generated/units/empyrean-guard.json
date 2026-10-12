@@ -1,0 +1,112 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_empyrean_guard_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_empyrean_skywave",
+      "source": "npex",
+      "name": {
+        "zh": "怒涛突",
+        "en": "Raging Surge"
+      },
+      "desc": {
+        "zh": "海龙马自云中俯冲落地，蹄下掀起一道横贯战线的巨浪。",
+        "en": "The sea-longma come down out of the cloud, and the shock of their landing throws up a wave that runs the length of the line."
+      },
+      "icon": "cth_npex_unit_passive_empyrean_skywave.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_empyrean_tidecall",
+      "source": "npex",
+      "name": {
+        "zh": "天河倾",
+        "en": "The Heavenly River Tips"
+      },
+      "desc": {
+        "zh": "云气从天河倾下。",
+        "en": "Clouds and mist pour down from the Heavenly River."
+      },
+      "icon": "cth_npex_unit_passive_empyrean_tidecall.png"
+    },
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阳",
+        "en": "Battle Harmony: Yang"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yang.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "fatigue_immune",
+      "source": "vanilla",
+      "name": {
+        "zh": "体力充沛",
+        "en": "Perfect Vigour"
+      },
+      "desc": {
+        "zh": "纵使执行的是最令人筋疲力尽的行动，这支部队也永远不会损失体力",
+        "en": "Even when performing the most fatiguing actions, this unit never loses vigour."
+      },
+      "icon": "fatigue_immune.png"
+    },
+    {
+      "key": "flying",
+      "source": "vanilla",
+      "name": {
+        "zh": "可以飞行",
+        "en": "Can Fly"
+      },
+      "desc": {
+        "zh": "此部队可以飞行",
+        "en": "This unit can fly."
+      },
+      "icon": "flying.png"
+    },
+    {
+      "key": "immune_to_psychology",
+      "source": "vanilla",
+      "name": {
+        "zh": "心理免疫",
+        "en": "Immune to Psychology"
+      },
+      "desc": {
+        "zh": "这支部队免疫心理攻击（恐惧与惊骇）",
+        "en": "The unit is immune to psychological attacks (Fear & Terror)."
+      },
+      "icon": "immune_to_psychology.png"
+    },
+    {
+      "key": "yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "阳",
+        "en": "Yang"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阳",
+        "en": "This unit counts as a Yang unit for the purpose of Battle Harmony proximity"
+      },
+      "icon": "yang.png"
+    }
+  ]
+}

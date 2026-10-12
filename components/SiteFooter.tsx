@@ -1,4 +1,4 @@
-// 黑底页脚。设计稿是一行：站名 + 部署时间 + 两个链接。
+// 黑底页脚。设计稿是一行：站名 + 部署时间 + 三个链接（工坊、兼容性、更新记录）。
 // 旧站那条 FOOTER_LEDE 和 7 条工坊链接设计稿都没有——子 mod 在简介页的卡片网格里。
 import { useTranslations } from 'next-intl'
 
@@ -21,6 +21,7 @@ export function SiteFooter() {
           <a href={t('workshopUrl')} target="_blank" rel="noopener">
             {t('workshop')}
           </a>
+          <Link href="/compat">{t('nav.stats')}</Link>
           <Link href="/changelog">{t('nav.log')}</Link>
         </div>
       </div>

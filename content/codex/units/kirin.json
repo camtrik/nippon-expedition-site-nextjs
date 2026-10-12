@@ -1,0 +1,70 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/麒麟兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。特性名有兵牌条目的照原版 loc（惊骇敌军、近战破甲、体力充沛）。",
+  "slug": "kirin",
+  "unit": "cth_npex_kirin_0",
+  "group": "nippon",
+  "name": { "zh": "麒麟", "en": "Kirin" },
+  "role": { "zh": "高机动突击型小型魔法巨兽 · T5 · 神兽", "en": "Fast magical shock monster, small build · T5 · divine beast" },
+  "desc": {
+    "zh": "踏云而行的远东风暴瑞兽，独角贯雷、铁蹄生霆，以神速撕裂敌阵的魔法巨兽。",
+    "en": "An auspicious storm-beast walking on clouds, its horn threaded with lightning and hooves thundering, tearing through enemy lines with unnatural speed."
+  },
+  "story": {
+    "zh": "麒麟是“风与土结合而生”的风暴精怪。天风的暴烈与大地的沉稳在最纯粹的交汇处凝形，化作一身龙鳞、独角如刃、流云为鬃的神兽。它们踏云而行，不践一草一木；振鬃之际，雷霆自角端游走。震旦天庭视其为与龙马同为一系的风暴灵兽，尼朋则视其为现身预兆太平的瑞兽——唯有正气之地能孕育，唯有正义之师肯相从。",
+    "en": "The Kirin is a storm spirit \"born of the union of wind and earth\". Where the fury of heaven's wind and the steadfastness of the land meet in their purest conjunction, these spirits take shape: divine beasts clad in dragon scales, single horns keen as blades, streaming clouds for manes. They walk upon the clouds and trample no grass or tree; and when they toss their manes, thunder runs from the very tips of their horns. The Celestial Court of Cathay counts them storm-spirits of one kindred with the Longma, while Nippon hails them as auspicious beasts whose coming presages peace: only lands of virtue can bring them forth, and only righteous hosts will they follow."
+  },
+  "cost": { "recruit": 2200, "upkeep": 550 },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "战争野兽（多体小型巨兽） · 近战", "en": "War beast (several small monsters) · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "独角＋铁蹄（魔法近战，破甲为主）", "en": "Horn and hooves (magical melee, mostly armour-piercing)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 70（龙鳞）；无盾", "en": "Armour 70 (dragon scales); no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "灵兽神宫（3 级）／麟栖神宫（3 级）／神兽宫（地标）",
+        "en": "Divine Beast Sanctuary (tier 3) / Kirin Roost Sanctuary (tier 3) / Divine Beast Sanctum (landmark)"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成上述任一建筑", "en": "Building any of the above" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "2 回合", "en": "2 turns" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "50", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "40" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "90／200" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "70" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "v": "70", "n": { "zh": "龙鳞", "en": "Dragon scales" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "80" },
+    { "k": { "zh": "速度", "en": "Speed" }, "v": "110" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "2400", "n": { "zh": "4 只合计 9600", "en": "9600 across 4 Kirin" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "v": "4" },
+    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "25%" }
+  ],
+  "traits": [
+    { "name": { "zh": "惊骇敌军", "en": "Causes Terror" }, "desc": { "zh": "强于恐惧的 T5 神兽威压", "en": "The dread of a T5 divine beast, stronger than fear" } },
+    { "name": { "zh": "近战破甲", "en": "Armour-Piercing Melee" }, "desc": { "zh": "独角＋铁蹄破甲 200 为主", "en": "Horn and hooves deal mostly armour-piercing damage (200)" } },
+    { "name": { "zh": "迅捷如风", "en": "Very Fast" }, "desc": { "zh": "顶级速度档，踏云疾驰", "en": "In the top speed bracket, racing over the clouds" } },
+    { "name": { "zh": "大型战兽", "en": "Large War Beast" }, "desc": { "zh": "大型体型", "en": "Large-sized" } },
+    { "name": { "zh": "体力充沛", "en": "Perfect Vigour" }, "desc": { "zh": "免疫疲劳", "en": "Immune to fatigue" } }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_thunder_echo": {
+      "zh": "被动自动触发，15 秒冷却、整场至多 20 次：对周围敌军头顶降下落雷轰炸，每轮 2 发、每发 672 纯破甲魔法伤害，不消耗魔风",
+      "en": "Triggers on its own with a 15-second cooldown, up to 20 times per battle: lightning crashes down on nearby enemies, 2 bolts a time, each dealing 672 magical damage, all of it armour-piercing. Costs no Winds of Magic"
+    },
+    "wh3_main_mount_bound_celestial_lightning": {
+      "zh": "原版坐骑绑定法术（与五行战争罗盘同款）：点地或点敌施放雷击轰炸，起手 3 秒、持续 4 秒；每场 2 次、冷却 42 秒，不消耗魔风",
+      "en": "A mount-bound spell, the same one the Wu Xing War Compass carries: a lightning bombardment cast on the ground or an enemy, with a 3-second wind-up, lasting 4 seconds. 2 uses per battle, 42-second cooldown, no Winds of Magic cost"
+    }
+  },
+  "attrsExtra": [
+    {
+      "name": { "zh": "攻城者", "en": "Siege Attacker" },
+      "desc": { "zh": "可直接攻击城门，无需等待攻城塔或攻城锤即可发动攻城战", "en": "Can attack gates, so a siege battle can be launched at once without waiting for towers or battering rams" }
+    }
+  ]
+}

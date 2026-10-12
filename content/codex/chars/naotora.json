@@ -1,0 +1,173 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/heroes/立花直虎/立花直虎角色与数值.md 与 立花直虎技能树.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
+  "slug": "naotora",
+  "rank": "legendary-hero",
+  "name": { "zh": "立花直虎", "en": "Tachibana Naotora" },
+  "epithet": { "zh": "战鬼", "en": "The Ghost" },
+  "rankLabel": { "zh": "传奇英雄 · 战士", "en": "Legendary Hero · Champion" },
+  "looks": [{ "key": "naotora" }],
+  "desc": {
+    "zh": "她是雷神之女，双刀「紫电」的主人。敌人尚未看清她的身影，便已倒在雷光之下。",
+    "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
+  },
+  "story": {
+    "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+    "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+  },
+  "identity": [
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士，双刀剑豪", "en": "Champion, a master swordsman with two blades" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "远征同伴面板（召集）", "en": "The Expedition Companions panel (Summon)" } },
+    {
+      "k": { "zh": "解锁条件", "en": "Unlocked by" },
+      "v": {
+        "zh": "序章「战鬼的传闻」解锁召集；第壹章「一合」的目标就是招募她",
+        "en": "The Prologue, \"Rumours of the Ghost\", unlocks her summon; recruiting her is the objective of Chapter I, \"A Single Exchange\""
+      }
+    },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "唯一", "en": "Unique" } },
+    {
+      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
+      "v": {
+        "zh": "召集免费，占用一个远征同伴名额；维持费 263",
+        "en": "Summoning is free but takes one companion slot; upkeep 263"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [{ "zh": "步行（唯一形态）", "en": "On foot (only form)" }],
+    "rows": [
+      { "k": { "zh": "护甲", "en": "Armour" }, "v": ["65"] },
+      { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": ["70"] },
+      { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": ["55"] },
+      { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": ["180／340"] },
+      { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": ["55"] },
+      { "k": { "zh": "生命值", "en": "Health" }, "v": ["4956"] },
+      { "k": { "zh": "领导力", "en": "Leadership" }, "v": ["80"] },
+      { "k": { "zh": "速度", "en": "Speed" }, "v": ["58"] }
+    ],
+    "note": { "zh": "魔法攻击；物理抗性 20%。", "en": "Magical attacks; 20% physical resistance." }
+  },
+  "weapons": [
+    {
+      "k": { "zh": "紫电 · 180／340 · 魔法攻击", "en": "Shiden · 180 / 340 · magical" },
+      "v": {
+        "zh": "双刀共用一名、合计一件武器；对步兵 +20，对大型无加成。即专属装备「紫电」，召集即自带",
+        "en": "Two blades under one name, counted as a single weapon; +20 against infantry, no bonus against large. This is Shiden, her signature weapon, which she brings with her"
+      }
+    }
+  ],
+  "traits": [
+    { "k": { "zh": "反步兵部队", "en": "Anti-Infantry" }, "v": { "zh": "对小型目标有额外伤害加成", "en": "Bonus damage against small targets" } },
+    { "k": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "v": { "zh": "武器伤害大多无视护甲", "en": "Most of her weapon damage ignores armour" } },
+    { "k": { "zh": "灵巧闪避", "en": "Dodge" }, "v": { "zh": "敏捷极高，可闪避剑刃与投掷武器", "en": "Agile enough to dodge blades and missiles" } }
+  ],
+  "abilities": [
+    {
+      "k": { "zh": "武士道", "en": "Bushido" },
+      "v": {
+        "zh": "生命值降至 50% 或以下时激活，残血期间常驻：基础／破甲武器杀伤 +15%、近战攻击 +10，并获得「永不战败」",
+        "en": "Activates once her health falls to 50% or lower and lasts while she stays there: base and armour-piercing weapon damage +15%, melee attack +10, and Unbreakable"
+      },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "人剑合一", "en": "Unity of Blade and Self" },
+      "v": { "zh": "常驻：近战攻击 +10、近战防御 +10；生命值低于 25% 时自动失效", "en": "Always on: melee attack +10, melee defence +10. Lost once her health drops below 25%" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "地形适应", "en": "Terrain Adaptation" },
+      "v": { "zh": "仅身处森林时生效：护甲 +15、远程抗性 +20", "en": "Only while she is in forest: armour +15, missile resistance +20" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "英武必杀", "en": "Heroic Killing Blow" },
+      "v": { "zh": "近战中有几率对单体目标一击必杀（原版通用被动）", "en": "A chance to slay a single-entity target outright in melee (the standard vanilla passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    },
+    {
+      "k": { "zh": "狂暴", "en": "Frenzy" },
+      "v": { "zh": "不计个人安危、狂热投入战斗（原版通用被动）", "en": "Hurls herself into the fight with no thought for her own safety (the standard vanilla passive)" },
+      "form": { "zh": "被动", "en": "Passive" }
+    }
+  ],
+  "attrs": [
+    { "k": { "zh": "引发恐惧", "en": "Causes Fear" }, "v": { "zh": "邻近敌军领导力下降", "en": "Lowers the leadership of nearby enemies" } },
+    { "k": { "zh": "激励友军", "en": "Encourage" }, "v": { "zh": "领导力光环", "en": "Leadership aura" } },
+    { "k": { "zh": "于森林中隐蔽", "en": "Hide (forest)" }, "v": { "zh": "可在森林中隐蔽", "en": "Can hide in forests" } }
+  ],
+  "tree": {
+    "subject": "tachibana-naotora",
+    "note": {
+      "zh": "只列本 mod 原创的节点。原版复用的战斗线与战役行动线不列；第一行只列「登峰造极」。",
+      "en": "Only this mod's own nodes are listed. The vanilla combat and campaign-action lines are left out, and the top row shows only Beyond the Summit."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "剑豪雷刃", "en": "Master of the Thunderblade" },
+        "sub": {
+          "zh": "她一个人的剑术与旗本。「二刀流」8 级解锁；其后四格可各自点出，「紫电一闪」须四格全点，解锁专斩敌方领主与英雄的主动技。",
+          "en": "Her own swordplay and her Hatamoto. Two-Sword Style opens at rank 8; the next four can be taken in any order, and Shiden Flash needs all four. It unlocks an ability that executes enemy lords and heroes."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "通用节点", "en": "General" },
+        "sub": {
+          "zh": "「登峰造极」36 级开放，共 100 级、每级生命值 +1%，用来存放多出来的技能点。",
+          "en": "Beyond the Summit opens at rank 36 and has 100 levels of +1% health each, a place for surplus skill points."
+        }
+      }
+    ]
+  },
+  "companion": {
+    "trait": { "zh": "奉行", "en": "Magistrate" },
+    "tiers": [
+      {
+        "name": { "zh": "奉行（结缘）", "en": "Magistrate (Bound)" },
+        "desc": { "zh": "依武家法度整肃营防，宿弊尽除，军纪自此肃然。", "en": "She orders the camp by samurai law. Old abuses are swept away, and discipline holds firm." },
+        "rewards": [
+          { "zh": "解锁长枪武士", "en": "Unlocks Yari Samurai" },
+          { "zh": "解锁舰队建筑「武者屋形」", "en": "Unlocks the Warrior's Manor fleet building" },
+          { "zh": "获得特有魔法护符与特性", "en": "Grants a unique magical talisman and trait" }
+        ]
+      },
+      {
+        "name": { "zh": "奉行（信任）", "en": "Magistrate (Trusted)" },
+        "desc": { "zh": "三军渐服双刀之威，昔日治所章程颁行各营，号令如山。", "en": "The army has come to respect her twin blades. The ordinances of her old seat now run through every company, and her word is law." },
+        "rewards": [
+          { "zh": "长枪武士容量 +4（可直接征召 1 队）", "en": "Yari Samurai capacity +4 (1 can be recruited directly)" },
+          { "zh": "解锁铁炮武士", "en": "Unlocks Teppo Samurai" },
+          { "zh": "「奉行」提升至「信任」", "en": "Magistrate advances to Trusted" }
+        ]
+      },
+      {
+        "name": { "zh": "奉行（托付）", "en": "Magistrate (Sworn)" },
+        "desc": { "zh": "检地安民之策推及诸邑，政通令行，行省财赋日见充盈。", "en": "Her land surveys and fair rule reach every town. Orders are obeyed, and the province's coffers swell by the day." },
+        "rewards": [
+          { "zh": "长枪武士容量 +3", "en": "Yari Samurai capacity +3" },
+          { "zh": "铁炮武士容量 +4（可直接征召 1 队）", "en": "Teppo Samurai capacity +4 (1 can be recruited directly)" },
+          { "zh": "解锁雷刃旗本", "en": "Unlocks Thunderblade Hatamoto" },
+          { "zh": "「奉行」提升至「托付」", "en": "Magistrate advances to Sworn" }
+        ]
+      },
+      {
+        "name": { "zh": "奉行（生死之交）", "en": "Magistrate (Devoted)" },
+        "desc": { "zh": "立花家旗重扬阵前，名门当主尽展治世之才，再无保留。", "en": "The Tachibana banner flies at the front once more, and the head of that noble house gives her gift for rule without reserve." },
+        "rewards": [
+          { "zh": "长枪武士容量 +3", "en": "Yari Samurai capacity +3" },
+          { "zh": "铁炮武士容量 +3", "en": "Teppo Samurai capacity +3" },
+          { "zh": "雷刃旗本容量 +4（可直接征召 1 队）", "en": "Thunderblade Hatamoto capacity +4 (1 can be recruited directly)" },
+          { "zh": "「奉行」提升至「生死之交」", "en": "Magistrate advances to Devoted" }
+        ]
+      }
+    ],
+    "effects": [
+      { "k": { "zh": "所在行省所有建筑收入产值", "en": "Income from all buildings in her province" }, "v": { "zh": "+5%／+10%／+15%／+20%，随档位", "en": "+5% / +10% / +15% / +20% by tier" } },
+      { "k": { "zh": "所在军队心理免疫", "en": "Immune to Psychology for her army" }, "v": { "zh": "四档恒定", "en": "At every tier" } }
+    ]
+  }
+}

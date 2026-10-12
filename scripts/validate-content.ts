@@ -1,6 +1,11 @@
 // 单独校验 content/ 和 messages/ 的形状，不用等整个 next build。
 // 构建时的护栏是 loader 本身——页面 await 它，schema 不过就构建失败；这个脚本只是快一点。
+import { execFileSync } from 'node:child_process'
+
+import { allChars, allUnits } from '../lib/content/codex'
+import { compatPage } from '../lib/content/compat-page'
 import { faq } from '../lib/content/faq'
+import { lore } from '../lib/content/lore'
 import { hero, overview, lords, companions, units, buildings, victory, relocations, ai, compat, credits } from '../lib/content/home'
 import { latestReleased, mainReleases, submodReleases } from '../lib/content/releases'
 import { inline } from '../lib/content/inline'
@@ -9,6 +14,7 @@ import { routing } from '../i18n/routing'
 import { pick } from '../lib/i18n'
 import zh from '../messages/zh.json'
 import en from '../messages/en.json'
+import { checkCodex } from './check-codex'
 
 const problems: string[] = []
 
@@ -33,6 +39,18 @@ function sweep(node: unknown, path: string) {
 const home = { hero, overview, lords, companions, units, buildings, victory, relocations, ai, compat, credits }
 sweep(home, 'home')
 sweep(faq, 'faq')
+sweep(lore, 'lore')
+sweep(compatPage, 'compat')
+for (const u of allUnits) sweep(u, `codex/units/${u.slug}`)
+for (const c of allChars) sweep(c, `codex/chars/${c.slug}`)
+
+// 图鉴：手写内容对不对得上 data/vanilla 与 assets/，生成物是不是最新
+problems.push(...checkCodex())
+try {
+  execFileSync('pnpm', ['exec', 'tsx', 'scripts/export-codex.ts', '--check'], { stdio: 'pipe' })
+} catch (e) {
+  problems.push(String((e as { stderr?: Buffer }).stderr ?? e).trim())
+}
 
 // FAQ 的 slug 是永久公开契约（#q-<slug>），重复就等于有一条永远打不开
 const slugs = faq.sections.flatMap((s) => s.items.map((i) => i.slug))
@@ -68,6 +86,7 @@ if (problems.length) {
 console.log('✓ content 校验通过')
 console.log(`  home 11 个区块 · overview ${overview.plain.length} 条 + ${overview.packs.length} 张卡 + ${overview.requires.length} 条收尾`)
 console.log(`  faq ${faq.sections.length} 类 ${slugs.length} 问`)
+console.log(`  图鉴 兵种 ${allUnits.length} / 人物 ${allChars.length} · 背景故事 ${lore.chapters.length} 章 · 兼容性 ${compatPage.nodes.length} 个节点`)
 console.log(`  releases 本体 ${mainReleases.length} 条 / 子 mod ${submodReleases.length} 条`)
 console.log(`  messages ${zhKeys.size} 条，zh / en 键集合一致`)
 console.log(`  最新版本 v${latestReleased!.version} · ${latestReleased!.date}`)

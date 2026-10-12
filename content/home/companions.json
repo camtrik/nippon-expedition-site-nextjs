@@ -5,7 +5,7 @@
       "en": "Expedition Companions"
     },
     "lede": {
-      "zh": "远征途中会遇到身份各异的同伴，在专属的「远征同伴」面板上召集她们、推进各自的章节任务、提升羁绊等级。",
+      "zh": "远征途中会遇到身份各异的同伴，在专属的「远征同伴」面板上召集他们、推进各自的章节任务、提升羁绊等级。",
       "en": "Companions of very different backgrounds join the expedition along the way. Muster them from a dedicated Expedition Companions panel, advance their chapter quests, raise their bond."
     },
     "tiers_label": {
@@ -97,8 +97,8 @@
             "en": "Half a Mask"
           },
           {
-            "zh": "輝山阴影",
-            "en": "The Shadow of Hikariya"
+            "zh": "邪見阴影",
+            "en": "The Shadow of Jakken"
           },
           {
             "zh": "星象罗盘",
@@ -106,7 +106,32 @@
           },
           {
             "zh": "望舒·瑟兰娜·顾",
-            "en": "Wangshu Selana Gu"
+            "en": "Wangshu Serena Gu"
+          }
+        ]
+      },
+      {
+        "slug": "ibuki",
+        "name": {
+          "zh": "伊吹",
+          "en": "Ibuki"
+        },
+        "chapters": [
+          {
+            "zh": "破晓之誓",
+            "en": "Oath of the Dawn"
+          },
+          {
+            "zh": "行客之志",
+            "en": "A Wanderer's Resolve"
+          },
+          {
+            "zh": "野太刀『无名』",
+            "en": "The Nameless Odachi"
+          },
+          {
+            "zh": "破晓之刃",
+            "en": "Blade of the Dawn"
           }
         ]
       }
@@ -135,8 +160,8 @@
         "en": "**Renown**: spend it in the panel to buy the units you have unlocked"
       },
       {
-        "zh": "**章节任务链**：三条独立任务链。完成任务以推进羁绊等级",
-        "en": "**Chapter quest lines**: three separate chains. Complete them to raise the bond tier"
+        "zh": "**章节任务链**：四条独立任务链。完成任务以推进羁绊等级",
+        "en": "**Chapter quest lines**: four separate chains. Complete them to raise the bond tier"
       }
     ]
   }

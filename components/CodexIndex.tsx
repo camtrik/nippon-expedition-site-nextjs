@@ -59,24 +59,19 @@ export function CodexIndex({ tab }: { tab: 'units' | 'chars' }) {
               <section className="codex-group" key={g.id}>
                 <h2 className={`eyebrow${g.id === 'generic' ? '' : ' codex-group__legend'}`}>{t(`charGroups.${g.id}`)}</h2>
                 <ul className="codex-grid">
-                  {/* 有几套外观就排几张卡（武士大将三张脸、伊吹两种形态），都指向同一页 */}
-                  {g.items.flatMap((c) =>
-                    c.looks.map((look) => (
-                      <li key={look.key}>
-                        <ArtCard
-                          kind="chars"
-                          slug={look.key}
-                          name={pick(c.name, locale)}
-                          sub={[
-                            look.label ? pick(look.label, locale) : c.epithet ? epithetText(c.epithet, locale) : '',
-                            altName(c.name, locale),
-                          ].filter(Boolean)}
-                          accent={Boolean(look.label || c.epithet)}
-                          href={`/chars/${c.slug}`}
-                        />
-                      </li>
-                    )),
-                  )}
+                  {/* 一人一张卡，用默认外观（武士大将朱甲、伊吹人形）；其余外观在人物页里切换 */}
+                  {g.items.map((c) => (
+                    <li key={c.slug}>
+                      <ArtCard
+                        kind="chars"
+                        slug={c.looks[0].key}
+                        name={pick(c.name, locale)}
+                        sub={[c.epithet ? epithetText(c.epithet, locale) : '', altName(c.name, locale)].filter(Boolean)}
+                        accent={Boolean(c.epithet)}
+                        href={`/chars/${c.slug}`}
+                      />
+                    </li>
+                  ))}
                 </ul>
               </section>
             ))}

@@ -13,55 +13,60 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildMetadata('changelog')
 }
 
+// 版式照旧站 site/_templates/log.html 与 site/styles/log/*：居中单栏、
+// 版本号与日期徽章同一行、正文是普通的 h3 + 原生圆点列表。
 export default function ChangelogPage() {
   const t = useTranslations()
 
   return (
-    <div className="page">
+    <div className="page log-page">
       <div className="measure">
-        <h1 className="page__title">{t('nav.log')}</h1>
+        <div className="log-column">
+          {/*
+            页签是纯 CSS：两个隐藏的 radio 排在最前面，后面的 .log-hero 与 .log-timeline
+            都是它们的兄弟，才能用 :checked ~ 同时选到页签和面板。零 JS。
+          */}
+          <input className="log-views__radio" type="radio" name="logview" id="logview-main" defaultChecked />
+          <input className="log-views__radio" type="radio" name="logview" id="logview-submod" />
 
-        {latestReleased && (
-          <p className="stamp log-stamp">
-            <span>{t('latest')}</span>
-            <strong>
-              v{latestReleased.version} · {latestReleased.date}
-            </strong>
-          </p>
-        )}
+          <header className="log-hero">
+            <p className="log-hero__eyebrow">CHANGELOG</p>
+            <h1 className="log-hero__title">{t('nav.log')}</h1>
+            <div className="log-hero__meta">
+              <div className="log-views" role="group" aria-label={t('logViewsLabel')}>
+                <label className="log-views__tab" htmlFor="logview-main">
+                  {t('logMain')}
+                  <span className="log-views__count">{mainReleases.length}</span>
+                </label>
+                <label className="log-views__tab" htmlFor="logview-submod">
+                  {t('logSubmod')}
+                  <span className="log-views__count">{submodReleases.length}</span>
+                </label>
+                <span className="log-views__ink" aria-hidden="true" />
+              </div>
 
-        {/*
-          页签是纯 CSS：两个隐藏的 radio 排在最前面，后面的兄弟用 :checked ~ 选。
-          零 JS，视觉和设计稿一致。radio + label 本身就是可访问的一组选择。
-        */}
-        <div className="log-tabs">
-          <h2 className="sr-only">{t('logViewsLabel')}</h2>
-          <input className="log-tabs__radio" type="radio" name="logview" id="logview-main" defaultChecked />
-          <input className="log-tabs__radio" type="radio" name="logview" id="logview-submod" />
+              {latestReleased && (
+                <p className="stamp log-stamp">
+                  {t('latest')} <strong>v{latestReleased.version}</strong> · <strong>{latestReleased.date}</strong>
+                </p>
+              )}
+            </div>
+          </header>
 
-          <div className="log-tabs__bar">
-            <label className="log-tabs__tab" htmlFor="logview-main">
-              <span>{t('logMain')}</span>
-              <span className="log-tabs__count">{mainReleases.length}</span>
-            </label>
-            <label className="log-tabs__tab" htmlFor="logview-submod">
-              <span>{t('logSubmod')}</span>
-              <span className="log-tabs__count">{submodReleases.length}</span>
-            </label>
-          </div>
+          <div className="log-timeline">
+            <div className="log-panel log-panel--main">
+              {mainReleases.length === 0 && <p className="log-empty">{t('empty')}</p>}
+              {mainReleases.map((r) => (
+                <MainRelease key={r.source} entry={r} latest={r === latestReleased} />
+              ))}
+            </div>
 
-          <div className="log-view log-view--main">
-            {mainReleases.length === 0 && <p>{t('empty')}</p>}
-            {mainReleases.map((r) => (
-              <MainRelease key={r.source} entry={r} />
-            ))}
-          </div>
-
-          <div className="log-view log-view--submod">
-            {submodReleases.length === 0 && <p>{t('empty')}</p>}
-            {submodReleases.map((r) => (
-              <SubmodRelease key={r.source} entry={r} />
-            ))}
+            <div className="log-panel log-panel--submod">
+              {submodReleases.length === 0 && <p className="log-empty">{t('empty')}</p>}
+              {submodReleases.map((r) => (
+                <SubmodRelease key={r.source} entry={r} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -72,38 +77,38 @@ export default function ChangelogPage() {
 /** 回落到中文正文时，正文块要标上中文的 lang，让屏幕阅读器换对发音。 */
 const FALLBACK_LANG = LOCALE_META[routing.defaultLocale].htmlLang
 
-function MainRelease({ entry }: { entry: MainEntry }) {
+function MainRelease({ entry, latest }: { entry: MainEntry; latest: boolean }) {
   const locale = useLocale()
   const t = useTranslations()
   const { body, fallback } = bodyFor(entry, locale)
   return (
-    <article className="release">
+    <article className={latest ? 'release release--latest' : 'release'}>
       <div className="release__head">
-        <p className="release__version">v{entry.version}</p>
-        {entry.date && <p className="release__date">{entry.date}</p>}
-        <p className="release__type">
-          <span className={`pill type--${entry.type}`}>{t(`types.${entry.type}`)}</span>
-        </p>
-        <Tags tags={entry.tags} />
+        <span className="release__version">v{entry.version}</span>
+        {entry.date && <span className="release__date">{entry.date}</span>}
+        <span className="release__badges">
+          <span className={`type-badge type-badge--${entry.type}`}>{t(`types.${entry.type}`)}</span>
+          <TagPills tags={entry.tags} />
+        </span>
       </div>
 
-      <div className="release__body" lang={fallback ? FALLBACK_LANG : undefined}>
+      <div className="release-body" lang={fallback ? FALLBACK_LANG : undefined}>
         {fallback && <p className="release__untranslated">{t('untranslated')}</p>}
         {body.lede && (
-          <p className="release__lede">
+          <p>
             <Segs segs={body.lede.segs} />
           </p>
         )}
         {body.groups.map((g, i) => (
-          <div className="release__group" key={i}>
-            <p className="eyebrow release__group-head">{g.head}</p>
+          <section key={i}>
+            <h3>{g.head}</h3>
             {g.note && (
-              <p className="release__group-note">
+              <p>
                 <Segs segs={g.note.segs} />
               </p>
             )}
             {g.items.length > 0 && (
-              <ul className="dots">
+              <ul>
                 {g.items.map((item, j) => (
                   <li key={j}>
                     <ChangeBody change={item} />
@@ -111,7 +116,7 @@ function MainRelease({ entry }: { entry: MainEntry }) {
                 ))}
               </ul>
             )}
-          </div>
+          </section>
         ))}
       </div>
     </article>
@@ -126,41 +131,33 @@ function SubmodRelease({ entry }: { entry: SubmodEntry }) {
   return (
     <article className="release">
       <div className="release__head">
-        <h2 className="release__title">{title}</h2>
-        {/* url 是这个包自己的工坊页。⚠️ 正文里不要再自链一次（隔壁 AGENTS.md）。 */}
-        {entry.url && (
-          <a className="release__ws" href={entry.url} target="_blank" rel="noopener">
-            {t('wsOpen')} →
+        {/* url 是这个包自己的工坊页，标题本身就是链接。⚠️ 正文里不要再自链一次（隔壁 AGENTS.md）。 */}
+        {entry.url ? (
+          <a className="release__version release__version--named" href={entry.url} target="_blank" rel="noopener">
+            {title}
+            <span aria-hidden="true">↗</span>
           </a>
+        ) : (
+          <span className="release__version release__version--named">{title}</span>
         )}
-        <Tags tags={entry.tags} className="release__chips" />
+        <span className="release__badges">
+          <TagPills tags={entry.tags} />
+        </span>
       </div>
 
-      <div className="release__body" lang={fallback ? FALLBACK_LANG : undefined}>
+      <div className="release-body" lang={fallback ? FALLBACK_LANG : undefined}>
         {fallback && <p className="release__untranslated">{t('untranslated')}</p>}
         {body.lede && (
-          <p className="release__lede">
+          <p>
             <Segs segs={body.lede.segs} />
           </p>
         )}
-        <ul className="changes">
+        <ul>
           {body.changes.map((c, i) => (
             <li key={i}>
-              {/* 顶层条目开头的日期是标签，不是正文；缩进的子条目不带（旧站的 .entry-date 规则） */}
-              {c.date && <p className="entry-date">{c.date}</p>}
-              <p className="changes__body">
-                <ChangeBody change={c} inline />
-              </p>
-              {c.sub.length > 0 && (
-                <ul className="dots changes__sub">
-                  {c.sub.map((s, j) => (
-                    <li key={j}>
-                      {s.warn && <span className="warn-label">{t('warnLabel')}</span>}
-                      <Segs segs={s.segs} />
-                    </li>
-                  ))}
-                </ul>
-              )}
+              {/* 顶层条目开头的日期是标签，不是正文；缩进的子条目不带 */}
+              {c.date && <span className="entry-date">{c.date}</span>}
+              <ChangeBody change={c} />
             </li>
           ))}
         </ul>
@@ -169,15 +166,15 @@ function SubmodRelease({ entry }: { entry: SubmodEntry }) {
   )
 }
 
-/** 一条改动的正文。⚠️ 标志位来自源串里的 ⚠️，字形已经在 loader 里摘掉了。 */
-function ChangeBody({ change, inline = false }: { change: Change; inline?: boolean }) {
+/** 一条改动的正文加它的子条目。⚠️ 标志位来自源串里的 ⚠️，字形已经在 loader 里摘掉了。 */
+function ChangeBody({ change }: { change: Change }) {
   const t = useTranslations()
   return (
     <>
       {change.body.warn && <span className="warn-label">{t('warnLabel')}</span>}
       <Segs segs={change.body.segs} />
-      {!inline && change.sub.length > 0 && (
-        <ul className="dots changes__sub">
+      {change.sub.length > 0 && (
+        <ul>
           {change.sub.map((s, j) => (
             <li key={j}>
               {s.warn && <span className="warn-label">{t('warnLabel')}</span>}
@@ -190,14 +187,15 @@ function ChangeBody({ change, inline = false }: { change: Change; inline?: boole
   )
 }
 
-function Tags({ tags, className = '' }: { tags: readonly Tag[]; className?: string }) {
+function TagPills({ tags }: { tags: readonly Tag[] }) {
   const t = useTranslations('tagLabels')
-  if (tags.length === 0) return null
   return (
-    <ul className={`chips ${className}`.trim()}>
+    <>
       {tags.map((tag) => (
-        <li key={tag}>{t(tag)}</li>
+        <span key={tag} className={`tag-pill tag-pill--${tag}`}>
+          {t(tag)}
+        </span>
       ))}
-    </ul>
+    </>
   )
 }

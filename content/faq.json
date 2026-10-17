@@ -2,6 +2,85 @@
   "_comment": "常见问题正文，原料是 ../nippon_expedition/faq.md（私有仓库，来源为创意工坊评论区）。中英写在同一字段里，改一边就改另一边。`status` + `version` 会渲染成问题右侧的小徽章（updated / fixed），所以答案正文里不要再写一遍「在 v1.0.1 中已更新」。专名一律查 ../nippon_expedition/_docs/translation/术语对照_*.tsv，不要现编。",
   "sections": [
     {
+      "slug": "install",
+      "title": {
+        "zh": "安装与排序",
+        "en": "Installation and load order"
+      },
+      "items": [
+        {
+          "slug": "english-place-names",
+          "question": {
+            "zh": "地名是英文",
+            "en": "Place names show in English (Chinese client)"
+          },
+          "answer": [
+            {
+              "zh": "没有开 IEE 汉化。",
+              "en": "The Chinese translation of IEE is not enabled."
+            }
+          ],
+          "links": [
+            {
+              "label": {
+                "zh": "IEE 汉化",
+                "en": "IEE Chinese translation"
+              },
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3008451029"
+            }
+          ]
+        },
+        {
+          "slug": "faction-text-english",
+          "question": {
+            "zh": "派系内容变成英文",
+            "en": "The faction's text turned into English (Chinese client)"
+          },
+          "answer": [
+            {
+              "zh": "不要订阅英文翻译包。",
+              "en": "If you play in Chinese, do not subscribe to the English translation pack."
+            }
+          ]
+        },
+        {
+          "slug": "crash-on-launch",
+          "question": {
+            "zh": "启动就闪退",
+            "en": "The game crashes on launch"
+          },
+          "answer": [
+            {
+              "zh": "基本上是因为 IEE/MIXER 没有更新，或者是 data 目录有旧 pack 数据。",
+              "en": "Almost always because IEE or MIXER is out of date, or because old pack files are left in the data folder."
+            }
+          ]
+        },
+        {
+          "slug": "generic-empire-lord",
+          "question": {
+            "zh": "开局变成帝国大众脸",
+            "en": "Shen Changfeng is replaced by a generic Empire lord at the start"
+          },
+          "answer": [
+            {
+              "zh": "与合邦就能用冲突。合邦就能用的兼容会在下个大版本更新处理。",
+              "en": "This is a conflict with 合邦就能用 (Confiderating You Can Get). Compatibility with it will come in the next major update."
+            }
+          ],
+          "links": [
+            {
+              "label": {
+                "zh": "合邦就能用",
+                "en": "合邦就能用 (Confiderating You Can Get)"
+              },
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2882587644"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "gameplay",
       "title": {
         "zh": "玩法",
@@ -9,47 +88,17 @@
       },
       "items": [
         {
-          "slug": "caravans",
-          "status": "updated",
-          "version": "1.0.1",
-          "question": {
-            "zh": "玉海舰队能用商队吗？",
-            "en": "Can the Jade Sea Fleet use caravans?"
-          },
-          "answer": [
-            {
-              "zh": "玉海舰队的商队开局不可使用，完成占领黎山或玉江三角洲的任务即可解锁。解锁后科技树里的商队节点一并生效。",
-              "en": "Caravans are locked at the start and unlocked by a mission: take Mount Li or the Jade River Delta. Once unlocked, the caravan technology nodes work as well."
-            }
-          ]
-        },
-        {
-          "slug": "landmarks",
-          "status": "updated",
-          "version": "1.0.1",
-          "question": {
-            "zh": "其他震旦派系打下尼朋的城之后，能建当地的地标吗？",
-            "en": "Can other Cathay factions build the Nippon landmarks after taking a settlement there?"
-          },
-          "answer": [
-            {
-              "zh": "占领对应定居点即可建造。",
-              "en": "Capturing the settlement is enough."
-            }
-          ]
-        },
-        {
           "slug": "shrine-and-hall",
           "status": "updated",
           "version": "1.0.1",
           "question": {
-            "zh": "其他震旦派系能建神社链和侍所链吗？",
-            "en": "Can other Cathay factions build the Shrine and Samurai Hall chains?"
+            "zh": "其他震旦派系能招募尼朋兵种吗？",
+            "en": "Can other Cathay factions recruit the Nippon units?"
           },
           "answer": [
             {
-              "zh": "占领竜舰海港解锁侍所链，占领橙色神華大社解锁神社链，开局会收到对应任务。解锁后不再受地域限制。武士大将与巫女的招募随同解锁。",
-              "en": "Capture Dragon Fleet Port to unlock the Samurai Hall chain and the Temple of the Orange Simca to unlock the Shrine chain; a mission for each is issued at the start. Once unlocked they are no longer restricted by region. Samurai Taisho and Miko recruitment unlocks with them."
+              "zh": "其他震旦派系开局会收到任务来解锁对应建筑。解锁后不再受地域限制。",
+              "en": "Other Cathay factions receive missions at the start that unlock the matching buildings. Once unlocked, they are no longer restricted by region."
             }
           ]
         },
@@ -68,16 +117,14 @@
         },
         {
           "slug": "ai-heroes",
-          "status": "updated",
-          "version": "1.0.1",
           "question": {
-            "zh": "玩其他派系时，AI 沈长风会有那三位传奇英雄吗？合邦之后能拿到吗？",
-            "en": "When I play another faction, does the AI Shen Changfeng get her three legendary heroes, and do they come with a confederation?"
+            "zh": "玩其他派系时，AI 沈长风会有那四位传奇英雄吗？合邦之后能拿到吗？",
+            "en": "When I play another faction, does the AI Shen Changfeng get her four legendary heroes, and do they come with a confederation?"
           },
           "answer": [
             {
-              "zh": "AI 的玉海舰队会在第 2、3、4 回合自动获得三位传奇英雄，合邦时会随之一起过来。",
-              "en": "The AI Jade Sea Fleet is given all three legendary heroes on turns 2, 3 and 4, and they come across with the confederation."
+              "zh": "AI 的玉海舰队会在第 2、3、4、5 回合自动获得四位传奇英雄，合邦时会随之一起过来。",
+              "en": "The AI Jade Sea Fleet is given all four legendary heroes on turns 2, 3, 4 and 5, and they come across with the confederation."
             }
           ]
         }
@@ -91,62 +138,57 @@
       },
       "items": [
         {
-          "slug": "nrs",
-          "status": "updated",
-          "version": "1.0.1",
+          "slug": "other-mods",
           "question": {
-            "zh": "能和 Nippon, Land of the Rising Sun 一起玩吗？",
-            "en": "Can I run this alongside Nippon, Land of the Rising Sun?"
+            "zh": "能和XXX兼容吗？",
+            "en": "Is it compatible with mod X?"
           },
           "answer": [
             {
-              "zh": "装上兼容子 mod 即可，两者不再互相顶掉传奇领主。**需要开新存档。**",
-              "en": "Install the compatibility submod and the two mods no longer overwrite each other's legendary lord. **A new campaign is required.**"
-            }
-          ],
-          "links": [
-            {
-              "label": {
-                "zh": "Nippon, Land of the Rising Sun",
-                "en": "Nippon, Land of the Rising Sun"
-              },
-              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3770643554"
-            },
-            {
-              "label": {
-                "zh": "兼容子 mod",
-                "en": "Compatibility submod"
-              },
-              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792001152"
+              "zh": "见[兼容性](/compat)页面。",
+              "en": "See the [Compatibility](/en/compat) page."
             }
           ]
         },
         {
-          "slug": "yin-yin",
+          "slug": "sfo",
           "question": {
-            "zh": "和胤隐的 mod 兼容吗？",
-            "en": "Is it compatible with Yin-Yin's mod?"
+            "zh": "有 SFO/Radious 兼容吗？",
+            "en": "Is there SFO/Radious compatibility?"
           },
           "answer": [
             {
-              "zh": "可以同时游玩。装上兵种兼容子 mod 后，震旦的派系还可以招募胤隐 mod 中的兵种。",
-              "en": "The two can be played together. With the unit compatibility submod installed, Cathay factions can also recruit the units added by the Yin-Yin mod."
+              "zh": "暂时没有制作 SFO/Radious 兼容的计划。如果有人感兴趣，欢迎自行制作。",
+              "en": "No plans to make an SFO/Radious version for now. Anyone interested is welcome to make one."
             }
-          ],
-          "links": [
+          ]
+        },
+        {
+          "slug": "wwd",
+          "question": {
+            "zh": "与龙同行的兼容问题",
+            "en": "Compatibility with Walking with Dragons"
+          },
+          "answer": [
             {
-              "label": {
-                "zh": "溟龙胤隐",
-                "en": "Roar of the Jade Sea: Yin-Yin"
-              },
-              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2989226363"
+              "zh": "目前支持：",
+              "en": "Currently supported:"
             },
             {
-              "label": {
-                "zh": "兵种兼容子 mod",
-                "en": "Unit compatibility submod"
-              },
-              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792695478"
+              "zh": "· 玉海舰队不受天朝局势影响",
+              "en": "· The Jade Sea Fleet is not affected by 天朝局势 (the State of the Celestial Empire)"
+            },
+            {
+              "zh": "· 在巍京陷落时不会有掌控力惩罚",
+              "en": "· No control penalty when Wei-Jin falls"
+            },
+            {
+              "zh": "· 可以触发宸风/李谡的任务",
+              "en": "· Chenfeng's and Li Su's quests can be triggered"
+            },
+            {
+              "zh": "· 可以在击败韩承等派系时触发选择",
+              "en": "· The choices on defeating Han Cheng and similar factions can be triggered"
             }
           ]
         },
@@ -174,19 +216,6 @@
         "en": "Design and plans"
       },
       "items": [
-        {
-          "slug": "island-clans",
-          "question": {
-            "zh": "奥本氏、山陽氏这些本土派系会做成盟友、或者直接占用他们的槽位吗？",
-            "en": "Will the Okumoto and Sanyo Clans be made into allies?"
-          },
-          "answer": [
-            {
-              "zh": "它们是有意做成可以打掉、也可以结盟的存在，默认已经给了一些强度加成。周边其他震旦小派系基本很快就会覆灭，所以没有改动。",
-              "en": "They are meant to be factions you can either destroy or ally with, and they already have some strength bonuses by default. The other small Cathay factions nearby tend to be wiped out early, so they have not been changed."
-            }
-          ]
-        },
         {
           "slug": "more-content",
           "question": {

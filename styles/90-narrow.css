@@ -91,7 +91,6 @@
     padding: 128px 0 48px;
   }
 
-  .release,
   .lords > li {
     gap: var(--s-3);
   }

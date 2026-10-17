@@ -20,15 +20,15 @@
     {
       "k": { "zh": "解锁条件", "en": "Unlocked by" },
       "v": {
-        "zh": "玉海舰队、山陽氏与奥本氏开局即可招募；其余震旦派系需先攻占大社并完成「尼朋的祭仪」任务。下列建筑任一即可招募：岸上「稻荷神社」链 2 级「稻荷大社」（定居点 3 级）、旗舰「舰上稻荷社」链 III 行「船上稻荷本社」、地标「灵道社殿」2 级「灵道本殿」（定居点 2 级）",
-        "en": "Available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans; other Cathay factions must first take the Great Shrine and complete \"The Rites of Nippon\". Any one of these buildings lets you recruit her: the Inari Grand Shrine (tier 2 of the Inari Shrine chain, settlement level 3), the Shipboard Inari Main Shrine (row III of the flagship's Shipboard Inari Shrine chain) or the Great Shrine Inner Sanctuary (tier 2 of the Great Shrine landmark, settlement level 2)"
+        "zh": "玉海舰队、山陽氏与奥本氏开局即可招募；其余震旦派系需先攻占大社并完成「尼朋的祭仪」任务。下列建筑任一即可招募：岸上「稻荷神社」链 2 级「稻荷神乐殿」及以上（定居点 3 级）、旗舰「舰上稻荷社」链 III 行「船上神乐殿」及以上、地标「灵道社殿」2 级「灵道本殿」及以上（定居点 2 级）",
+        "en": "Available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans; other Cathay factions must first take the Great Shrine and complete \"The Rites of Nippon\". Any one of these buildings lets you recruit her: the Inari Kagura Hall or higher (tier 2 of the Inari Shrine chain, settlement level 3), the Shipboard Kagura Hall or higher (row III of the flagship's Shipboard Inari Shrine chain) or the Great Shrine Inner Sanctuary or higher (tier 2 of the Great Shrine landmark, settlement level 2)"
       }
     },
     {
       "k": { "zh": "数量限制", "en": "Limit" },
       "v": {
-        "zh": "无全局上限；同时在役名额由建筑提供：「稻荷大社」「船上稻荷本社」各 +1，升到「灵兽神宫」（稻荷神社链 3 级，定居点 5 级）「麟栖神宫」（舰上稻荷社链 V 行）各 +2，「灵道本殿」+1；各处叠加，满配 +5",
-        "en": "No overall cap; how many can serve at once depends on buildings. The Inari Grand Shrine and the Shipboard Inari Main Shrine give +1 each, rising to +2 each at the Divine Beast Sanctuary (tier 3 of the Inari Shrine chain, settlement level 5) and the Kirin Roost Sanctuary (row V of the Shipboard Inari Shrine chain); the Great Shrine Inner Sanctuary adds +1. They stack, up to +5"
+        "zh": "无全局上限；同时在役名额由建筑提供：岸上稻荷神社链（稻荷神乐殿、稻荷大社、灵兽神宫）、旗舰舰上稻荷社（船上神乐殿、船上稻荷本社、麟栖神宫）、地标灵道社殿（灵道本殿、灵道御先殿）每座各 +1。同一座建筑升级不累加，不同建筑之间叠加",
+        "en": "No overall cap; how many can serve at once depends on buildings. Each shore Inari Shrine chain (Inari Kagura Hall, Inari Grand Shrine, Divine Beast Sanctuary), flagship Shipboard Inari Shrine (Shipboard Kagura Hall, Shipboard Inari Main Shrine, Kirin Roost Sanctuary) and Great Shrine landmark (Great Shrine Inner Sanctuary, Great Shrine Messenger Hall) gives +1. Upgrading the same building adds nothing more; different buildings stack"
       }
     },
     { "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" }, "v": { "zh": "招募费 1000，维持费 250", "en": "Recruitment 1000, upkeep 250" } }

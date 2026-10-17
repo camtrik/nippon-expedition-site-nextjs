@@ -49,7 +49,7 @@
     { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "10" },
     {
       "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
-      "v": "10／24",
+      "v": "6／24",
       "n": { "zh": "铅丸破甲为主；命中附加「破甲」减益", "en": "Mostly armour-piercing; hits inflict Sundered Armour" }
     },
     { "k": { "zh": "射程", "en": "Range" }, "v": "155" },

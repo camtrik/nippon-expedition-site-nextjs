@@ -1,5 +1,5 @@
 {
-  "_comment": "来源：mod 仓库 _docs/data/units/潮汐禁卫兵种设计.md（2026-10-12 箭矢 10／17、招募费 1200／维持费 300 版）；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。",
+  "_comment": "来源：mod 仓库 _docs/data/units/潮汐禁卫兵种设计.md（2026-10-13 箭矢 13／17、招募费 1200／维持费 300 版）；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）。",
   "slug": "tide-guard",
   "unit": "cth_npex_tide_guard_0",
   "group": "fleet",
@@ -39,7 +39,7 @@
     { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "12／22" },
     { "k": { "zh": "对大型单位加成", "en": "Bonus vs. large" }, "v": "18" },
     { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "10" },
-    { "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" }, "v": "10／17", "n": { "zh": "魔法箭", "en": "Magical arrows" } },
+    { "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" }, "v": "13／17", "n": { "zh": "魔法箭", "en": "Magical arrows" } },
     { "k": { "zh": "射程", "en": "Range" }, "v": "160" },
     { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "22" },
     { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "10 秒", "en": "10 s" } },

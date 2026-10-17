@@ -25,8 +25,8 @@
     {
       "k": { "zh": "招募来源", "en": "Recruited from" },
       "v": {
-        "zh": "灵兽神宫（3 级）／麟栖神宫（3 级）／神兽宫（地标）",
-        "en": "Divine Beast Sanctuary (tier 3) / Kirin Roost Sanctuary (tier 3) / Divine Beast Sanctum (landmark)"
+        "zh": "灵兽神宫（4 级）／麟栖神宫（4 级）／神兽宫（地标）",
+        "en": "Divine Beast Sanctuary (tier 4) / Kirin Roost Sanctuary (tier 4) / Divine Beast Sanctum (landmark)"
       }
     },
     { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成上述任一建筑", "en": "Building any of the above" } },

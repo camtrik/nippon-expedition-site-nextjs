@@ -46,15 +46,14 @@
     }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "52", "n": { "zh": "带魔法攻击（武器附魔）", "en": "Magical attacks (enchanted blade)" } },
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "50", "n": { "zh": "带魔法攻击（武器附魔）", "en": "Magical attacks (enchanted blade)" } },
     { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "45" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "22／35" },
-    { "k": { "zh": "对大型单位加成", "en": "Bonus vs Large" }, "v": "14" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "16／38" },
     { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "32" },
     { "k": { "zh": "护甲", "en": "Armour" }, "v": "100", "n": { "zh": "板甲", "en": "Plate" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "90" },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "82" },
     { "k": { "zh": "速度", "en": "Speed" }, "v": "31" },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "139", "n": { "zh": "80 人合计 11120", "en": "11120 across 80 men" } },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "125", "n": { "zh": "80 人合计 10000", "en": "10000 across 80 men" } },
     { "k": { "zh": "人数", "en": "Unit size" }, "v": "80" },
     { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "25%" }
   ],

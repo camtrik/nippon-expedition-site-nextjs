@@ -95,5 +95,32 @@
       },
       "icon": "yin.png"
     }
-  ]
+  ],
+  "stats": {
+    "recruit_cost": 1200,
+    "upkeep_cost": 300,
+    "num_men": 80,
+    "melee_attack": 40,
+    "melee_defence": 45,
+    "charge_bonus": 10,
+    "leadership": 80,
+    "armour": 70,
+    "hp": 88,
+    "bonus_hp": 80,
+    "speed": 36,
+    "melee_damage": [
+      12,
+      22
+    ],
+    "melee_interval": 4,
+    "bonus_v_large": 18,
+    "missile_damage": [
+      13,
+      17
+    ],
+    "range": 160,
+    "ammo": 22,
+    "reload": 10,
+    "resist_magic": 35
+  }
 }

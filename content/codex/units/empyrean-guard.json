@@ -14,7 +14,6 @@
     "zh": "海龙马的来历在任何谱牒与记载里都找不到交代，最初遇到他们的渔人只说台风过后，十几头鬃鬣滴水的灵兽静静立在退潮的礁石上。海龙马的速度比普通巨龙马更加迅捷，其所在之地，上方的空气会渐渐凝结成为云雾。云霄禁卫则可以通过云雾对敌人进行致命的魔法打击。",
     "en": "No lineage-roll or chronicle accounts for where the Sea Longma came from. The fishermen who first met them said only that once the typhoon had passed, a dozen or so spirit-beasts stood silent upon the ebb-tide rocks, their manes still dripping. Sea Longma are swifter than the common Great Longma, and wherever they are, the air above them slowly thickens into cloud and mist. Through that mist the Empyrean Guard bring a deadly magical stroke down upon their foes."
   },
-  "cost": { "recruit": 1900, "upkeep": 475 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "骑兵（飞行怪兽骑兵） · 近战", "en": "Cavalry (flying monstrous cavalry) · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "双手骑枪（魔法近战，破甲为主）", "en": "Two-handed lance (magical melee, mostly armour-piercing)" } },
@@ -34,20 +33,20 @@
     { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "53", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "48" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "22／58", "n": { "zh": "破甲占 72%", "en": "72% armour-piercing" } },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "80" },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "110", "n": { "zh": "板甲", "en": "Plate" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "85" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "115", "n": { "zh": "飞行 133；冲锋 150、飞行冲锋 177", "en": "Flying 133; charge 150, flying charge 177" } },
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage", "n": { "zh": "破甲占 72%", "en": "72% armour-piercing" } },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "板甲", "en": "Plate" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed", "n": { "zh": "飞行 {fly_speed}；冲锋 150、飞行冲锋 177", "en": "Flying {fly_speed}; charge 150, flying charge 177" } },
     {
       "k": { "zh": "单模型生命值", "en": "Health per model" },
-      "v": "330",
-      "n": { "zh": "24 骑合计 7920，与皇家马鹫骑士总血量持平", "en": "7920 across 24 riders – the same total as Royal Hippogryph Knights" }
+      "stat": "hp",
+      "n": { "zh": "{num_men} 骑合计 {hp_total}", "en": "{hp_total} across {num_men} riders" }
     },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "24" },
-    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "25%" }
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" },
+    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "stat": "resist_magic" }
   ],
   "traits": [
     {

@@ -209,6 +209,28 @@ export const UNIT_GROUPS = ['fleet', 'nippon', 'akatsuki'] as const
 /** 图鉴索引的分组，照游戏里 main_units.caste 归：近战步兵 / 远程步兵与火炮 / 怪物、战兽、怪物步兵与怪物骑兵 */
 export const UNIT_KINDS = ['melee', 'ranged', 'monster'] as const
 
+/**
+ * 兵种页数值表能引用的 DB 数值。值由 mod 仓库 tools/build_site_vanilla_export.py 从 DB 算出
+ * （data/vanilla/units 的 stats_from_db），export:codex 带进 generated，页面按 key 取。
+ * 手写数字会随平衡改动过期——1.1.1 的改动就一条都没同步过来——所以这些行一律写 stat。
+ * 说明 n 里也可以用 {key} 引用同一张表，另有 {hp_total}（单模型生命值 × 人数）。
+ */
+export const UNIT_STATS = [
+  'melee_attack', 'melee_defence', 'melee_damage', 'bonus_v_large', 'bonus_v_infantry', 'melee_interval',
+  'charge_bonus', 'missile_damage', 'missile_bonus_v_large', 'range', 'ammo', 'reload', 'armour',
+  'leadership', 'speed', 'speed_fly', 'hp', 'hp_artillery', 'num_men',
+  'resist_magic', 'resist_missile', 'resist_physical', 'resist_flame', 'resist_all',
+] as const
+
+const StatRow = obj({
+  k: Bilingual,
+  stat: z.enum(UNIT_STATS).optional(),
+  v: Cell.optional(),
+  n: Bilingual.optional(),
+  /** 这一行的标签本来对应某个 stat，却只能手写时（沧溟巨炮两种弹要分开写）写明原因 */
+  manual: z.string().optional(),
+}).refine((r) => Boolean(r.stat) !== Boolean(r.v), { message: 'stat 与 v 恰好写一个' })
+
 export const CodexUnit = obj({
   slug: z.string(),
   /** land_units key，生成那一侧按它去 data/vanilla/units 找技能与部队属性 */
@@ -222,11 +244,11 @@ export const CodexUnit = obj({
   desc: Bilingual,
   /** 图鉴长文（loc unit_description_historical_texts）；与短文同句的不写 */
   story: Paragraphs.optional(),
-  cost: obj({ recruit: z.number(), upkeep: z.number() }).optional(),
   /** 设计书「兵种类型」表里给玩家看的那几行（兵种类别、武器配置、护甲与盾牌、训练等级） */
   type: z.array(KV),
   recruit: z.array(KV),
-  stats: z.array(obj({ k: Bilingual, v: Cell, n: Bilingual.optional() })),
+  /** 招募费 / 维持费不再手写，取 generated 里的 DB 值 */
+  stats: z.array(StatRow),
   /** 设计书「特性」一节：兵牌上那些 ▲ 条目。down 是 ▼（缺点） */
   traits: z.array(obj({ name: Bilingual, desc: Bilingual, down: z.boolean().optional() })),
   /** 技能的效果说明，按 unit_abilities key 挂到生成的那一条下面（设计书「技能」表的效果列） */
@@ -309,6 +331,8 @@ export const GenUnit = z.strictObject({
   unit: z.string(),
   abilities: z.array(GenAbility),
   attrs: z.array(GenAbility),
+  /** DB 算出的数值（招募费、战场属性），键见 build_site_vanilla_export.py 的 unit_stats() */
+  stats: z.record(z.string(), z.union([z.number(), z.array(z.number())])),
 })
 
 export const GenNode = z.strictObject({

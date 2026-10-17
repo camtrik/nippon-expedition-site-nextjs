@@ -20,10 +20,6 @@
     "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
     "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
   },
-  "cost": {
-    "recruit": 350,
-    "upkeep": 88
-  },
   "type": [
     {
       "k": {
@@ -114,7 +110,7 @@
         "zh": "近战攻击",
         "en": "Melee attack"
       },
-      "v": "18",
+      "stat": "melee_attack",
       "n": {
         "zh": "平民征召，武艺生疏",
         "en": "Conscripted commoners with little skill"
@@ -125,7 +121,7 @@
         "zh": "近战防御",
         "en": "Melee defence"
       },
-      "v": "22",
+      "stat": "melee_defence",
       "n": {
         "zh": "阵笠同心生效时 25",
         "en": "25 with Jingasa Brotherhood"
@@ -136,10 +132,10 @@
         "zh": "武器威力（基础／破甲）",
         "en": "Weapon strength (base / AP)"
       },
-      "v": "18／6",
+      "stat": "melee_damage",
       "n": {
-        "zh": "总威力 24",
-        "en": "24 in total"
+        "zh": "总威力 {melee_total}",
+        "en": "{melee_total} in total"
       }
     },
     {
@@ -147,21 +143,21 @@
         "zh": "对大型单位加成",
         "en": "Bonus vs Large"
       },
-      "v": "17"
+      "stat": "bonus_v_large"
     },
     {
       "k": {
         "zh": "冲锋加成",
         "en": "Charge bonus"
       },
-      "v": "3"
+      "stat": "charge_bonus"
     },
     {
       "k": {
         "zh": "护甲",
         "en": "Armour"
       },
-      "v": "30",
+      "stat": "armour",
       "n": {
         "zh": "阵笠与御贷具足",
         "en": "Jingasa and loaned armour"
@@ -172,7 +168,7 @@
         "zh": "领导力",
         "en": "Leadership"
       },
-      "v": "45",
+      "stat": "leadership",
       "n": {
         "zh": "阵笠同心生效时 55",
         "en": "55 with Jingasa Brotherhood"
@@ -183,17 +179,17 @@
         "zh": "速度",
         "en": "Speed"
       },
-      "v": "30"
+      "stat": "speed"
     },
     {
       "k": {
         "zh": "单模型生命值",
         "en": "Health per model"
       },
-      "v": "56",
+      "stat": "hp",
       "n": {
-        "zh": "160 人合计 8960",
-        "en": "8960 across 160 men"
+        "zh": "{num_men} 人合计 {hp_total}",
+        "en": "{hp_total} across {num_men} men"
       }
     },
     {
@@ -201,7 +197,7 @@
         "zh": "人数",
         "en": "Unit size"
       },
-      "v": "160"
+      "stat": "num_men"
     }
   ],
   "traits": [

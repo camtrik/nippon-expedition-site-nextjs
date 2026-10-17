@@ -63,5 +63,24 @@
       "ref": "fatigue_immune",
       "section": "部队属性"
     }
-  ]
+  ],
+  "stats_from_db": {
+    "recruit_cost": 1500,
+    "upkeep_cost": 375,
+    "num_men": 80,
+    "melee_attack": 50,
+    "melee_defence": 45,
+    "charge_bonus": 32,
+    "leadership": 82,
+    "armour": 100,
+    "hp": 125,
+    "bonus_hp": 117,
+    "speed": 31,
+    "melee_damage": [
+      16,
+      38
+    ],
+    "melee_interval": 4,
+    "resist_magic": 25
+  }
 }

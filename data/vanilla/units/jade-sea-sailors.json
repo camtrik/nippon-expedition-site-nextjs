@@ -59,5 +59,23 @@
       "ref": null,
       "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
     }
-  ]
+  ],
+  "stats_from_db": {
+    "recruit_cost": 450,
+    "upkeep_cost": 112,
+    "num_men": 120,
+    "melee_attack": 22,
+    "melee_defence": 31,
+    "charge_bonus": 8,
+    "leadership": 60,
+    "armour": 40,
+    "hp": 62,
+    "bonus_hp": 54,
+    "speed": 28,
+    "melee_damage": [
+      20,
+      6
+    ],
+    "melee_interval": 4.2
+  }
 }

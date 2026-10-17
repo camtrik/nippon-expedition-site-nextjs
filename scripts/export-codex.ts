@@ -95,7 +95,10 @@ function iconFor(key: string): string | null {
 
 // ---- 兵种 ----------------------------------------------------------------------
 
-const vanillaUnits = new Map<string, { abilities: { ref: string }[]; attributes_from_db: { ref: string }[] }>()
+const vanillaUnits = new Map<
+  string,
+  { abilities: { ref: string }[]; attributes_from_db: { ref: string }[]; stats_from_db?: Record<string, number | number[]> }
+>()
 for (const f of readdirSync(join(VANILLA, 'units'))) {
   const d = readJson(join(VANILLA, 'units', f))
   vanillaUnits.set(d.unit, d)
@@ -113,11 +116,13 @@ for (const f of readdirSync(join(ROOT, 'content/codex/units')).sort()) {
   const u = CodexUnit.parse(readJson(join(ROOT, 'content/codex/units', f)))
   const v = vanillaUnits.get(u.unit)
   if (!v) throw new Error(`content/codex/units/${f}：data/vanilla/units 里没有 ${u.unit}`)
+  if (!v.stats_from_db) throw new Error(`data/vanilla/units 里 ${u.unit} 没有 stats_from_db——重跑 mod 仓库的 build_site_vanilla_export.py`)
   const gen = {
     _comment: '生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。',
     unit: u.unit,
     abilities: v.abilities.map((a) => ability(a.ref)),
     attrs: v.attributes_from_db.map((a) => ability(a.ref)),
+    stats: v.stats_from_db,
   }
   outputs.set(`content/codex/generated/units/${u.slug}.json`, JSON.stringify(gen, null, 2) + '\n')
 }

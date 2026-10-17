@@ -10,7 +10,6 @@
     "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
     "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
   },
-  "cost": { "recruit": 450, "upkeep": 112 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "单手剑＋木盾", "en": "Sword and wooden shield" } },
@@ -30,15 +29,15 @@
     { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "22" },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "31" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "20／6" },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "8" },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "40", "n": { "zh": "皮甲", "en": "Leather" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "60" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "28" },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "62", "n": { "zh": "120 人合计 7440", "en": "7440 across 120 men" } },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "120" }
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 人合计 {hp_total}", "en": "{hp_total} across {num_men} men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" }
   ],
   "traits": [
     { "name": { "zh": "装备盾牌", "en": "Shielded" }, "desc": { "zh": "持木盾，格挡 35% 远程杀伤", "en": "Carries a wooden shield that blocks 35% of missile damage" } },

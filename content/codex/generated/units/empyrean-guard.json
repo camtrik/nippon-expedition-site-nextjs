@@ -108,5 +108,25 @@
       },
       "icon": "yang.png"
     }
-  ]
+  ],
+  "stats": {
+    "recruit_cost": 1900,
+    "upkeep_cost": 475,
+    "num_men": 24,
+    "melee_attack": 53,
+    "melee_defence": 48,
+    "charge_bonus": 80,
+    "leadership": 85,
+    "armour": 110,
+    "hp": 338,
+    "bonus_hp": 330,
+    "speed": 115,
+    "fly_speed": 133,
+    "melee_damage": [
+      22,
+      58
+    ],
+    "melee_interval": 4.7,
+    "resist_magic": 25
+  }
 }

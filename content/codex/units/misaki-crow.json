@@ -20,10 +20,6 @@
     "zh": "御先烏是传说中的侍奉日神的使者，覆满黑曜华光的羽翼与巨大的三足象征着破除迷妄的智慧、仁恕与刚勇。在古老的修验道传承中，御先烏被尊为先行涉险、为凡世勘破前路的大神使。这种庞大的玄羽神禽素来隐栖于列岛极高处的灵峰云海之间，唯有山河震荡、暗潮遮蔽天日之际，方会在大社祝祷与长空中现出身影。",
     "en": "The Misaki Crow is the legendary messenger who serves the Sun Deity. Its wings gleam with obsidian light, and its great three legs stand for the wisdom that dispels delusion, for benevolence and for valour. In the ancient teachings of Shugendo, the Misaki Crow is revered as the great divine messenger who goes first into peril to see through the road ahead on behalf of the mortal world. These vast, dark-feathered birds have always lived in seclusion among the cloud-seas of the sacred peaks at the very top of the islands; only when mountains and rivers tremble and a dark tide blots out the sky do they show themselves, in the prayers at the great shrines and across the heavens."
   },
-  "cost": {
-    "recruit": 1600,
-    "upkeep": 400
-  },
   "type": [
     {
       "k": {
@@ -114,7 +110,7 @@
         "zh": "近战攻击",
         "en": "Melee attack"
       },
-      "v": "40",
+      "stat": "melee_attack",
       "n": {
         "zh": "魔法＋烈焰近战伤害",
         "en": "Magical, flaming melee damage"
@@ -125,17 +121,17 @@
         "zh": "近战防御",
         "en": "Melee defence"
       },
-      "v": "52"
+      "stat": "melee_defence"
     },
     {
       "k": {
         "zh": "武器威力（基础／破甲）",
         "en": "Weapon strength (base / AP)"
       },
-      "v": "300／230",
+      "stat": "melee_damage",
       "n": {
-        "zh": "合计 530；魔法与烈焰",
-        "en": "530 in total; magical and flaming"
+        "zh": "合计 {melee_total}；魔法与烈焰",
+        "en": "{melee_total} in total; magical and flaming"
       }
     },
     {
@@ -143,7 +139,7 @@
         "zh": "冲锋加成",
         "en": "Charge bonus"
       },
-      "v": "55",
+      "stat": "charge_bonus",
       "n": {
         "zh": "俯冲扑击",
         "en": "Diving strike"
@@ -154,7 +150,7 @@
         "zh": "护甲",
         "en": "Armour"
       },
-      "v": "45",
+      "stat": "armour",
       "n": {
         "zh": "神鸟羽躯",
         "en": "Divine plumage"
@@ -165,24 +161,21 @@
         "zh": "领导力",
         "en": "Leadership"
       },
-      "v": "75"
+      "stat": "leadership"
     },
     {
       "k": {
         "zh": "速度",
         "en": "Speed"
       },
-      "v": {
-        "zh": "80（地面）／110（飞行）",
-        "en": "80 (ground) / 110 (flying)"
-      }
+      "stat": "speed_fly"
     },
     {
       "k": {
         "zh": "单模型生命值",
         "en": "Health per model"
       },
-      "v": "7290",
+      "stat": "hp",
       "n": {
         "zh": "单体巨兽",
         "en": "A single monster"
@@ -193,28 +186,28 @@
         "zh": "人数",
         "en": "Unit size"
       },
-      "v": "1"
+      "stat": "num_men"
     },
     {
       "k": {
         "zh": "法术抗性",
         "en": "Spell resistance"
       },
-      "v": "20%"
+      "stat": "resist_magic"
     },
     {
       "k": {
         "zh": "远程抗性",
         "en": "Missile resistance"
       },
-      "v": "15%"
+      "stat": "resist_missile"
     },
     {
       "k": {
         "zh": "火焰抗性",
         "en": "Fire resistance"
       },
-      "v": "20%"
+      "stat": "resist_flame"
     }
   ],
   "traits": [

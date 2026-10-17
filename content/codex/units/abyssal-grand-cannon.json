@@ -14,7 +14,6 @@
     "zh": "据说引水咒最早由溟龙胤隐制成，可以把海水化作致命的魔法炮弹。且没有魔法天赋的凡人也可以操纵引水咒，使其得以在寻常炮组手中施展。沧溟巨炮便是震旦海军把这道古咒与震旦火器结合的产物。引水咒生成的魔法造物在炮膛中积蓄力量，再由药室里的火药爆燃轰出炮口。其威力比一般巨炮有过之而无不及。",
     "en": "The Water-Drawing Charm is said to have been first devised by Yin-Yin the Sea Dragon; it turns seawater into a deadly magical shot. And because mortals with no gift for magic can work it all the same, the charm can be wielded by an ordinary gun crew. The Abyssal Grand Cannon is what came of the Cathayan navy joining that ancient charm to Cathayan gunpowder. The conjuration the charm raises gathers its power within the bore, and the powder in the chamber behind it hurls the whole out of the muzzle. Its force is a match for any common grand cannon, and more besides."
   },
-  "cost": { "recruit": 1200, "upkeep": 300 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "炮兵 · 远程", "en": "Artillery · missile" } },
     {
@@ -40,35 +39,36 @@
     { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "10", "n": { "zh": "炮组乘员", "en": "Gun crew" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "6" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "21／3" },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "5" },
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "炮组乘员", "en": "Gun crew" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
     {
       "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
       "v": { "zh": "奔流 90／360；骤雨 63／27", "en": "Torrent 90 / 360; Cloudburst 63 / 27" },
       "n": {
         "zh": "两弹种皆为魔法伤害。奔流单发 450；骤雨另有触地爆炸 45／20（半径 6）与 6 枚水矢",
         "en": "Both shot types deal magical damage. A Torrent shot totals 450; Cloudburst adds an impact blast of 45 / 20 (radius 6) and 6 water-darts"
-      }
+      },
+      "manual": "奔流、骤雨两种弹要分开写；DB 侧只给默认弹（奔流）"
     },
     {
       "k": { "zh": "射程", "en": "Range" },
-      "v": "400",
+      "stat": "range",
       "n": { "zh": "奔流直射，最小射程 10；骤雨迫击高抛，最小射程 60", "en": "Torrent fires flat, minimum range 10; Cloudburst is lobbed like a mortar shell, minimum range 60" }
     },
     { "k": { "zh": "弹速", "en": "Projectile speed" }, "v": { "zh": "奔流 100／骤雨 80／水矢 10", "en": "Torrent 100 / Cloudburst 80 / water-darts 10" } },
-    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "18", "n": { "zh": "两弹种共用", "en": "Shared by both shot types" } },
-    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "20 秒", "en": "20 s" } },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "20", "n": { "zh": "乘员皮甲", "en": "Crew, leather" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "65" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "30" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "stat": "ammo", "n": { "zh": "两弹种共用", "en": "Shared by both shot types" } },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "stat": "reload" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "乘员皮甲", "en": "Crew, leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
     {
       "k": { "zh": "单模型生命值", "en": "Health per model" },
-      "v": { "zh": "炮体 475／乘员 8", "en": "Gun 475 / crew 8" },
-      "n": { "zh": "另加额外生命值 48", "en": "Plus 48 bonus hit points" }
+      "stat": "hp_artillery",
+      "n": { "zh": "另加额外生命值 {bonus_hp}", "en": "Plus {bonus_hp} bonus hit points" }
     },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "44", "n": { "zh": "4 门炮", "en": "4 guns" } }
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men", "n": { "zh": "4 门炮", "en": "4 guns" } }
   ],
   "traits": [
     {

@@ -177,6 +177,13 @@ PNG 的 IHDR 实测写进去的。战役技能格主流 72x72，但出身特性�
 **6. 两个本 mod 自建效果缺描述 loc**（工兵协助补员、纱代式神麒麟开关），效果行 `text: null`，
 是 mod 本体的问题，已记进 mod 仓库 backlog，站点不用处理。
 
+## 兵种数值 `stats_from_db`
+
+`units/*.json` 的 `stats_from_db` 是 mod 脚本从 DB 现算的招募费与战场属性（口径同游戏单位卡）。
+`pnpm export:codex` 把它带进 `content/codex/generated/units/*.json`，兵种页的数值表与招募费都从那里取；
+`content/codex/units/*.json` 的数值行只写标签、说明和 `"stat": "<key>"`，写手抄数字会被
+`lib/content/codex.ts` 拒掉。mod 改了数值后重跑导出，站点再跑一次 `pnpm export:codex` 即可。
+
 ## 兵种的「特性」有两套来源
 
 `units/*.json` 里分了两个字段，因为背后是两套完全不同的机制：

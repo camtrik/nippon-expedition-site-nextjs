@@ -39,5 +39,31 @@
       "ref": "hide_forest",
       "section": "部队属性"
     }
-  ]
+  ],
+  "stats_from_db": {
+    "recruit_cost": 900,
+    "upkeep_cost": 225,
+    "num_men": 80,
+    "melee_attack": 34,
+    "melee_defence": 28,
+    "charge_bonus": 10,
+    "leadership": 75,
+    "armour": 70,
+    "hp": 88,
+    "bonus_hp": 80,
+    "speed": 28,
+    "melee_damage": [
+      20,
+      10
+    ],
+    "melee_interval": 4.2,
+    "bonus_v_infantry": 14,
+    "missile_damage": [
+      6,
+      24
+    ],
+    "range": 155,
+    "ammo": 22,
+    "reload": 13
+  }
 }

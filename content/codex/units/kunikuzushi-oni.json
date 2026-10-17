@@ -17,7 +17,6 @@
     {"zh": "鬼族是尼朋妖怪中最为强横壮硕的一支，而其中那些血脉最为沉厚、体魄格外庞大的魁伟巨鬼，身高可近三米，动辄便有拔木裂石的惊人蛮力。", "en": "The oni are among the mightiest of Nippon's yokai. Those in whom the ancient blood runs strongest grow into hulking giants, standing almost three metres tall and possessed of the strength to uproot trees and split stone."},
     {"zh": "尼朋曾经引入模仿旧世界的火器，仿铸名为「国崩」的重型大筒。这类火炮管壁厚重、后坐力极猛，寻常人类往往需要两到三名精壮炮手协力垫土筑台、推挽操架方能勉强击发。然而对于巨鬼而言，沉重的国崩大筒在他们粗壮如铁的双臂间不过如同随身手铳般自如，单人便能端起大筒在行进间抵近直射，实心生铁巨弹瞬间便能将敌军与城垛轰成齑粉。", "en": "When firearms from the Old World reached Nippon, its smiths cast heavy cannon in their likeness and named them Kunikuzushi. With thick barrels and a savage recoil, these guns could scarcely be fired without two or three stout men working together to bank up earth, build a platform and heave the carriage into place. Yet in the iron arms of a giant oni, a Kunikuzushi handles as easily as a hand cannon. A single warrior can carry it forward and fire at close quarters, its great balls of cast iron pounding soldiers and battlements alike into dust."}
   ],
-  "cost": { "recruit": 1800, "upkeep": 450 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "怪物步兵 · 远程（兼顾近战）", "en": "Monstrous infantry · missile (also handy in melee)" } },
     {
@@ -62,19 +61,19 @@
     }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "32", "n": { "zh": "接敌时妖力迸发 +10 → 42", "en": "42 in melee with Yokai Surge" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "30", "n": { "zh": "接敌时妖力迸发 +8 → 38", "en": "38 in melee with Yokai Surge" } },
-    { "k": { "zh": "近战武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "45／55", "n": { "zh": "金棒，合计 100", "en": "Kanabo, 100 in total" } },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "30" },
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "接敌时妖力迸发 +10 → 42", "en": "42 in melee with Yokai Surge" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence", "n": { "zh": "接敌时妖力迸发 +8 → 38", "en": "38 in melee with Yokai Surge" } },
+    { "k": { "zh": "近战武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage", "n": { "zh": "金棒，合计 {melee_total}", "en": "Kanabo, {melee_total} in total" } },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
     {
       "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" },
-      "v": "33／88",
-      "n": { "zh": "合计 121；物理伤害", "en": "121 in total; physical damage" }
+      "stat": "missile_damage",
+      "n": { "zh": "合计 {missile_total}；物理伤害", "en": "{missile_total} in total; physical damage" }
     },
-    { "k": { "zh": "远程对大型加成", "en": "Missile bonus vs Large" }, "v": "+30", "n": { "zh": "对大型单发合计 151", "en": "151 per shot against large targets" } },
-    { "k": { "zh": "射程", "en": "Range" }, "v": "275" },
-    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "20" },
-    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "13 秒", "en": "13 seconds" } },
+    { "k": { "zh": "远程对大型加成", "en": "Missile bonus vs Large" }, "stat": "missile_bonus_v_large", "n": { "zh": "对大型单发合计 {missile_total_vl}", "en": "{missile_total_vl} per shot against large targets" } },
+    { "k": { "zh": "射程", "en": "Range" }, "stat": "range" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "stat": "ammo" },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "stat": "reload" },
     {
       "k": { "zh": "炮弹", "en": "Shot" },
       "v": {
@@ -82,11 +81,11 @@
         "en": "Solid shot that bounces on landing; passes through up to 3 targets but is stopped by medium-sized ones; can damage buildings"
       }
     },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "50", "n": { "zh": "不着甲，皮糙肉厚", "en": "No armour worn, just thick hide" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "70" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "42" },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "448", "n": { "zh": "16 人合计 7168", "en": "7168 across 16 oni" } },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "16" }
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "不着甲，皮糙肉厚", "en": "No armour worn, just thick hide" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 人合计 {hp_total}", "en": "{hp_total} across {num_men} oni" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" }
   ],
   "traits": [
     { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "金棒破甲 55 为主", "en": "The kanabo deals mostly armour-piercing damage (55)" } },

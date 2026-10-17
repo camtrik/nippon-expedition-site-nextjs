@@ -60,18 +60,17 @@ function UnitDetail({ u, full }: { u: Unit; full: Awaited<ReturnType<typeof load
             <div className="detail__art detail__art--unit">
               <Image src={full} alt={pick(u.name, locale)} sizes="(max-width: 700px) 60vw, 320px" priority />
             </div>
-            {u.cost && (
-              <dl className="detail__cost">
-                <div>
-                  <dt className="eyebrow">{t('detail.costRecruit')}</dt>
-                  <dd>{u.cost.recruit}</dd>
-                </div>
-                <div>
-                  <dt className="eyebrow">{t('detail.costUpkeep')}</dt>
-                  <dd>{u.cost.upkeep}</dd>
-                </div>
-              </dl>
-            )}
+            {/* 招募费 / 维持费取 DB（generated stats），不手写 */}
+            <dl className="detail__cost">
+              <div>
+                <dt className="eyebrow">{t('detail.costRecruit')}</dt>
+                <dd>{u.cost.recruit}</dd>
+              </div>
+              <div>
+                <dt className="eyebrow">{t('detail.costUpkeep')}</dt>
+                <dd>{u.cost.upkeep}</dd>
+              </div>
+            </dl>
           </aside>
 
           <div className="detail__main">
@@ -115,11 +114,12 @@ function UnitDetail({ u, full }: { u: Unit; full: Awaited<ReturnType<typeof load
                 ))}
             </div>
 
-            {u.stats.length > 0 && (
+            {u.statRows.length > 0 && (
               <section className="detail__section">
                 <h2 className="eyebrow eyebrow--rule">{t('detail.secStats')}</h2>
                 <dl className="stats">
-                  {u.stats.map((s, i) => {
+                  {/* 数值来自 DB（lib/content/codex.ts 的 resolveStats），content 里只有标签与说明 */}
+                  {u.statRows.map((s, i) => {
                     const v = pick(s.v, locale)
                     // 大多数格子是数字；「实心炮弹，落地会弹跳……」这种整句的不该用 20px 粗体右对齐
                     const text = v.length > 14

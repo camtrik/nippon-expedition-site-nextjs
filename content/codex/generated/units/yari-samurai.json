@@ -69,5 +69,24 @@
       },
       "icon": "hide_forest.png"
     }
-  ]
+  ],
+  "stats": {
+    "recruit_cost": 800,
+    "upkeep_cost": 200,
+    "num_men": 120,
+    "melee_attack": 32,
+    "melee_defence": 40,
+    "charge_bonus": 12,
+    "leadership": 75,
+    "armour": 70,
+    "hp": 69,
+    "bonus_hp": 61,
+    "speed": 28,
+    "melee_damage": [
+      8,
+      20
+    ],
+    "melee_interval": 4.6,
+    "bonus_v_large": 16
+  }
 }

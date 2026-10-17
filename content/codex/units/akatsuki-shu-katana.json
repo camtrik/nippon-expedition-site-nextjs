@@ -14,7 +14,6 @@
     {"zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。", "en": "The yokai of Nippon were born of its mountains and waters, and once lived in seclusion in the depths of the islands. To mortal eyes, however, their horns and scales made them little different from the Daemons of Chaos and the Beastmen. Centuries of fear and prejudice hardened into blood-feuds handed down from one generation to the next. When civil war engulfed the land and longships came ashore, men and yokai alike were caught in the blaze. Still they slew one another in the long night of hatred."},
     {"zh": "半妖行者伊吹面对恶言冷箭从不拔刀自辩，只是固执地一次次横刀阵前庇护弱小。受其救助并信服其理念的凡人浪人、山野猎户，以及流淌着异族之血的半妖游侠纷纷主动追随伊吹，被称为『晓行众』。", "en": "Ibuki, the Hanyo Wanderer, never drew his blade to answer insults or arrows loosed against him. Time and again he simply took his stand before the helpless, stubbornly setting his odachi between them and danger. Mortal ronin and hunters of the wilds, together with hanyo wanderers bearing the blood of another kind, came willingly to his side, won over by his deeds and his beliefs. These followers became known as the Akatsuki-shu (The Dawnbreakers)."}
   ],
-  "cost": { "recruit": 950, "upkeep": 238 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
     {
@@ -52,29 +51,29 @@
     }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "42", "n": { "zh": "破晓之志生效时 47", "en": "47 with Will of the Dawnbreakers active" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "36" },
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "破晓之志生效时 47", "en": "47 with Will of the Dawnbreakers active" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
     {
       "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" },
-      "v": "16／30",
-      "n": { "zh": "合计 46，破甲为主；破晓之志生效时 ×1.05", "en": "46 in total, mostly armour-piercing; ×1.05 with Will of the Dawnbreakers active" }
+      "stat": "melee_damage",
+      "n": { "zh": "合计 {melee_total}，破甲为主；破晓之志生效时 ×1.05", "en": "{melee_total} in total, mostly armour-piercing; ×1.05 with Will of the Dawnbreakers active" }
     },
-    { "k": { "zh": "对步兵加成", "en": "Bonus vs Infantry" }, "v": "16" },
-    { "k": { "zh": "近战攻击间隔", "en": "Melee attack interval" }, "v": { "zh": "4.0 秒", "en": "4.0 seconds" } },
+    { "k": { "zh": "对步兵加成", "en": "Bonus vs Infantry" }, "stat": "bonus_v_infantry" },
+    { "k": { "zh": "近战攻击间隔", "en": "Melee attack interval" }, "stat": "melee_interval" },
     {
       "k": { "zh": "冲锋加成", "en": "Charge bonus" },
-      "v": "32",
+      "stat": "charge_bonus",
       "n": { "zh": "斩入期间 ×1.15，从侧后冲锋再翻倍", "en": "×1.15 during Kirikomi, and doubled again when charging the flank or rear" }
     },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "40", "n": { "zh": "轻甲", "en": "Light armour" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "78", "n": { "zh": "心理免疫", "en": "Immune to psychology" } },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "轻甲", "en": "Light armour" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership", "n": { "zh": "心理免疫", "en": "Immune to psychology" } },
     {
       "k": { "zh": "速度", "en": "Speed" },
-      "v": "40",
+      "stat": "speed",
       "n": { "zh": "破晓之志生效时 44，斩入期间约 51", "en": "44 with Will of the Dawnbreakers active, about 51 during Kirikomi" }
     },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "105", "n": { "zh": "80 人合计 8400", "en": "8400 across 80 men" } },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "80", "n": { "zh": "大规模下显示 60", "en": "60 at Large unit size" } }
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 人合计 {hp_total}", "en": "{hp_total} across {num_men} men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men", "n": { "zh": "大规模下显示 60", "en": "60 at Large unit size" } }
   ],
   "traits": [
     { "name": { "zh": "反步兵部队", "en": "Anti-Infantry" }, "desc": { "zh": "太刀对步兵加成 16", "en": "The katana has a bonus vs infantry of 16" } },

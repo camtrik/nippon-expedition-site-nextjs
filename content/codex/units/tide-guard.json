@@ -14,7 +14,6 @@
     "zh": "据说第一批潮汐禁卫的魔法与射击技艺由月后亲自传授，禁卫也因此立下只从女子中遴选的旧例。入选者多为水师中箭法出众的女兵，由禁卫统领统一锻炼长柄刀与弓的技艺。潮汐禁卫是震旦提督的贴身保镖，她们所使用的武器附着水魔法，水流缠绕其外，波涛暗藏其中。",
     "en": "It is said that the Moon Empress herself taught the first Tide Guard their arts of magic and marksmanship, and from that gift dates the old rule that the corps recruits only from among women. Most are the fleet's finest archers, drilled by the Guard Commander in the disciplines of the long-hafted blade and the bow. The Tide Guard are the personal bodyguard of the Cathayan admiral, and the weapons they bear are imbued with water magic: water coils about the steel, and within it sleeps the fury of the waves."
   },
-  "cost": { "recruit": 1200, "upkeep": 300 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 混合（近战＋远程）", "en": "Infantry · hybrid (melee and missile)" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "长柄刀（魔法近战，反大）＋和弓（魔法箭）", "en": "Glaive (magical melee, anti-large) and Nipponese longbow (magical arrows)" } },
@@ -34,21 +33,21 @@
     { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "40", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "45" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "12／22" },
-    { "k": { "zh": "对大型单位加成", "en": "Bonus vs. large" }, "v": "18" },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "10" },
-    { "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" }, "v": "13／17", "n": { "zh": "魔法箭", "en": "Magical arrows" } },
-    { "k": { "zh": "射程", "en": "Range" }, "v": "160" },
-    { "k": { "zh": "弹药", "en": "Ammunition" }, "v": "22" },
-    { "k": { "zh": "装填时间", "en": "Reload time" }, "v": { "zh": "10 秒", "en": "10 s" } },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "70", "n": { "zh": "锁子甲", "en": "Chainmail" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "80" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "36" },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "88", "n": { "zh": "80 人合计 7040", "en": "7040 across 80 guards" } },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "80" },
-    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "v": "35%" }
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage" },
+    { "k": { "zh": "对大型单位加成", "en": "Bonus vs. large" }, "stat": "bonus_v_large" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "远程武器威力（基础／破甲）", "en": "Missile strength (base / AP)" }, "stat": "missile_damage", "n": { "zh": "魔法箭", "en": "Magical arrows" } },
+    { "k": { "zh": "射程", "en": "Range" }, "stat": "range" },
+    { "k": { "zh": "弹药", "en": "Ammunition" }, "stat": "ammo" },
+    { "k": { "zh": "装填时间", "en": "Reload time" }, "stat": "reload" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "锁子甲", "en": "Chainmail" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 人合计 {hp_total}", "en": "{hp_total} across {num_men} guards" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" },
+    { "k": { "zh": "法术抗性", "en": "Spell resistance" }, "stat": "resist_magic" }
   ],
   "traits": [
     { "name": { "zh": "反大型部队", "en": "Anti-Large" }, "desc": { "zh": "长柄刀近战对大型目标 +18", "en": "The glaive gains +18 against large targets in melee" } },

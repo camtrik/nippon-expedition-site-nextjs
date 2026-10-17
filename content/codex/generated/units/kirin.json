@@ -95,5 +95,24 @@
       },
       "icon": "strider.png"
     }
-  ]
+  ],
+  "stats": {
+    "recruit_cost": 2200,
+    "upkeep_cost": 550,
+    "num_men": 4,
+    "melee_attack": 50,
+    "melee_defence": 40,
+    "charge_bonus": 70,
+    "leadership": 80,
+    "armour": 70,
+    "hp": 2400,
+    "bonus_hp": 2392,
+    "speed": 110,
+    "melee_damage": [
+      90,
+      200
+    ],
+    "melee_interval": 3.8,
+    "resist_magic": 25
+  }
 }

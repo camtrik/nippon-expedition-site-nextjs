@@ -14,7 +14,6 @@
     "zh": "稻荷灵狐是尼朋神社世代供奉的神使之狐，侍奉稻荷信仰，是神社最忠诚的灵体眷属。它们与神社立下古老的契约，平日隐于社殿深处，听巫女的神乐铃调遣；一旦神社蒙难、邪祟犯境，便成群结队涌出鸟居，以灵力所凝的爪牙撕咬来犯之敌，誓死护卫神域的一草一木。",
     "en": "The Inari spirit foxes are the divine messengers honoured by the shrines of Nippon for generations: servants of the Inari faith, and the most loyal of a shrine's spirit-familiars. Bound to the shrine by an ancient pact, they lie hidden in the depths of the shrine halls, hearkening to the summons of the miko's kagura bell; but the moment a shrine is beset and evil crosses its border, they pour out through the torii gates in packs, tearing at the invaders with claws and fangs wrought of raw spirit, and guarding every tree and blade of grass on the hallowed ground with their lives."
   },
-  "cost": { "recruit": 800, "upkeep": 200 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "战争野兽（多体战兽） · 近战", "en": "War beasts (a pack) · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "灵力爪牙（魔法近战）", "en": "Spirit claws and fangs (magical melee)" } },
@@ -37,17 +36,17 @@
     { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
   ],
   "stats": [
-    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "v": "35", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
-    { "k": { "zh": "近战防御", "en": "Melee defence" }, "v": "25" },
-    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "v": "30／20", "n": { "zh": "破甲占 40%", "en": "40% armour-piercing" } },
-    { "k": { "zh": "对步兵加成", "en": "Bonus vs. infantry" }, "v": "4" },
-    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "v": "38" },
-    { "k": { "zh": "护甲", "en": "Armour" }, "v": "15", "n": { "zh": "皮甲", "en": "Leather" } },
-    { "k": { "zh": "领导力", "en": "Leadership" }, "v": "60" },
-    { "k": { "zh": "速度", "en": "Speed" }, "v": "95" },
-    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "v": "143", "n": { "zh": "48 只合计 6864", "en": "6864 across 48 foxes" } },
-    { "k": { "zh": "人数", "en": "Unit size" }, "v": "48" },
-    { "k": { "zh": "远程抗性", "en": "Missile resistance" }, "v": "15%" }
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack", "n": { "zh": "魔法攻击", "en": "Magical attacks" } },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage", "n": { "zh": "破甲占 40%", "en": "40% armour-piercing" } },
+    { "k": { "zh": "对步兵加成", "en": "Bonus vs. infantry" }, "stat": "bonus_v_infantry" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 只合计 {hp_total}", "en": "{hp_total} across {num_men} foxes" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" },
+    { "k": { "zh": "远程抗性", "en": "Missile resistance" }, "stat": "resist_missile" }
   ],
   "traits": [
     { "name": { "zh": "魔法攻击", "en": "Magical Attacks" }, "desc": { "zh": "灵力爪牙伤害按魔法计算", "en": "Its spirit claws and fangs deal magical damage" } }

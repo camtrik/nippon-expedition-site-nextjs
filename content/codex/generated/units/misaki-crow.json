@@ -69,5 +69,27 @@
       },
       "icon": "flying.png"
     }
-  ]
+  ],
+  "stats": {
+    "recruit_cost": 1600,
+    "upkeep_cost": 400,
+    "num_men": 1,
+    "melee_attack": 40,
+    "melee_defence": 52,
+    "charge_bonus": 55,
+    "leadership": 75,
+    "armour": 45,
+    "hp": 7298,
+    "bonus_hp": 7290,
+    "speed": 80,
+    "fly_speed": 110,
+    "melee_damage": [
+      300,
+      230
+    ],
+    "melee_interval": 4,
+    "resist_magic": 20,
+    "resist_missile": 15,
+    "resist_flame": 20
+  }
 }

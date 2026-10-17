@@ -50,5 +50,32 @@
       "ref": "yin",
       "section": "特性"
     }
-  ]
+  ],
+  "stats_from_db": {
+    "recruit_cost": 1200,
+    "upkeep_cost": 300,
+    "num_men": 44,
+    "melee_attack": 10,
+    "melee_defence": 6,
+    "charge_bonus": 5,
+    "leadership": 65,
+    "armour": 20,
+    "hp": 56,
+    "bonus_hp": 48,
+    "speed": 30,
+    "melee_damage": [
+      21,
+      3
+    ],
+    "melee_interval": 4.3,
+    "engine_hp": 475,
+    "crew_hp": 8,
+    "missile_damage": [
+      90,
+      360
+    ],
+    "range": 400,
+    "ammo": 18,
+    "reload": 20
+  }
 }

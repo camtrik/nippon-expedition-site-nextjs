@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next'
+import type { Viewport } from 'next'
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 
 import '../globals.css'
@@ -24,9 +24,7 @@ export const viewport: Viewport = {
 }
 
 // 三个页面各自的 title / description 在自己的 generateMetadata 里（lib/metadata.ts）。
-export const metadata: Metadata = {
-  icons: { icon: '/favicon.ico' },
-}
+// 图标不在这里声明：app/favicon.ico 由 Next 自动挂上，再写一遍会多出一条重复的 <link>。
 
 /*
   全站唯一的一段内联 JS，只做一件事：#q-<slug> 这样的直链要能看到答案——

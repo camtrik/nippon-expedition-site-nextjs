@@ -76,6 +76,7 @@
         "units/akatsuki-shu-katana.json",
         "units/hatamoto-raijin.json",
         "units/kunikuzushi-oni.json",
+        "units/matchlock-ashigaru.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
         "units/yari-samurai.json"
@@ -142,7 +143,8 @@
         "units/empyrean-guard.json",
         "units/hatamoto-raijin.json",
         "units/kirin.json",
-        "units/kunikuzushi-oni.json"
+        "units/kunikuzushi-oni.json",
+        "units/misaki-crow.json"
       ]
     },
     "causes_terror": {
@@ -164,7 +166,8 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "units/kirin.json"
+        "units/kirin.json",
+        "units/misaki-crow.json"
       ]
     },
     "charge_defense": {
@@ -186,6 +189,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
+        "units/yari-ashigaru.json",
         "units/yari-samurai.json"
       ]
     },
@@ -231,6 +235,7 @@
       },
       "referenced_by": [
         "units/tide-guard.json",
+        "units/yari-ashigaru.json",
         "units/yari-samurai.json"
       ]
     },
@@ -13358,6 +13363,28 @@
         "units/yari-samurai.json"
       ]
     },
+    "cth_npex_unit_passive_divine_guidance": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "神武引路",
+        "en": "Divine Guidance"
+      },
+      "desc": {
+        "zh": "日神之使振翼盘旋于云端，神眸洞彻四野潜匿之敌，并以此辉光引领王师锐不可当。",
+        "en": "The Sun Deity's herald wheels above the clouds on beating wings; its divine eyes lay bare every foe lurking across the land, and by this radiance it leads the royal host forward, irresistible."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_unit_passive_divine_guidance.png",
+        "size": "38x38"
+      },
+      "referenced_by": [
+        "units/misaki-crow.json"
+      ]
+    },
     "cth_npex_unit_passive_empyrean_skywave": {
       "kind": "unit_ability",
       "source": "npex",
@@ -13403,6 +13430,30 @@
       },
       "referenced_by": [
         "units/empyrean-guard.json"
+      ]
+    },
+    "cth_npex_unit_passive_jingasa_bonds": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "阵笠同心",
+        "en": "Jingasa Brotherhood"
+      },
+      "desc": {
+        "zh": "尼朋足轻相信同伴的力量。可一旦伤亡过大，情况就会反转。",
+        "en": "The ashigaru of Nippon put their faith in their comrades. Once the losses mount too high, that faith turns against them."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_unit_passive_jingasa_bonds.png",
+        "size": "38x38"
+      },
+      "referenced_by": [
+        "units/bow-ashigaru.json",
+        "units/matchlock-ashigaru.json",
+        "units/yari-ashigaru.json"
       ]
     },
     "cth_npex_unit_passive_lingtao_tidecall": {
@@ -13510,6 +13561,29 @@
         "units/hatamoto-raijin.json"
       ]
     },
+    "expendable": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "炮灰",
+        "en": "Expendable"
+      },
+      "desc": {
+        "zh": "其他部队的[[img:icon_morale]][[/img]]领导力不会因目击友方炮灰部队溃逃而降低，除非这支部队也是炮灰部队",
+        "en": "Witnessing friendly expendable units rout does not reduce other units' [[img:icon_morale]][[/img]]leadership, unless they are themselves expendable."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/expendable.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/bow-ashigaru.json",
+        "units/yari-ashigaru.json"
+      ]
+    },
     "fatigue_immune": {
       "kind": "unit_attribute",
       "source": "vanilla",
@@ -13554,7 +13628,8 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "units/empyrean-guard.json"
+        "units/empyrean-guard.json",
+        "units/misaki-crow.json"
       ]
     },
     "formed_attack": {
@@ -13578,6 +13653,7 @@
       "referenced_by": [
         "units/inari-fox.json",
         "units/jade-sea-sailors.json",
+        "units/yari-ashigaru.json",
         "units/yari-samurai.json"
       ]
     },
@@ -13625,13 +13701,16 @@
       },
       "referenced_by": [
         "units/akatsuki-shu-katana.json",
+        "units/bow-ashigaru.json",
         "units/hatamoto-raijin.json",
         "units/inari-fox.json",
         "units/jade-sea-fleet-gunners.json",
         "units/jade-sea-sailors.json",
         "units/kunikuzushi-oni.json",
+        "units/matchlock-ashigaru.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
+        "units/yari-ashigaru.json",
         "units/yari-samurai.json"
       ]
     },
@@ -26595,6 +26674,30 @@
       },
       "referenced_by": [
         "units/jade-sea-sailors.json"
+      ]
+    },
+    "wh3_main_unit_passive_single_entity": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "passive",
+      "name": {
+        "zh": "受创",
+        "en": "Wounds"
+      },
+      "desc": {
+        "zh": "即使是最强大的敌人，也无法在身受重伤时屹立，而且所受伤害越大，他们的战斗力就会越为低下",
+        "en": "Even the greatest foes can be laid low with terrible injuries, and the greater the damage done, the less able they will be to effectively continue the fray."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_unit_passive_single_entity.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/misaki-crow.json"
       ]
     },
     "wh_dlc03_unit_passive_drunken": {

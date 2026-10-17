@@ -1,0 +1,37 @@
+{
+  "unit": "cth_npex_bow_ashigaru_0",
+  "name_cn": "足轻弓兵",
+  "slug": "bow-ashigaru",
+  "doc": "_docs/data/units/足轻弓兵兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_jingasa_bonds",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "expendable"
+    },
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "消耗品",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "`expendable`",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "`hide_forest`",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ]
+}

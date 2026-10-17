@@ -20,34 +20,8 @@
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "领主（泛用，可重复招募）", "en": "Lord (generic, can be recruited any number of times)" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士，近战决斗型将领，重破甲、善守", "en": "Champion: a duelling commander who relies on armour-piercing blows and holds his ground well" } },
-    {
-      "k": { "zh": "招募来源", "en": "Recruited from" },
-      "v": {
-        "zh": "领主招募面板「武士大将」页签；候选有三套外观（各是固定的一身甲胄配一顶兜），数值、技能与费用完全相同，招到哪套就一直是哪套",
-        "en": "The Samurai Taisho tab of the lord recruitment panel. Candidates come in three looks, each a fixed suit of armour and helmet; stats, skills and cost are identical, and he keeps the look he was recruited with"
-      }
-    },
-    {
-      "k": { "zh": "解锁条件", "en": "Unlocked by" },
-      "v": {
-        "zh": "玉海舰队、山陽氏与奥本氏开局即可招募；其余震旦派系需先攻占海門并完成「武士之道」任务",
-        "en": "Available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans; other Cathay factions must first take Kaimon and complete \"The Way of the Samurai\""
-      }
-    },
-    {
-      "k": { "zh": "数量限制", "en": "Limit" },
-      "v": {
-        "zh": "无全局上限；招募池常驻 3 名候选（新档三套外观各一名），招一补一，补位按外观轮换",
-        "en": "No overall cap. The pool keeps 3 candidates (one of each look in a new campaign); each one recruited is replaced, cycling through the looks"
-      }
-    },
-    {
-      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
-      "v": {
-        "zh": "招募费 1000／1100／1400，维持费 250／300／300（依次为徒步／骑战马／骑麒麟）；多人对战价格 800／1000／1300",
-        "en": "Recruitment 1000 / 1100 / 1400, upkeep 250 / 300 / 300 (on foot / Samurai Warhorse / Kirin); multiplayer cost 800 / 1000 / 1300"
-      }
-    }
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "领主招募面板「武士大将」页签；玉海舰队、山陽氏与奥本氏开局即可招募", "en": "The Samurai Taisho tab of the lord recruitment panel; available from the start to the Jade Sea Fleet and the Sanyo and Okumoto Clans" } },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "无上限", "en": "No cap" } }
   ],
   "stats": {
     "forms": [

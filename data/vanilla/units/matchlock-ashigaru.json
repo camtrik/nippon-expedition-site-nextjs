@@ -1,0 +1,29 @@
+{
+  "unit": "cth_npex_matchlock_ashigaru_0",
+  "name_cn": "铁炮足轻",
+  "slug": "matchlock-ashigaru",
+  "doc": "_docs/data/units/铁炮足轻兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_jingasa_bonds",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "`hide_forest`",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ]
+}

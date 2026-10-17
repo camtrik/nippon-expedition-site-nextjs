@@ -55,6 +55,27 @@
         },
         "items": [
           {
+            "slug": "yari-ashigaru",
+            "name": {
+              "zh": "足轻长枪兵",
+              "en": "Yari Ashigaru"
+            }
+          },
+          {
+            "slug": "bow-ashigaru",
+            "name": {
+              "zh": "足轻弓兵",
+              "en": "Bow Ashigaru"
+            }
+          },
+          {
+            "slug": "matchlock-ashigaru",
+            "name": {
+              "zh": "铁炮足轻",
+              "en": "Matchlock Ashigaru"
+            }
+          },
+          {
             "slug": "yari-samurai",
             "name": {
               "zh": "长枪武士",
@@ -80,6 +101,13 @@
             "name": {
               "zh": "麒麟",
               "en": "Kirin"
+            }
+          },
+          {
+            "slug": "misaki-crow",
+            "name": {
+              "zh": "御先烏",
+              "en": "Misaki Crow"
             }
           },
           {

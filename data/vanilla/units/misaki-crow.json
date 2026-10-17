@@ -1,0 +1,69 @@
+{
+  "unit": "cth_npex_misaki_crow_0",
+  "name_cn": "御先烏",
+  "slug": "misaki-crow",
+  "doc": "_docs/data/units/御先烏兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_divine_guidance",
+      "source": "npex"
+    },
+    {
+      "ref": "wh3_main_unit_passive_single_entity",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "causes_fear"
+    },
+    {
+      "ref": "causes_terror"
+    },
+    {
+      "ref": "flying"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "惊骇敌军",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "攻城者",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "战术引路",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "可以飞行",
+      "ref": "flying",
+      "section": "特性"
+    },
+    {
+      "doc_name": "引起恐惧",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "引起惊骇",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "攻城者",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "可以飞行",
+      "ref": "flying",
+      "section": "特性"
+    }
+  ]
+}

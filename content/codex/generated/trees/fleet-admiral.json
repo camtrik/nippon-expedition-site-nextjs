@@ -1,0 +1,508 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "admiral-01",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_admiral_unique_0",
+          "name": {
+            "zh": "水师枪术",
+            "en": "Naval Spearmanship"
+          },
+          "desc": {
+            "zh": "一寸长，一寸强。长枪如此，炮亦如此。",
+            "en": "An inch longer, an inch stronger. It is true of the spear, and it is true of the gun."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+6",
+                  "en": "Melee attack: +6"
+                },
+                {
+                  "zh": "对抗大型部队加成：+10",
+                  "en": "Bonus vs Large: +10"
+                },
+                {
+                  "zh": "解锁战场能力「舷侧齐射」",
+                  "en": "Unlocks the battlefield ability \"Broadside\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 9 解锁",
+            "en": "Unlocks at rank 9"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_unique_1",
+          "name": {
+            "zh": "接舷战法",
+            "en": "Boarding Tactics"
+          },
+          "desc": {
+            "zh": "钩锁搭上舷墙那一刻，两条船之间只剩一条规矩：先跳先赢。",
+            "en": "The moment the grapnel bites the gunwale, only one rule holds between two ships: whoever jumps first, wins."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "武器威力：近战步兵部队+10%（领主军队）",
+                  "en": "Weapon strength: +10% for Melee Infantry units (Lord's army)"
+                },
+                {
+                  "zh": "冲锋加成：近战步兵部队+8%（领主军队）",
+                  "en": "Charge bonus: +8% for Melee Infantry units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：水师枪术",
+            "en": "Requires Naval Spearmanship"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_unique_2",
+          "name": {
+            "zh": "铳炮教习",
+            "en": "Gunnery Drill"
+          },
+          "desc": {
+            "zh": "装药、捣实、举铳、放。四个动作练到不过脑子，才准上战位。",
+            "en": "Charge, ram, level, fire. Only once all four are drilled past the need for thought is a man allowed to take his place at the guns."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "装填速度：+10%（火器与炮兵部队）（领主军队）",
+                  "en": "Reload time reduction: +10% for gunpowder and artillery units (Lord's army)"
+                },
+                {
+                  "zh": "远程威力：铁雹铳手、鹤铳手、巨炮与炎霖火箭炮部队+10%（领主军队）",
+                  "en": "Missile strength: +10% for Iron Hail Gunners, Crane Gunners, Grand Cannon and Fire Rain Rocket units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：水师枪术",
+            "en": "Requires Naval Spearmanship"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_unique_3",
+          "name": {
+            "zh": "引航之术",
+            "en": "The Pilot's Art"
+          },
+          "desc": {
+            "zh": "暗礁和季风杀的船比敌人多。而优秀的领航者会把他们当航标。",
+            "en": "Reefs and monsoons sink more ships than any enemy ever does. A good pilot uses them as seamarks."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战略地图移动距离：在海上时+15%",
+                  "en": "Campaign movement range: +15% whilst at sea"
+                },
+                {
+                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
+                  "en": "Replenishes 10% campaign movement range after winning a battle"
+                },
+                {
+                  "zh": "免疫深海、暗礁与风暴损耗（领主军队）",
+                  "en": "Immune to High Seas, Reef and Storm attrition (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：水师枪术",
+            "en": "Requires Naval Spearmanship"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_unique_4",
+          "name": {
+            "zh": "市舶之利",
+            "en": "Profits of the Sea Trade"
+          },
+          "desc": {
+            "zh": "提督的印能签调令，也能签提货单。",
+            "en": "An admiral's seal signs marching orders. It signs bills of lading just as well."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "战后掳掠收入：+20%",
+                  "en": "Income from post-battle loot: +20%"
+                },
+                {
+                  "zh": "可贸易资源产量：+5%（派系范围）",
+                  "en": "Tradable resources produced: +5% (factionwide)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：水师枪术",
+            "en": "Requires Naval Spearmanship"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_unique_5",
+          "name": {
+            "zh": "龙骧舟师",
+            "en": "The Soaring Dragon Armada"
+          },
+          "desc": {
+            "zh": "凡碧帆所向，皆为王土。凡舟师所至，皆为内海。",
+            "en": "Wherever the jade sails turn is the Emperor's land. Wherever the armada reaches is an inland sea."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
+                  "en": "Replenishes 10% campaign movement range after winning a battle"
+                },
+                {
+                  "zh": "维持费：-10%（领主军队）",
+                  "en": "Upkeep: -10% (Lord's army)"
+                },
+                {
+                  "zh": "新募部队等级：所有部队+2（领主军队）",
+                  "en": "Recruit rank: +2 for all units (Lord's army)"
+                },
+                {
+                  "zh": "弹药容量：+15%（远程部队）（领主军队）",
+                  "en": "Ammunition: +15% for missile units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_unique_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：接舷战法、铳炮教习、引航之术、市舶之利",
+            "en": "Requires Boarding Tactics, Gunnery Drill, The Pilot's Art, Profits of the Sea Trade"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        },
+        {
+          "key": "cth_npex_skill_admiral_artofwar",
+          "name": {
+            "zh": "兵法韬略",
+            "en": "The Art of War"
+          },
+          "desc": {
+            "zh": "兵者，诡道也。乘潮夜进，偃旗息鼓，敌未成列而炮已齐鸣。",
+            "en": "All warfare is deception. Advance on the tide with colours struck and oars muffled, and let the broadsides speak before the enemy can form."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁属性：先锋部署（领主军队）",
+                  "en": "Attribute: Vanguard Deployment (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_artofwar.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 23 解锁",
+            "en": "Unlocks at rank 23"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_admiral_personal_0",
+          "name": {
+            "zh": "破浪枪势",
+            "en": "Wave-Cleaving Spear"
+          },
+          "desc": {
+            "zh": "提督的枪法有如海神相助",
+            "en": "The admiral handles a spear as though a sea god were guiding his hand."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战攻击：+10",
+                  "en": "Melee attack: +10"
+                },
+                {
+                  "zh": "武器威力：+60%",
+                  "en": "Weapon strength: +60%"
+                },
+                {
+                  "zh": "对抗大型部队加成：+15",
+                  "en": "Bonus vs Large: +15"
+                },
+                {
+                  "zh": "武器威力：+10%（领主军队）",
+                  "en": "Weapon strength: +10% (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_personal_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 13 解锁",
+            "en": "Unlocks at rank 13"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_personal_1",
+          "name": {
+            "zh": "一枪横江",
+            "en": "One Sweep Across the River"
+          },
+          "desc": {
+            "zh": "白芒横江，水光接天",
+            "en": "A white gleam sweeps the river; the light on the water meets the sky."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "允许进行碎甲攻击",
+                  "en": "Enables sundering attacks"
+                },
+                {
+                  "zh": "解锁战场能力「横江」",
+                  "en": "Unlocks the battlefield ability \"River Sweep\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_personal_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：破浪枪势",
+            "en": "Requires Wave-Cleaving Spear"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_personal_2",
+          "name": {
+            "zh": "身先士卒",
+            "en": "Lead from the Front"
+          },
+          "desc": {
+            "zh": "他站的地方就是最前面那一排。",
+            "en": "Where he stands is the front rank."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "被动技能：『耐久光环』",
+                  "en": "Passive ability: \"Aura of Endurance\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_personal_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 11 解锁",
+            "en": "Unlocks at rank 11"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 5,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_admiral_ship_renown",
+          "name": {
+            "zh": "提督威名",
+            "en": "Admiral's Renown"
+          },
+          "desc": {
+            "zh": "水手挑船不看船，看站在船头的人是谁。",
+            "en": "A sailor picking a berth does not look at the ship. He looks at who is standing on her bow."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "龙舰舰员发展：+1",
+                  "en": "Dragonship crew growth: +1"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "lines": [
+                {
+                  "zh": "龙舰舰员发展：+2",
+                  "en": "Dragonship crew growth: +2"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "lines": [
+                {
+                  "zh": "龙舰舰员发展：+3",
+                  "en": "Dragonship crew growth: +3"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_ship_renown.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "前置：赶路人",
+            "en": "Requires Route Marcher"
+          },
+          "hub": null
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_admiral_mount_jade_longma",
+          "name": {
+            "zh": "玉龙马",
+            "en": "Jade Longma"
+          },
+          "desc": {
+            "zh": "朝廷配给提督的官坐骑，随印一同发下。",
+            "en": "The court's own mount, issued to an admiral along with his seal."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_admiral_mount_jade_longma.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_mount_sea_longma",
+          "name": {
+            "zh": "海龙马",
+            "en": "Sea Longma"
+          },
+          "desc": {
+            "zh": "台风退去后立在礁石上的那一群。没有谁把它们发给舰队，是舰队自己收拢的。",
+            "en": "The herd that stood upon the reefs once the typhoon had passed. No one issued them to the fleet; the fleet gathered them in itself."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁战场被动「踏浪惊涛」",
+                  "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_admiral_mount_sea_longma.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 19 解锁",
+            "en": "Unlocks at rank 19"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_dump",
+          "name": {
+            "zh": "登峰造极",
+            "en": "Beyond the Summit"
+          },
+          "desc": {
+            "zh": "武艺已臻极境，再多的历练也只能化入筋骨。专为存放多余的技能点而设。",
+            "en": "Their art has reached its peak; any further training can only harden the body. A sink for surplus skill points."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "生命值：+1%",
+                  "en": "Hit points: +1%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "lines": [
+                {
+                  "zh": "生命值：+100%",
+                  "en": "Hit points: +100%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_dump.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 36 解锁",
+            "en": "Unlocks at rank 36"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

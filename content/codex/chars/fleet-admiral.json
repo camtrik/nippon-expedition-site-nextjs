@@ -1,10 +1,14 @@
 {
-  "_comment": "来源：mod 仓库 _docs/data/lords/水师提督/水师提督角色与数值.md（技能树未导出，不写 tree）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
+  "_comment": "来源：mod 仓库 _docs/data/lords/水师提督/水师提督角色与数值.md与 水师提督技能树.md（三种变体的树除坐骑与天生特性外完全相同，tree 取第一席 admiral-01）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
   "slug": "fleet-admiral",
   "rank": "lord",
   "name": { "zh": "水师提督", "en": "Fleet Admiral" },
   "rankLabel": { "zh": "领主 · 战士", "en": "Lord · Champion" },
-  "looks": [{ "key": "fleet-admiral" }],
+  "looks": [
+    { "key": "fleet-admiral-01", "label": { "zh": "先登", "en": "First Aboard" } },
+    { "key": "fleet-admiral-02", "label": { "zh": "炮令", "en": "Order to Fire" } },
+    { "key": "fleet-admiral-03", "label": { "zh": "驭潮", "en": "Tide-Reader" } }
+  ],
   "desc": {
     "zh": "水师提督统率艨艟斗舰，碧帆所到之处，便是震旦的海疆。",
     "en": "A Fleet Admiral commands Cathay's war-junks, and wherever the jade sails reach, there the seas of Cathay begin."
@@ -14,70 +18,10 @@
     "en": "Cathay has an old saying: the Great Bastion does not end where the sea begins, for the sea is itself another Great Bastion. The Fleet Admiral is the warden of that bastion upon the water. Beneath the jade sails the war-junks stand in line like merlons, and the water between one hull and the next is the wall itself; pirates and monsters of the deep are held to the same measure, and none who crosses that line is given a second chance. But an admiral has more than the enemy to contend with. Storms scatter a fleet, currents drag a course astray, and by the third month at sea the crews begin to wonder why they are still out here at all. The fleet holds together because the flagship has not turned; and the flagship has not turned because nothing the sea can raise will move the one standing at her prow."
   },
   "identity": [
-    {
-      "k": { "zh": "角色位阶", "en": "Rank" },
-      "v": { "zh": "领主（泛用，可无限招募，数量由控制的主要港口数决定）", "en": "Lord (generic, no recruitment limit – how many you get depends on the major ports you hold)" }
-    },
-    {
-      "k": { "zh": "定位", "en": "Role" },
-      "v": {
-        "zh": "战士兼统帅：持震旦水师制式长枪的近战武将，长兵器、抵御冲锋、擅长对付大型目标",
-        "en": "Champion and commander: a melee officer armed with the Cathayan navy's standard spear – long reach, firm against charges, best against large targets"
-      }
-    },
-    {
-      "k": { "zh": "招募来源", "en": "Recruited from" },
-      "v": {
-        "zh": "领主招募面板「水师提督」页签。每解锁一位就放进领主招募池，进池后仍需花钱招募；在任何能招领主的地方都能招，不限于那座港口",
-        "en": "The Fleet Admiral tab of the lord recruitment panel. Each one unlocked is added to the lord pool and still has to be paid for; he can be recruited anywhere you can recruit lords, not only at that port"
-      }
-    },
-    {
-      "k": { "zh": "解锁条件", "en": "Unlocked by" },
-      "v": {
-        "zh": "每控制一座主要城市港口（省会且带港口）解锁一位，按「先登 → 炮令 → 驭潮」顺次循环，无上限。对玉海舰队而言，修気寺与鉄守虽不是主要港口，也各算一座，所以打下修気寺换来的正是第一位「先登」",
-        "en": "One for every major city port you control (a province capital with a port), cycling First Aboard → Order to Fire → Tide-Reader with no upper limit. For the Jade Sea Fleet, Shuge Monastery and Tetsu Fortress also count as one each, so taking Shuge Monastery earns the first, First Aboard"
-      }
-    },
-    {
-      "k": { "zh": "开局台阶（MCT）", "en": "Head start (MCT)" },
-      "v": {
-        "zh": "装了 Mod Configuration Tool 时多一格设置「开局额外的水师提督」（0–2，默认 0）：玩家这一家的主要港口数永久按多 N 座计。AI 不受影响；可在战役中途调整，调高下一回合补发，调低不收回",
-        "en": "With Mod Configuration Tool installed, the \"Extra Fleet Admirals at the start\" setting (0–2, default 0) counts N more major ports for your faction for the whole campaign. AI factions are unaffected. It can be changed mid-campaign: raising it tops up next turn, lowering it takes nobody back"
-      }
-    },
-    {
-      "k": { "zh": "适用派系", "en": "Factions" },
-      "v": {
-        "zh": "全部震旦派系，规则与玉海舰队完全相同，港口数本身就是门槛；开局已握有主要港口的派系当场按港口数发足。不含山陽氏与奥本氏",
-        "en": "Every Cathay faction, under exactly the same rules as the Jade Sea Fleet: the ports are the only requirement, and a faction that starts with major ports gets its admirals at once. Not the Sanyo or Okumoto Clans"
-      }
-    },
-    {
-      "k": { "zh": "数量限制", "en": "Limit" },
-      "v": {
-        "zh": "无上限，天花板就是控制的主要港口数。招走一位不会自动补，要再占一座主要港口才多一位；丢了港口不收回已发出的，但也不再补新的，直到港口数重新超过已发放数。三种变体各一张脸，脸会随循环复现，同一派系内姓名一局不重",
-        "en": "None beyond the major ports you hold. Recruiting one does not bring a replacement; you need another major port for the next. Losing a port takes no admiral away, but no new ones come until your port count again exceeds the number already granted. Each of the three variants has its own face, so faces repeat as the cycle goes round, but within a faction no name is used twice in a campaign"
-      }
-    },
-    {
-      "k": { "zh": "招募费 / 维持费", "en": "Cost / upkeep" },
-      "v": {
-        "zh": "招募费 1100／1400／1600，维持费 250／300／375（依次为徒步／骑玉龙马／骑海龙马）；多人对战价格 900／1300／1500",
-        "en": "Recruitment 1100 / 1400 / 1600, upkeep 250 / 300 / 375 (on foot / Jade Longma / Sea Longma); multiplayer cost 900 / 1300 / 1500"
-      }
-    },
-    {
-      "k": { "zh": "其他", "en": "Also" },
-      "v": { "zh": "招出即不朽；不可借调给盟友；随身带一艘提督舰", "en": "Immortal from the moment he is recruited; cannot be lent to allies; comes with an Admiral's Ship of his own" }
-    },
-    {
-      "k": { "zh": "提督舰", "en": "Admiral's Ship" },
-      "v": {
-        "zh": "与沈长风的旗舰同型不同级：共用整棵建筑树，但槽位上限 8（旗舰 11，十条支链只能开七条）、影响圈半径 15（旗舰 20）。同样可从海上直接进攻沿岸驻军，影响圈内能用本船的招募",
-        "en": "The same class as Shen Changfeng's flagship but a lesser one: it shares her whole building tree, but has 8 slots instead of 11 (so only 7 of the 10 branch chains) and an influence radius of 15 instead of 20. It too can attack coastal garrisons straight from the sea, and offers its own recruitment within its radius"
-      }
-    }
+    { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "领主（泛用）", "en": "Lord (generic)" } },
+    { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士兼统帅，持水师长枪，擅长对付大型目标", "en": "Champion and commander: naval spear, best against large targets" } },
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "领主招募面板「水师提督」页签；每控制一座主要港口解锁一位", "en": "The Fleet Admiral tab of the lord recruitment panel; one unlocked for every major port you hold" } },
+    { "k": { "zh": "数量限制", "en": "Limit" }, "v": { "zh": "无上限，取决于控制的主要港口数", "en": "No cap beyond the major ports you hold" } }
   ],
   "stats": {
     "forms": [
@@ -189,5 +133,48 @@
       "v": { "zh": "全形态；照原版泛用震旦领主的档次（和谐放大 150%），与沈长风相同", "en": "All forms; the standard rate for a generic Cathay lord, the same as Shen Changfeng" }
     }
   ],
+  "tree": {
+    "subject": "admiral-01",
+    "note": {
+      "zh": "只列本 mod 原创的节点。原版复用的军团、战役与战斗三条线不列；三种变体的技能树相同，只有两匹坐骑的外观与天生特性（见上）不同。",
+      "en": "Only this mod's own nodes are listed. The vanilla army, campaign and combat lines are left out. All three variants share the same tree; only the mounts' looks and the innate trait above differ."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": { "zh": "水师方略", "en": "Naval Doctrine" },
+        "sub": {
+          "zh": "起点「水师枪术」9 级解锁，附带主动技「舷侧齐射」；其后四格——接舷战法、铳炮教习、引航之术、市舶之利——可各自点出，四格全点才能取「龙骧舟师」。「兵法韬略」是末端的孤立节点，23 级解锁，不需要前面的节点。",
+          "en": "Naval Spearmanship opens at rank 9 and brings the Broadside ability. The four after it – Boarding Tactics, Gunnery Instruction, The Pilot's Art and Maritime Trade – can be taken in any order, and all four are needed for The Dragon-Prowed Fleet. The Art of War is a standalone node at the end, open from rank 23 and needing nothing before it."
+        }
+      },
+      {
+        "indent": 3,
+        "label": { "zh": "提督亲战", "en": "Admiral in Battle" },
+        "sub": {
+          "zh": "他自己的近战武力：「破浪枪势」13 级解锁，接「一枪横江」；「身先士卒」是 11 级解锁的孤立节点。",
+          "en": "His own fighting power: Wave-Breaking Spearwork opens at rank 13 and leads into One Sweep Across the River; Lead from the Front is a standalone node from rank 11."
+        }
+      },
+      {
+        "indent": 5,
+        "only": "npex",
+        "label": { "zh": "战役线", "en": "Campaign" },
+        "sub": {
+          "zh": "原版战役线里被换掉的一格，只有「提督威名」是本 mod 的。",
+          "en": "The standard vanilla campaign line, with one node swapped out. Only Admiral's Renown is this mod's."
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": { "zh": "坐骑与通用节点", "en": "Mounts and General" },
+        "sub": {
+          "zh": "两匹坐骑到等级自动获得：玉龙马 10 级、海龙马 19 级。「登峰造极」36 级开放，共 100 级、每级生命值 +1%，用来存放多出来的技能点。",
+          "en": "Both mounts arrive on their own: the Jade Longma at rank 10, the Sea Longma at rank 19. Beyond the Summit opens at rank 36 and has 100 levels of +1% health each, a place for surplus skill points."
+        }
+      }
+    ]
+  },
   "traitsFrom": ["admiral-01", "admiral-02", "admiral-03"]
 }

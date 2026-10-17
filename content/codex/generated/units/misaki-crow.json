@@ -1,0 +1,73 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_misaki_crow_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_divine_guidance",
+      "source": "npex",
+      "name": {
+        "zh": "神武引路",
+        "en": "Divine Guidance"
+      },
+      "desc": {
+        "zh": "日神之使振翼盘旋于云端，神眸洞彻四野潜匿之敌，并以此辉光引领王师锐不可当。",
+        "en": "The Sun Deity's herald wheels above the clouds on beating wings; its divine eyes lay bare every foe lurking across the land, and by this radiance it leads the royal host forward, irresistible."
+      },
+      "icon": "cth_npex_unit_passive_divine_guidance.png"
+    },
+    {
+      "key": "wh3_main_unit_passive_single_entity",
+      "source": "vanilla",
+      "name": {
+        "zh": "受创",
+        "en": "Wounds"
+      },
+      "desc": {
+        "zh": "即使是最强大的敌人，也无法在身受重伤时屹立，而且所受伤害越大，他们的战斗力就会越为低下",
+        "en": "Even the greatest foes can be laid low with terrible injuries, and the greater the damage done, the less able they will be to effectively continue the fray."
+      },
+      "icon": "wh3_main_unit_passive_single_entity.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "causes_terror",
+      "source": "vanilla",
+      "name": {
+        "zh": "惊骇敌军",
+        "en": "Causes Terror"
+      },
+      "desc": {
+        "zh": "这支部队可惊骇敌军，令其近战目标溃逃一段时间。对于能够造成惊骇的部队来说，其自身也将免疫恐惧与惊骇效果",
+        "en": "This unit can cause terror, making its melee target rout for a short time. Units that cause terror are immune to terror and fear themselves."
+      },
+      "icon": "causes_terror.png"
+    },
+    {
+      "key": "flying",
+      "source": "vanilla",
+      "name": {
+        "zh": "可以飞行",
+        "en": "Can Fly"
+      },
+      "desc": {
+        "zh": "此部队可以飞行",
+        "en": "This unit can fly."
+      },
+      "icon": "flying.png"
+    }
+  ]
+}

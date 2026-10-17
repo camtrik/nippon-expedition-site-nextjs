@@ -1,0 +1,283 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/御先烏兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）；部队属性取 DB unit_attributes。",
+  "slug": "misaki-crow",
+  "unit": "cth_npex_misaki_crow_0",
+  "group": "nippon",
+  "name": {
+    "zh": "御先烏",
+    "en": "Misaki Crow"
+  },
+  "role": {
+    "zh": "战术引路、破潜突击的飞行巨兽 · T4 · 神兽",
+    "en": "Flying monster for guidance and stealth-breaking assault · T4 · divine beast"
+  },
+  "desc": {
+    "zh": "传说中作为日神使者的三足巨禽。其神眸可洞照一切潜伏虚妄。",
+    "en": "A three-legged great bird of legend, messenger of the Sun Deity. Its divine gaze pierces all that lurks and deceives."
+  },
+  "story": {
+    "zh": "御先烏是传说中的侍奉日神的使者，覆满黑曜华光的羽翼与巨大的三足象征着破除迷妄的智慧、仁恕与刚勇。在古老的修验道传承中，御先烏被尊为先行涉险、为凡世勘破前路的大神使。这种庞大的玄羽神禽素来隐栖于列岛极高处的灵峰云海之间，唯有山河震荡、暗潮遮蔽天日之际，方会在大社祝祷与长空中现出身影。",
+    "en": "The Misaki Crow is the legendary messenger who serves the Sun Deity. Its wings gleam with obsidian light, and its great three legs stand for the wisdom that dispels delusion, for benevolence and for valour. In the ancient teachings of Shugendo, the Misaki Crow is revered as the great divine messenger who goes first into peril to see through the road ahead on behalf of the mortal world. These vast, dark-feathered birds have always lived in seclusion among the cloud-seas of the sacred peaks at the very top of the islands; only when mountains and rivers tremble and a dark tide blots out the sky do they show themselves, in the prayers at the great shrines and across the heavens."
+  },
+  "cost": {
+    "recruit": 1600,
+    "upkeep": 400
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "怪兽（单体飞行巨兽） · 近战",
+        "en": "Monster (single-entity flying monster) · melee"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "烈焰利爪与金曜神羽（魔法＋烈焰近战）",
+        "en": "Flame talons and golden feathers (magical, flaming melee)"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "护甲 45（神鸟羽躯）；无盾",
+        "en": "Armour 45 (divine plumage); no shield"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "训练有素",
+        "en": "Trained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "稻荷大社（神社链，仅行省首府可建）／灵道御先殿（灵道社殿 3 级，地标）／船上稻荷本社（舰上稻荷社链，纱代入队后可建）；另可经纱代的同伴面板以名望征召",
+        "en": "Inari Grand Shrine (Shrine chain, province capitals only) / Great Shrine Messenger Hall (tier 3 of the Great Shrine landmark) / Shipboard Inari Main Shrine (Shipboard Inari Shrine chain, once Sayo has joined); also bought with Renown through Sayo on the Expedition Companions panel"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成上述任一建筑；同伴征召由纱代第贰章解锁，容量随羁绊档位",
+        "en": "Building any of the above; the companion option is unlocked by Sayo's second chapter, and its capacity grows with Bond tier"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "2 回合",
+        "en": "2 turns"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "建筑招募无上限；同伴征召满档 4 队",
+        "en": "None from buildings; companion capacity reaches 4 at the top Bond tier"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "v": "40",
+      "n": {
+        "zh": "魔法＋烈焰近战伤害",
+        "en": "Magical, flaming melee damage"
+      }
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "v": "52"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "v": "300／230",
+      "n": {
+        "zh": "合计 530；魔法与烈焰",
+        "en": "530 in total; magical and flaming"
+      }
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "v": "55",
+      "n": {
+        "zh": "俯冲扑击",
+        "en": "Diving strike"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "v": "45",
+      "n": {
+        "zh": "神鸟羽躯",
+        "en": "Divine plumage"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "v": "75"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "v": {
+        "zh": "80（地面）／110（飞行）",
+        "en": "80 (ground) / 110 (flying)"
+      }
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health per model"
+      },
+      "v": "7290",
+      "n": {
+        "zh": "单体巨兽",
+        "en": "A single monster"
+      }
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "v": "1"
+    },
+    {
+      "k": {
+        "zh": "法术抗性",
+        "en": "Spell resistance"
+      },
+      "v": "20%"
+    },
+    {
+      "k": {
+        "zh": "远程抗性",
+        "en": "Missile resistance"
+      },
+      "v": "15%"
+    },
+    {
+      "k": {
+        "zh": "火焰抗性",
+        "en": "Fire resistance"
+      },
+      "v": "20%"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "惊骇敌军",
+        "en": "Causes Terror"
+      },
+      "desc": {
+        "zh": "引起恐惧与惊骇，近身敌军更容易动摇溃逃",
+        "en": "Causes fear and terror, so enemies close by are quicker to waver and rout"
+      }
+    },
+    {
+      "name": {
+        "zh": "攻城者",
+        "en": "Siege Attacker"
+      },
+      "desc": {
+        "zh": "围城战中可以直接强行破门入城",
+        "en": "Can break the gates open directly in a siege"
+      }
+    },
+    {
+      "name": {
+        "zh": "战术引路",
+        "en": "Tactical Guide"
+      },
+      "desc": {
+        "zh": "大范围破潜与友军引导光环，为军团开辟战机",
+        "en": "A wide aura that breaks enemy hiding and guides allies, opening a path for the army"
+      }
+    },
+    {
+      "name": {
+        "zh": "可以飞行",
+        "en": "Can Fly"
+      },
+      "desc": {
+        "zh": "跨越障碍，在空中移动作战",
+        "en": "Crosses obstacles and fights on the wing"
+      }
+    }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_divine_guidance": {
+      "zh": "常驻光环，半径 55 米：敌军失去潜伏与隐蔽、近战防御 −5；友军移动速度 +10%",
+      "en": "A permanent aura of 55 m: enemies lose their hiding and ambush cover and take −5 melee defence; allies gain +10% movement speed"
+    },
+    "wh3_main_unit_passive_single_entity": {
+      "zh": "单体单位的原版通用被动：生命值低于 25% 时，移动速度与武器威力下降",
+      "en": "The standard vanilla passive for single-entity units: below 25% health, speed and weapon strength drop"
+    }
+  },
+  "attrsExtra": [
+    {
+      "name": {
+        "zh": "攻城者",
+        "en": "Siege Attacker"
+      },
+      "desc": {
+        "zh": "可直接攻击城门，无需等待攻城塔或攻城锤即可发动攻城战",
+        "en": "Can attack gates, so a siege battle can be launched at once without waiting for towers or battering rams"
+      }
+    }
+  ]
+}

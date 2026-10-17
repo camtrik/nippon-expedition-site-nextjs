@@ -52,6 +52,10 @@ UNITS = {
     "akatsuki-shu-katana": "akatsuki_shu_katana/akatsuki_shu_katana_full.png",
     "akatsuki-shu-bow": "akatsuki_shu_bow/akatsuki_shu_bow_full.png",
     "kunikuzushi-oni": "kunikuzushi_oni/kunikuzushi_oni_full.png",
+    "yari-ashigaru": "yari_ashigaru/yari_ashigaru_full.png",
+    "matchlock-ashigaru": "matchlock_ashigaru/matchlock_ashigaru_full.png",
+    "bow-ashigaru": "bow_ashigaru/bow_ashigaru_full.png",
+    "misaki-crow": "misaki_crow/misaki_crow_full.png",
 }
 
 # 人物：key -> `_full.png`（12:26 高清兵牌），和兵种一样同一张出人物卡与人物页大图。
@@ -68,7 +72,9 @@ CHARS = {
     "samurai-taisho-02": "samurai_daisho/samurai_taisho_02_full.png",
     "samurai-taisho-03": "samurai_daisho/samurai_taisho_03_full.png",
     "miko": "miko/miko_head1_full.png",
-    "fleet-admiral": "admiral/admiral_01_full.png",
+    "fleet-admiral-01": "admiral/admiral_01_full.png",
+    "fleet-admiral-02": "admiral/admiral_02_full.png",
+    "fleet-admiral-03": "admiral/admiral_03_full.png",
 }
 
 # 同伴横幅：任务弹窗插画的 16:9 母版（游戏里的 ui/eventpics 是它的 800×450 缩图）

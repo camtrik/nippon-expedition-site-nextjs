@@ -1,0 +1,86 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_yari_ashigaru_0",
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_jingasa_bonds",
+      "source": "npex",
+      "name": {
+        "zh": "阵笠同心",
+        "en": "Jingasa Brotherhood"
+      },
+      "desc": {
+        "zh": "尼朋足轻相信同伴的力量。可一旦伤亡过大，情况就会反转。",
+        "en": "The ashigaru of Nippon put their faith in their comrades. Once the losses mount too high, that faith turns against them."
+      },
+      "icon": "cth_npex_unit_passive_jingasa_bonds.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "charge_defense",
+      "source": "vanilla",
+      "name": {
+        "zh": "专擅抵御冲锋",
+        "en": "Expert Charge Defence"
+      },
+      "desc": {
+        "zh": "当阵列齐整时，这支部队在对抗敌军冲锋时会无视其所有的冲锋加成",
+        "en": "When bracing, this unit negates the charge bonus of any attacker."
+      },
+      "icon": "charge_defense.png"
+    },
+    {
+      "key": "charge_reflection",
+      "source": "vanilla",
+      "name": {
+        "zh": "冲锋反制",
+        "en": "Charge Reflection"
+      },
+      "desc": {
+        "zh": "当阵列齐整时，这支部队可以对冲锋而来的敌军造成额外伤害",
+        "en": "When bracing, this unit causes additional damage when attacking charging enemies."
+      },
+      "icon": "charge_reflection.png"
+    },
+    {
+      "key": "expendable",
+      "source": "vanilla",
+      "name": {
+        "zh": "炮灰",
+        "en": "Expendable"
+      },
+      "desc": {
+        "zh": "其他部队的领导力不会因目击友方炮灰部队溃逃而降低，除非这支部队也是炮灰部队",
+        "en": "Witnessing friendly expendable units rout does not reduce other units' leadership, unless they are themselves expendable."
+      },
+      "icon": "expendable.png"
+    },
+    {
+      "key": "formed_attack",
+      "source": "vanilla",
+      "name": {
+        "zh": "保持阵型",
+        "en": "Formation Attack"
+      },
+      "desc": {
+        "zh": "当进行近战时，这支部队会尽量保持阵型，从而少量增加近战防御",
+        "en": "The unit will try to stay in formation when in melee. Melee defence will be slightly increased."
+      },
+      "icon": "formed_attack.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/足轻弓兵兵种设计.md；name 取 loc land_units_onscreen_name，desc／story 取 loc unit_description_short_texts／unit_description_historical_texts（中英原文）；部队属性取 DB unit_attributes。",
+  "slug": "bow-ashigaru",
+  "unit": "cth_npex_bow_ashigaru_0",
+  "group": "nippon",
+  "name": {
+    "zh": "足轻弓兵",
+    "en": "Bow Ashigaru"
+  },
+  "role": {
+    "zh": "轻装远程步兵 · T1 · 基础远程",
+    "en": "Light missile infantry · T1 · basic ranged troops"
+  },
+  "desc": {
+    "zh": "乡野草民受命执和弓，以铺天盖地的连绵箭雨遮蔽前阵。",
+    "en": "Country folk handed the bow, darkening the sky above the front line with an unbroken rain of arrows."
+  },
+  "story": {
+    "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
+    "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
+  },
+  "cost": {
+    "recruit": 400,
+    "upkeep": 100
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "步兵 · 远程",
+        "en": "Infantry · missile"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "和弓／自卫短刀",
+        "en": "Japanese bow / sidearm short sword"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "轻甲 30（阵笠与御贷具足）；无盾",
+        "en": "Light armour 30 (jingasa and loaned armour); no shield"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "未受训练",
+        "en": "Untrained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "足轻长屋（侍所链起点）及此后各级建筑／旗舰武者屋形链第 I 行「足轻长屋」",
+        "en": "Ashigaru Longhouse (the start of the Samurai Hall chain) and every building after it / Row I of the flagship's Warrior's Manor chain, also called Ashigaru Longhouse"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成足轻长屋即可",
+        "en": "Building the Ashigaru Longhouse is enough"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "1 回合",
+        "en": "1 turn"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "无上限",
+        "en": "None"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "v": "10",
+      "n": {
+        "zh": "近身搏杀极其孱弱",
+        "en": "Very weak in a close fight"
+      }
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "v": "13",
+      "n": {
+        "zh": "阵笠同心生效时 16",
+        "en": "16 with Jingasa Brotherhood"
+      }
+    },
+    {
+      "k": {
+        "zh": "近战武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "v": "19／3",
+      "n": {
+        "zh": "自卫短刀，总威力 22",
+        "en": "Sidearm short sword, 22 in total"
+      }
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "v": "3"
+    },
+    {
+      "k": {
+        "zh": "远程武器威力（基础／破甲）",
+        "en": "Missile strength (base / AP)"
+      },
+      "v": "14／1",
+      "n": {
+        "zh": "总威力 15",
+        "en": "15 in total"
+      }
+    },
+    {
+      "k": {
+        "zh": "射程",
+        "en": "Range"
+      },
+      "v": "140"
+    },
+    {
+      "k": {
+        "zh": "弹药",
+        "en": "Ammunition"
+      },
+      "v": "22"
+    },
+    {
+      "k": {
+        "zh": "装填时间",
+        "en": "Reload time"
+      },
+      "v": {
+        "zh": "11.5 秒",
+        "en": "11.5 seconds"
+      },
+      "n": {
+        "zh": "阵笠同心生效时约 10.35 秒",
+        "en": "About 10.35 seconds with Jingasa Brotherhood"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "v": "30",
+      "n": {
+        "zh": "阵笠与御贷具足",
+        "en": "Jingasa and loaned armour"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "v": "36",
+      "n": {
+        "zh": "阵笠同心生效时 46",
+        "en": "46 with Jingasa Brotherhood"
+      }
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "v": "33"
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health per model"
+      },
+      "v": "54",
+      "n": {
+        "zh": "120 人合计 6480",
+        "en": "6480 across 120 men"
+      }
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "v": "120"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "消耗品",
+        "en": "Expendable"
+      },
+      "desc": {
+        "zh": "溃逃或阵亡不会降低其他非消耗品友军的领导力",
+        "en": "Its rout or death does not lower the leadership of other, non-expendable allies"
+      }
+    }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_jingasa_bonds": {
+      "zh": "生命值高于 50% 时持续生效：领导力 +10、近战防御 +3、装填速度 +10%；降至 50% 或以下即失效",
+      "en": "Active while health is above 50%: leadership +10, melee defence +3 and reload speed +10%; lost once health falls to 50% or below"
+    }
+  }
+}

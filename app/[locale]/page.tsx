@@ -160,37 +160,47 @@ function Overview() {
         ))}
       </ul>
 
-      <p className="eyebrow eyebrow--rule overview__packs-head">{t('packsTitle')}</p>
-      <p className="overview__packs-hint">{t('packsHint')}</p>
-      <ul className="packs">
-        {overview.packs.map((pack) => (
-          <li className="pack" key={pack.url}>
-            <span className="pill pack__kind">{t('packKind')}</span>
-            <h3 className="pack__name">
-              <a href={pack.url} target="_blank" rel="noopener">
-                {pick(pack.name, locale)}
-              </a>
-            </h3>
-            <p className="pack__note">
-              <Segs segs={inline(pick(pack.note, locale)).segs} />
-            </p>
-            {pack.points && pack.points.length > 0 && (
-              <ul className="dots pack__points">
-                {pack.points.map((p, i) => (
-                  <li key={i}>
-                    <Segs segs={inline(pick(p, locale)).segs} />
-                  </li>
-                ))}
-              </ul>
-            )}
-            <p className="pack__cta pack__foot">
-              <a href={pack.url} target="_blank" rel="noopener">
-                {t('subscribe')} ↗
-              </a>
-            </p>
-          </li>
-        ))}
-      </ul>
+      {/* 子 mod 越来越多，默认收起。原生 <details>，零 JS（同 FAQ 的做法）。 */}
+      <details className="overview__packs">
+        <summary className="overview__packs-summary">
+          <span className="overview__packs-head">
+            {t('packsTitle')}
+            <span className="overview__packs-count">{overview.packs.length}</span>
+          </span>
+          <span className="overview__packs-rule" aria-hidden="true" />
+          <span className="overview__packs-glyph" aria-hidden="true" />
+        </summary>
+        <p className="overview__packs-hint">{t('packsHint')}</p>
+        <ul className="packs">
+          {overview.packs.map((pack) => (
+            <li className="pack" key={pack.url}>
+              <span className="pill pack__kind">{t('packKind')}</span>
+              <h3 className="pack__name">
+                <a href={pack.url} target="_blank" rel="noopener">
+                  {pick(pack.name, locale)}
+                </a>
+              </h3>
+              <p className="pack__note">
+                <Segs segs={inline(pick(pack.note, locale)).segs} />
+              </p>
+              {pack.points && pack.points.length > 0 && (
+                <ul className="dots pack__points">
+                  {pack.points.map((p, i) => (
+                    <li key={i}>
+                      <Segs segs={inline(pick(p, locale)).segs} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="pack__cta pack__foot">
+                <a href={pack.url} target="_blank" rel="noopener">
+                  {t('subscribe')} ↗
+                </a>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </details>
 
       {overview.requires.map((item, i) => (
         <p className="overview__requires" key={i}>

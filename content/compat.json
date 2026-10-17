@@ -324,6 +324,23 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3790907897"
     },
     {
+      "key": "voices",
+      "group": "ok",
+      "name": {
+        "zh": "远征尼朋 · 角色配音包",
+        "en": "Nippon Expedition · Character Voice Pack"
+      },
+      "short": {
+        "zh": "角色配音包",
+        "en": "Voice Pack"
+      },
+      "note": {
+        "zh": "目前支持沈长风和纱代的配音，纱代可以在 MCT 里随时切换中文和日语。与「震旦天朝全中文配音」同时启用时，还需要订阅配音兼容包。",
+        "en": "Currently voices Shen Changfeng and Sayo; Sayo can switch between Chinese and Japanese at any time in MCT. If you also use Grand Cathay – Full Mandarin Chinese Voice-Over, subscribe to the voice compatibility patch as well."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3821219934"
+    },
+    {
       "key": "mixer_slot",
       "group": "conflict",
       "name": {

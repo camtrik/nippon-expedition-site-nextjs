@@ -102,6 +102,65 @@
         ]
       },
       {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799752801",
+        "name": {
+          "zh": "远征尼朋 · 科技树兼容包",
+          "en": "Nippon Expedition · Tech Tree Compatibility"
+        },
+        "note": {
+          "zh": "[WH3 Tech-tree Combination](https://steamcommunity.com/sharedfiles/filedetails/?id=3117083206) 科技树兼容子 mod。可选，两者同时使用时需要。",
+          "en": "[WH3 Tech-tree Combination](https://steamcommunity.com/sharedfiles/filedetails/?id=3117083206) tech-tree compatibility submod. Optional, needed only when running both mods together."
+        },
+        "points": [
+          {
+            "zh": "把该 mod 给震旦做的那条 73 节点支线接进玉海舰队的科技面板",
+            "en": "Brings that mod's 73-node Cathay branch into the Jade Sea Fleet's technology panel"
+          }
+        ]
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816610137",
+        "name": {
+          "zh": "远征尼朋 · 与龙同行兼容包",
+          "en": "Nippon Expedition · Walking with Dragons Compatibility Patch"
+        },
+        "note": {
+          "zh": "[与龙同行](https://steamcommunity.com/sharedfiles/filedetails/?id=2789903784)兼容子 mod。可选，两者同时使用时需要。",
+          "en": "[Walking with Dragons](https://steamcommunity.com/sharedfiles/filedetails/?id=2789903784) compatibility submod. Optional, needed only when running both mods together."
+        },
+        "points": [
+          {
+            "zh": "玉海舰队与震旦各派系可以互相合邦",
+            "en": "The Jade Sea Fleet and every Cathay faction can confederate each other again"
+          },
+          {
+            "zh": "玉海舰队可以招募与龙同行开局开放的 14 支精英部队",
+            "en": "The Jade Sea Fleet can recruit the 14 Regiments of Renown Walking with Dragons opens at the start"
+          },
+          {
+            "zh": "玉海舰队不受「天朝局势」影响；部分自制兵种可以用军功升级",
+            "en": "The Jade Sea Fleet is not affected by the State of the Celestial Empire; some of its own units can be upgraded with merit"
+          }
+        ]
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3817854329",
+        "name": {
+          "zh": "远征尼朋 · 巧匠行会兼容包",
+          "en": "Nippon Expedition · Artists' Guild Compatibility"
+        },
+        "note": {
+          "zh": "[巧匠行会](https://steamcommunity.com/sharedfiles/filedetails/?id=2789850920)兼容子 mod。可选，两者同时使用时需要。",
+          "en": "[Artists' Guild](https://steamcommunity.com/sharedfiles/filedetails/?id=2789855135) compatibility submod. Optional, needed only when running both mods together."
+        },
+        "points": [
+          {
+            "zh": "玉海舰队可以使用巧匠行会的震旦锻造",
+            "en": "The Jade Sea Fleet can use the Cathay forge from Artists' Guild"
+          }
+        ]
+      },
+      {
         "url": "https://steamcommunity.com/workshop/filedetails/?id=3790907897",
         "name": {
           "zh": "远征尼朋 · 周边 AI 强化",

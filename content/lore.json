@@ -1,8 +1,8 @@
 {
   "_comment": "背景故事页。正文是游戏里的中英原文（图鉴长文 unit_description_historical_texts、阵营导语 frontend_faction_leaders）与 mod 仓库 _docs/lore/战役人物与派系设计.md 的串联段落；开场短片旁白引文与「追随者／与震旦朝廷／在尼朋人眼中」两栏、「她的舰队在修気寺登陆」一段按 2026-10-17 用户要求撤下，伊吹那句短介绍也撤下。",
   "title": {
-    "zh": "她将镇守这万里沧海",
-    "en": "She Will Keep the Sea"
+    "zh": "玉海舰队",
+    "en": "The Jade Sea Fleet"
   },
   "lede": {
     "zh": "沈长风率领舰队横渡玉海，在尼朋北岸登陆，试图在新的土地寻找立足之地。",

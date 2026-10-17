@@ -67,7 +67,7 @@
   "unitKinds": {
     "melee": "Melee",
     "ranged": "Ranged",
-    "monster": "Monsters and monstrous infantry"
+    "monster": "Other"
   },
   "notFound": "No such entry.",
   "detail": {

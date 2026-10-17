@@ -67,7 +67,7 @@
   "unitKinds": {
     "melee": "近战",
     "ranged": "远程",
-    "monster": "怪兽与怪步"
+    "monster": "其他"
   },
   "notFound": "没有这个条目。",
   "detail": {

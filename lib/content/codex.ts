@@ -61,7 +61,7 @@ export const unitGroups = homeUnits.groups.map((g) => ({
 
 export const allUnits = unitGroups.flatMap((g) => g.items)
 
-/** 图鉴索引按兵种类型分组（近战 / 远程 / 怪兽与怪步），组内按招募费从低到高（同价沿用简介页顺序）。
+/** 图鉴索引按兵种类型分组（近战 / 远程 / 其他），组内按招募费从低到高（同价沿用简介页顺序）。
  *  简介页兵牌仍按 unitGroups，那边的顺序直接写在 content/home/units.json 里。 */
 const recruitCost = (u: Unit) => u.cost?.recruit ?? Number.POSITIVE_INFINITY
 export const unitKindGroups = UNIT_KINDS.map((kind) => ({

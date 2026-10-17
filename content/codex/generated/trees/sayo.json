@@ -119,20 +119,20 @@
             "en": "Bestow Omamori"
           },
           "desc": {
-            "zh": "出阵前，尼朋的每一支队伍都从巫女手里接过一枚御守。",
-            "en": "Before marching to battle, every Nipponese unit receives an omamori from the hands of the miko."
+            "zh": "出阵前，每一队神兽都从巫女手里接过一枚御守。",
+            "en": "Before marching to battle, every divine beast receives an omamori from the hands of the miko."
           },
           "levels": [
             {
               "level": 1,
               "lines": [
                 {
-                  "zh": "魔法抗性：+10%（尼朋单位）（英雄所在军队）",
-                  "en": "Magic resistance: +10% for Nipponese units (Hero's army)"
+                  "zh": "魔法抗性：+15%（神兽部队）（英雄所在军队）",
+                  "en": "Magic resistance: +15% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "物理抗性：+10%（尼朋单位）（英雄所在军队）",
-                  "en": "Physical resistance: +10% for Nipponese units (Hero's army)"
+                  "zh": "物理抗性：+15%（神兽部队）（英雄所在军队）",
+                  "en": "Physical resistance: +15% for divine beast units (Hero's army)"
                 }
               ]
             }
@@ -856,30 +856,92 @@
       "indent": 0,
       "nodes": [
         {
-          "key": "cth_npex_skill_sayo_generic_nippon",
+          "key": "cth_npex_skill_sayo_mount_goshinme",
           "name": {
-            "zh": "尼朋巫女",
-            "en": "Nipponese Miko"
+            "zh": "御神马",
+            "en": "Sacred Steed"
           },
           "desc": {
-            "zh": "所属军队的全部尼朋单位近战攻击、近战防御与领导力提升。",
-            "en": "Increases melee attack, melee defence and leadership for all Nipponese units in the army."
+            "zh": "系朱绳，佩神铃。",
+            "en": "Bound with vermilion cords and hung with sacred bells."
           },
           "levels": [
             {
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+4（尼朋单位）（英雄所在军队）",
-                  "en": "Melee attack: +4 for Nipponese units (Hero's army)"
+                  "zh": "坐骑：御神马",
+                  "en": "Mount: Sacred Steed"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_mount_goshinme.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_mount_misaki_crow",
+          "name": {
+            "zh": "御先烏",
+            "en": "Misaki Crow"
+          },
+          "desc": {
+            "zh": "日轮神镜光照之处，黑羽神使循光而来。",
+            "en": "Where the light of the sacred sun-disc mirror falls, the black-feathered divine messenger comes, following its glow."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "坐骑：御先烏",
+                  "en": "Mount: Misaki Crow"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_sayo_mount_misaki_crow.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 13 解锁",
+            "en": "Unlocks at rank 13"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_sayo_generic_nippon",
+          "name": {
+            "zh": "尼朋巫女",
+            "en": "Nipponese Miko"
+          },
+          "desc": {
+            "zh": "所属军队的全部神兽部队近战攻击、近战防御、武器威力与领导力提升。",
+            "en": "Increases melee attack, melee defence, weapon strength and leadership for all divine beast units in the army."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "近战武器威力：+10%（神兽部队）（英雄所在军队）",
+                  "en": "Weapon strength: +10% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+4（尼朋单位）（英雄所在军队）",
-                  "en": "Melee defence: +4 for Nipponese units (Hero's army)"
+                  "zh": "近战攻击：+6（神兽部队）（英雄所在军队）",
+                  "en": "Melee attack: +6 for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "领导力：+8（尼朋单位）（英雄所在军队）",
-                  "en": "Leadership: +8 for Nipponese units (Hero's army)"
+                  "zh": "近战防御：+6（神兽部队）（英雄所在军队）",
+                  "en": "Melee defence: +6 for divine beast units (Hero's army)"
+                },
+                {
+                  "zh": "领导力：+8（神兽部队）（英雄所在军队）",
+                  "en": "Leadership: +8 for divine beast units (Hero's army)"
                 }
               ]
             }

@@ -82,16 +82,20 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+5（妖怪与武士部队）（英雄所在军队）",
-                  "en": "Melee attack: +5 for Yokai and Samurai units (Hero's army)"
+                  "zh": "近战攻击：+6（妖怪部队）（英雄所在军队）",
+                  "en": "Melee attack: +6 for Yokai units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+5（妖怪与武士部队）（英雄所在军队）",
-                  "en": "Melee defence: +5 for Yokai and Samurai units (Hero's army)"
+                  "zh": "近战防御：+6（妖怪部队）（英雄所在军队）",
+                  "en": "Melee defence: +6 for Yokai units (Hero's army)"
                 },
                 {
-                  "zh": "新募部队等级：妖怪与武士部队+2（英雄所在军队）",
-                  "en": "Recruit rank: +2 for Yokai and Samurai units (Hero's army)"
+                  "zh": "新募部队等级：妖怪部队+2（英雄所在军队）",
+                  "en": "Recruit rank: +2 for Yokai units (Hero's army)"
+                },
+                {
+                  "zh": "装弹时间降低：+15%（妖怪部队）（英雄所在军队）",
+                  "en": "Reload time reduction: +15% for Yokai units (Hero's army)"
                 }
               ]
             }

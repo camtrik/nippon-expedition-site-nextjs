@@ -14,7 +14,7 @@
     "zh": "武者重一世之名，以败北为奇耻。恪守森严的荣誉信条，每每竭尽死力以博身后清誉。尼朋的武人，自幼锤炼刀弓之道，日复一日，将血肉之躯炼成非凡的杀器。沙场之上，他们各司其职：或挽弓为轻装，或提剑为重甲，或策骏马为冲阵之骑，亦不乏以铁炮应敌者。然宿命之念深植于此辈心中。据闻每十人中便有一人，以战死沙场为至高荣光，甘愿化为神风。故两军交锋之际，纵腹背受敌，武士亦绝无后退之理——退则名裂，死则名垂。",
     "en": "The warrior sets great store by the name he bears through this one life, and holds defeat the deepest shame. Keepers of a stern code of honour, such men spend their last strength without reserve to win a name unstained after death. From youth the warriors of Nippon are tempered in the way of blade and bow, day upon day, until flesh and blood are forged into instruments of slaughter beyond the common lot. Upon the field each keeps his station: some draw the bow as light troops, some bear the blade in heavy armour, some ride swift horses in the charge, and not a few answer the foe with the teppo. Yet the belief in destiny is rooted deep in such men. It is said that one warrior in ten counts death in battle the highest glory, and would gladly be made one with the divine wind. Thus, when two hosts close, though beset before and behind, the samurai have no thought of retreat: to fall back is to see one's name broken; to die is to see it endure forever."
   },
-  "cost": { "recruit": 720, "upkeep": 185 },
+  "cost": { "recruit": 800, "upkeep": 200 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "长枪（双手长杆，破甲为主）", "en": "Yari (two-handed spear, mostly armour-piercing)" } },

@@ -5,9 +5,20 @@
   "set_key": "cth_npex_skill_set_tachibana_naotora",
   "agent_type": "champion",
   "agent_subtype": "cth_npex_tachibana_naotora",
-  "node_count": 29,
+  "node_count": 30,
   "vanilla_skill_count": 20,
   "nodes": [
+    {
+      "node": "cth_npex_skill_node_tachibana_mount_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_tachibana_naotora_mount_kurokumo",
+      "tier": 0,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
     {
       "node": "cth_npex_skill_node_tachibana_unique_0",
       "node_source": "npex",

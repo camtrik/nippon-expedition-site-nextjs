@@ -5,9 +5,20 @@
   "set_key": "cth_npex_skill_set_sayo",
   "agent_type": "engineer",
   "agent_subtype": "cth_npex_sayo",
-  "node_count": 35,
+  "node_count": 37,
   "vanilla_skill_count": 14,
   "nodes": [
+    {
+      "node": "cth_npex_skill_node_sayo_mount_goshinme",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_mount_goshinme",
+      "tier": 0,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
     {
       "node": "cth_npex_skill_node_sayo_unique_1_0",
       "node_source": "npex",
@@ -83,6 +94,17 @@
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_sayo_mount_misaki_crow",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_sayo_mount_misaki_crow",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
       "parents": []
     },
     {

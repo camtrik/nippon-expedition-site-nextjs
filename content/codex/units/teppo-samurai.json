@@ -14,7 +14,7 @@
     "zh": "铁炮之术随海路商舶传入尼朋，已有数代。港町的铸铳匠反复仿制改良，火绳铳遂成大名武库中的常备利器；执铳上阵者，多为家禄豢养的重甲武士。此辈腰悬佩刀，手执长铳，装填与齐射之法日日操演：令下则排枪齐发，敌近则弃铳拔刀。铅丸离膛，势可穿甲，硝烟散尽后，敌阵倚仗的重甲精锐往往已倒伏于血泊。所恪守者依旧是武家旧道：以战死为荣，以退却为耻。",
     "en": "The craft of the teppo reached Nippon aboard the merchantmen of the sea road some generations past. The gunsmiths of the port towns copied and refined it again and again, until the matchlock became a mainstay of every daimyo's arsenal; and those who carry it to war are, for the most part, heavily armoured samurai kept on a clan's stipend. With katana at the hip and long gun in hand, they drill without cease in loading and in the volley: at the word of command the ranks fire as one, and when the foe closes they cast the gun down and draw the blade. The lead ball quits the barrel with strength enough to pierce armour, and when the powder smoke drifts away, the armoured elite the enemy line relied upon often lie already felled in pools of blood. What they keep is still the old samurai code: to die in battle is honour; to fall back is shame."
   },
-  "cost": { "recruit": 800, "upkeep": 200 },
+  "cost": { "recruit": 900, "upkeep": 225 },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 远程", "en": "Infantry · missile" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "火绳铳（远程直射）＋佩刀（近战）", "en": "Matchlock (direct fire) and katana (melee)" } },

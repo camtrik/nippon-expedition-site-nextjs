@@ -24,8 +24,8 @@
               "en": "Melee attack: +5 when attacking (Hero's army)"
             },
             {
-              "zh": "领导力：+8（妖怪与武士部队）（英雄所在军队）",
-              "en": "Leadership: +8 for Yokai and Samurai units (Hero's army)"
+              "zh": "领导力：+8（妖怪部队）（英雄所在军队）",
+              "en": "Leadership: +8 for Yokai units (Hero's army)"
             }
           ]
         }

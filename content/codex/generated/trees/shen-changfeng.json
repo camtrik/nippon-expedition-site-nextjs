@@ -119,28 +119,24 @@
         {
           "key": "cth_npex_skill_shen_unique_1_2",
           "name": {
-            "zh": "剑道导师",
-            "en": "Kendo Mentor"
+            "zh": "心流",
+            "en": "Flow State"
           },
           "desc": {
-            "zh": "震旦的剑法在尼朋的战士之间仍然通用。",
-            "en": "Cathayan swordsmanship is still widely practised among Nipponese warriors."
+            "zh": "剑至化境，心与刃合。自身的破甲武器威力提升，『玉海剑舞』与『舷侧齐射』的冷却时间缩短。",
+            "en": "When the blade becomes second nature, mind and edge move as one. Increases his own armour-piercing weapon damage and shortens the cooldowns of Jade Blade Dance and Broadside."
           },
           "levels": [
             {
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+6（武士部队）（领主军队）",
-                  "en": "Melee attack: +6 for Samurai units (Lord's army)"
+                  "zh": "武器破甲杀伤：+15%",
+                  "en": "Armour-piercing weapon damage: +15%"
                 },
                 {
-                  "zh": "近战防御：+4（武士部队）（领主军队）",
-                  "en": "Melee defence: +4 for Samurai units (Lord's army)"
-                },
-                {
-                  "zh": "领导力：+8（武士部队）（领主军队）",
-                  "en": "Leadership: +8 for Samurai units (Lord's army)"
+                  "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』-20%",
+                  "en": "Cooldown: -20% to \"Jade Blade Dance\" and \"Broadside\""
                 }
               ]
             }
@@ -259,8 +255,8 @@
           "icon": "cth_npex_skill_shen_unique_2.png",
           "reuse": false,
           "unlock": {
-            "zh": "前置：玉海旧部、剑道导师、震旦航海术、战略大师、枪炮与魔法",
-            "en": "Requires Jade Sea Veterans, Kendo Mentor, Cathayan Seamanship, Master Strategist, Powder and Sorcery"
+            "zh": "前置：玉海旧部、心流、震旦航海术、战略大师、枪炮与魔法",
+            "en": "Requires Jade Sea Veterans, Flow State, Cathayan Seamanship, Master Strategist, Powder and Sorcery"
           },
           "hub": {
             "zh": "需 3/5",

@@ -82,20 +82,20 @@
             "en": "Bestow Omamori"
           },
           "desc": {
-            "zh": "出阵前，尼朋的每一支队伍都从巫女手里接过一枚御守。",
-            "en": "Before marching to battle, every Nipponese unit receives an omamori from the hands of the miko."
+            "zh": "出阵前，每一队神兽都从巫女手里接过一枚御守。",
+            "en": "Before marching to battle, every divine beast receives an omamori from the hands of the miko."
           },
           "levels": [
             {
               "level": 1,
               "lines": [
                 {
-                  "zh": "魔法抗性：+10%（尼朋单位）（英雄所在军队）",
-                  "en": "Magic resistance: +10% for Nipponese units (Hero's army)"
+                  "zh": "魔法抗性：+15%（神兽部队）（英雄所在军队）",
+                  "en": "Magic resistance: +15% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "物理抗性：+10%（尼朋单位）（英雄所在军队）",
-                  "en": "Physical resistance: +10% for Nipponese units (Hero's army)"
+                  "zh": "物理抗性：+15%（神兽部队）（英雄所在军队）",
+                  "en": "Physical resistance: +15% for divine beast units (Hero's army)"
                 }
               ]
             }
@@ -856,6 +856,35 @@
     {
       "indent": 0,
       "nodes": [
+        {
+          "key": "cth_npex_skill_miko_mount_goshinme",
+          "name": {
+            "zh": "御神马",
+            "en": "Sacred Steed"
+          },
+          "desc": {
+            "zh": "系朱绳，佩神铃。",
+            "en": "Bound with vermilion cords and hung with sacred bells."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "坐骑：御神马",
+                  "en": "Mount: Sacred Steed"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_miko_mount_goshinme.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 11 解锁",
+            "en": "Unlocks at rank 11"
+          },
+          "hub": null
+        },
         {
           "key": "cth_npex_skill_dump",
           "name": {

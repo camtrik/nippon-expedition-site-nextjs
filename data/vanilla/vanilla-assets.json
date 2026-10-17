@@ -1547,7 +1547,8 @@
       "referenced_by": [
         "skills/admiral-01.json",
         "skills/admiral-02.json",
-        "skills/admiral-03.json"
+        "skills/admiral-03.json",
+        "skills/shen-changfeng.json"
       ],
       "effects": [
         {
@@ -4969,11 +4970,9 @@
         "en": "The Wanderer cares nothing for empty titles; he lets the odachi in his hands lead the way. Of those who march behind him, man or yokai, not one blade hesitates."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc24_hero_passive_assume_command.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_ibuki_texing.png",
+        "size": "24x24"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -5011,12 +5010,12 @@
           "scope": "agent_to_parent_army_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（妖怪与武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Leadership: +8 for Yokai and Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "领导力：+8（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Leadership: +8 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "领导力：%+n（妖怪与武士部队）",
-            "en": "Leadership: %+n for Yokai and Samurai units"
+            "zh": "领导力：%+n（妖怪部队）",
+            "en": "Leadership: %+n for Yokai units"
           },
           "priority": 500,
           "icon": {
@@ -5187,14 +5186,14 @@
           "effect": "cth_npex_ibuki_kin_ma",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 6.0,
           "text": {
-            "zh": "近战攻击：+5（妖怪与武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee attack: +5 for Yokai and Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战攻击：+6（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee attack: +6 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（妖怪与武士部队）",
-            "en": "Melee attack: %+n for Yokai and Samurai units"
+            "zh": "近战攻击：%+n（妖怪部队）",
+            "en": "Melee attack: %+n for Yokai units"
           },
           "priority": 500,
           "icon": {
@@ -5210,14 +5209,14 @@
           "effect": "cth_npex_ibuki_kin_md",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 6.0,
           "text": {
-            "zh": "近战防御：+5（妖怪与武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +5 for Yokai and Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战防御：+6（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee defence: +6 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（妖怪与武士部队）",
-            "en": "Melee defence: %+n for Yokai and Samurai units"
+            "zh": "近战防御：%+n（妖怪部队）",
+            "en": "Melee defence: %+n for Yokai units"
           },
           "priority": 500,
           "icon": {
@@ -5235,17 +5234,40 @@
           "scope": "agent_to_parent_army_own",
           "value": 2.0,
           "text": {
-            "zh": "新募部队等级：妖怪与武士部队+2\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Recruit rank: +2 for Yokai and Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "新募部队等级：妖怪部队+2\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Recruit rank: +2 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "新募部队等级：妖怪与武士部队%+n",
-            "en": "Recruit rank: %+n for Yokai and Samurai units"
+            "zh": "新募部队等级：妖怪部队%+n",
+            "en": "Recruit rank: %+n for Yokai units"
           },
           "priority": 500,
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/experience.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_reload",
+          "effect_source": "npex",
+          "scope": "agent_to_parent_army_own",
+          "value": 15.0,
+          "text": {
+            "zh": "装弹时间降低：+15%（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Reload time reduction: +15% for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（妖怪部队）",
+            "en": "Reload time reduction: %+n% for Yokai units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -7520,6 +7542,59 @@
         "cth_npex_spell_miko_misogi"
       ]
     },
+    "cth_npex_skill_miko_mount_goshinme": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御神马",
+        "en": "Sacred Steed"
+      },
+      "desc": {
+        "zh": "系朱绳，佩神铃。",
+        "en": "Bound with vermilion cords and hung with sacred bells."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_royal_pegasus.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "10",
+      "level_ranks": {
+        "1": 10
+      },
+      "referenced_by": [
+        "skills/miko.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_enable_mount_goshinme",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "坐骑：御神马",
+            "en": "Mount: Sacred Steed"
+          },
+          "template": {
+            "zh": "坐骑：御神马",
+            "en": "Mount: Sacred Steed",
+            "_via_tr": true
+          },
+          "priority": 50,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/mount.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_miko_reikitsune": {
       "kind": "character_skill",
       "source": "npex",
@@ -8429,11 +8504,9 @@
         "en": "Her house defeated and her lands lost, she is still the head of the house who charges into battle with twin blades and her hatamoto at her back; her title may be stripped from her, but her skill in commanding troops cannot be taken. Wherever she makes camp, order takes hold, and every blade knows its master."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc24_hero_passive_assume_command.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_naotora_texing.png",
+        "size": "24x24"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -9360,8 +9433,8 @@
         "en": "Onmyo Miko"
       },
       "desc": {
-        "zh": "常驻光环。周身 55 米内：敌军移动速度降低、护甲下降；友军（含自身）近战伤害与穿甲伤害提升。",
-        "en": "A permanent aura. Within 55 metres: enemy movement speed and armour are reduced; friendly units (including herself) gain increased melee damage and armour-piercing damage."
+        "zh": "施法后 25 秒内，周身 55 米光环：敌军移动速度降低、护甲下降；友军（含自身）近战伤害与穿甲伤害提升。",
+        "en": "For 25 seconds after casting: within a 55 metre aura, enemy movement speed and armour are reduced; friendly units (including herself) gain increased melee damage and armour-piercing damage."
       },
       "icon": {
         "source": "npex",
@@ -9523,8 +9596,8 @@
         "en": "Nipponese Miko"
       },
       "desc": {
-        "zh": "所属军队的全部尼朋单位近战攻击、近战防御与领导力提升。",
-        "en": "Increases melee attack, melee defence and leadership for all Nipponese units in the army."
+        "zh": "所属军队的全部神兽部队近战攻击、近战防御、武器威力与领导力提升。",
+        "en": "Increases melee attack, melee defence, weapon strength and leadership for all divine beast units in the army."
       },
       "icon": {
         "source": "npex",
@@ -9542,17 +9615,40 @@
       "effects": [
         {
           "level": 1,
+          "effect": "cth_npex_sayo_beast_weapon_strength",
+          "effect_source": "npex",
+          "scope": "agent_to_parent_army_own",
+          "value": 10.0,
+          "text": {
+            "zh": "近战武器威力：+10%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Weapon strength: +10% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "近战武器威力：%+n%（神兽部队）",
+            "en": "Weapon strength: %+n% for divine beast units"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "cth_npex_bihai_veterans_ma",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 4.0,
+          "value": 6.0,
           "text": {
-            "zh": "近战攻击：+4（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee attack: +4 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战攻击：+6（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee attack: +6 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（尼朋单位）",
-            "en": "Melee attack: %+n for Nipponese units"
+            "zh": "近战攻击：%+n（神兽部队）",
+            "en": "Melee attack: %+n for divine beast units"
           },
           "priority": 500,
           "icon": {
@@ -9568,14 +9664,14 @@
           "effect": "cth_npex_bihai_veterans_md",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 4.0,
+          "value": 6.0,
           "text": {
-            "zh": "近战防御：+4（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +4 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战防御：+6（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee defence: +6 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（尼朋单位）",
-            "en": "Melee defence: %+n for Nipponese units"
+            "zh": "近战防御：%+n（神兽部队）",
+            "en": "Melee defence: %+n for divine beast units"
           },
           "priority": 500,
           "icon": {
@@ -9593,12 +9689,12 @@
           "scope": "agent_to_parent_army_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Leadership: +8 for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "领导力：+8（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Leadership: +8 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "领导力：%+n（尼朋单位）",
-            "en": "Leadership: %+n for Nipponese units"
+            "zh": "领导力：%+n（神兽部队）",
+            "en": "Leadership: %+n for divine beast units"
           },
           "priority": 500,
           "icon": {
@@ -9677,6 +9773,112 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/wizard.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_sayo_mount_goshinme": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御神马",
+        "en": "Sacred Steed"
+      },
+      "desc": {
+        "zh": "系朱绳，佩神铃。",
+        "en": "Bound with vermilion cords and hung with sacred bells."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_royal_pegasus.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "10",
+      "level_ranks": {
+        "1": 7
+      },
+      "referenced_by": [
+        "skills/sayo.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_enable_mount_goshinme",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "坐骑：御神马",
+            "en": "Mount: Sacred Steed"
+          },
+          "template": {
+            "zh": "坐骑：御神马",
+            "en": "Mount: Sacred Steed",
+            "_via_tr": true
+          },
+          "priority": 50,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/mount.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_sayo_mount_misaki_crow": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御先烏",
+        "en": "Misaki Crow"
+      },
+      "desc": {
+        "zh": "日轮神镜光照之处，黑羽神使循光而来。",
+        "en": "Where the light of the sacred sun-disc mirror falls, the black-feathered divine messenger comes, following its glow."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_great_moon_bird.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "12",
+      "level_ranks": {
+        "1": 12
+      },
+      "referenced_by": [
+        "skills/sayo.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_enable_mount_misaki_crow",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "坐骑：御先烏",
+            "en": "Mount: Misaki Crow"
+          },
+          "template": {
+            "zh": "坐骑：御先烏",
+            "en": "Mount: Misaki Crow",
+            "_via_tr": true
+          },
+          "priority": 50,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/mount.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -9770,11 +9972,9 @@
         "en": "The base ability of the last heir of the Kagamiyama shrine: increased Winds of Magic power reserves, reduced miscast chance, and unlocks the passive ability \"Life Bloom\"."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_main_lore_passive_power_of_yin.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_sayo_texing.png",
+        "size": "24x24"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -10134,8 +10334,8 @@
         "en": "Bestow Omamori"
       },
       "desc": {
-        "zh": "出阵前，尼朋的每一支队伍都从巫女手里接过一枚御守。",
-        "en": "Before marching to battle, every Nipponese unit receives an omamori from the hands of the miko."
+        "zh": "出阵前，每一队神兽都从巫女手里接过一枚御守。",
+        "en": "Before marching to battle, every divine beast receives an omamori from the hands of the miko."
       },
       "icon": {
         "source": "npex",
@@ -10155,14 +10355,14 @@
           "effect": "cth_npex_nippon_ward_magic",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 10.0,
+          "value": 15.0,
           "text": {
-            "zh": "魔法抗性：+10%（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Magic resistance: +10% for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "魔法抗性：+15%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Magic resistance: +15% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "魔法抗性：%+n%（尼朋单位）",
-            "en": "Magic resistance: %+n% for Nipponese units"
+            "zh": "魔法抗性：%+n%（神兽部队）",
+            "en": "Magic resistance: %+n% for divine beast units"
           },
           "priority": 500,
           "icon": {
@@ -10178,14 +10378,14 @@
           "effect": "cth_npex_nippon_ward_physical",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 10.0,
+          "value": 15.0,
           "text": {
-            "zh": "物理抗性：+10%（尼朋单位）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Physical resistance: +10% for Nipponese units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "物理抗性：+15%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Physical resistance: +15% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "物理抗性：%+n%（尼朋单位）",
-            "en": "Physical resistance: %+n% for Nipponese units"
+            "zh": "物理抗性：%+n%（神兽部队）",
+            "en": "Physical resistance: %+n% for divine beast units"
           },
           "priority": 500,
           "icon": {
@@ -10447,11 +10647,9 @@
         "en": "The Sea God Mathlann watches over her fleet: every naval battle she takes part in brings protection to the whole force, and the routes she charts stretch farther still."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_serena_texing.png",
+        "size": "24x24"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -10487,10 +10685,10 @@
           "effect": "wh_main_effect_force_stat_melee_defence",
           "effect_source": "vanilla",
           "scope": "agent_to_parent_army_own",
-          "value": 4.0,
+          "value": 2.0,
           "text": {
-            "zh": "近战防御：+4\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +4\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战防御：+2\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee defence: +2\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战防御：%+n",
@@ -11392,11 +11590,9 @@
         "en": "The commander of the Jade Sea Fleet is protected by the seas of the Far East."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_lord_passive_naval_discipline.png",
-        "size": "71x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_shen_texing.png",
+        "size": "24x24"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -11634,11 +11830,9 @@
         "en": "The veterans who have campaigned alongside the admiral are battle-hardened."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_lord_passive_naval_discipline.png",
-        "size": "71x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_shen_unique_1_1.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -11722,19 +11916,17 @@
       "source": "npex",
       "pack": null,
       "name": {
-        "zh": "剑道导师",
-        "en": "Kendo Mentor"
+        "zh": "心流",
+        "en": "Flow State"
       },
       "desc": {
-        "zh": "震旦的剑法在尼朋的战士之间仍然通用。",
-        "en": "Cathayan swordsmanship is still widely practised among Nipponese warriors."
+        "zh": "剑至化境，心与刃合。自身的破甲武器威力提升，『玉海剑舞』与『舷侧齐射』的冷却时间缩短。",
+        "en": "When the blade becomes second nature, mind and edge move as one. Increases his own armour-piercing weapon damage and shortens the cooldowns of Jade Blade Dance and Broadside."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/character_attack.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_shen_unique_1_2.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -11744,22 +11936,22 @@
       "effects": [
         {
           "level": 1,
-          "effect": "cth_npex_shen_samurai_ma",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 6.0,
+          "effect": "wh2_dlc16_effect_ap_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 15.0,
           "text": {
-            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee attack: +6 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "武器破甲杀伤：+15%",
+            "en": "Armour-piercing weapon damage: +15%"
           },
           "template": {
-            "zh": "近战攻击：%+n（武士部队）",
-            "en": "Melee attack: %+n for Samurai units"
+            "zh": "武器破甲杀伤：%+n%",
+            "en": "Armour-piercing weapon damage: %+n%"
           },
-          "priority": 500,
+          "priority": 55,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "file": "icons/campaign ui/effect_bundles/armour_piercing.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -11767,45 +11959,22 @@
         },
         {
           "level": 1,
-          "effect": "cth_npex_shen_samurai_md",
+          "effect": "cth_npex_effect_shen_xinliu_cooldown",
           "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 4.0,
+          "scope": "character_to_character_own",
+          "value": -20.0,
           "text": {
-            "zh": "近战防御：+4（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +4 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』-20%",
+            "en": "Cooldown: -20% to \"Jade Blade Dance\" and \"Broadside\""
           },
           "template": {
-            "zh": "近战防御：%+n（武士部队）",
-            "en": "Melee defence: %+n for Samurai units"
+            "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』%+n%",
+            "en": "Cooldown: %+n% to \"Jade Blade Dance\" and \"Broadside\""
           },
-          "priority": 500,
+          "priority": 60,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/defence_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_shen_samurai_morale",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 8.0,
-          "text": {
-            "zh": "领导力：+8（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Leadership: +8 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "领导力：%+n（武士部队）",
-            "en": "Leadership: %+n for Samurai units"
-          },
-          "priority": 500,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -12573,6 +12742,34 @@
         }
       ]
     },
+    "cth_npex_skill_tachibana_naotora_mount_kurokumo": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "黑云",
+        "en": "Kurokumo"
+      },
+      "desc": {
+        "zh": "立花家最出众的战马，漆黑的毛色据说与当年雷神的坐骑如出一辙。",
+        "en": "The finest warhorse of the Tachibana stables. Its jet-black coat is said to match the steed the Thunder God once rode."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_barded_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 7
+      },
+      "referenced_by": [
+        "skills/tachibana-naotora.json"
+      ],
+      "effects": []
+    },
     "cth_npex_skill_tachibana_unique_0": {
       "kind": "character_skill",
       "source": "npex",
@@ -12676,10 +12873,10 @@
           "effect": "cth_npex_shen_samurai_ma",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 4.0,
+          "value": 6.0,
           "text": {
-            "zh": "近战攻击：+4（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee attack: +4 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Melee attack: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "近战攻击：%+n（武士部队）",
@@ -12696,36 +12893,13 @@
         },
         {
           "level": 1,
-          "effect": "cth_npex_shen_samurai_md",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 4.0,
-          "text": {
-            "zh": "近战防御：+4（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Melee defence: +4 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "近战防御：%+n（武士部队）",
-            "en": "Melee defence: %+n for Samurai units"
-          },
-          "priority": 500,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/defence_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
           "effect": "cth_npex_shen_samurai_morale",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 6.0,
           "text": {
-            "zh": "领导力：+5（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Leadership: +5 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "领导力：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Leadership: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "领导力：%+n（武士部队）",
@@ -12735,6 +12909,29 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_samurai_missile_damage",
+          "effect_source": "npex",
+          "scope": "agent_to_parent_army_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程武器威力：+10%（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Missile strength: +10% for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "远程武器威力：%+n%（武士部队）",
+            "en": "Missile strength: %+n% for Samurai units"
+          },
+          "priority": 540,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -13442,8 +13639,8 @@
         "en": "Jingasa Brotherhood"
       },
       "desc": {
-        "zh": "尼朋足轻相信同伴的力量。可一旦伤亡过大，情况就会反转。",
-        "en": "The ashigaru of Nippon put their faith in their comrades. Once the losses mount too high, that faith turns against them."
+        "zh": "尼朋人相信同伴的力量。可一旦伤亡过大，情况就会反转。",
+        "en": "The people of Nippon put their faith in their comrades. Once the losses mount too high, that faith turns against them."
       },
       "icon": {
         "source": "npex",
@@ -29135,8 +29332,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/samurai-taisho-black.json",
-        "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/samurai-taisho.json"
       ],
       "effects": [
         {

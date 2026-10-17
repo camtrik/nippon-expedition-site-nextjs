@@ -19,13 +19,6 @@
             }
           },
           {
-            "slug": "tide-guard",
-            "name": {
-              "zh": "潮汐禁卫",
-              "en": "Tide Guard"
-            }
-          },
-          {
             "slug": "fleet-gunners",
             "name": {
               "zh": "舰队铳手",
@@ -33,10 +26,10 @@
             }
           },
           {
-            "slug": "empyrean-guard",
+            "slug": "tide-guard",
             "name": {
-              "zh": "云霄禁卫",
-              "en": "Empyrean Guard"
+              "zh": "潮汐禁卫",
+              "en": "Tide Guard"
             }
           },
           {
@@ -44,6 +37,13 @@
             "name": {
               "zh": "沧溟巨炮",
               "en": "Abyssal Grand Cannon"
+            }
+          },
+          {
+            "slug": "empyrean-guard",
+            "name": {
+              "zh": "云霄禁卫",
+              "en": "Empyrean Guard"
             }
           }
         ]
@@ -57,14 +57,14 @@
           {
             "slug": "yari-ashigaru",
             "name": {
-              "zh": "足轻长枪兵",
+              "zh": "枪足轻",
               "en": "Yari Ashigaru"
             }
           },
           {
             "slug": "bow-ashigaru",
             "name": {
-              "zh": "足轻弓兵",
+              "zh": "弓足轻",
               "en": "Bow Ashigaru"
             }
           },
@@ -83,6 +83,13 @@
             }
           },
           {
+            "slug": "inari-fox",
+            "name": {
+              "zh": "稻荷灵狐使者",
+              "en": "Inari Fox Emissary"
+            }
+          },
+          {
             "slug": "teppo-samurai",
             "name": {
               "zh": "铁炮武士",
@@ -97,13 +104,6 @@
             }
           },
           {
-            "slug": "kirin",
-            "name": {
-              "zh": "麒麟",
-              "en": "Kirin"
-            }
-          },
-          {
             "slug": "misaki-crow",
             "name": {
               "zh": "御先烏",
@@ -111,10 +111,10 @@
             }
           },
           {
-            "slug": "inari-fox",
+            "slug": "kirin",
             "name": {
-              "zh": "稻荷灵狐使者",
-              "en": "Inari Fox Emissary"
+              "zh": "麒麟",
+              "en": "Kirin"
             }
           }
         ]

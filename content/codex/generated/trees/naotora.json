@@ -53,16 +53,16 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+4（武士部队）（英雄所在军队）",
-                  "en": "Melee attack: +4 for Samurai units (Hero's army)"
+                  "zh": "近战攻击：+6（武士部队）（英雄所在军队）",
+                  "en": "Melee attack: +6 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+4（武士部队）（英雄所在军队）",
-                  "en": "Melee defence: +4 for Samurai units (Hero's army)"
+                  "zh": "领导力：+6（武士部队）（英雄所在军队）",
+                  "en": "Leadership: +6 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "领导力：+5（武士部队）（英雄所在军队）",
-                  "en": "Leadership: +5 for Samurai units (Hero's army)"
+                  "zh": "远程武器威力：+10%（武士部队）（英雄所在军队）",
+                  "en": "Missile strength: +10% for Samurai units (Hero's army)"
                 }
               ]
             }
@@ -227,6 +227,25 @@
     {
       "indent": 0,
       "nodes": [
+        {
+          "key": "cth_npex_skill_tachibana_naotora_mount_kurokumo",
+          "name": {
+            "zh": "黑云",
+            "en": "Kurokumo"
+          },
+          "desc": {
+            "zh": "立花家最出众的战马，漆黑的毛色据说与当年雷神的坐骑如出一辙。",
+            "en": "The finest warhorse of the Tachibana stables. Its jet-black coat is said to match the steed the Thunder God once rode."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_tachibana_naotora_mount_kurokumo.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 8 解锁",
+            "en": "Unlocks at rank 8"
+          },
+          "hub": null
+        },
         {
           "key": "cth_npex_skill_dump",
           "name": {

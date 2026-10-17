@@ -17,11 +17,15 @@ const intl = createMiddleware(routing)
  * x-vercel-ip-country 头；预览部署的域名不在 MAIN_HOSTS 里，不跳。
  * ⚠️ 以后加了不能静态导出的页面（要服务端的那种），在这里按路径放行，别让大陆访客跳到镜像上的 404。
  */
+// 2026-10-17 实测（Globalping 国内 30 节点，同一批节点对比同一个静态文件）：Vercel 中位 ~300ms，
+// 镜像中位 ~775ms、建连慢近 3 倍，镜像反而更慢，所以先关掉跳转。镜像照常自动发布，
+// 直接访问 cn. 可以对比；确认对某类线路更快再打开。
+const REDIRECT_CN = false
 const CN_MIRROR = 'https://cn.nippon-expedition.com'
 const MAIN_HOSTS = new Set(['nippon-expedition.com', 'www.nippon-expedition.com'])
 
 export default function proxy(req: NextRequest) {
-  if (req.headers.get('x-vercel-ip-country') === 'CN' && MAIN_HOSTS.has(req.nextUrl.hostname)) {
+  if (REDIRECT_CN && req.headers.get('x-vercel-ip-country') === 'CN' && MAIN_HOSTS.has(req.nextUrl.hostname)) {
     // 镜像上中文页在根目录、没有 /zh 前缀
     const path = req.nextUrl.pathname.replace(/^\/zh(?=\/|$)/, '') || '/'
     return NextResponse.redirect(CN_MIRROR + path + req.nextUrl.search, 307)

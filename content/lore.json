@@ -1,5 +1,5 @@
 {
-  "_comment": "背景故事页。引文与大部分正文是游戏里的中英原文（开场短片旁白 vo_fmv_texts、加载屏 custom_loading_screen、图鉴长文 unit_description_historical_texts、阵营导语 frontend_faction_leaders）；串联段落与「立场」两栏照 mod 仓库 _docs/lore/战役人物与派系设计.md 整理。",
+  "_comment": "背景故事页。正文是游戏里的中英原文（图鉴长文 unit_description_historical_texts、阵营导语 frontend_faction_leaders）与 mod 仓库 _docs/lore/战役人物与派系设计.md 的串联段落；开场短片旁白引文与「追随者／与震旦朝廷／在尼朋人眼中」两栏、「她的舰队在修気寺登陆」一段按 2026-10-17 用户要求撤下，伊吹那句短介绍也撤下。",
   "title": {
     "zh": "她将镇守这万里沧海",
     "en": "She Will Keep the Sea"
@@ -15,96 +15,14 @@
         "zh": "无冕提督",
         "en": "The Uncrowned Admiral"
       },
-      "quote": [
-        {
-          "zh": "巍京以笔墨划定疆界。",
-          "en": "Wei-Jin draws its borders in ink."
-        },
-        {
-          "zh": "然怒海从不听命。",
-          "en": "The sea has never obeyed them."
-        },
-        {
-          "zh": "『溟龙』胤隐已不知所踪，",
-          "en": "Yin-Yin vanished."
-        },
-        {
-          "zh": "海寇卷土重来。",
-          "en": "The pirates returned."
-        },
-        {
-          "zh": "沈长风引兵越界追击，凡挡路之船，尽数击沉",
-          "en": "Shen Changfeng followed them past the line, and sank every ship in her way."
-        },
-        {
-          "zh": "东海的捷报与尼朋的抗议，同日递抵巍京。",
-          "en": "Her victory and Nippon's protest reached Wei-Jin the same day."
-        },
-        {
-          "zh": "朝廷不录其功，反治其罪",
-          "en": "The Court chose the protest over her victory."
-        },
-        {
-          "zh": "诏曰：交卸兵权，即日还京",
-          "en": "Surrender your fleet, it said. Come home."
-        },
-        {
-          "zh": "她未曾奉诏",
-          "en": "She did not come home."
-        },
-        {
-          "zh": "无朝廷旌旗。无御笔册封。无加冕之身。",
-          "en": "No banner of the Court. No charter. No crown."
-        },
-        {
-          "zh": "携誓愿相随之众，她引军直指尼朋",
-          "en": "With all who would follow, she set her course for Nippon –"
-        },
-        {
-          "zh": "那片土地战火经年，早已忘了『秩序』二字",
-          "en": "a land at war so long, it has forgotten the word for order."
-        },
-        {
-          "zh": "她此来，不为受雇，亦不为屈膝",
-          "en": "She has not come to be hired. Nor to kneel."
-        },
-        {
-          "zh": "且让巍京自守案头笔墨，",
-          "en": "Let Wei-Jin keep its ink."
-        },
-        {
-          "zh": "而她，当镇守这万里沧海。",
-          "en": "She will keep the sea."
-        }
-      ],
+      "quote": [],
       "body": [
         {
           "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
           "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
         }
       ],
-      "pairs": [
-        {
-          "k": {
-            "zh": "追随者",
-            "en": "Her followers"
-          },
-          "v": {
-            "zh": "一小批不愿弃她而去的旧部：几艘战船，几百号水手与士卒。没有朝廷的旗号，他们成了「无冕之师」，既不是震旦的正规军，也未获尼朋任何一方承认，纯粹靠战力与信用在夹缝中求生。",
-            "en": "A handful of veterans who would not leave her: a few warships, a few hundred sailors and soldiers. With no banner of the Court above them they became an army without a crown, neither Cathay's regulars nor recognised by any power in Nippon, living on their strength and their word alone."
-          }
-        },
-        {
-          "k": {
-            "zh": "与震旦朝廷",
-            "en": "Toward the Celestial Court"
-          },
-          "v": {
-            "zh": "不是敌人，但也回不去。只要她不打出震旦旗号惹是生非，朝廷便不会明令通缉；但她也得不到任何官方支持、补给或承认。",
-            "en": "Not an enemy, but there is no going back. As long as she does not fly Cathay's banner and stir up trouble, the Court will issue no warrant for her, and give her no support, no supplies and no recognition either."
-          }
-        }
-      ]
+      "pairs": []
     },
     {
       "id": "nippon",
@@ -117,24 +35,9 @@
         {
           "zh": "震旦往东渡过极东之海，便是武士之国尼朋。尼朋名义上共尊圣日朝廷，朝政却形同虚设，手握兵权的武士家族各自为政，大名之间为争夺将军之位，战事经年不休。而今，混沌的长船自寒雾中靠岸，异邦舰队窥伺海路，海盗、妖魔与野心家纷纷登上群岛。圣日的光辉仍照耀京都，但在列岛边陲，诸神、刀剑与野心已经一同出鞘。",
           "en": "Across the far eastern sea from Cathay lies Nippon, land of the samurai. In name it bows to the court of the Holy Sun, yet the court is a shadow, and the samurai clans answer only to themselves. Year after year, the daimyo bleed one another white over the title of Shogun. Now the longships of Chaos grind ashore through the cold mist, foreign fleets stalk the sea lanes, and pirates, monsters and the ambitious pour onto the islands. The Holy Sun still shines on the capital, but at the edge of the isles, gods, blades and ambition are unsheathed as one."
-        },
-        {
-          "zh": "她的舰队在尼朋北岸的修気寺附近登陆。沈长风既无意为震旦效忠，也无意对尼朋称臣：她不把舰队卖给出价最高的一方，而是凭手中的兵力与震旦水师的治军之术，先站稳滩头，再一步步平定周边的战乱，把尼朋的武士与神社供奉的灵兽收编到麾下。玉海舰队从第一天起就是震旦的军官加上尼朋的兵源，这个混合走的是征服与收编，不是花钱雇佣。",
-          "en": "Her fleet makes landfall near Shuge Monastery on Nippon's northern shore. Shen Changfeng means neither to serve Cathay nor to bow to Nippon. She will not sell her fleet to the highest bidder; with the strength she has and the discipline of the Cathayan navy, she will hold the beachhead first, then put down the wars around it one by one, bringing Nippon's samurai and the spirit beasts of its shrines under her banner. From the first day the Jade Sea Fleet is Cathayan officers leading Nipponese troops, and it gets there by conquest and allegiance, not by coin."
         }
       ],
-      "pairs": [
-        {
-          "k": {
-            "zh": "在尼朋人眼中",
-            "en": "In Nipponese eyes"
-          },
-          "v": {
-            "zh": "一个不求任何一方册封、也不受雇于人的外来强者。有的大名视她为鲸吞领土的入侵者；饱受内战与鼠患之苦的平民和武士，则视她为终结乱世的意外救星。两种看法并存，她不必选边。",
-            "en": "A powerful outsider who seeks no one's patent and takes no one's pay. Some daimyo see an invader swallowing their lands; commoners and samurai worn down by civil war and the ratmen see an unlooked-for saviour who might end the age of strife. Both views stand, and she has no need to choose between them."
-          }
-        }
-      ]
+      "pairs": []
     },
     {
       "id": "yokai",
@@ -142,12 +45,7 @@
         "zh": "山水所生",
         "en": "Born of Mountain and Water"
       },
-      "quote": [
-        {
-          "zh": "身上流淌鬼族之血的行者。他背负无名长刀行遍尼朋，以守护苍生之愿，辟人妖同阵之路。",
-          "en": "An oni-blooded wanderer bearing the Nameless Odachi, sworn to shield the common folk and unite men and yokai in battle."
-        }
-      ],
+      "quote": [],
       "body": [
         {
           "zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。",

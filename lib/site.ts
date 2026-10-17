@@ -2,11 +2,11 @@
 
 /**
  * 绝对地址的基准，metadata 的 canonical / hreflang / og:image 都从它拼。
- * 部署到 Vercel 之后设 NEXT_PUBLIC_SITE_ORIGIN；本地没设就用占位域名，
- * 反正相对路径在页面里照样能点，只有 <head> 里那几个绝对地址会不对。
+ * 默认就是正式域名；要临时换（比如测别的域名）设 NEXT_PUBLIC_SITE_ORIGIN。
+ * 别写回 *.vercel.app：那个域名在大陆被 DNS 污染，项目里已设成 308 跳到正式域名。
  */
 export const SITE_ORIGIN = (
-  process.env.NEXT_PUBLIC_SITE_ORIGIN ?? 'https://nippon-expedition.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_ORIGIN ?? 'https://nippon-expedition.com'
 ).replace(/\/+$/, '')
 
 /**

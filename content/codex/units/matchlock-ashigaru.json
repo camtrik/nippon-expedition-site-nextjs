@@ -3,6 +3,7 @@
   "slug": "matchlock-ashigaru",
   "unit": "cth_npex_matchlock_ashigaru_0",
   "group": "nippon",
+  "kind": "ranged",
   "name": {
     "zh": "铁炮足轻",
     "en": "Matchlock Ashigaru"

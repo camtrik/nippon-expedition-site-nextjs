@@ -3,6 +3,7 @@
   "slug": "fleet-gunners",
   "unit": "cth_npex_jade_sea_fleet_gunners_0",
   "group": "fleet",
+  "kind": "ranged",
   "name": { "zh": "舰队铳手", "en": "Fleet Gunners" },
   "role": { "zh": "轻甲火器远程步兵 · T2", "en": "Lightly armoured gunpowder infantry · T2" },
   "desc": {

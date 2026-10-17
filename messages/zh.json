@@ -64,6 +64,11 @@
     "legendary-hero": "传奇英雄 · 远征同伴",
     "generic": "通用领主与英雄"
   },
+  "unitKinds": {
+    "melee": "近战",
+    "ranged": "远程",
+    "monster": "怪兽与怪步"
+  },
   "notFound": "没有这个条目。",
   "detail": {
     "secType": "兵种类型",

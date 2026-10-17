@@ -3,6 +3,7 @@
   "slug": "empyrean-guard",
   "unit": "cth_npex_empyrean_guard_0",
   "group": "fleet",
+  "kind": "monster",
   "name": { "zh": "云霄禁卫（海龙马骑兵）", "en": "Empyrean Guard (Sea Longma Riders)" },
   "role": { "zh": "顶级飞行冲击骑兵 · T5 · 舰队压轴兵种", "en": "Top-tier flying shock cavalry · T5 · the fleet's capstone unit" },
   "desc": {

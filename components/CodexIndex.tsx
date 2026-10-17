@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from 'next-intl'
 
 import { ArtCard } from '@/components/art'
 import { Link } from '@/i18n/navigation'
-import { allChars, allUnits, charGroups, unitGroups } from '@/lib/content/codex'
+import { allChars, allUnits, charGroups, unitKindGroups } from '@/lib/content/codex'
 import type { Bi } from '@/lib/content/schema'
 import { pick, type Locale } from '@/lib/i18n'
 
@@ -37,9 +37,9 @@ export function CodexIndex({ tab }: { tab: 'units' | 'chars' }) {
         </nav>
 
         {tab === 'units'
-          ? unitGroups.map((g, i) => (
-              <section className="codex-group" key={i}>
-                <h2 className="eyebrow">{pick(g.name, locale)}</h2>
+          ? unitKindGroups.map((g) => (
+              <section className="codex-group" key={g.kind}>
+                <h2 className="eyebrow">{t(`unitKinds.${g.kind}`)}</h2>
                 <ul className="codex-grid">
                   {g.items.map((u) => (
                     <li key={u.slug}>

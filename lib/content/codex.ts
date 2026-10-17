@@ -14,6 +14,7 @@ import {
   GenTraits,
   GenTree,
   GenUnit,
+  UNIT_KINDS,
   type CodexCharData,
   type CodexUnitData,
   type GenTraitsData,
@@ -59,6 +60,12 @@ export const unitGroups = homeUnits.groups.map((g) => ({
 }))
 
 export const allUnits = unitGroups.flatMap((g) => g.items)
+
+/** 图鉴索引按兵种类型分组（近战 / 远程 / 怪兽与怪步）；组内沿用简介页的顺序。简介页兵牌仍按 unitGroups。 */
+export const unitKindGroups = UNIT_KINDS.map((kind) => ({
+  kind,
+  items: allUnits.filter((u) => u.kind === kind),
+})).filter((g) => g.items.length > 0)
 
 for (const slug of unitFiles.keys()) {
   if (!allUnits.some((u) => u.slug === slug)) {

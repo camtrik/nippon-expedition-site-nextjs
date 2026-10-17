@@ -3,6 +3,7 @@
   "slug": "abyssal-grand-cannon",
   "unit": "cth_npex_abyssal_grand_cannon_0",
   "group": "fleet",
+  "kind": "ranged",
   "name": { "zh": "沧溟巨炮", "en": "Abyssal Grand Cannon" },
   "role": { "zh": "魔法炮兵 · T3 · 双弹种：直射反大／迫击反步", "en": "Magical artillery · T3 · two shot types: direct-fire anti-large / mortar anti-infantry" },
   "desc": {

@@ -3,6 +3,7 @@
   "slug": "yari-ashigaru",
   "unit": "cth_npex_yari_ashigaru_0",
   "group": "nippon",
+  "kind": "melee",
   "name": {
     "zh": "足轻长枪兵",
     "en": "Yari Ashigaru"

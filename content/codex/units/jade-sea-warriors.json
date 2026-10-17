@@ -3,6 +3,7 @@
   "slug": "jade-sea-warriors",
   "unit": "cth_npex_jade_sea_sailors_0",
   "group": "fleet",
+  "kind": "melee",
   "name": { "zh": "玉海潮勇", "en": "Jade Sea Warriors" },
   "role": { "zh": "基础近战步兵 · T1 · 舰队招牌兵", "en": "Basic melee infantry · T1 · the fleet's signature troops" },
   "desc": {

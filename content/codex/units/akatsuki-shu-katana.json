@@ -3,6 +3,7 @@
   "slug": "akatsuki-shu-katana",
   "unit": "cth_npex_akatsuki_shu_0",
   "group": "akatsuki",
+  "kind": "melee",
   "name": { "zh": "晓行众（太刀）", "en": "Akatsuki-shu (Katana)" },
   "role": { "zh": "轻甲反步突击步兵 · T3 · 冲得快、砍得疼、站不住", "en": "Lightly armoured anti-infantry shock troops · T3 · quick in, hard-hitting, not built to hold a line" },
   "desc": {

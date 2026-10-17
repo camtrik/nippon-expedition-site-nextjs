@@ -3,6 +3,7 @@
   "slug": "kirin",
   "unit": "cth_npex_kirin_0",
   "group": "nippon",
+  "kind": "monster",
   "name": { "zh": "麒麟", "en": "Kirin" },
   "role": { "zh": "高机动突击型小型魔法巨兽 · T5 · 神兽", "en": "Fast magical shock monster, small build · T5 · divine beast" },
   "desc": {

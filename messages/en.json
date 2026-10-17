@@ -64,6 +64,11 @@
     "legendary-hero": "Legendary Heroes · Companions",
     "generic": "Generic lords and heroes"
   },
+  "unitKinds": {
+    "melee": "Melee",
+    "ranged": "Ranged",
+    "monster": "Monsters and monstrous infantry"
+  },
   "notFound": "No such entry.",
   "detail": {
     "secType": "Unit type",

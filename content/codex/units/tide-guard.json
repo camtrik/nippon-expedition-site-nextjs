@@ -3,6 +3,7 @@
   "slug": "tide-guard",
   "unit": "cth_npex_tide_guard_0",
   "group": "fleet",
+  "kind": "ranged",
   "name": { "zh": "潮汐禁卫", "en": "Tide Guard" },
   "role": { "zh": "精英混合远程步兵 · T3", "en": "Elite hybrid missile infantry · T3" },
   "desc": {

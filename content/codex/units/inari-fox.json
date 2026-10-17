@@ -3,6 +3,7 @@
   "slug": "inari-fox",
   "unit": "cth_npex_inari_fox_0",
   "group": "nippon",
+  "kind": "monster",
   "name": { "zh": "稻荷灵狐使者", "en": "Inari Fox Emissary" },
   "role": { "zh": "高机动魔法战兽 · T2 · 侧袭骚扰", "en": "Fast magical war beasts · T2 · flanking and harassment" },
   "desc": {

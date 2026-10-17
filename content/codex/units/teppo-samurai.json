@@ -3,6 +3,7 @@
   "slug": "teppo-samurai",
   "unit": "cth_npex_teppo_samurai_0",
   "group": "nippon",
+  "kind": "ranged",
   "name": { "zh": "铁炮武士", "en": "Teppo Samurai" },
   "role": { "zh": "重甲火器远程步兵 · T3", "en": "Armoured gunpowder infantry · T3" },
   "desc": {

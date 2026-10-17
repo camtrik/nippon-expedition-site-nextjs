@@ -3,6 +3,7 @@
   "slug": "misaki-crow",
   "unit": "cth_npex_misaki_crow_0",
   "group": "nippon",
+  "kind": "monster",
   "name": {
     "zh": "御先烏",
     "en": "Misaki Crow"

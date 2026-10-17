@@ -3,6 +3,7 @@
   "slug": "thunderblade-hatamoto",
   "unit": "cth_npex_hatamoto_raijin_0",
   "group": "nippon",
+  "kind": "melee",
   "name": { "zh": "雷刃旗本", "en": "Thunderblade Hatamoto" },
   "role": { "zh": "精锐近战步兵 · T4 · 大名近卫", "en": "Elite melee infantry · T4 · a daimyo's household guard" },
   "desc": {

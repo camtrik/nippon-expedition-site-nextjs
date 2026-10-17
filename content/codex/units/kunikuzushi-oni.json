@@ -3,6 +3,7 @@
   "slug": "kunikuzushi-oni",
   "unit": "cth_npex_kunikuzushi_oni_0",
   "group": "akatsuki",
+  "kind": "monster",
   "name": { "zh": "国崩巨鬼", "en": "Kunikuzushi Oni" },
   "role": {
     "zh": "怪物炮击步兵 · T4 · 短程破甲炮击，被近身时金棒反打",

@@ -3,6 +3,7 @@
   "slug": "yari-samurai",
   "unit": "cth_npex_yari_samurai_0",
   "group": "nippon",
+  "kind": "melee",
   "name": { "zh": "长枪武士", "en": "Yari Samurai" },
   "role": { "zh": "重甲反大长枪步兵 · T2 · 中坚", "en": "Armoured anti-large spear infantry · T2 · the backbone of the line" },
   "desc": {

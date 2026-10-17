@@ -3,6 +3,7 @@
   "slug": "akatsuki-shu-bow",
   "unit": "cth_npex_akatsuki_shu_1",
   "group": "akatsuki",
+  "kind": "ranged",
   "name": { "zh": "晓行众（弓）", "en": "Akatsuki-shu (Bow)" },
   "role": { "zh": "潜行游击弓手 · T3 · 出手快、箭带毒、能自卫", "en": "Stealthy skirmishing archers · T3 · quick to shoot, poisoned arrows, able to defend themselves" },
   "desc": {

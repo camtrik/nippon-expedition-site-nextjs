@@ -3,6 +3,7 @@
   "slug": "bow-ashigaru",
   "unit": "cth_npex_bow_ashigaru_0",
   "group": "nippon",
+  "kind": "ranged",
   "name": {
     "zh": "足轻弓兵",
     "en": "Bow Ashigaru"

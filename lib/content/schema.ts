@@ -206,12 +206,15 @@ const Paragraphs = z
 const Row = obj({ k: Bilingual, v: Bilingual, form: Bilingual.optional() })
 
 export const UNIT_GROUPS = ['fleet', 'nippon', 'akatsuki'] as const
+/** 图鉴索引的分组，照游戏里 main_units.caste 归：近战步兵 / 远程步兵与火炮 / 怪物、战兽、怪物步兵与怪物骑兵 */
+export const UNIT_KINDS = ['melee', 'ranged', 'monster'] as const
 
 export const CodexUnit = obj({
   slug: z.string(),
   /** land_units key，生成那一侧按它去 data/vanilla/units 找技能与部队属性 */
   unit: z.string(),
   group: z.enum(UNIT_GROUPS),
+  kind: z.enum(UNIT_KINDS),
   name: Bilingual,
   /** 战场定位，标题上方那一行 */
   role: Bilingual,

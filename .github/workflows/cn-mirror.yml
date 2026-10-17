@@ -1,0 +1,48 @@
+# 国内镜像：每次推送 main，把同一份源码导出成纯静态，发布到 GitHub Pages（cn.nippon-expedition.com）。
+# 中国大陆访客由 proxy.ts 按 Vercel 的地区头跳过来；其他地区照旧走 Vercel。
+name: cn-mirror
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cn-mirror
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # 中间件不能参与静态导出，镜像上也用不到（语言前缀由 postbuild 处理）
+      - run: rm proxy.ts
+      - run: pnpm build
+        env:
+          STATIC_EXPORT: '1'
+      - run: node scripts/cn-mirror-postbuild.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

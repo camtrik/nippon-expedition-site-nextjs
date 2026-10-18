@@ -5,6 +5,10 @@
   "doc": "_docs/data/units/潮汐禁卫兵种设计.md",
   "abilities": [
     {
+      "ref": "cth_npex_unit_passive_guard_bearing",
+      "source": "npex"
+    },
+    {
       "ref": "wh3_main_unit_passive_battle_harmony_yin",
       "source": "vanilla"
     }
@@ -90,8 +94,8 @@
     "recruit_cost": 1200,
     "upkeep_cost": 300,
     "num_men": 80,
-    "melee_attack": 40,
-    "melee_defence": 45,
+    "melee_attack": 31,
+    "melee_defence": 38,
     "charge_bonus": 10,
     "leadership": 80,
     "armour": 70,
@@ -99,8 +103,8 @@
     "bonus_hp": 80,
     "speed": 36,
     "melee_damage": [
-      12,
-      22
+      11,
+      20
     ],
     "melee_interval": 4,
     "bonus_v_large": 18,

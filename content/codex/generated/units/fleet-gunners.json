@@ -18,19 +18,6 @@
   ],
   "attrs": [
     {
-      "key": "guerrilla_deploy",
-      "source": "vanilla",
-      "name": {
-        "zh": "先锋部署",
-        "en": "Vanguard Deployment"
-      },
-      "desc": {
-        "zh": "这支部队可以在部署区域外进行部署",
-        "en": "This unit can deploy outside the deployment zone."
-      },
-      "icon": "guerrilla_deploy.png"
-    },
-    {
       "key": "hide_forest",
       "source": "vanilla",
       "name": {

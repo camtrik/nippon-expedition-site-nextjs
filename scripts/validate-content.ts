@@ -47,7 +47,7 @@ for (const c of allChars) sweep(c, `codex/chars/${c.slug}`)
 // 图鉴：手写内容对不对得上 data/vanilla 与 assets/，生成物是不是最新
 problems.push(...checkCodex())
 try {
-  execFileSync('pnpm', ['exec', 'tsx', 'scripts/export-codex.ts', '--check'], { stdio: 'pipe' })
+  execFileSync('pnpm', ['exec', 'tsx', 'scripts/export-codex.ts', '--check'], { stdio: 'pipe', shell: true })
 } catch (e) {
   problems.push(String((e as { stderr?: Buffer }).stderr ?? e).trim())
 }

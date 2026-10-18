@@ -11602,6 +11602,52 @@
       "effects": [
         {
           "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_patrol_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc26_effect_stance_availability_settle_enable",
+          "effect_source": "vanilla",
+          "scope": "character_to_force_own_unseen",
+          "value": 1.0,
+          "text": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "template": {
+            "zh": null,
+            "en": "(HIDDEN) Stance"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/teleport.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
           "effect_source": "vanilla",
           "scope": "general_to_force_own_unseen",
@@ -13629,6 +13675,29 @@
         "units/empyrean-guard.json"
       ]
     },
+    "cth_npex_unit_passive_guard_bearing": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "禁卫之仪",
+        "en": "Bearing of the Guard"
+      },
+      "desc": {
+        "zh": "水师的禁卫在阵形完整时攻守皆精",
+        "en": "While their formation holds, the fleet's guards excel in both attack and defence."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_unit_passive_guard_bearing.png",
+        "size": "38x38"
+      },
+      "referenced_by": [
+        "units/empyrean-guard.json",
+        "units/tide-guard.json"
+      ]
+    },
     "cth_npex_unit_passive_jingasa_bonds": {
       "kind": "unit_ability",
       "source": "npex",
@@ -13874,8 +13943,7 @@
       },
       "referenced_by": [
         "units/akatsuki-shu-bow.json",
-        "units/akatsuki-shu-katana.json",
-        "units/jade-sea-fleet-gunners.json"
+        "units/akatsuki-shu-katana.json"
       ]
     },
     "hide_forest": {

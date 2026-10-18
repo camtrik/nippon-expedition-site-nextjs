@@ -13,6 +13,10 @@
       "source": "npex"
     },
     {
+      "ref": "cth_npex_unit_passive_guard_bearing",
+      "source": "npex"
+    },
+    {
       "ref": "wh3_main_unit_passive_battle_harmony_yang",
       "source": "vanilla"
     }
@@ -80,18 +84,18 @@
     "recruit_cost": 1900,
     "upkeep_cost": 475,
     "num_men": 24,
-    "melee_attack": 53,
-    "melee_defence": 48,
+    "melee_attack": 42,
+    "melee_defence": 36,
     "charge_bonus": 80,
     "leadership": 85,
-    "armour": 110,
-    "hp": 338,
-    "bonus_hp": 330,
+    "armour": 80,
+    "hp": 293,
+    "bonus_hp": 285,
     "speed": 115,
     "fly_speed": 133,
     "melee_damage": [
-      22,
-      58
+      20,
+      50
     ],
     "melee_interval": 4.7,
     "resist_magic": 25

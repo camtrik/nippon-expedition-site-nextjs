@@ -11,9 +11,6 @@
   ],
   "attributes_from_db": [
     {
-      "ref": "guerrilla_deploy"
-    },
-    {
       "ref": "hide_forest"
     },
     {

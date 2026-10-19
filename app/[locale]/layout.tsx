@@ -9,6 +9,7 @@ import { SiteNav } from '@/components/SiteNav'
 import { routing } from '@/i18n/routing'
 import { LOCALE_META } from '@/lib/i18n'
 import { fontVariables } from '../fonts'
+import { Analytics } from '@vercel/analytics/react'
 
 // zh / en 两套页面都在构建时展开。加语言就改 i18n/routing.ts 一处。
 // dynamicParams=false：locales 之外的段（/xx/）直接 404，不用在组件里兜。
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: LayoutProps<'/[locale]'>) {
             <SiteFooter />
           </div>
           <HashSync />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

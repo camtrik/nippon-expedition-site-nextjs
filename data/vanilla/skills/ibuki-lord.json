@@ -1,0 +1,817 @@
+{
+  "subject": "ibuki-lord",
+  "name_cn": "伊吹（领主）",
+  "role": "lord_legendary",
+  "set_key": "cth_npex_skill_set_ibuki_lord",
+  "agent_type": "general",
+  "agent_subtype": "cth_npex_ibuki",
+  "node_count": 48,
+  "vanilla_skill_count": 38,
+  "nodes": [
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_master_starter",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_rite_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_rite_1",
+      "tier": 0,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_inspiring_presence",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_0",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_route_marcher",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_texing",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_texing_companion_lord",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_wh3_main_agent_action_scaling",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_generic_0",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_devastating_charge",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_1",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_rite_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_rite_2",
+      "tier": 1,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_1",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_1_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_iron_disciplinarian",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_generic_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_2_companion_lord",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_self_full_plate_armour",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_1",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_2",
+      "tier": 2,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_recruitment_cost",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_indomitable",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_1",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_3",
+      "tier": 3,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_1_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_lord_all_campaign_reassuring_presence",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_4_companion_lord",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_blade",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_1",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_4",
+      "tier": 4,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_1_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_fervent",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ibuki_unique_5_companion_lord",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_onslaught",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_2_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_5",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_5",
+      "tier": 5,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_irrepressible",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_wound-maker",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_3",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_1_6",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_6",
+      "tier": 6,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_3_1",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_lightning_strike",
+      "tier": 6,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_scarred_veteran_2",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_3",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_rally",
+      "tier": 7,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "6",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_1_5",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_1_6",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_3_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_quartermaster",
+      "tier": 7,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_hard_to_hit",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_3",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_3_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_1",
+      "tier": 8,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_logistician",
+      "tier": 8,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_spy_self_fleet-footed",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_3",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_3_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_2",
+      "tier": 9,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_campaign_alert",
+      "tier": 9,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_5",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_hef_alastar_unique_heroic_killing_blow",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_cth_npex_skill_node_ibuki_combat_4_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_3_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_3",
+      "tier": 10,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_campaign_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_campaign_army",
+      "tier": 10,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_campaign_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_campaign_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_3_4",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_4",
+      "tier": 11,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_army_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_battle_stand_your_ground",
+      "tier": 12,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_lord_ibuki_army_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_lord_ibuki_army_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_lord_ibuki_cth_npex_skill_node_dump",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_dump",
+      "tier": 31,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    }
+  ]
+}

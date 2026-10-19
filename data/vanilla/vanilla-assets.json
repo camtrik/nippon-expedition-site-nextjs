@@ -2184,13 +2184,17 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/serena-lord.json",
         "skills/serena.json",
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -4798,6 +4802,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ]
     },
@@ -4824,6 +4829,7 @@
         "2": 9
       },
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -4902,6 +4908,7 @@
         "2": 9
       },
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -5028,6 +5035,77 @@
         }
       ]
     },
+    "cth_npex_skill_ibuki_texing_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "破晓行者",
+        "en": "Wanderer of the Dawn"
+      },
+      "desc": {
+        "zh": "行者不问虚名，唯以手中长刃引路。凡随他进军者，不论是人是妖，刀锋皆不迟疑。",
+        "en": "The Wanderer cares nothing for empty titles; he lets the odachi in his hands lead the way. Of those who march behind him, man or yokai, not one blade hesitates."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_ibuki_texing.png",
+        "size": "24x24"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ibuki-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc12_effect_force_stat_melee_attack_attacking",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 5.0,
+          "text": {
+            "zh": "近战攻击：攻击时+5\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +5 when attacking\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：攻击时%+n",
+            "en": "Melee attack: %+n when attacking"
+          },
+          "priority": 431,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_morale",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "领导力：+8（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +8 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "领导力：%+n（妖怪部队）",
+            "en": "Leadership: %+n for Yokai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_ibuki_unique_0": {
       "kind": "character_skill",
       "source": "npex",
@@ -5052,6 +5130,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -5128,6 +5207,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -5275,6 +5355,125 @@
         }
       ]
     },
+    "cth_npex_skill_ibuki_unique_2_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "同袍",
+        "en": "Comrades in Arms"
+      },
+      "desc": {
+        "zh": "两边的血仇积了几百年，但在同一面战旗下挡过几回冷箭、分过几次干粮之后，就没人再去计较身边并肩站着的是人还是妖了。",
+        "en": "The blood-feud between the two has been centuries in the making. But once they have stopped a few stray arrows for one another beneath the same banner, and shared out their rations a time or two, no one troubles any longer over whether it is a man or a yokai standing at his shoulder."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_army.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ibuki-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_ma",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战攻击：+6（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +6 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：%+n（妖怪部队）",
+            "en": "Melee attack: %+n for Yokai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_md",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战防御：+6（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +6 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战防御：%+n（妖怪部队）",
+            "en": "Melee defence: %+n for Yokai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_xp",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 2.0,
+          "text": {
+            "zh": "新募部队等级：妖怪部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruit rank: +2 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "新募部队等级：妖怪部队%+n",
+            "en": "Recruit rank: %+n for Yokai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/experience.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_kin_reload",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "装弹时间降低：+15%（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +15% for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（妖怪部队）",
+            "en": "Reload time reduction: %+n% for Yokai units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_ibuki_unique_3": {
       "kind": "character_skill",
       "source": "npex",
@@ -5295,6 +5494,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -5466,6 +5666,126 @@
         "cth_npex_skill_ibuki_passive_bloodline"
       ]
     },
+    "cth_npex_skill_ibuki_unique_4_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "鬼族血脉",
+        "en": "Blood of the Oni"
+      },
+      "desc": {
+        "zh": "鬼族血脉在筋骨中奔涌不息，皮开肉绽的刀伤睡上一觉便能愈合。",
+        "en": "The blood of the oni runs unceasing through his sinew and bone; a sword-cut that lays the flesh open has healed after a single night's sleep."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_ibuki_unique_4.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ibuki-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_wound_recovery_time_mod",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "伤势复原时间：-2回合",
+            "en": "Wound recovery time: -2 turns"
+          },
+          "template": {
+            "zh": "伤势复原时间：%+n回合",
+            "en": "Wound recovery time: %+n turns"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/wound_time.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_enable_ibuki_bloodline",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『鬼族血脉』（每秒恢复0.1%生命值）",
+            "en": "Passive ability: \"Blood of the Oni\" (restores 0.1% health per second)"
+          },
+          "template": {
+            "zh": "被动技能：『鬼族血脉』（每秒恢复0.1%生命值）",
+            "en": "Passive ability: \"Blood of the Oni\" (restores 0.1% health per second)"
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_replenishment_heroes",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 20.0,
+          "text": {
+            "zh": "补员速率：此[[img:icon_hero]][[/img]]英雄+20%",
+            "en": "Casualty replenishment rate: +20% for this [[img:icon_hero]][[/img]]Hero"
+          },
+          "template": {
+            "zh": "补员速率：此[[img:icon_hero]][[/img]]英雄%+n%",
+            "en": "Casualty replenishment rate: %+n% for this [[img:icon_hero]][[/img]]Hero"
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_ibuki_yokai_replenishment",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 20.0,
+          "text": {
+            "zh": "补员速率：妖怪部队+20%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Casualty replenishment rate: +20% for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "补员速率：妖怪部队%+n%",
+            "en": "Casualty replenishment rate: %+n% for Yokai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_skill_ibuki_passive_bloodline"
+      ]
+    },
     "cth_npex_skill_ibuki_unique_5": {
       "kind": "character_skill",
       "source": "npex",
@@ -5567,6 +5887,123 @@
           "text": {
             "zh": "武器威力：+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Weapon strength: +10%\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "武器威力：%+n%",
+            "en": "Weapon strength: %+n%"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ibuki_unique_5_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "劈开长夜",
+        "en": "Cleave the Long Night"
+      },
+      "desc": {
+        "zh": "手中的长刀彻底放开手脚，挥斩之际势如巨木横扫。",
+        "en": "The odachi is given its head at last, and every stroke comes round with the force of a great tree trunk swung through the ranks."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_ibuki_unique_5.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ibuki-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_weapon_splash_power_mult",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 80.0,
+          "text": {
+            "zh": "溅射击飞力度：+80%",
+            "en": "Splash attack power: +80%"
+          },
+          "template": {
+            "zh": "溅射击飞力度：%+n%",
+            "en": "Splash attack power: %+n%"
+          },
+          "priority": 55,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_attack",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 8.0,
+          "text": {
+            "zh": "近战攻击：+8",
+            "en": "Melee attack: +8"
+          },
+          "template": {
+            "zh": "近战攻击：%+n",
+            "en": "Melee attack: %+n"
+          },
+          "priority": 130,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_weapon_strength",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 20.0,
+          "text": {
+            "zh": "武器威力：+20%",
+            "en": "Weapon strength: +20%"
+          },
+          "template": {
+            "zh": "武器威力：%+n%",
+            "en": "Weapon strength: %+n%"
+          },
+          "priority": 160,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_weapon_strength",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力：+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10%\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "武器威力：%+n%",
@@ -6669,6 +7106,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -6885,6 +7323,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -7078,6 +7517,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -7295,6 +7735,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -7348,6 +7789,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -7617,6 +8059,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -7856,6 +8299,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -8072,6 +8516,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -8546,6 +8991,77 @@
           "text": {
             "zh": "武器威力（近战+远程）：+10%（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Weapon Strength and Missile Strength: +10% for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "武器威力（近战+远程）：%+n%（武士部队）",
+            "en": "Weapon Strength and Missile Strength: %+n% for Samurai units"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_naotora_texing_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武士领袖",
+        "en": "Samurai Leader"
+      },
+      "desc": {
+        "zh": "家系战败、领地尽失，她仍是那个亲提双刀率旗本冲阵的当主——名分能被夺走，治军用人的本事夺不走。她驻扎之处，营造有度，刀锋有主。",
+        "en": "Her house defeated and her lands lost, she is still the head of the house who charges into battle with twin blades and her hatamoto at her back; her title may be stripped from her, but her skill in commanding troops cannot be taken. Wherever she makes camp, order takes hold, and every blade knows its master."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_naotora_texing.png",
+        "size": "24x24"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/tachibana-naotora-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_building_construction_cost_mod",
+          "effect_source": "vanilla",
+          "scope": "character_to_region_own_provincewide",
+          "value": -20.0,
+          "text": {
+            "zh": "建筑成本：所有建筑-20%\\n（所在行省）",
+            "en": "Construction cost: -20% for all buildings\\n(local province)"
+          },
+          "template": {
+            "zh": "建筑成本：所有建筑%+n%",
+            "en": "Construction cost: %+n% for all buildings"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/treasury.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_trait_companion_naotora_weapon_strength",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力（近战+远程）：+10%（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon Strength and Missile Strength: +10% for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "武器威力（近战+远程）：%+n%（武士部队）",
@@ -9707,6 +10223,126 @@
         }
       ]
     },
+    "cth_npex_skill_sayo_generic_nippon_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "尼朋巫女",
+        "en": "Nipponese Miko"
+      },
+      "desc": {
+        "zh": "所属军队的全部神兽部队近战攻击、近战防御、武器威力与领导力提升。",
+        "en": "Increases melee attack, melee defence, weapon strength and leadership for all divine beast units in the army."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_generic_nippon.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 11
+      },
+      "referenced_by": [
+        "skills/sayo-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_sayo_beast_weapon_strength",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "近战武器威力：+10%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战武器威力：%+n%（神兽部队）",
+            "en": "Weapon strength: %+n% for divine beast units"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_bihai_veterans_ma",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战攻击：+6（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +6 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：%+n（神兽部队）",
+            "en": "Melee attack: %+n for divine beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_bihai_veterans_md",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战防御：+6（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +6 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战防御：%+n（神兽部队）",
+            "en": "Melee defence: %+n for divine beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_bihai_veterans_morale",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "领导力：+8（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +8 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "领导力：%+n（神兽部队）",
+            "en": "Leadership: %+n for divine beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_sayo_moli": {
       "kind": "character_skill",
       "source": "npex",
@@ -9729,6 +10365,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -9804,6 +10441,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -9857,6 +10495,7 @@
         "1": 12
       },
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -9908,6 +10547,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -9979,6 +10619,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10079,6 +10720,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10228,6 +10870,101 @@
         }
       ]
     },
+    "cth_npex_skill_sayo_unique_1_1_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "镜映",
+        "en": "Mirrored Reflection"
+      },
+      "desc": {
+        "zh": "镜能映照两界，也让军团的灵性与生机相互流转。",
+        "en": "The mirror reflects both worlds, letting spirit and vitality flow freely through the army."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_1.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/sayo-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_replenishment_rate",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "补员速率：+6%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Casualty replenishment rate: +6%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "补员速率：%+n%",
+            "en": "Casualty replenishment rate: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yang_spells",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "魔法之风耗费：阳系法术-15%",
+            "en": "Winds of Magic cost: -15% for Lore of Yang spells"
+          },
+          "template": {
+            "zh": "魔法之风耗费：阳系法术%+n%",
+            "en": "Winds of Magic cost: %+n% for Lore of Yang spells"
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yin_spells",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "魔法之风耗费：阴系法术-15%",
+            "en": "Winds of Magic cost: -15% for Lore of Yin spells"
+          },
+          "template": {
+            "zh": "魔法之风耗费：阴系法术%+n%",
+            "en": "Winds of Magic cost: %+n% for Lore of Yin spells"
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_sayo_unique_1_2": {
       "kind": "character_skill",
       "source": "npex",
@@ -10250,6 +10987,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10398,6 +11136,78 @@
         }
       ]
     },
+    "cth_npex_skill_sayo_unique_1_3_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御守授与",
+        "en": "Bestow Omamori"
+      },
+      "desc": {
+        "zh": "出阵前，每一队神兽都从巫女手里接过一枚御守。",
+        "en": "Before marching to battle, every divine beast receives an omamori from the hands of the miko."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_sayo_unique_1_3.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/sayo-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_nippon_ward_magic",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "魔法抗性：+15%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Magic resistance: +15% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "魔法抗性：%+n%（神兽部队）",
+            "en": "Magic resistance: %+n% for divine beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/resistance_magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_nippon_ward_physical",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "物理抗性：+15%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Physical resistance: +15% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "物理抗性：%+n%（神兽部队）",
+            "en": "Physical resistance: %+n% for divine beast units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/resistance_physical.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_sayo_unique_1_4": {
       "kind": "character_skill",
       "source": "npex",
@@ -10419,6 +11229,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10471,6 +11282,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10525,6 +11337,7 @@
         "1": 25
       },
       "referenced_by": [
+        "skills/sayo-lord.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -10574,6 +11387,7 @@
         "1": 6
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": []
@@ -10602,6 +11416,7 @@
         "1": 13
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": []
@@ -10630,6 +11445,7 @@
         "1": 21
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": []
@@ -10728,6 +11544,100 @@
         }
       ]
     },
+    "cth_npex_skill_serena_texing_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "海神眷顾",
+        "en": "Favour of the Sea God"
+      },
+      "desc": {
+        "zh": "海神马瑟兰庇佑她所在的舰队，凡她参战的海战全军皆受护佑，她指引的航路亦更长远。",
+        "en": "The Sea God Mathlann watches over her fleet: every naval battle she takes part in brings protection to the whole force, and the routes she charts stretch farther still."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_serena_texing.png",
+        "size": "24x24"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_movement_range",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 5.0,
+          "text": {
+            "zh": "战略地图移动距离：+5%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Campaign movement range: +5%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战略地图移动距离：%+n%",
+            "en": "Campaign movement range: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_melee_defence",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 2.0,
+          "text": {
+            "zh": "近战防御：+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +2\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战防御：%+n",
+            "en": "Melee defence: %+n"
+          },
+          "priority": 450,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_ward_save",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 5.0,
+          "text": {
+            "zh": "特殊保护：+5%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ward save: +5%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "特殊保护：%+n%",
+            "en": "Ward save: %+n%"
+          },
+          "priority": 581,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_serena_unique_first_strike": {
       "kind": "character_skill",
       "source": "npex",
@@ -10750,6 +11660,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -11058,6 +11969,171 @@
         }
       ]
     },
+    "cth_npex_skill_serena_unique_fleet_drill_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "舰队操练",
+        "en": "Fleet Drill"
+      },
+      "desc": {
+        "zh": "艾斯林舰队传承的操练之道，让凡人水手如臂使指。",
+        "en": "A drilling tradition passed down from Sea Lord Aislinn's fleet, making mortal sailors answer her command as surely as her own hands."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_dlc27_lord_passive_naval_discipline.png",
+        "size": "71x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_serena_fleet_range",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 5.0,
+          "text": {
+            "zh": "射程范围：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Range: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
+          },
+          "priority": 531,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_serena_fleet_reload",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 5.0,
+          "text": {
+            "zh": "装弹时间降低：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "cth_npex_serena_fleet_range",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "射程范围：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Range: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
+          },
+          "priority": 531,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "cth_npex_serena_fleet_reload",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "装弹时间降低：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "cth_npex_serena_fleet_range",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "射程范围：+15%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Range: +15% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "en": "Range: %+n% for fleet missile units"
+          },
+          "priority": 531,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/accuracy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "cth_npex_serena_fleet_reload",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "装弹时间降低：+15%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +15% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "en": "Reload time reduction: %+n% for fleet missile units"
+          },
+          "priority": 562,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_serena_unique_sea_archmage": {
       "kind": "character_skill",
       "source": "npex",
@@ -11079,6 +12155,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -11153,6 +12230,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -11249,6 +12327,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -11403,6 +12482,102 @@
           "text": {
             "zh": "特殊抗性：+10%（纯水精魂、海元素）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Ward save: +10% for Oceanids and Sea Elemental units\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "特殊抗性：%+n%（纯水精魂、海元素）",
+            "en": "Ward save: %+n% for Oceanids and Sea Elemental units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_serena_unique_wave_rider_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "驭潮者",
+        "en": "Wave Rider"
+      },
+      "desc": {
+        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她召唤的潮汐之灵。",
+        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits she calls forth."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_serena_elemental_melee_attack",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 4.0,
+          "text": {
+            "zh": "近战攻击：+4（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +4 for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：%+n（纯水精魂、海元素）",
+            "en": "Melee attack: %+n for Oceanids and Sea Elemental units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_serena_elemental_melee_defence",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 4.0,
+          "text": {
+            "zh": "近战防御：+4（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +4 for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战防御：%+n（纯水精魂、海元素）",
+            "en": "Melee defence: %+n for Oceanids and Sea Elemental units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_serena_elemental_ward_save",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "特殊抗性：+10%（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ward save: +10% for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "特殊抗性：%+n%（纯水精魂、海元素）",
@@ -12812,6 +13987,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": []
@@ -12839,6 +14015,7 @@
         "1": 9
       },
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -12985,6 +14162,101 @@
         }
       ]
     },
+    "cth_npex_skill_tachibana_unique_1_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "武士典范",
+        "en": "Exemplar of the Samurai"
+      },
+      "desc": {
+        "zh": "率旗本征战的当主，她的武范是麾下武士的标尺。",
+        "en": "As head of the house leading her hatamoto into battle, her martial example sets the standard for the samurai under her command."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "nippon_expedition/ui/skill_icons/skill_tachibana_unique_1.png",
+        "size": "72x72",
+        "note": "本 mod 原创图标，用 design/source 里已有的那份"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/tachibana-naotora-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_shen_samurai_ma",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +6 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战攻击：%+n（武士部队）",
+            "en": "Melee attack: %+n for Samurai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_shen_samurai_morale",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 6.0,
+          "text": {
+            "zh": "领导力：+6（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +6 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "领导力：%+n（武士部队）",
+            "en": "Leadership: %+n for Samurai units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_samurai_missile_damage",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程武器威力：+10%（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +10% for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "远程武器威力：%+n%（武士部队）",
+            "en": "Missile strength: %+n% for Samurai units"
+          },
+          "priority": 540,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_tachibana_unique_2": {
       "kind": "character_skill",
       "source": "npex",
@@ -13066,6 +14338,103 @@
           "text": {
             "zh": "招募成本：-10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Recruitment cost: -10%\\n([[img:icon_hero]][[/img]]Hero's army)"
+          },
+          "template": {
+            "zh": "招募成本：%+n%",
+            "en": "Recruitment cost: %+n%"
+          },
+          "priority": 106,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/treasury.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_tachibana_unique_2_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "铲奸除恶",
+        "en": "Scourge of the Wicked"
+      },
+      "desc": {
+        "zh": "隐姓埋名于乡野铲奸除恶的岁月，练就了一身安民治地的本事。",
+        "en": "Years spent living incognito in the countryside, rooting out corruption and evil, honed her skill in pacifying the land and its people."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_public_order.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/tachibana-naotora-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_public_order_characters",
+          "effect_source": "vanilla",
+          "scope": "character_to_province_own",
+          "value": 6.0,
+          "text": {
+            "zh": "掌控力：+6\\n（所在行省）",
+            "en": "Control: +6\\n(local province)"
+          },
+          "template": {
+            "zh": "掌控力：%+n",
+            "en": "Control: %+n",
+            "_via_tr": true
+          },
+          "priority": 6,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/public_order.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_upkeep",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": -5.0,
+          "text": {
+            "zh": "维持费：-5%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -5%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "维持费：%+n%",
+            "en": "Upkeep: %+n%"
+          },
+          "priority": 70,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/military_spending.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_recruitment_cost_all",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": -10.0,
+          "text": {
+            "zh": "招募成本：-10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruitment cost: -10%\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "招募成本：%+n%",
@@ -13224,6 +14593,148 @@
         }
       ]
     },
+    "cth_npex_skill_tachibana_unique_3_companion_lord": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "雷神祝福",
+        "en": "Blessing of Raijin"
+      },
+      "desc": {
+        "zh": "同承雷神之契的旗本与她心意相通。",
+        "en": "The hatamoto who share her pact with Raijin are of one mind with her."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh_main_spell_heavens_urannons_thunderbolt.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/tachibana-naotora-lord.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_unit_health",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "生命值：+10%",
+            "en": "Hit points: +10%"
+          },
+          "template": {
+            "zh": "生命值：%+n%",
+            "en": "Hit points: %+n%"
+          },
+          "priority": 90,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/health_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_raijin_weapon_strength",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "近战武器威力：+15%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +15% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "近战武器威力：%+n%（雷刃旗本）",
+            "en": "Weapon strength: %+n% for Thunderblade Hatamoto units"
+          },
+          "priority": 461,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_raijin_charge",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "冲锋加成：+10（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Charge bonus: +10 for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "冲锋加成：%+n（雷刃旗本）",
+            "en": "Charge bonus: %+n for Thunderblade Hatamoto units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/charge_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_raijin_resistance",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "全伤害抗性：+8%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ward save: +8% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "全伤害抗性：%+n%（雷刃旗本）",
+            "en": "Ward save: %+n% for Thunderblade Hatamoto units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_tachibana_raijin_speed",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 20.0,
+          "text": {
+            "zh": "移动速度：+20%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Speed: +20% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "移动速度：%+n%（雷刃旗本）",
+            "en": "Speed: %+n% for Thunderblade Hatamoto units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/battle_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "cth_npex_skill_tachibana_unique_4": {
       "kind": "character_skill",
       "source": "npex",
@@ -13246,6 +14757,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -13318,6 +14830,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -13616,8 +15129,8 @@
         "en": "Divine Guidance"
       },
       "desc": {
-        "zh": "日神之使振翼盘旋于云端，神眸洞彻四野潜匿之敌，并以此辉光引领王师锐不可当。",
-        "en": "The Sun Deity's herald wheels above the clouds on beating wings; its divine eyes lay bare every foe lurking across the land, and by this radiance it leads the royal host forward, irresistible."
+        "zh": "日神之使振翼盘旋于云端，为追随者指明破阵之路。",
+        "en": "The Sun Deity's messenger circles high above, showing its followers the way through the enemy ranks."
       },
       "icon": {
         "source": "npex",
@@ -13744,6 +15257,28 @@
       },
       "referenced_by": [
         "skills/shen-changfeng.json"
+      ]
+    },
+    "cth_npex_unit_passive_solar_revelation": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "日轮洞照",
+        "en": "Solar Revelation"
+      },
+      "desc": {
+        "zh": "日神之光映入玄羽神眸，伏形匿影无所遁藏。",
+        "en": "The Sun Deity's light fills the sacred messenger's gaze; no lurking foe escapes its sight."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_unit_passive_solar_revelation.png",
+        "size": "38x38"
+      },
+      "referenced_by": [
+        "units/misaki-crow.json"
       ]
     },
     "cth_npex_unit_passive_thunder_echo": {
@@ -14504,6 +16039,7 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -17703,6 +19239,7 @@
       },
       "referenced_by": [
         "skills/miko.json",
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -17812,6 +19349,7 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json"
@@ -17870,6 +19408,7 @@
         "1": 3
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -17922,6 +19461,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -17974,6 +19514,7 @@
         "1": 7
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -18074,6 +19615,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -18376,6 +19918,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -18569,6 +20112,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -18785,6 +20329,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -18840,6 +20385,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19056,6 +20602,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19272,6 +20819,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19396,6 +20944,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19610,6 +21159,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19664,6 +21214,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19763,6 +21314,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19862,6 +21414,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -19942,6 +21495,7 @@
         "1": 11
       },
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "effects": [
@@ -20006,6 +21560,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/serena-lord.json",
         "skills/serena.json"
       ],
       "desc_missing_reason": "原版该技能无 localised_description（法术解锁类节点，游戏显示的是所解锁法术的说明）",
@@ -20276,11 +21831,14 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -22460,12 +24018,15 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -22521,12 +24082,15 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -22580,9 +24144,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -22727,9 +24295,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -22874,9 +24446,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23021,9 +24597,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23168,9 +24748,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23315,9 +24899,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23531,9 +25119,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23635,9 +25227,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23739,9 +25335,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23843,9 +25443,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -23947,9 +25551,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -24048,9 +25656,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -24149,9 +25761,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -27205,8 +28821,10 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27257,6 +28875,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27353,7 +28972,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27450,6 +29071,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/shen-changfeng.json"
       ],
@@ -27504,7 +29126,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27607,6 +29231,7 @@
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27660,7 +29285,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -27813,6 +29440,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -27911,7 +29539,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -28008,7 +29638,9 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -28108,9 +29740,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28186,9 +29822,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28245,9 +29885,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28327,9 +29971,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28476,9 +30124,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28738,9 +30390,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -28790,6 +30446,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -28886,6 +30543,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -28983,7 +30641,9 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/serena-lord.json",
         "skills/serena.json",
         "skills/shen-changfeng.json"
       ],
@@ -29040,7 +30700,9 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/serena-lord.json",
         "skills/serena.json",
         "skills/shen-changfeng.json"
       ],
@@ -29093,7 +30755,9 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/serena-lord.json",
         "skills/serena.json",
         "skills/shen-changfeng.json"
       ],
@@ -29146,7 +30810,9 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/miko.json",
+        "skills/sayo-lord.json",
         "skills/sayo.json",
+        "skills/serena-lord.json",
         "skills/serena.json",
         "skills/shen-changfeng.json"
       ],
@@ -29202,6 +30868,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/ibuki.json"
       ],
       "effects": [
@@ -29301,9 +30968,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -29399,8 +31070,12 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
-        "skills/samurai-taisho.json"
+        "skills/samurai-taisho.json",
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -29502,9 +31177,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -29603,9 +31282,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {
@@ -29704,9 +31387,13 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ibuki-lord.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/sayo-lord.json",
+        "skills/serena-lord.json",
+        "skills/shen-changfeng.json",
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {

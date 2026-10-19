@@ -10,10 +10,23 @@
         "en": "Divine Guidance"
       },
       "desc": {
-        "zh": "日神之使振翼盘旋于云端，神眸洞彻四野潜匿之敌，并以此辉光引领王师锐不可当。",
-        "en": "The Sun Deity's herald wheels above the clouds on beating wings; its divine eyes lay bare every foe lurking across the land, and by this radiance it leads the royal host forward, irresistible."
+        "zh": "日神之使振翼盘旋于云端，为追随者指明破阵之路。",
+        "en": "The Sun Deity's messenger circles high above, showing its followers the way through the enemy ranks."
       },
       "icon": "cth_npex_unit_passive_divine_guidance.png"
+    },
+    {
+      "key": "cth_npex_unit_passive_solar_revelation",
+      "source": "npex",
+      "name": {
+        "zh": "日轮洞照",
+        "en": "Solar Revelation"
+      },
+      "desc": {
+        "zh": "日神之光映入玄羽神眸，伏形匿影无所遁藏。",
+        "en": "The Sun Deity's light fills the sacred messenger's gaze; no lurking foe escapes its sight."
+      },
+      "icon": "cth_npex_unit_passive_solar_revelation.png"
     },
     {
       "key": "wh3_main_unit_passive_single_entity",

@@ -9,6 +9,10 @@
       "source": "npex"
     },
     {
+      "ref": "cth_npex_unit_passive_solar_revelation",
+      "source": "npex"
+    },
+    {
       "ref": "wh3_main_unit_passive_single_entity",
       "source": "vanilla"
     }

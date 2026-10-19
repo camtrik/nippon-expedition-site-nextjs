@@ -130,9 +130,9 @@
     "melee_defence": 36,
     "charge_bonus": 80,
     "leadership": 85,
-    "armour": 80,
-    "hp": 293,
-    "bonus_hp": 285,
+    "armour": 110,
+    "hp": 338,
+    "bonus_hp": 330,
     "speed": 115,
     "fly_speed": 133,
     "melee_damage": [

@@ -394,8 +394,8 @@
   S.victory = {
     title: { zh: "胜利目标", en: "Victory Objectives" },
     note: {
-      zh: "短期胜利是两条长期胜利的共同前提。两条长期路线是并列的，不是二选一——同一局战役里可以先后打完两条。",
-      en: "The short victory is the shared prerequisite for both long victories. The two long routes run in parallel, not either-or: one campaign can finish both."
+      zh: "完成短期胜利后开启两条长期路线。两条长期胜利可同时完成。",
+      en: "Completing the short victory unlocks both long victory routes. Both long victories can be completed together in the same campaign."
     },
     short: {
       tag: "S",

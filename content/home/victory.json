@@ -6,8 +6,8 @@
     },
     "_comment": "胜利目标正文全部是游戏内原文。kind / name / quote / goals 来自 ../nippon_expedition/ 的战役任务文本；三处 outcome 抄自 loc 表 text/db/cth_npex_victory.loc.tsv 与 localization/en/text/db/!cth_npex_en_victory.loc.tsv 的 effect_bundles_localised_description_cth_npex_bundle_victory_{foothold,overseas_empire,celestial_bulwark}。⚠️ 路线 B 的目标名是「天朝守护」、达成后的称号是「极东屏藩」——两个都是原文，不是笔误，别\"修\"。⚠️ 两条长期路线并行不互斥，版式和文案都不能暗示二选一。note.en 是建站时写的（note.zh 出自 _docs/lore/战役人物与派系设计.md §2），未经作者审校。",
     "note": {
-      "zh": "短期胜利是两条长期胜利的共同前提。**两条长期路线是并列的，不是二选一**——同一局战役里可以先后打完两条。",
-      "en": "The short victory is the shared prerequisite for both long victories. **The two long routes run in parallel, not either-or** — a single campaign can finish both, one after the other."
+      "zh": "完成短期胜利后开启两条长期路线。两条长期胜利可同时完成。",
+      "en": "Completing the short victory unlocks both long victory routes. Both long victories can be completed together in the same campaign."
     },
     "short": {
       "tag": "S",

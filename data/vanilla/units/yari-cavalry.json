@@ -1,0 +1,53 @@
+{
+  "unit": "cth_npex_yari_cavalry_0",
+  "name_cn": "枪骑马武士",
+  "slug": "yari-cavalry",
+  "doc": "_docs/data/units/枪骑马武士兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_bushido",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [],
+  "traits_from_doc": [
+    {
+      "doc_name": "**装备重甲**",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "**反步兵部队**",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "**引发恐惧** (`causes_fear`)",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "**隐蔽（树林）** (`can_hide_forest`)",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    }
+  ],
+  "stats_from_db": {
+    "recruit_cost": 1050,
+    "upkeep_cost": 263,
+    "num_men": 60,
+    "melee_attack": 30,
+    "melee_defence": 33,
+    "charge_bonus": 75,
+    "leadership": 72,
+    "armour": 90,
+    "hp": 100,
+    "bonus_hp": 92,
+    "speed": 84,
+    "melee_damage": [
+      20,
+      10
+    ],
+    "melee_interval": 5
+  }
+}

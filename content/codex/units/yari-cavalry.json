@@ -1,0 +1,212 @@
+{
+ "_comment": "来源：mod 仓库 _docs/data/units/枪骑马武士兵种设计.md；desc / story 取 loc unit_description_short_texts / unit_description_historical_texts（中英原文）；建筑名照 loc 官方英文。",
+ "slug": "yari-cavalry",
+ "unit": "cth_npex_yari_cavalry_0",
+ "group": "nippon",
+ "kind": "melee",
+ "name": {
+  "zh": "枪骑马武士",
+  "en": "Yari Cavalry"
+ },
+ "role": {
+  "zh": "重装冲击骑兵 · T3",
+  "en": "Armoured shock cavalry · T3"
+ },
+ "desc": {
+  "zh": "披挂大铠、手持长枪的精锐骑马武士。其疾如风，侵掠如火。",
+  "en": "Samurai cavalry in great armour, riding down the foe with levelled yari. Swift as the wind, fierce as fire."
+ },
+ "story": {
+  "zh": "尼朋列岛山势险阻、平野逼仄，适宜放牧繁育良种战马的草场极为罕见。因此，唯有战功卓著的骁勇武士，或是世受大名厚禄的知名武家子弟，才能被遴选编入“骑马众”。两军交战之际，他们游弋于大阵两翼寻觅战机；待敌方步线因交战推挤露出破绽之时，整队重骑便如狂飙席卷而出。",
+  "en": "The isles of Nippon are a land of jagged mountains and narrow plains, where pasture fit for breeding warhorses is all but unknown. Only warriors of proven valour, or sons of famed houses raised on a daimyo's stipend, are ever chosen for the mounted bands. In battle they prowl the flanks of the host, watching for the moment when the enemy line buckles beneath the press of combat - and then the whole band of heavy horse breaks upon it like a storm."
+ },
+ "type": [
+  {
+   "k": {
+    "zh": "兵种类别",
+    "en": "Class"
+   },
+   "v": {
+    "zh": "骑兵 · 近战",
+    "en": "Cavalry · melee"
+   }
+  },
+  {
+   "k": {
+    "zh": "武器配置",
+    "en": "Equipment"
+   },
+   "v": {
+    "zh": "长枪（平刺）",
+    "en": "Yari (levelled spear)"
+   }
+  },
+  {
+   "k": {
+    "zh": "护甲与盾牌",
+    "en": "Armour and shield"
+   },
+   "v": {
+    "zh": "板甲 90；无盾",
+    "en": "Plate, armour 90; no shield"
+   }
+  },
+  {
+   "k": {
+    "zh": "训练等级",
+    "en": "Training"
+   },
+   "v": {
+    "zh": "训练有素",
+    "en": "Trained"
+   }
+  }
+ ],
+ "recruit": [
+  {
+   "k": {
+    "zh": "招募来源",
+    "en": "Recruited from"
+   },
+   "v": {
+    "zh": "侍大将屋形（舰上武者屋形链 3 级）／旗本番（岸上侍所链 3 级）",
+    "en": "Samurai Taisho's Manor (fleetboard warrior-manor chain, tier 3) / Hatamoto Guard (shore Samurai Hall chain, tier 3)"
+   }
+  },
+  {
+   "k": {
+    "zh": "解锁条件",
+    "en": "Unlocked by"
+   },
+   "v": {
+    "zh": "建成上述任一建筑",
+    "en": "Building any of the above"
+   }
+  },
+  {
+   "k": {
+    "zh": "招募时间",
+    "en": "Recruitment time"
+   },
+   "v": {
+    "zh": "1 回合",
+    "en": "1 turn"
+   }
+  },
+  {
+   "k": {
+    "zh": "数量限制",
+    "en": "Unit cap"
+   },
+   "v": {
+    "zh": "无上限",
+    "en": "None"
+   }
+  }
+ ],
+ "stats": [
+  {
+   "k": {
+    "zh": "近战攻击",
+    "en": "Melee attack"
+   },
+   "stat": "melee_attack"
+  },
+  {
+   "k": {
+    "zh": "近战防御",
+    "en": "Melee defence"
+   },
+   "stat": "melee_defence"
+  },
+  {
+   "k": {
+    "zh": "近战武器威力（基础／破甲）",
+    "en": "Weapon strength (base / AP)"
+   },
+   "stat": "melee_damage",
+   "n": {
+    "zh": "长枪，破甲占 33%",
+    "en": "Yari; a third armour-piercing"
+   }
+  },
+  {
+   "k": {
+    "zh": "冲锋加成",
+    "en": "Charge bonus"
+   },
+   "stat": "charge_bonus"
+  },
+  {
+   "k": {
+    "zh": "护甲",
+    "en": "Armour"
+   },
+   "stat": "armour",
+   "n": {
+    "zh": "板甲",
+    "en": "Plate"
+   }
+  },
+  {
+   "k": {
+    "zh": "领导力",
+    "en": "Leadership"
+   },
+   "stat": "leadership"
+  },
+  {
+   "k": {
+    "zh": "速度",
+    "en": "Speed"
+   },
+   "stat": "speed"
+  },
+  {
+   "k": {
+    "zh": "单模型生命值",
+    "en": "Health per model"
+   },
+   "stat": "hp",
+   "n": {
+    "zh": "{num_men} 骑合计 {hp_total}",
+    "en": "{hp_total} across {num_men} riders"
+   }
+  },
+  {
+   "k": {
+    "zh": "人数",
+    "en": "Unit size"
+   },
+   "stat": "num_men"
+  }
+ ],
+ "traits": [
+  {
+   "name": {
+    "zh": "装备重甲",
+    "en": "Armoured"
+   },
+   "desc": {
+    "zh": "护甲 90 的重装大铠，可抵御除高破甲武器外的多数伤害；无盾牌防御远程直射",
+    "en": "Armour 90 turns aside all but the most armour-piercing blows; no shield against direct missile fire"
+   }
+  },
+  {
+   "name": {
+    "zh": "反步兵部队",
+    "en": "Anti-Infantry"
+   },
+   "desc": {
+    "zh": "强悍的长枪冲击力，擅长突破、冲散并消灭成建制的敌方步兵阵线",
+    "en": "A fearsome charge that breaks and rides down formed infantry lines"
+   }
+  }
+ ],
+ "effects": {
+  "cth_npex_unit_passive_bushido": {
+   "zh": "生命值降至 50% 或以下时自动激活：基础／破甲武器杀伤 +15%、近战攻击 +10、永不败逃，持续 25 秒",
+   "en": "Triggers at 50% health or below: base and armour-piercing weapon damage +15%, melee attack +10 and Unbreakable, for 25 seconds"
+  }
+ }
+}

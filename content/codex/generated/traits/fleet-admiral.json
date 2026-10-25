@@ -14,8 +14,8 @@
         "en": "First Aboard"
       },
       "desc": {
-        "zh": "他总是在接舷战中第一个跳上敌船。手下的士兵往往忠心耿耿，随他冲锋。",
-        "en": "He is always the first over the rail in a boarding action. The men under him are loyal to a fault, and follow him across."
+        "zh": "水师先登提督专擅短兵相接，敢死先登，身先士卒。",
+        "en": "The first to board and the first into the breach, this admiral leads every assault from the front."
       },
       "levels": [
         {
@@ -28,10 +28,6 @@
             {
               "zh": "近战攻击：+8",
               "en": "Melee attack: +8"
-            },
-            {
-              "zh": "武器威力：+10%",
-              "en": "Weapon strength: +10%"
             },
             {
               "zh": "领导力：近战步兵部队+8（领主军队）",
@@ -56,8 +52,8 @@
         "en": "Order to Fire"
       },
       "desc": {
-        "zh": "射角、风偏、装填节奏，全在一声令下。他的补给官同样听这一声——凡在提督舰影响力范围内的友军，伤亡补充都快上一截。",
-        "en": "Elevation, windage, the rhythm of the loading: all of it hangs on one word of command. His quartermasters answer to the same voice: any allied army within his ship's circle of influence replenishes its losses faster."
+        "zh": "水师炮令提督坐镇中军楼船，统一校准水师火炮与铳手节律。",
+        "en": "From the fleet's command ship, this admiral coordinates every gun crew and every volley."
       },
       "levels": [
         {
@@ -72,8 +68,12 @@
               "en": "Casualty replenishment rate: +6% (this force and all forces in circle of influence)"
             },
             {
-              "zh": "弹药容量：+20%（远程部队）（领主军队）",
-              "en": "Ammunition: +20% for missile units (Lord's army)"
+              "zh": "法术：『海潮之唤』",
+              "en": "Spell: \"Tidecall\""
+            },
+            {
+              "zh": "新募部队经验等级：+2（火器与炮兵部队）（领主军队）",
+              "en": "Recruit rank: +2 for gunpowder and artillery units (Lord's army)"
             },
             {
               "zh": "远程伤害：+5%（远程部队，基础与破甲同时）（领主军队）",
@@ -110,16 +110,12 @@
               "en": "Campaign movement range: +10% (this force and all forces in circle of influence)"
             },
             {
-              "zh": "质量：+25%（骑兵与巨兽部队）（领主军队）",
-              "en": "Mass: +25% for cavalry and beast units (Lord's army)"
+              "zh": "新募部队经验等级：+2（骑兵部队，不含领主与英雄）（领主军队）",
+              "en": "Recruit rank: +2 for cavalry units (excluding lords and heroes) (Lord's army)"
             },
             {
-              "zh": "冲锋加成：+20%（骑兵与巨兽部队）（领主军队）",
-              "en": "Charge bonus: +20% for cavalry and beast units (Lord's army)"
-            },
-            {
-              "zh": "移动速度：+8%（骑兵与巨兽部队）（领主军队）",
-              "en": "Speed: +8% for cavalry and beast units (Lord's army)"
+              "zh": "骑兵部队获得属性：地形适性（不含领主与英雄）（领主军队）",
+              "en": "Attribute: Strider for cavalry units (excluding lords and heroes) (Lord's army)"
             }
           ]
         }

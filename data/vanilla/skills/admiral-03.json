@@ -20,7 +20,7 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_0",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_0",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_0",
       "tier": 0,
@@ -97,9 +97,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_1",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_armor_breaker",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_unique_1",
+      "skill": "cth_npex_skill_admiral_unique_armor_breaker",
       "tier": 1,
       "indent": 1,
       "points_on_creation": "0",
@@ -107,7 +107,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -177,9 +177,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_2",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_swift_cav",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_unique_2",
+      "skill": "cth_npex_skill_admiral_unique_swift_cav",
       "tier": 2,
       "indent": 1,
       "points_on_creation": "0",
@@ -187,7 +187,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_3",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_3",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_3",
       "tier": 3,
@@ -262,7 +262,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_4",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_4",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_4",
       "tier": 4,
@@ -326,7 +326,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -391,7 +391,7 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_5",
+      "node": "cth_npex_skill_node_admiral_yuchao_unique_5",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_5",
       "tier": 5,
@@ -401,19 +401,19 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_1",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_3",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_2",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_4",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_3",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_armor_breaker",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_4",
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_swift_cav",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_artofwar",
+      "node": "cth_npex_skill_node_admiral_yuchao_artofwar",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_artofwar",
       "tier": 6,
@@ -503,7 +503,12 @@
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_yuchao_unique_5",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
       "node": "wh3_dlc24_skill_node_cth_human_combat_3_1",

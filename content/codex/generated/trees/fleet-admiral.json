@@ -20,14 +20,6 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+6",
-                  "en": "Melee attack: +6"
-                },
-                {
-                  "zh": "对抗大型部队加成：+10",
-                  "en": "Bonus vs Large: +10"
-                },
-                {
                   "zh": "解锁战场能力「舷侧齐射」",
                   "en": "Unlocks the battlefield ability \"Broadside\""
                 }
@@ -76,31 +68,35 @@
           "hub": null
         },
         {
-          "key": "cth_npex_skill_admiral_unique_2",
+          "key": "cth_npex_skill_admiral_unique_death_roar",
           "name": {
-            "zh": "铳炮教习",
-            "en": "Gunnery Drill"
+            "zh": "死士怒吼",
+            "en": "Death-Defying Roar"
           },
           "desc": {
-            "zh": "装药、捣实、举铳、放。四个动作练到不过脑子，才准上战位。",
-            "en": "Charge, ram, level, fire. Only once all four are drilled past the need for thought is a man allowed to take his place at the guns."
+            "zh": "登城破阵，悍不畏死，一声怒吼如雷霆贯耳。",
+            "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
           },
           "levels": [
             {
               "level": 1,
               "lines": [
                 {
-                  "zh": "装填速度：+10%（火器与炮兵部队）（领主军队）",
-                  "en": "Reload time reduction: +10% for gunpowder and artillery units (Lord's army)"
+                  "zh": "近战攻击：+4",
+                  "en": "Melee attack: +4"
                 },
                 {
-                  "zh": "远程威力：铁雹铳手、鹤铳手、巨炮与炎霖火箭炮部队+10%（领主军队）",
-                  "en": "Missile strength: +10% for Iron Hail Gunners, Crane Gunners, Grand Cannon and Fire Rain Rocket units (Lord's army)"
+                  "zh": "近战防御：+4",
+                  "en": "Melee defence: +4"
+                },
+                {
+                  "zh": "解锁战场能力「死士怒吼」",
+                  "en": "Enables battle ability: Death-Defying Roar"
                 }
               ]
             }
           ],
-          "icon": "cth_npex_skill_admiral_unique_2.png",
+          "icon": "cth_npex_skill_admiral_unique_death_roar.png",
           "reuse": false,
           "unlock": {
             "zh": "前置：水师枪术",
@@ -123,16 +119,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "战略地图移动距离：在海上时+15%",
-                  "en": "Campaign movement range: +15% whilst at sea"
+                  "zh": "战略地图移动距离：+10%（领主军队）",
+                  "en": "Campaign movement range: +10% (Lord's army)"
                 },
                 {
-                  "zh": "打赢战斗后，恢复10%战役地图移动距离",
-                  "en": "Replenishes 10% campaign movement range after winning a battle"
-                },
-                {
-                  "zh": "免疫深海、暗礁与风暴损耗（领主军队）",
-                  "en": "Immune to High Seas, Reef and Storm attrition (Lord's army)"
+                  "zh": "遭受公海与礁石损耗：-50%（领主军队）",
+                  "en": "High seas and reef attrition suffered: -50% (Lord's army)"
                 }
               ]
             }
@@ -160,12 +152,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "战后掳掠收入：+20%",
-                  "en": "Income from post-battle loot: +20%"
+                  "zh": "战后掳掠收入：+15%",
+                  "en": "Income from post-battle loot: +15%"
                 },
                 {
-                  "zh": "可贸易资源产量：+5%（派系范围）",
-                  "en": "Tradable resources produced: +5% (factionwide)"
+                  "zh": "港口收入产值：+10%（派系范围）",
+                  "en": "Income from Ports: +10% (factionwide)"
                 }
               ]
             }
@@ -203,10 +195,6 @@
                 {
                   "zh": "新募部队等级：所有部队+2（领主军队）",
                   "en": "Recruit rank: +2 for all units (Lord's army)"
-                },
-                {
-                  "zh": "弹药容量：+15%（远程部队）（领主军队）",
-                  "en": "Ammunition: +15% for missile units (Lord's army)"
                 }
               ]
             }
@@ -214,8 +202,8 @@
           "icon": "cth_npex_skill_admiral_unique_5.png",
           "reuse": false,
           "unlock": {
-            "zh": "前置：接舷战法、铳炮教习、引航之术、市舶之利",
-            "en": "Requires Boarding Tactics, Gunnery Drill, The Pilot's Art, Profits of the Sea Trade"
+            "zh": "前置：接舷战法、引航之术、市舶之利、死士怒吼",
+            "en": "Requires Boarding Tactics, The Pilot's Art, Profits of the Sea Trade, Death-Defying Roar"
           },
           "hub": {
             "zh": "需 4/4",
@@ -246,8 +234,8 @@
           "icon": "cth_npex_skill_admiral_artofwar.png",
           "reuse": false,
           "unlock": {
-            "zh": "角色等级 23 解锁",
-            "en": "Unlocks at rank 23"
+            "zh": "角色等级 27 解锁 · 前置：龙骧舟师",
+            "en": "Unlocks at rank 27 · Requires The Soaring Dragon Armada"
           },
           "hub": null
         }
@@ -277,14 +265,6 @@
                 {
                   "zh": "武器威力：+60%",
                   "en": "Weapon strength: +60%"
-                },
-                {
-                  "zh": "对抗大型部队加成：+15",
-                  "en": "Bonus vs Large: +15"
-                },
-                {
-                  "zh": "武器威力：+10%（领主军队）",
-                  "en": "Weapon strength: +10% (Lord's army)"
                 }
               ]
             }
@@ -424,7 +404,7 @@
           },
           "desc": {
             "zh": "朝廷配给提督的官坐骑，随印一同发下。",
-            "en": "The court's own mount, issued to an admiral along with his seal."
+            "en": "The court's own mount, issued to an admiral along with their seal."
           },
           "levels": [],
           "icon": "cth_npex_skill_admiral_mount_jade_longma.png",

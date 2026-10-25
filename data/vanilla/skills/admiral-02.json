@@ -5,8 +5,8 @@
   "set_key": "cth_npex_skill_set_admiral_02",
   "agent_type": "general",
   "agent_subtype": "cth_npex_admiral_02",
-  "node_count": 55,
-  "vanilla_skill_count": 40,
+  "node_count": 63,
+  "vanilla_skill_count": 50,
   "nodes": [
     {
       "node": "cth_npex_skill_node_admiral_mount_jade_longma_02",
@@ -20,7 +20,7 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_0",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_0",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_0",
       "tier": 0,
@@ -36,17 +36,6 @@
       "skill": "wh_main_skill_all_all_self_hard_to_hit_starter",
       "tier": 0,
       "indent": 2,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_admiral_personal_0",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_personal_0",
-      "tier": 0,
-      "indent": 3,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
@@ -97,9 +86,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_1",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_2",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_unique_1",
+      "skill": "cth_npex_skill_admiral_unique_2",
       "tier": 1,
       "indent": 1,
       "points_on_creation": "0",
@@ -107,7 +96,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -124,22 +113,6 @@
       "parents": [
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_0",
-          "link_type": "REQUIRED"
-        }
-      ]
-    },
-    {
-      "node": "cth_npex_skill_node_admiral_personal_1",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_personal_1",
-      "tier": 1,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_admiral_personal_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -177,9 +150,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_2",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_gunnery_supply",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_unique_2",
+      "skill": "cth_npex_skill_admiral_unique_gunnery_supply",
       "tier": 2,
       "indent": 1,
       "points_on_creation": "0",
@@ -187,7 +160,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -209,9 +182,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_personal_2",
+      "node": "cth_npex_skill_node_admiral_paoling_magic_0",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_personal_2",
+      "skill": "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord",
       "tier": 2,
       "indent": 3,
       "points_on_creation": "0",
@@ -252,7 +225,7 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_3",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_3",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_3",
       "tier": 3,
@@ -262,7 +235,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -279,6 +252,22 @@
       "parents": [
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_1_1",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yin_05_power_of_yin",
+      "tier": 3,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -316,7 +305,7 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_4",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_4",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_4",
       "tier": 4,
@@ -326,7 +315,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_0",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -343,6 +332,22 @@
       "parents": [
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_1_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yin_03_blossom_wind_lord",
+      "tier": 4,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -391,7 +396,7 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_5",
+      "node": "cth_npex_skill_node_admiral_paoling_unique_5",
       "node_source": "npex",
       "skill": "cth_npex_skill_admiral_unique_5",
       "tier": 5,
@@ -401,19 +406,19 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_admiral_unique_1",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_2",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_2",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_3",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_3",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_4",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_4",
+          "node": "cth_npex_skill_node_admiral_paoling_unique_gunnery_supply",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
@@ -443,6 +448,22 @@
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_1_4",
           "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_1_3",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yin_04_missile_mirror_lord",
+      "tier": 5,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_0",
+          "link_type": "REQUIRED"
         }
       ]
     },
@@ -495,15 +516,20 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_artofwar",
+      "node": "cth_npex_skill_node_admiral_paoling_artofwar",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_artofwar",
+      "skill": "cth_npex_skill_admiral_artofwar_paoling",
       "tier": 6,
       "indent": 1,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_unique_5",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
       "node": "wh3_dlc24_skill_node_cth_human_combat_3_1",
@@ -517,6 +543,22 @@
       "parents": [
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_1_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_paoling_cloak_of_jet",
+      "tier": 6,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -638,6 +680,34 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 8,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "wh3_main_skill_node_cth_generic_army_3_1",
       "node_source": "vanilla",
       "skill": "wh3_main_skill_cth_lord_army_buff_3_1",
@@ -681,6 +751,22 @@
       "parents": [
         {
           "node": "wh3_dlc24_skill_node_cth_human_combat_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_3_1",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_magic_deep_10_ghost_ship_lord",
+      "tier": 9,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -757,6 +843,22 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_3_2",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_magic_yin_08_ancestral_warriors_lord",
+      "tier": 10,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "wh3_main_skill_node_cth_generic_army_3_3",
       "node_source": "vanilla",
       "skill": "wh3_main_skill_cth_lord_army_buff_3_3",
@@ -801,6 +903,22 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_3_3",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "tier": 11,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "wh3_main_skill_node_cth_generic_army_3_4",
       "node_source": "vanilla",
       "skill": "wh3_main_skill_cth_lord_army_buff_3_4",
@@ -812,6 +930,22 @@
       "parents": [
         {
           "node": "wh3_main_skill_node_cth_generic_army_2",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_3_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "tier": 12,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -840,6 +974,34 @@
         },
         {
           "node": "wh3_main_skill_node_cth_generic_army_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_paoling_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 13,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_paoling_magic_3_4",
           "link_type": "SUBSET_REQUIRED"
         }
       ]

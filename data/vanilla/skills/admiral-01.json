@@ -177,9 +177,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_admiral_unique_2",
+      "node": "cth_npex_skill_node_admiral_unique_death_roar",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_unique_2",
+      "skill": "cth_npex_skill_admiral_unique_death_roar",
       "tier": 2,
       "indent": 1,
       "points_on_creation": "0",
@@ -405,15 +405,15 @@
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_admiral_unique_2",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
           "node": "cth_npex_skill_node_admiral_unique_3",
           "link_type": "SUBSET_REQUIRED"
         },
         {
           "node": "cth_npex_skill_node_admiral_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_admiral_unique_death_roar",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
@@ -503,7 +503,12 @@
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_admiral_unique_5",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
       "node": "wh3_dlc24_skill_node_cth_human_combat_3_1",

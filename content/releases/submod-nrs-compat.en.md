@@ -7,6 +7,7 @@ tags: [nrs-compat]
 
 You only need this mod if you are also subscribed to **[Nippon, Land of the Rising Sun](https://steamcommunity.com/sharedfiles/filedetails/?id=3770643554)**.
 
+- 2026-10-21 Fixed the real-time character model covering Shen Changfeng's animated clip on the lord-selection screen.
 - 2026-10-09 Supports Ibuki's companion line; the lord-selection screen now plays Shen Changfeng's animated clip; fixed a start-of-campaign script error in IEE multiplayer.
 - 2026-10-01 Updated for 9.0 and IEE's new Nippon map: the Gunnery School now unlocks by capturing Tetsu Fortress, and the Hidden Path by capturing Kokakurezato. The Far East Seaways also work after the faction-slot swap.
 - 2026-09-11 **NRS's Nippon units now benefit from lord and hero skills**: the skills of Samurai Taisho, Shen Changfeng, Tachibana Naotora and Sayo that buff a unit class — Samurai units, Teppo units, Divine Beasts — now count all 24 of NRS's units in.

@@ -70,6 +70,19 @@
       "icon": "immune_to_psychology.png"
     },
     {
+      "key": "stalk",
+      "source": "vanilla",
+      "name": {
+        "zh": "潜行",
+        "en": "Stalk"
+      },
+      "desc": {
+        "zh": "这支部队在任何地形上移动时都会保持隐蔽",
+        "en": "This unit can move hidden in any terrain."
+      },
+      "icon": "stalk.png"
+    },
+    {
       "key": "strider",
       "source": "vanilla",
       "name": {

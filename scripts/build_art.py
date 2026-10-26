@@ -45,6 +45,7 @@ UNITS = {
     "empyrean-guard": "empyrean_guard/empyrean_guard_full.png",
     "abyssal-grand-cannon": "abyssal_grand_cannon/abyssal_grand_cannon_full.png",
     "yari-samurai": "yari_samurai/yari_samurai_full.png",
+    "yari-cavalry": "yari_cavalry/yari_cavalry_full.png",
     "teppo-samurai": "teppo_samurai/teppo_samurai_full.png",
     "thunderblade-hatamoto": "hatamoto/thunderblade_hatamoto_full.png",
     "kirin": "kirin/kirin_full.png",

@@ -24,6 +24,9 @@
       "ref": "immune_to_psychology"
     },
     {
+      "ref": "stalk"
+    },
+    {
       "ref": "strider"
     }
   ],
@@ -47,6 +50,11 @@
       "doc_name": "先锋部署",
       "ref": "vanguard_deployment",
       "section": "特性"
+    },
+    {
+      "doc_name": "潜行",
+      "ref": "stalk",
+      "section": "部队属性"
     },
     {
       "doc_name": "地形适性",

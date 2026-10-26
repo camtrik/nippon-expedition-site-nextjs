@@ -53,16 +53,12 @@
               "level": 1,
               "lines": [
                 {
+                  "zh": "魔法之风耗费：所有法术-15%",
+                  "en": "Winds of Magic cost: -15% for all spells"
+                },
+                {
                   "zh": "补员速率：+6%（英雄所在军队）",
                   "en": "Casualty replenishment rate: +6% (Hero's army)"
-                },
-                {
-                  "zh": "魔法之风耗费：阳系法术-15%",
-                  "en": "Winds of Magic cost: -15% for Lore of Yang spells"
-                },
-                {
-                  "zh": "魔法之风耗费：阴系法术-15%",
-                  "en": "Winds of Magic cost: -15% for Lore of Yin spells"
                 }
               ]
             }

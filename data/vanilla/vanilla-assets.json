@@ -262,6 +262,28 @@
         "skills/shen-changfeng.json"
       ]
     },
+    "cth_npex_ability_admiral_death_roar": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "active",
+      "name": {
+        "zh": "死士怒吼",
+        "en": "Death-Defying Roar"
+      },
+      "desc": {
+        "zh": "登城破阵，悍不畏死，一声怒吼如雷霆贯耳。",
+        "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_ability_admiral_death_roar.png",
+        "size": "59x59"
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ]
+    },
     "cth_npex_ability_admiral_sweep": {
       "kind": "unit_ability",
       "source": "npex",
@@ -447,6 +469,58 @@
       "referenced_by": [
         "skills/admiral-01.json",
         "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_attribute_enable_vanguard_deployment",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁属性：先锋部署\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Vanguard Deployment\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "解锁属性：先锋部署",
+            "en": "Attribute: Vanguard Deployment"
+          },
+          "priority": 320,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_artofwar_paoling": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "兵法韬略",
+        "en": "The Art of War"
+      },
+      "desc": {
+        "zh": "兵者，诡道也。乘潮夜进，偃旗息鼓，敌未成列而炮已齐鸣。",
+        "en": "All warfare is deception. Advance on the tide with colours struck and oars muffled, and let the broadsides speak before the enemy can form."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/guerrilla_deploy.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 20
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
       ],
       "effects": [
         {
@@ -1246,6 +1320,224 @@
         "cth_npex_unit_passive_admiral_wake"
       ]
     },
+    "cth_npex_skill_admiral_paoling_cloak_of_jet": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "墨衣诀",
+        "en": "Cloak of Jet",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "阴暗的阴之力屏障能够驱散敌人的魔法，以午夜的怀抱屏护其内的部队，使其免受精气之风的伤害",
+        "en": "This shadowy barrier of dark Yin energy turns aside enemy sorceries, protecting those within its midnight embrace from the elemental winds."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_cloak_of_jet.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『墨衣诀』",
+            "en": "Spell: \"Cloak of Jet\""
+          },
+          "template": {
+            "zh": "法术：『墨衣诀』",
+            "en": "Spell: \"Cloak of Jet\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_overcast_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级墨衣诀』",
+            "en": "Overcast spell: \"Cloak of Jet Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级墨衣诀』",
+            "en": "Overcast spell: \"Cloak of Jet Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_cooldown_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『墨衣诀』-30%",
+            "en": "Cooldown: -30% to \"Cloak of Jet\""
+          },
+          "template": {
+            "zh": "冷却速率：『墨衣诀』%+n%",
+            "en": "Cooldown: %+n% to \"Cloak of Jet\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_overcast_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级墨衣诀』",
+            "en": "Overcast spell: \"Cloak of Jet Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级墨衣诀』",
+            "en": "Overcast spell: \"Cloak of Jet Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_cooldown_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『墨衣诀』-50%",
+            "en": "Cooldown: -50% to \"Cloak of Jet\""
+          },
+          "template": {
+            "zh": "冷却速率：『墨衣诀』%+n%",
+            "en": "Cooldown: %+n% to \"Cloak of Jet\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_cloak_of_jet",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -1.0,
+          "text": {
+            "zh": "魔法之风耗费：『墨衣诀』-1",
+            "en": "Winds of Magic cost: -1 for \"Cloak of Jet\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『墨衣诀』%n",
+            "en": "Winds of Magic cost: %n for \"Cloak of Jet\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_cloak_of_jet_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级墨衣诀』-2",
+            "en": "Winds of Magic cost: -2 for \"Cloak of Jet Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级墨衣诀』%n",
+            "en": "Winds of Magic cost: %n for \"Cloak of Jet Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_miscast_cloak_of_jet_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级墨衣诀』-15%",
+            "en": "Miscast base chance: -15% for \"Cloak of Jet Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级墨衣诀』%+n%",
+            "en": "Miscast base chance: %+n% for \"Cloak of Jet Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_spell_yin_cloak_of_jet"
+      ],
+      "desc_via_ability": "wh3_main_spell_yin_cloak_of_jet"
+    },
     "cth_npex_skill_admiral_personal_0": {
       "kind": "character_skill",
       "source": "npex",
@@ -1984,6 +2276,298 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/experience.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_armor_breaker": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "破阵长槊",
+        "en": "Armour-Piercing Lances"
+      },
+      "desc": {
+        "zh": "即使身披重甲，亦难挡驭潮铁骑之锋",
+        "en": "Even heavy armour offers little protection against the Tide-Reader's charging cavalry."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_armor_breaker.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_cavalry_ap",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 20.0,
+          "text": {
+            "zh": "武器破甲杀伤：+20%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Armour-piercing weapon damage: +20% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "武器破甲杀伤：%+n%（骑兵部队，不含领主与英雄）",
+            "en": "Armour-piercing weapon damage: %+n% for cavalry units (excluding lords and heroes)"
+          },
+          "priority": 450,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_admiral_unique_death_roar": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "死士怒吼",
+        "en": "Death-Defying Roar"
+      },
+      "desc": {
+        "zh": "登城破阵，悍不畏死，一声怒吼如雷霆贯耳。",
+        "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_death_roar.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_attack",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 4.0,
+          "text": {
+            "zh": "近战攻击：+4",
+            "en": "Melee attack: +4"
+          },
+          "template": {
+            "zh": "近战攻击：%+n",
+            "en": "Melee attack: %+n"
+          },
+          "priority": 130,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/melee_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_melee_defence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 4.0,
+          "text": {
+            "zh": "近战防御：+4",
+            "en": "Melee defence: +4"
+          },
+          "template": {
+            "zh": "近战防御：%+n",
+            "en": "Melee defence: %+n"
+          },
+          "priority": 150,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_enable_death_roar",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁战场能力「死士怒吼」",
+            "en": "Enables battle ability: Death-Defying Roar"
+          },
+          "template": {
+            "zh": "解锁战场能力「死士怒吼」",
+            "en": "Enables battle ability: Death-Defying Roar"
+          },
+          "priority": 450,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_ability_admiral_death_roar"
+      ]
+    },
+    "cth_npex_skill_admiral_unique_gunnery_supply": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "弹药整备",
+        "en": "Ammunition Reserves"
+      },
+      "desc": {
+        "zh": "底舱火药铅弹储备充沛，战阵前线随时补给。",
+        "en": "Powder and shot fill the holds, ready to replenish the firing line."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_ammo.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc17_effect_ability_enable_restock",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "技能：『补弹！』",
+            "en": "Ability \"Restock!\""
+          },
+          "template": {
+            "zh": "技能：『补弹！』",
+            "en": "Ability \"Restock!\""
+          },
+          "priority": 27,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_gunnery_supply_ammo",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "弹药容量：+15%（火器与炮兵部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ammunition: +15% for gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%（火器与炮兵部队）",
+            "en": "Ammunition: %+n% for gunpowder and artillery units"
+          },
+          "priority": 450,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_dlc17_hero_abilities_more_powder_generic"
+      ]
+    },
+    "cth_npex_skill_admiral_unique_swift_cav": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "疾风突骑",
+        "en": "Wind-Riding Cavalry"
+      },
+      "desc": {
+        "zh": "乘风逐浪，疾行千里。",
+        "en": "Riding wind and wave, they cover a thousand li in a day."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_swift_cav.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_movement_range",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "战略地图移动距离：+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Campaign movement range: +10%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战略地图移动距离：%+n%",
+            "en": "Campaign movement range: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_admiral_tide_speed",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "移动速度：+10%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Speed: +10% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "移动速度：%+n%（骑兵部队，不含领主与英雄）",
+            "en": "Speed: %+n% for cavalry units (excluding lords and heroes)"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/battle_movement.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -10635,6 +11219,29 @@
       "effects": [
         {
           "level": 1,
+          "effect": "wh2_dlc14_effect_magic_cost_all_lores_percentage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "魔法之风耗费：所有法术-15%",
+            "en": "Winds of Magic cost: -15% for all spells"
+          },
+          "template": {
+            "zh": "魔法之风耗费：所有法术%+n%",
+            "en": "Winds of Magic cost: %+n% for all spells"
+          },
+          "priority": 66,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "wh_main_effect_force_all_campaign_replenishment_rate",
           "effect_source": "vanilla",
           "scope": "agent_to_parent_army_own",
@@ -10651,52 +11258,6 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/replenishment.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yang_spells",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "魔法之风耗费：阳系法术-15%",
-            "en": "Winds of Magic cost: -15% for Lore of Yang spells"
-          },
-          "template": {
-            "zh": "魔法之风耗费：阳系法术%+n%",
-            "en": "Winds of Magic cost: %+n% for Lore of Yang spells"
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yin_spells",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "魔法之风耗费：阴系法术-15%",
-            "en": "Winds of Magic cost: -15% for Lore of Yin spells"
-          },
-          "template": {
-            "zh": "魔法之风耗费：阴系法术%+n%",
-            "en": "Winds of Magic cost: %+n% for Lore of Yin spells"
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -10730,6 +11291,29 @@
       "effects": [
         {
           "level": 1,
+          "effect": "wh2_dlc14_effect_magic_cost_all_lores_percentage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "魔法之风耗费：所有法术-15%",
+            "en": "Winds of Magic cost: -15% for all spells"
+          },
+          "template": {
+            "zh": "魔法之风耗费：所有法术%+n%",
+            "en": "Winds of Magic cost: %+n% for all spells"
+          },
+          "priority": 66,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "wh_main_effect_force_all_campaign_replenishment_rate",
           "effect_source": "vanilla",
           "scope": "general_to_force_own",
@@ -10746,52 +11330,6 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/replenishment.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yang_spells",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "魔法之风耗费：阳系法术-15%",
-            "en": "Winds of Magic cost: -15% for Lore of Yang spells"
-          },
-          "template": {
-            "zh": "魔法之风耗费：阳系法术%+n%",
-            "en": "Winds of Magic cost: %+n% for Lore of Yang spells"
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_cp1_effect_ability_wom_cost_pct_yin_spells",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "魔法之风耗费：阴系法术-15%",
-            "en": "Winds of Magic cost: -15% for Lore of Yin spells"
-          },
-          "template": {
-            "zh": "魔法之风耗费：阴系法术%+n%",
-            "en": "Winds of Magic cost: %+n% for Lore of Yin spells"
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -14950,6 +15488,7 @@
       "referenced_by": [
         "units/hatamoto-raijin.json",
         "units/teppo-samurai.json",
+        "units/yari-cavalry.json",
         "units/yari-samurai.json"
       ]
     },
@@ -15470,7 +16009,8 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "units/akatsuki-shu-bow.json"
+        "units/akatsuki-shu-bow.json",
+        "units/akatsuki-shu-katana.json"
       ]
     },
     "strider": {
@@ -16839,8 +17379,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-02.json",
-        "skills/shen-changfeng.json"
+        "skills/admiral-02.json"
       ]
     },
     "wh2_dlc11_spell_deep_tidecall": {
@@ -16914,6 +17453,30 @@
       },
       "referenced_by": [
         "skills/admiral-01.json"
+      ]
+    },
+    "wh2_dlc17_hero_abilities_more_powder_generic": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_dlc17",
+      "ability_type": "active",
+      "name": {
+        "zh": "补弹！",
+        "en": "Restock!"
+      },
+      "desc": {
+        "zh": "在战场上，对箭矢、炮弹以及各种五花八门弹药的需求无穷无尽",
+        "en": "Arrows, cannonballs and more esoteric munitions are needed in endless supply on the battlefield."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_hero_abilities_more_powder.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
       ]
     },
     "wh2_dlc17_unit_passive_wayfarer": {
@@ -21594,6 +22157,30 @@
       "referenced_by": [
         "skills/miko.json",
         "skills/samurai-taisho.json"
+      ]
+    },
+    "wh3_main_lore_passive_power_of_yin": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "passive",
+      "name": {
+        "zh": "阴之力",
+        "en": "Power of Yin"
+      },
+      "desc": {
+        "zh": "当施放法术时，阴系法术的毁灭性魔力可以降低敌人的护甲强度",
+        "en": "The crushing power of the Lore of Yin reduces enemy armour strength whenever a spell is cast."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_lore_passive_power_of_yin.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
       ]
     },
     "wh3_main_lore_passive_strength_of_yang": {
@@ -26578,6 +27165,711 @@
       ],
       "desc_via_ability": "wh3_main_spell_yang_constellation_of_the_dragon"
     },
+    "wh3_main_skill_cth_magic_yin_03_blossom_wind_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "和风诀",
+        "en": "Blossom Wind"
+      },
+      "desc": {
+        "zh": "落英缤纷，拂过战场，以超自然之怒切割敌人，令其失明",
+        "en": "A wind of leaves and blossoms rolls across the battlefield, cutting into the enemy with supernatural power and blinding them with its fury."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_blossom_wind.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『和风诀』",
+            "en": "Spell: \"Blossom Wind\""
+          },
+          "template": {
+            "zh": "法术：『和风诀』",
+            "en": "Spell: \"Blossom Wind\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_overcast_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级和风诀』",
+            "en": "Overcast spell: \"Blossom Wind Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级和风诀』",
+            "en": "Overcast spell: \"Blossom Wind Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_cooldown_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『和风诀』-30%",
+            "en": "Cooldown: -30% to \"Blossom Wind\""
+          },
+          "template": {
+            "zh": "冷却速率：『和风诀』%+n%",
+            "en": "Cooldown: %+n% to \"Blossom Wind\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_overcast_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级和风诀』",
+            "en": "Overcast spell: \"Blossom Wind Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级和风诀』",
+            "en": "Overcast spell: \"Blossom Wind Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_cooldown_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『和风诀』-50%",
+            "en": "Cooldown: -50% to \"Blossom Wind\""
+          },
+          "template": {
+            "zh": "冷却速率：『和风诀』%+n%",
+            "en": "Cooldown: %+n% to \"Blossom Wind\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_blossom_wind",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『和风诀』-2",
+            "en": "Winds of Magic cost: -2 for \"Blossom Wind\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『和风诀』%n",
+            "en": "Winds of Magic cost: %n for \"Blossom Wind\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_blossom_wind_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级和风诀』-3",
+            "en": "Winds of Magic cost: -3 for \"Blossom Wind Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级和风诀』%n",
+            "en": "Winds of Magic cost: %n for \"Blossom Wind Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_miscast_blossom_wind_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级和风诀』-15%",
+            "en": "Miscast base chance: -15% for \"Blossom Wind Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级和风诀』%+n%",
+            "en": "Miscast base chance: %+n% for \"Blossom Wind Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_spell_yin_blossom_wind"
+      ],
+      "desc_via_ability": "wh3_main_spell_yin_blossom_wind"
+    },
+    "wh3_main_skill_cth_magic_yin_04_missile_mirror_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "退箭诀",
+        "en": "Missile Mirror"
+      },
+      "desc": {
+        "zh": "莫测的黑暗与呼啸的狂风凌空阻碍敌人的箭矢，并将其偏转回它们的主人之处",
+        "en": "A magical of shifting darkness and howling wind snatches the enemy’s missiles from the air, even as they are fired, and hurls them back at their owners."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_missile_mirror.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『退箭诀』",
+            "en": "Spell: \"Missile Mirror\""
+          },
+          "template": {
+            "zh": "法术：『退箭诀』",
+            "en": "Spell: \"Missile Mirror\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_overcast_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级退箭诀』",
+            "en": "Overcast spell: \"Missile Mirror Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级退箭诀』",
+            "en": "Overcast spell: \"Missile Mirror Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_cooldown_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『退箭诀』-30%",
+            "en": "Cooldown: -30% to \"Missile Mirror\""
+          },
+          "template": {
+            "zh": "冷却速率：『退箭诀』%+n%",
+            "en": "Cooldown: %+n% to \"Missile Mirror\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_overcast_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级退箭诀』",
+            "en": "Overcast spell: \"Missile Mirror Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级退箭诀』",
+            "en": "Overcast spell: \"Missile Mirror Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_cooldown_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『退箭诀』-50%",
+            "en": "Cooldown: -50% to \"Missile Mirror\""
+          },
+          "template": {
+            "zh": "冷却速率：『退箭诀』%+n%",
+            "en": "Cooldown: %+n% to \"Missile Mirror\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_missile_mirror",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『退箭诀』-2",
+            "en": "Winds of Magic cost: -2 for \"Missile Mirror\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『退箭诀』%n",
+            "en": "Winds of Magic cost: %n for \"Missile Mirror\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_missile_mirror_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级退箭诀』-3",
+            "en": "Winds of Magic cost: -3 for \"Missile Mirror Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级退箭诀』%n",
+            "en": "Winds of Magic cost: %n for \"Missile Mirror Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_miscast_missile_mirror_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级退箭诀』-15%",
+            "en": "Miscast base chance: -15% for \"Missile Mirror Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级退箭诀』%+n%",
+            "en": "Miscast base chance: %+n% for \"Missile Mirror Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_spell_yin_missile_mirror"
+      ],
+      "desc_via_ability": "wh3_main_spell_yin_missile_mirror"
+    },
+    "wh3_main_skill_cth_magic_yin_05_power_of_yin": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "阴之力",
+        "en": "Power of Yin"
+      },
+      "desc": {
+        "zh": "当施放法术时，阴系法术的毁灭性魔力可以降低敌人的护甲强度",
+        "en": "The crushing power of the Lore of Yin reduces enemy armour strength whenever a spell is cast."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_main_lore_passive_power_of_yin.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_power_of_yin",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『阴之力』",
+            "en": "Passive ability: \"Power of Yin\""
+          },
+          "template": {
+            "zh": "被动技能：『阴之力』",
+            "en": "Passive ability: \"Power of Yin\""
+          },
+          "priority": 310,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_lore_passive_power_of_yin"
+      ],
+      "desc_via_ability": "wh3_main_lore_passive_power_of_yin"
+    },
+    "wh3_main_skill_cth_magic_yin_08_ancestral_warriors_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "先魂诀",
+        "en": "Ancestral Warriors"
+      },
+      "desc": {
+        "zh": "战士们的先祖应召由地下世界而出，猛攻向敌，直至再次于世间消逝",
+        "en": "The warriors' ancestors are summoned from the underworld, rising up to strike at the enemy with a furious assault before vanishing into the earth once more."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_ancestral_warriors.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『先魂诀』",
+            "en": "Spell: \"Ancestral Warriors\""
+          },
+          "template": {
+            "zh": "法术：『先魂诀』",
+            "en": "Spell: \"Ancestral Warriors\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_overcast_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级先魂诀』",
+            "en": "Overcast spell: \"Ancestral Warriors Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级先魂诀』",
+            "en": "Overcast spell: \"Ancestral Warriors Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_cooldown_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『先魂诀』-30%",
+            "en": "Cooldown: -30% to \"Ancestral Warriors\""
+          },
+          "template": {
+            "zh": "冷却速率：『先魂诀』%+n%",
+            "en": "Cooldown: %+n% to \"Ancestral Warriors\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_overcast_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级先魂诀』",
+            "en": "Overcast spell: \"Ancestral Warriors Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级先魂诀』",
+            "en": "Overcast spell: \"Ancestral Warriors Upgraded\"",
+            "_via_tr": true
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_cooldown_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『先魂诀』-50%",
+            "en": "Cooldown: -50% to \"Ancestral Warriors\""
+          },
+          "template": {
+            "zh": "冷却速率：『先魂诀』%+n%",
+            "en": "Cooldown: %+n% to \"Ancestral Warriors\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_ancestral_warriors",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『先魂诀』-2",
+            "en": "Winds of Magic cost: -2 for \"Ancestral Warriors\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『先魂诀』%n",
+            "en": "Winds of Magic cost: %n for \"Ancestral Warriors\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_wom_cost_ancestral_warriors_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级先魂诀』-3",
+            "en": "Winds of Magic cost: -3 for \"Ancestral Warriors Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级先魂诀』%n",
+            "en": "Winds of Magic cost: %n for \"Ancestral Warriors Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_main_effect_ability_miscast_ancestral_warriors_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级先魂诀』-15%",
+            "en": "Miscast base chance: -15% for \"Ancestral Warriors Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级先魂诀』%+n%",
+            "en": "Miscast base chance: %+n% for \"Ancestral Warriors Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_spell_yin_ancestral_warriors"
+      ],
+      "desc_via_ability": "wh3_main_spell_yin_ancestral_warriors"
+    },
     "wh3_main_skill_innate_cathay_1_hero": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -28320,6 +29612,102 @@
         "skills/shen-changfeng.json"
       ]
     },
+    "wh3_main_spell_yin_ancestral_warriors": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "先魂诀",
+        "en": "Ancestral Warriors"
+      },
+      "desc": {
+        "zh": "战士们的先祖应召由地下世界而出，猛攻向敌，直至再次于世间消逝",
+        "en": "The warriors' ancestors are summoned from the underworld, rising up to strike at the enemy with a furious assault before vanishing into the earth once more."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_ancestral_warriors.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ]
+    },
+    "wh3_main_spell_yin_blossom_wind": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "和风诀",
+        "en": "Blossom Wind"
+      },
+      "desc": {
+        "zh": "落英缤纷，拂过战场，以超自然之怒切割敌人，令其失明",
+        "en": "A wind of leaves and blossoms rolls across the battlefield, cutting into the enemy with supernatural power and blinding them with its fury."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_blossom_wind.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ]
+    },
+    "wh3_main_spell_yin_cloak_of_jet": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "墨衣诀",
+        "en": "Cloak of Jet"
+      },
+      "desc": {
+        "zh": "阴暗的阴之力屏障能够驱散敌人的魔法，以午夜的怀抱屏护其内的部队，使其免受精气之风的伤害",
+        "en": "This shadowy barrier of dark Yin energy turns aside enemy sorceries, protecting those within its midnight embrace from the elemental winds."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_cloak_of_jet.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ]
+    },
+    "wh3_main_spell_yin_missile_mirror": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "退箭诀",
+        "en": "Missile Mirror"
+      },
+      "desc": {
+        "zh": "莫测的黑暗与呼啸的狂风凌空阻碍敌人的箭矢，并将其偏转回它们的主人之处",
+        "en": "A magical of shifting darkness and howling wind snatches the enemy’s missiles from the air, even as they are fired, and hurls them back at their owners."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_missile_mirror.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ]
+    },
     "wh3_main_unit_passive_battle_harmony_yang": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -28488,8 +29876,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-02.json",
-        "skills/miko.json"
+        "skills/admiral-02.json"
       ]
     },
     "wh_main_character_abilities_deadly_onslaught": {
@@ -28633,8 +30020,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-02.json",
-        "skills/miko.json"
+        "skills/admiral-02.json"
       ]
     },
     "wh_main_skill_all_all_self_blade_master_starter": {
@@ -31381,1439 +32767,6 @@
         "units/abyssal-grand-cannon.json",
         "units/jade-sea-fleet-gunners.json",
         "units/tide-guard.json"
-      ]
-    },
-    "cth_npex_ability_admiral_death_roar": {
-      "kind": "unit_ability",
-      "source": "npex",
-      "pack": null,
-      "ability_type": "active",
-      "name": {
-        "zh": "死士怒吼",
-        "en": "Death-Defying Roar"
-      },
-      "desc": {
-        "zh": "登城破阵，悍不畏死，一声怒吼如雷霆贯耳。",
-        "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
-      },
-      "icon": {
-        "source": "npex",
-        "file": "icons/npex/cth_npex_ability_admiral_death_roar.png",
-        "size": "59x59"
-      },
-      "referenced_by": [
-        "skills/admiral-01.json"
-      ]
-    },
-    "cth_npex_skill_admiral_artofwar_paoling": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "兵法韬略",
-        "en": "The Art of War"
-      },
-      "desc": {
-        "zh": "兵者，诡道也。乘潮夜进，偃旗息鼓，敌未成列而炮已齐鸣。",
-        "en": "All warfare is deception. Advance on the tide with colours struck and oars muffled, and let the broadsides speak before the enemy can form."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/guerrilla_deploy.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": {
-        "1": 20
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh_main_effect_attribute_enable_vanguard_deployment",
-          "effect_source": "vanilla",
-          "scope": "general_to_force_own",
-          "value": 1.0,
-          "text": {
-            "zh": "解锁属性：先锋部署\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Attribute: Vanguard Deployment\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "解锁属性：先锋部署",
-            "en": "Attribute: Vanguard Deployment"
-          },
-          "priority": 320,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ]
-    },
-    "cth_npex_skill_admiral_paoling_cloak_of_jet": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "墨衣诀",
-        "en": "Cloak of Jet",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "阴暗的阴之力屏障能够驱散敌人的魔法，以午夜的怀抱屏护其内的部队，使其免受精气之风的伤害",
-        "en": "This shadowy barrier of dark Yin energy turns aside enemy sorceries, protecting those within its midnight embrace from the elemental winds."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_cloak_of_jet.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_enable_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『墨衣诀』",
-            "en": "Spell: \"Cloak of Jet\""
-          },
-          "template": {
-            "zh": "法术：『墨衣诀』",
-            "en": "Spell: \"Cloak of Jet\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_overcast_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级墨衣诀』",
-            "en": "Overcast spell: \"Cloak of Jet Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级墨衣诀』",
-            "en": "Overcast spell: \"Cloak of Jet Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_cooldown_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『墨衣诀』-30%",
-            "en": "Cooldown: -30% to \"Cloak of Jet\""
-          },
-          "template": {
-            "zh": "冷却速率：『墨衣诀』%+n%",
-            "en": "Cooldown: %+n% to \"Cloak of Jet\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_overcast_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级墨衣诀』",
-            "en": "Overcast spell: \"Cloak of Jet Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级墨衣诀』",
-            "en": "Overcast spell: \"Cloak of Jet Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_cooldown_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『墨衣诀』-50%",
-            "en": "Cooldown: -50% to \"Cloak of Jet\""
-          },
-          "template": {
-            "zh": "冷却速率：『墨衣诀』%+n%",
-            "en": "Cooldown: %+n% to \"Cloak of Jet\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_cloak_of_jet",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -1.0,
-          "text": {
-            "zh": "魔法之风耗费：『墨衣诀』-1",
-            "en": "Winds of Magic cost: -1 for \"Cloak of Jet\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『墨衣诀』%n",
-            "en": "Winds of Magic cost: %n for \"Cloak of Jet\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_cloak_of_jet_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级墨衣诀』-2",
-            "en": "Winds of Magic cost: -2 for \"Cloak of Jet Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级墨衣诀』%n",
-            "en": "Winds of Magic cost: %n for \"Cloak of Jet Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_miscast_cloak_of_jet_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级墨衣诀』-15%",
-            "en": "Miscast base chance: -15% for \"Cloak of Jet Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级墨衣诀』%+n%",
-            "en": "Miscast base chance: %+n% for \"Cloak of Jet Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_main_spell_yin_cloak_of_jet"
-      ],
-      "desc_via_ability": "wh3_main_spell_yin_cloak_of_jet"
-    },
-    "cth_npex_skill_admiral_unique_armor_breaker": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "破阵长槊",
-        "en": "Armour-Piercing Lances"
-      },
-      "desc": {
-        "zh": "即使身披重甲，亦难挡驭潮铁骑之锋",
-        "en": "Even heavy armour offers little protection against the Tide-Reader's charging cavalry."
-      },
-      "icon": {
-        "source": "npex",
-        "file": "icons/npex/cth_npex_skill_admiral_unique_armor_breaker.png",
-        "size": "72x72"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-03.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "cth_npex_effect_admiral_cavalry_ap",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 20.0,
-          "text": {
-            "zh": "武器破甲杀伤：+20%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Armour-piercing weapon damage: +20% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "武器破甲杀伤：%+n%（骑兵部队，不含领主与英雄）",
-            "en": "Armour-piercing weapon damage: %+n% for cavalry units (excluding lords and heroes)"
-          },
-          "priority": 450,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ]
-    },
-    "cth_npex_skill_admiral_unique_death_roar": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "死士怒吼",
-        "en": "Death-Defying Roar"
-      },
-      "desc": {
-        "zh": "登城破阵，悍不畏死，一声怒吼如雷霆贯耳。",
-        "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
-      },
-      "icon": {
-        "source": "npex",
-        "file": "icons/npex/cth_npex_skill_admiral_unique_death_roar.png",
-        "size": "72x72"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-01.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh_main_effect_character_stat_melee_attack",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 4.0,
-          "text": {
-            "zh": "近战攻击：+4",
-            "en": "Melee attack: +4"
-          },
-          "template": {
-            "zh": "近战攻击：%+n",
-            "en": "Melee attack: %+n"
-          },
-          "priority": 130,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/melee_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh_main_effect_character_stat_melee_defence",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 4.0,
-          "text": {
-            "zh": "近战防御：+4",
-            "en": "Melee defence: +4"
-          },
-          "template": {
-            "zh": "近战防御：%+n",
-            "en": "Melee defence: %+n"
-          },
-          "priority": 150,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/defence_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_effect_admiral_enable_death_roar",
-          "effect_source": "npex",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "解锁战场能力「死士怒吼」",
-            "en": "Enables battle ability: Death-Defying Roar"
-          },
-          "template": {
-            "zh": "解锁战场能力「死士怒吼」",
-            "en": "Enables battle ability: Death-Defying Roar"
-          },
-          "priority": 450,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/general_ability.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "cth_npex_ability_admiral_death_roar"
-      ]
-    },
-    "cth_npex_skill_admiral_unique_gunnery_supply": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "弹药整备",
-        "en": "Ammunition Reserves"
-      },
-      "desc": {
-        "zh": "底舱火药铅弹储备充沛，战阵前线随时补给。",
-        "en": "Powder and shot fill the holds, ready to replenish the firing line."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/character_ammo.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh2_dlc17_effect_ability_enable_restock",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "技能：『补弹！』",
-            "en": "Ability \"Restock!\""
-          },
-          "template": {
-            "zh": "技能：『补弹！』",
-            "en": "Ability \"Restock!\""
-          },
-          "priority": 27,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/general_ability.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_effect_admiral_gunnery_supply_ammo",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 15.0,
-          "text": {
-            "zh": "弹药容量：+15%（火器与炮兵部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Ammunition: +15% for gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "弹药容量：%+n%（火器与炮兵部队）",
-            "en": "Ammunition: %+n% for gunpowder and artillery units"
-          },
-          "priority": 450,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ammo.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh2_dlc17_hero_abilities_more_powder_generic"
-      ]
-    },
-    "cth_npex_skill_admiral_unique_swift_cav": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "疾风突骑",
-        "en": "Wind-Riding Cavalry"
-      },
-      "desc": {
-        "zh": "乘风逐浪，疾行千里。",
-        "en": "Riding wind and wave, they cover a thousand li in a day."
-      },
-      "icon": {
-        "source": "npex",
-        "file": "icons/npex/cth_npex_skill_admiral_unique_swift_cav.png",
-        "size": "72x72"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-03.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh_main_effect_force_all_campaign_movement_range",
-          "effect_source": "vanilla",
-          "scope": "general_to_force_own",
-          "value": 10.0,
-          "text": {
-            "zh": "战略地图移动距离：+10%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Campaign movement range: +10%\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "战略地图移动距离：%+n%",
-            "en": "Campaign movement range: %+n%"
-          },
-          "priority": 101,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "cth_npex_effect_admiral_tide_speed",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 10.0,
-          "text": {
-            "zh": "移动速度：+10%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Speed: +10% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "移动速度：%+n%（骑兵部队，不含领主与英雄）",
-            "en": "Speed: %+n% for cavalry units (excluding lords and heroes)"
-          },
-          "priority": 500,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/battle_movement.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ]
-    },
-    "wh2_dlc17_hero_abilities_more_powder_generic": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh2_dlc17",
-      "ability_type": "active",
-      "name": {
-        "zh": "补弹！",
-        "en": "Restock!"
-      },
-      "desc": {
-        "zh": "在战场上，对箭矢、炮弹以及各种五花八门弹药的需求无穷无尽",
-        "en": "Arrows, cannonballs and more esoteric munitions are needed in endless supply on the battlefield."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh2_dlc11_hero_abilities_more_powder.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ]
-    },
-    "wh3_main_lore_passive_power_of_yin": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "ability_type": "passive",
-      "name": {
-        "zh": "阴之力",
-        "en": "Power of Yin"
-      },
-      "desc": {
-        "zh": "当施放法术时，阴系法术的毁灭性魔力可以降低敌人的护甲强度",
-        "en": "The crushing power of the Lore of Yin reduces enemy armour strength whenever a spell is cast."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_lore_passive_power_of_yin.png",
-        "size": "38x38",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ]
-    },
-    "wh3_main_skill_cth_magic_yin_03_blossom_wind_lord": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "name": {
-        "zh": "和风诀",
-        "en": "Blossom Wind"
-      },
-      "desc": {
-        "zh": "落英缤纷，拂过战场，以超自然之怒切割敌人，令其失明",
-        "en": "A wind of leaves and blossoms rolls across the battlefield, cutting into the enemy with supernatural power and blinding them with its fury."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_blossom_wind.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_enable_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『和风诀』",
-            "en": "Spell: \"Blossom Wind\""
-          },
-          "template": {
-            "zh": "法术：『和风诀』",
-            "en": "Spell: \"Blossom Wind\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_overcast_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级和风诀』",
-            "en": "Overcast spell: \"Blossom Wind Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级和风诀』",
-            "en": "Overcast spell: \"Blossom Wind Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_cooldown_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『和风诀』-30%",
-            "en": "Cooldown: -30% to \"Blossom Wind\""
-          },
-          "template": {
-            "zh": "冷却速率：『和风诀』%+n%",
-            "en": "Cooldown: %+n% to \"Blossom Wind\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_overcast_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级和风诀』",
-            "en": "Overcast spell: \"Blossom Wind Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级和风诀』",
-            "en": "Overcast spell: \"Blossom Wind Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_cooldown_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『和风诀』-50%",
-            "en": "Cooldown: -50% to \"Blossom Wind\""
-          },
-          "template": {
-            "zh": "冷却速率：『和风诀』%+n%",
-            "en": "Cooldown: %+n% to \"Blossom Wind\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_blossom_wind",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『和风诀』-2",
-            "en": "Winds of Magic cost: -2 for \"Blossom Wind\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『和风诀』%n",
-            "en": "Winds of Magic cost: %n for \"Blossom Wind\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_blossom_wind_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -3.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级和风诀』-3",
-            "en": "Winds of Magic cost: -3 for \"Blossom Wind Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级和风诀』%n",
-            "en": "Winds of Magic cost: %n for \"Blossom Wind Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_miscast_blossom_wind_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级和风诀』-15%",
-            "en": "Miscast base chance: -15% for \"Blossom Wind Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级和风诀』%+n%",
-            "en": "Miscast base chance: %+n% for \"Blossom Wind Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_main_spell_yin_blossom_wind"
-      ],
-      "desc_via_ability": "wh3_main_spell_yin_blossom_wind"
-    },
-    "wh3_main_skill_cth_magic_yin_04_missile_mirror_lord": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "name": {
-        "zh": "退箭诀",
-        "en": "Missile Mirror"
-      },
-      "desc": {
-        "zh": "莫测的黑暗与呼啸的狂风凌空阻碍敌人的箭矢，并将其偏转回它们的主人之处",
-        "en": "A magical of shifting darkness and howling wind snatches the enemy’s missiles from the air, even as they are fired, and hurls them back at their owners."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_missile_mirror.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_enable_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『退箭诀』",
-            "en": "Spell: \"Missile Mirror\""
-          },
-          "template": {
-            "zh": "法术：『退箭诀』",
-            "en": "Spell: \"Missile Mirror\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_overcast_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级退箭诀』",
-            "en": "Overcast spell: \"Missile Mirror Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级退箭诀』",
-            "en": "Overcast spell: \"Missile Mirror Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_cooldown_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『退箭诀』-30%",
-            "en": "Cooldown: -30% to \"Missile Mirror\""
-          },
-          "template": {
-            "zh": "冷却速率：『退箭诀』%+n%",
-            "en": "Cooldown: %+n% to \"Missile Mirror\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_overcast_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级退箭诀』",
-            "en": "Overcast spell: \"Missile Mirror Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级退箭诀』",
-            "en": "Overcast spell: \"Missile Mirror Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_cooldown_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『退箭诀』-50%",
-            "en": "Cooldown: -50% to \"Missile Mirror\""
-          },
-          "template": {
-            "zh": "冷却速率：『退箭诀』%+n%",
-            "en": "Cooldown: %+n% to \"Missile Mirror\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_missile_mirror",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『退箭诀』-2",
-            "en": "Winds of Magic cost: -2 for \"Missile Mirror\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『退箭诀』%n",
-            "en": "Winds of Magic cost: %n for \"Missile Mirror\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_missile_mirror_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -3.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级退箭诀』-3",
-            "en": "Winds of Magic cost: -3 for \"Missile Mirror Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级退箭诀』%n",
-            "en": "Winds of Magic cost: %n for \"Missile Mirror Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_miscast_missile_mirror_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级退箭诀』-15%",
-            "en": "Miscast base chance: -15% for \"Missile Mirror Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级退箭诀』%+n%",
-            "en": "Miscast base chance: %+n% for \"Missile Mirror Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_main_spell_yin_missile_mirror"
-      ],
-      "desc_via_ability": "wh3_main_spell_yin_missile_mirror"
-    },
-    "wh3_main_skill_cth_magic_yin_05_power_of_yin": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "name": {
-        "zh": "阴之力",
-        "en": "Power of Yin"
-      },
-      "desc": {
-        "zh": "当施放法术时，阴系法术的毁灭性魔力可以降低敌人的护甲强度",
-        "en": "The crushing power of the Lore of Yin reduces enemy armour strength whenever a spell is cast."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_main_lore_passive_power_of_yin.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_enable_power_of_yin",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "被动技能：『阴之力』",
-            "en": "Passive ability: \"Power of Yin\""
-          },
-          "template": {
-            "zh": "被动技能：『阴之力』",
-            "en": "Passive ability: \"Power of Yin\""
-          },
-          "priority": 310,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/general_ability.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_main_lore_passive_power_of_yin"
-      ],
-      "desc_via_ability": "wh3_main_lore_passive_power_of_yin"
-    },
-    "wh3_main_skill_cth_magic_yin_08_ancestral_warriors_lord": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "name": {
-        "zh": "先魂诀",
-        "en": "Ancestral Warriors"
-      },
-      "desc": {
-        "zh": "战士们的先祖应召由地下世界而出，猛攻向敌，直至再次于世间消逝",
-        "en": "The warriors' ancestors are summoned from the underworld, rising up to strike at the enemy with a furious assault before vanishing into the earth once more."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_ancestral_warriors.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_enable_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『先魂诀』",
-            "en": "Spell: \"Ancestral Warriors\""
-          },
-          "template": {
-            "zh": "法术：『先魂诀』",
-            "en": "Spell: \"Ancestral Warriors\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_overcast_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级先魂诀』",
-            "en": "Overcast spell: \"Ancestral Warriors Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级先魂诀』",
-            "en": "Overcast spell: \"Ancestral Warriors Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh3_main_effect_ability_cooldown_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『先魂诀』-30%",
-            "en": "Cooldown: -30% to \"Ancestral Warriors\""
-          },
-          "template": {
-            "zh": "冷却速率：『先魂诀』%+n%",
-            "en": "Cooldown: %+n% to \"Ancestral Warriors\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_overcast_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级先魂诀』",
-            "en": "Overcast spell: \"Ancestral Warriors Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级先魂诀』",
-            "en": "Overcast spell: \"Ancestral Warriors Upgraded\"",
-            "_via_tr": true
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_cooldown_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『先魂诀』-50%",
-            "en": "Cooldown: -50% to \"Ancestral Warriors\""
-          },
-          "template": {
-            "zh": "冷却速率：『先魂诀』%+n%",
-            "en": "Cooldown: %+n% to \"Ancestral Warriors\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_ancestral_warriors",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『先魂诀』-2",
-            "en": "Winds of Magic cost: -2 for \"Ancestral Warriors\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『先魂诀』%n",
-            "en": "Winds of Magic cost: %n for \"Ancestral Warriors\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_wom_cost_ancestral_warriors_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -3.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级先魂诀』-3",
-            "en": "Winds of Magic cost: -3 for \"Ancestral Warriors Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级先魂诀』%n",
-            "en": "Winds of Magic cost: %n for \"Ancestral Warriors Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_main_effect_ability_miscast_ancestral_warriors_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级先魂诀』-15%",
-            "en": "Miscast base chance: -15% for \"Ancestral Warriors Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级先魂诀』%+n%",
-            "en": "Miscast base chance: %+n% for \"Ancestral Warriors Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_main_spell_yin_ancestral_warriors"
-      ],
-      "desc_via_ability": "wh3_main_spell_yin_ancestral_warriors"
-    },
-    "wh3_main_spell_yin_ancestral_warriors": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "ability_type": "spell",
-      "name": {
-        "zh": "先魂诀",
-        "en": "Ancestral Warriors"
-      },
-      "desc": {
-        "zh": "战士们的先祖应召由地下世界而出，猛攻向敌，直至再次于世间消逝",
-        "en": "The warriors' ancestors are summoned from the underworld, rising up to strike at the enemy with a furious assault before vanishing into the earth once more."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_ancestral_warriors.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ]
-    },
-    "wh3_main_spell_yin_blossom_wind": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "ability_type": "spell",
-      "name": {
-        "zh": "和风诀",
-        "en": "Blossom Wind"
-      },
-      "desc": {
-        "zh": "落英缤纷，拂过战场，以超自然之怒切割敌人，令其失明",
-        "en": "A wind of leaves and blossoms rolls across the battlefield, cutting into the enemy with supernatural power and blinding them with its fury."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_blossom_wind.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ]
-    },
-    "wh3_main_spell_yin_cloak_of_jet": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "ability_type": "spell",
-      "name": {
-        "zh": "墨衣诀",
-        "en": "Cloak of Jet"
-      },
-      "desc": {
-        "zh": "阴暗的阴之力屏障能够驱散敌人的魔法，以午夜的怀抱屏护其内的部队，使其免受精气之风的伤害",
-        "en": "This shadowy barrier of dark Yin energy turns aside enemy sorceries, protecting those within its midnight embrace from the elemental winds."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_cloak_of_jet.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
-      ]
-    },
-    "wh3_main_spell_yin_missile_mirror": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_main",
-      "ability_type": "spell",
-      "name": {
-        "zh": "退箭诀",
-        "en": "Missile Mirror"
-      },
-      "desc": {
-        "zh": "莫测的黑暗与呼啸的狂风凌空阻碍敌人的箭矢，并将其偏转回它们的主人之处",
-        "en": "A magical of shifting darkness and howling wind snatches the enemy’s missiles from the air, even as they are fired, and hurls them back at their owners."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_main_spell_yin_missile_mirror.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/admiral-02.json"
       ]
     }
   }

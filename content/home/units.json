@@ -97,6 +97,13 @@
             }
           },
           {
+            "slug": "yari-cavalry",
+            "name": {
+              "zh": "枪骑马武士",
+              "en": "Yari Cavalry"
+            }
+          },
+          {
             "slug": "thunderblade-hatamoto",
             "name": {
               "zh": "雷刃旗本",

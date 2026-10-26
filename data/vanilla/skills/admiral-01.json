@@ -387,7 +387,7 @@
       "indent": 0,
       "points_on_creation": "1",
       "required_num_parents": "0",
-      "visible_in_ui": true,
+      "visible_in_ui": false,
       "parents": []
     },
     {

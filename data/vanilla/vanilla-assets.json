@@ -31688,11 +31688,9 @@
         "en": "Even heavy armour offers little protection against the Tide-Reader's charging cavalry."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/battle_charge.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_armor_breaker.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -31738,11 +31736,9 @@
         "en": "Walls fall and battle lines break before those who answer death with a thunderous roar."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh_main_character_abilities_foe_seeker.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_death_roar.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -31913,11 +31909,9 @@
         "en": "Riding wind and wave, they cover a thousand li in a day."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/campaign_movement.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_skill_admiral_unique_swift_cav.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,

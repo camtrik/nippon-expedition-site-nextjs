@@ -21791,6 +21791,56 @@
         "wh_dlc05_spell_life_regrowth"
       ]
     },
+    "wh3_cp1_skill_cth_all_unique_harmony_yin": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": null,
+      "name": {
+        "zh": "宁和之临（阴）",
+        "en": "Harmonious Presence (Yin)"
+      },
+      "desc": {
+        "zh": "这位遵循阴之道的修士，始终保持着沉静而不动声色的姿态，避开一切直接干预，温和地牵引秩序重返宁和",
+        "en": "Ever maintaining a calm and passive manner, this follower of Yin’s tenets gently guides order back into synchronicity by eschewing overt intervention."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_main_yin.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_pooled_resource_harmony_characters_yin",
+          "effect_source": "vanilla",
+          "scope": "building_to_province_own",
+          "value": -1.0,
+          "text": {
+            "zh": "宁和：[[col:white]]阴[[/col]]+1\\n（所在行省）",
+            "en": "Harmony: +1 [[col:white]]Yin[[/col]]\\n(local province)"
+          },
+          "template": {
+            "zh": "宁和：[[col:white]]阴[[/col]]+1",
+            "en": "Harmony: +1 [[col:white]]Yin[[/col]]"
+          },
+          "priority": 501,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/cathay_yin.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "wh3_dlc24_character_abilities_colossal_strike": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -23981,6 +24031,30 @@
         "skills/serena.json"
       ]
     },
+    "wh3_main_character_passive_will_of_the_dragons": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "ability_type": "passive",
+      "name": {
+        "zh": "龙之意志",
+        "en": "Will of the Dragons"
+      },
+      "desc": {
+        "zh": "龙神统治了震旦数世纪之久。他们的权力永远不会受到帝国臣民的质疑，他们也完全知晓自己在世上的地位和角色",
+        "en": "The Dragons have ruled Cathay for centuries. Their power will never be questioned by their imperial subjects, who understand their place and role in the world perfectly."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_main_character_passive_will_of_the_dragons.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
     "wh3_main_lord_passive_strategist": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -25912,7 +25986,8 @@
         "skills/admiral-02.json",
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
-        "skills/samurai-taisho.json"
+        "skills/samurai-taisho.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -26120,7 +26195,8 @@
         "skills/admiral-02.json",
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
-        "skills/samurai-taisho.json"
+        "skills/samurai-taisho.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -26263,6 +26339,60 @@
         }
       ]
     },
+    "wh3_main_skill_cth_all_self_will_of_the_dragons": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "龙之意志",
+        "en": "Will of the Dragons"
+      },
+      "desc": {
+        "zh": "龙神统治了震旦数世纪之久。他们的权力永远不会受到帝国臣民的质疑，他们也完全知晓自己在世上的地位和角色",
+        "en": "The Dragons have ruled Cathay for centuries. Their power will never be questioned by their imperial subjects, who understand their place and role in the world perfectly."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_main_character_passive_will_of_the_dragons.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_will_of_the_dragons",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『龙之意志』",
+            "en": "Passive ability: \"Will of the Dragons\""
+          },
+          "template": {
+            "zh": "被动技能：『龙之意志』",
+            "en": "Passive ability: \"Will of the Dragons\""
+          },
+          "priority": 310,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_character_passive_will_of_the_dragons"
+      ],
+      "desc_via_ability": "wh3_main_character_passive_will_of_the_dragons"
+    },
     "wh3_main_skill_cth_all_unique_magic_resist": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -26299,7 +26429,8 @@
         "skills/sayo.json",
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
-        "skills/tachibana-naotora.json"
+        "skills/tachibana-naotora.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -26363,7 +26494,8 @@
         "skills/sayo.json",
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
-        "skills/tachibana-naotora.json"
+        "skills/tachibana-naotora.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {

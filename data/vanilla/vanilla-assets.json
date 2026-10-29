@@ -12041,10 +12041,10 @@
           "effect": "wh_main_effect_character_stat_melee_attack",
           "effect_source": "vanilla",
           "scope": "character_to_character_own",
-          "value": 3.0,
+          "value": 5.0,
           "text": {
-            "zh": "近战攻击：+3",
-            "en": "Melee attack: +3"
+            "zh": "近战攻击：+5",
+            "en": "Melee attack: +5"
           },
           "template": {
             "zh": "近战攻击：%+n",
@@ -12064,102 +12064,10 @@
           "effect": "wh_main_effect_character_stat_melee_defence",
           "effect_source": "vanilla",
           "scope": "character_to_character_own",
-          "value": 3.0,
+          "value": 5.0,
           "text": {
-            "zh": "近战防御：+3",
-            "en": "Melee defence: +3"
-          },
-          "template": {
-            "zh": "近战防御：%+n",
-            "en": "Melee defence: %+n"
-          },
-          "priority": 150,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/defence_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh_main_effect_character_stat_melee_attack",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 6.0,
-          "text": {
-            "zh": "近战攻击：+6",
-            "en": "Melee attack: +6"
-          },
-          "template": {
-            "zh": "近战攻击：%+n",
-            "en": "Melee attack: %+n"
-          },
-          "priority": 130,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/melee_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh_main_effect_character_stat_melee_defence",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 6.0,
-          "text": {
-            "zh": "近战防御：+6",
-            "en": "Melee defence: +6"
-          },
-          "template": {
-            "zh": "近战防御：%+n",
-            "en": "Melee defence: %+n"
-          },
-          "priority": 150,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/defence_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh_main_effect_character_stat_melee_attack",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 9.0,
-          "text": {
-            "zh": "近战攻击：+9",
-            "en": "Melee attack: +9"
-          },
-          "template": {
-            "zh": "近战攻击：%+n",
-            "en": "Melee attack: %+n"
-          },
-          "priority": 130,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/melee_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh_main_effect_character_stat_melee_defence",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 9.0,
-          "text": {
-            "zh": "近战防御：+9",
-            "en": "Melee defence: +9"
+            "zh": "近战防御：+5",
+            "en": "Melee defence: +5"
           },
           "template": {
             "zh": "近战防御：%+n",
@@ -12206,10 +12114,10 @@
           "effect": "cth_npex_serena_fleet_range",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 7.0,
           "text": {
-            "zh": "射程范围：+5%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Range: +5% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "射程范围：+7%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Range: +7% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "射程范围：%+n%（舰队远程兵种）",
@@ -12229,102 +12137,10 @@
           "effect": "cth_npex_serena_fleet_reload",
           "effect_source": "npex",
           "scope": "agent_to_parent_army_own",
-          "value": 5.0,
+          "value": 7.0,
           "text": {
-            "zh": "装弹时间降低：+5%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Reload time reduction: +5% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
-            "en": "Reload time reduction: %+n% for fleet missile units"
-          },
-          "priority": 562,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_range",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 10.0,
-          "text": {
-            "zh": "射程范围：+10%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Range: +10% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
-            "en": "Range: %+n% for fleet missile units"
-          },
-          "priority": 531,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/accuracy.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_reload",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 10.0,
-          "text": {
-            "zh": "装弹时间降低：+10%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Reload time reduction: +10% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
-            "en": "Reload time reduction: %+n% for fleet missile units"
-          },
-          "priority": 562,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_range",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 15.0,
-          "text": {
-            "zh": "射程范围：+15%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Range: +15% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
-          },
-          "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
-            "en": "Range: %+n% for fleet missile units"
-          },
-          "priority": 531,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/accuracy.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_reload",
-          "effect_source": "npex",
-          "scope": "agent_to_parent_army_own",
-          "value": 15.0,
-          "text": {
-            "zh": "装弹时间降低：+15%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Reload time reduction: +15% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "装弹时间降低：+7%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Reload time reduction: +7% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
             "zh": "装弹时间降低：%+n%（舰队远程兵种）",
@@ -12371,10 +12187,10 @@
           "effect": "cth_npex_serena_fleet_range",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 5.0,
+          "value": 7.0,
           "text": {
-            "zh": "射程范围：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Range: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "射程范围：+7%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Range: +7% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "射程范围：%+n%（舰队远程兵种）",
@@ -12394,102 +12210,10 @@
           "effect": "cth_npex_serena_fleet_reload",
           "effect_source": "npex",
           "scope": "general_to_force_own",
-          "value": 5.0,
+          "value": 7.0,
           "text": {
-            "zh": "装弹时间降低：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload time reduction: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
-            "en": "Reload time reduction: %+n% for fleet missile units"
-          },
-          "priority": 562,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_range",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 10.0,
-          "text": {
-            "zh": "射程范围：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Range: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
-            "en": "Range: %+n% for fleet missile units"
-          },
-          "priority": 531,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/accuracy.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "cth_npex_serena_fleet_reload",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 10.0,
-          "text": {
-            "zh": "装弹时间降低：+10%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload time reduction: +10% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
-            "en": "Reload time reduction: %+n% for fleet missile units"
-          },
-          "priority": 562,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_range",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 15.0,
-          "text": {
-            "zh": "射程范围：+15%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Range: +15% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
-            "en": "Range: %+n% for fleet missile units"
-          },
-          "priority": 531,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/accuracy.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "cth_npex_serena_fleet_reload",
-          "effect_source": "npex",
-          "scope": "general_to_force_own",
-          "value": 15.0,
-          "text": {
-            "zh": "装弹时间降低：+15%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload time reduction: +15% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "装弹时间降低：+7%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +7% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "装弹时间降低：%+n%（舰队远程兵种）",
@@ -15234,6 +14958,885 @@
         "cth_npex_skill_tachibana_ability_shiden"
       ]
     },
+    "cth_npex_skill_yin_ling_innate_dummy": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "天生技能",
+        "en": "Innate Gifts"
+      },
+      "desc": {
+        "zh": "天生技能",
+        "en": "Innate Gifts"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_enable_tidecall",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『海潮之唤』",
+            "en": "Spell: \"Tidecall\""
+          },
+          "template": {
+            "zh": "法术：『海潮之唤』",
+            "en": "Spell: \"Tidecall\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_dlc11_spell_deep_tidecall"
+      ]
+    },
+    "cth_npex_skill_yin_ling_item_dinglan_comb": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "定澜金梳",
+        "en": "Golden Comb of Still Waters"
+      },
+      "desc": {
+        "zh": "定澜金梳",
+        "en": "Golden Comb of Still Waters"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_item_wave_breaker": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "断浪",
+        "en": "Wave-Breaker"
+      },
+      "desc": {
+        "zh": "断浪",
+        "en": "Wave-Breaker"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/campaign_movement.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_mount_cold_one": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "冷蜥",
+        "en": "Cold One"
+      },
+      "desc": {
+        "zh": "冷蜥",
+        "en": "Cold One"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_cold_one.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "5",
+      "level_ranks": {
+        "1": 5
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_mount_kirin": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "雷泽",
+        "en": "Leize"
+      },
+      "desc": {
+        "zh": "雷泽",
+        "en": "Leize"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_great_stag.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "15",
+      "level_ranks": {
+        "1": 15
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_mount_ocean_wyrm": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "远洋妖龙",
+        "en": "Pelagic Wyrm"
+      },
+      "desc": {
+        "zh": "远洋妖龙",
+        "en": "Pelagic Wyrm"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_frost_wyrm.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "11",
+      "level_ranks": {
+        "1": 11
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_texing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "御兽",
+        "en": "Beastmaster"
+      },
+      "desc": {
+        "zh": "驭狂澜于掌间，驱群兽破千军。",
+        "en": "She stills the raging waves and drives her beasts through a thousand ranks."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/beast_tamer.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_enable_attack_from_sea_dummy",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "可对港口城镇发动跨海攻击\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Enable sea-based attacks on port settlements\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "可对港口城镇发动跨海攻击",
+            "en": "Enable sea-based attacks on port settlements"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/admiral.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "战略地图移动距离：在海上时+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Campaign movement range: +10% whilst at sea\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战略地图移动距离：在海上时%+n%",
+            "en": "Campaign movement range: %+n% whilst at sea"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_innate_ap",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "破甲武器杀伤：怪兽与战兽部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Armour-piercing weapon damage: +10% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "破甲武器杀伤：怪兽与战兽部队%+n%",
+            "en": "Armour-piercing weapon damage: %+n% for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_recruitment_cost",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": -20.0,
+          "text": {
+            "zh": "招募成本：怪兽与战兽部队-20%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruitment cost: -20% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "招募成本：怪兽与战兽部队%+n%",
+            "en": "Recruitment cost: %+n% for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh2_twa03_attrition_immunity_high_seas_reef_storm",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "免疫深海、暗礁与风暴损耗\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Immune to High Seas, Reef and Storm attrition\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "免疫深海、暗礁与风暴损耗",
+            "en": "Immune to High Seas, Reef and Storm attrition"
+          },
+          "priority": 800,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attrition.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_yin_ling_top_living_off_land": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "以战养战",
+        "en": "Living off the Land"
+      },
+      "desc": {
+        "zh": "海怪之巢与敌阵粮草皆可以作为军资。",
+        "en": "Sea-beast lairs and enemy stores alike provide supplies for her fleet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_replenishment.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "7",
+      "level_ranks": {
+        "1": 7
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_captives",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "战后俘虏数量：+15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Casualties captured post-battle: +15%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战后俘虏数量：%+n%",
+            "en": "Casualties captured post-battle: %+n%"
+          },
+          "priority": 51,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/military.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_dlc16_effect_replenishment_in_foreign_territory",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 8.0,
+          "text": {
+            "zh": "补员速率：位于外邦领土时+8%",
+            "en": "Casualty replenishment rate: +8% when in foreign territory"
+          },
+          "template": {
+            "zh": "补员速率：位于外邦领土时%+n%",
+            "en": "Casualty replenishment rate: %+n% when in foreign territory"
+          },
+          "priority": 55,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_post_battle_loot_mod",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "战后掳掠收入：+15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Income from post-battle loot: +15%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战后掳掠收入：%+n%",
+            "en": "Income from post-battle loot: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/income.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_beasts": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "浮海百兽苑",
+        "en": "Menagerie of the Open Sea"
+      },
+      "desc": {
+        "zh": "殷翎打造的百兽行宫，利爪与坚鳞在这里愈发厚重坚固。",
+        "en": "Her floating menagerie shelters creatures whose claws and scales grow ever stronger."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/beast_tamer.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_armour",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "护甲：怪兽与战兽部队+15\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Armour: +15 for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "护甲：怪兽与战兽部队%+n",
+            "en": "Armour: %+n for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_morale",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "领导力：怪兽与战兽部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Leadership: +8 for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "领导力：怪兽与战兽部队%+n",
+            "en": "Leadership: %+n for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_upkeep",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": -15.0,
+          "text": {
+            "zh": "维持费：怪兽与战兽部队-15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -15% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "维持费：怪兽与战兽部队%+n%",
+            "en": "Upkeep: %+n% for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        }
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_capstone": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "狂澜主宰",
+        "en": "Sovereign of the Raging Tide"
+      },
+      "desc": {
+        "zh": "全军随我——撕碎他们！",
+        "en": "Follow me! Tear them apart!"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh2_dlc10_blood_frenzy.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "打赢战斗后，恢复10%战役地图移动距离\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Replenishes 10% campaign movement range after winning a battle\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "打赢战斗后，恢复%n%战役地图移动距离",
+            "en": "Replenishes %n% campaign movement range after winning a battle"
+          },
+          "priority": 3,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_apex_strength",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "武器威力：远洋妖龙与利维坦部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength: +10% for Pelagic Wyrms and Rotting Leviathans\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "武器威力：远洋妖龙与利维坦部队%+n%",
+            "en": "Weapon strength: %+n% for Pelagic Wyrms and Rotting Leviathans"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_frenzy",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "怪兽与战兽部队获得狂暴\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Frenzy for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "怪兽与战兽部队获得狂暴",
+            "en": "Frenzy for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        }
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_dragon_might": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "真龙天威",
+        "en": "Might of the True Dragon"
+      },
+      "desc": {
+        "zh": "龙威浩荡临九渊，万兽闻令死不旋。",
+        "en": "The dragon's majesty reaches into the deepest seas; her beasts heed its call without fear."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_dragon_might.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_recruit_rank",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 2.0,
+          "text": {
+            "zh": "新募等级：怪兽与战兽部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruit rank: +2 for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "新募等级：怪兽与战兽部队%+n",
+            "en": "Recruit rank: %+n for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_enable_dragon_might",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "主动技能：真龙天威",
+            "en": "Active ability: Might of the True Dragon"
+          },
+          "template": {
+            "zh": "主动技能：真龙天威",
+            "en": "Active ability: Might of the True Dragon"
+          },
+          "priority": 10,
+          "icon": null
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_yin_ling_dragon_might"
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_solo": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "怪兽爱好者",
+        "en": "Monster Enthusiast"
+      },
+      "desc": {
+        "zh": "常人见到山岳般的巨兽往往会惊骇不已，而殷翎会两眼放光。",
+        "en": "Where others recoil before a mountain of fangs and scales, her eyes light up."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_solo.png",
+        "size": "72x72"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_enable_solo",
+          "effect_source": "npex",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：怪兽爱好者",
+            "en": "Passive ability: Monster Enthusiast"
+          },
+          "template": {
+            "zh": "被动技能：怪兽爱好者",
+            "en": "Passive ability: Monster Enthusiast"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_bonus_vs_large",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 15.0,
+          "text": {
+            "zh": "对抗大型部队加成：+15",
+            "en": "Bonus vs Large: +15"
+          },
+          "template": {
+            "zh": "对抗大型部队加成：%+n",
+            "en": "Bonus vs Large: %+n"
+          },
+          "priority": 190,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/bonus_vs_large_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "cth_npex_yin_ling_solo"
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_strider": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "如履平地",
+        "en": "Sure-Footed"
+      },
+      "desc": {
+        "zh": "经受惊涛骇浪洗礼的战兽在复杂地形中也能灵动如梭。",
+        "en": "Tempered by storm and surf, her beasts flow across the roughest ground."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_speed.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_fatigue",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": -15.0,
+          "text": {
+            "zh": "活力消耗：怪兽与战兽部队-15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Vigour loss: -15% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "活力消耗：怪兽与战兽部队%+n%",
+            "en": "Vigour loss: %+n% for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_speed",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "速度：怪兽与战兽部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Speed: +10% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "速度：怪兽与战兽部队%+n%",
+            "en": "Speed: %+n% for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_strider",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "怪兽与战兽部队获得漫游者\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Strider for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "怪兽与战兽部队获得漫游者",
+            "en": "Strider for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        }
+      ]
+    },
+    "cth_npex_skill_yin_ling_unique_vanguard": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "快行先锋",
+        "en": "Swift Vanguard"
+      },
+      "desc": {
+        "zh": "不心急，又怎么能得到最丰厚的奖励呢",
+        "en": "How else could she claim the richest prize without being first to reach it?"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_charge.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "战略地图移动距离：在海上时+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Campaign movement range: +10% whilst at sea\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "战略地图移动距离：在海上时%+n%",
+            "en": "Campaign movement range: %+n% whilst at sea"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 10.0,
+          "text": {
+            "zh": "打赢战斗后，恢复10%战役地图移动距离\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Replenishes 10% campaign movement range after winning a battle\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "打赢战斗后，恢复%n%战役地图移动距离",
+            "en": "Replenishes %n% campaign movement range after winning a battle"
+          },
+          "priority": 3,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_yin_ling_beasts_vanguard",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "怪兽与战兽部队获得先锋部署\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Vanguard deployment for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "怪兽与战兽部队获得先锋部署",
+            "en": "Vanguard deployment for monsters and war beasts"
+          },
+          "priority": 10,
+          "icon": null
+        }
+      ]
+    },
     "cth_npex_spell_miko_fuma_fuda": {
       "kind": "unit_ability",
       "source": "npex",
@@ -15697,6 +16300,50 @@
       },
       "referenced_by": [
         "units/kunikuzushi-oni.json"
+      ]
+    },
+    "cth_npex_yin_ling_dragon_might": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "active",
+      "name": {
+        "zh": "真龙天威",
+        "en": "Might of the True Dragon"
+      },
+      "desc": {
+        "zh": "龙威浩荡临九渊，万兽闻令死不旋。",
+        "en": "The dragon's majesty reaches into the deepest seas; her beasts heed its call without fear."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_dragon_might.png",
+        "size": "72x72"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
+    "cth_npex_yin_ling_solo": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "怪兽爱好者",
+        "en": "Monster Enthusiast"
+      },
+      "desc": {
+        "zh": "巨兽当前，她只觉猎心大起。",
+        "en": "The greater the beast, the greater her delight in the hunt."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_solo.png",
+        "size": "72x72"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
       ]
     },
     "decent_melee": {
@@ -16259,7 +16906,8 @@
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16339,7 +16987,8 @@
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16414,7 +17063,8 @@
       "referenced_by": [
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
-        "skills/tachibana-naotora.json"
+        "skills/tachibana-naotora.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16567,7 +17217,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16647,7 +17298,8 @@
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16797,7 +17449,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16848,6 +17501,79 @@
         }
       ]
     },
+    "wh2_dlc11_skill_all_lord_self_thick-skinned": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "皮糙肉厚",
+        "en": "Thick-Skinned"
+      },
+      "desc": {
+        "zh": "那些天生便带着坚硬外壳的生物可不是那么容易杀死的，就算是强力的攻击，也不见得能刺穿他们的硬皮",
+        "en": "Creatures with tough hides or some kind of natural armour are tough nuts to crack - even a powerful attack may fall foul of their thick-skin."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_armour.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_armour",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 7.0,
+          "text": {
+            "zh": "护甲强度：+7",
+            "en": "Armour: +7"
+          },
+          "template": {
+            "zh": "护甲强度：%+n",
+            "en": "Armour: %+n"
+          },
+          "priority": 100,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/armour_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_character_stat_armour",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 15.0,
+          "text": {
+            "zh": "护甲强度：+15",
+            "en": "Armour: +15"
+          },
+          "template": {
+            "zh": "护甲强度：%+n",
+            "en": "Armour: %+n"
+          },
+          "priority": 100,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/armour_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "wh2_dlc11_skill_all_lord_self_wound-maker": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -16877,7 +17603,8 @@
         "skills/admiral-03.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -16951,7 +17678,8 @@
       "level_ranks": null,
       "referenced_by": [
         "skills/admiral-02.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -17141,6 +17869,434 @@
       ],
       "unlocks_abilities": [
         "wh2_dlc11_spell_deep_tidecall"
+      ]
+    },
+    "wh2_dlc11_skill_all_magic_deep_05_fog_of_the_damned_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "诅咒薄雾",
+        "en": "Fog of the Damned"
+      },
+      "desc": {
+        "zh": "正如黑夜紧跟着白昼一样，当薄雾降临时，死亡也就变得并不遥远了",
+        "en": "As surely as night follows day, when the mist descends, death isn't far behind."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_spell_deep_fog_of_the_damned.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_enable_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『诅咒薄雾』",
+            "en": "Spell: \"Fog of the Damned\""
+          },
+          "template": {
+            "zh": "法术：『诅咒薄雾』",
+            "en": "Spell: \"Fog of the Damned\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_overcast_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级诅咒薄雾』",
+            "en": "Overcast spell: \"Fog of the Damned Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级诅咒薄雾』",
+            "en": "Overcast spell: \"Fog of the Damned Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_cooldown_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『诅咒薄雾』-30%",
+            "en": "Cooldown: -30% to \"Fog of the Damned\""
+          },
+          "template": {
+            "zh": "冷却速率：『诅咒薄雾』%+n%",
+            "en": "Cooldown: %+n% to \"Fog of the Damned\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_overcast_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级诅咒薄雾』",
+            "en": "Overcast spell: \"Fog of the Damned Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级诅咒薄雾』",
+            "en": "Overcast spell: \"Fog of the Damned Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_cooldown_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『诅咒薄雾』-50%",
+            "en": "Cooldown: -50% to \"Fog of the Damned\""
+          },
+          "template": {
+            "zh": "冷却速率：『诅咒薄雾』%+n%",
+            "en": "Cooldown: %+n% to \"Fog of the Damned\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_wom_cost_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『诅咒薄雾』-2",
+            "en": "Winds of Magic cost: -2 for \"Fog of the Damned\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『诅咒薄雾』%n",
+            "en": "Winds of Magic cost: %n for \"Fog of the Damned\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_wom_cost_fog_of_the_damned_upgrade",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级诅咒薄雾』-3",
+            "en": "Winds of Magic cost: -3 for \"Fog of the Damned Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级诅咒薄雾』%n",
+            "en": "Winds of Magic cost: %n for \"Fog of the Damned Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_miscast_fog_of_the_damned",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级诅咒薄雾』-15%",
+            "en": "Miscast base chance: -15% for \"Fog of the Damned Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级诅咒薄雾』%+n%",
+            "en": "Miscast base chance: %+n% for \"Fog of the Damned Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_dlc11_spell_deep_fog_of_the_damned"
+      ]
+    },
+    "wh2_dlc11_skill_all_magic_deep_09_krakens_pull_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "name": {
+        "zh": "克拉肯拖拽",
+        "en": "Kraken's Pull"
+      },
+      "desc": {
+        "zh": "一旦被强大海怪的触手抓住，只有最强悍的人才能挣脱",
+        "en": "Once the mighty Kraken's tentacles take hold, only the toughest can fight their way free."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_spell_deep_krakens_pull.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_enable_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『克拉肯拖拽』",
+            "en": "Spell: \"Kraken's Pull\""
+          },
+          "template": {
+            "zh": "法术：『克拉肯拖拽』",
+            "en": "Spell: \"Kraken's Pull\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_overcast_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级克拉肯拖拽』",
+            "en": "Overcast spell: \"Kraken's Pull Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级克拉肯拖拽』",
+            "en": "Overcast spell: \"Kraken's Pull Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_dlc11_effect_ability_cooldown_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『克拉肯拖拽』-30%",
+            "en": "Cooldown: -30% to \"Kraken's Pull\""
+          },
+          "template": {
+            "zh": "冷却速率：『克拉肯拖拽』%+n%",
+            "en": "Cooldown: %+n% to \"Kraken's Pull\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_overcast_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级克拉肯拖拽』",
+            "en": "Overcast spell: \"Kraken's Pull Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级克拉肯拖拽』",
+            "en": "Overcast spell: \"Kraken's Pull Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_cooldown_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『克拉肯拖拽』-50%",
+            "en": "Cooldown: -50% to \"Kraken's Pull\""
+          },
+          "template": {
+            "zh": "冷却速率：『克拉肯拖拽』%+n%",
+            "en": "Cooldown: %+n% to \"Kraken's Pull\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_wom_cost_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『克拉肯拖拽』-3",
+            "en": "Winds of Magic cost: -3 for \"Kraken's Pull\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『克拉肯拖拽』%n",
+            "en": "Winds of Magic cost: %n for \"Kraken's Pull\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_wom_cost_krakens_pull_upgrade",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级克拉肯拖拽』-3",
+            "en": "Winds of Magic cost: -3 for \"Kraken's Pull Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级克拉肯拖拽』%n",
+            "en": "Winds of Magic cost: %n for \"Kraken's Pull Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_dlc11_effect_ability_miscast_krakens_pull",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级克拉肯拖拽』-15%",
+            "en": "Miscast base chance: -15% for \"Kraken's Pull Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级克拉肯拖拽』%+n%",
+            "en": "Miscast base chance: %+n% for \"Kraken's Pull Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_dlc11_spell_deep_krakens_pull"
       ]
     },
     "wh2_dlc11_skill_all_magic_deep_10_ghost_ship_lord": {
@@ -17358,6 +18514,30 @@
         "wh2_dlc11_spell_deep_ghost_ship"
       ]
     },
+    "wh2_dlc11_spell_deep_fog_of_the_damned": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "ability_type": "spell",
+      "name": {
+        "zh": "诅咒薄雾",
+        "en": "Fog of the Damned"
+      },
+      "desc": {
+        "zh": "『有这场大雾的遮蔽，他们永远不会知道我们有多少人…进攻！』",
+        "en": "\"They'll never know how many we are in this fog… Attack!\""
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_spell_deep_fog_of_the_damned.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
     "wh2_dlc11_spell_deep_ghost_ship": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -17382,6 +18562,30 @@
         "skills/admiral-02.json"
       ]
     },
+    "wh2_dlc11_spell_deep_krakens_pull": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_dlc11",
+      "ability_type": "spell",
+      "name": {
+        "zh": "克拉肯拖拽",
+        "en": "Kraken's Pull"
+      },
+      "desc": {
+        "zh": "一旦被克拉肯牢牢地抓住，很少有人有力量挣脱出来",
+        "en": "Few have the strength to break free once the Kraken has them within its horrid, betentacled grasp."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc11_spell_deep_krakens_pull.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
     "wh2_dlc11_spell_deep_tidecall": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -17404,7 +18608,8 @@
       },
       "referenced_by": [
         "skills/admiral-02.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ]
     },
     "wh2_dlc12_unit_passive_demagoguery": {
@@ -19942,6 +21147,648 @@
             "from": "game ui pack"
           }
         }
+      ]
+    },
+    "wh2_main_skill_magic_life_wizard_earth_blood_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "大地之血",
+        "en": "Earth Blood"
+      },
+      "desc": {
+        "zh": "法师从土地中召唤出治愈性的能量，以来自大地的自然痊愈之力庇护战士们",
+        "en": "The Wizard draws wholesome energies from the soil, imbuing companions with the natural resilience of the earth."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_earth_blood.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_enable_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『大地之血』",
+            "en": "Spell: \"Earth Blood\""
+          },
+          "template": {
+            "zh": "法术：『大地之血』",
+            "en": "Spell: \"Earth Blood\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_ability_overcast_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级大地之血』",
+            "en": "Overcast spell: \"Earth Blood Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级大地之血』",
+            "en": "Overcast spell: \"Earth Blood Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_cooldown_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『大地之血』-30%",
+            "en": "Cooldown: -30% to \"Earth Blood\""
+          },
+          "template": {
+            "zh": "冷却速率：『大地之血』%+n%",
+            "en": "Cooldown: %+n% to \"Earth Blood\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级大地之血』",
+            "en": "Overcast spell: \"Earth Blood Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级大地之血』",
+            "en": "Overcast spell: \"Earth Blood Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_dlc05_effect_ability_cooldown_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『大地之血』-50%",
+            "en": "Cooldown: -50% to \"Earth Blood\""
+          },
+          "template": {
+            "zh": "冷却速率：『大地之血』%+n%",
+            "en": "Cooldown: %+n% to \"Earth Blood\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_earth_blood",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『大地之血』-2",
+            "en": "Winds of Magic cost: -2 for \"Earth Blood\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『大地之血』%n",
+            "en": "Winds of Magic cost: %n for \"Earth Blood\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_earth_blood_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级大地之血』-3",
+            "en": "Winds of Magic cost: -3 for \"Earth Blood Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级大地之血』%n",
+            "en": "Winds of Magic cost: %n for \"Earth Blood Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_miscast_earth_blood_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级大地之血』-15%",
+            "en": "Miscast base chance: -15% for \"Earth Blood Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级大地之血』%+n%",
+            "en": "Miscast base chance: %+n% for \"Earth Blood Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_dlc05_spell_life_earth_blood"
+      ]
+    },
+    "wh2_main_skill_magic_life_wizard_flesh_to_stone_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "石化之躯",
+        "en": "Flesh to Stone"
+      },
+      "desc": {
+        "zh": "这一法术可以暂时将友军的血肉之躯转换成刀枪不入的岩石皮肤，从而大大增强其抵御攻击的能力",
+        "en": "This spell temporarily transforms allies' mortal flesh into unbreakable rock, increasing tenfold their resistance to attack."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_flesh_to_stone.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_enable_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『石化之躯』",
+            "en": "Spell: \"Flesh to Stone\""
+          },
+          "template": {
+            "zh": "法术：『石化之躯』",
+            "en": "Spell: \"Flesh to Stone\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_ability_overcast_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级石化之躯』",
+            "en": "Overcast spell: \"Flesh to Stone Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级石化之躯』",
+            "en": "Overcast spell: \"Flesh to Stone Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_cooldown_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『石化之躯』-30%",
+            "en": "Cooldown: -30% to \"Flesh to Stone\""
+          },
+          "template": {
+            "zh": "冷却速率：『石化之躯』%+n%",
+            "en": "Cooldown: %+n% to \"Flesh to Stone\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级石化之躯』",
+            "en": "Overcast spell: \"Flesh to Stone Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级石化之躯』",
+            "en": "Overcast spell: \"Flesh to Stone Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_dlc05_effect_ability_cooldown_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『石化之躯』-50%",
+            "en": "Cooldown: -50% to \"Flesh to Stone\""
+          },
+          "template": {
+            "zh": "冷却速率：『石化之躯』%+n%",
+            "en": "Cooldown: %+n% to \"Flesh to Stone\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_flesh_to_stone",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -1.0,
+          "text": {
+            "zh": "魔法之风耗费：『石化之躯』-1",
+            "en": "Winds of Magic cost: -1 for \"Flesh to Stone\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『石化之躯』%n",
+            "en": "Winds of Magic cost: %n for \"Flesh to Stone\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_flesh_to_stone_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -1.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级石化之躯』-1",
+            "en": "Winds of Magic cost: -1 for \"Flesh to Stone Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级石化之躯』%n",
+            "en": "Winds of Magic cost: %n for \"Flesh to Stone Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_miscast_flesh_to_stone_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级石化之躯』-15%",
+            "en": "Miscast base chance: -15% for \"Flesh to Stone Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级石化之躯』%+n%",
+            "en": "Miscast base chance: %+n% for \"Flesh to Stone Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_dlc05_spell_life_flesh_to_stone"
+      ]
+    },
+    "wh2_main_skill_magic_life_wizard_regrowth_lord": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "再生术",
+        "en": "Regrowth"
+      },
+      "desc": {
+        "zh": "法师呼唤着杜仁铎之名，以超乎寻常的速度治愈盟友的伤势",
+        "en": "By speaking Druthandor's name the Wizard is able to heal allies' injuries much faster than by natural means."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_regrowth.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_enable_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『再生术』",
+            "en": "Spell: \"Regrowth\""
+          },
+          "template": {
+            "zh": "法术：『再生术』",
+            "en": "Spell: \"Regrowth\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_ability_overcast_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级再生术』",
+            "en": "Overcast spell: \"Regrowth Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级再生术』",
+            "en": "Overcast spell: \"Regrowth Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_cooldown_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『再生术』-30%",
+            "en": "Cooldown: -30% to \"Regrowth\""
+          },
+          "template": {
+            "zh": "冷却速率：『再生术』%+n%",
+            "en": "Cooldown: %+n% to \"Regrowth\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级再生术』",
+            "en": "Overcast spell: \"Regrowth Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级再生术』",
+            "en": "Overcast spell: \"Regrowth Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_dlc05_effect_ability_cooldown_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『再生术』-50%",
+            "en": "Cooldown: -50% to \"Regrowth\""
+          },
+          "template": {
+            "zh": "冷却速率：『再生术』%+n%",
+            "en": "Cooldown: %+n% to \"Regrowth\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_regrowth",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『再生术』-2",
+            "en": "Winds of Magic cost: -2 for \"Regrowth\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『再生术』%n",
+            "en": "Winds of Magic cost: %n for \"Regrowth\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_wom_cost_regrowth_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级再生术』-3",
+            "en": "Winds of Magic cost: -3 for \"Regrowth Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级再生术』%n",
+            "en": "Winds of Magic cost: %n for \"Regrowth Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_miscast_regrowth_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级再生术』-15%",
+            "en": "Miscast base chance: -15% for \"Regrowth Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级再生术』%+n%",
+            "en": "Miscast base chance: %+n% for \"Regrowth Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_dlc05_spell_life_regrowth"
       ]
     },
     "wh3_dlc24_character_abilities_colossal_strike": {
@@ -24575,7 +26422,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -24726,7 +26574,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -24877,7 +26726,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25028,7 +26878,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25179,7 +27030,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25330,7 +27182,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25550,7 +27403,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25658,7 +27512,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25766,7 +27621,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25874,7 +27730,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -25982,7 +27839,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -26087,7 +27945,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -26192,7 +28051,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -29852,7 +31712,133 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/sayo.json"
+        "skills/sayo.json",
+        "skills/yin-ling.json"
+      ]
+    },
+    "wh_dlc05_skill_magic_life_life_bloom": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_dlc05",
+      "name": {
+        "zh": "生命绽放",
+        "en": "Life Bloom"
+      },
+      "desc": {
+        "zh": "纵使最为简单的法术，也能起到去旧换新，重唤精力，弥合伤口的作用",
+        "en": "Even the simplest of spells can bring forth the full bloom of renewal, reinvigorating and healing the broken and bleeding."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh_dlc05_spell_life_life_bloom.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_dlc05_effect_ability_enable_life_bloom",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『生命绽放』",
+            "en": "Passive ability: \"Life Bloom\""
+          },
+          "template": {
+            "zh": "被动技能：『生命绽放』",
+            "en": "Passive ability: \"Life Bloom\""
+          },
+          "priority": 310,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_dlc05_lore_passive_life_bloom"
+      ]
+    },
+    "wh_dlc05_spell_life_earth_blood": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh_dlc05",
+      "ability_type": "spell",
+      "name": {
+        "zh": "大地之血",
+        "en": "Earth Blood"
+      },
+      "desc": {
+        "zh": "法师从土地中召唤出治愈性的能量，以来自大地的自然痊愈之力庇护战士们",
+        "en": "The Wizard draws wholesome energies from the soil, imbuing companions with the natural resilience of the earth."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_earth_blood.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
+    "wh_dlc05_spell_life_flesh_to_stone": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh_dlc05",
+      "ability_type": "spell",
+      "name": {
+        "zh": "石化之躯",
+        "en": "Flesh to Stone"
+      },
+      "desc": {
+        "zh": "这一法术可以暂时将友军的血肉之躯转换成刀枪不入的岩石皮肤，从而大大增强其抵御攻击的能力",
+        "en": "This spell temporarily transforms allies' mortal flesh into unbreakable rock, increasing tenfold their resistance to attack."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_flesh_to_stone.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ]
+    },
+    "wh_dlc05_spell_life_regrowth": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh_dlc05",
+      "ability_type": "spell",
+      "name": {
+        "zh": "再生术",
+        "en": "Regrowth"
+      },
+      "desc": {
+        "zh": "法师呼唤着杜仁铎之名，以超乎寻常的速度治愈盟友的伤势",
+        "en": "By speaking Druthandor's name the Wizard is able to heal allies' injuries much faster than by natural means."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_dlc05_spell_life_regrowth.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_abilities_arcane_conduit": {
@@ -29876,7 +31862,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-02.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_abilities_deadly_onslaught": {
@@ -29900,7 +31886,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/ibuki.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_abilities_foe_seeker": {
@@ -29924,7 +31910,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-01.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_abilities_heroic_killing_blow": {
@@ -29972,7 +31958,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-01.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_abilities_stand_your_ground": {
@@ -29996,7 +31982,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-01.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_character_passive_evasion": {
@@ -30020,7 +32006,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/admiral-02.json"
+        "skills/yin-ling.json"
       ]
     },
     "wh_main_skill_all_all_self_blade_master_starter": {
@@ -30051,7 +32037,8 @@
         "skills/ibuki.json",
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
-        "skills/tachibana-naotora.json"
+        "skills/tachibana-naotora.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -30299,7 +32286,8 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -30458,7 +32446,8 @@
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
-        "skills/tachibana-naotora.json"
+        "skills/tachibana-naotora.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -30972,7 +32961,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31054,7 +33044,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31117,7 +33108,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31203,7 +33195,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31356,7 +33349,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31622,7 +33616,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31872,7 +33867,8 @@
         "skills/sayo.json",
         "skills/serena-lord.json",
         "skills/serena.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31932,7 +33928,8 @@
         "skills/sayo.json",
         "skills/serena-lord.json",
         "skills/serena.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -31988,7 +33985,8 @@
         "skills/sayo.json",
         "skills/serena-lord.json",
         "skills/serena.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32044,7 +34042,8 @@
         "skills/sayo.json",
         "skills/serena-lord.json",
         "skills/serena.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32204,7 +34203,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32305,7 +34305,8 @@
         "skills/samurai-taisho.json",
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32413,7 +34414,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32518,7 +34520,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -32623,7 +34626,8 @@
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
         "skills/shen-changfeng.json",
-        "skills/tachibana-naotora-lord.json"
+        "skills/tachibana-naotora-lord.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {

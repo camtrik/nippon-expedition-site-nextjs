@@ -94,38 +94,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "射程范围：+5%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Range: +5% for fleet missile units (Hero's army)"
+                  "zh": "射程范围：+7%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Range: +7% for fleet missile units (Hero's army)"
                 },
                 {
-                  "zh": "装弹时间降低：+5%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Reload time reduction: +5% for fleet missile units (Hero's army)"
-                }
-              ]
-            },
-            {
-              "level": 2,
-              "lines": [
-                {
-                  "zh": "射程范围：+10%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Range: +10% for fleet missile units (Hero's army)"
-                },
-                {
-                  "zh": "装弹时间降低：+10%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Reload time reduction: +10% for fleet missile units (Hero's army)"
-                }
-              ]
-            },
-            {
-              "level": 3,
-              "lines": [
-                {
-                  "zh": "射程范围：+15%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Range: +15% for fleet missile units (Hero's army)"
-                },
-                {
-                  "zh": "装弹时间降低：+15%（舰队远程兵种）（英雄所在军队）",
-                  "en": "Reload time reduction: +15% for fleet missile units (Hero's army)"
+                  "zh": "装弹时间降低：+7%（舰队远程兵种）（英雄所在军队）",
+                  "en": "Reload time reduction: +7% for fleet missile units (Hero's army)"
                 }
               ]
             }
@@ -153,38 +127,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+3",
-                  "en": "Melee attack: +3"
+                  "zh": "近战攻击：+5",
+                  "en": "Melee attack: +5"
                 },
                 {
-                  "zh": "近战防御：+3",
-                  "en": "Melee defence: +3"
-                }
-              ]
-            },
-            {
-              "level": 2,
-              "lines": [
-                {
-                  "zh": "近战攻击：+6",
-                  "en": "Melee attack: +6"
-                },
-                {
-                  "zh": "近战防御：+6",
-                  "en": "Melee defence: +6"
-                }
-              ]
-            },
-            {
-              "level": 3,
-              "lines": [
-                {
-                  "zh": "近战攻击：+9",
-                  "en": "Melee attack: +9"
-                },
-                {
-                  "zh": "近战防御：+9",
-                  "en": "Melee defence: +9"
+                  "zh": "近战防御：+5",
+                  "en": "Melee defence: +5"
                 }
               ]
             }

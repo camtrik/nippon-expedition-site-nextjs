@@ -31,9 +31,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_0",
+      "node": "cth_npex_skill_node_yin_ling_combat_0",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord",
+      "skill": "wh_main_skill_all_all_self_blade_master_starter",
       "tier": 0,
       "indent": 2,
       "points_on_creation": "0",
@@ -42,9 +42,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_0",
+      "node": "cth_npex_skill_node_yin_ling_magic_0",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_blade_master_starter",
+      "skill": "wh2_dlc11_skill_all_magic_deep_02_tidecall_lord",
       "tier": 0,
       "indent": 3,
       "points_on_creation": "0",
@@ -124,9 +124,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_1_4",
+      "node": "cth_npex_skill_node_yin_ling_combat_1_1",
       "node_source": "npex",
-      "skill": "wh_dlc05_skill_magic_life_life_bloom",
+      "skill": "wh2_dlc11_skill_all_lord_self_devastating_charge",
       "tier": 1,
       "indent": 2,
       "points_on_creation": "0",
@@ -134,15 +134,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_0",
+          "node": "cth_npex_skill_node_yin_ling_combat_0",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_1_1",
+      "node": "cth_npex_skill_node_yin_ling_magic_1_4",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_devastating_charge",
+      "skill": "wh_dlc05_skill_magic_life_life_bloom",
       "tier": 1,
       "indent": 3,
       "points_on_creation": "0",
@@ -150,7 +150,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_0",
+          "node": "cth_npex_skill_node_yin_ling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -215,9 +215,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_1_1",
+      "node": "cth_npex_skill_node_yin_ling_combat_1_2",
       "node_source": "npex",
-      "skill": "wh2_main_skill_magic_life_wizard_earth_blood_lord",
+      "skill": "wh2_dlc11_skill_all_lord_self_hard_to_hit",
       "tier": 2,
       "indent": 2,
       "points_on_creation": "0",
@@ -225,15 +225,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_0",
+          "node": "cth_npex_skill_node_yin_ling_combat_0",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_1_2",
+      "node": "cth_npex_skill_node_yin_ling_magic_1_1",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_hard_to_hit",
+      "skill": "wh2_main_skill_magic_life_wizard_earth_blood_lord",
       "tier": 2,
       "indent": 3,
       "points_on_creation": "0",
@@ -241,7 +241,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_0",
+          "node": "cth_npex_skill_node_yin_ling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -306,9 +306,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_1_2",
+      "node": "cth_npex_skill_node_yin_ling_combat_1_3",
       "node_source": "npex",
-      "skill": "wh2_main_skill_magic_life_wizard_flesh_to_stone_lord",
+      "skill": "wh2_dlc11_skill_all_lord_self_scarred_veteran",
       "tier": 3,
       "indent": 2,
       "points_on_creation": "0",
@@ -316,15 +316,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_0",
+          "node": "cth_npex_skill_node_yin_ling_combat_0",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_1_3",
+      "node": "cth_npex_skill_node_yin_ling_magic_1_2",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+      "skill": "wh2_main_skill_magic_life_wizard_flesh_to_stone_lord",
       "tier": 3,
       "indent": 3,
       "points_on_creation": "0",
@@ -332,7 +332,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_0",
+          "node": "cth_npex_skill_node_yin_ling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -397,9 +397,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_1_3",
+      "node": "cth_npex_skill_node_yin_ling_combat_1_4",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_magic_deep_05_fog_of_the_damned_lord",
+      "skill": "wh2_dlc11_skill_all_lord_self_thick-skinned",
       "tier": 4,
       "indent": 2,
       "points_on_creation": "0",
@@ -407,15 +407,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_0",
+          "node": "cth_npex_skill_node_yin_ling_combat_0",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_1_4",
+      "node": "cth_npex_skill_node_yin_ling_magic_1_3",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_thick-skinned",
+      "skill": "wh2_dlc11_skill_all_magic_deep_05_fog_of_the_damned_lord",
       "tier": 4,
       "indent": 3,
       "points_on_creation": "0",
@@ -423,7 +423,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_0",
+          "node": "cth_npex_skill_node_yin_ling_magic_0",
           "link_type": "REQUIRED"
         }
       ]
@@ -500,39 +500,11 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_2",
-      "node_source": "npex",
-      "skill": "wh_main_skill_all_magic_all_06_evasion",
-      "tier": 5,
-      "indent": 2,
-      "points_on_creation": "0",
-      "required_num_parents": "4",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_1_1",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_1_2",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_1_3",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_1_4",
-          "link_type": "SUBSET_REQUIRED"
-        }
-      ]
-    },
-    {
       "node": "cth_npex_skill_node_yin_ling_combat_2",
       "node_source": "npex",
       "skill": "wh_main_skill_all_all_self_foe-seeker",
       "tier": 5,
-      "indent": 3,
+      "indent": 2,
       "points_on_creation": "0",
       "required_num_parents": "4",
       "visible_in_ui": true,
@@ -551,6 +523,34 @@
         },
         {
           "node": "cth_npex_skill_node_yin_ling_combat_1_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_yin_ling_magic_2",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_06_evasion",
+      "tier": 5,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_1_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_1_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_1_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_1_4",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
@@ -611,9 +611,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_3_1",
+      "node": "cth_npex_skill_node_yin_ling_combat_3_1",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_magic_deep_09_krakens_pull_lord",
+      "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
       "tier": 6,
       "indent": 2,
       "points_on_creation": "0",
@@ -621,15 +621,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_2",
+          "node": "cth_npex_skill_node_yin_ling_combat_2",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_3_1",
+      "node": "cth_npex_skill_node_yin_ling_magic_3_1",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
+      "skill": "wh2_dlc11_skill_all_magic_deep_09_krakens_pull_lord",
       "tier": 6,
       "indent": 3,
       "points_on_creation": "0",
@@ -637,7 +637,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_2",
+          "node": "cth_npex_skill_node_yin_ling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -686,9 +686,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_3_2",
+      "node": "cth_npex_skill_node_yin_ling_combat_3_2",
       "node_source": "npex",
-      "skill": "wh2_main_skill_magic_life_wizard_regrowth_lord",
+      "skill": "wh2_dlc11_skill_all_lord_self_fleet-footed",
       "tier": 7,
       "indent": 2,
       "points_on_creation": "0",
@@ -696,15 +696,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_2",
+          "node": "cth_npex_skill_node_yin_ling_combat_2",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_3_2",
+      "node": "cth_npex_skill_node_yin_ling_magic_3_2",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_fleet-footed",
+      "skill": "wh2_main_skill_magic_life_wizard_regrowth_lord",
       "tier": 7,
       "indent": 3,
       "points_on_creation": "0",
@@ -712,7 +712,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_2",
+          "node": "cth_npex_skill_node_yin_ling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -781,9 +781,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_3_3",
+      "node": "cth_npex_skill_node_yin_ling_combat_3_3",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_magic_all_07_earthing",
+      "skill": "wh2_dlc11_skill_all_lord_self_deadly_blade",
       "tier": 8,
       "indent": 2,
       "points_on_creation": "0",
@@ -791,15 +791,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_2",
+          "node": "cth_npex_skill_node_yin_ling_combat_2",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_3_3",
+      "node": "cth_npex_skill_node_yin_ling_magic_3_3",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_deadly_blade",
+      "skill": "wh_main_skill_all_magic_all_07_earthing",
       "tier": 8,
       "indent": 3,
       "points_on_creation": "0",
@@ -807,7 +807,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_2",
+          "node": "cth_npex_skill_node_yin_ling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -867,9 +867,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_3_4",
+      "node": "cth_npex_skill_node_yin_ling_combat_3_4",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_magic_all_08_power_drain",
+      "skill": "wh2_dlc11_skill_all_lord_self_tenacity",
       "tier": 9,
       "indent": 2,
       "points_on_creation": "0",
@@ -877,15 +877,15 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_magic_2",
+          "node": "cth_npex_skill_node_yin_ling_combat_2",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_combat_3_4",
+      "node": "cth_npex_skill_node_yin_ling_magic_3_4",
       "node_source": "npex",
-      "skill": "wh2_dlc11_skill_all_lord_self_tenacity",
+      "skill": "wh_main_skill_all_magic_all_08_power_drain",
       "tier": 9,
       "indent": 3,
       "points_on_creation": "0",
@@ -893,7 +893,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_yin_ling_combat_2",
+          "node": "cth_npex_skill_node_yin_ling_magic_2",
           "link_type": "REQUIRED"
         }
       ]
@@ -931,39 +931,11 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_magic_4",
-      "node_source": "npex",
-      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
-      "tier": 10,
-      "indent": 2,
-      "points_on_creation": "0",
-      "required_num_parents": "4",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_3_1",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_3_2",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_3_3",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_yin_ling_magic_3_4",
-          "link_type": "SUBSET_REQUIRED"
-        }
-      ]
-    },
-    {
       "node": "cth_npex_skill_node_yin_ling_combat_4",
       "node_source": "npex",
       "skill": "wh_main_skill_all_all_self_deadly_onslaught",
       "tier": 10,
-      "indent": 3,
+      "indent": 2,
       "points_on_creation": "0",
       "required_num_parents": "4",
       "visible_in_ui": true,
@@ -982,6 +954,34 @@
         },
         {
           "node": "cth_npex_skill_node_yin_ling_combat_3_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_yin_ling_magic_4",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_magic_all_11_arcane_conduit",
+      "tier": 10,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_3_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_3_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_3_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_yin_ling_magic_3_4",
           "link_type": "SUBSET_REQUIRED"
         }
       ]

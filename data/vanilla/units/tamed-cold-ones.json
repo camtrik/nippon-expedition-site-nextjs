@@ -1,0 +1,74 @@
+{
+  "unit": "cth_npex_tamed_cold_one_0",
+  "name_cn": "归驯冷蜥",
+  "slug": "tamed-cold-ones",
+  "doc": "_docs/data/units/归驯冷蜥兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh2_main_unit_passive_primal_instincts",
+      "source": "vanilla"
+    },
+    {
+      "ref": "wh3_dlc24_unit_passive_predatory_fighter",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "causes_fear"
+    },
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "装备重甲",
+      "ref": "armoured",
+      "section": "特性"
+    },
+    {
+      "doc_name": "破甲杀伤",
+      "ref": "armour_piercing",
+      "section": "特性"
+    },
+    {
+      "doc_name": "无盾",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "归驯",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "引发恐惧",
+      "ref": "causes_fear",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    }
+  ],
+  "stats_from_db": {
+    "recruit_cost": 800,
+    "upkeep_cost": 200,
+    "num_men": 32,
+    "melee_attack": 30,
+    "melee_defence": 29,
+    "charge_bonus": 40,
+    "leadership": 75,
+    "armour": 120,
+    "hp": 180,
+    "bonus_hp": 172,
+    "speed": 65,
+    "melee_damage": [
+      15,
+      38
+    ],
+    "melee_interval": 4.2
+  }
+}

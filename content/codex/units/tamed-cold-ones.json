@@ -1,0 +1,42 @@
+{
+  "_comment": "规格取 mod 仓库《归驯冷蜥兵种设计》；数值由 DB 导出，中英描述取对应 loc。",
+  "slug": "tamed-cold-ones",
+  "unit": "cth_npex_tamed_cold_one_0",
+  "group": "fleet",
+  "kind": "monster",
+  "name": { "zh": "归驯冷蜥", "en": "Tamed Cold Ones" },
+  "role": { "zh": "披甲突击战兽 · T2", "en": "Armoured shock war beasts · T2" },
+  "desc": { "zh": "受到训练后的露丝契亚掠食者，听从号令向敌阵发起凶猛的突击。", "en": "Trained predators from Lustria, unleashed at a command to crash into the enemy ranks." },
+  "story": {
+    "zh": "冷蜥是栖息在露丝契亚阴暗雨林深处的残忍掠食者。这些动物不知痛楚，唯有血腥气味能点燃它们盲目的杀戮欲望，在野外几乎无法被真正驾驭。殷翎曾从露丝契亚带回了大量的冷蜥并且驯养。与野生的同类不同，受到严格操练的冷蜥在战场上听从号令、进退有度，但在被放出冲锋时，依然保留着原始而致命的残暴撕咬。",
+    "en": "Cold Ones are vicious predators that dwell deep within the dark rainforests of Lustria. Insensible to pain, they are driven to blind slaughter by the scent of blood, and their wild kind are almost impossible to control. Yin Ling brought many back from Lustria and had them trained. Unlike their feral kin, these rigorously drilled beasts obey commands and advance or withdraw in good order. Once unleashed in a charge, however, their savage bites remain as deadly as ever."
+  },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "战争野兽 · 近战", "en": "War beasts · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "撕咬，破甲为主", "en": "Bites, mostly armour-piercing" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "板甲；无盾", "en": "Plate armour; no shields" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    { "k": { "zh": "招募来源", "en": "Recruited from" }, "v": { "zh": "岸上栖兽崖／海兽渊，或殷翎舰上的驯兽舱及后续等级", "en": "Beast Cliffs / Abyss of Sea Beasts, or the Taming Hold and its upgrades aboard Yin Ling's ship" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour" },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp" },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" }
+  ],
+  "traits": [
+    { "name": { "zh": "装备重甲", "en": "Armoured" }, "desc": { "zh": "披甲的归驯战兽。", "en": "Tamed war beasts clad in plate armour." } },
+    { "name": { "zh": "破甲杀伤", "en": "Armour-Piercing" }, "desc": { "zh": "撕咬以破甲杀伤为主。", "en": "Their bites deal mostly armour-piercing damage." } },
+    { "name": { "zh": "归驯", "en": "Tamed" }, "desc": { "zh": "没有野性狂怒，不会因该技能而陷入狂暴失控。", "en": "No Feral Rage abilities; they remain under orders." } },
+    { "name": { "zh": "无盾", "en": "No Shields" }, "desc": { "zh": "没有盾牌提供的远程格挡。", "en": "No shield block against missiles." }, "down": true }
+  ]
+}

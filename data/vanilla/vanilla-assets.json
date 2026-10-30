@@ -77,6 +77,7 @@
         "units/hatamoto-raijin.json",
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
+        "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
         "units/yari-samurai.json"
@@ -116,6 +117,7 @@
       "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
       "referenced_by": [
         "units/hatamoto-raijin.json",
+        "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
         "units/yari-samurai.json"
@@ -144,7 +146,8 @@
         "units/hatamoto-raijin.json",
         "units/kirin.json",
         "units/kunikuzushi-oni.json",
-        "units/misaki-crow.json"
+        "units/misaki-crow.json",
+        "units/tamed-cold-ones.json"
       ]
     },
     "causes_terror": {
@@ -16528,6 +16531,7 @@
         "units/jade-sea-sailors.json",
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
+        "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
         "units/yari-ashigaru.json",
@@ -21791,6 +21795,30 @@
         "wh_dlc05_spell_life_regrowth"
       ]
     },
+    "wh2_main_unit_passive_primal_instincts": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "ability_type": "passive",
+      "name": {
+        "zh": "原生本能",
+        "en": "Primal Instincts"
+      },
+      "desc": {
+        "zh": "在压力之下，生存本能支配了这些天生的捕食者，从而大大增加了他们的战斗潜力",
+        "en": "When under pressure, the primal instincts of these natural predators take over, improving their potential in combat."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_main_unit_passive_primal_instincts.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/tamed-cold-ones.json"
+      ]
+    },
     "wh3_cp1_skill_cth_all_unique_harmony_yin": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -21944,6 +21972,30 @@
       ],
       "unlocks_abilities": [
         "wh3_dlc24_character_abilities_colossal_strike"
+      ]
+    },
+    "wh3_dlc24_unit_passive_predatory_fighter": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc24",
+      "ability_type": "passive",
+      "name": {
+        "zh": "掠食战士",
+        "en": "Predatory Fighter"
+      },
+      "desc": {
+        "zh": "凶猛的掠食战士们一心一意地履行自己的职责，他们敏锐的感官会驱使他们追猎自己的猎物",
+        "en": "Ferocious predator-warriors are so single-minded in their duties and their heightened senses drive them to pursue their quarry."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc24_unit_passive_predatory_fighter.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/tamed-cold-ones.json"
       ]
     },
     "wh3_dlc27_character_abilities_envelop_in_mist_bound": {

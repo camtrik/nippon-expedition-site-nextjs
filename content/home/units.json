@@ -45,6 +45,13 @@
               "zh": "云霄禁卫",
               "en": "Empyrean Guard"
             }
+          },
+          {
+            "slug": "tamed-cold-ones",
+            "name": {
+              "zh": "归驯冷蜥",
+              "en": "Tamed Cold Ones"
+            }
           }
         ]
       },

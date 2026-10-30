@@ -1,0 +1,78 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_tamed_cold_one_0",
+  "abilities": [
+    {
+      "key": "wh2_main_unit_passive_primal_instincts",
+      "source": "vanilla",
+      "name": {
+        "zh": "原生本能",
+        "en": "Primal Instincts"
+      },
+      "desc": {
+        "zh": "在压力之下，生存本能支配了这些天生的捕食者，从而大大增加了他们的战斗潜力",
+        "en": "When under pressure, the primal instincts of these natural predators take over, improving their potential in combat."
+      },
+      "icon": "wh2_main_unit_passive_primal_instincts.png"
+    },
+    {
+      "key": "wh3_dlc24_unit_passive_predatory_fighter",
+      "source": "vanilla",
+      "name": {
+        "zh": "掠食战士",
+        "en": "Predatory Fighter"
+      },
+      "desc": {
+        "zh": "凶猛的掠食战士们一心一意地履行自己的职责，他们敏锐的感官会驱使他们追猎自己的猎物",
+        "en": "Ferocious predator-warriors are so single-minded in their duties and their heightened senses drive them to pursue their quarry."
+      },
+      "icon": "wh3_dlc24_unit_passive_predatory_fighter.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 800,
+    "upkeep_cost": 200,
+    "num_men": 32,
+    "melee_attack": 30,
+    "melee_defence": 29,
+    "charge_bonus": 40,
+    "leadership": 75,
+    "armour": 120,
+    "hp": 180,
+    "bonus_hp": 172,
+    "speed": 65,
+    "melee_damage": [
+      15,
+      38
+    ],
+    "melee_interval": 4.2
+  }
+}

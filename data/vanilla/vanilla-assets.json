@@ -15075,8 +15075,8 @@
         "en": "Cold One"
       },
       "desc": {
-        "zh": "冷蜥",
-        "en": "Cold One"
+        "zh": "殷翎从露丝契亚带回的野兽，如今已成群驯养。",
+        "en": "A beast Yin Ling brought back from Lustria, now bred and kept in herds."
       },
       "icon": {
         "source": "vanilla",
@@ -15094,6 +15094,34 @@
       ],
       "effects": []
     },
+    "cth_npex_skill_yin_ling_mount_jinjing": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "碧水金睛兽",
+        "en": "Golden-Eyed Beast"
+      },
+      "desc": {
+        "zh": "栖息于孤岛与海滨峭壁上的罕见灵兽，眼里闪烁着骇人的金光。",
+        "en": "A rare spirit beast that dwells on isolated islands and coastal cliffs, its eyes gleaming with a terrifying golden light."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_celestial_lion.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "7",
+      "level_ranks": {
+        "1": 7
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
     "cth_npex_skill_yin_ling_mount_kirin": {
       "kind": "character_skill",
       "source": "npex",
@@ -15103,12 +15131,12 @@
         "en": "Leize"
       },
       "desc": {
-        "zh": "雷泽",
-        "en": "Leize"
+        "zh": "殷翎在引雷之峰遇到的麒麟，比寻常麒麟的体型巨大。似乎已经与殷翎心意相通。",
+        "en": "A kirin Yin Ling met on Thunder-Drawing Peak, far larger than any ordinary kirin. It seems to have grown attuned to her heart."
       },
       "icon": {
         "source": "vanilla",
-        "file": "icons/campaign ui/skills/mount_great_stag.png",
+        "file": "icons/campaign ui/skills/mount_unicorn.png",
         "size": "72x72",
         "origin": "ui/campaign ui/skills",
         "from": "game ui pack"
@@ -15131,8 +15159,8 @@
         "en": "Pelagic Wyrm"
       },
       "desc": {
-        "zh": "远洋妖龙",
-        "en": "Pelagic Wyrm"
+        "zh": "在远东之海北部出现的巨兽，似乎也是某种魔法造物。",
+        "en": "A colossus that has appeared in the northern waters of the Far Eastern Sea. It seems to be some manner of magical creation."
       },
       "icon": {
         "source": "vanilla",

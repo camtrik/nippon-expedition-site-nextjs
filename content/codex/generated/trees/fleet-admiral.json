@@ -397,14 +397,33 @@
       "indent": 0,
       "nodes": [
         {
-          "key": "cth_npex_skill_admiral_mount_jade_longma",
+          "key": "cth_npex_skill_admiral_mount_warhorse",
           "name": {
-            "zh": "玉龙马",
-            "en": "Jade Longma"
+            "zh": "战马",
+            "en": "Warhorse"
           },
           "desc": {
-            "zh": "朝廷配给提督的官坐骑，随印一同发下。",
-            "en": "The court's own mount, issued to an admiral along with their seal."
+            "zh": "久经阵战的震旦战马，闻鼓不惊。",
+            "en": "A battle-seasoned Cathayan warhorse, unshaken by the drums of war."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_admiral_mount_warhorse.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 5 解锁",
+            "en": "Unlocks at rank 5"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_admiral_mount_jade_longma",
+          "name": {
+            "zh": "碧水金睛兽",
+            "en": "Golden-Eyed Beast"
+          },
+          "desc": {
+            "zh": "栖息于孤岛与海滨峭壁上的罕见灵兽，眼里闪烁着骇人的金光。",
+            "en": "A rare spirit beast that dwells on isolated islands and coastal cliffs, its eyes gleaming with a terrifying golden light."
           },
           "levels": [],
           "icon": "cth_npex_skill_admiral_mount_jade_longma.png",
@@ -439,8 +458,8 @@
           "icon": "cth_npex_skill_admiral_mount_sea_longma.png",
           "reuse": false,
           "unlock": {
-            "zh": "角色等级 19 解锁",
-            "en": "Unlocks at rank 19"
+            "zh": "角色等级 18 解锁",
+            "en": "Unlocks at rank 18"
           },
           "hub": null
         },

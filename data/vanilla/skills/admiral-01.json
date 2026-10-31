@@ -5,13 +5,13 @@
   "set_key": "cth_npex_skill_set_admiral_01",
   "agent_type": "general",
   "agent_subtype": "cth_npex_admiral_01",
-  "node_count": 55,
+  "node_count": 56,
   "vanilla_skill_count": 40,
   "nodes": [
     {
-      "node": "cth_npex_skill_node_admiral_mount_jade_longma",
+      "node": "cth_npex_skill_node_admiral_mount_warhorse",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_mount_jade_longma",
+      "skill": "cth_npex_skill_admiral_mount_warhorse",
       "tier": 0,
       "indent": 0,
       "points_on_creation": "0",
@@ -86,9 +86,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_admiral_mount_sea_longma",
+      "node": "cth_npex_skill_node_admiral_mount_jade_longma",
       "node_source": "npex",
-      "skill": "cth_npex_skill_admiral_mount_sea_longma",
+      "skill": "cth_npex_skill_admiral_mount_jade_longma",
       "tier": 1,
       "indent": 0,
       "points_on_creation": "0",
@@ -175,6 +175,17 @@
           "link_type": "REQUIRED"
         }
       ]
+    },
+    {
+      "node": "cth_npex_skill_node_admiral_mount_sea_longma",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_admiral_mount_sea_longma",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
     },
     {
       "node": "cth_npex_skill_node_admiral_unique_death_roar",

@@ -1079,16 +1079,16 @@
       "source": "npex",
       "pack": null,
       "name": {
-        "zh": "玉龙马",
-        "en": "Jade Longma"
+        "zh": "碧水金睛兽",
+        "en": "Golden-Eyed Beast"
       },
       "desc": {
-        "zh": "朝廷配给提督的官坐骑，随印一同发下。",
-        "en": "The court's own mount, issued to an admiral along with their seal."
+        "zh": "栖息于孤岛与海滨峭壁上的罕见灵兽，眼里闪烁着骇人的金光。",
+        "en": "A rare spirit beast that dwells on isolated islands and coastal cliffs, its eyes gleaming with a terrifying golden light."
       },
       "icon": {
         "source": "vanilla",
-        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "file": "icons/campaign ui/skills/mount_celestial_lion.png",
         "size": "72x72",
         "origin": "ui/campaign ui/skills",
         "from": "game ui pack"
@@ -1123,7 +1123,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 9
+        "1": 10
       },
       "referenced_by": [
         "skills/admiral-02.json"
@@ -1135,16 +1135,16 @@
       "source": "npex",
       "pack": null,
       "name": {
-        "zh": "玉龙马",
-        "en": "Jade Longma"
+        "zh": "碧水金睛兽",
+        "en": "Golden-Eyed Beast"
       },
       "desc": {
-        "zh": "朝廷配给提督的官坐骑，随印一同发下。",
-        "en": "The court's own mount, issued to an admiral along with their seal."
+        "zh": "栖息于孤岛与海滨峭壁上的罕见灵兽，眼里闪烁着骇人的金光。",
+        "en": "A rare spirit beast that dwells on isolated islands and coastal cliffs, its eyes gleaming with a terrifying golden light."
       },
       "icon": {
         "source": "vanilla",
-        "file": "icons/campaign ui/skills/mount_jade_longma.png",
+        "file": "icons/campaign ui/skills/mount_celestial_lion.png",
         "size": "72x72",
         "origin": "ui/campaign ui/skills",
         "from": "game ui pack"
@@ -1179,7 +1179,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 18
+        "1": 17
       },
       "referenced_by": [
         "skills/admiral-01.json"
@@ -1234,7 +1234,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 18
+        "1": 17
       },
       "referenced_by": [
         "skills/admiral-02.json"
@@ -1289,7 +1289,7 @@
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
-        "1": 18
+        "1": 17
       },
       "referenced_by": [
         "skills/admiral-03.json"
@@ -1322,6 +1322,90 @@
       "unlocks_abilities": [
         "cth_npex_unit_passive_admiral_wake"
       ]
+    },
+    "cth_npex_skill_admiral_mount_warhorse": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战马",
+        "en": "Warhorse"
+      },
+      "desc": {
+        "zh": "久经阵战的震旦战马，闻鼓不惊。",
+        "en": "A battle-seasoned Cathayan warhorse, unshaken by the drums of war."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_barded_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 4
+      },
+      "referenced_by": [
+        "skills/admiral-01.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_admiral_mount_warhorse_02": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战马",
+        "en": "Warhorse"
+      },
+      "desc": {
+        "zh": "久经阵战的震旦战马，闻鼓不惊。",
+        "en": "A battle-seasoned Cathayan warhorse, unshaken by the drums of war."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_barded_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 4
+      },
+      "referenced_by": [
+        "skills/admiral-02.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_admiral_mount_warhorse_03": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战马",
+        "en": "Warhorse"
+      },
+      "desc": {
+        "zh": "久经阵战的震旦战马，闻鼓不惊。",
+        "en": "A battle-seasoned Cathayan warhorse, unshaken by the drums of war."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_barded_warhorse.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 4
+      },
+      "referenced_by": [
+        "skills/admiral-03.json"
+      ],
+      "effects": []
     },
     "cth_npex_skill_admiral_paoling_cloak_of_jet": {
       "kind": "character_skill",

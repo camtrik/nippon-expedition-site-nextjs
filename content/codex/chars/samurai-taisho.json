@@ -1,6 +1,7 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/lords/武士大将/武士大将角色与数值.md 与 武士大将技能树.md；desc / story 取 loc 中英原文（unit_description_*_texts）。",
   "slug": "samurai-taisho",
+  "unit": "cth_npex_samurai_taisho_0",
   "rank": "lord",
   "name": { "zh": "武士大将", "en": "Samurai Taisho" },
   "rankLabel": { "zh": "领主 · 战士", "en": "Lord · Champion" },
@@ -9,14 +10,6 @@
     { "key": "samurai-taisho-01", "label": { "zh": "黑甲 · 双角兜", "en": "Black armour, horned kabuto" } },
     { "key": "samurai-taisho-03", "label": { "zh": "黑甲 · 月形前立", "en": "Black armour, crescent crest" } }
   ],
-  "desc": {
-    "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
-    "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
-  },
-  "story": {
-    "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
-    "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "领主（泛用，可重复招募）", "en": "Lord (generic, can be recruited any number of times)" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士，近战决斗型将领，重破甲、善守", "en": "Champion: a duelling commander who relies on armour-piercing blows and holds his ground well" } },

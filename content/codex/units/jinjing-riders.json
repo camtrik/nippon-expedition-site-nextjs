@@ -1,0 +1,257 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/金睛兽骑兵种设计.md。兵种名、兵牌短文、图鉴长文由 export:codex 从 loc 生成。",
+  "slug": "jinjing-riders",
+  "unit": "cth_npex_jinjing_riders_0",
+  "group": "fleet",
+  "kind": "monster",
+  "role": {
+    "zh": "重甲反大型怪兽骑兵 · T4 · 舰队冲击骑兵",
+    "en": "Heavily armoured anti-large monstrous cavalry · T4 · fleet shock cavalry"
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "骑兵（怪兽骑兵） · 近战",
+        "en": "Cavalry (monstrous cavalry) · melee"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "铁爪关刀（长柄，对大型加成）",
+        "en": "Iron-claw guandao (polearm, bonus vs. large)"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "板甲 100；无盾",
+        "en": "Plate armour 100; no shield"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "训练有素",
+        "en": "Trained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "龙马厩（4 级），旗舰船上马厩建筑链",
+        "en": "Longma Stalls (tier 4), in the flagship Shipboard Stables chain"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成龙马厩（4 级），船上即招",
+        "en": "Building the Longma Stalls (tier 4); recruited aboard ship"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "2 回合",
+        "en": "2 turns"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "无上限",
+        "en": "None"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "stat": "melee_attack"
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "stat": "melee_defence"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "stat": "melee_damage"
+    },
+    {
+      "k": {
+        "zh": "对大型单位加成",
+        "en": "Bonus vs. large"
+      },
+      "stat": "bonus_v_large"
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "stat": "charge_bonus"
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "stat": "armour",
+      "n": {
+        "zh": "板甲",
+        "en": "Plate"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "stat": "leadership"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "stat": "speed"
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health per model"
+      },
+      "stat": "hp",
+      "n": {
+        "zh": "{num_men} 骑合计 {hp_total}",
+        "en": "{hp_total} across {num_men} riders"
+      }
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "stat": "num_men"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "装备重甲",
+        "en": "Armoured"
+      },
+      "desc": {
+        "zh": "护甲 100",
+        "en": "Armour 100"
+      }
+    },
+    {
+      "name": {
+        "zh": "水生一族",
+        "en": "Aquatic"
+      },
+      "desc": {
+        "zh": "可在水域地形作战",
+        "en": "Fights in shallow water without penalty"
+      }
+    },
+    {
+      "name": {
+        "zh": "破甲杀伤",
+        "en": "Armour-Piercing"
+      },
+      "desc": {
+        "zh": "关刀破甲 68 为主",
+        "en": "Mostly armour-piercing (68 AP damage)"
+      }
+    },
+    {
+      "name": {
+        "zh": "反大型",
+        "en": "Anti-Large"
+      },
+      "desc": {
+        "zh": "对大型单位 +15",
+        "en": "+15 bonus vs. large"
+      }
+    },
+    {
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "对周围敌军施加恐惧",
+        "en": "Causes fear in nearby enemies"
+      }
+    },
+    {
+      "name": {
+        "zh": "地形适性",
+        "en": "Strider"
+      },
+      "desc": {
+        "zh": "不受地形造成的速度与战斗惩罚",
+        "en": "Suffers no speed or combat penalties from terrain"
+      }
+    },
+    {
+      "name": {
+        "zh": "宁和：阳",
+        "en": "Harmony: Yang"
+      },
+      "desc": {
+        "zh": "作为阳相单位参与阴阳宁和",
+        "en": "Counts as a Yang unit for Battle Harmony"
+      }
+    }
+  ],
+  "effects": {
+    "wh3_dlc24_unit_abilities_fearsome_roar": {
+      "zh": "主动技能：35 米内敌军领导力 −8，并失去心理免疫，持续 25 秒，冷却 90 秒",
+      "en": "Active ability: enemies within 35 m suffer −8 leadership and lose Immune to Psychology for 25 seconds (90s cooldown)"
+    },
+    "wh3_main_unit_passive_battle_harmony_yang": {
+      "zh": "阴阳宁和生效时：近战攻击 +4、近战防御 +4、领导力 +4",
+      "en": "While in Battle Harmony: melee attack +4, melee defence +4, leadership +4"
+    }
+  }
+}

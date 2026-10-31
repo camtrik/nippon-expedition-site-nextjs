@@ -1,0 +1,227 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/先登斧卫兵种设计.md。兵种名、兵牌短文、图鉴长文由 export:codex 从 loc 生成。",
+  "slug": "axe-guard",
+  "unit": "cth_npex_axe_guard_0",
+  "group": "fleet",
+  "kind": "melee",
+  "role": {
+    "zh": "重甲近战步兵 · T3 · 舰队主力",
+    "en": "Heavily armoured melee infantry · T3 · fleet mainstay"
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "步兵 · 近战",
+        "en": "Infantry · melee"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "双持斧（近战，对步兵 +8）",
+        "en": "Twin axes (melee, +8 vs. infantry)"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "板甲 90；无盾",
+        "en": "Plate armour 90; no shield"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "训练有素",
+        "en": "Trained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "选锋舱（3 级）→ 帐前卫所（4 级）→ 凌霄台（5 级），旗舰亲卫营建筑链",
+        "en": "Vanguard Berth (tier 3) → Guard Post (4) → Cloudpiercer Deck (5), in the Admiral's Guard chain"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成选锋舱（3 级），船上即招",
+        "en": "Building the Vanguard Berth (tier 3); recruited aboard ship"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "1 回合",
+        "en": "1 turn"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "无上限",
+        "en": "None"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "stat": "melee_attack"
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "stat": "melee_defence"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "stat": "melee_damage"
+    },
+    {
+      "k": {
+        "zh": "对步兵加成",
+        "en": "Bonus vs. infantry"
+      },
+      "stat": "bonus_v_infantry"
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "stat": "charge_bonus"
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "stat": "armour",
+      "n": {
+        "zh": "板甲",
+        "en": "Plate"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "stat": "leadership"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "stat": "speed"
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health per model"
+      },
+      "stat": "hp",
+      "n": {
+        "zh": "{num_men} 人合计 {hp_total}",
+        "en": "{hp_total} across {num_men} men"
+      }
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "stat": "num_men"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "装备重甲",
+        "en": "Armoured"
+      },
+      "desc": {
+        "zh": "护甲 90",
+        "en": "Armour 90"
+      }
+    },
+    {
+      "name": {
+        "zh": "水生一族",
+        "en": "Aquatic"
+      },
+      "desc": {
+        "zh": "可在水域地形作战",
+        "en": "Fights in shallow water without penalty"
+      }
+    },
+    {
+      "name": {
+        "zh": "对步兵加成",
+        "en": "Anti-Infantry"
+      },
+      "desc": {
+        "zh": "双斧对步兵 +8",
+        "en": "Twin axes grant +8 bonus vs. infantry"
+      }
+    },
+    {
+      "name": {
+        "zh": "宁和：阳",
+        "en": "Harmony: Yang"
+      },
+      "desc": {
+        "zh": "作为阳相单位参与阴阳宁和",
+        "en": "Counts as a Yang unit for Battle Harmony"
+      }
+    }
+  ],
+  "effects": {
+    "cth_npex_unit_passive_surging_axes": {
+      "zh": "陷入近战满 10 秒后：近战攻击 +6，近战武器基础与破甲杀伤各 +10%；脱离近战即失效",
+      "en": "After 10 seconds in melee: melee attack +6, base and armour-piercing weapon damage +10%; lost on leaving melee"
+    },
+    "wh3_main_unit_passive_battle_harmony_yang": {
+      "zh": "阴阳宁和生效时：近战攻击 +4、近战防御 +4、领导力 +4",
+      "en": "While in Battle Harmony: melee attack +4, melee defence +4, leadership +4"
+    }
+  }
+}

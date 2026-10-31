@@ -1,0 +1,18 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_yin_ling_0",
+  "desc": {
+    "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+    "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+  },
+  "story": [
+    {
+      "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。",
+      "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her."
+    },
+    {
+      "zh": "当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+      "en": "When Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+    }
+  ]
+}

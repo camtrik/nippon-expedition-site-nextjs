@@ -189,19 +189,17 @@ export type FrontMatterData = z.infer<typeof FrontMatter>
 // ---- content/codex/ ----------------------------------------------------------
 //
 // 图鉴（兵种页 / 人物页）。两类文件：
-//   content/codex/{units,chars}/<slug>.json   手写，内容照 mod 仓库的设计书与 loc 整理
+//   content/codex/{units,chars}/<slug>.json   手写，内容照 mod 仓库的设计书整理
 //   content/codex/generated/…                 scripts/export-codex.ts 从 data/vanilla 生成，别手改
 // 手写的那份只放设计书里才有的东西（定位、招募、数值、说明文字）；技能、部队属性、
 // 技能树这些游戏里真实存在的条目一律走生成，名字、描述、图标都是游戏原文。
+// 兵种名、兵牌短文、图鉴长文也是游戏原文（loc），同样走生成（data/vanilla/unit-texts.json），
+// 手写文件里不写——手抄那阵子 loc 改过几处，站点一条都没跟上。
 
 /** 数值格：纯数字、「150／300」这类不分语言的写成字符串，带文字的写双语。 */
 export const Cell = z.union([z.string(), Bilingual])
 
 const KV = obj({ k: Bilingual, v: Bilingual })
-/** 长文。一段就写一个双语对象，多段写成数组（loc 里用空行分段的那几条）；读进来一律是数组 */
-const Paragraphs = z
-  .union([Bilingual, z.array(Bilingual).min(1)])
-  .transform((v) => (Array.isArray(v) ? v : [v]))
 /** 设计书表格的一行。form 是「生效形态」那一列（全形态就不写）。 */
 const Row = obj({ k: Bilingual, v: Bilingual, form: Bilingual.optional() })
 
@@ -233,17 +231,13 @@ const StatRow = obj({
 
 export const CodexUnit = obj({
   slug: z.string(),
-  /** land_units key，生成那一侧按它去 data/vanilla/units 找技能与部队属性 */
+  /** land_units key，生成那一侧按它去 data/vanilla/units 找技能与部队属性，
+      去 data/vanilla/unit-texts.json 取兵种名、兵牌短文与图鉴长文 */
   unit: z.string(),
   group: z.enum(UNIT_GROUPS),
   kind: z.enum(UNIT_KINDS),
-  name: Bilingual,
   /** 战场定位，标题上方那一行 */
   role: Bilingual,
-  /** 兵牌短文（loc unit_description_short_texts） */
-  desc: Bilingual,
-  /** 图鉴长文（loc unit_description_historical_texts）；与短文同句的不写 */
-  story: Paragraphs.optional(),
   /** 设计书「兵种类型」表里给玩家看的那几行（兵种类别、武器配置、护甲与盾牌、训练等级） */
   type: z.array(KV),
   recruit: z.array(KV),
@@ -269,8 +263,8 @@ export const CodexChar = obj({
   rankLabel: Bilingual,
   /** 外观。key 对应 assets/chars/<key>.webp 与 assets/chars/full/<key>.webp；第一个是默认 */
   looks: z.array(obj({ key: z.string(), label: Bilingual.optional() })).min(1),
-  desc: Bilingual,
-  story: Paragraphs.optional(),
+  /** land_units key（_0 那一个）。兵牌短文 / 图鉴长文由 export:codex 按它从 loc 生成 */
+  unit: z.string(),
   identity: z.array(KV),
   stats: obj({
     forms: z.array(Bilingual).min(1),
@@ -326,13 +320,30 @@ export const GenAbility = z.strictObject({
   icon: GenIcon,
 })
 
+/** loc 长文，按空行分段 */
+const GenParagraphs = z.array(Bilingual).min(1)
+
 export const GenUnit = z.strictObject({
   _comment: z.string(),
   unit: z.string(),
+  /** 兵种名（loc land_units_onscreen_name） */
+  name: Bilingual,
+  /** 兵牌短文（loc unit_description_short_texts） */
+  desc: Bilingual,
+  /** 图鉴长文（loc unit_description_historical_texts）；与短文同句的为 null */
+  story: GenParagraphs.nullable(),
   abilities: z.array(GenAbility),
   attrs: z.array(GenAbility),
   /** DB 算出的数值（招募费、战场属性），键见 build_site_vanilla_export.py 的 unit_stats() */
   stats: z.record(z.string(), z.union([z.number(), z.array(z.number())])),
+})
+
+/** 人物的兵牌短文与图鉴长文，同样取 loc */
+export const GenChar = z.strictObject({
+  _comment: z.string(),
+  unit: z.string(),
+  desc: Bilingual,
+  story: GenParagraphs.nullable(),
 })
 
 export const GenNode = z.strictObject({
@@ -368,6 +379,7 @@ export const GenTraits = z.strictObject({
 export type CodexUnitData = z.infer<typeof CodexUnit>
 export type CodexCharData = z.infer<typeof CodexChar>
 export type GenUnitData = z.infer<typeof GenUnit>
+export type GenCharData = z.infer<typeof GenChar>
 export type GenTreeData = z.infer<typeof GenTree>
 export type GenNodeData = z.infer<typeof GenNode>
 export type GenTraitsData = z.infer<typeof GenTraits>

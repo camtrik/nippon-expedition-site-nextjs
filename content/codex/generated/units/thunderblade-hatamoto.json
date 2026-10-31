@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_hatamoto_raijin_0",
+  "name": {
+    "zh": "雷刃旗本",
+    "en": "Thunderblade Hatamoto"
+  },
+  "desc": {
+    "zh": "大名直属的精锐武士，持雷神赐福的大太刀。刀身紫电缠绕，一挥可斩铁裂甲。",
+    "en": "Elite samurai bearing odachi blessed by Raijin; coiled in violet lightning, a single stroke shears iron and splits armour."
+  },
+  "story": [
+    {
+      "zh": "旗本是武士中的武士。他们受大名直接统辖、世袭其位的近卫，非百战之功不得入列。所执的大太刀逾寻常太刀之长，须以双手挥舞，本是阵前斩马破甲的重器。其中一脉承雷神之契：相传昔日一位剑圣于雷暴之夜登峰参悟，以身试雷，引天火入刀，自此后人与门徒所持之刃皆具唤雷之能。刀出鞘时紫电自刃脊游走，挥斩之际雷光随刀锋迸裂；此非术士之法，而是以血肉之躯承雷霆、以剑技驭雷威的武道。旗本以剑技为根本，经年苦修，一刀之威已胜寻常武士数合，雷神之力不过为这极致剑技添上最后一道锋芒。两军阵前，见紫电破阵而来者，皆知旗本至矣。",
+      "en": "The Hatamoto are samurai among samurai: the household guard of a daimyo, holding their places by hereditary right, into whose ranks none may enter without worth proven in a hundred battles. The odachi they bear runs longer than the common katana and must be swung two-handed; it was forged as a heavy weapon to hew down horses and break armour in the front rank. One line of them bears the covenant of Raijin. It is told that in ancient days a Swordmaster climbed a thunder-wracked peak in search of enlightenment, set his own body against the thunder, and drew heaven's fire into his blade; from that night on, every blade in the hands of his heirs and disciples has carried the power to call the lightning. When the blade leaves its sheath, violet lightning runs along the spine of the steel; when the stroke falls, thunder bursts along the edge. This is no sorcerer's art, but a warrior's way: a body of flesh and blood that bears the thunder, and swordsmanship that rides its fury. The Hatamoto root their art in the sword alone; through years of harsh training, the force of a single stroke already outweighs several exchanges of the common samurai, and the power of Raijin does no more than set the final edge upon that perfected craft. Before two embattled hosts, all who see violet lightning breaking upon the line know that the Hatamoto have come."
+    }
+  ],
   "abilities": [
     {
       "key": "cth_npex_unit_passive_blade_unison",

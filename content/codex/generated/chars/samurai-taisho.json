@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_samurai_taisho_0",
+  "desc": {
+    "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+    "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+  },
+  "story": [
+    {
+      "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+      "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+    }
+  ]
+}

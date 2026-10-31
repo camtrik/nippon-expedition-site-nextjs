@@ -1,19 +1,12 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/lords/沈长风/沈长风角色与数值.md 与 沈长风技能树.md（武器说明参照 镇澜.md / 逆潮.md）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
   "slug": "shen-changfeng",
+  "unit": "cth_npex_shen_changfeng_0",
   "rank": "legendary-lord",
   "name": { "zh": "沈长风", "en": "Shen Changfeng" },
   "epithet": { "zh": "无冕提督", "en": "The Uncrowned Admiral" },
   "rankLabel": { "zh": "传奇领主 · 法师", "en": "Legendary Lord · Wizard" },
   "looks": [{ "key": "shen-changfeng" }],
-  "desc": {
-    "zh": "震旦海军的提督，玉海剑圣。她对来犯之敌绝不留情。",
-    "en": "An admiral of the Cathayan navy, and the Jade Sea Swordmaster. She gives no quarter to any foe who comes against her."
-  },
-  "story": {
-    "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
-    "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇领主", "en": "Legendary Lord" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，兼具近战武将身手", "en": "Wizard, with a warrior's skill in melee" } },

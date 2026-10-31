@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_cha_sayo_0",
+  "desc": {
+    "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
+    "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+  },
+  "story": [
+    {
+      "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
+      "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+    }
+  ]
+}

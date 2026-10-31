@@ -1,0 +1,238 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/利维坦兵种设计.md。兵种名、兵牌短文、图鉴长文由 export:codex 从 loc 生成。",
+  "slug": "leviathan",
+  "unit": "cth_npex_leviathan_0",
+  "group": "fleet",
+  "kind": "monster",
+  "role": {
+    "zh": "重型怪兽 · T5 · 兼带船员火力",
+    "en": "Heavy monster · T5 · with deck-gunner fire"
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "怪兽 · 近战为主，船员远程辅助",
+        "en": "Monster · melee with ranged crew support"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "巨螯（破甲为主，溅射）；背上 8 名舰队铳手以长铳自主射击",
+        "en": "Crushing claws (AP, splash); 8 howdah gunners firing independently"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "护甲 160；20% 远程格挡",
+        "en": "Armour 160; 20% missile block"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "训练有素",
+        "en": "Trained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "万兽舱 V「浮海百兽苑」；水师府御兽席 III 阶特殊兵池（1 队／12 回合）",
+        "en": "Floating Beast Garden (tier 5); Jade Sea Admiralty Beastmaster Seat tier III special pool (1 unit / 12 turns)"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成浮海百兽苑，或御兽席 III 阶",
+        "en": "Building the Floating Beast Garden, or Beastmaster Seat tier III"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "3 回合",
+        "en": "3 turns"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "无上限",
+        "en": "None"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "stat": "melee_attack"
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "stat": "melee_defence"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "stat": "melee_damage",
+      "n": {
+        "zh": "破甲为主，溅射最多 5 个目标",
+        "en": "Mostly AP, splashes up to 5 targets"
+      }
+    },
+    {
+      "k": {
+        "zh": "对步兵加成",
+        "en": "Bonus vs. infantry"
+      },
+      "stat": "bonus_v_infantry"
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "stat": "charge_bonus"
+    },
+    {
+      "k": {
+        "zh": "望楼铳兵火力",
+        "en": "Howdah gunner fire"
+      },
+      "v": {
+        "zh": "8 支长铳 · 射程 140 · 威力 10／35",
+        "en": "8 long guns · range 140 · damage 10 / 35"
+      },
+      "manual": "背甲铳手挂在乘员实体上，主表无 primary_missile_weapon"
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "stat": "armour",
+      "n": {
+        "zh": "深海巨壳，20% 远程格挡",
+        "en": "Abyssal carapace, 20% missile block"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "stat": "leadership"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "stat": "speed"
+    },
+    {
+      "k": {
+        "zh": "生命值",
+        "en": "Health"
+      },
+      "stat": "hp"
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "v": {
+        "zh": "1 头巨兽（背负 8 名铳手）",
+        "en": "1 monster (carrying 8 gunners)"
+      },
+      "manual": "DB num_men=8 为乘员数，实为单体巨兽"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "装备重甲",
+        "en": "Armoured"
+      },
+      "desc": {
+        "zh": "护甲 160",
+        "en": "Armour 160"
+      }
+    },
+    {
+      "name": {
+        "zh": "远程格挡",
+        "en": "Missile Block"
+      },
+      "desc": {
+        "zh": "20% 远程弹丸被格挡",
+        "en": "20% missile block chance"
+      }
+    },
+    {
+      "name": {
+        "zh": "破甲杀伤",
+        "en": "Armour-Piercing"
+      },
+      "desc": {
+        "zh": "巨螯破甲 380 为主",
+        "en": "Claws deal 380 AP damage"
+      }
+    },
+    {
+      "name": {
+        "zh": "船员火力",
+        "en": "Deck Gunner Crew"
+      },
+      "desc": {
+        "zh": "背上 8 名舰队铳手自主射击",
+        "en": "8 Fleet Gunners aboard firing independently"
+      }
+    }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_single_entity": {
+      "zh": "单体巨兽受创机制：生命值降至 50% 以下时进入「受创」状态，近战攻击与武器威力小幅下降",
+      "en": "Single-entity Wounds passive: when health drops below 50%, the monster becomes Wounded, slightly reducing melee attack and weapon strength"
+    }
+  }
+}

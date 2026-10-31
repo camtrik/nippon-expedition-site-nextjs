@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_jade_sea_fleet_gunners_0",
+  "name": {
+    "zh": "舰队铳手",
+    "en": "Fleet Gunners"
+  },
+  "desc": {
+    "zh": "玉海舰队的铳手以改良火器操典列阵齐射，铅丸所至，重甲如纸。",
+    "en": "The gunners of the Jade Sea Fleet drill to fire in disciplined volleys; where their lead shot lands, no armour holds."
+  },
+  "story": [
+    {
+      "zh": "震旦东方省的水师本就善火器，船上要应付跳帮的海寇、海中的妖兽，铁雹与长铳比弓弩更靠得住。舰队铳手善用震旦火器，他们在甲板上架起长铳、在浪涌间校准仰角，以齐射把敌人钉死在射界之内。尼朋沿海多雾，风向莫测，火绳常被海潮打湿。舰队铳手据此发展出一套震旦本土没有的土法：铳管裹油布、药池封蜡、击发前以口哈气暖管，让火器在尼朋的盐风雾雨里依旧打得响。久而久之，玉海舰队的对手都学会了一件事：听见甲板上一长串火绳嘶嘶作响，便该早早寻掩护了。",
+      "en": "The navies of Cathay's Eastern Provinces have always favoured gunpowder, for at sea one must repel boarding pirates and monsters of the deep alike, and there the Iron Hail gun and the long gun serve better than bow or crossbow. The Fleet Gunners of the Jade Sea Fleet are masters of Cathayan firearms: they set up their long guns upon the deck, trim their aim between the swells, and pin the enemy within their field of fire with volley after volley. The Nipponese coast is thick with fog and fickle in its winds, and the matchcords are forever soaked by the sea. So the Fleet Gunners worked out a handful of makeshift tricks unknown in Cathay itself: barrels wrapped in oilcloth, flash pans sealed with wax, a breath of warmth blown down the barrel before the shot, all so the guns still crack and flame amid Nippon's salt wind, fog and rain. In time, every foe of the Jade Sea Fleet learned one lesson well: when a long string of matchcords begins to hiss along the deck, it is high time to find cover."
+    }
+  ],
   "abilities": [
     {
       "key": "wh3_main_unit_passive_battle_harmony_yin",

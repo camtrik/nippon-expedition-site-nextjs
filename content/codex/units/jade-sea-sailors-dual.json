@@ -1,0 +1,49 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/玉海潮勇（双刀）兵种设计.md，版式照玉海潮勇（刀盾）；建筑名照 loc。兵种名、兵牌短文由 export:codex 从 loc 生成（长文与短文同句，不出 story）。",
+  "slug": "jade-sea-sailors-dual",
+  "unit": "cth_npex_jade_sea_sailors_dual_0",
+  "group": "fleet",
+  "kind": "melee",
+  "role": { "zh": "突击近战步兵 · T1", "en": "Shock melee infantry · T1" },
+  "type": [
+    { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
+    { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "双持水师战刀（对步兵 +6）", "en": "Dual naval sabres (+6 vs. infantry)" } },
+    { "k": { "zh": "护甲与盾牌", "en": "Armour and shield" }, "v": { "zh": "护甲 40（皮甲）；无盾", "en": "Armour 40 (leather); no shield" } },
+    { "k": { "zh": "训练等级", "en": "Training" }, "v": { "zh": "训练有素", "en": "Trained" } }
+  ],
+  "recruit": [
+    {
+      "k": { "zh": "招募来源", "en": "Recruited from" },
+      "v": {
+        "zh": "提督卧舱（2 级）→ 提督议事厅（3 级）→ 舰队统帅厅（4 级）→ 玉海旗舰厅（5 级），游牧主城建筑链",
+        "en": "Admiral's Quarters (tier 2) → Admiral's Council Hall (3) → Fleet Command Hall (4) → Jade Sea Flagship Hall (5), in the main horde building chain"
+      }
+    },
+    { "k": { "zh": "解锁条件", "en": "Unlocked by" }, "v": { "zh": "建成提督卧舱（2 级），船上即招", "en": "Building the Admiral's Quarters (tier 2); recruited aboard ship" } },
+    { "k": { "zh": "招募时间", "en": "Recruitment time" }, "v": { "zh": "1 回合", "en": "1 turn" } },
+    { "k": { "zh": "数量限制", "en": "Unit cap" }, "v": { "zh": "无上限", "en": "None" } }
+  ],
+  "stats": [
+    { "k": { "zh": "近战攻击", "en": "Melee attack" }, "stat": "melee_attack" },
+    { "k": { "zh": "近战防御", "en": "Melee defence" }, "stat": "melee_defence" },
+    { "k": { "zh": "武器威力（基础／破甲）", "en": "Weapon strength (base / AP)" }, "stat": "melee_damage" },
+    { "k": { "zh": "对步兵加成", "en": "Bonus vs. infantry" }, "stat": "bonus_v_infantry" },
+    { "k": { "zh": "冲锋加成", "en": "Charge bonus" }, "stat": "charge_bonus" },
+    { "k": { "zh": "护甲", "en": "Armour" }, "stat": "armour", "n": { "zh": "皮甲", "en": "Leather" } },
+    { "k": { "zh": "领导力", "en": "Leadership" }, "stat": "leadership" },
+    { "k": { "zh": "速度", "en": "Speed" }, "stat": "speed" },
+    { "k": { "zh": "单模型生命值", "en": "Health per model" }, "stat": "hp", "n": { "zh": "{num_men} 人合计 {hp_total}", "en": "{hp_total} across {num_men} men" } },
+    { "k": { "zh": "人数", "en": "Unit size" }, "stat": "num_men" }
+  ],
+  "traits": [
+    { "name": { "zh": "擅长反步兵", "en": "Anti-Infantry" }, "desc": { "zh": "对步兵加成 +6", "en": "+6 bonus vs. infantry" } },
+    { "name": { "zh": "宁和：阳", "en": "Harmony: Yang" }, "desc": { "zh": "作为阳相单位参与阴阳宁和", "en": "Counts as a Yang unit for Battle Harmony" } },
+    { "name": { "zh": "水生一族", "en": "Aquatic" }, "desc": { "zh": "可在水域地形作战", "en": "Fights in shallow water without penalty" } }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_battle_harmony_yang": {
+      "zh": "阴阳宁和生效时：近战攻击 +4、近战防御 +4、领导力 +4",
+      "en": "While in Battle Harmony: melee attack +4, melee defence +4, leadership +4"
+    }
+  }
+}

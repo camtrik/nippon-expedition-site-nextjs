@@ -4,21 +4,9 @@
  "unit": "cth_npex_yari_cavalry_0",
  "group": "nippon",
  "kind": "melee",
- "name": {
-  "zh": "枪骑马武士",
-  "en": "Yari Cavalry"
- },
  "role": {
   "zh": "重装冲击骑兵 · T3",
   "en": "Armoured shock cavalry · T3"
- },
- "desc": {
-  "zh": "披挂大铠、手持长枪的精锐骑马武士。其疾如风，侵掠如火。",
-  "en": "Samurai cavalry in great armour, riding down the foe with levelled yari. Swift as the wind, fierce as fire."
- },
- "story": {
-  "zh": "尼朋列岛山势险阻、平野逼仄，适宜放牧繁育良种战马的草场极为罕见。因此，唯有战功卓著的骁勇武士，或是世受大名厚禄的知名武家子弟，才能被遴选编入“骑马众”。两军交战之际，他们游弋于大阵两翼寻觅战机；待敌方步线因交战推挤露出破绽之时，整队重骑便如狂飙席卷而出。",
-  "en": "The isles of Nippon are a land of jagged mountains and narrow plains, where pasture fit for breeding warhorses is all but unknown. Only warriors of proven valour, or sons of famed houses raised on a daimyo's stipend, are ever chosen for the mounted bands. In battle they prowl the flanks of the host, watching for the moment when the enemy line buckles beneath the press of combat - and then the whole band of heavy horse breaks upon it like a storm."
  },
  "type": [
   {

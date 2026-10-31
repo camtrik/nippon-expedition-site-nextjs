@@ -6,43 +6,23 @@
     },
     "items": [
       {
-        "name": {
-          "zh": "旗舰建筑树",
-          "en": "The flagship building tree"
-        },
         "body": {
-          "zh": "玉海舰队的旗舰本身就是一条建筑树。",
-          "en": "The Jade Sea Fleet's flagship is itself a building tree."
+          "zh": "足轻与武士建筑链、铁炮锻造建筑链、神社建筑链，以及 7 座尼朋专属地标（含海門「枪术道场／骑兵训练场」、御神木「晓行之里」、既知倶島「栖兽崖／海兽渊」等）。",
+          "en": "Ashigaru and Samurai chains, matchlock forge chain, shrine chain, and 7 unique Nippon landmarks—including Kaimon's Yari Dojo / Cavalry Training Grounds, the Dawnbreakers' Haven at the Sacred Tree, and Kichikujima's Beast Cliffs / Abyss of Sea Beasts."
+        },
+        "name": {
+          "zh": "陆地建筑与地标",
+          "en": "Land Buildings and Landmarks"
         }
       },
       {
-        "name": {
-          "zh": "尼朋地标 5 处",
-          "en": "Five Nippon landmarks"
-        },
         "body": {
-          "zh": "引雷之峰、輝山锻冶场、枪术道场、神兽宫、灵道社殿，各自解锁独有的加成或兵种。",
-          "en": "Thunder-Drawing Peak, Hikariya Forge, Yari Dojo, Divine Beast Sanctum and the Vim-To Shrine, each with its own bonuses or units."
-        }
-      },
-      {
-        "name": {
-          "zh": "神社链（3 级）",
-          "en": "Shrine chain (3 levels)"
+          "zh": "提督旗舰自带精简游牧建筑树（水师船舱、舰队火炮、船上马厩、新增禁卫专属的「亲卫营」，以及殷翎旗舰独有的海兽建筑链「万兽舱」）；同伴入队后其麾下兵种直接并入旗舰对应军营招募。",
+          "en": "Each flagship carries a streamlined horde building tree—Naval Barracks, Naval Cannons, Shipboard Stables, the new Admiral's Guard chain for elite guards, and Yin Ling's exclusive Menagerie Hold chain for sea monsters—with companion units integrating directly into the corresponding flagship chains."
         },
-        "body": {
-          "zh": "稻荷神社 → 稻荷神乐殿 → 稻荷大社 → 灵兽神宫。依次解锁稻荷灵狐使者、巫女、御先烏、麒麟。",
-          "en": "Inari Shrine → Inari Kagura Hall → Inari Grand Shrine → Divine Beast Sanctuary. Unlocks the Inari Fox Emissary, the Miko, the Misaki Crow and the Kirin in turn."
-        }
-      },
-      {
         "name": {
-          "zh": "侍所链（3 级）",
-          "en": "Samurai Hall chain (3 levels)"
-        },
-        "body": {
-          "zh": "番所 → 侍所 → 旗本番。依次解锁长枪武士、铁炮武士、雷刃旗本。",
-          "en": "Watch Post → Samurai Hall → Hatamoto Guard. Unlocks Yari Samurai, Teppo Samurai, then Thunderblade Hatamoto."
+          "zh": "旗舰游牧建筑",
+          "en": "Flagship Horde Buildings"
         }
       }
     ]

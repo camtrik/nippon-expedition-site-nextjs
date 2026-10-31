@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_yari_samurai_0",
+  "name": {
+    "zh": "长枪武士",
+    "en": "Yari Samurai"
+  },
+  "desc": {
+    "zh": "恪守荣誉信条的武者，以败北为奇耻。他们执枪列阵，以身前武名与身后清誉为重，鏖战不退。",
+    "en": "Bound by honour and scorning defeat, these spearmen fight to the last, prizing renown in life and honour in death."
+  },
+  "story": [
+    {
+      "zh": "武者重一世之名，以败北为奇耻。恪守森严的荣誉信条，每每竭尽死力以博身后清誉。尼朋的武人，自幼锤炼刀弓之道，日复一日，将血肉之躯炼成非凡的杀器。沙场之上，他们各司其职：或挽弓为轻装，或提剑为重甲，或策骏马为冲阵之骑，亦不乏以铁炮应敌者。然宿命之念深植于此辈心中。据闻每十人中便有一人，以战死沙场为至高荣光，甘愿化为神风。故两军交锋之际，纵腹背受敌，武士亦绝无后退之理——退则名裂，死则名垂。",
+      "en": "The warrior sets great store by the name he bears through this one life, and holds defeat the deepest shame. Keepers of a stern code of honour, such men spend their last strength without reserve to win a name unstained after death. From youth the warriors of Nippon are tempered in the way of blade and bow, day upon day, until flesh and blood are forged into instruments of slaughter beyond the common lot. Upon the field each keeps his station: some draw the bow as light troops, some bear the blade in heavy armour, some ride swift horses in the charge, and not a few answer the foe with the teppo. Yet the belief in destiny is rooted deep in such men. It is said that one warrior in ten counts death in battle the highest glory, and would gladly be made one with the divine wind. Thus, when two hosts close, though beset before and behind, the samurai have no thought of retreat: to fall back is to see one's name broken; to die is to see it endure forever."
+    }
+  ],
   "abilities": [
     {
       "key": "cth_npex_unit_passive_bushido",

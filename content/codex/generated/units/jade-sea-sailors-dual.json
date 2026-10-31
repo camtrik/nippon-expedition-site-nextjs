@@ -1,0 +1,88 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_jade_sea_sailors_dual_0",
+  "name": {
+    "zh": "玉海潮勇（双刀）",
+    "en": "Jade Sea Sailors (Dual Blades)"
+  },
+  "desc": {
+    "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+    "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+  },
+  "story": null,
+  "abilities": [
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阳",
+        "en": "Battle Harmony: Yang"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yang.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "formed_attack",
+      "source": "vanilla",
+      "name": {
+        "zh": "保持阵型",
+        "en": "Formation Attack"
+      },
+      "desc": {
+        "zh": "当进行近战时，这支部队会尽量保持阵型，从而少量增加近战防御",
+        "en": "The unit will try to stay in formation when in melee. Melee defence will be slightly increased."
+      },
+      "icon": "formed_attack.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "阳",
+        "en": "Yang"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阳",
+        "en": "This unit counts as a Yang unit for the purpose of Battle Harmony proximity"
+      },
+      "icon": "yang.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 500,
+    "upkeep_cost": 125,
+    "num_men": 120,
+    "melee_attack": 34,
+    "melee_defence": 23,
+    "charge_bonus": 18,
+    "leadership": 60,
+    "armour": 40,
+    "hp": 66,
+    "bonus_hp": 58,
+    "speed": 33,
+    "melee_damage": [
+      22,
+      8
+    ],
+    "melee_interval": 4.3,
+    "bonus_v_infantry": 6
+  }
+}

@@ -15,14 +15,21 @@
             "slug": "jade-sea-warriors",
             "name": {
               "zh": "玉海潮勇",
-              "en": "Jade Sea Warriors"
+              "en": "Jade Sea Sailors"
             }
           },
           {
-            "slug": "fleet-gunners",
+            "slug": "jade-sea-sailors-dual",
             "name": {
-              "zh": "舰队铳手",
-              "en": "Fleet Gunners"
+              "zh": "玉海潮勇（双刀）",
+              "en": "Jade Sea Sailors (Dual Blades)"
+            }
+          },
+          {
+            "slug": "axe-guard",
+            "name": {
+              "zh": "先登斧卫",
+              "en": "Boarding Axe Guard"
             }
           },
           {
@@ -33,6 +40,27 @@
             }
           },
           {
+            "slug": "fleet-gunners",
+            "name": {
+              "zh": "舰队铳手",
+              "en": "Fleet Gunners"
+            }
+          },
+          {
+            "slug": "jinjing-riders",
+            "name": {
+              "zh": "金睛兽骑",
+              "en": "Golden-Eyed Beast Riders"
+            }
+          },
+          {
+            "slug": "empyrean-guard",
+            "name": {
+              "zh": "云霄禁卫（海龙马骑兵）",
+              "en": "Empyrean Guard (Sea Longma Riders)"
+            }
+          },
+          {
             "slug": "abyssal-grand-cannon",
             "name": {
               "zh": "沧溟巨炮",
@@ -40,17 +68,24 @@
             }
           },
           {
-            "slug": "empyrean-guard",
-            "name": {
-              "zh": "云霄禁卫",
-              "en": "Empyrean Guard"
-            }
-          },
-          {
             "slug": "tamed-cold-ones",
             "name": {
               "zh": "归驯冷蜥",
               "en": "Tamed Cold Ones"
+            }
+          },
+          {
+            "slug": "pelagic-wyrm",
+            "name": {
+              "zh": "远洋妖龙",
+              "en": "Pelagic Wyrm"
+            }
+          },
+          {
+            "slug": "leviathan",
+            "name": {
+              "zh": "利维坦",
+              "en": "Leviathan"
             }
           }
         ]

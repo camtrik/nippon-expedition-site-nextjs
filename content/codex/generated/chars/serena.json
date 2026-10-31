@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_cha_serena_0",
+  "desc": {
+    "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+    "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+  },
+  "story": [
+    {
+      "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+      "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+    }
+  ]
+}

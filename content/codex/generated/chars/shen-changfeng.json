@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_shen_changfeng_0",
+  "desc": {
+    "zh": "震旦水师中战功最显赫的提督。曾多次击退海盗入侵；其剑术冠绝四海，有剑圣之名。",
+    "en": "The most decorated admiral of the Cathayan fleet. She has repelled pirate invasions many times over, and her swordsmanship is peerless across the four seas, earning her the name of Swordmaster."
+  },
+  "story": [
+    {
+      "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
+      "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
+    }
+  ]
+}

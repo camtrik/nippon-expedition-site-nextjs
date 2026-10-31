@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_cha_tachibana_naotora_0",
+  "desc": {
+    "zh": "她是雷神之女，双刀「紫电」的主人。敌人尚未看清她的身影，便已倒在雷光之下。",
+    "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
+  },
+  "story": [
+    {
+      "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+      "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+    }
+  ]
+}

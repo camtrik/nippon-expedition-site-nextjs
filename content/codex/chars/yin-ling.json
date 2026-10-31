@@ -1,0 +1,511 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/lords/殷翎/殷翎角色与数值.md 与 殷翎技能树.md；兵牌短文与图鉴长文由 export:codex 从 loc 生成。",
+  "slug": "yin-ling",
+  "unit": "cth_npex_yin_ling_0",
+  "rank": "legendary-lord",
+  "name": {
+    "zh": "殷翎",
+    "en": "Yin Ling"
+  },
+  "epithet": {
+    "zh": "御兽提督",
+    "en": "The Beastmaster Admiral"
+  },
+  "rankLabel": {
+    "zh": "传奇领主 · 法师",
+    "en": "Legendary Lord · Wizard"
+  },
+  "looks": [
+    {
+      "key": "yin-ling"
+    }
+  ],
+  "identity": [
+    {
+      "k": {
+        "zh": "角色位阶",
+        "en": "Rank"
+      },
+      "v": {
+        "zh": "传奇领主",
+        "en": "Legendary Lord"
+      }
+    },
+    {
+      "k": {
+        "zh": "定位",
+        "en": "Role"
+      },
+      "v": {
+        "zh": "法师，兼具近战突击与决斗身手",
+        "en": "Wizard, with assault and duelling prowess"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "水师府延揽后进入领主招募池（玉海舰队唯一传奇领主）",
+        "en": "Recruited via Jade Sea Admiralty into the lord pool (unique Legendary Lord)"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "有 1 个空闲主要港口，已延揽先登／驭潮／炮令中任意两位，并建成海兽渊（二级）",
+        "en": "Requires 1 free major port, any 2 Admirals recruited, and Abyss of Sea Beasts (tier 2) built"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Limit"
+      },
+      "v": {
+        "zh": "唯一",
+        "en": "Unique"
+      }
+    }
+  ],
+  "stats": {
+    "forms": [
+      {
+        "zh": "徒步（本体）",
+        "en": "On foot"
+      },
+      {
+        "zh": "冷蜥 (Lv 6)",
+        "en": "Cold One (Lv 6)"
+      },
+      {
+        "zh": "碧水金睛兽 (Lv 8)",
+        "en": "Golden-Eyed Beast (Lv 8)"
+      },
+      {
+        "zh": "远洋妖龙 (Lv 12)",
+        "en": "Pelagic Wyrm (Lv 12)"
+      },
+      {
+        "zh": "『雷泽』(Lv 16)",
+        "en": "Leize (Lv 16)"
+      },
+      {
+        "zh": "利维坦 (Lv 20)",
+        "en": "Leviathan (Lv 20)"
+      }
+    ],
+    "rows": [
+      {
+        "k": {
+          "zh": "护甲",
+          "en": "Armour"
+        },
+        "v": [
+          "90",
+          "90",
+          "90",
+          "90",
+          "100",
+          "150"
+        ]
+      },
+      {
+        "k": {
+          "zh": "近战攻击",
+          "en": "Melee attack"
+        },
+        "v": [
+          "65",
+          "65",
+          "65",
+          "60",
+          "65",
+          "55"
+        ]
+      },
+      {
+        "k": {
+          "zh": "近战防御",
+          "en": "Melee defence"
+        },
+        "v": [
+          "55",
+          "55",
+          "55",
+          "46",
+          "55",
+          "42"
+        ]
+      },
+      {
+        "k": {
+          "zh": "武器威力（基础／破甲）",
+          "en": "Weapon strength (base / AP)"
+        },
+        "v": [
+          "140／320",
+          "140／320",
+          "140／320",
+          "150／350",
+          "140／340",
+          "150／450"
+        ]
+      },
+      {
+        "k": {
+          "zh": "冲锋加成",
+          "en": "Charge bonus"
+        },
+        "v": [
+          "55",
+          "78",
+          "50",
+          "60",
+          "70",
+          "35"
+        ]
+      },
+      {
+        "k": {
+          "zh": "生命值",
+          "en": "Health"
+        },
+        "v": [
+          "5852",
+          "6350",
+          "6350",
+          "7800",
+          "6950",
+          "9850"
+        ]
+      },
+      {
+        "k": {
+          "zh": "速度",
+          "en": "Speed"
+        },
+        "v": [
+          "56",
+          "78",
+          "75",
+          {
+            "zh": "80（飞行 95）",
+            "en": "80 (flying 95)"
+          },
+          "95",
+          "36"
+        ]
+      },
+      {
+        "k": {
+          "zh": "伤害抗性",
+          "en": "Damage resistance"
+        },
+        "v": [
+          "15% 物理，25% 魔法",
+          "15% 物理，25% 魔法",
+          "15% 物理，25% 魔法",
+          "15% 物理，25% 魔法",
+          "15% 物理，25% 魔法",
+          "15% 物理，25% 魔法"
+        ]
+      }
+    ],
+    "note": {
+      "zh": "各形态独立装备切换。全形态魔法攻击、15% 物理抗性与 25% 魔法抗性；金睛兽、妖龙与利维坦具备攻城者属性，利维坦形态搭载 8 名舰队铳手 360° 移动开火。",
+      "en": "Mounts switch profile cleanly. All forms deal magical attacks with 15% physical and 25% magic resistance; Golden-Eyed Beast, Wyrm, and Leviathan have Siege Attacker; Leviathan carries 8 gunners firing 360° on the move."
+    }
+  },
+  "weapons": [
+    {
+      "k": {
+        "zh": "常态佩剑 · 140／320 · 魔法攻击",
+        "en": "Standard blade · 140 / 320 · magical"
+      },
+      "v": {
+        "zh": "徒步与坐骑通用常态兵刃；12 级自动获得专属神器「断浪」",
+        "en": "Standard blade in all forms; her signature weapon Wave-Breaker is gained automatically at rank 12"
+      }
+    },
+    {
+      "k": {
+        "zh": "断浪（专属武器 · 12 级解锁）",
+        "en": "Wave-Breaker (Unique Weapon · Rank 12)"
+      },
+      "v": {
+        "zh": "破甲杀伤 +40、近战攻击 +6，所统率怪兽与战兽部队冲锋加成 +10；解锁主动技能「断浪斩」",
+        "en": "+40 AP weapon damage, +6 melee attack, +10 charge bonus to monsters and war beasts in her army; unlocks the Wave-Severing Slash active ability"
+      }
+    },
+    {
+      "k": {
+        "zh": "定澜金梳（专属附魔物品 · 7 级解锁）",
+        "en": "Golden Comb of Still Waters (Unique Item · Rank 7)"
+      },
+      "v": {
+        "zh": "法术抗性 +15%、魔法之风储量上限 +15，所统率怪兽与战兽部队物理抗性 +10%；解锁主动技能「定澜金音」",
+        "en": "+15% spell resistance, +15 winds of magic reserve cap, +10% physical resistance to monsters and war beasts in her army; unlocks the Chime of Still Waters active ability"
+      }
+    }
+  ],
+  "mounts": [
+    {
+      "k": {
+        "zh": "冷蜥（6 级）",
+        "en": "Cold One (Rank 6)"
+      },
+      "v": {
+        "zh": "护甲 90，生命值 6350，速度 78，冲锋 78；露丝契亚战兽，高速突击",
+        "en": "Armour 90, HP 6350, speed 78, charge bonus 78; Lustrian war beast, high-speed assault"
+      }
+    },
+    {
+      "k": {
+        "zh": "碧水金睛兽（8 级）",
+        "en": "Golden-Eyed Beast (Rank 8)"
+      },
+      "v": {
+        "zh": "护甲 90，生命值 6350，速度 75，冲锋 50；造成恐惧，攻城者，溅射目标上限 5",
+        "en": "Armour 90, HP 6350, speed 75, charge bonus 50; causes fear, siege attacker, splashes up to 5 targets"
+      }
+    },
+    {
+      "k": {
+        "zh": "远洋妖龙（12 级）",
+        "en": "Pelagic Wyrm (Rank 12)"
+      },
+      "v": {
+        "zh": "护甲 90，生命值 7800，速度 80（飞行 95），破甲 350；造成恐惧与惊骇，大洋制空巨龙",
+        "en": "Armour 90, HP 7800, speed 80 (flying 95), 350 AP; causes fear and terror, apex ocean air-superiority dragon"
+      }
+    },
+    {
+      "k": {
+        "zh": "『雷泽』（大型铠甲麒麟 · 16 级）",
+        "en": "Leize (Armoured Kirin · Rank 16)"
+      },
+      "v": {
+        "zh": "护甲 100，生命值 6950，速度 95，冲锋 70，破甲 340；造成恐惧；绑定技能「天雷回响」与「天国闪电」",
+        "en": "Armour 100, HP 6950, speed 95, charge bonus 70, 340 AP; causes fear; bound abilities Echo of Thunder and Heavenly Lightning"
+      }
+    },
+    {
+      "k": {
+        "zh": "利维坦（20 级）",
+        "en": "Leviathan (Rank 20)"
+      },
+      "v": {
+        "zh": "护甲 150，生命值 9850，速度 36，破甲 450；深海移动要塞，背上搭载 8 名舰队铳手 360° 移动开火",
+        "en": "Armour 150, HP 9850, speed 36, 450 AP; deep sea mobile fortress carrying 8 deck gunners firing 360° on the move"
+      }
+    }
+  ],
+  "traits": [
+    {
+      "k": {
+        "zh": "宁和化生：+100%",
+        "en": "Harmony Amplifier: +100%"
+      },
+      "v": {
+        "zh": "全形态生效",
+        "en": "All forms"
+      }
+    },
+    {
+      "k": {
+        "zh": "法术吟唱者",
+        "en": "Spellcaster"
+      },
+      "v": {
+        "zh": "全形态生效（具备战场施法能力）",
+        "en": "All forms (battlefield spellcaster)"
+      }
+    },
+    {
+      "k": {
+        "zh": "近战专家",
+        "en": "Melee Expert"
+      },
+      "v": {
+        "zh": "全形态生效（高近战攻击与破甲，出招精准狠辣）",
+        "en": "All forms (high melee attack and AP)"
+      }
+    },
+    {
+      "k": {
+        "zh": "水生一族",
+        "en": "Aquatic"
+      },
+      "form": {
+        "zh": "远洋妖龙",
+        "en": "Pelagic Wyrm"
+      },
+      "v": {
+        "zh": "浅水中近战攻防 ×1.2",
+        "en": "Melee attack and defence ×1.2 in shallow water"
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "k": {
+        "zh": "断浪斩（武器主动）",
+        "en": "Wave-Severing Slash (Weapon Active)"
+      },
+      "v": {
+        "zh": "装备「断浪」解锁：35 米范围内友军近战攻击 +24、基础与破甲武器威力 +25%，持续 21 秒，冷却 90 秒",
+        "en": "Unlocked by Wave-Breaker: allies within 35 m gain +24 melee attack and +25% base/AP weapon damage for 21 seconds (90s cooldown)"
+      }
+    },
+    {
+      "k": {
+        "zh": "定澜金音（法器主动）",
+        "en": "Chime of Still Waters (Item Active)"
+      },
+      "v": {
+        "zh": "装备「定澜金梳」解锁：40 米范围内友军持续恢复生命值并获得心理免疫，冷却 120 秒",
+        "en": "Unlocked by Golden Comb: allies within 40 m regenerate health and gain Immune to Psychology (120s cooldown)"
+      }
+    },
+    {
+      "k": {
+        "zh": "天雷回响（坐骑被动）",
+        "en": "Echo of Thunder (Mount Passive)"
+      },
+      "form": {
+        "zh": "雷泽",
+        "en": "Leize"
+      },
+      "v": {
+        "zh": "15 秒冷却、整场至多 20 次；每轮 2 发、每发 672 纯破甲魔法伤害，不消耗魔风",
+        "en": "15s cooldown, up to 20 times per battle; 2 projectiles per volley dealing 672 pure AP magic damage each, free of magic reserves"
+      }
+    },
+    {
+      "k": {
+        "zh": "天国闪电（坐骑主动）",
+        "en": "Heavenly Lightning (Mount Active)"
+      },
+      "form": {
+        "zh": "雷泽",
+        "en": "Leize"
+      },
+      "v": {
+        "zh": "每场 2 次、冷却 42 秒，不消耗魔风",
+        "en": "2 uses per battle, 42s cooldown, free of magic reserves"
+      }
+    }
+  ],
+  "attrs": [
+    {
+      "k": {
+        "zh": "激励友军",
+        "en": "Encourage"
+      },
+      "v": {
+        "zh": "提升指挥范围内友军领导力",
+        "en": "Increases leadership of nearby allies"
+      }
+    },
+    {
+      "k": {
+        "zh": "精气之风精通",
+        "en": "Mastery of Elemental Winds"
+      },
+      "v": {
+        "zh": "军中每多一支拥有此属性的部队，全军法术威力提升",
+        "en": "Increases spell mastery with each unit in the army possessing this attribute"
+      }
+    },
+    {
+      "k": {
+        "zh": "造成恐惧",
+        "en": "Causes Fear"
+      },
+      "form": {
+        "zh": "金睛兽／妖龙／雷泽／利维坦",
+        "en": "Golden-Eyed Beast / Wyrm / Leize / Leviathan"
+      },
+      "v": {
+        "zh": "对周围敌军施加恐惧",
+        "en": "Causes fear in nearby enemies"
+      }
+    },
+    {
+      "k": {
+        "zh": "造成惊骇",
+        "en": "Causes Terror"
+      },
+      "form": {
+        "zh": "远洋妖龙／利维坦",
+        "en": "Pelagic Wyrm / Leviathan"
+      },
+      "v": {
+        "zh": "近战时令低士气敌军陷入短暂恐慌溃退",
+        "en": "Causes terror in melee"
+      }
+    },
+    {
+      "k": {
+        "zh": "攻城者",
+        "en": "Siege Attacker"
+      },
+      "form": {
+        "zh": "金睛兽／妖龙／利维坦",
+        "en": "Golden-Eyed Beast / Wyrm / Leviathan"
+      },
+      "v": {
+        "zh": "可直接发动攻城战",
+        "en": "Can launch siege battles immediately"
+      }
+    }
+  ],
+  "tree": {
+    "subject": "yin-ling",
+    "note": {
+      "zh": "68 个节点：1 条个人专属线「御兽之道」、1 条深渊与生命混合法术线、5 种专属坐骑与顶栏技能，其余为震旦通用线。",
+      "en": "68 nodes in total: her unique Path of the Beastmaster line, a hybrid Lore of the Deep & Life spell line, 5 unique mounts and top-row passives, plus standard Cathayan lines."
+    },
+    "branches": [
+      {
+        "indent": 1,
+        "label": {
+          "zh": "御兽之道",
+          "en": "Path of the Beastmaster"
+        },
+        "sub": {
+          "zh": "个人独特线 · 6 个节点 · 终极技能「百兽率舞」需中段 4 选 3",
+          "en": "Unique line · 6 nodes · capstone requires any 3 of the 4 mid-tier skills"
+        }
+      },
+      {
+        "indent": 3,
+        "label": {
+          "zh": "深渊与生命混合法术",
+          "en": "Lore of the Deep & Lore of Life"
+        },
+        "sub": {
+          "zh": "法术线 · 11 个节点 · 融合深渊系控场与生命系治疗巨兽法术",
+          "en": "Spell line · 11 nodes · blends Lore of the Deep crowd control with Lore of Life monster healing"
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": {
+          "zh": "坐骑与专属技能",
+          "en": "Mounts & Unique Skills"
+        },
+        "sub": {
+          "zh": "顶栏 · 5 种海兽与灵兽坐骑及「依食于野」",
+          "en": "Top row · 5 sea-beast and spirit mounts plus Living Off the Land"
+        }
+      }
+    ]
+  }
+}

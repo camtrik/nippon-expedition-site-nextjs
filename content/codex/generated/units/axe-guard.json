@@ -1,0 +1,93 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_axe_guard_0",
+  "name": {
+    "zh": "先登斧卫",
+    "en": "Boarding Axe Guard"
+  },
+  "desc": {
+    "zh": "披挂重甲的双斧死士，能够撕开敌军最为坚固的步兵阵线。",
+    "en": "Heavily armoured shock troops with a pair of axes, able to tear open the sturdiest infantry lines."
+  },
+  "story": [
+    {
+      "zh": "在风浪滔天的远洋航行中，海战往往最终会演变为极其惨烈的接舷战。先登斧卫正是为此而生的精锐死士。他们身披坚固的玄铁板甲，双手各持一柄厚重的精钢战斧。无论是在倾斜湿滑的敌舰甲板上，还是在怒涛拍岸的异邦滩头，这些久经风浪的战士都能以暴风骤雨般的连环劈砍斩断一切阻碍，直至将敌方的防线彻底冲垮。",
+      "en": "On long ocean voyages, naval battles so often end in brutal boarding actions, and the Boarding Axe Guard are elite shock troops raised for exactly that. Clad in sturdy black iron plate, with a heavy steel axe in each hand, these sea-hardened warriors fight on slick, tilting enemy decks and on foreign beaches pounded by the surf alike, their storm of chained blows cutting through every obstacle until the enemy line finally collapses."
+    }
+  ],
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_surging_axes",
+      "source": "npex",
+      "name": {
+        "zh": "怒潮连斧",
+        "en": "Surging Axes"
+      },
+      "desc": {
+        "zh": "双斧一旦缠斗，势头便一浪高过一浪。",
+        "en": "Once the fighting is joined, the axes build like wave upon wave."
+      },
+      "icon": "cth_npex_unit_passive_surging_axes.png"
+    },
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阳",
+        "en": "Battle Harmony: Yang"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yang.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "阳",
+        "en": "Yang"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阳",
+        "en": "This unit counts as a Yang unit for the purpose of Battle Harmony proximity"
+      },
+      "icon": "yang.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 1000,
+    "upkeep_cost": 250,
+    "num_men": 100,
+    "melee_attack": 40,
+    "melee_defence": 36,
+    "charge_bonus": 28,
+    "leadership": 82,
+    "armour": 90,
+    "hp": 94,
+    "bonus_hp": 86,
+    "speed": 31,
+    "melee_damage": [
+      36,
+      16
+    ],
+    "melee_interval": 4,
+    "bonus_v_infantry": 8
+  }
+}

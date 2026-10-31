@@ -1,0 +1,119 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_leviathan_0",
+  "name": {
+    "zh": "利维坦",
+    "en": "Leviathan"
+  },
+  "desc": {
+    "zh": "自然界中的强力巨怪，在龙裔提督的御使下以足以夹碎钢铁的巨钳碾碎敌军。",
+    "en": "A mighty beast of the deep, driven by a dragon-blooded admiral to crush the enemy in claws strong enough to shear steel."
+  },
+  "story": [
+    {
+      "zh": "很少有人见到活的利维坦，或者说见到它的人大多无法活着逃脱，以至关于利维坦的记录极少。殷翎以与生俱来的威压与高超的御兽之法，在南海怒涛中将利维坦收归麾下，并命工匠在其重壳上构筑了盔甲与站台。当这头深渊巨兽破浪冲上滩头时，它那骇人的巨螯与不可阻挡的庞大身躯，将把一切挡在震旦水师面前的军阵碾为齑粉。",
+      "en": "Few have ever seen a living Leviathan, and most who did never escaped to tell of it, so little is recorded of the beast. With her innate dragon's presence and masterful art of beast-taming, Yin Ling brought one to heel amid the raging waves of the Southern Sea, and had artisans fit its heavy shell with armour and a lookout deck. When this monster of the abyss storms up the beach, its terrible claws and unstoppable bulk will grind to dust any battle line that stands between it and the Cathayan navy."
+    }
+  ],
+  "abilities": [
+    {
+      "key": "wh3_main_unit_passive_single_entity",
+      "source": "vanilla",
+      "name": {
+        "zh": "受创",
+        "en": "Wounds"
+      },
+      "desc": {
+        "zh": "即使是最强大的敌人，也无法在身受重伤时屹立，而且所受伤害越大，他们的战斗力就会越为低下",
+        "en": "Even the greatest foes can be laid low with terrible injuries, and the greater the damage done, the less able they will be to effectively continue the fray."
+      },
+      "icon": "wh3_main_unit_passive_single_entity.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "can_siege",
+      "source": "vanilla",
+      "name": {
+        "zh": "攻城者",
+        "en": "Siege Attacker"
+      },
+      "desc": {
+        "zh": "这支部队可以直接攻击城门或城墙。你无需等待攻城塔或攻城锤的建造，便可对城镇发动攻击",
+        "en": "This unit can attack city gates, allowing you to instantly launch a siege battle without having to wait for towers or battering rams to be built."
+      },
+      "icon": "can_siege.png"
+    },
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "causes_terror",
+      "source": "vanilla",
+      "name": {
+        "zh": "惊骇敌军",
+        "en": "Causes Terror"
+      },
+      "desc": {
+        "zh": "这支部队可惊骇敌军，令其近战目标溃逃一段时间。对于能够造成惊骇的部队来说，其自身也将免疫恐惧与惊骇效果",
+        "en": "This unit can cause terror, making its melee target rout for a short time. Units that cause terror are immune to terror and fear themselves."
+      },
+      "icon": "causes_terror.png"
+    },
+    {
+      "key": "charge_defense",
+      "source": "vanilla",
+      "name": {
+        "zh": "专擅抵御冲锋",
+        "en": "Expert Charge Defence"
+      },
+      "desc": {
+        "zh": "当阵列齐整时，这支部队在对抗敌军冲锋时会无视其所有的冲锋加成",
+        "en": "When bracing, this unit negates the charge bonus of any attacker."
+      },
+      "icon": "charge_defense.png"
+    },
+    {
+      "key": "flanking_immune",
+      "source": "vanilla",
+      "name": {
+        "zh": "免疫侧袭",
+        "en": "Immune to Flanking"
+      },
+      "desc": {
+        "zh": "此部队不会在受到侧袭时受到惩罚",
+        "en": "This unit takes no penalties when flanked."
+      },
+      "icon": "flanking_immune.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 2400,
+    "upkeep_cost": 600,
+    "num_men": 8,
+    "melee_attack": 55,
+    "melee_defence": 42,
+    "charge_bonus": 25,
+    "leadership": 68,
+    "armour": 160,
+    "hp": 10200,
+    "bonus_hp": 10192,
+    "speed": 50,
+    "melee_damage": [
+      120,
+      380
+    ],
+    "melee_interval": 3.2,
+    "bonus_v_infantry": 15
+  }
+}

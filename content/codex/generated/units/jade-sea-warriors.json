@@ -1,6 +1,15 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_jade_sea_sailors_0",
+  "name": {
+    "zh": "玉海潮勇",
+    "en": "Jade Sea Warriors"
+  },
+  "desc": {
+    "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+    "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+  },
+  "story": null,
   "abilities": [
     {
       "key": "wh3_main_unit_passive_battle_harmony_yang",

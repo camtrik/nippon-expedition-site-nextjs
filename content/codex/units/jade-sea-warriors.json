@@ -4,12 +4,7 @@
   "unit": "cth_npex_jade_sea_sailors_0",
   "group": "fleet",
   "kind": "melee",
-  "name": { "zh": "玉海潮勇", "en": "Jade Sea Warriors" },
   "role": { "zh": "基础近战步兵 · T1 · 舰队招牌兵", "en": "Basic melee infantry · T1 · the fleet's signature troops" },
-  "desc": {
-    "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
-    "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
-  },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "单手剑＋木盾", "en": "Sword and wooden shield" } },
@@ -52,10 +47,6 @@
     "wh3_main_unit_passive_defensive_stance": {
       "zh": "两段式：战斗起手 10 秒抵御效能 ×1.1，随后常驻抵御效能 ×1.25、护甲 +10",
       "en": "Two stages: bracing ×1.1 for the first 10 seconds of battle, then bracing ×1.25 and armour +10 for the rest of it"
-    },
-    "wh_dlc03_unit_passive_drunken": {
-      "zh": "常驻：领导力 +4，附加精力充沛（免疫疲劳）；领导力跌至「动摇」及以下时自动失效",
-      "en": "Always on: leadership +4 and Perfect Vigour (immune to fatigue); lost once the unit's leadership drops to Wavering or lower"
     }
   }
 }

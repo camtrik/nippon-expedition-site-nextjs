@@ -11,6 +11,7 @@ import { lords, units as homeUnits } from './home'
 import {
   CodexChar,
   CodexUnit,
+  GenChar,
   GenTraits,
   GenTree,
   GenUnit,
@@ -41,18 +42,22 @@ function load<T>(sub: string, schema: { parse: (v: unknown) => T }): Map<string,
 const unitFiles = load('units', CodexUnit)
 const charFiles = load('chars', CodexChar)
 const genUnits = load('generated/units', GenUnit)
+const genChars = load('generated/chars', GenChar)
 const genTrees = load('generated/trees', GenTree)
 const genTraits = load('generated/traits', GenTraits)
 
 /** 页面上一行数值：v 已经是最终显示值（DB 数值已代入） */
 export type StatRow = { k: Bi; v: string | Bi; n?: Bi }
-export type Unit = CodexUnitData & {
+/** name / desc / story 是 loc 原文，来自 generated（手写文件里不写） */
+type LocText = { desc: Bi; story?: Bi[] }
+export type Unit = CodexUnitData & LocText & {
+  name: Bi
   gen: GenUnitData
   groupName: (typeof homeUnits.groups)[number]['name']
   cost: { recruit: number; upkeep: number }
   statRows: StatRow[]
 }
-export type Char = CodexCharData & { gen?: GenTreeData; gameTraits?: GenTraitsData }
+export type Char = CodexCharData & LocText & { gen?: GenTreeData; gameTraits?: GenTraitsData }
 
 // ---- 兵种数值：手写的标签 + DB 的数 --------------------------------------------
 
@@ -183,6 +188,9 @@ export const unitGroups = homeUnits.groups.map((g) => ({
     const where = `content/codex/generated/units/${item.slug}.json`
     return {
       ...u,
+      name: gen.name,
+      desc: gen.desc,
+      story: gen.story ?? undefined,
       gen,
       groupName: g.name,
       cost: { recruit: statNum(gen.stats, 'recruit_cost', where), upkeep: statNum(gen.stats, 'upkeep_cost', where) },
@@ -223,13 +231,15 @@ export const allChars: Char[] = [...charFiles.values()]
     return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib)
   })
   .map((c) => {
+    const text = genChars.get(c.slug)
+    if (!text) throw new Error(`content/codex/generated/chars/${c.slug}.json 不存在——跑一次 pnpm export:codex`)
     const gen = genTrees.get(c.slug)
     if (c.tree && !gen) throw new Error(`content/codex/generated/trees/${c.slug}.json 不存在——跑一次 pnpm export:codex`)
     const gameTraits = genTraits.get(c.slug)
     if ((c.tree || c.traitsFrom) && !gameTraits) {
       throw new Error(`content/codex/generated/traits/${c.slug}.json 不存在——跑一次 pnpm export:codex`)
     }
-    return { ...c, gen, gameTraits }
+    return { ...c, desc: text.desc, story: text.story ?? undefined, gen, gameTraits }
   })
 
 export const charBySlug = (slug: string) => allChars.find((c) => c.slug === slug)

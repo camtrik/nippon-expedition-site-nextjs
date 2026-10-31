@@ -1,0 +1,54 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_pelagic_wyrm_0",
+  "name": {
+    "zh": "远洋妖龙",
+    "en": "Pelagic Wyrm"
+  },
+  "desc": {
+    "zh": "这只巨大的海兽潜伏在冰冷的大洋深渊中，等待时机随狂澜猝起，以万钧之力将猎物彻底碾碎。",
+    "en": "These giant beasts lurk within the freezing ocean depths, waiting to rise up with raging tides and crush their prey with merciless fury."
+  },
+  "story": [
+    {
+      "zh": "远洋妖龙是一种凶悍的深海巨兽，外表如同一条无翼巨龙。它们常年在远东外海的海沟深流中盘旋，只在季风暴虐、海潮滔天的酷烈时节才会游向海面。它们似乎原本是水魔法的造物，这也使得它们会倾向于与掌握了深渊魔法的人亲近。但无论如何，驾驭一头妖龙仍是十分困难的事情，至今也很少有人做到。",
+      "en": "Pelagic Wyrms are ferocious deep-sea leviathans that resemble wingless dragons. They coil endlessly within the abyssal trenches of the Far Eastern seas, venturing up to the surface only during bitter seasons of violent monsoons and tempestuous swells. They appear to be primal creations of water magic, an affinity that draws them to those who have mastered the magic of the Deep. Even so, harnessing a Wyrm is an extraordinarily perilous undertaking, and few to this day have ever succeeded."
+    }
+  ],
+  "abilities": [
+    {
+      "key": "wh3_main_unit_passive_single_entity",
+      "source": "vanilla",
+      "name": {
+        "zh": "受创",
+        "en": "Wounds"
+      },
+      "desc": {
+        "zh": "即使是最强大的敌人，也无法在身受重伤时屹立，而且所受伤害越大，他们的战斗力就会越为低下",
+        "en": "Even the greatest foes can be laid low with terrible injuries, and the greater the damage done, the less able they will be to effectively continue the fray."
+      },
+      "icon": "wh3_main_unit_passive_single_entity.png"
+    }
+  ],
+  "attrs": [],
+  "stats": {
+    "recruit_cost": 1450,
+    "upkeep_cost": 362,
+    "num_men": 1,
+    "melee_attack": 48,
+    "melee_defence": 35,
+    "charge_bonus": 50,
+    "leadership": 65,
+    "armour": 90,
+    "hp": 7980,
+    "bonus_hp": 7972,
+    "speed": 75,
+    "melee_damage": [
+      135,
+      310
+    ],
+    "melee_interval": 3.6,
+    "bonus_v_large": 25,
+    "resist_missile": 25
+  }
+}

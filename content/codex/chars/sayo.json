@@ -1,19 +1,12 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/heroes/纱代/纱代角色与数值.md 与 纱代技能树.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
   "slug": "sayo",
+  "unit": "cth_npex_cha_sayo_0",
   "rank": "legendary-hero",
   "name": { "zh": "纱代", "en": "Sayo" },
   "epithet": { "zh": "阴阳之巫女", "en": "The Onmyo Miko" },
   "rankLabel": { "zh": "传奇英雄 · 法师", "en": "Legendary Hero · Wizard" },
   "looks": [{ "key": "sayo" }],
-  "desc": {
-    "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
-    "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
-  },
-  "story": {
-    "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
-    "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师", "en": "Wizard" } },

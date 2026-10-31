@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_abyssal_grand_cannon_0",
+  "name": {
+    "zh": "沧溟巨炮",
+    "en": "Abyssal Grand Cannon"
+  },
+  "desc": {
+    "zh": "火药与魔法共铸的巨炮；直射可凿穿重甲，亦可炸开散作漫天水矢。",
+    "en": "Forged of powder and magic, this great cannon bores through heavy armour or bursts into a storm of water-darts."
+  },
+  "story": [
+    {
+      "zh": "据说引水咒最早由溟龙胤隐制成，可以把海水化作致命的魔法炮弹。且没有魔法天赋的凡人也可以操纵引水咒，使其得以在寻常炮组手中施展。沧溟巨炮便是震旦海军把这道古咒与震旦火器结合的产物。引水咒生成的魔法造物在炮膛中积蓄力量，再由药室里的火药爆燃轰出炮口。其威力比一般巨炮有过之而无不及。",
+      "en": "The Water-Drawing Charm is said to have been first devised by Yin-Yin the Sea Dragon; it turns seawater into a deadly magical shot. And because mortals with no gift for magic can work it all the same, the charm can be wielded by an ordinary gun crew. The Abyssal Grand Cannon is what came of the Cathayan navy joining that ancient charm to Cathayan gunpowder. The conjuration the charm raises gathers its power within the bore, and the powder in the chamber behind it hurls the whole out of the muzzle. Its force is a match for any common grand cannon, and more besides."
+    }
+  ],
   "abilities": [
     {
       "key": "wh3_main_unit_passive_battle_harmony_yin",

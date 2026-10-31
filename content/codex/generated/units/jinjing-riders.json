@@ -1,0 +1,119 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_jinjing_riders_0",
+  "name": {
+    "zh": "金睛兽骑",
+    "en": "Golden-Eyed Beast Riders"
+  },
+  "desc": {
+    "zh": "骑乘碧水金睛兽的精锐骑兵。灵兽眼里闪烁的金光足以让任何生物胆寒。",
+    "en": "Elite cavalry mounted on the golden-eyed beasts of the Jade Sea. The golden gleam in these creatures' eyes strikes fear into any living thing."
+  },
+  "story": [
+    {
+      "zh": "碧水金睛兽是栖息于玉海深处孤岛与海滨峭壁上的罕见灵兽。这些生有冷光金眸的猛兽性情孤傲而凶猛，唯有最勇猛的战士才能使它们俯首。金睛兽的怒吼足以令最骁勇的战马惊骇瘫软，而它们背上的骑手也是身经百战的老兵。狂暴猛兽与百战精锐的意志在此合而为一。",
+      "en": "The golden-eyed beasts are rare spirit creatures that dwell on the remote islands and sea cliffs of the deep Jade Sea. Proud and savage, with eyes of cold golden light, they bow only to the bravest of warriors. Their roar can leave the boldest warhorse paralysed with terror, and the riders on their backs are veterans of a hundred battles. Here the fury of the beast and the will of hardened elites become one."
+    }
+  ],
+  "abilities": [
+    {
+      "key": "wh3_dlc24_unit_abilities_fearsome_roar",
+      "source": "vanilla",
+      "name": {
+        "zh": "骇人咆哮",
+        "en": "Fearsome Roar"
+      },
+      "desc": {
+        "zh": "如此咆哮与它们的咬伤一样可怕…",
+        "en": "This one's bark is at least as bad as their bite…"
+      },
+      "icon": "wh3_dlc24_unit_abilities_fearsome_roar.png"
+    },
+    {
+      "key": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "武道宁和：阳",
+        "en": "Battle Harmony: Yang"
+      },
+      "desc": {
+        "zh": "万物皆应平衡，正所谓暗与明、月与阳、雄与雌一般",
+        "en": "There must be balance in all things: dark and light, moon and sun, female and male."
+      },
+      "icon": "wh3_main_unit_passive_battle_harmony_yang.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "causes_fear",
+      "source": "vanilla",
+      "name": {
+        "zh": "引发恐惧",
+        "en": "Causes Fear"
+      },
+      "desc": {
+        "zh": "这支部队可以对所有敌军部队引发恐惧，令附近敌军遭受领导力惩罚。同时这支部队自身也对恐惧效果免疫。恐惧惩罚不能叠加",
+        "en": "This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+      },
+      "icon": "causes_fear.png"
+    },
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    },
+    {
+      "key": "strider",
+      "source": "vanilla",
+      "name": {
+        "zh": "地形适性",
+        "en": "Strider"
+      },
+      "desc": {
+        "zh": "这支部队不受因地形导致的速度与战斗惩罚",
+        "en": "Speed and combat penalties caused by terrain are ignored by this unit."
+      },
+      "icon": "strider.png"
+    },
+    {
+      "key": "yang",
+      "source": "vanilla",
+      "name": {
+        "zh": "阳",
+        "en": "Yang"
+      },
+      "desc": {
+        "zh": "此部队的武道宁和为阳",
+        "en": "This unit counts as a Yang unit for the purpose of Battle Harmony proximity"
+      },
+      "icon": "yang.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 1650,
+    "upkeep_cost": 412,
+    "num_men": 16,
+    "melee_attack": 46,
+    "melee_defence": 38,
+    "charge_bonus": 50,
+    "leadership": 78,
+    "armour": 100,
+    "hp": 528,
+    "bonus_hp": 520,
+    "speed": 80,
+    "melee_damage": [
+      28,
+      68
+    ],
+    "melee_interval": 4,
+    "bonus_v_large": 15
+  }
+}

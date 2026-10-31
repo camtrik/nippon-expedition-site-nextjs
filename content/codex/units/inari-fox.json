@@ -4,16 +4,7 @@
   "unit": "cth_npex_inari_fox_0",
   "group": "nippon",
   "kind": "monster",
-  "name": { "zh": "稻荷灵狐使者", "en": "Inari Fox Emissary" },
   "role": { "zh": "高机动魔法战兽 · T2 · 侧袭骚扰", "en": "Fast magical war beasts · T2 · flanking and harassment" },
-  "desc": {
-    "zh": "稻荷神社供奉的灵狐使者，以灵力凝爪、踏阵如风，是世代守护神社的契约灵兽。",
-    "en": "Spirit-fox emissaries of the Inari shrines, claws woven of spirit and swift as the wind, guarding these sacred grounds for generations."
-  },
-  "story": {
-    "zh": "稻荷灵狐是尼朋神社世代供奉的神使之狐，侍奉稻荷信仰，是神社最忠诚的灵体眷属。它们与神社立下古老的契约，平日隐于社殿深处，听巫女的神乐铃调遣；一旦神社蒙难、邪祟犯境，便成群结队涌出鸟居，以灵力所凝的爪牙撕咬来犯之敌，誓死护卫神域的一草一木。",
-    "en": "The Inari spirit foxes are the divine messengers honoured by the shrines of Nippon for generations: servants of the Inari faith, and the most loyal of a shrine's spirit-familiars. Bound to the shrine by an ancient pact, they lie hidden in the depths of the shrine halls, hearkening to the summons of the miko's kagura bell; but the moment a shrine is beset and evil crosses its border, they pour out through the torii gates in packs, tearing at the invaders with claws and fangs wrought of raw spirit, and guarding every tree and blade of grass on the hallowed ground with their lives."
-  },
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "战争野兽（多体战兽） · 近战", "en": "War beasts (a pack) · melee" } },
     { "k": { "zh": "武器配置", "en": "Equipment" }, "v": { "zh": "灵力爪牙（魔法近战）", "en": "Spirit claws and fangs (magical melee)" } },

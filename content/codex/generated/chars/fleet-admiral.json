@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_admiral_0",
+  "desc": {
+    "zh": "前锋死士的领袖，率领步兵将士在接舷与突进中撕开敌阵。",
+    "en": "Leader of the forlorn hope, who drives the infantry through the enemy line in the press of boarding actions and headlong assaults."
+  },
+  "story": [
+    {
+      "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+      "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+    }
+  ]
+}

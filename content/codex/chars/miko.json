@@ -1,18 +1,11 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/heroes/miko/巫女角色与数值.md 与 巫女技能树.md（法术与被动数值取技能树设计表；名额按其「其他事项」2026-10-01 的中间档 +1）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
   "slug": "miko",
+  "unit": "cth_npex_cha_miko_0",
   "rank": "hero",
   "name": { "zh": "巫女", "en": "Miko" },
   "rankLabel": { "zh": "英雄 · 法师", "en": "Hero · Wizard" },
   "looks": [{ "key": "miko" }],
-  "desc": {
-    "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
-    "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
-  },
-  "story": {
-    "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
-    "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "英雄（泛用，可重复招募）", "en": "Hero (generic, can be recruited any number of times)" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，巫女法系", "en": "Wizard: Lore of the Miko" } },

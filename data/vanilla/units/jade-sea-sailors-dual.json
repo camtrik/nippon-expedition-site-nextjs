@@ -1,0 +1,43 @@
+{
+  "unit": "cth_npex_jade_sea_sailors_dual_0",
+  "name_cn": "玉海潮勇（双刀）",
+  "slug": "jade-sea-sailors-dual",
+  "doc": "_docs/data/units/玉海潮勇（双刀）兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh3_main_unit_passive_battle_harmony_yang",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "formed_attack"
+    },
+    {
+      "ref": "hide_forest"
+    },
+    {
+      "ref": "yang"
+    }
+  ],
+  "traits_from_doc": [],
+  "stats_from_db": {
+    "recruit_cost": 500,
+    "upkeep_cost": 125,
+    "num_men": 120,
+    "melee_attack": 34,
+    "melee_defence": 23,
+    "charge_bonus": 18,
+    "leadership": 60,
+    "armour": 40,
+    "hp": 66,
+    "bonus_hp": 58,
+    "speed": 33,
+    "melee_damage": [
+      22,
+      8
+    ],
+    "melee_interval": 4.3,
+    "bonus_v_infantry": 6
+  }
+}

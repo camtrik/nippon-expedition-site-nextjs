@@ -40,10 +40,16 @@ SCENE = (800, 450)
 # 站点 slug -> art_source/concepts 下的 `_full.png`
 UNITS = {
     "jade-sea-warriors": "jade_sea_sailors/jade_sea_sailors_full.png",
+    "jade-sea-sailors-dual": "jade_sea_sailors_dual/jade_sea_sailors_dual_full.png",
+    "axe-guard": "axe_guard/axe_guard_full.png",
     "tide-guard": "tide_guard/tide_guard_full.png",
     "fleet-gunners": "jade_sea_fleet_gunner/jade_sea_fleet_gunner_full.png",
+    "jinjing-riders": "jinjing_lion/jinjing_lion_full.png",
     "empyrean-guard": "empyrean_guard/empyrean_guard_full.png",
     "abyssal-grand-cannon": "abyssal_grand_cannon/abyssal_grand_cannon_full.png",
+    "tamed-cold-ones": "tamed_cold_one/tamed_cold_one_full.png",
+    "pelagic-wyrm": "ocean_wyrm/ocean_wyrm_full.png",
+    "leviathan": "leviathan/leviathan_full.png",
     "yari-samurai": "yari_samurai/yari_samurai_full.png",
     "yari-cavalry": "yari_cavalry/yari_cavalry_full.png",
     "teppo-samurai": "teppo_samurai/teppo_samurai_full.png",
@@ -64,6 +70,7 @@ UNITS = {
 # 已在 mod 那边高清化到约 709×1536（mod 提交 9b6fddc4），和武士大将、水师提督同一规格。
 CHARS = {
     "shen-changfeng": "shen_changfeng/shen_changfeng_full.png",
+    "yin-ling": "yinling/yinling_full.png",
     "naotora": "tachibana_naotora/tachibana_naotora_full.png",
     "sayo": "sayo/sayo_full.png",
     "serena": "serena/serena_full.png",

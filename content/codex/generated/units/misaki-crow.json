@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_misaki_crow_0",
+  "name": {
+    "zh": "御先烏",
+    "en": "Misaki Crow"
+  },
+  "desc": {
+    "zh": "传说中作为日神使者的三足巨禽。其神眸可洞照一切潜伏虚妄。",
+    "en": "A three-legged great bird of legend, messenger of the Sun Deity. Its divine gaze pierces all that lurks and deceives."
+  },
+  "story": [
+    {
+      "zh": "御先烏是传说中的侍奉日神的使者，覆满黑曜华光的羽翼与巨大的三足象征着破除迷妄的智慧、仁恕与刚勇。在古老的修验道传承中，御先烏被尊为先行涉险、为凡世勘破前路的大神使。这种庞大的玄羽神禽素来隐栖于列岛极高处的灵峰云海之间，唯有山河震荡、暗潮遮蔽天日之际，方会在大社祝祷与长空中现出身影。",
+      "en": "The Misaki Crow is the legendary messenger who serves the Sun Deity. Its wings gleam with obsidian light, and its great three legs stand for the wisdom that dispels delusion, for benevolence and for valour. In the ancient teachings of Shugendo, the Misaki Crow is revered as the great divine messenger who goes first into peril to see through the road ahead on behalf of the mortal world. These vast, dark-feathered birds have always lived in seclusion among the cloud-seas of the sacred peaks at the very top of the islands; only when mountains and rivers tremble and a dark tide blots out the sky do they show themselves, in the prayers at the great shrines and across the heavens."
+    }
+  ],
   "abilities": [
     {
       "key": "cth_npex_unit_passive_divine_guidance",

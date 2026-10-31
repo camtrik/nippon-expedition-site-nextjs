@@ -1,0 +1,34 @@
+{
+  "unit": "cth_npex_pelagic_wyrm_0",
+  "name_cn": "远洋妖龙",
+  "slug": "pelagic-wyrm",
+  "doc": "_docs/data/units/远洋妖龙兵种设计.md",
+  "abilities": [
+    {
+      "ref": "wh3_main_unit_passive_single_entity",
+      "source": "vanilla"
+    }
+  ],
+  "attributes_from_db": [],
+  "traits_from_doc": [],
+  "stats_from_db": {
+    "recruit_cost": 1450,
+    "upkeep_cost": 362,
+    "num_men": 1,
+    "melee_attack": 48,
+    "melee_defence": 35,
+    "charge_bonus": 50,
+    "leadership": 65,
+    "armour": 90,
+    "hp": 7980,
+    "bonus_hp": 7972,
+    "speed": 75,
+    "melee_damage": [
+      135,
+      310
+    ],
+    "melee_interval": 3.6,
+    "bonus_v_large": 25,
+    "resist_missile": 25
+  }
+}

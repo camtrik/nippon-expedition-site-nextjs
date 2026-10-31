@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_tamed_cold_one_0",
+  "name": {
+    "zh": "归驯冷蜥",
+    "en": "Tamed Cold Ones"
+  },
+  "desc": {
+    "zh": "受到训练后的露丝契亚掠食者，听从号令向敌阵发起凶猛的突击。",
+    "en": "Trained predators from Lustria, unleashed at a command to crash into the enemy ranks."
+  },
+  "story": [
+    {
+      "zh": "冷蜥是栖息在露丝契亚阴暗雨林深处的残忍掠食者。这些动物不知痛楚，唯有血腥气味能点燃它们盲目的杀戮欲望，在野外几乎无法被真正驾驭。殷翎曾从露丝契亚带回了大量的冷蜥并且驯养。与野生的同类不同，受到严格操练的冷蜥在战场上听从号令、进退有度，但在被放出冲锋时，依然保留着原始而致命的残暴撕咬。",
+      "en": "Cold Ones are vicious predators that dwell deep within the dark rainforests of Lustria. Insensible to pain, they are driven to blind slaughter by the scent of blood, and their wild kind are almost impossible to control. Yin Ling brought many back from Lustria and had them trained. Unlike their feral kin, these rigorously drilled beasts obey commands and advance or withdraw in good order. Once unleashed in a charge, however, their savage bites remain as deadly as ever."
+    }
+  ],
   "abilities": [
     {
       "key": "wh2_main_unit_passive_primal_instincts",

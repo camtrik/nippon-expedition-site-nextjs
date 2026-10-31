@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_empyrean_guard_0",
+  "name": {
+    "zh": "云霄禁卫（海龙马骑兵）",
+    "en": "Empyrean Guard (Sea Longma Riders)"
+  },
+  "desc": {
+    "zh": "乘海龙马的魔法骑兵，云生于蹄下、魔雨落于枪尖。",
+    "en": "Magical cavalry mounted upon Sea Longma: cloud gathers beneath their hooves, and a rain of magic falls from their lance-points."
+  },
+  "story": [
+    {
+      "zh": "海龙马的来历在任何谱牒与记载里都找不到交代，最初遇到他们的渔人只说台风过后，十几头鬃鬣滴水的灵兽静静立在退潮的礁石上。海龙马的速度比普通巨龙马更加迅捷，其所在之地，上方的空气会渐渐凝结成为云雾。云霄禁卫则可以通过云雾对敌人进行致命的魔法打击。",
+      "en": "No lineage-roll or chronicle accounts for where the Sea Longma came from. The fishermen who first met them said only that once the typhoon had passed, a dozen or so spirit-beasts stood silent upon the ebb-tide rocks, their manes still dripping. Sea Longma are swifter than the common Great Longma, and wherever they are, the air above them slowly thickens into cloud and mist. Through that mist the Empyrean Guard bring a deadly magical stroke down upon their foes."
+    }
+  ],
   "abilities": [
     {
       "key": "cth_npex_unit_passive_empyrean_skywave",

@@ -1,0 +1,246 @@
+{
+  "_comment": "来源：mod 仓库 _docs/data/units/远洋妖龙兵种设计.md。兵种名、兵牌短文、图鉴长文由 export:codex 从 loc 生成。",
+  "slug": "pelagic-wyrm",
+  "unit": "cth_npex_pelagic_wyrm_0",
+  "group": "fleet",
+  "kind": "monster",
+  "role": {
+    "zh": "重型怪兽 · T3 · 单体反大型破甲巨兽",
+    "en": "Heavy monster · T3 · single-entity anti-large AP monster"
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "兵种类别",
+        "en": "Class"
+      },
+      "v": {
+        "zh": "怪兽（巨兽） · 近战",
+        "en": "Monster (beast) · melee"
+      }
+    },
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "獠牙与巨爪（破甲为主，反大型加成）",
+        "en": "Fangs and claws (mostly AP, bonus vs. large)"
+      }
+    },
+    {
+      "k": {
+        "zh": "护甲与盾牌",
+        "en": "Armour and shield"
+      },
+      "v": {
+        "zh": "护甲 90（重厚苍鳞）；无盾",
+        "en": "Armour 90 (heavy scales); no shield"
+      }
+    },
+    {
+      "k": {
+        "zh": "训练等级",
+        "en": "Training"
+      },
+      "v": {
+        "zh": "训练有素",
+        "en": "Trained"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "岸上既知倶島地标「海兽渊」（2 级），或殷翎舰上的御兽阁（3 级）及上级",
+        "en": "Abyss of Sea Beasts (tier 2 landmark), or Beastmaster's Pavilion (tier 3) and higher aboard Yin Ling's ship"
+      }
+    },
+    {
+      "k": {
+        "zh": "解锁条件",
+        "en": "Unlocked by"
+      },
+      "v": {
+        "zh": "建成海兽渊或御兽阁",
+        "en": "Building the Abyss of Sea Beasts or Beastmaster's Pavilion"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募时间",
+        "en": "Recruitment time"
+      },
+      "v": {
+        "zh": "1 回合",
+        "en": "1 turn"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Unit cap"
+      },
+      "v": {
+        "zh": "无上限",
+        "en": "None"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "stat": "melee_attack"
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "stat": "melee_defence"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "stat": "melee_damage"
+    },
+    {
+      "k": {
+        "zh": "对大型单位加成",
+        "en": "Bonus vs. large"
+      },
+      "stat": "bonus_v_large"
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "stat": "charge_bonus"
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "stat": "armour",
+      "n": {
+        "zh": "重厚苍鳞",
+        "en": "Heavy scales"
+      }
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "stat": "leadership"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "stat": "speed"
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health"
+      },
+      "stat": "hp"
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "stat": "num_men"
+    },
+    {
+      "k": {
+        "zh": "远程抗性",
+        "en": "Missile resistance"
+      },
+      "stat": "resist_missile"
+    }
+  ],
+  "traits": [
+    {
+      "name": {
+        "zh": "破甲杀伤",
+        "en": "Armour-Piercing"
+      },
+      "desc": {
+        "zh": "大部分杀伤无视护甲",
+        "en": "Mostly armour-piercing"
+      }
+    },
+    {
+      "name": {
+        "zh": "反大型",
+        "en": "Anti-Large"
+      },
+      "desc": {
+        "zh": "对大型单位 +25",
+        "en": "+25 bonus vs. large"
+      }
+    },
+    {
+      "name": {
+        "zh": "水生一族",
+        "en": "Aquatic"
+      },
+      "desc": {
+        "zh": "可在水域地形作战",
+        "en": "Fights in shallow water without penalty"
+      }
+    },
+    {
+      "name": {
+        "zh": "厚皮",
+        "en": "Scaly Skin"
+      },
+      "desc": {
+        "zh": "获得 25% 远程伤害抗性",
+        "en": "25% missile resistance"
+      }
+    },
+    {
+      "name": {
+        "zh": "浪击",
+        "en": "Wave Lash"
+      },
+      "desc": {
+        "zh": "命中后敌方近战防御 -6，持续 10 秒",
+        "en": "Melee hits reduce enemy melee defence by 6 for 10 seconds"
+      }
+    },
+    {
+      "name": {
+        "zh": "引发惊骇",
+        "en": "Causes Terror"
+      },
+      "desc": {
+        "zh": "近战时令低士气敌军陷入短暂恐慌溃退",
+        "en": "Causes terror in melee"
+      }
+    }
+  ],
+  "effects": {
+    "wh3_main_unit_passive_single_entity": {
+      "zh": "单体巨兽受创机制：生命值降至 50% 以下时进入「受创」状态，近战攻击与武器威力小幅下降",
+      "en": "Single-entity Wounds passive: when health drops below 50%, the monster becomes Wounded, slightly reducing melee attack and weapon strength"
+    }
+  }
+}

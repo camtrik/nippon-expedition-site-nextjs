@@ -1,0 +1,1041 @@
+{
+  "_note": "本 mod 每个 land unit 的 loc 原文：name = land_units_onscreen_name，desc = unit_description_short_texts，story = unit_description_historical_texts。站点图鉴的兵种名、兵牌短文、图鉴长文都从这里生成。",
+  "units": {
+    "cth_npex_abyssal_grand_cannon_0": {
+      "name": {
+        "zh": "沧溟巨炮",
+        "en": "Abyssal Grand Cannon"
+      },
+      "desc": {
+        "zh": "火药与魔法共铸的巨炮；直射可凿穿重甲，亦可炸开散作漫天水矢。",
+        "en": "Forged of powder and magic, this great cannon bores through heavy armour or bursts into a storm of water-darts."
+      },
+      "story": {
+        "zh": "据说引水咒最早由溟龙胤隐制成，可以把海水化作致命的魔法炮弹。且没有魔法天赋的凡人也可以操纵引水咒，使其得以在寻常炮组手中施展。沧溟巨炮便是震旦海军把这道古咒与震旦火器结合的产物。引水咒生成的魔法造物在炮膛中积蓄力量，再由药室里的火药爆燃轰出炮口。其威力比一般巨炮有过之而无不及。",
+        "en": "The Water-Drawing Charm is said to have been first devised by Yin-Yin the Sea Dragon; it turns seawater into a deadly magical shot. And because mortals with no gift for magic can work it all the same, the charm can be wielded by an ordinary gun crew. The Abyssal Grand Cannon is what came of the Cathayan navy joining that ancient charm to Cathayan gunpowder. The conjuration the charm raises gathers its power within the bore, and the powder in the chamber behind it hurls the whole out of the muzzle. Its force is a match for any common grand cannon, and more besides."
+      }
+    },
+    "cth_npex_admiral_0": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "前锋死士的领袖，率领步兵将士在接舷与突进中撕开敌阵。",
+        "en": "Leader of the forlorn hope, who drives the infantry through the enemy line in the press of boarding actions and headlong assaults."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_02_0": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "精通火器阵列的炮术长官，以严密的弹道校准与齐射节律瓦解任何逼近的敌军。",
+        "en": "A gunnery officer versed in the ordering of firearms, who shatters any enemy that closes in with exact ballistic calibration and the steady rhythm of massed volleys."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_02_1": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "精通火器阵列的炮术长官，以严密的弹道校准与齐射节律瓦解任何逼近的敌军。",
+        "en": "A gunnery officer versed in the ordering of firearms, who shatters any enemy that closes in with exact ballistic calibration and the steady rhythm of massed volleys."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_02_2": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "精通火器阵列的炮术长官，以严密的弹道校准与齐射节律瓦解任何逼近的敌军。",
+        "en": "A gunnery officer versed in the ordering of firearms, who shatters any enemy that closes in with exact ballistic calibration and the steady rhythm of massed volleys."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_02_3": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "精通火器阵列的炮术长官，以严密的弹道校准与齐射节律瓦解任何逼近的敌军。",
+        "en": "A gunnery officer versed in the ordering of firearms, who shatters any enemy that closes in with exact ballistic calibration and the steady rhythm of massed volleys."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_03_0": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "善于捕捉战机的机动统帅。统御铁骑疾驰，如潮水般反复冲击并撕裂敌军破绽。",
+        "en": "A mobile commander with an eye for the decisive moment. He drives his armoured horsemen at the gallop, charging again and again like the tide to tear open every weakness in the enemy line."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_03_1": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "善于捕捉战机的机动统帅。统御铁骑疾驰，如潮水般反复冲击并撕裂敌军破绽。",
+        "en": "A mobile commander with an eye for the decisive moment. He drives his armoured horsemen at the gallop, charging again and again like the tide to tear open every weakness in the enemy line."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_03_2": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "善于捕捉战机的机动统帅。统御铁骑疾驰，如潮水般反复冲击并撕裂敌军破绽。",
+        "en": "A mobile commander with an eye for the decisive moment. He drives his armoured horsemen at the gallop, charging again and again like the tide to tear open every weakness in the enemy line."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_03_3": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "善于捕捉战机的机动统帅。统御铁骑疾驰，如潮水般反复冲击并撕裂敌军破绽。",
+        "en": "A mobile commander with an eye for the decisive moment. He drives his armoured horsemen at the gallop, charging again and again like the tide to tear open every weakness in the enemy line."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_1": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "前锋死士的领袖，率领步兵将士在接舷与突进中撕开敌阵。",
+        "en": "Leader of the forlorn hope, who drives the infantry through the enemy line in the press of boarding actions and headlong assaults."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_2": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "前锋死士的领袖，率领步兵将士在接舷与突进中撕开敌阵。",
+        "en": "Leader of the forlorn hope, who drives the infantry through the enemy line in the press of boarding actions and headlong assaults."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_admiral_3": {
+      "name": {
+        "zh": "水师提督",
+        "en": "Fleet Admiral"
+      },
+      "desc": {
+        "zh": "前锋死士的领袖，率领步兵将士在接舷与突进中撕开敌阵。",
+        "en": "Leader of the forlorn hope, who drives the infantry through the enemy line in the press of boarding actions and headlong assaults."
+      },
+      "story": {
+        "zh": "卫东列省流传着一句古语：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。而碧帆所到之处，便是震旦的海疆。",
+        "en": "In the Eastern Provinces there is an old saying: the Great Bastion does not end at the sea, for the sea is itself another Great Bastion. The Fleet Admiral is the keeper of that wall upon the waves. Beneath the jade sails, the warships stand in ranks like crenellations, and the water between hull and hull is the rampart itself. Pirates and deep-sea horrors are treated alike: whatever crosses that line will not get a second chance. Yet an admiral faces more than enemies. Storms scatter fleets, currents drag a course astray, and by the third month of a long voyage the sailors begin to wonder why they are still out here. The fleet holds together because the flagship does not turn; the flagship does not turn because no tempest at sea can shake the one who stands at its prow. And wherever the jade sails go, there lies the sea-realm of Cathay."
+      }
+    },
+    "cth_npex_akatsuki_shu_0": {
+      "name": {
+        "zh": "晓行众（太刀）",
+        "en": "Akatsuki-shu (Katana)"
+      },
+      "desc": {
+        "zh": "跨越宿怨的凡人游侠与半妖同心结阵，手持太刀以疾风般突入敌阵。",
+        "en": "Setting old hatreds aside, mortal swordsmen and hanyo stand as one, their katana tearing into enemy lines like a gale."
+      },
+      "story": {
+        "zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。\\\\n\\\\n半妖行者伊吹面对恶言冷箭从不拔刀自辩，只是固执地一次次横刀阵前庇护弱小。受其救助并信服其理念的凡人浪人、山野猎户，以及流淌着异族之血的半妖游侠纷纷主动追随伊吹，被称为『晓行众』。",
+        "en": "The yokai of Nippon were born of its mountains and waters, and once lived in seclusion in the depths of the islands. To mortal eyes, however, their horns and scales made them little different from the Daemons of Chaos and the Beastmen. Centuries of fear and prejudice hardened into blood-feuds handed down from one generation to the next. When civil war engulfed the land and longships came ashore, men and yokai alike were caught in the blaze. Still they slew one another in the long night of hatred.\\\\n\\\\nIbuki, the Hanyo Wanderer, never drew his blade to answer insults or arrows loosed against him. Time and again he simply took his stand before the helpless, stubbornly setting his odachi between them and danger. Mortal ronin and hunters of the wilds, together with hanyo wanderers bearing the blood of another kind, came willingly to his side, won over by his deeds and his beliefs. These followers became known as the Akatsuki-shu (The Dawnbreakers)."
+      }
+    },
+    "cth_npex_akatsuki_shu_1": {
+      "name": {
+        "zh": "晓行众（弓）",
+        "en": "Akatsuki-shu (Bow)"
+      },
+      "desc": {
+        "zh": "潜行于山林幽影中的荒野游侠，由半妖与人类混合而成，引浸毒和弓于无声处猎杀强敌，行踪飘忽莫测。",
+        "en": "Human and hanyo rangers stalk the mountain shadows, drawing poisoned bows to bring down mighty foes in silence before vanishing into the wilds."
+      },
+      "story": {
+        "zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。\\\\n\\\\n半妖行者伊吹面对恶言冷箭从不拔刀自辩，只是固执地一次次横刀阵前庇护弱小。受其救助并信服其理念的凡人浪人、山野猎户，以及流淌着异族之血的半妖游侠纷纷主动追随伊吹，被称为『晓行众』。",
+        "en": "The yokai of Nippon were born of its mountains and waters, and once lived in seclusion in the depths of the islands. To mortal eyes, however, their horns and scales made them little different from the Daemons of Chaos and the Beastmen. Centuries of fear and prejudice hardened into blood-feuds handed down from one generation to the next. When civil war engulfed the land and longships came ashore, men and yokai alike were caught in the blaze. Still they slew one another in the long night of hatred.\\\\n\\\\nIbuki, the Hanyo Wanderer, never drew his blade to answer insults or arrows loosed against him. Time and again he simply took his stand before the helpless, stubbornly setting his odachi between them and danger. Mortal ronin and hunters of the wilds, together with hanyo wanderers bearing the blood of another kind, came willingly to his side, won over by his deeds and his beliefs. These followers became known as the Akatsuki-shu (The Dawnbreakers)."
+      }
+    },
+    "cth_npex_axe_guard_0": {
+      "name": {
+        "zh": "先登斧卫",
+        "en": "Boarding Axe Guard"
+      },
+      "desc": {
+        "zh": "披挂重甲的双斧死士，能够撕开敌军最为坚固的步兵阵线。",
+        "en": "Heavily armoured shock troops with a pair of axes, able to tear open the sturdiest infantry lines."
+      },
+      "story": {
+        "zh": "在风浪滔天的远洋航行中，海战往往最终会演变为极其惨烈的接舷战。先登斧卫正是为此而生的精锐死士。他们身披坚固的玄铁板甲，双手各持一柄厚重的精钢战斧。无论是在倾斜湿滑的敌舰甲板上，还是在怒涛拍岸的异邦滩头，这些久经风浪的战士都能以暴风骤雨般的连环劈砍斩断一切阻碍，直至将敌方的防线彻底冲垮。",
+        "en": "On long ocean voyages, naval battles so often end in brutal boarding actions, and the Boarding Axe Guard are elite shock troops raised for exactly that. Clad in sturdy black iron plate, with a heavy steel axe in each hand, these sea-hardened warriors fight on slick, tilting enemy decks and on foreign beaches pounded by the surf alike, their storm of chained blows cutting through every obstacle until the enemy line finally collapses."
+      }
+    },
+    "cth_npex_bow_ashigaru_0": {
+      "name": {
+        "zh": "弓足轻",
+        "en": "Bow Ashigaru"
+      },
+      "desc": {
+        "zh": "乡野草民受命执和弓，以铺天盖地的连绵箭雨遮蔽前阵。",
+        "en": "Country folk handed the bow, darkening the sky above the front line with an unbroken rain of arrows."
+      },
+      "story": {
+        "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
+        "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
+      }
+    },
+    "cth_npex_cha_ibuki_0": {
+      "name": {
+        "zh": "『半妖行者』伊吹",
+        "en": "Ibuki, the Hanyo Wanderer"
+      },
+      "desc": {
+        "zh": "身上流淌鬼族之血的行者。他背负无名长刀行遍尼朋，以守护苍生之愿，辟人妖同阵之路。",
+        "en": "An oni-blooded wanderer bearing the Nameless Odachi, sworn to shield the common folk and unite men and yokai in battle."
+      },
+      "story": {
+        "zh": "伊吹是流淌着鬼族之血的半妖行者，手持长刀「无名」游历尼朋。在内战与侵入者肆虐的乱世中，他出没于各处险境，数次斩除兵匪与恶兽，庇护流离失所的平民。受其救助并相信其理念的人与妖怪追随伊吹，被称为「晓行众」，伊吹率领他们踏遍列岛，誓要在世仇之中辟出一条人妖共存的生路。",
+        "en": "Ibuki is a hanyo, a wanderer with the blood of the oni in his veins, who roams Nippon with Nameless Odachi in his hands. In an age ravaged by civil war and by invaders, he appears wherever the danger is greatest; time and again he has cut down marauding soldiers and fell beasts, and sheltered the common folk driven from their homes. The men and yokai he has saved, and who have come to believe in his cause, now follow him, and are known as the Akatsuki-shu (The Dawnbreakers). At their head Ibuki walks the length of the isles, sworn to cut through the ancient blood-feud a road by which men and yokai may live side by side."
+      }
+    },
+    "cth_npex_cha_ibuki_yokai_0": {
+      "name": {
+        "zh": "『半妖行者』伊吹（妖怪化）",
+        "en": "Ibuki, the Hanyo Wanderer (Yokai Form)"
+      },
+      "desc": {
+        "zh": "身上流淌鬼族之血的行者。他背负无名长刀行遍尼朋，以守护苍生之愿，辟人妖同阵之路。",
+        "en": "An oni-blooded wanderer bearing the Nameless Odachi, sworn to shield the common folk and unite men and yokai in battle."
+      },
+      "story": {
+        "zh": "伊吹是流淌着鬼族之血的半妖行者，手持长刀「无名」游历尼朋。在内战与侵入者肆虐的乱世中，他出没于各处险境，数次斩除兵匪与恶兽，庇护流离失所的平民。受其救助并相信其理念的人与妖怪追随伊吹，被称为「晓行众」，伊吹率领他们踏遍列岛，誓要在世仇之中辟出一条人妖共存的生路。",
+        "en": "Ibuki is a hanyo, a wanderer with the blood of the oni in his veins, who roams Nippon with Nameless Odachi in his hands. In an age ravaged by civil war and by invaders, he appears wherever the danger is greatest; time and again he has cut down marauding soldiers and fell beasts, and sheltered the common folk driven from their homes. The men and yokai he has saved, and who have come to believe in his cause, now follow him, and are known as the Akatsuki-shu (The Dawnbreakers). At their head Ibuki walks the length of the isles, sworn to cut through the ancient blood-feud a road by which men and yokai may live side by side."
+      }
+    },
+    "cth_npex_cha_miko_0": {
+      "name": {
+        "zh": "巫女",
+        "en": "Miko"
+      },
+      "desc": {
+        "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
+        "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
+      },
+      "story": {
+        "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
+        "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
+      }
+    },
+    "cth_npex_cha_miko_02_0": {
+      "name": {
+        "zh": "巫女",
+        "en": "Miko"
+      },
+      "desc": {
+        "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
+        "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
+      },
+      "story": {
+        "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
+        "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
+      }
+    },
+    "cth_npex_cha_miko_02_1": {
+      "name": {
+        "zh": "巫女",
+        "en": "Miko"
+      },
+      "desc": {
+        "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
+        "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
+      },
+      "story": {
+        "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
+        "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
+      }
+    },
+    "cth_npex_cha_miko_1": {
+      "name": {
+        "zh": "巫女",
+        "en": "Miko"
+      },
+      "desc": {
+        "zh": "山社乡里的神职之女，以神乐事神、以祓词退魔。铃响处，神使应召而至。",
+        "en": "Holy maidens of Nippon's mountain shrines, banishing demons with kagura and sacred chants. When their bells ring, the Divine Envoy answers."
+      },
+      "story": {
+        "zh": "在尼朋，巫女的存在比大名的家纹更古老：史传有以鬼道事神、凭神谕号令诸部的女王，圣日朝廷的祭祀里也有终身侍神的斋王。权柄归于武士领主之后，她们退出庙堂，退回山社乡里，守着一方鸟居与一枚神乐铃过活。神乐之舞起于天岩户前的踏桶之响——旋至极处，舞者之身即为依代，神明降于其上，这便是巫女最古老的本事。乱世来临，社殿焚毁，妖物与邪祟趁乱横行；她们或坚守神社寸土不让，或化作行游列国的游方巫女，一路禊祓、封魔、退治邪祟。",
+        "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
+      }
+    },
+    "cth_npex_cha_sayo_0": {
+      "name": {
+        "zh": "『阴阳之巫女』纱代",
+        "en": "Sayo, the Onmyo Miko"
+      },
+      "desc": {
+        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+      },
+      "story": {
+        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+      }
+    },
+    "cth_npex_cha_sayo_1": {
+      "name": {
+        "zh": "『阴阳之巫女』纱代",
+        "en": "Sayo, the Onmyo Miko"
+      },
+      "desc": {
+        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+      },
+      "story": {
+        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+      }
+    },
+    "cth_npex_cha_sayo_2": {
+      "name": {
+        "zh": "『阴阳之巫女』纱代",
+        "en": "Sayo, the Onmyo Miko"
+      },
+      "desc": {
+        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+      },
+      "story": {
+        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+      }
+    },
+    "cth_npex_cha_serena_0": {
+      "name": {
+        "zh": "瑟兰娜",
+        "en": "Serena"
+      },
+      "desc": {
+        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+      },
+      "story": {
+        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+      }
+    },
+    "cth_npex_cha_serena_1": {
+      "name": {
+        "zh": "瑟兰娜",
+        "en": "Serena"
+      },
+      "desc": {
+        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+      },
+      "story": {
+        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+      }
+    },
+    "cth_npex_cha_serena_2": {
+      "name": {
+        "zh": "瑟兰娜",
+        "en": "Serena"
+      },
+      "desc": {
+        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+      },
+      "story": {
+        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+      }
+    },
+    "cth_npex_cha_serena_3": {
+      "name": {
+        "zh": "瑟兰娜",
+        "en": "Serena"
+      },
+      "desc": {
+        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
+        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+      },
+      "story": {
+        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+      }
+    },
+    "cth_npex_cha_tachibana_naotora_0": {
+      "name": {
+        "zh": "『战鬼』立花直虎",
+        "en": "Tachibana Naotora, the Ghost"
+      },
+      "desc": {
+        "zh": "她是雷神之女，双刀「紫电」的主人。敌人尚未看清她的身影，便已倒在雷光之下。",
+        "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
+      },
+      "story": {
+        "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+        "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+      }
+    },
+    "cth_npex_cha_tachibana_naotora_1": {
+      "name": {
+        "zh": "『战鬼』立花直虎",
+        "en": "Tachibana Naotora, the Ghost"
+      },
+      "desc": {
+        "zh": "她是雷神之女，双刀「紫电」的主人。敌人尚未看清她的身影，便已倒在雷光之下。",
+        "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
+      },
+      "story": {
+        "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+        "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+      }
+    },
+    "cth_npex_empyrean_guard_0": {
+      "name": {
+        "zh": "云霄禁卫（海龙马骑兵）",
+        "en": "Empyrean Guard (Sea Longma Riders)"
+      },
+      "desc": {
+        "zh": "乘海龙马的魔法骑兵，云生于蹄下、魔雨落于枪尖。",
+        "en": "Magical cavalry mounted upon Sea Longma: cloud gathers beneath their hooves, and a rain of magic falls from their lance-points."
+      },
+      "story": {
+        "zh": "海龙马的来历在任何谱牒与记载里都找不到交代，最初遇到他们的渔人只说台风过后，十几头鬃鬣滴水的灵兽静静立在退潮的礁石上。海龙马的速度比普通巨龙马更加迅捷，其所在之地，上方的空气会渐渐凝结成为云雾。云霄禁卫则可以通过云雾对敌人进行致命的魔法打击。",
+        "en": "No lineage-roll or chronicle accounts for where the Sea Longma came from. The fishermen who first met them said only that once the typhoon had passed, a dozen or so spirit-beasts stood silent upon the ebb-tide rocks, their manes still dripping. Sea Longma are swifter than the common Great Longma, and wherever they are, the air above them slowly thickens into cloud and mist. Through that mist the Empyrean Guard bring a deadly magical stroke down upon their foes."
+      }
+    },
+    "cth_npex_hatamoto_raijin_0": {
+      "name": {
+        "zh": "雷刃旗本",
+        "en": "Thunderblade Hatamoto"
+      },
+      "desc": {
+        "zh": "大名直属的精锐武士，持雷神赐福的大太刀。刀身紫电缠绕，一挥可斩铁裂甲。",
+        "en": "Elite samurai bearing odachi blessed by Raijin; coiled in violet lightning, a single stroke shears iron and splits armour."
+      },
+      "story": {
+        "zh": "旗本是武士中的武士。他们受大名直接统辖、世袭其位的近卫，非百战之功不得入列。所执的大太刀逾寻常太刀之长，须以双手挥舞，本是阵前斩马破甲的重器。其中一脉承雷神之契：相传昔日一位剑圣于雷暴之夜登峰参悟，以身试雷，引天火入刀，自此后人与门徒所持之刃皆具唤雷之能。刀出鞘时紫电自刃脊游走，挥斩之际雷光随刀锋迸裂；此非术士之法，而是以血肉之躯承雷霆、以剑技驭雷威的武道。旗本以剑技为根本，经年苦修，一刀之威已胜寻常武士数合，雷神之力不过为这极致剑技添上最后一道锋芒。两军阵前，见紫电破阵而来者，皆知旗本至矣。",
+        "en": "The Hatamoto are samurai among samurai: the household guard of a daimyo, holding their places by hereditary right, into whose ranks none may enter without worth proven in a hundred battles. The odachi they bear runs longer than the common katana and must be swung two-handed; it was forged as a heavy weapon to hew down horses and break armour in the front rank. One line of them bears the covenant of Raijin. It is told that in ancient days a Swordmaster climbed a thunder-wracked peak in search of enlightenment, set his own body against the thunder, and drew heaven's fire into his blade; from that night on, every blade in the hands of his heirs and disciples has carried the power to call the lightning. When the blade leaves its sheath, violet lightning runs along the spine of the steel; when the stroke falls, thunder bursts along the edge. This is no sorcerer's art, but a warrior's way: a body of flesh and blood that bears the thunder, and swordsmanship that rides its fury. The Hatamoto root their art in the sword alone; through years of harsh training, the force of a single stroke already outweighs several exchanges of the common samurai, and the power of Raijin does no more than set the final edge upon that perfected craft. Before two embattled hosts, all who see violet lightning breaking upon the line know that the Hatamoto have come."
+      }
+    },
+    "cth_npex_inari_fox_0": {
+      "name": {
+        "zh": "稻荷灵狐使者",
+        "en": "Inari Fox Emissary"
+      },
+      "desc": {
+        "zh": "稻荷神社供奉的灵狐使者，以灵力凝爪、踏阵如风，是世代守护神社的契约灵兽。",
+        "en": "Spirit-fox emissaries of the Inari shrines, claws woven of spirit and swift as the wind, guarding these sacred grounds for generations."
+      },
+      "story": {
+        "zh": "稻荷灵狐是尼朋神社世代供奉的神使之狐，侍奉稻荷信仰，是神社最忠诚的灵体眷属。它们与神社立下古老的契约，平日隐于社殿深处，听巫女的神乐铃调遣；一旦神社蒙难、邪祟犯境，便成群结队涌出鸟居，以灵力所凝的爪牙撕咬来犯之敌，誓死护卫神域的一草一木。",
+        "en": "The Inari spirit foxes are the divine messengers honoured by the shrines of Nippon for generations: servants of the Inari faith, and the most loyal of a shrine's spirit-familiars. Bound to the shrine by an ancient pact, they lie hidden in the depths of the shrine halls, hearkening to the summons of the miko's kagura bell; but the moment a shrine is beset and evil crosses its border, they pour out through the torii gates in packs, tearing at the invaders with claws and fangs wrought of raw spirit, and guarding every tree and blade of grass on the hallowed ground with their lives."
+      }
+    },
+    "cth_npex_inari_fox_summoned_0": {
+      "name": {
+        "zh": "稻荷灵狐使者（神使）",
+        "en": "Inari Fox Emissary (Divine Envoy)"
+      },
+      "desc": {
+        "zh": "稻荷神社供奉的灵狐使者，以灵力凝爪、踏阵如风，是世代守护神社的契约灵兽。",
+        "en": "Spirit-fox emissaries of the Inari shrines, claws woven of spirit and swift as the wind, guarding these sacred grounds for generations."
+      },
+      "story": {
+        "zh": "稻荷灵狐是尼朋神社世代供奉的神使之狐，侍奉稻荷信仰，是神社最忠诚的灵体眷属。它们与神社立下古老的契约，平日隐于社殿深处，听巫女的神乐铃调遣；一旦神社蒙难、邪祟犯境，便成群结队涌出鸟居，以灵力所凝的爪牙撕咬来犯之敌，誓死护卫神域的一草一木。",
+        "en": "The Inari spirit foxes are the divine messengers honoured by the shrines of Nippon for generations: servants of the Inari faith, and the most loyal of a shrine's spirit-familiars. Bound to the shrine by an ancient pact, they lie hidden in the depths of the shrine halls, hearkening to the summons of the miko's kagura bell; but the moment a shrine is beset and evil crosses its border, they pour out through the torii gates in packs, tearing at the invaders with claws and fangs wrought of raw spirit, and guarding every tree and blade of grass on the hallowed ground with their lives."
+      }
+    },
+    "cth_npex_jade_sea_fleet_gunners_0": {
+      "name": {
+        "zh": "舰队铳手",
+        "en": "Fleet Gunners"
+      },
+      "desc": {
+        "zh": "玉海舰队的铳手以改良火器操典列阵齐射，铅丸所至，重甲如纸。",
+        "en": "The gunners of the Jade Sea Fleet drill to fire in disciplined volleys; where their lead shot lands, no armour holds."
+      },
+      "story": {
+        "zh": "震旦东方省的水师本就善火器，船上要应付跳帮的海寇、海中的妖兽，铁雹与长铳比弓弩更靠得住。舰队铳手善用震旦火器，他们在甲板上架起长铳、在浪涌间校准仰角，以齐射把敌人钉死在射界之内。尼朋沿海多雾，风向莫测，火绳常被海潮打湿。舰队铳手据此发展出一套震旦本土没有的土法：铳管裹油布、药池封蜡、击发前以口哈气暖管，让火器在尼朋的盐风雾雨里依旧打得响。久而久之，玉海舰队的对手都学会了一件事：听见甲板上一长串火绳嘶嘶作响，便该早早寻掩护了。",
+        "en": "The navies of Cathay's Eastern Provinces have always favoured gunpowder, for at sea one must repel boarding pirates and monsters of the deep alike, and there the Iron Hail gun and the long gun serve better than bow or crossbow. The Fleet Gunners of the Jade Sea Fleet are masters of Cathayan firearms: they set up their long guns upon the deck, trim their aim between the swells, and pin the enemy within their field of fire with volley after volley. The Nipponese coast is thick with fog and fickle in its winds, and the matchcords are forever soaked by the sea. So the Fleet Gunners worked out a handful of makeshift tricks unknown in Cathay itself: barrels wrapped in oilcloth, flash pans sealed with wax, a breath of warmth blown down the barrel before the shot, all so the guns still crack and flame amid Nippon's salt wind, fog and rain. In time, every foe of the Jade Sea Fleet learned one lesson well: when a long string of matchcords begins to hiss along the deck, it is high time to find cover."
+      }
+    },
+    "cth_npex_jade_sea_sailors_0": {
+      "name": {
+        "zh": "玉海潮勇",
+        "en": "Jade Sea Warriors"
+      },
+      "desc": {
+        "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+        "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+      },
+      "story": {
+        "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+        "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+      }
+    },
+    "cth_npex_jade_sea_sailors_dual_0": {
+      "name": {
+        "zh": "玉海潮勇（双刀）",
+        "en": "Jade Sea Sailors (Dual Blades)"
+      },
+      "desc": {
+        "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+        "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+      },
+      "story": {
+        "zh": "玉海潮勇受过震旦水师的操练，他们会忠实执行舰长的任何命令。",
+        "en": "The Jade Sea Warriors are drilled in Cathayan naval discipline, and carry out their captain's orders without question."
+      }
+    },
+    "cth_npex_jinjing_riders_0": {
+      "name": {
+        "zh": "金睛兽骑",
+        "en": "Golden-Eyed Beast Riders"
+      },
+      "desc": {
+        "zh": "骑乘碧水金睛兽的精锐骑兵。灵兽眼里闪烁的金光足以让任何生物胆寒。",
+        "en": "Elite cavalry mounted on the golden-eyed beasts of the Jade Sea. The golden gleam in these creatures' eyes strikes fear into any living thing."
+      },
+      "story": {
+        "zh": "碧水金睛兽是栖息于玉海深处孤岛与海滨峭壁上的罕见灵兽。这些生有冷光金眸的猛兽性情孤傲而凶猛，唯有最勇猛的战士才能使它们俯首。金睛兽的怒吼足以令最骁勇的战马惊骇瘫软，而它们背上的骑手也是身经百战的老兵。狂暴猛兽与百战精锐的意志在此合而为一。",
+        "en": "The golden-eyed beasts are rare spirit creatures that dwell on the remote islands and sea cliffs of the deep Jade Sea. Proud and savage, with eyes of cold golden light, they bow only to the bravest of warriors. Their roar can leave the boldest warhorse paralysed with terror, and the riders on their backs are veterans of a hundred battles. Here the fury of the beast and the will of hardened elites become one."
+      }
+    },
+    "cth_npex_kirin_0": {
+      "name": {
+        "zh": "麒麟",
+        "en": "Kirin"
+      },
+      "desc": {
+        "zh": "踏云而行的远东风暴瑞兽，独角贯雷、铁蹄生霆，以神速撕裂敌阵的魔法巨兽。",
+        "en": "An auspicious storm-beast walking on clouds, its horn threaded with lightning and hooves thundering, tearing through enemy lines with unnatural speed."
+      },
+      "story": {
+        "zh": "麒麟是“风与土结合而生”的风暴精怪。天风的暴烈与大地的沉稳在最纯粹的交汇处凝形，化作一身龙鳞、独角如刃、流云为鬃的神兽。它们踏云而行，不践一草一木；振鬃之际，雷霆自角端游走。震旦天庭视其为与龙马同为一系的风暴灵兽，尼朋则视其为现身预兆太平的瑞兽——唯有正气之地能孕育，唯有正义之师肯相从。",
+        "en": "The Kirin is a storm spirit \"born of the union of wind and earth\". Where the fury of heaven's wind and the steadfastness of the land meet in their purest conjunction, these spirits take shape: divine beasts clad in dragon scales, single horns keen as blades, streaming clouds for manes. They walk upon the clouds and trample no grass or tree; and when they toss their manes, thunder runs from the very tips of their horns. The Celestial Court of Cathay counts them storm-spirits of one kindred with the Longma, while Nippon hails them as auspicious beasts whose coming presages peace: only lands of virtue can bring them forth, and only righteous hosts will they follow."
+      }
+    },
+    "cth_npex_kirin_summoned_0": {
+      "name": {
+        "zh": "麒麟（神兽）",
+        "en": "Kirin (Divine Beast)"
+      },
+      "desc": {
+        "zh": "踏云而行的远东风暴瑞兽，独角贯雷、铁蹄生霆，以神速撕裂敌阵的魔法巨兽。",
+        "en": "An auspicious storm-beast walking on clouds, its horn threaded with lightning and hooves thundering, tearing through enemy lines with unnatural speed."
+      },
+      "story": {
+        "zh": "麒麟是“风与土结合而生”的风暴精怪。天风的暴烈与大地的沉稳在最纯粹的交汇处凝形，化作一身龙鳞、独角如刃、流云为鬃的神兽。它们踏云而行，不践一草一木；振鬃之际，雷霆自角端游走。震旦天庭视其为与龙马同为一系的风暴灵兽，尼朋则视其为现身预兆太平的瑞兽——唯有正气之地能孕育，唯有正义之师肯相从。",
+        "en": "The Kirin is a storm spirit \"born of the union of wind and earth\". Where the fury of heaven's wind and the steadfastness of the land meet in their purest conjunction, these spirits take shape: divine beasts clad in dragon scales, single horns keen as blades, streaming clouds for manes. They walk upon the clouds and trample no grass or tree; and when they toss their manes, thunder runs from the very tips of their horns. The Celestial Court of Cathay counts them storm-spirits of one kindred with the Longma, while Nippon hails them as auspicious beasts whose coming presages peace: only lands of virtue can bring them forth, and only righteous hosts will they follow."
+      }
+    },
+    "cth_npex_kunikuzushi_oni_0": {
+      "name": {
+        "zh": "国崩巨鬼",
+        "en": "Kunikuzushi Oni"
+      },
+      "desc": {
+        "zh": "体魄异常魁梧的高大鬼族，单人即可擎起通常需数人操持的国崩大筒，以近距轰鸣的狂暴炮火与恐怖蛮力粉碎敌阵。",
+        "en": "Towering oni of prodigious strength wield Kunikuzushi cannon alone, shattering enemy ranks with close-range cannon fire and brute force."
+      },
+      "story": {
+        "zh": "鬼族是尼朋妖怪中最为强横壮硕的一支，而其中那些血脉最为沉厚、体魄格外庞大的魁伟巨鬼，身高可近三米，动辄便有拔木裂石的惊人蛮力。\\\\n\\\\n尼朋曾经引入模仿旧世界的火器，仿铸名为「国崩」的重型大筒。这类火炮管壁厚重、后坐力极猛，寻常人类往往需要两到三名精壮炮手协力垫土筑台、推挽操架方能勉强击发。然而对于巨鬼而言，沉重的国崩大筒在他们粗壮如铁的双臂间不过如同随身手铳般自如，单人便能端起大筒在行进间抵近直射，实心生铁巨弹瞬间便能将敌军与城垛轰成齑粉。",
+        "en": "The oni are among the mightiest of Nippon's yokai. Those in whom the ancient blood runs strongest grow into hulking giants, standing almost three metres tall and possessed of the strength to uproot trees and split stone.\\\\n\\\\nWhen firearms from the Old World reached Nippon, its smiths cast heavy cannon in their likeness and named them Kunikuzushi. With thick barrels and a savage recoil, these guns could scarcely be fired without two or three stout men working together to bank up earth, build a platform and heave the carriage into place. Yet in the iron arms of a giant oni, a Kunikuzushi handles as easily as a hand cannon. A single warrior can carry it forward and fire at close quarters, its great balls of cast iron pounding soldiers and battlements alike into dust."
+      }
+    },
+    "cth_npex_leviathan_0": {
+      "name": {
+        "zh": "利维坦",
+        "en": "Leviathan"
+      },
+      "desc": {
+        "zh": "自然界中的强力巨怪，在龙裔提督的御使下以足以夹碎钢铁的巨钳碾碎敌军。",
+        "en": "A mighty beast of the deep, driven by a dragon-blooded admiral to crush the enemy in claws strong enough to shear steel."
+      },
+      "story": {
+        "zh": "很少有人见到活的利维坦，或者说见到它的人大多无法活着逃脱，以至关于利维坦的记录极少。殷翎以与生俱来的威压与高超的御兽之法，在南海怒涛中将利维坦收归麾下，并命工匠在其重壳上构筑了盔甲与站台。当这头深渊巨兽破浪冲上滩头时，它那骇人的巨螯与不可阻挡的庞大身躯，将把一切挡在震旦水师面前的军阵碾为齑粉。",
+        "en": "Few have ever seen a living Leviathan, and most who did never escaped to tell of it, so little is recorded of the beast. With her innate dragon's presence and masterful art of beast-taming, Yin Ling brought one to heel amid the raging waves of the Southern Sea, and had artisans fit its heavy shell with armour and a lookout deck. When this monster of the abyss storms up the beach, its terrible claws and unstoppable bulk will grind to dust any battle line that stands between it and the Cathayan navy."
+      }
+    },
+    "cth_npex_matchlock_ashigaru_0": {
+      "name": {
+        "zh": "铁炮足轻",
+        "en": "Matchlock Ashigaru"
+      },
+      "desc": {
+        "zh": "执长铳列阵齐射的足轻步卒，拥有足以穿透重甲的火力。",
+        "en": "Ashigaru who form ranks behind long matchlocks, their volleys heavy enough to punch through plate."
+      },
+      "story": {
+        "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
+        "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
+      }
+    },
+    "cth_npex_misaki_crow_0": {
+      "name": {
+        "zh": "御先烏",
+        "en": "Misaki Crow"
+      },
+      "desc": {
+        "zh": "传说中作为日神使者的三足巨禽。其神眸可洞照一切潜伏虚妄。",
+        "en": "A three-legged great bird of legend, messenger of the Sun Deity. Its divine gaze pierces all that lurks and deceives."
+      },
+      "story": {
+        "zh": "御先烏是传说中的侍奉日神的使者，覆满黑曜华光的羽翼与巨大的三足象征着破除迷妄的智慧、仁恕与刚勇。在古老的修验道传承中，御先烏被尊为先行涉险、为凡世勘破前路的大神使。这种庞大的玄羽神禽素来隐栖于列岛极高处的灵峰云海之间，唯有山河震荡、暗潮遮蔽天日之际，方会在大社祝祷与长空中现出身影。",
+        "en": "The Misaki Crow is the legendary messenger who serves the Sun Deity. Its wings gleam with obsidian light, and its great three legs stand for the wisdom that dispels delusion, for benevolence and for valour. In the ancient teachings of Shugendo, the Misaki Crow is revered as the great divine messenger who goes first into peril to see through the road ahead on behalf of the mortal world. These vast, dark-feathered birds have always lived in seclusion among the cloud-seas of the sacred peaks at the very top of the islands; only when mountains and rivers tremble and a dark tide blots out the sky do they show themselves, in the prayers at the great shrines and across the heavens."
+      }
+    },
+    "cth_npex_pelagic_wyrm_0": {
+      "name": {
+        "zh": "远洋妖龙",
+        "en": "Pelagic Wyrm"
+      },
+      "desc": {
+        "zh": "这只巨大的海兽潜伏在冰冷的大洋深渊中，等待时机随狂澜猝起，以万钧之力将猎物彻底碾碎。",
+        "en": "These giant beasts lurk within the freezing ocean depths, waiting to rise up with raging tides and crush their prey with merciless fury."
+      },
+      "story": {
+        "zh": "远洋妖龙是一种凶悍的深海巨兽，外表如同一条无翼巨龙。它们常年在远东外海的海沟深流中盘旋，只在季风暴虐、海潮滔天的酷烈时节才会游向海面。它们似乎原本是水魔法的造物，这也使得它们会倾向于与掌握了深渊魔法的人亲近。但无论如何，驾驭一头妖龙仍是十分困难的事情，至今也很少有人做到。",
+        "en": "Pelagic Wyrms are ferocious deep-sea leviathans that resemble wingless dragons. They coil endlessly within the abyssal trenches of the Far Eastern seas, venturing up to the surface only during bitter seasons of violent monsoons and tempestuous swells. They appear to be primal creations of water magic, an affinity that draws them to those who have mastered the magic of the Deep. Even so, harnessing a Wyrm is an extraordinarily perilous undertaking, and few to this day have ever succeeded."
+      }
+    },
+    "cth_npex_samurai_taisho_0": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_02_0": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_02_1": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_02_2": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_03_0": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_03_1": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_03_2": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_1": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_2": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_black_0": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_black_1": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_samurai_taisho_black_2": {
+      "name": {
+        "zh": "武士大将",
+        "en": "Samurai Taisho"
+      },
+      "desc": {
+        "zh": "统领一军的武士大将是尼朋军队的指挥官，也是武士道的代表。",
+        "en": "A Samurai Taisho who leads an army is a commander of Nippon's hosts, and the very embodiment of bushido."
+      },
+      "story": {
+        "zh": "尼朋有一句古训：武士的刀，不应以刀鞘束缚，而应该以灵魂来约束。武士大将就是这条古训的典范。战鼓一响，旗组护印、铳组居前、枪组列阵、骑马为锋，一军的性命都悬在军配的起落之间。统领一军者，一举一动皆是全军之范。他若进，溃兵也能重结成阵；他若退，胜军也会散作流民。",
+        "en": "Nippon has an old saying: a samurai's blade is not to be bound by its scabbard, but by the soul of him who wields it. The Samurai Taisho is the living proof of that saying. When the war drums sound, the banner guard holds the standard, the gunners take the front, the spearmen form the line and the horsemen ride at the point; the lives of the whole army hang upon the rise and fall of the war fan. To command an army is to set the example for every man in it: where he advances, broken men close their ranks again; where he retreats, even a victorious army scatters into a rabble."
+      }
+    },
+    "cth_npex_shen_changfeng_0": {
+      "name": {
+        "zh": "沈长风",
+        "en": "Shen Changfeng"
+      },
+      "desc": {
+        "zh": "震旦水师中战功最显赫的提督。曾多次击退海盗入侵；其剑术冠绝四海，有剑圣之名。",
+        "en": "The most decorated admiral of the Cathayan fleet. She has repelled pirate invasions many times over, and her swordsmanship is peerless across the four seas, earning her the name of Swordmaster."
+      },
+      "story": {
+        "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
+        "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
+      }
+    },
+    "cth_npex_shen_changfeng_2": {
+      "name": {
+        "zh": "沈长风",
+        "en": "Shen Changfeng"
+      },
+      "desc": {
+        "zh": "震旦水师中战功最显赫的提督。曾多次击退海盗入侵；其剑术冠绝四海，有剑圣之名。",
+        "en": "The most decorated admiral of the Cathayan fleet. She has repelled pirate invasions many times over, and her swordsmanship is peerless across the four seas, earning her the name of Swordmaster."
+      },
+      "story": {
+        "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
+        "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
+      }
+    },
+    "cth_npex_shen_changfeng_3": {
+      "name": {
+        "zh": "沈长风",
+        "en": "Shen Changfeng"
+      },
+      "desc": {
+        "zh": "震旦水师中战功最显赫的提督。曾多次击退海盗入侵；其剑术冠绝四海，有剑圣之名。",
+        "en": "The most decorated admiral of the Cathayan fleet. She has repelled pirate invasions many times over, and her swordsmanship is peerless across the four seas, earning her the name of Swordmaster."
+      },
+      "story": {
+        "zh": "沈长风是卫东列省战功最显赫的提督。胤隐失踪后，尼朋海盗再度犯境。她率领舰队越界追击，直至尼朋领海，大获全胜，却同时击沉了数艘尼朋官方战舰。凯旋的捷报与尼朋的抗议同日送抵朝廷，朝廷却有人趁胤隐失踪从中作梗，以北面长垣战事吃紧，不应招惹尼朋人而下了问罪诏书，要求收回兵权。诏令已至，她没有奉旨回京，而是带着愿意追随她的战士们扬帆出海，径直航向尼朋。",
+        "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
+      }
+    },
+    "cth_npex_tamed_cold_one_0": {
+      "name": {
+        "zh": "归驯冷蜥",
+        "en": "Tamed Cold Ones"
+      },
+      "desc": {
+        "zh": "受到训练后的露丝契亚掠食者，听从号令向敌阵发起凶猛的突击。",
+        "en": "Trained predators from Lustria, unleashed at a command to crash into the enemy ranks."
+      },
+      "story": {
+        "zh": "冷蜥是栖息在露丝契亚阴暗雨林深处的残忍掠食者。这些动物不知痛楚，唯有血腥气味能点燃它们盲目的杀戮欲望，在野外几乎无法被真正驾驭。殷翎曾从露丝契亚带回了大量的冷蜥并且驯养。与野生的同类不同，受到严格操练的冷蜥在战场上听从号令、进退有度，但在被放出冲锋时，依然保留着原始而致命的残暴撕咬。",
+        "en": "Cold Ones are vicious predators that dwell deep within the dark rainforests of Lustria. Insensible to pain, they are driven to blind slaughter by the scent of blood, and their wild kind are almost impossible to control. Yin Ling brought many back from Lustria and had them trained. Unlike their feral kin, these rigorously drilled beasts obey commands and advance or withdraw in good order. Once unleashed in a charge, however, their savage bites remain as deadly as ever."
+      }
+    },
+    "cth_npex_teppo_samurai_0": {
+      "name": {
+        "zh": "铁炮武士",
+        "en": "Teppo Samurai"
+      },
+      "desc": {
+        "zh": "以火绳铳与佩刀列阵的尼朋重甲武士，铅丸破甲，佩刀防身。",
+        "en": "Heavily armoured samurai of Nippon who take the field with matchlock and katana: lead shot to break armour, katana to guard the body."
+      },
+      "story": {
+        "zh": "铁炮之术随海路商舶传入尼朋，已有数代。港町的铸铳匠反复仿制改良，火绳铳遂成大名武库中的常备利器；执铳上阵者，多为家禄豢养的重甲武士。此辈腰悬佩刀，手执长铳，装填与齐射之法日日操演：令下则排枪齐发，敌近则弃铳拔刀。铅丸离膛，势可穿甲，硝烟散尽后，敌阵倚仗的重甲精锐往往已倒伏于血泊。所恪守者依旧是武家旧道：以战死为荣，以退却为耻。",
+        "en": "The craft of the teppo reached Nippon aboard the merchantmen of the sea road some generations past. The gunsmiths of the port towns copied and refined it again and again, until the matchlock became a mainstay of every daimyo's arsenal; and those who carry it to war are, for the most part, heavily armoured samurai kept on a clan's stipend. With katana at the hip and long gun in hand, they drill without cease in loading and in the volley: at the word of command the ranks fire as one, and when the foe closes they cast the gun down and draw the blade. The lead ball quits the barrel with strength enough to pierce armour, and when the powder smoke drifts away, the armoured elite the enemy line relied upon often lie already felled in pools of blood. What they keep is still the old samurai code: to die in battle is honour; to fall back is shame."
+      }
+    },
+    "cth_npex_tide_guard_0": {
+      "name": {
+        "zh": "潮汐禁卫",
+        "en": "Tide Guard"
+      },
+      "desc": {
+        "zh": "玉海舰队的魔法战士无人可当，没几个人能在潮汐禁卫的刀锋下全身而退。",
+        "en": "None can withstand the Tide Guard; few who face these magical warriors of the Jade Sea live to tell of it."
+      },
+      "story": {
+        "zh": "据说第一批潮汐禁卫的魔法与射击技艺由月后亲自传授，禁卫也因此立下只从女子中遴选的旧例。入选者多为水师中箭法出众的女兵，由禁卫统领统一锻炼长柄刀与弓的技艺。潮汐禁卫是震旦提督的贴身保镖，她们所使用的武器附着水魔法，水流缠绕其外，波涛暗藏其中。",
+        "en": "It is said that the Moon Empress herself taught the first Tide Guard their arts of magic and marksmanship, and from that gift dates the old rule that the corps recruits only from among women. Most are the fleet's finest archers, drilled by the Guard Commander in the disciplines of the long-hafted blade and the bow. The Tide Guard are the personal bodyguard of the Cathayan admiral, and the weapons they bear are imbued with water magic: water coils about the steel, and within it sleeps the fury of the waves."
+      }
+    },
+    "cth_npex_yari_ashigaru_0": {
+      "name": {
+        "zh": "枪足轻",
+        "en": "Yari Ashigaru"
+      },
+      "desc": {
+        "zh": "阵笠相连，长枪如林，以森严枪衾将冲阵之敌拒于阵外。",
+        "en": "Jingasa shoulder to jingasa, spears thick as a forest: a bristling hedge that holds charging foes beyond the line."
+      },
+      "story": {
+        "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
+        "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
+      }
+    },
+    "cth_npex_yari_cavalry_0": {
+      "name": {
+        "zh": "枪骑马武士",
+        "en": "Yari Cavalry"
+      },
+      "desc": {
+        "zh": "披挂大铠、手持长枪的精锐骑马武士。其疾如风，侵掠如火。",
+        "en": "Heavy-armoured samurai cavalry who ride down the foe with levelled yari. Swift as the wind, fierce as fire."
+      },
+      "story": {
+        "zh": "尼朋列岛山势险阻、平野逼仄，适宜放牧繁育良种战马的草场极为罕见。因此，唯有战功卓著的骁勇武士，或是世受大名厚禄的知名武家子弟，才能被遴选编入“骑马众”。两军交战之际，他们游弋于大阵两翼寻觅战机；待敌方步线因交战推挤露出破绽之时，整队重骑便如狂飙席卷而出。",
+        "en": "The isles of Nippon are a land of jagged mountains and narrow plains, where pasture fit for breeding warhorses is all but unknown. Only warriors of proven valour, or sons of famed houses raised on a daimyo's stipend, are ever chosen for the mounted bands. In battle they prowl the flanks of the host, watching for the moment when the enemy line buckles beneath the press of combat - and then the whole band of heavy horse breaks upon it like a storm."
+      }
+    },
+    "cth_npex_yari_samurai_0": {
+      "name": {
+        "zh": "长枪武士",
+        "en": "Yari Samurai"
+      },
+      "desc": {
+        "zh": "恪守荣誉信条的武者，以败北为奇耻。他们执枪列阵，以身前武名与身后清誉为重，鏖战不退。",
+        "en": "Bound by honour and scorning defeat, these spearmen fight to the last, prizing renown in life and honour in death."
+      },
+      "story": {
+        "zh": "武者重一世之名，以败北为奇耻。恪守森严的荣誉信条，每每竭尽死力以博身后清誉。尼朋的武人，自幼锤炼刀弓之道，日复一日，将血肉之躯炼成非凡的杀器。沙场之上，他们各司其职：或挽弓为轻装，或提剑为重甲，或策骏马为冲阵之骑，亦不乏以铁炮应敌者。然宿命之念深植于此辈心中。据闻每十人中便有一人，以战死沙场为至高荣光，甘愿化为神风。故两军交锋之际，纵腹背受敌，武士亦绝无后退之理——退则名裂，死则名垂。",
+        "en": "The warrior sets great store by the name he bears through this one life, and holds defeat the deepest shame. Keepers of a stern code of honour, such men spend their last strength without reserve to win a name unstained after death. From youth the warriors of Nippon are tempered in the way of blade and bow, day upon day, until flesh and blood are forged into instruments of slaughter beyond the common lot. Upon the field each keeps his station: some draw the bow as light troops, some bear the blade in heavy armour, some ride swift horses in the charge, and not a few answer the foe with the teppo. Yet the belief in destiny is rooted deep in such men. It is said that one warrior in ten counts death in battle the highest glory, and would gladly be made one with the divine wind. Thus, when two hosts close, though beset before and behind, the samurai have no thought of retreat: to fall back is to see one's name broken; to die is to see it endure forever."
+      }
+    },
+    "cth_npex_yin_ling_0": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    },
+    "cth_npex_yin_ling_cold_one": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    },
+    "cth_npex_yin_ling_jinjing": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    },
+    "cth_npex_yin_ling_kirin": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    },
+    "cth_npex_yin_ling_leviathan": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    },
+    "cth_npex_yin_ling_ocean_wyrm": {
+      "name": {
+        "zh": "『御兽提督』殷翎",
+        "en": "Yin Ling, the Beastmaster Admiral"
+      },
+      "desc": {
+        "zh": "最受溟龙胤隐喜爱的龙裔。曾跟随胤隐游历四海。传闻她性格也如溟龙本人一般自信且狂傲。",
+        "en": "A favoured scion of Yin-Yin, the Sea Dragon. Having travelled the seas at her side, Yin Ling is said to share her confidence and pride."
+      },
+      "story": {
+        "zh": "殷翎深受溟龙胤隐的宠爱，她身上流淌着真龙之血，也如一些龙子一样性格乖张。传闻她年轻时跟随胤隐的巨龙舰队远下南洋。舰队在浓雾弥漫的库里什海峡遭遇了一头体型堪比三桅楼船的深海巨兽。狂风卷起十丈巨浪，军中诸将皆主张依托龙骧舟师的炮火结阵防守，唯独年方弱冠的殷翎两眼放光，未等中军帅令传达，便率三艘快行先锋舰脱离本阵，逆浪疾驰。\\\\n\\\\n当溟龙的主力舰队赶到时，风暴已经平息。殷翎一手漫不经心地挽着散落的发丝，一手正悠闲地拍打着已被驯服伏首的巨兽之颅。胤隐见之大笑，没有追究她孤军深入之罪，反而将发间取下自己的金梳赐予了她，赞其“胆气吞浪，真龙之裔”。后来殷翎在四海游历时也收集驯服了各方珍兽，在受命提督后，被人称为『御兽提督』。",
+        "en": "Yin Ling is a beloved scion of Yin-Yin, the Sea Dragon, and shares her wilful pride. In her youth she sailed south with Yin-Yin's Dragon Fleet. In the fog-bound straits of Khuresh, a sea beast as large as a three-masted warship rose from the depths. While the other commanders urged the fleet to form up behind its guns, Yin Ling led three swift vanguard ships into the towering waves before the order could reach her.\\\\n\\\\nWhen Yin-Yin's fleet arrived, the storm had passed. Yin Ling idly gathered her loose hair with one hand and patted the now-tamed creature's head with the other. Yin-Yin laughed, forgave her reckless advance and gave her the golden comb from her own hair, praising her courage and dragon blood. Yin Ling went on to tame rare beasts across the seas. After taking command, she became known as the Beastmaster Admiral."
+      }
+    }
+  }
+}

@@ -1,18 +1,11 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/heroes/瑟兰娜/瑟兰娜角色与数值.md 与 瑟兰娜技能树.md；desc / story / companion 取 loc 中英原文（unit_description_*_texts、cth_npex_companions）。",
   "slug": "serena",
+  "unit": "cth_npex_cha_serena_0",
   "rank": "legendary-hero",
   "name": { "zh": "瑟兰娜", "en": "Serena" },
   "rankLabel": { "zh": "传奇英雄 · 法师", "en": "Legendary Hero · Wizard" },
   "looks": [{ "key": "serena" }],
-  "desc": {
-    "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
-    "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
-  },
-  "story": {
-    "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
-    "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "传奇英雄", "en": "Legendary Hero" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "法师，兼具近战武将身手", "en": "Wizard, with a warrior's skill in melee" } },

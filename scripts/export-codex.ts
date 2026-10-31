@@ -49,6 +49,8 @@ type Node = {
 
 const readJson = (p: string) => JSON.parse(readFileSync(p, 'utf8'))
 const assets: Record<string, Asset> = readJson(join(VANILLA, 'vanilla-assets.json')).assets
+/** 本 mod 每个 land unit 的 loc 原文（mod 仓库 build_site_vanilla_export.py 导出） */
+const unitTexts: Record<string, { name: RawBi; desc: RawBi; story: RawBi }> = readJson(join(VANILLA, 'unit-texts.json')).units
 
 // ---- 文本 ----------------------------------------------------------------------
 
@@ -77,6 +79,31 @@ function bi(raw: RawBi): Bi | null {
 }
 
 const nameOf = (key: string): Bi => bi(assets[key]?.name ?? null) ?? { zh: key, en: key }
+
+/** loc 里的换行有时是 `\\n`（TSV 再转义一层），统一成一个字面量 `\n` 再交给 plain() */
+const unescapeBreaks = (s: string | null) => s && s.replace(/\\+n/g, '\\n')
+
+/** loc 长文 -> 段落。空行（两个换行）分段，段内单个换行照 plain() 接上 */
+function paragraphs(raw: RawBi, where: string): Bi[] {
+  if (!raw) return []
+  const split = (s: string | null, lang: 'zh' | 'en') =>
+    (unescapeBreaks(s) ?? '').split(/(?:\\n\s*){2,}/).map((p) => plain(p, lang)).filter(Boolean)
+  const zh = split(raw.zh, 'zh')
+  const en = split(raw.en, 'en')
+  if (zh.length !== en.length) throw new Error(`${where}：中文 ${zh.length} 段、英文 ${en.length} 段，对不上`)
+  return zh.map((x, i) => ({ zh: x || en[i], en: en[i] || x }))
+}
+
+/** 兵牌短文 + 图鉴长文。长文与短文同句（只填了一份的兵种）就不出长文 */
+function locText(unit: string, where: string): { desc: Bi; story: Bi[] | null } {
+  const t = unitTexts[unit]
+  if (!t) throw new Error(`${where}：data/vanilla/unit-texts.json 里没有 ${unit}——重跑 mod 仓库的 build_site_vanilla_export.py`)
+  const desc = bi(t.desc && { zh: unescapeBreaks(t.desc.zh), en: unescapeBreaks(t.desc.en) })
+  if (!desc || !t.desc?.zh || !t.desc?.en) throw new Error(`${where}：${unit} 的兵牌短文缺中文或英文`)
+  const story = paragraphs(t.story, where)
+  const same = story.length === 1 && story[0].zh === desc.zh && story[0].en === desc.en
+  return { desc, story: story.length && !same ? story : null }
+}
 
 // ---- 图标 ----------------------------------------------------------------------
 
@@ -117,14 +144,31 @@ for (const f of readdirSync(join(ROOT, 'content/codex/units')).sort()) {
   const v = vanillaUnits.get(u.unit)
   if (!v) throw new Error(`content/codex/units/${f}：data/vanilla/units 里没有 ${u.unit}`)
   if (!v.stats_from_db) throw new Error(`data/vanilla/units 里 ${u.unit} 没有 stats_from_db——重跑 mod 仓库的 build_site_vanilla_export.py`)
+  const where = `content/codex/units/${f}`
+  const name = bi(unitTexts[u.unit]?.name ?? null)
+  if (!name) throw new Error(`${where}：data/vanilla/unit-texts.json 里没有 ${u.unit} 的兵种名`)
   const gen = {
-    _comment: '生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。',
+    _comment: '生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。',
     unit: u.unit,
+    name,
+    ...locText(u.unit, where),
     abilities: v.abilities.map((a) => ability(a.ref)),
     attrs: v.attributes_from_db.map((a) => ability(a.ref)),
     stats: v.stats_from_db,
   }
   outputs.set(`content/codex/generated/units/${u.slug}.json`, JSON.stringify(gen, null, 2) + '\n')
+}
+
+// ---- 人物文案 ------------------------------------------------------------------
+
+for (const f of readdirSync(join(ROOT, 'content/codex/chars')).sort()) {
+  const c = CodexChar.parse(readJson(join(ROOT, 'content/codex/chars', f)))
+  const gen = {
+    _comment: '生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。',
+    unit: c.unit,
+    ...locText(c.unit, `content/codex/chars/${f}`),
+  }
+  outputs.set(`content/codex/generated/chars/${c.slug}.json`, JSON.stringify(gen, null, 2) + '\n')
 }
 
 // ---- 技能树 --------------------------------------------------------------------
@@ -259,7 +303,7 @@ for (const [rel, text] of outputs) {
     writeFileSync(p, text)
   }
 }
-for (const sub of ['units', 'trees', 'traits']) {
+for (const sub of ['units', 'chars', 'trees', 'traits']) {
   const dir = join(GEN, sub)
   if (!existsSync(dir)) continue
   for (const f of readdirSync(dir)) {

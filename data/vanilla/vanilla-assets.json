@@ -54,8 +54,10 @@
       "has_icon": false,
       "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
       "referenced_by": [
+        "units/axe-guard.json",
         "units/jade-sea-fleet-gunners.json",
-        "units/jade-sea-sailors.json"
+        "units/jade-sea-sailors.json",
+        "units/jinjing-riders.json"
       ]
     },
     "armour_piercing": {
@@ -75,7 +77,9 @@
       "referenced_by": [
         "units/akatsuki-shu-katana.json",
         "units/hatamoto-raijin.json",
+        "units/jinjing-riders.json",
         "units/kunikuzushi-oni.json",
+        "units/leviathan.json",
         "units/matchlock-ashigaru.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
@@ -116,11 +120,36 @@
       "has_icon": false,
       "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
       "referenced_by": [
+        "units/axe-guard.json",
         "units/hatamoto-raijin.json",
+        "units/jinjing-riders.json",
+        "units/leviathan.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
         "units/yari-samurai.json"
+      ]
+    },
+    "can_siege": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "攻城者",
+        "en": "Siege Attacker"
+      },
+      "desc": {
+        "zh": "这支部队可以直接攻击城门或城墙。你无需等待攻城塔或攻城锤的建造，便可对城镇发动攻击",
+        "en": "This unit can attack city gates, allowing you to instantly launch a siege battle without having to wait for towers or battering rams to be built."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/can_siege.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/leviathan.json"
       ]
     },
     "causes_fear": {
@@ -144,8 +173,10 @@
       "referenced_by": [
         "units/empyrean-guard.json",
         "units/hatamoto-raijin.json",
+        "units/jinjing-riders.json",
         "units/kirin.json",
         "units/kunikuzushi-oni.json",
+        "units/leviathan.json",
         "units/misaki-crow.json",
         "units/tamed-cold-ones.json"
       ]
@@ -170,6 +201,7 @@
       },
       "referenced_by": [
         "units/kirin.json",
+        "units/leviathan.json",
         "units/misaki-crow.json"
       ]
     },
@@ -192,6 +224,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
+        "units/leviathan.json",
         "units/yari-ashigaru.json",
         "units/yari-samurai.json"
       ]
@@ -15088,11 +15121,9 @@
         "en": "Golden Comb of Still Waters"
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/campaign_movement.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_dinglan_comb.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
@@ -15116,11 +15147,9 @@
         "en": "Wave-Breaker"
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/campaign_movement.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_wave_breaker.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": {
@@ -16461,6 +16490,30 @@
         "units/misaki-crow.json"
       ]
     },
+    "cth_npex_unit_passive_surging_axes": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "怒潮连斧",
+        "en": "Surging Axes"
+      },
+      "desc": {
+        "zh": "双斧一旦缠斗，势头便一浪高过一浪。",
+        "en": "Once the fighting is joined, the axes build like wave upon wave."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_dlc10_unit_passive_the_trial_of_blades.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/axe-guard.json"
+      ]
+    },
     "cth_npex_unit_passive_thunder_echo": {
       "kind": "unit_ability",
       "source": "npex",
@@ -16634,6 +16687,28 @@
         "units/tide-guard.json"
       ]
     },
+    "flanking_immune": {
+      "kind": "unit_attribute",
+      "source": "vanilla",
+      "name": {
+        "zh": "免疫侧袭",
+        "en": "Immune to Flanking"
+      },
+      "desc": {
+        "zh": "此部队不会在受到侧袭时受到惩罚",
+        "en": "This unit takes no penalties when flanked."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/flanking_immune.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/leviathan.json"
+      ]
+    },
     "flying": {
       "kind": "unit_attribute",
       "source": "vanilla",
@@ -16677,6 +16752,7 @@
       },
       "referenced_by": [
         "units/inari-fox.json",
+        "units/jade-sea-sailors-dual.json",
         "units/jade-sea-sailors.json",
         "units/yari-ashigaru.json",
         "units/yari-samurai.json"
@@ -16725,11 +16801,14 @@
       },
       "referenced_by": [
         "units/akatsuki-shu-katana.json",
+        "units/axe-guard.json",
         "units/bow-ashigaru.json",
         "units/hatamoto-raijin.json",
         "units/inari-fox.json",
         "units/jade-sea-fleet-gunners.json",
+        "units/jade-sea-sailors-dual.json",
         "units/jade-sea-sailors.json",
+        "units/jinjing-riders.json",
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
         "units/tamed-cold-ones.json",
@@ -16886,6 +16965,7 @@
       "referenced_by": [
         "units/akatsuki-shu-bow.json",
         "units/akatsuki-shu-katana.json",
+        "units/jinjing-riders.json",
         "units/kirin.json"
       ]
     },
@@ -22173,6 +22253,30 @@
       ],
       "unlocks_abilities": [
         "wh3_dlc24_character_abilities_colossal_strike"
+      ]
+    },
+    "wh3_dlc24_unit_abilities_fearsome_roar": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc24",
+      "ability_type": "active",
+      "name": {
+        "zh": "骇人咆哮",
+        "en": "Fearsome Roar"
+      },
+      "desc": {
+        "zh": "如此咆哮与它们的咬伤一样可怕…",
+        "en": "This one's bark is at least as bad as their bite…"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc24_unit_abilities_fearsome_roar.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/jinjing-riders.json"
       ]
     },
     "wh3_dlc24_unit_passive_predatory_fighter": {
@@ -31974,8 +32078,11 @@
         "from": "game ui pack"
       },
       "referenced_by": [
+        "units/axe-guard.json",
         "units/empyrean-guard.json",
-        "units/jade-sea-sailors.json"
+        "units/jade-sea-sailors-dual.json",
+        "units/jade-sea-sailors.json",
+        "units/jinjing-riders.json"
       ]
     },
     "wh3_main_unit_passive_battle_harmony_yin": {
@@ -32049,7 +32156,9 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "units/misaki-crow.json"
+        "units/leviathan.json",
+        "units/misaki-crow.json",
+        "units/pelagic-wyrm.json"
       ]
     },
     "wh_dlc05_lore_passive_life_bloom": {
@@ -35106,8 +35215,11 @@
         "from": "game ui pack"
       },
       "referenced_by": [
+        "units/axe-guard.json",
         "units/empyrean-guard.json",
-        "units/jade-sea-sailors.json"
+        "units/jade-sea-sailors-dual.json",
+        "units/jade-sea-sailors.json",
+        "units/jinjing-riders.json"
       ]
     },
     "yin": {

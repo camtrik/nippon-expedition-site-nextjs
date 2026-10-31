@@ -13,16 +13,32 @@
             "rank": "legendary",
             "slug": "shen-changfeng",
             "kind": {
-              "zh": "新传奇领主",
-              "en": "New Legendary Lord"
+              "zh": "传奇领主",
+              "en": "Legendary Lord"
             },
             "name": {
-              "zh": "『无冕提督』沈长风",
-              "en": "Shen Changfeng, the Uncrowned Admiral"
+              "zh": "『玉海提督』沈长风",
+              "en": "Shen Changfeng, Admiral of the Jade Sea"
             },
             "body": {
-              "zh": "具有特色游牧系统，可使用深渊系，阳系法术。可使用『云帆号跃迁』系统",
-              "en": "A nomadic faction with its own mechanics. Casts from the Lore of the Deep and the Lore of Yang. Can use the Cloud Sails leap."
+              "zh": "剑盾近战领主，拥有个人专属技能树、三段可成长的战场技能以及深渊系法术「海潮之唤」。",
+              "en": "Sword-and-shield melee lord with a unique skill tree, a three-stage battlefield ability, and the Lore of the Deep spell Tidecall."
+            }
+          },
+          {
+            "rank": "legendary",
+            "slug": "yin-ling",
+            "kind": {
+              "zh": "传奇领主",
+              "en": "Legendary Lord"
+            },
+            "name": {
+              "zh": "『御兽提督』殷翎",
+              "en": "Yin Ling, the Beastmaster Admiral"
+            },
+            "body": {
+              "zh": "执掌万兽舱的传奇女提督，可乘骑冷蜥、碧水金睛兽、远洋妖龙、雷泽与利维坦五种异兽，兼修深渊系与生命系混合法术。",
+              "en": "Legendary Admiral of the Menagerie Hold; mounts Cold Ones, Golden-Eyed Beasts, Pelagic Wyrms, Leize, and the Leviathan while wielding a hybrid lore of the Deep and Life."
             }
           }
         ]
@@ -67,8 +83,8 @@
               }
             ],
             "body": {
-              "zh": "可通过远征同伴系统招募。",
-              "en": "Recruited through the Expedition Companions system."
+              "zh": "可通过远征同伴系统招募，满羁绊后可在人物详情面板转任领主。",
+              "en": "Recruited through the Expedition Companions system; at max Bond tier they may also convert to Lords."
             }
           }
         ]
@@ -117,16 +133,16 @@
             "rank": "generic",
             "slug": "fleet-admiral",
             "kind": {
-              "zh": "通用领主",
-              "en": "Generic lord"
+              "zh": "专属领主",
+              "en": "Unique lord"
             },
             "name": {
               "zh": "水师提督",
               "en": "Fleet Admiral"
             },
             "body": {
-              "zh": "震旦水师提督，所有震旦派系均可招募。每控制一座主要城市港口增加招募容量；拥有旗舰建筑树。",
-              "en": "A Cathayan naval commander, recruitable by every Cathay faction. Every major city port you control raises your recruitment capacity; comes with a flagship building tree of his own."
+              "zh": "分设「先登」「炮令」「驭潮」三席，各率独立游牧旗舰与专属预备队；玉海舰队经「水师府」解锁征召，其他震旦派系占领沿海大港可解锁三席各一名。",
+              "en": "Divided into First Aboard, Order to Fire, and Tide-Reader seats, each with an independent flagship horde and reserve pool; recruited via the Jade Sea Admiralty or by capturing major ports as other Cathay factions."
             }
           }
         ]

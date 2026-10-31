@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_cha_ibuki_0",
+  "desc": {
+    "zh": "身上流淌鬼族之血的行者。他背负无名长刀行遍尼朋，以守护苍生之愿，辟人妖同阵之路。",
+    "en": "An oni-blooded wanderer bearing the Nameless Odachi, sworn to shield the common folk and unite men and yokai in battle."
+  },
+  "story": [
+    {
+      "zh": "伊吹是流淌着鬼族之血的半妖行者，手持长刀「无名」游历尼朋。在内战与侵入者肆虐的乱世中，他出没于各处险境，数次斩除兵匪与恶兽，庇护流离失所的平民。受其救助并相信其理念的人与妖怪追随伊吹，被称为「晓行众」，伊吹率领他们踏遍列岛，誓要在世仇之中辟出一条人妖共存的生路。",
+      "en": "Ibuki is a hanyo, a wanderer with the blood of the oni in his veins, who roams Nippon with Nameless Odachi in his hands. In an age ravaged by civil war and by invaders, he appears wherever the danger is greatest; time and again he has cut down marauding soldiers and fell beasts, and sheltered the common folk driven from their homes. The men and yokai he has saved, and who have come to believe in his cause, now follow him, and are known as the Akatsuki-shu (The Dawnbreakers). At their head Ibuki walks the length of the isles, sworn to cut through the ancient blood-feud a road by which men and yokai may live side by side."
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "_comment": "来源：mod 仓库 _docs/data/lords/水师提督/水师提督角色与数值.md与 水师提督技能树.md（三种变体的树除坐骑与天生特性外完全相同，tree 取第一席 admiral-01）；desc / story 取 loc 中英原文（unit_description_*_texts）。",
   "slug": "fleet-admiral",
+  "unit": "cth_npex_admiral_0",
   "rank": "lord",
   "name": { "zh": "水师提督", "en": "Fleet Admiral" },
   "rankLabel": { "zh": "领主 · 战士", "en": "Lord · Champion" },
@@ -9,14 +10,6 @@
     { "key": "fleet-admiral-02", "label": { "zh": "炮令", "en": "Order to Fire" } },
     { "key": "fleet-admiral-03", "label": { "zh": "驭潮", "en": "Tide-Reader" } }
   ],
-  "desc": {
-    "zh": "水师提督统率艨艟斗舰，碧帆所到之处，便是震旦的海疆。",
-    "en": "A Fleet Admiral commands Cathay's war-junks, and wherever the jade sails reach, there the seas of Cathay begin."
-  },
-  "story": {
-    "zh": "震旦有一句老话：长垣的尽头不是海，海本身就是另一道长垣。水师提督便是这道海上长垣的守御者。碧帆之下，艨艟列阵如城垛，舰与舰之间的海面就是墙垣，海盗与深海妖物一视同仁——凡越过这道线的，都不会有第二次机会。但一位提督要面对的不只是敌人。风暴会拆散舰队，海流会拖偏航向，远航的水手会在第三个月开始怀疑自己为什么还在这里。舰队不散，是因为旗舰没有转向；旗舰没有转向，是因为海上的任何风浪都无法让站在船首的那个人动摇。",
-    "en": "Cathay has an old saying: the Great Bastion does not end where the sea begins, for the sea is itself another Great Bastion. The Fleet Admiral is the warden of that bastion upon the water. Beneath the jade sails the war-junks stand in line like merlons, and the water between one hull and the next is the wall itself; pirates and monsters of the deep are held to the same measure, and none who crosses that line is given a second chance. But an admiral has more than the enemy to contend with. Storms scatter a fleet, currents drag a course astray, and by the third month at sea the crews begin to wonder why they are still out here at all. The fleet holds together because the flagship has not turned; and the flagship has not turned because nothing the sea can raise will move the one standing at her prow."
-  },
   "identity": [
     { "k": { "zh": "角色位阶", "en": "Rank" }, "v": { "zh": "领主（泛用）", "en": "Lord (generic)" } },
     { "k": { "zh": "定位", "en": "Role" }, "v": { "zh": "战士兼统帅，持水师长枪，擅长对付大型目标", "en": "Champion and commander: naval spear, best against large targets" } },

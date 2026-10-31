@@ -1,6 +1,20 @@
 {
-  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units 与 vanilla-assets.json 生成。",
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
   "unit": "cth_npex_bow_ashigaru_0",
+  "name": {
+    "zh": "弓足轻",
+    "en": "Bow Ashigaru"
+  },
+  "desc": {
+    "zh": "乡野草民受命执和弓，以铺天盖地的连绵箭雨遮蔽前阵。",
+    "en": "Country folk handed the bow, darkening the sky above the front line with an unbroken rain of arrows."
+  },
+  "story": [
+    {
+      "zh": "这些头戴漆铁阵笠、身着粗简御贷具足的平民步卒，虽无武士老爷们世袭家传的刀弓武艺与厚重甲胄，却以其惊人的规模与严整的行伍构成了大军的主干。在足轻头的军律号令下，他们步调一致地在原野上疾行穿插，以密集的队列弥补单兵战力的不足。足轻的心中并没有崇高殉道的武士誓言，维系其勇气的唯有对身旁同伴的信赖。只要行伍严整、阵笠相连，平民聚集而起的群胆便足以令他们展现出惊人顽强的战斗意志。",
+      "en": "Common foot soldiers in lacquered iron jingasa and plain loaned armour, they lack the hereditary sword and bow craft of their samurai lords and the heavy harness that goes with it, yet their sheer numbers and ordered ranks form the backbone of any great army. Under the drill and commands of their ashigaru captains they press across the open field in step, making up in close-packed files what each man lacks alone. No lofty samurai oath of a martyr's death stirs in an ashigaru's heart; his courage rests only on his trust in the man beside him. So long as the ranks hold and the jingasa stand shoulder to shoulder, the gathered nerve of common folk lends them a fighting will of startling stubbornness."
+    }
+  ],
   "abilities": [
     {
       "key": "cth_npex_unit_passive_jingasa_bonds",

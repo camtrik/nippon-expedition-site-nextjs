@@ -4,16 +4,7 @@
   "unit": "cth_npex_akatsuki_shu_0",
   "group": "akatsuki",
   "kind": "melee",
-  "name": { "zh": "晓行众（太刀）", "en": "Akatsuki-shu (Katana)" },
   "role": { "zh": "轻甲反步突击步兵 · T3 · 冲得快、砍得疼、站不住", "en": "Lightly armoured anti-infantry shock troops · T3 · quick in, hard-hitting, not built to hold a line" },
-  "desc": {
-    "zh": "跨越宿怨的凡人游侠与半妖同心结阵，手持太刀以疾风般突入敌阵。",
-    "en": "Setting old hatreds aside, mortal swordsmen and hanyo stand as one, their katana tearing into enemy lines like a gale."
-  },
-  "story": [
-    {"zh": "尼朋本土的妖怪本是山水所生，原在群岛深处偏安一隅。然而在凡人眼中，生角负鳞的面貌却与混沌恶魔与野兽人难分彼此，数百年间积下了洗刷不脱的恐惧、偏见与世代血仇。及至乱世兵戈四起、长船靠岸，人与妖实则同处劫火之下，却依旧在仇怨的长夜中自相残杀。", "en": "The yokai of Nippon were born of its mountains and waters, and once lived in seclusion in the depths of the islands. To mortal eyes, however, their horns and scales made them little different from the Daemons of Chaos and the Beastmen. Centuries of fear and prejudice hardened into blood-feuds handed down from one generation to the next. When civil war engulfed the land and longships came ashore, men and yokai alike were caught in the blaze. Still they slew one another in the long night of hatred."},
-    {"zh": "半妖行者伊吹面对恶言冷箭从不拔刀自辩，只是固执地一次次横刀阵前庇护弱小。受其救助并信服其理念的凡人浪人、山野猎户，以及流淌着异族之血的半妖游侠纷纷主动追随伊吹，被称为『晓行众』。", "en": "Ibuki, the Hanyo Wanderer, never drew his blade to answer insults or arrows loosed against him. Time and again he simply took his stand before the helpless, stubbornly setting his odachi between them and danger. Mortal ronin and hunters of the wilds, together with hanyo wanderers bearing the blood of another kind, came willingly to his side, won over by his deeds and his beliefs. These followers became known as the Akatsuki-shu (The Dawnbreakers)."}
-  ],
   "type": [
     { "k": { "zh": "兵种类别", "en": "Class" }, "v": { "zh": "步兵 · 近战", "en": "Infantry · melee" } },
     {

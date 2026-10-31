@@ -5,7 +5,7 @@
   "set_key": "cth_npex_skill_node_set_yin_ling",
   "agent_type": "general",
   "agent_subtype": "cth_npex_yin_ling",
-  "node_count": 67,
+  "node_count": 68,
   "vanilla_skill_count": 52,
   "nodes": [
     {
@@ -461,12 +461,12 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_will_of_dragons",
+      "node": "cth_npex_skill_node_yin_ling_mount_leviathan",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
+      "skill": "cth_npex_skill_yin_ling_mount_leviathan",
       "tier": 5,
       "indent": 0,
-      "points_on_creation": "1",
+      "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": []
@@ -600,12 +600,12 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_magic_resist",
+      "node": "cth_npex_skill_node_yin_ling_top_will_of_dragons",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
       "tier": 6,
       "indent": 0,
-      "points_on_creation": "0",
+      "points_on_creation": "1",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": []
@@ -675,9 +675,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_missile_resist",
+      "node": "cth_npex_skill_node_yin_ling_top_magic_resist",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
       "tier": 7,
       "indent": 0,
       "points_on_creation": "0",
@@ -770,9 +770,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_harmony_yin",
+      "node": "cth_npex_skill_node_yin_ling_top_missile_resist",
       "node_source": "npex",
-      "skill": "wh3_cp1_skill_cth_all_unique_harmony_yin",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
       "tier": 8,
       "indent": 0,
       "points_on_creation": "0",
@@ -856,9 +856,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_renown",
+      "node": "cth_npex_skill_node_yin_ling_top_harmony_yin",
       "node_source": "npex",
-      "skill": "wh3_main_skill_all_army_of_renown_lord",
+      "skill": "wh3_cp1_skill_cth_all_unique_harmony_yin",
       "tier": 9,
       "indent": 0,
       "points_on_creation": "0",
@@ -931,9 +931,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_yin_ling_top_mentor",
+      "node": "cth_npex_skill_node_yin_ling_top_renown",
       "node_source": "npex",
-      "skill": "wh3_main_skill_all_mentor_lord",
+      "skill": "wh3_main_skill_all_army_of_renown_lord",
       "tier": 10,
       "indent": 0,
       "points_on_creation": "0",
@@ -1040,6 +1040,17 @@
           "link_type": "SUBSET_REQUIRED"
         }
       ]
+    },
+    {
+      "node": "cth_npex_skill_node_yin_ling_top_mentor",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_all_mentor_lord",
+      "tier": 11,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
     },
     {
       "node": "cth_npex_skill_node_yin_ling_army_3_4",

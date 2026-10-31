@@ -61,12 +61,8 @@
                   "en": "Campaign movement range: +10% whilst at sea"
                 },
                 {
-                  "zh": "战略地图移动距离：+10%",
-                  "en": "Campaign movement range: +10%"
-                },
-                {
-                  "zh": "可贸易资源产量：+5%（派系范围）",
-                  "en": "Tradable resources produced: +5% (factionwide)"
+                  "zh": "可贸易资源产量：+10%（派系范围）",
+                  "en": "Tradable resources produced: +10% (factionwide)"
                 }
               ]
             }

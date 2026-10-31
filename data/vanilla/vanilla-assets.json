@@ -11934,19 +11934,19 @@
       "effects": [
         {
           "level": 1,
-          "effect": "wh_main_effect_force_all_campaign_movement_range",
+          "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
           "effect_source": "vanilla",
           "scope": "agent_to_parent_army_own",
           "value": 5.0,
           "text": {
-            "zh": "战略地图移动距离：+5%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Campaign movement range: +5%\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "战略地图移动距离：在海上时+5%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Campaign movement range: +5% whilst at sea\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "战略地图移动距离：%+n%",
-            "en": "Campaign movement range: %+n%"
+            "zh": "战略地图移动距离：在海上时%+n%",
+            "en": "Campaign movement range: %+n% whilst at sea"
           },
-          "priority": 101,
+          "priority": 1,
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
@@ -12028,19 +12028,19 @@
       "effects": [
         {
           "level": 1,
-          "effect": "wh_main_effect_force_all_campaign_movement_range",
+          "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
           "effect_source": "vanilla",
           "scope": "general_to_force_own",
           "value": 5.0,
           "text": {
-            "zh": "战略地图移动距离：+5%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Campaign movement range: +5%\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "战略地图移动距离：在海上时+5%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Campaign movement range: +5% whilst at sea\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "战略地图移动距离：%+n%",
-            "en": "Campaign movement range: %+n%"
+            "zh": "战略地图移动距离：在海上时%+n%",
+            "en": "Campaign movement range: %+n% whilst at sea"
           },
-          "priority": 101,
+          "priority": 1,
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
@@ -12539,36 +12539,13 @@
         },
         {
           "level": 1,
-          "effect": "wh_main_effect_force_all_campaign_movement_range",
-          "effect_source": "vanilla",
-          "scope": "character_to_force_own_unseen",
-          "value": 10.0,
-          "text": {
-            "zh": "战略地图移动距离：+10%",
-            "en": "Campaign movement range: +10%"
-          },
-          "template": {
-            "zh": "战略地图移动距离：%+n%",
-            "en": "Campaign movement range: %+n%"
-          },
-          "priority": 101,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/campaign_movement.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
           "effect": "wh_main_effect_economy_trade_good_commodity_mod",
           "effect_source": "vanilla",
           "scope": "character_to_faction",
-          "value": 5.0,
+          "value": 10.0,
           "text": {
-            "zh": "可贸易资源产量：+5%\\n（派系范围）",
-            "en": "Tradable resources produced: +5%\\n(factionwide)"
+            "zh": "可贸易资源产量：+10%\\n（派系范围）",
+            "en": "Tradable resources produced: +10%\\n(factionwide)"
           },
           "template": {
             "zh": "可贸易资源产量：%+n%",
@@ -15118,7 +15095,9 @@
         "from": "game ui pack"
       },
       "unlocked_at_rank": "0",
-      "level_ranks": null,
+      "level_ranks": {
+        "1": 6
+      },
       "referenced_by": [
         "skills/yin-ling.json"
       ],
@@ -15144,7 +15123,9 @@
         "from": "game ui pack"
       },
       "unlocked_at_rank": "0",
-      "level_ranks": null,
+      "level_ranks": {
+        "1": 9
+      },
       "referenced_by": [
         "skills/yin-ling.json"
       ],
@@ -15228,6 +15209,34 @@
       "unlocked_at_rank": "15",
       "level_ranks": {
         "1": 15
+      },
+      "referenced_by": [
+        "skills/yin-ling.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_yin_ling_mount_leviathan": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "利维坦",
+        "en": "Leviathan"
+      },
+      "desc": {
+        "zh": "自然界中的强力巨怪，在殷翎的御使下以足以夹碎钢铁的巨钳碾碎敌军。",
+        "en": "A mighty monster of the natural world which, under Yin Ling's command, grinds armies to ruin in claws strong enough to crush steel."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_leviathon.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "19",
+      "level_ranks": {
+        "1": 19
       },
       "referenced_by": [
         "skills/yin-ling.json"
@@ -15348,7 +15357,13 @@
             "en": "Armour-piercing weapon damage: %+n% for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15365,7 +15380,13 @@
             "en": "Recruitment cost: %+n% for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/treasury.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15503,11 +15524,9 @@
         "en": "Her floating menagerie shelters creatures whose claws and scales grow ever stronger."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/beast_tamer.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_beasts.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -15530,7 +15549,13 @@
             "en": "Armour: %+n for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/armour.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15547,7 +15572,13 @@
             "en": "Leadership: %+n for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/morale.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15564,7 +15595,13 @@
             "en": "Upkeep: %+n% for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/military_spending.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         }
       ]
     },
@@ -15581,11 +15618,9 @@
         "en": "Follow me! Tear them apart!"
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh2_dlc10_blood_frenzy.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_yinling_capstone.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "0",
       "level_ranks": null,
@@ -15631,7 +15666,13 @@
             "en": "Weapon strength: %+n% for Pelagic Wyrms and Rotting Leviathans"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15648,7 +15689,13 @@
             "en": "Frenzy for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         }
       ]
     },
@@ -15690,7 +15737,13 @@
             "en": "Recruit rank: %+n for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/experience.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15707,7 +15760,13 @@
             "en": "Active ability: Might of the True Dragon"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         }
       ],
       "unlocks_abilities": [
@@ -15754,7 +15813,13 @@
             "en": "Passive ability: Monster Enthusiast"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15824,7 +15889,13 @@
             "en": "Vigour loss: %+n% for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/vigour.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15841,7 +15912,13 @@
             "en": "Speed: %+n% for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/battle_movement.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         },
         {
           "level": 1,
@@ -15858,7 +15935,13 @@
             "en": "Strider for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attribute_ignore_forest_penalties.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         }
       ]
     },
@@ -15948,7 +16031,13 @@
             "en": "Vanguard deployment for monsters and war beasts"
           },
           "priority": 10,
-          "icon": null
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
         }
       ]
     },
@@ -31961,30 +32050,6 @@
       },
       "referenced_by": [
         "units/misaki-crow.json"
-      ]
-    },
-    "wh_dlc03_unit_passive_drunken": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh_dlc03",
-      "ability_type": "passive",
-      "name": {
-        "zh": "悍猛",
-        "en": "Rowdy"
-      },
-      "desc": {
-        "zh": "在以集群方式作战、畅饮与大吃大嚼时，这些军队会更为勇悍，虽然这种『勇悍』仅能持续不长的一段时间",
-        "en": "These troops are emboldened when fighting, drinking and feasting together, although such ‘bravery’ is only temporary at best."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh_dlc03_unit_passive_drunken.png",
-        "size": "38x38",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "units/jade-sea-sailors.json"
       ]
     },
     "wh_dlc05_lore_passive_life_bloom": {

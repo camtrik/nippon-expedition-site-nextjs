@@ -11,10 +11,6 @@
     {
       "ref": "wh3_main_unit_passive_defensive_stance",
       "source": "vanilla"
-    },
-    {
-      "ref": "wh_dlc03_unit_passive_drunken",
-      "source": "vanilla"
     }
   ],
   "attributes_from_db": [

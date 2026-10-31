@@ -20,8 +20,8 @@
           "level": 1,
           "lines": [
             {
-              "zh": "战略地图移动距离：+5%（英雄所在军队）",
-              "en": "Campaign movement range: +5% (Hero's army)"
+              "zh": "战略地图移动距离：在海上时+5%（英雄所在军队）",
+              "en": "Campaign movement range: +5% whilst at sea (Hero's army)"
             },
             {
               "zh": "近战防御：+2（英雄所在军队）",

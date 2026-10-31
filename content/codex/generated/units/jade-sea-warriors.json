@@ -27,19 +27,6 @@
         "en": "Become like the mountain: immovable, stronger over time, and nigh-on impossible to assail."
       },
       "icon": "wh3_main_unit_passive_defensive_stance.png"
-    },
-    {
-      "key": "wh_dlc03_unit_passive_drunken",
-      "source": "vanilla",
-      "name": {
-        "zh": "悍猛",
-        "en": "Rowdy"
-      },
-      "desc": {
-        "zh": "在以集群方式作战、畅饮与大吃大嚼时，这些军队会更为勇悍，虽然这种『勇悍』仅能持续不长的一段时间",
-        "en": "These troops are emboldened when fighting, drinking and feasting together, although such ‘bravery’ is only temporary at best."
-      },
-      "icon": "wh_dlc03_unit_passive_drunken.png"
     }
   ],
   "attrs": [

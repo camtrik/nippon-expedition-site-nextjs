@@ -5,8 +5,8 @@
   "set_key": "cth_npex_skill_node_set_ryuka",
   "agent_type": "general",
   "agent_subtype": "cth_npex_ryuka",
-  "node_count": 45,
-  "vanilla_skill_count": 37,
+  "node_count": 52,
+  "vanilla_skill_count": 43,
   "nodes": [
     {
       "node": "cth_npex_skill_node_ryuka_unique_0",
@@ -14,6 +14,17 @@
       "skill": "cth_npex_skill_ryuka_unique_0",
       "tier": 0,
       "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_combat_00",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_hard_to_hit_starter",
+      "tier": 0,
+      "indent": 2,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
@@ -39,6 +50,17 @@
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_trait",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_trait",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
       "parents": []
     },
     {
@@ -75,6 +97,22 @@
       "parents": [
         {
           "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_combat_01",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_devastating_charge",
+      "tier": 1,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_00",
           "link_type": "REQUIRED"
         }
       ]
@@ -139,6 +177,22 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_ryuka_combat_02",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_full_plate_armour",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_00",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "cth_npex_skill_node_ryuka_magistrate_06",
       "node_source": "npex",
       "skill": "wh3_main_skill_cth_lord_army_buff_1_2",
@@ -198,6 +252,22 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_ryuka_combat_03",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_00",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "cth_npex_skill_node_ryuka_magistrate_07",
       "node_source": "npex",
       "skill": "wh3_main_skill_cth_lord_army_buff_1_3",
@@ -252,6 +322,22 @@
       "parents": [
         {
           "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_combat_04",
+      "node_source": "npex",
+      "skill": "wh2_dlc11_skill_all_lord_self_deadly_blade",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_00",
           "link_type": "REQUIRED"
         }
       ]
@@ -317,6 +403,34 @@
       ]
     },
     {
+      "node": "cth_npex_skill_node_ryuka_combat_05",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_01",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_02",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_03",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_04",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
       "node": "cth_npex_skill_node_ryuka_magistrate_09",
       "node_source": "npex",
       "skill": "wh3_main_skill_cth_lord_army_buff_1_5",
@@ -372,15 +486,20 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_28",
+      "node": "cth_npex_skill_node_ryuka_combat_06",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_strategist",
+      "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
       "tier": 6,
       "indent": 2,
-      "points_on_creation": "1",
+      "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_05",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
       "node": "cth_npex_skill_node_ryuka_magistrate_10",
@@ -415,9 +534,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_29",
+      "node": "cth_npex_skill_node_ryuka_combat_07",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_defence",
+      "skill": "wh2_dlc11_skill_all_lord_self_blade_master",
       "tier": 7,
       "indent": 2,
       "points_on_creation": "0",
@@ -425,7 +544,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_28",
+          "node": "cth_npex_skill_node_ryuka_combat_05",
           "link_type": "REQUIRED"
         }
       ]
@@ -494,9 +613,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_30",
+      "node": "cth_npex_skill_node_ryuka_combat_08",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_assault",
+      "skill": "wh2_dlc11_skill_all_lord_self_self_indomitable",
       "tier": 8,
       "indent": 2,
       "points_on_creation": "0",
@@ -504,7 +623,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_28",
+          "node": "cth_npex_skill_node_ryuka_combat_05",
           "link_type": "REQUIRED"
         }
       ]
@@ -542,9 +661,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_31",
+      "node": "cth_npex_skill_node_ryuka_combat_09",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_marksmanship",
+      "skill": "wh2_dlc11_skill_all_lord_self_blade_shield",
       "tier": 9,
       "indent": 2,
       "points_on_creation": "0",
@@ -552,7 +671,7 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_28",
+          "node": "cth_npex_skill_node_ryuka_combat_05",
           "link_type": "REQUIRED"
         }
       ]
@@ -590,9 +709,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_32",
+      "node": "cth_npex_skill_node_ryuka_combat_10",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_grand_strategist",
+      "skill": "wh2_main_skill_hef_alastar_unique_heroic_killing_blow",
       "tier": 10,
       "indent": 2,
       "points_on_creation": "0",
@@ -600,15 +719,19 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_29",
+          "node": "cth_npex_skill_node_ryuka_combat_06",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_30",
+          "node": "cth_npex_skill_node_ryuka_combat_07",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_magistrate_31",
+          "node": "cth_npex_skill_node_ryuka_combat_08",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_combat_09",
           "link_type": "SUBSET_REQUIRED"
         }
       ]

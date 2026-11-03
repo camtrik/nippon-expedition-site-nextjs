@@ -61,7 +61,7 @@
                   "en": "Leadership: +6 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "远程武器威力：+10%（武士部队）（英雄所在军队）",
+                  "zh": "远程威力：+10%（武士部队）（英雄所在军队）",
                   "en": "Missile strength: +10% for Samurai units (Hero's army)"
                 }
               ]
@@ -131,7 +131,7 @@
                   "en": "Hit points: +10%"
                 },
                 {
-                  "zh": "近战武器威力：+15%（雷刃旗本）（英雄所在军队）",
+                  "zh": "武器威力：+15%（雷刃旗本）（英雄所在军队）",
                   "en": "Weapon strength: +15% for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {
@@ -139,7 +139,7 @@
                   "en": "Charge bonus: +10 for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {
-                  "zh": "全伤害抗性：+8%（雷刃旗本）（英雄所在军队）",
+                  "zh": "特殊抗性：+8%（雷刃旗本）（英雄所在军队）",
                   "en": "Ward save: +8% for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {

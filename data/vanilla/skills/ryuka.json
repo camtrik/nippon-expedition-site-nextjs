@@ -1,12 +1,12 @@
 {
   "subject": "ryuka",
   "name_cn": "琉華",
-  "role": "hero_legendary",
+  "role": "lord_legendary",
   "set_key": "cth_npex_skill_node_set_ryuka",
-  "agent_type": "champion",
+  "agent_type": "general",
   "agent_subtype": "cth_npex_ryuka",
-  "node_count": 53,
-  "vanilla_skill_count": 40,
+  "node_count": 45,
+  "vanilla_skill_count": 37,
   "nodes": [
     {
       "node": "cth_npex_skill_node_ryuka_unique_0",
@@ -20,31 +20,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_33",
+      "node": "cth_npex_skill_node_ryuka_magistrate_04",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_blade_master_starter",
-      "tier": 0,
-      "indent": 2,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_42",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_42",
-      "tier": 0,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_08",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_08",
+      "skill": "wh3_dlc24_skill_all_lord_improved_inspiring_presence",
       "tier": 0,
       "indent": 4,
       "points_on_creation": "0",
@@ -53,9 +31,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_02",
+      "node": "cth_npex_skill_node_ryuka_magistrate_17",
       "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_assist_army_training",
+      "skill": "wh_main_skill_all_lord_campaign_route_marcher",
       "tier": 0,
       "indent": 5,
       "points_on_creation": "0",
@@ -64,29 +42,7 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_15",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_aggressive_hero",
-      "tier": 0,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_10",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_10",
-      "tier": 0,
-      "indent": 8,
-      "points_on_creation": "1",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_55",
+      "node": "cth_npex_skill_node_ryuka_magistrate_02",
       "node_source": "npex",
       "skill": "wh3_main_skill_agent_action_success_scaling",
       "tier": 0,
@@ -97,9 +53,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_13",
+      "node": "cth_npex_skill_node_ryuka_magistrate_33",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_lord_magistrate_self_strategist",
+      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
       "tier": 1,
       "indent": 0,
       "points_on_creation": "0",
@@ -124,56 +80,39 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_43",
+      "node": "cth_npex_skill_node_ryuka_magistrate_05",
       "node_source": "npex",
-      "skill": "wh3_dlc23_skill_chd_hero_self_bandolier",
-      "tier": 1,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_ryuka_template_42",
-          "link_type": "REQUIRED"
-        }
-      ]
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_09",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_09",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_1",
       "tier": 1,
       "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_03",
+      "node": "cth_npex_skill_node_ryuka_magistrate_18",
       "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_passive_spread_corruption",
+      "skill": "wh_main_skill_all_lord_campaign_lightning_strike",
       "tier": 1,
       "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_17",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_16",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_confident_hero",
-      "tier": 1,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_11",
+      "node": "cth_npex_skill_node_ryuka_magistrate_34",
       "node_source": "npex",
       "skill": "wh3_main_skill_cth_all_unique_magic_resist",
       "tier": 2,
@@ -200,61 +139,39 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_34",
+      "node": "cth_npex_skill_node_ryuka_magistrate_06",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_lord_self_full_plate_armour_2",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_2",
       "tier": 2,
-      "indent": 2,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_33",
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_44",
+      "node": "cth_npex_skill_node_ryuka_magistrate_19",
       "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_44",
-      "tier": 2,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_ryuka_template_42",
-          "link_type": "REQUIRED"
-        }
-      ]
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_04",
-      "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_hinder_settlement_assault_garrison",
+      "skill": "wh_main_skill_emp_lord_campaign_logistician",
       "tier": 2,
       "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_17",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_17",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_cunning_hero",
-      "tier": 2,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_12",
+      "node": "cth_npex_skill_node_ryuka_magistrate_35",
       "node_source": "npex",
       "skill": "wh3_main_skill_cth_all_unique_missile_resist",
       "tier": 3,
@@ -281,57 +198,46 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_35",
+      "node": "cth_npex_skill_node_ryuka_magistrate_07",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_hard_to_hit",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_3",
       "tier": 3,
-      "indent": 2,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_33",
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_45",
+      "node": "cth_npex_skill_node_ryuka_magistrate_20",
       "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_45",
-      "tier": 3,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_ryuka_template_42",
-          "link_type": "REQUIRED"
-        }
-      ]
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_05",
-      "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "skill": "wh_main_skill_all_lord_campaign_alert",
       "tier": 3,
       "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_17",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_18",
+      "node": "cth_npex_skill_node_ryuka_magistrate_36",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_determined_hero",
-      "tier": 3,
-      "indent": 6,
+      "skill": "wh3_cp1_skill_cth_all_unique_harmony_yang",
+      "tier": 4,
+      "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
+      "visible_in_ui": true,
       "parents": []
     },
     {
@@ -351,77 +257,36 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_36",
+      "node": "cth_npex_skill_node_ryuka_magistrate_08",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_deadly_blade",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_4",
       "tier": 4,
-      "indent": 2,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_33",
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_46",
+      "node": "cth_npex_skill_node_ryuka_magistrate_21",
       "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_template_46",
-      "tier": 4,
-      "indent": 3,
-      "points_on_creation": "0",
-      "required_num_parents": "4",
-      "visible_in_ui": true,
-      "parents": [
-        {
-          "node": "cth_npex_skill_node_ryuka_template_43",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_ryuka_template_44",
-          "link_type": "SUBSET_REQUIRED"
-        },
-        {
-          "node": "cth_npex_skill_node_ryuka_template_45",
-          "link_type": "SUBSET_REQUIRED"
-        }
-      ]
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_06",
-      "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_hinder_army_assault_units",
+      "skill": "wh3_main_skill_cth_lord_campaign_recruitment_cost",
       "tier": 4,
       "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_19",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_disciplined_hero",
-      "tier": 4,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_14",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
-      "tier": 5,
-      "indent": 0,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_17",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
       "node": "cth_npex_skill_node_ryuka_unique_5",
@@ -452,86 +317,107 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_37",
+      "node": "cth_npex_skill_node_ryuka_magistrate_09",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_5",
       "tier": 5,
-      "indent": 2,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_22",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_astute_general",
+      "tier": 5,
+      "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "4",
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_34",
+          "node": "cth_npex_skill_node_ryuka_magistrate_18",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_template_35",
+          "node": "cth_npex_skill_node_ryuka_magistrate_19",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_template_36",
+          "node": "cth_npex_skill_node_ryuka_magistrate_20",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_template_43",
+          "node": "cth_npex_skill_node_ryuka_magistrate_21",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_07",
+      "node": "cth_npex_skill_node_ryuka_item_6",
       "node_source": "npex",
-      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
-      "tier": 5,
+      "skill": "cth_npex_skill_ryuka_item_6",
+      "tier": 6,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_28",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_strategist",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_10",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_1_6",
+      "tier": 6,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_04",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_23",
+      "node_source": "npex",
+      "skill": "wh_main_skill_emp_lord_campaign_iron_disciplinarian",
+      "tier": 6,
       "indent": 5,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_20",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_fleet_footed_hero",
-      "tier": 5,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_38",
-      "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_wound-maker",
-      "tier": 6,
-      "indent": 2,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_37",
+          "node": "cth_npex_skill_node_ryuka_magistrate_22",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_21",
+      "node": "cth_npex_skill_node_ryuka_magistrate_29",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_intelligent_hero",
-      "tier": 6,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_39",
-      "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_scarred_veteran_2",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_defence",
       "tier": 7,
       "indent": 2,
       "points_on_creation": "0",
@@ -539,37 +425,126 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_37",
+          "node": "cth_npex_skill_node_ryuka_magistrate_28",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_22",
+      "node": "cth_npex_skill_node_ryuka_magistrate_11",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_knowledgeable_hero",
+      "skill": "wh3_dlc24_skill_all_lord_improved_rally",
       "tier": 7,
-      "indent": 6,
+      "indent": 4,
       "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
+      "required_num_parents": "6",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_05",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_06",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_07",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_08",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_09",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_10",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_23",
+      "node": "cth_npex_skill_node_ryuka_magistrate_24",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_strategist_hero",
+      "skill": "wh_main_skill_emp_lord_campaign_fervent",
+      "tier": 7,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_22",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_item_8",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_item_8",
       "tier": 8,
-      "indent": 6,
+      "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
+      "visible_in_ui": true,
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_40",
+      "node": "cth_npex_skill_node_ryuka_magistrate_30",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_blade_shield",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_assault",
+      "tier": 8,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_28",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_12",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_1",
+      "tier": 8,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_11",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_25",
+      "node_source": "npex",
+      "skill": "wh_main_skill_lord_all_campaign_reassuring_presence",
+      "tier": 8,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_22",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_31",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_inspired_marksmanship",
       "tier": 9,
       "indent": 2,
       "points_on_creation": "0",
@@ -577,26 +552,47 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_37",
+          "node": "cth_npex_skill_node_ryuka_magistrate_28",
           "link_type": "REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_24",
+      "node": "cth_npex_skill_node_ryuka_magistrate_13",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_strong_hero",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_2",
       "tier": 9,
-      "indent": 6,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_11",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_41",
+      "node": "cth_npex_skill_node_ryuka_magistrate_26",
       "node_source": "npex",
-      "skill": "wh_main_skill_all_all_self_deadly_onslaught",
+      "skill": "wh_main_skill_emp_lord_campaign_quartermaster",
+      "tier": 9,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_22",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_32",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_grand_strategist",
       "tier": 10,
       "indent": 2,
       "points_on_creation": "0",
@@ -604,56 +600,122 @@
       "visible_in_ui": true,
       "parents": [
         {
-          "node": "cth_npex_skill_node_ryuka_template_38",
+          "node": "cth_npex_skill_node_ryuka_magistrate_29",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_template_39",
+          "node": "cth_npex_skill_node_ryuka_magistrate_30",
           "link_type": "SUBSET_REQUIRED"
         },
         {
-          "node": "cth_npex_skill_node_ryuka_template_40",
+          "node": "cth_npex_skill_node_ryuka_magistrate_31",
           "link_type": "SUBSET_REQUIRED"
         }
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_25",
+      "node": "cth_npex_skill_node_ryuka_magistrate_14",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_tactician_hero",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_3",
       "tier": 10,
-      "indent": 6,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_11",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_26",
+      "node": "cth_npex_skill_node_ryuka_magistrate_27",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_tough_hero",
+      "skill": "wh3_main_skill_cth_lord_campaign_army",
+      "tier": 10,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_23",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_24",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_25",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_26",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_15",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_army_buff_3_4",
       "tier": 11,
-      "indent": 6,
+      "indent": 4,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_11",
+          "link_type": "REQUIRED"
+        }
+      ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_27",
+      "node": "cth_npex_skill_node_ryuka_magistrate_16",
       "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cth_weapon_master_hero",
+      "skill": "wh3_dlc24_skill_all_lord_improved_hold_the_line",
       "tier": 12,
-      "indent": 6,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "1",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_12",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_13",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_14",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_magistrate_15",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_magistrate_03",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_all_army_of_renown_lord",
+      "tier": 28,
+      "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",
-      "visible_in_ui": false,
+      "visible_in_ui": true,
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_00",
+      "node": "cth_npex_skill_node_ryuka_magistrate_00",
       "node_source": "npex",
-      "skill": "wh2_main_skill_all_immortality_hero",
+      "skill": "wh2_main_skill_all_immortality_lord",
       "tier": 29,
       "indent": 0,
       "points_on_creation": "0",
@@ -662,58 +724,14 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_template_01",
+      "node": "cth_npex_skill_node_ryuka_magistrate_01",
       "node_source": "npex",
-      "skill": "wh3_main_skill_all_mentor_hero",
+      "skill": "wh3_main_skill_all_mentor_lord",
       "tier": 30,
       "indent": 0,
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_28",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cathay_1_hero",
-      "tier": 32,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_29",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cathay_2_hero",
-      "tier": 33,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_30",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cathay_3_hero",
-      "tier": 34,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
-      "parents": []
-    },
-    {
-      "node": "cth_npex_skill_node_ryuka_template_31",
-      "node_source": "npex",
-      "skill": "wh3_main_skill_innate_cathay_5_hero",
-      "tier": 35,
-      "indent": 6,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": false,
       "parents": []
     }
   ]

@@ -76,8 +76,8 @@
               "en": "Recruit rank: +2 for gunpowder and artillery units (Lord's army)"
             },
             {
-              "zh": "远程伤害：+5%（远程部队，基础与破甲同时）（领主军队）",
-              "en": "Missile damage: +5% for missile units, base and armour-piercing alike (Lord's army)"
+              "zh": "远程威力：+5%（远程部队）（领主军队）",
+              "en": "Missile strength: +5% for missile units (Lord's army)"
             }
           ]
         }

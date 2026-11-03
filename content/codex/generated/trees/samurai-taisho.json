@@ -57,7 +57,7 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "远程武器威力：+10%（铁炮部队）（领主军队）",
+                  "zh": "远程威力：+10%（铁炮部队）（领主军队）",
                   "en": "Missile strength: +10% for Teppo units (Lord's army)"
                 },
                 {
@@ -65,7 +65,7 @@
                   "en": "Reload time reduction: +10% for Teppo units (Lord's army)"
                 },
                 {
-                  "zh": "射程：+10%（铁炮部队）（领主军队）",
+                  "zh": "射程范围：+10%（铁炮部队）（领主军队）",
                   "en": "Range: +10% for Teppo units (Lord's army)"
                 }
               ]
@@ -110,7 +110,7 @@
                   "en": "Weapon strength: +10% for melee Samurai units (Lord's army)"
                 },
                 {
-                  "zh": "对大型单位加成：+5（近战武士部队）（领主军队）",
+                  "zh": "对抗大型部队加成：+5（近战武士部队）（领主军队）",
                   "en": "Bonus vs Large: +5 for melee Samurai units (Lord's army)"
                 },
                 {

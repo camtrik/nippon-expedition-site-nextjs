@@ -323,6 +323,20 @@
         "en": "In Nippon, the miko are older than the crests of the daimyo. The histories tell of a queen who served the gods through the ways of spirits and commanded the clans by oracle, and of the consecrated princesses who served the gods for life in the rites of the court of the Holy Sun. When power passed to the samurai lords, the miko withdrew from the halls of state, back to the mountain shrines and villages, keeping one torii and one kagura bell to live by. The kagura dance was born of the thunder of the stamping tub before the Heavenly Rock Cave: whirled to its utmost, the dancer's own body becomes the yorishiro, and the god descends upon it; that is the most ancient of the miko's arts. Now the age of strife is come: shrine halls burn, and monsters and evil spirits run wild in the disorder. Some hold their shrine ground and yield not an inch; others go out as wandering miko over all the provinces, purifying with the rites, sealing demons, and putting evil spirits down along the way."
       }
     },
+    "cth_npex_cha_ryuka_0": {
+      "name": {
+        "zh": "琉華",
+        "en": "Ryuka"
+      },
+      "desc": {
+        "zh": "潮風商社的掌舵人，刀铳齐鸣的天辰流浪客。在日升之塔的狂涛之间，她的算盘与转轮短铳同样致命。",
+        "en": "The head of the Shiofu Trading Company and a wandering Tianchen swordswoman, as deadly with her ledger as with her pistol."
+      },
+      "story": {
+        "zh": "在尼朋幕府泛黄的通缉卷宗里，才谷直柔的名字早在十年前就已被朱笔勾销。相传这位出身嵐浜边陲的剑客曾以天辰流长刀皆传之技名动一时，却因狂妄起草开海合议之策，在客栈中引来大批幕府死士围杀，最终身死名裂。然而大洋彼岸的波涛从不理会死人的案卷。在南方重洋的高等精灵商都塔尔艾利提斯，一名自称琉華的女子身着西洋提督长风衣，带着腰间的名刀与改装短铳横空出世，一手建立了通吃四海的潮風商社。当混沌的疫病风暴吞噬了商都，退守日升之塔的琉華面对步步紧逼的恶魔黑帆，拔出太刀扣响了短铳。时代的潮風正从重洋吹来，而这位死而复生的社长，誓要用万国钢铁与震旦巨炮轰碎紧锁故土的国门。",
+        "en": "Once declared dead by the shogunate, Ryuka reappeared across the sea as the head of the Shiofu Trading Company. Driven from her trading port by the storms of Chaos, she now holds the Tower of the Rising Sun with sword and pistol, determined to break open the closed gates of her homeland with steel and cannon from across the world."
+      }
+    },
     "cth_npex_cha_sayo_0": {
       "name": {
         "zh": "『阴阳之巫女』纱代",

@@ -1890,7 +1890,8 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
-        "skills/shen-changfeng.json"
+        "skills/shen-changfeng.json",
+        "skills/yin-ling.json"
       ],
       "effects": [
         {
@@ -9616,6 +9617,989 @@
         }
       ]
     },
+    "cth_npex_skill_ryuka_template_08": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "优化后勤",
+        "en": "Optimised Logistics"
+      },
+      "desc": {
+        "zh": "单凭武艺超群无法赢得战争。备战至关重要，若是忽视此理，往往会招致败北的惨烈结局",
+        "en": "Excellence at arms alone will not win a war. Preparedness is crucial, the ignorance of which is often paid for in defeat."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/battle_ammo.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 4,
+        "2": 8,
+        "3": 12
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_gifted_logistician",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]",
+            "_via_tr": true
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_logistician_action_dummy",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 5.0,
+          "text": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量增加5%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by 5%"
+          },
+          "template": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量增加%n%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by %n%"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_gifted_logistician",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]",
+            "_via_tr": true
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_logistician_buff",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 5.0,
+          "text": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量额外增加5%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by an additional 5%"
+          },
+          "template": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量额外增加%n%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by an additional %n%"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_gifted_logistician",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]优化后勤[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Optimised Logistics[[/col]]",
+            "_via_tr": true
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_logistician_buff",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量额外增加10%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by an additional 10%"
+          },
+          "template": {
+            "zh": "[[col:yellow]]优化后勤[[/col]]行动：弹药容量额外增加%n%",
+            "en": "[[col:yellow]]Optimised Logistics[[/col]] action: ammunition is increased by an additional %n%"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ryuka_template_09": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "备战操练",
+        "en": "Preparedness Drills"
+      },
+      "desc": {
+        "zh": "经受最为严苛训练的战士，方能在关键时刻承受最猛烈的打击，但也需良师督导，使其常备不懈，心无旁骛",
+        "en": "The hardest-drilled warriors can take the most punishment when it matters, but need the right instructor to keep them practiced and focused."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/battle_defence.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": {
+        "1": 4,
+        "2": 8,
+        "3": 12
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_preparedness_drills",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_preparedness_drills_action_dummy",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 2.0,
+          "text": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御增加2",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by 2"
+          },
+          "template": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御增加%n",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by %n"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_preparedness_drills",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_preparedness_drills_buff",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 2.0,
+          "text": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御额外增加2",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by an additional 2"
+          },
+          "template": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御额外增加%n",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by an additional %n"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_cp1_effect_agent_action_enable_gate_master_assist_army_preparedness_drills",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "template": {
+            "zh": "解锁[[img:icon_hero]][[/img]]英雄行动：[[col:yellow]]备战操练[[/col]]",
+            "en": "Unlocks [[img:icon_hero]][[/img]]Hero action: [[col:yellow]]Preparedness Drills[[/col]]"
+          },
+          "priority": 7,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_cp1_effect_agent_action_assist_army_gifted_preparedness_drills_buff",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 4.0,
+          "text": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御额外增加4",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by an additional 4"
+          },
+          "template": {
+            "zh": "[[col:yellow]]备战操练[[/col]]行动：防御额外增加%n",
+            "en": "[[col:yellow]]Preparedness Drills[[/col]] action: defence is increased by an additional %n"
+          },
+          "priority": 10,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/defence.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ryuka_template_10": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "战役行动",
+        "en": "Actions [HIDDEN]"
+      },
+      "desc": {
+        "zh": "授予英雄的基础战役行动。",
+        "en": "Grants the hero their basic campaign actions."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/battle_attack.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_agent_action_enable_champion_assist_army_training",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "template": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_agent_action_enable_champion_hinder_agent_wound",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "template": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_agent_action_enable_champion_hinder_army_assault_units",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "template": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_agent_action_enable_champion_hinder_settlement_assault_garrison",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "template": {
+            "zh": "[hidden]",
+            "en": null
+          },
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_agent_action_enable_champion_hinder_settlement_scout_settlement",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "[HIDDEN]",
+            "en": null
+          },
+          "template": {
+            "zh": "[HIDDEN]",
+            "en": null
+          },
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_agent_action_enable_champion_passive_spread_corruption",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": null,
+          "template": null,
+          "priority": 0,
+          "icon": null
+        },
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_agent_action_passive_spread_corruption_reduction_effect",
+          "effect_source": "vanilla",
+          "scope": "character_to_province_any",
+          "value": -2.0,
+          "text": {
+            "zh": "腐蚀：-2\\n（所在行省）",
+            "en": "Corruption: -2\\n(local province)"
+          },
+          "template": {
+            "zh": "腐蚀：%+n",
+            "en": "Corruption: %+n"
+          },
+          "priority": 0,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/corruption.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ryuka_template_42": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "不屈之魂",
+        "en": "Implacable Spirit",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "与坚定沉着的心灵并肩作战者，能在周遭肆虐的战乱风暴中，受益于那份安宁的存在",
+        "en": "Those who fight alongside a sure and steadfast mind benefit from a calm presence amidst the storm of war raging around them.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_cp1_skill_cth_gate_master_unique_implacable_spirit.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_ability_enable_implacable_spirit",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『不屈之魂』",
+            "en": "Passive ability: \"Implacable Spirit\""
+          },
+          "template": {
+            "zh": "被动技能：『不屈之魂』",
+            "en": "Passive ability: \"Implacable Spirit\"",
+            "_via_tr": true
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_cp1_unit_passive_implacable_spirit"
+      ]
+    },
+    "cth_npex_skill_ryuka_template_44": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "神射技艺",
+        "en": "Masterful Shot"
+      },
+      "desc": {
+        "zh": "唯有盖世神射手，方能在极远距离将致命弩矢精准送入敌人眉心",
+        "en": "It takes a peerless marksman to place a deadly crossbow bolt between the eyes of an enemy at extreme range."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_ranged_damage.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_missile_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 5.0,
+          "text": {
+            "zh": "远程威力：+5%",
+            "en": "Missile strength: +5%"
+          },
+          "template": {
+            "zh": "远程威力：%+n%",
+            "en": "Missile strength: %+n%"
+          },
+          "priority": 240,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_character_stat_missile_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程威力：+10%",
+            "en": "Missile strength: +10%"
+          },
+          "template": {
+            "zh": "远程威力：%+n%",
+            "en": "Missile strength: %+n%"
+          },
+          "priority": 240,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh_main_effect_character_stat_missile_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 15.0,
+          "text": {
+            "zh": "远程威力：+15%",
+            "en": "Missile strength: +15%"
+          },
+          "template": {
+            "zh": "远程威力：%+n%",
+            "en": "Missile strength: %+n%"
+          },
+          "priority": 240,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ryuka_template_45": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "操练门生",
+        "en": "Drill Disciple"
+      },
+      "desc": {
+        "zh": "无数时日的苦练，只为在紧要关头赢取那转瞬即逝的几秒先机",
+        "en": "It takes many hours of dedication to yield precious few seconds when they are needed the most."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_cp1_skill_cth_gate_master_unique_expert_training.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_reload_time_reduction",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 7.0,
+          "text": {
+            "zh": "装弹时间降低：+7%",
+            "en": "Reload time reduction: +7%"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%",
+            "en": "Reload time reduction: %+n%"
+          },
+          "priority": 260,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_character_stat_reload_time_reduction",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 14.0,
+          "text": {
+            "zh": "装弹时间降低：+14%",
+            "en": "Reload time reduction: +14%"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%",
+            "en": "Reload time reduction: %+n%"
+          },
+          "priority": 260,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh_main_effect_character_stat_reload_time_reduction",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 20.0,
+          "text": {
+            "zh": "装弹时间降低：+20%",
+            "en": "Reload time reduction: +20%"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%",
+            "en": "Reload time reduction: %+n%"
+          },
+          "priority": 260,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_ryuka_template_46": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "城垣宿将",
+        "en": "Wall Veteran",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "门下督们经年累月在长垣之上挫败入侵者、观察敌军动向，铸就了震旦最为老谋深算的老兵",
+        "en": "The many years spent by Gate Masters thwarting invaders and observing enemy movements from atop the Bastion have forged Cathay’s most wily veterans.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_cp1_skill_cth_gate_master_unique_defensive_tactician.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_ability_disable_implacable_spirit",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "禁用技能：『不屈之魂』",
+            "en": "Disable ability: \"Implacable Spirit\""
+          },
+          "template": {
+            "zh": "禁用技能：『不屈之魂』",
+            "en": "Disable ability: \"Implacable Spirit\"",
+            "_via_tr": true
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_cp1_effect_ability_enable_defensive_tactician",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『城垣宿将』",
+            "en": "Passive ability: \"Wall Veteran\""
+          },
+          "template": {
+            "zh": "被动技能：『城垣宿将』",
+            "en": "Passive ability: \"Wall Veteran\"",
+            "_via_tr": true
+          },
+          "priority": 300,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_cp1_unit_passive_defensive_tactician"
+      ]
+    },
+    "cth_npex_skill_ryuka_unique_0": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 1",
+        "en": "Unique Skill Placeholder 1"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_unique_1": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 2",
+        "en": "Unique Skill Placeholder 2"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_unique_2": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 3",
+        "en": "Unique Skill Placeholder 3"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_unique_3": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 4",
+        "en": "Unique Skill Placeholder 4"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_unique_4": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 5",
+        "en": "Unique Skill Placeholder 5"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_unique_5": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "专属技能占位 6",
+        "en": "Unique Skill Placeholder 6"
+      },
+      "desc": {
+        "zh": "专属技能尚未实装。",
+        "en": "This unique skill has not been implemented yet."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/0_placeholder_skill.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "9",
+      "level_ranks": {
+        "1": 9
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
     "cth_npex_skill_samurai_taisho_black_mount_kirin": {
       "kind": "character_skill",
       "source": "npex",
@@ -13016,6 +14000,29 @@
         },
         {
           "level": 1,
+          "effect": "wh3_dlc27_effect_enable_attack_from_sea_dummy",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "可对港口城镇发动跨海攻击\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Enable sea-based attacks on port settlements\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "可对港口城镇发动跨海攻击",
+            "en": "Enable sea-based attacks on port settlements"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/admiral.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "wh3_dlc27_effect_force_army_campaign_movement_range_at_sea",
           "effect_source": "vanilla",
           "scope": "general_to_force_own_unseen",
@@ -13101,29 +14108,6 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/ranged_damage.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh2_twa03_attrition_immunity_high_seas_reef_storm",
-          "effect_source": "vanilla",
-          "scope": "general_to_force_own",
-          "value": 1.0,
-          "text": {
-            "zh": "免疫深海、暗礁与风暴损耗\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Immune to High Seas, Reef and Storm attrition\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "免疫深海、暗礁与风暴损耗",
-            "en": "Immune to High Seas, Reef and Storm attrition"
-          },
-          "priority": 800,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/attrition.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -15412,29 +16396,6 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/treasury.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 1,
-          "effect": "wh2_twa03_attrition_immunity_high_seas_reef_storm",
-          "effect_source": "vanilla",
-          "scope": "general_to_force_own",
-          "value": 1.0,
-          "text": {
-            "zh": "免疫深海、暗礁与风暴损耗\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Immune to High Seas, Reef and Storm attrition\\n([[img:icon_general]][[/img]]Lord's army)"
-          },
-          "template": {
-            "zh": "免疫深海、暗礁与风暴损耗",
-            "en": "Immune to High Seas, Reef and Storm attrition"
-          },
-          "priority": 800,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/attrition.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -18918,7 +19879,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/miko.json"
+        "skills/ryuka.json"
       ]
     },
     "wh2_dlc13_lord_passive_endurance_aura": {
@@ -18990,7 +19951,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/miko.json",
+        "skills/ryuka.json",
         "skills/serena.json"
       ]
     },
@@ -19228,6 +20189,7 @@
       },
       "referenced_by": [
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -19435,6 +20397,7 @@
       },
       "referenced_by": [
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/sayo.json",
         "skills/serena.json",
         "skills/tachibana-naotora.json"
@@ -19541,6 +20504,7 @@
       },
       "referenced_by": [
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -19852,6 +20816,7 @@
       },
       "referenced_by": [
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora.json"
       ],
       "effects": [
@@ -20302,6 +21267,7 @@
       },
       "referenced_by": [
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/sayo.json"
       ],
       "effects": [
@@ -20960,6 +21926,7 @@
       "referenced_by": [
         "skills/ibuki.json",
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/sayo.json",
         "skills/serena.json",
         "skills/tachibana-naotora.json"
@@ -21130,6 +22097,7 @@
       },
       "referenced_by": [
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/serena-lord.json",
         "skills/serena.json"
       ],
@@ -22150,6 +23118,150 @@
         }
       ]
     },
+    "wh3_cp1_unit_passive_defensive_tactician": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "城垣宿将",
+        "en": "Wall Veteran"
+      },
+      "desc": {
+        "zh": "门下督们经年累月在长垣之上挫败入侵者、观察敌军动向，铸就了震旦最为老谋深算的老兵",
+        "en": "The many years spent by Gate Masters thwarting invaders and observing enemy movements from atop the Bastion have forged Cathay’s most wily veterans."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_cp1_unit_passive_defensive_tactician.png",
+        "size": "72x72",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ]
+    },
+    "wh3_cp1_unit_passive_implacable_spirit": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "不屈之魂",
+        "en": "Implacable Spirit"
+      },
+      "desc": {
+        "zh": "与坚定沉着的心灵并肩作战者，能在周遭肆虐的战乱风暴中，受益于那份安宁的存在",
+        "en": "Those who fight alongside a sure and steadfast mind benefit from a calm presence amidst the storm of war raging around them."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_cp1_unit_passive_implacable_spirit.png",
+        "size": "72x72",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ]
+    },
+    "wh3_dlc23_skill_chd_hero_self_bandolier": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc23",
+      "name": {
+        "zh": "子弹带",
+        "en": "Bandolier"
+      },
+      "desc": {
+        "zh": "职业军人意味着永远不会在关键时刻耗尽弹药",
+        "en": "Professional soldiery means never running out of ammo at the crucial moment."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/character_ammo.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_ammunition",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "弹药容量：+10%",
+            "en": "Ammunition: +10%"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%",
+            "en": "Ammunition: %+n%"
+          },
+          "priority": 210,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_character_stat_ammunition",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 20.0,
+          "text": {
+            "zh": "弹药容量：+20%",
+            "en": "Ammunition: +20%"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%",
+            "en": "Ammunition: %+n%"
+          },
+          "priority": 210,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh_main_effect_character_stat_ammunition",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 30.0,
+          "text": {
+            "zh": "弹药容量：+30%",
+            "en": "Ammunition: +30%"
+          },
+          "template": {
+            "zh": "弹药容量：%+n%",
+            "en": "Ammunition: %+n%"
+          },
+          "priority": 210,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ammo_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
     "wh3_dlc24_character_abilities_colossal_strike": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -22195,7 +23307,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/miko.json"
+        "skills/ryuka.json"
       ]
     },
     "wh3_dlc24_skill_all_all_self_colossal_strike": {
@@ -24409,7 +25521,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/yin-ling.json"
+        "skills/ryuka.json"
       ]
     },
     "wh3_main_lord_passive_strategist": {
@@ -24433,7 +25545,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/miko.json",
+        "skills/ryuka.json",
         "skills/samurai-taisho.json"
       ]
     },
@@ -24537,6 +25649,7 @@
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/sayo-lord.json",
@@ -26447,6 +27560,7 @@
       },
       "referenced_by": [
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/sayo.json",
         "skills/serena.json"
       ],
@@ -26718,6 +27832,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ryuka.json",
         "skills/yin-ling.json"
       ],
       "effects": [
@@ -26780,6 +27895,7 @@
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/sayo-lord.json",
@@ -26845,6 +27961,7 @@
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
         "skills/miko.json",
+        "skills/ryuka.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/sayo-lord.json",
@@ -28615,6 +29732,60 @@
         }
       ]
     },
+    "wh3_main_skill_cth_lord_magistrate_self_strategist": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_main",
+      "name": {
+        "zh": "战术专家",
+        "en": "Tactician"
+      },
+      "desc": {
+        "zh": "战略战术可以从书本上学到，但必须通过实战经验的磨练",
+        "en": "Strategy and tactics can be learned from a book, but only honed through experience in the field."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_main_lord_passive_strategist.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_main_effect_ability_enable_strategist",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "被动技能：『战术专家』",
+            "en": "Passive ability: \"Tactician\""
+          },
+          "template": {
+            "zh": "被动技能：『战术专家』",
+            "en": "Passive ability: \"Tactician\""
+          },
+          "priority": 310,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/general_ability.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_main_lord_passive_strategist"
+      ],
+      "desc_via_ability": "wh3_main_lord_passive_strategist"
+    },
     "wh3_main_skill_cth_magic_yang_02_jade_shield_lord": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -30241,7 +31412,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30314,7 +31486,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30387,7 +31560,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30461,7 +31635,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30534,7 +31709,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30630,7 +31806,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30752,7 +31929,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30848,7 +32026,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -30967,7 +32146,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31086,7 +32266,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31162,7 +32343,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31281,7 +32463,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31354,7 +32537,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31454,7 +32638,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31550,7 +32735,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31672,7 +32858,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -31768,7 +32955,8 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
-        "skills/miko.json"
+        "skills/miko.json",
+        "skills/ryuka.json"
       ],
       "effects": [
         {
@@ -32356,7 +33544,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/yin-ling.json"
+        "skills/ryuka.json"
       ]
     },
     "wh_main_character_abilities_foe_seeker": {
@@ -32380,7 +33568,7 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "skills/yin-ling.json"
+        "skills/ryuka.json"
       ]
     },
     "wh_main_character_abilities_heroic_killing_blow": {
@@ -32505,6 +33693,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/shen-changfeng.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json",
@@ -32558,6 +33747,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -32657,6 +33847,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -32756,6 +33947,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/shen-changfeng.json",
         "skills/yin-ling.json"
       ],
@@ -32912,6 +34104,7 @@
         "skills/admiral-01.json",
         "skills/admiral-02.json",
         "skills/admiral-03.json",
+        "skills/ryuka.json",
         "skills/samurai-taisho-black.json",
         "skills/samurai-taisho.json",
         "skills/shen-changfeng.json",
@@ -32972,6 +34165,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -33226,6 +34420,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -33325,6 +34520,7 @@
       "referenced_by": [
         "skills/ibuki-lord.json",
         "skills/ibuki.json",
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -34234,6 +35430,7 @@
       "unlocked_at_rank": "0",
       "level_ranks": null,
       "referenced_by": [
+        "skills/ryuka.json",
         "skills/tachibana-naotora-lord.json",
         "skills/tachibana-naotora.json"
       ],
@@ -34775,8 +35972,7 @@
         "skills/samurai-taisho.json",
         "skills/sayo-lord.json",
         "skills/serena-lord.json",
-        "skills/tachibana-naotora-lord.json",
-        "skills/yin-ling.json"
+        "skills/tachibana-naotora-lord.json"
       ],
       "effects": [
         {

@@ -1,0 +1,720 @@
+{
+  "subject": "ryuka",
+  "name_cn": "琉華",
+  "role": "hero_legendary",
+  "set_key": "cth_npex_skill_node_set_ryuka",
+  "agent_type": "champion",
+  "agent_subtype": "cth_npex_ryuka",
+  "node_count": 53,
+  "vanilla_skill_count": 40,
+  "nodes": [
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_0",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_0",
+      "tier": 0,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_33",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_master_starter",
+      "tier": 0,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_42",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_42",
+      "tier": 0,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_08",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_08",
+      "tier": 0,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_02",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_assist_army_training",
+      "tier": 0,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_15",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_aggressive_hero",
+      "tier": 0,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_10",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_10",
+      "tier": 0,
+      "indent": 8,
+      "points_on_creation": "1",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_55",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_agent_action_success_scaling",
+      "tier": 0,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_13",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_lord_magistrate_self_strategist",
+      "tier": 1,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_1",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_1",
+      "tier": 1,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_43",
+      "node_source": "npex",
+      "skill": "wh3_dlc23_skill_chd_hero_self_bandolier",
+      "tier": 1,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_42",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_09",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_09",
+      "tier": 1,
+      "indent": 4,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_03",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_passive_spread_corruption",
+      "tier": 1,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_16",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_confident_hero",
+      "tier": 1,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_11",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_magic_resist",
+      "tier": 2,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_2",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_2",
+      "tier": 2,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_34",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_lord_self_full_plate_armour_2",
+      "tier": 2,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_33",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_44",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_44",
+      "tier": 2,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_42",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_04",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_settlement_assault_garrison",
+      "tier": 2,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_17",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_cunning_hero",
+      "tier": 2,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_12",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_unique_missile_resist",
+      "tier": 3,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_3",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_3",
+      "tier": 3,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_35",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_hard_to_hit",
+      "tier": 3,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_33",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_45",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_45",
+      "tier": 3,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_42",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_05",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_agent_wound",
+      "tier": 3,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_18",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_determined_hero",
+      "tier": 3,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_4",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_4",
+      "tier": 4,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_0",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_36",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_blade",
+      "tier": 4,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_33",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_46",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_template_46",
+      "tier": 4,
+      "indent": 3,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_43",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_44",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_45",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_06",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_hinder_army_assault_units",
+      "tier": 4,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_19",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_disciplined_hero",
+      "tier": 4,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_14",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
+      "tier": 5,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_unique_5",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_unique_5",
+      "tier": 5,
+      "indent": 1,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_1",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_2",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_3",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_unique_4",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_37",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_foe-seeker",
+      "tier": 5,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_34",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_35",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_36",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_43",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_07",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_hero_reduce_action_cost",
+      "tier": 5,
+      "indent": 5,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_20",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_fleet_footed_hero",
+      "tier": 5,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_38",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_wound-maker",
+      "tier": 6,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_37",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_21",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_intelligent_hero",
+      "tier": 6,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_39",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_scarred_veteran_2",
+      "tier": 7,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_37",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_22",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_knowledgeable_hero",
+      "tier": 7,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_23",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_strategist_hero",
+      "tier": 8,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_40",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_blade_shield",
+      "tier": 9,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_37",
+          "link_type": "REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_24",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_strong_hero",
+      "tier": 9,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_41",
+      "node_source": "npex",
+      "skill": "wh_main_skill_all_all_self_deadly_onslaught",
+      "tier": 10,
+      "indent": 2,
+      "points_on_creation": "0",
+      "required_num_parents": "4",
+      "visible_in_ui": true,
+      "parents": [
+        {
+          "node": "cth_npex_skill_node_ryuka_template_38",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_39",
+          "link_type": "SUBSET_REQUIRED"
+        },
+        {
+          "node": "cth_npex_skill_node_ryuka_template_40",
+          "link_type": "SUBSET_REQUIRED"
+        }
+      ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_25",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_tactician_hero",
+      "tier": 10,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_26",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_tough_hero",
+      "tier": 11,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_27",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cth_weapon_master_hero",
+      "tier": 12,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_00",
+      "node_source": "npex",
+      "skill": "wh2_main_skill_all_immortality_hero",
+      "tier": 29,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_01",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_all_mentor_hero",
+      "tier": 30,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_28",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_1_hero",
+      "tier": 32,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_29",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_2_hero",
+      "tier": 33,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_30",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_3_hero",
+      "tier": 34,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_template_31",
+      "node_source": "npex",
+      "skill": "wh3_main_skill_innate_cathay_5_hero",
+      "tier": 35,
+      "indent": 6,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
+    }
+  ]
+}

@@ -9723,11 +9723,11 @@
       "pack": null,
       "name": {
         "zh": "潮風社长",
-        "en": "President of Shiofu"
+        "en": "President of Shiokaze"
       },
       "desc": {
         "zh": "潮風商社的大当家。她手握算盘与名刀，无论面对汹涌恶浪还是藩阀封锁，总能带着她的船队杀出生路。",
-        "en": "The head of the Shiofu Trading Company carries ledger and blade alike, steering her fleet through raging seas and hostile blockades."
+        "en": "The head of the Shiokaze Trading Company carries ledger and blade alike, steering her fleet through raging seas and hostile blockades."
       },
       "icon": {
         "source": "vanilla",
@@ -9773,11 +9773,11 @@
           "value": -20.0,
           "text": {
             "zh": "招募费：-20%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Recruitment cost: -20% for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Recruitment cost: -20% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "招募费：%+n%（潮風武装団）",
-            "en": "Recruitment cost: %+n% for the Shiofu Armed Company"
+            "en": "Recruitment cost: %+n% for the Shiokaze Armed Company"
           },
           "priority": 6,
           "icon": {
@@ -9842,11 +9842,11 @@
           "value": -20.0,
           "text": {
             "zh": "维护费：-20%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Upkeep: -20% for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Upkeep: -20% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "维护费：%+n%（潮風武装団）",
-            "en": "Upkeep: %+n% for the Shiofu Armed Company"
+            "en": "Upkeep: %+n% for the Shiokaze Armed Company"
           },
           "priority": 105,
           "icon": {
@@ -10020,7 +10020,7 @@
       },
       "desc": {
         "zh": "潮風武装团由琉華亲自训练，刀枪混合的流派独树一帜。",
-        "en": "Ryuka personally drills the Shiofu Armed Company in its distinctive blend of sword and gun."
+        "en": "Ryuka personally drills the Shiokaze Armed Company in its distinctive blend of sword and gun."
       },
       "icon": {
         "source": "vanilla",
@@ -10045,11 +10045,11 @@
           "value": 1.0,
           "text": {
             "zh": "属性：先锋部署（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Attribute: Vanguard Deployment for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Attribute: Vanguard Deployment for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "属性：先锋部署（潮風武装団）",
-            "en": "Attribute: Vanguard Deployment for the Shiofu Armed Company"
+            "en": "Attribute: Vanguard Deployment for the Shiokaze Armed Company"
           },
           "priority": 130,
           "icon": {
@@ -10068,11 +10068,11 @@
           "value": 8.0,
           "text": {
             "zh": "近战攻击：+8（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee attack: +8 for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Melee attack: +8 for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "近战攻击：%+n（潮風武装団）",
-            "en": "Melee attack: %+n for the Shiofu Armed Company"
+            "en": "Melee attack: %+n for the Shiokaze Armed Company"
           },
           "priority": 131,
           "icon": {
@@ -10091,11 +10091,11 @@
           "value": 8.0,
           "text": {
             "zh": "近战防御：+8（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +8 for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Melee defence: +8 for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "近战防御：%+n（潮風武装団）",
-            "en": "Melee defence: %+n for the Shiofu Armed Company"
+            "en": "Melee defence: %+n for the Shiokaze Armed Company"
           },
           "priority": 151,
           "icon": {
@@ -10114,11 +10114,11 @@
           "value": 25.0,
           "text": {
             "zh": "弹药量：+25%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Ammunition: +25% for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Ammunition: +25% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "弹药量：%+n%（潮風武装団）",
-            "en": "Ammunition: %+n% for the Shiofu Armed Company"
+            "en": "Ammunition: %+n% for the Shiokaze Armed Company"
           },
           "priority": 512,
           "icon": {
@@ -10137,11 +10137,11 @@
           "value": 15.0,
           "text": {
             "zh": "远程破甲杀伤：+15%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Armour-piercing missile damage: +15% for the Shiofu Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "en": "Armour-piercing missile damage: +15% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
             "zh": "远程破甲杀伤：%+n%（潮風武装団）",
-            "en": "Armour-piercing missile damage: %+n% for the Shiofu Armed Company"
+            "en": "Armour-piercing missile damage: %+n% for the Shiokaze Armed Company"
           },
           "priority": 541,
           "icon": {
@@ -17275,7 +17275,7 @@
         "size": "38x38"
       },
       "referenced_by": [
-        "units/shiofu-armed-company.json"
+        "units/shiokaze-armed-company.json"
       ]
     },
     "cth_npex_unit_passive_solar_revelation": {
@@ -17621,7 +17621,7 @@
         "units/jinjing-riders.json",
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
-        "units/shiofu-armed-company.json",
+        "units/shiokaze-armed-company.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
@@ -17712,7 +17712,7 @@
       },
       "referenced_by": [
         "units/akatsuki-shu-bow.json",
-        "units/shiofu-armed-company.json"
+        "units/shiokaze-armed-company.json"
       ]
     },
     "shielded": {

@@ -1,7 +1,7 @@
 {
   "unit": "cth_npex_shiokaze",
   "name_cn": "潮風武装団",
-  "slug": "shiofu-armed-company",
+  "slug": "shiokaze-armed-company",
   "doc": "_docs/data/units/潮風武装団兵种设计.md",
   "abilities": [
     {

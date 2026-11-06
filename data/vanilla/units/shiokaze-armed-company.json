@@ -37,6 +37,11 @@
       "doc_name": "于森林中隐蔽",
       "ref": "hide_forest",
       "section": "部队属性"
+    },
+    {
+      "doc_name": "水生一族",
+      "ref": "aquatic",
+      "section": "部队属性"
     }
   ],
   "stats_from_db": {

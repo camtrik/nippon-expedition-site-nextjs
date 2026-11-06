@@ -57,7 +57,10 @@
         "units/axe-guard.json",
         "units/jade-sea-fleet-gunners.json",
         "units/jade-sea-sailors.json",
-        "units/jinjing-riders.json"
+        "units/jinjing-riders.json",
+        "units/shiokaze-armed-company.json",
+        "units/shiokaze-hand-cannons.json",
+        "units/shiokaze-land-ship.json"
       ]
     },
     "armour_piercing": {
@@ -81,6 +84,7 @@
         "units/kunikuzushi-oni.json",
         "units/leviathan.json",
         "units/matchlock-ashigaru.json",
+        "units/shiokaze-land-ship.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
@@ -178,6 +182,7 @@
         "units/kunikuzushi-oni.json",
         "units/leviathan.json",
         "units/misaki-crow.json",
+        "units/shiokaze-land-ship.json",
         "units/tamed-cold-ones.json"
       ]
     },
@@ -17275,7 +17280,9 @@
         "size": "38x38"
       },
       "referenced_by": [
-        "units/shiokaze-armed-company.json"
+        "units/shiokaze-armed-company.json",
+        "units/shiokaze-hand-cannons.json",
+        "units/shiokaze-land-ship.json"
       ]
     },
     "cth_npex_unit_passive_solar_revelation": {
@@ -17497,6 +17504,24 @@
         "units/tide-guard.json"
       ]
     },
+    "flaming_attacks": {
+      "kind": "unit_bullet_point",
+      "source": "vanilla",
+      "name": {
+        "zh": "火焰攻击",
+        "en": "Flaming Attacks"
+      },
+      "desc": {
+        "zh": "这支部队可以进行火焰攻击。遭受火焰攻击的部队在[[img:UI/skins/default/modifier_icon_flaming.png]][[/img]]『起火』状态下受到的治疗效果将会减半，惧怕火焰的部队还会受到额外伤害\\n它也会对建筑造成[[img:ui/skins/default/weapon_building_damage_modifier.png]][[/img]][[col:green]]+50%[[/col]]的伤害加成",
+        "en": "This unit inflicts flaming attacks. Units hit by flaming attacks heal at half the usual rate whilst [[img:UI/skins/default/modifier_icon_flaming.png]][[/img]] 'on fire’ and sustain additional damage if vulnerable to fire. \\n It also adds a [[img:ui/skins/default/weapon_building_damage_modifier.png]][[/img]] [[col:green]]+50%[[/col]] damage multiplier against buildings."
+      },
+      "icon": null,
+      "has_icon": false,
+      "icon_missing_reason": "ui_unit_bullet_point_enums.icon_path 为空，图标由兵牌 layout 现画，没有可导出的 PNG 资产",
+      "referenced_by": [
+        "units/shiokaze-hand-cannons.json"
+      ]
+    },
     "flanking_immune": {
       "kind": "unit_attribute",
       "source": "vanilla",
@@ -17622,6 +17647,7 @@
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
         "units/shiokaze-armed-company.json",
+        "units/shiokaze-hand-cannons.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
@@ -23426,6 +23452,54 @@
       },
       "referenced_by": [
         "units/tamed-cold-ones.json"
+      ]
+    },
+    "wh3_dlc25_unit_abilities_full_power": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc25",
+      "ability_type": "active",
+      "name": {
+        "zh": "全力全开！",
+        "en": "Full Power!"
+      },
+      "desc": {
+        "zh": "『把所有的动力都投入引擎——时间紧迫！』",
+        "en": "\"All power to the engines – time is of the essence!\""
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc25_unit_abilities_full_power.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/shiokaze-land-ship.json"
+      ]
+    },
+    "wh3_dlc25_unit_passive_abandon_ship": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc25",
+      "ability_type": "passive",
+      "name": {
+        "zh": "弃船！",
+        "en": "Abandon Ship!"
+      },
+      "desc": {
+        "zh": "陆行船的发动机无疑是技术上的奇迹，但众所周知，它们高度易燃…",
+        "en": "While the Land Ship's engines are undoubtedly marvels of technology, they're also known to be highly combustible…"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc25_unit_passive_abandon_ship.png",
+        "size": "38x38",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "units/shiokaze-land-ship.json"
       ]
     },
     "wh3_dlc27_character_abilities_envelop_in_mist_bound": {
@@ -33374,7 +33448,8 @@
       "referenced_by": [
         "units/leviathan.json",
         "units/misaki-crow.json",
-        "units/pelagic-wyrm.json"
+        "units/pelagic-wyrm.json",
+        "units/shiokaze-land-ship.json"
       ]
     },
     "wh_dlc05_lore_passive_life_bloom": {

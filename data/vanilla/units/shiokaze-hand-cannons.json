@@ -1,0 +1,65 @@
+{
+  "unit": "cth_npex_shiokaze_flamethrower",
+  "name_cn": "潮風武装団（手炮）",
+  "slug": "shiokaze-hand-cannons",
+  "doc": "_docs/data/units/潮風武装団（手炮）兵种设计.md",
+  "abilities": [
+    {
+      "ref": "cth_npex_unit_passive_shiokaze_maneuver",
+      "source": "npex"
+    }
+  ],
+  "attributes_from_db": [
+    {
+      "ref": "hide_forest"
+    }
+  ],
+  "traits_from_doc": [
+    {
+      "doc_name": "火焰攻击",
+      "ref": "flaming_attacks",
+      "section": "特性"
+    },
+    {
+      "doc_name": "压制领导力",
+      "ref": null,
+      "note": "文档里的写法在原版 loc 里查不到唯一对应，多半是本 mod 自己的说法或派生说明"
+    },
+    {
+      "doc_name": "于森林中隐蔽",
+      "ref": "hide_forest",
+      "section": "部队属性"
+    },
+    {
+      "doc_name": "水生一族",
+      "ref": "aquatic",
+      "section": "部队属性"
+    }
+  ],
+  "stats_from_db": {
+    "recruit_cost": 700,
+    "upkeep_cost": 175,
+    "num_men": 28,
+    "melee_attack": 24,
+    "melee_defence": 27,
+    "charge_bonus": 8,
+    "leadership": 76,
+    "armour": 75,
+    "hp": 120,
+    "bonus_hp": 112,
+    "speed": 36,
+    "melee_damage": [
+      17,
+      3
+    ],
+    "melee_interval": 4.2,
+    "missile_damage": [
+      8,
+      4
+    ],
+    "range": 80,
+    "ammo": 100,
+    "reload": 9,
+    "resist_flame": 30
+  }
+}

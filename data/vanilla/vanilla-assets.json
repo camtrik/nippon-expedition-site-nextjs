@@ -17256,6 +17256,28 @@
         "skills/shen-changfeng.json"
       ]
     },
+    "cth_npex_unit_passive_shiokaze_maneuver": {
+      "kind": "unit_ability",
+      "source": "npex",
+      "pack": null,
+      "ability_type": "passive",
+      "name": {
+        "zh": "乘风掠阵",
+        "en": "Windward Maneuver"
+      },
+      "desc": {
+        "zh": "海上接舷讲究抢风位。到了陆上，商社的人也习惯沿着战线前进，从火力最薄的地方穿过去。",
+        "en": "Boarding at sea means taking the windward position. On land, the Company's escorts follow the battle line and slip through wherever the fire is thinnest."
+      },
+      "icon": {
+        "source": "npex",
+        "file": "icons/npex/cth_npex_unit_passive_shiokaze_maneuver.png",
+        "size": "38x38"
+      },
+      "referenced_by": [
+        "units/shiofu-armed-company.json"
+      ]
+    },
     "cth_npex_unit_passive_solar_revelation": {
       "kind": "unit_ability",
       "source": "npex",
@@ -17599,6 +17621,7 @@
         "units/jinjing-riders.json",
         "units/kunikuzushi-oni.json",
         "units/matchlock-ashigaru.json",
+        "units/shiofu-armed-company.json",
         "units/tamed-cold-ones.json",
         "units/teppo-samurai.json",
         "units/tide-guard.json",
@@ -17688,7 +17711,8 @@
         "from": "game ui pack"
       },
       "referenced_by": [
-        "units/akatsuki-shu-bow.json"
+        "units/akatsuki-shu-bow.json",
+        "units/shiofu-armed-company.json"
       ]
     },
     "shielded": {

@@ -883,6 +883,20 @@
         "en": "Shen Changfeng is the most renowned admiral of the Eastern Provinces. When Nipponese pirates renewed their raids on Cathay after Yin-Yin's disappearance, she led her fleet in pursuit across the border and deep into Nippon's waters. Her victory was total, yet in the course of it she also sank several of Nippon's official warships. News of her triumph reached the Celestial Court on the same day as Nippon's protest. With Yin-Yin gone, her opponents at court seized their opportunity: war pressed hard upon the Great Bastion in the north, they argued, and this was no time to provoke Nippon. A writ of censure followed, demanding that she surrender her command and return to the capital. Shen did not obey. Taking every warrior willing to follow her, she put to sea and set a course straight for Nippon."
       }
     },
+    "cth_npex_shiokaze": {
+      "name": {
+        "zh": "潮風武装団",
+        "en": "Shiofu Armed Company"
+      },
+      "desc": {
+        "zh": "潮風商社的武装护卫，配单刀与短铳。枪声沿着阵线一路响过去，等敌人转过身来，他们已经拔刀杀到。",
+        "en": "The Shiofu Company's armed escorts carry swords and pistols. Gunfire ripples down the line, and by the time the enemy turns to face it, the escorts are already upon them with blades drawn."
+      },
+      "story": {
+        "zh": "潮風商社的船过了外洋，能倚仗的只有船员自己。琉華教护卫把甲板上的打法带到陆上。遇到敌人就分队错开，边走边打，趁对方转身应付枪声时拔刀冲上去。在日升之塔外海，这些护卫护过货船，也跟着社长登过敌船。如今商社的旗帜一到岸上，最先踏过跳板的仍是他们。",
+        "en": "In distant waters, the Shiofu Company's ships could count only on their crews. Ryuka taught her escorts to bring their deck tactics ashore. They advance in staggered bands, firing on the move, then charge with swords drawn as the enemy turns toward the gunfire. Off the Tower of the Rising Sun they guarded merchantmen and boarded hostile ships at their captain's side. They are still the first down the gangplank whenever the Company's colours reach shore."
+      }
+    },
     "cth_npex_tamed_cold_one_0": {
       "name": {
         "zh": "归驯冷蜥",

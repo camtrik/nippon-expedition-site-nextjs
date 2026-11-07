@@ -1,8 +1,8 @@
 {
   "unit": "cth_npex_shiokaze_flamethrower",
-  "name_cn": "潮風武装団（手炮）",
+  "name_cn": "潮風武装団（喷火枪）",
   "slug": "shiokaze-hand-cannons",
-  "doc": "_docs/data/units/潮風武装団（手炮）兵种设计.md",
+  "doc": "_docs/data/units/潮風武装団（喷火枪）兵种设计.md",
   "abilities": [
     {
       "ref": "cth_npex_unit_passive_shiokaze_maneuver",

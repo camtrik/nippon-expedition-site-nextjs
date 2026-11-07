@@ -1,8 +1,8 @@
 {
   "unit": "cth_npex_shiokaze_land_ship",
-  "name_cn": "潮風武装団（陆行船）",
+  "name_cn": "潮風陆行船",
   "slug": "shiokaze-land-ship",
-  "doc": "_docs/data/units/潮風武装団（陆行船）兵种设计.md",
+  "doc": "_docs/data/units/潮風陆行船兵种设计.md",
   "abilities": [
     {
       "ref": "cth_npex_unit_passive_shiokaze_maneuver",

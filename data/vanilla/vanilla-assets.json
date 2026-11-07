@@ -10211,6 +10211,29 @@
         },
         {
           "level": 1,
+          "effect": "wh_main_effect_character_stat_missile_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 10.0,
+          "text": {
+            "zh": "远程威力：+10%",
+            "en": "Missile strength: +10%"
+          },
+          "template": {
+            "zh": "远程威力：%+n%",
+            "en": "Missile strength: %+n%"
+          },
+          "priority": 240,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/ranged_damage_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "cth_npex_effect_ryuka_guns_damage",
           "effect_source": "npex",
           "scope": "general_to_force_own",
@@ -10422,6 +10445,29 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/attribute_immune_to_psychology.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_ap_missile_damage",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 30.0,
+          "text": {
+            "zh": "远程破甲杀伤：+30%",
+            "en": "Armour-piercing missile damage: +30%"
+          },
+          "template": {
+            "zh": "远程破甲杀伤：%+n%",
+            "en": "Armour-piercing missile damage: %+n%"
+          },
+          "priority": 250,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/armour_piercing_character.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"

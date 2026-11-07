@@ -889,40 +889,40 @@
         "en": "Shiokaze Armed Company"
       },
       "desc": {
-        "zh": "潮風商社的武装护卫，配单刀与短铳。枪声沿着阵线一路响过去，等敌人转过身来，他们已经拔刀杀到。",
-        "en": "The Shiokaze Company's armed escorts carry swords and pistols. Gunfire ripples down the line, and by the time the enemy turns to face it, the escorts are already upon them with blades drawn."
+        "zh": "跟随琉華远渡重洋的志士与海外追随者。他们既是商社的远洋水手，亦是开创新时代的武装先驱。",
+        "en": "Idealists and overseas followers who crossed the oceans with Ryuka. They are both the Trading Company's ocean-going sailors and armed pioneers of a new era."
       },
       "story": {
-        "zh": "潮風商社的船过了外洋，能倚仗的只有船员自己。琉華教护卫把甲板上的打法带到陆上。遇到敌人就分队错开，边走边打，趁对方转身应付枪声时拔刀冲上去。在日升之塔外海，这些护卫护过货船，也跟着社长登过敌船。如今商社的旗帜一到岸上，最先踏过跳板的仍是他们。",
-        "en": "In distant waters, the Shiokaze Company's ships could count only on their crews. Ryuka taught her escorts to bring their deck tactics ashore. They advance in staggered bands, firing on the move, then charge with swords drawn as the enemy turns toward the gunfire. Off the Tower of the Rising Sun they guarded merchantmen and boarded hostile ships at their captain's side. They are still the first down the gangplank whenever the Company's colours reach shore."
+        "zh": "潮風武装团中既有冒死追随琉華，远渡重洋的志士，也有琉華在海外开拓商路时，被其胆识与手腕折服而自愿入伙的旧世界水手。他们不仅掌握了远洋航海术与新式火器，也真正见识到了故土之外的广阔大洋。对他们而言，护卫商社既是立身之所，也是积聚力量的漫长积累。而终有一日，他们将追随社长归来，亲手敲开那座紧闭已久的国门。",
+        "en": "The Shiokaze Armed Company includes idealists who risked their lives to follow Ryuka across the open sea, and sailors from the Old World who joined of their own accord after being impressed by her courage and skill as she opened trade routes abroad. They have mastered ocean-going navigation and new firearms, and have seen the vast ocean beyond their homeland. To them, escorting the Trading Company is both a means of making their way in the world and a long effort to build strength. One day, they will follow their president home and personally knock open the gates of a country long shut away."
       }
     },
     "cth_npex_shiokaze_flamethrower": {
       "name": {
-        "zh": "潮風武装団（手炮）",
-        "en": "Shiokaze Armed Company (Hand Cannons)"
+        "zh": "潮風武装団（喷火枪）",
+        "en": "Shiokaze Armed Company (Flamethrowers)"
       },
       "desc": {
-        "zh": "潮風商社的喷火兵跟在刀铳队后面，逼到敌阵跟前才点火。火束贴着地面卷过去，挤在一起的步兵转眼就会散开。",
-        "en": "The Shiokaze Trading Company's flamethrowers follow the sword-and-pistol troops and light their guns only when they are close to the enemy line. The flames sweep low across the ground and scatter packed infantry in moments."
+        "zh": "配备重型喷火枪的武装团战士。他们的武器由旧世界矮人的精湛工艺改制而来。",
+        "en": "Armed Company warriors equipped with heavy flamethrowers, adapted from the finely crafted weapons of the Dwarfs of the Old World."
       },
       "story": {
-        "zh": "护航的船员都知道，一场火能在几个呼吸间烧断帆索，也能让一整条船的人丢掉斗志。潮風商社把这种本事带上了岸。喷火兵总让刀铳队先开路，等同伴让出射界，再架稳枪身打开阀门。风里带上焦油味时，走在前面的人就知道该往两侧散开了。",
-        "en": "Every escort sailor knows that a fire can burn through the rigging in a few breaths and break the spirit of an entire crew. The Shiokaze Trading Company brought that lesson ashore. The sword-and-pistol troops clear the way, then give the flamethrowers room to brace their guns and open the valves. When the wind starts to smell of tar, the troops in front know to peel off to either side."
+        "zh": "潮風武装团中既有冒死追随琉華，远渡重洋的志士，也有琉華在海外开拓商路时，被其胆识与手腕折服而自愿入伙的旧世界水手。他们不仅掌握了远洋航海术与新式火器，也真正见识到了故土之外的广阔大洋。对他们而言，护卫商社既是立身之所，也是积聚力量的漫长积累。而终有一日，他们将追随社长归来，亲手敲开那座紧闭已久的国门。",
+        "en": "The Shiokaze Armed Company includes idealists who risked their lives to follow Ryuka across the open sea, and sailors from the Old World who joined of their own accord after being impressed by her courage and skill as she opened trade routes abroad. They have mastered ocean-going navigation and new firearms, and have seen the vast ocean beyond their homeland. To them, escorting the Trading Company is both a means of making their way in the world and a long effort to build strength. One day, they will follow their president home and personally knock open the gates of a country long shut away."
       }
     },
     "cth_npex_shiokaze_land_ship": {
       "name": {
-        "zh": "潮風武装団（陆行船）",
-        "en": "Shiokaze Armed Company (Land Ship)"
+        "zh": "潮風陆行船",
+        "en": "Shiokaze Land Ship"
       },
       "desc": {
-        "zh": "潮風商社的陆行船带着船首炮与满甲板的铳手驶上陆地。炮手瞄准前路，甲板船员从两舷开火，给跟进的武装团扫开道路。",
-        "en": "The Shiokaze Company's land ship comes ashore with a bow cannon and a deck full of gunners. The gun crew takes aim ahead while the deckhands fire from both sides, clearing the way for the armed company behind them."
+        "zh": "潮風商社将购自帝国的陆行船进行了改装，并让乘载的士兵装备了更为致命的火器。",
+        "en": "The Shiokaze Trading Company refitted land ships purchased from the Empire and equipped their crews with deadlier firearms."
       },
       "story": {
-        "zh": "商社的船员惯于听风辨向，接手这艘陆行船后，又学会了听轮轴和锅炉的声响。开战时，炮手先用船首炮轰开道路，甲板上的铳手分守两舷。等船长一声令下，蒸汽压过人声，整艘船便带着铁轮碾过浅滩。",
-        "en": "The Company's sailors could tell their heading by the sound of the wind. Once they took charge of the land ship, they learned to listen to the axles and boiler too. In battle the bow cannon blasts a path while gunners take up positions along both sides of the deck. At the captain's command, the roar of steam drowns out their voices and the ship's iron wheels churn through the shallows."
+        "zh": "陆行船本是旧世界玛丽恩堡商董们斥资打造的蒸汽坦克替代方案，后被帝国军队量产。潮風商社曾花费大量东方珍宝购入了少量陆行船和设计图纸。那些帝国人或许从没想过那时还名不见经传的尼朋人真的能再次造出陆行船——但无论如何，她们做到了。配合从群山王国获得的喷火器械，潮風陆行船将是比原版更为暴力的战争机器。",
+        "en": "Land ships were first devised at great expense by Marienburg's merchant princes as an alternative to steam tanks, before the Imperial army began producing them in quantity. The Shiokaze Trading Company once spent great treasures from the East to acquire a small number of land ships and their blueprints. Those Imperials may never have imagined that the then little-known Nipponese would build land ships again—but they did. Fitted with flamethrowers acquired from the Dwarf realms, the Shiokaze Land Ship will be an even more brutal war machine than the original."
       }
     },
     "cth_npex_tamed_cold_one_0": {

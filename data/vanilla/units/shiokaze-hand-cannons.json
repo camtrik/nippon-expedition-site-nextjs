@@ -37,8 +37,8 @@
     }
   ],
   "stats_from_db": {
-    "recruit_cost": 700,
-    "upkeep_cost": 175,
+    "recruit_cost": 900,
+    "upkeep_cost": 225,
     "num_men": 28,
     "melee_attack": 24,
     "melee_defence": 27,

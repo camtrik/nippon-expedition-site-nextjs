@@ -36619,6 +36619,34 @@
       "referenced_by": [
         "skills/serena.json"
       ]
+    },
+    "cth_npex_skill_ryuka_mount_landship": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "潮風陆行船",
+        "en": "Shiokaze Land Ship"
+      },
+      "desc": {
+        "zh": "琉華登上桅杆顶的瞭望台，以手枪协同船上火炮与船员作战。",
+        "en": "Ryuka takes her place in the crow's nest, firing her pistol alongside the ship's cannon and crew."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_steam_tank.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "14",
+      "level_ranks": {
+        "1": 14
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
     }
   }
 }

@@ -9722,6 +9722,34 @@
       ],
       "effects": []
     },
+    "cth_npex_skill_ryuka_mount_crab": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "魔蟹",
+        "en": "Promethean"
+      },
+      "desc": {
+        "zh": "深海中的魔蟹大多凶猛异常，但有少部分也愿意亲近其他生物。",
+        "en": "Most deep-sea Prometheans are exceptionally ferocious, though a rare few are willing to befriend other creatures."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_promethean.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "5",
+      "level_ranks": {
+        "1": 5
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
     "cth_npex_skill_ryuka_trait": {
       "kind": "character_skill",
       "source": "npex",
@@ -23988,223 +24016,6 @@
         "wh3_dlc27_spell_mists_mathlanns_spite"
       ]
     },
-    "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "拉德莉莉之麾",
-        "en": "Ladrielle's Shroud",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
-        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『拉德莉莉之麾』",
-            "en": "Spell: \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "法术：『拉德莉莉之麾』",
-            "en": "Spell: \"Ladrielle's Shroud\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『拉德莉莉之麾』-30%",
-            "en": "Cooldown: -30% for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
-            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『拉德莉莉之麾』-50%",
-            "en": "Cooldown: -50% for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
-            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -1.0,
-          "text": {
-            "zh": "魔法之风耗费：『拉德莉莉之麾』-1",
-            "en": "Winds of Magic cost: -1 for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『拉德莉莉之麾』%n",
-            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级拉德莉莉之麾』-2",
-            "en": "Winds of Magic cost: -2 for \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级拉德莉莉之麾』%n",
-            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_miscast_ladrielles_shroud_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级拉德莉莉之麾』-15%",
-            "en": "Miscast base chance: -15% for \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级拉德莉莉之麾』%+n%",
-            "en": "Miscast base chance: %+n% for \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_ladrielles_shroud"
-      ]
-    },
     "wh3_dlc27_skill_all_magic_mists_03_lore_attribute": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -24259,223 +24070,6 @@
       ],
       "unlocks_abilities": [
         "wh3_dlc27_lore_passive_obscuring_mists"
-      ]
-    },
-    "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "寰宇步虚",
-        "en": "Walk Between Worlds",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
-        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_walk_between_worlds.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『寰宇步虚』",
-            "en": "Spell: \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "法术：『寰宇步虚』",
-            "en": "Spell: \"Walk Between Worlds\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『寰宇步虚』-30%",
-            "en": "Cooldown: -30% for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "冷却速率：『寰宇步虚』%+n%",
-            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『寰宇步虚』-50%",
-            "en": "Cooldown: -50% for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "冷却速率：『寰宇步虚』%+n%",
-            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『寰宇步虚』-2",
-            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『寰宇步虚』%n",
-            "en": "Winds of Magic cost: %n for \"Walk Between Worlds\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级寰宇步虚』-2",
-            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级寰宇步虚』%n",
-            "en": "Winds of Magic cost: %n for \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_miscast_walk_between_worlds_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级寰宇步虚』-15%",
-            "en": "Miscast base chance: -15% for \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级寰宇步虚』%+n%",
-            "en": "Miscast base chance: %+n% for \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_walk_between_worlds"
       ]
     },
     "wh3_dlc27_skill_all_magic_mists_05_flensing_haar": {
@@ -24693,131 +24287,6 @@
       ],
       "unlocks_abilities": [
         "wh3_dlc27_spell_mists_flensing_haar"
-      ]
-    },
-    "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "深海情人",
-        "en": "Mistress of the Deeps",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
-        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『深渊女主』-30%",
-            "en": "Cooldown: -30% for \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "冷却速率：『深渊女主』%+n%",
-            "en": "Cooldown: %+n% for \"Mistress of the Deeps\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『深渊女主』-2",
-            "en": "Winds of Magic cost: -2 for \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『深渊女主』%n",
-            "en": "Winds of Magic cost: %n for \"Mistress of the Deeps\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_mistress_of_the_deeps"
       ]
     },
     "wh3_dlc27_skill_all_magic_mists_07_the_writhing_mist": {
@@ -25513,30 +24982,6 @@
         "skills/serena.json"
       ]
     },
-    "wh3_dlc27_spell_mists_ladrielles_shroud": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "拉德莉莉之麾",
-        "en": "Ladrielle's Shroud"
-      },
-      "desc": {
-        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
-        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
     "wh3_dlc27_spell_mists_mathlanns_spite": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -25561,30 +25006,6 @@
         "skills/serena.json"
       ]
     },
-    "wh3_dlc27_spell_mists_mistress_of_the_deeps": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "深海情人",
-        "en": "Mistress of the Deeps"
-      },
-      "desc": {
-        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
-        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
     "wh3_dlc27_spell_mists_the_writhing_mist": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -25601,30 +25022,6 @@
       "icon": {
         "source": "vanilla",
         "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_the_writhing_mist.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
-    "wh3_dlc27_spell_mists_walk_between_worlds": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "寰宇步虚",
-        "en": "Walk Between Worlds"
-      },
-      "desc": {
-        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
-        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_walk_between_worlds.png",
         "size": "59x59",
         "origin": "ui/battle ui/ability_icons",
         "from": "game ui pack"
@@ -36590,6 +35987,637 @@
         "units/abyssal-grand-cannon.json",
         "units/jade-sea-fleet-gunners.json",
         "units/tide-guard.json"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "拉德莉莉之麾",
+        "en": "Ladrielle's Shroud",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
+        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_ability_enable_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『拉德莉莉之麾』",
+            "en": "Spell: \"Ladrielle's Shroud\""
+          },
+          "template": {
+            "zh": "法术：『拉德莉莉之麾』",
+            "en": "Spell: \"Ladrielle's Shroud\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级拉德莉莉之麾』",
+            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级拉德莉莉之麾』",
+            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『拉德莉莉之麾』-30%",
+            "en": "Cooldown: -30% for \"Ladrielle's Shroud\""
+          },
+          "template": {
+            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
+            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级拉德莉莉之麾』",
+            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级拉德莉莉之麾』",
+            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『拉德莉莉之麾』-50%",
+            "en": "Cooldown: -50% for \"Ladrielle's Shroud\""
+          },
+          "template": {
+            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
+            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -1.0,
+          "text": {
+            "zh": "魔法之风耗费：『拉德莉莉之麾』-1",
+            "en": "Winds of Magic cost: -1 for \"Ladrielle's Shroud\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『拉德莉莉之麾』%n",
+            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级拉德莉莉之麾』-2",
+            "en": "Winds of Magic cost: -2 for \"Ladrielle's Shroud Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级拉德莉莉之麾』%n",
+            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_miscast_ladrielles_shroud_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级拉德莉莉之麾』-15%",
+            "en": "Miscast base chance: -15% for \"Ladrielle's Shroud Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级拉德莉莉之麾』%+n%",
+            "en": "Miscast base chance: %+n% for \"Ladrielle's Shroud Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_dlc27_spell_mists_ladrielles_shroud"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "寰宇步虚",
+        "en": "Walk Between Worlds",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
+        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_walk_between_worlds.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_ability_enable_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『寰宇步虚』",
+            "en": "Spell: \"Walk Between Worlds\""
+          },
+          "template": {
+            "zh": "法术：『寰宇步虚』",
+            "en": "Spell: \"Walk Between Worlds\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级寰宇步虚』",
+            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级寰宇步虚』",
+            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『寰宇步虚』-30%",
+            "en": "Cooldown: -30% for \"Walk Between Worlds\""
+          },
+          "template": {
+            "zh": "冷却速率：『寰宇步虚』%+n%",
+            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级寰宇步虚』",
+            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级寰宇步虚』",
+            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『寰宇步虚』-50%",
+            "en": "Cooldown: -50% for \"Walk Between Worlds\""
+          },
+          "template": {
+            "zh": "冷却速率：『寰宇步虚』%+n%",
+            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『寰宇步虚』-2",
+            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『寰宇步虚』%n",
+            "en": "Winds of Magic cost: %n for \"Walk Between Worlds\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级寰宇步虚』-2",
+            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级寰宇步虚』%n",
+            "en": "Winds of Magic cost: %n for \"Walk Between Worlds Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh3_dlc27_effect_ability_miscast_walk_between_worlds_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级寰宇步虚』-15%",
+            "en": "Miscast base chance: -15% for \"Walk Between Worlds Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级寰宇步虚』%+n%",
+            "en": "Miscast base chance: %+n% for \"Walk Between Worlds Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_dlc27_spell_mists_walk_between_worlds"
+      ]
+    },
+    "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "name": {
+        "zh": "深海情人",
+        "en": "Mistress of the Deeps",
+        "_via_tr": true
+      },
+      "desc": {
+        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
+        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them.",
+        "_via_tr": true
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『深渊女主』",
+            "en": "Spell: \"Mistress of the Deeps\""
+          },
+          "template": {
+            "zh": "法术：『深渊女主』",
+            "en": "Spell: \"Mistress of the Deeps\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『深渊女主』",
+            "en": "Spell: \"Mistress of the Deeps\""
+          },
+          "template": {
+            "zh": "法术：『深渊女主』",
+            "en": "Spell: \"Mistress of the Deeps\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_cooldown_mistress_of_the_deeps",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『深渊女主』-30%",
+            "en": "Cooldown: -30% for \"Mistress of the Deeps\""
+          },
+          "template": {
+            "zh": "冷却速率：『深渊女主』%+n%",
+            "en": "Cooldown: %+n% for \"Mistress of the Deeps\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh3_dlc27_effect_ability_wom_cost_mistress_of_the_deeps",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『深渊女主』-2",
+            "en": "Winds of Magic cost: -2 for \"Mistress of the Deeps\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『深渊女主』%n",
+            "en": "Winds of Magic cost: %n for \"Mistress of the Deeps\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh3_dlc27_spell_mists_mistress_of_the_deeps"
+      ]
+    },
+    "wh3_dlc27_spell_mists_ladrielles_shroud": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "ability_type": "spell",
+      "name": {
+        "zh": "拉德莉莉之麾",
+        "en": "Ladrielle's Shroud"
+      },
+      "desc": {
+        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
+        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_spell_mists_mistress_of_the_deeps": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "ability_type": "spell",
+      "name": {
+        "zh": "深海情人",
+        "en": "Mistress of the Deeps"
+      },
+      "desc": {
+        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
+        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh3_dlc27_spell_mists_walk_between_worlds": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh3_dlc27",
+      "ability_type": "spell",
+      "name": {
+        "zh": "寰宇步虚",
+        "en": "Walk Between Worlds"
+      },
+      "desc": {
+        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
+        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_walk_between_worlds.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
       ]
     }
   }

@@ -5,7 +5,7 @@
   "set_key": "cth_npex_skill_node_set_ryuka",
   "agent_type": "general",
   "agent_subtype": "cth_npex_ryuka",
-  "node_count": 52,
+  "node_count": 53,
   "vanilla_skill_count": 43,
   "nodes": [
     {
@@ -373,6 +373,17 @@
           "link_type": "REQUIRED"
         }
       ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_mount_crab",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_mount_crab",
+      "tier": 5,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
     },
     {
       "node": "cth_npex_skill_node_ryuka_unique_5",

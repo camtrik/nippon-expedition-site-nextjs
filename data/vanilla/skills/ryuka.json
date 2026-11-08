@@ -9,6 +9,17 @@
   "vanilla_skill_count": 43,
   "nodes": [
     {
+      "node": "cth_npex_skill_node_ryuka_mount_crab",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_mount_crab",
+      "tier": 0,
+      "indent": 0,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": true,
+      "parents": []
+    },
+    {
       "node": "cth_npex_skill_node_ryuka_unique_0",
       "node_source": "npex",
       "skill": "cth_npex_skill_ryuka_unique_0",
@@ -375,17 +386,6 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_mount_crab",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_mount_crab",
-      "tier": 5,
-      "indent": 0,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
       "node": "cth_npex_skill_node_ryuka_unique_5",
       "node_source": "npex",
       "skill": "cth_npex_skill_ryuka_unique_5",
@@ -486,17 +486,6 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_item_6",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_item_6",
-      "tier": 6,
-      "indent": 0,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
       "node": "cth_npex_skill_node_ryuka_combat_06",
       "node_source": "npex",
       "skill": "wh2_dlc11_skill_all_lord_self_wound-maker",
@@ -543,6 +532,17 @@
           "link_type": "REQUIRED"
         }
       ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_item_6",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_item_6",
+      "tier": 6,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
     },
     {
       "node": "cth_npex_skill_node_ryuka_combat_07",
@@ -613,17 +613,6 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_item_8",
-      "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_item_8",
-      "tier": 8,
-      "indent": 0,
-      "points_on_creation": "0",
-      "required_num_parents": "0",
-      "visible_in_ui": true,
-      "parents": []
-    },
-    {
       "node": "cth_npex_skill_node_ryuka_combat_08",
       "node_source": "npex",
       "skill": "wh2_dlc11_skill_all_lord_self_self_indomitable",
@@ -670,6 +659,17 @@
           "link_type": "REQUIRED"
         }
       ]
+    },
+    {
+      "node": "cth_npex_skill_node_ryuka_item_8",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_ryuka_item_8",
+      "tier": 8,
+      "indent": 99,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
+      "parents": []
     },
     {
       "node": "cth_npex_skill_node_ryuka_combat_09",

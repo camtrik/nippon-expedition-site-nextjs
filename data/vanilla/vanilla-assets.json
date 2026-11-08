@@ -36633,11 +36633,9 @@
         "en": "Ryuka takes her place in the crow's nest, firing her pistol alongside the ship's cannon and crew."
       },
       "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/mount_steam_tank.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
+        "source": "npex",
+        "file": "icons/npex/cth_npex_mount_landship.png",
+        "size": "72x72"
       },
       "unlocked_at_rank": "14",
       "level_ranks": {

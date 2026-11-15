@@ -127,20 +127,24 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队-10%（领主军队）",
-                  "en": "Upkeep: -10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                  "zh": "维持费：潮風武装团、火器与炮兵部队-10%（领主军队）",
+                  "en": "Upkeep: -10% for Shiokaze Armed Company, gunpowder and artillery units (Lord's army)"
                 },
                 {
-                  "zh": "远程威力：+10%",
-                  "en": "Missile strength: +10%"
+                  "zh": "远程破甲杀伤：+20%（领主）",
+                  "en": "Armour-piercing missile damage: +20% (Lord)"
                 },
                 {
-                  "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%（领主军队）",
-                  "en": "Missile strength: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                  "zh": "装弹时间降低：+10%（领主）",
+                  "en": "Reload time reduction: +10% (Lord)"
                 },
                 {
-                  "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%（领主军队）",
-                  "en": "Reload time reduction: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                  "zh": "远程威力：潮風武装团、火器与炮兵部队+10%（领主军队）",
+                  "en": "Missile strength: +10% for Shiokaze Armed Company, gunpowder and artillery units (Lord's army)"
+                },
+                {
+                  "zh": "装弹时间降低：潮風武装团、火器与炮兵部队+10%（领主军队）",
+                  "en": "Reload time reduction: +10% for Shiokaze Armed Company, gunpowder and artillery units (Lord's army)"
                 }
               ]
             }
@@ -213,8 +217,8 @@
                   "en": "Attribute: Immune to Psychology (Lord's army)"
                 },
                 {
-                  "zh": "远程破甲杀伤：+30%",
-                  "en": "Armour-piercing missile damage: +30%"
+                  "zh": "远程破甲杀伤：+30%（领主）",
+                  "en": "Armour-piercing missile damage: +30% (Lord)"
                 }
               ]
             }

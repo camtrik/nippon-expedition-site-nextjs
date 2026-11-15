@@ -86,9 +86,9 @@
       "parents": []
     },
     {
-      "node": "cth_npex_skill_node_ryuka_magistrate_33",
+      "node": "cth_npex_skill_node_ryuka_mount_landship",
       "node_source": "npex",
-      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
+      "skill": "cth_npex_skill_ryuka_mount_landship",
       "tier": 1,
       "indent": 0,
       "points_on_creation": "0",
@@ -386,9 +386,9 @@
       ]
     },
     {
-      "node": "cth_npex_skill_node_ryuka_mount_landship",
+      "node": "cth_npex_skill_node_ryuka_magistrate_33",
       "node_source": "npex",
-      "skill": "cth_npex_skill_ryuka_mount_landship",
+      "skill": "wh3_main_skill_cth_all_self_will_of_the_dragons",
       "tier": 5,
       "indent": 0,
       "points_on_creation": "0",

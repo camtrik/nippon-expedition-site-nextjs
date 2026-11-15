@@ -10395,12 +10395,12 @@
           "scope": "general_to_force_own",
           "value": -10.0,
           "text": {
-            "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队-10%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Upkeep: -10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "维持费：潮風武装团、火器与炮兵部队-10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -10% for Shiokaze Armed Company, gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
-            "en": "Upkeep: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
+            "zh": "维持费：潮風武装团、火器与炮兵部队%+n%",
+            "en": "Upkeep: %+n% for Shiokaze Armed Company, gunpowder and artillery units"
           },
           "priority": 105,
           "icon": {
@@ -10413,22 +10413,45 @@
         },
         {
           "level": 1,
-          "effect": "wh_main_effect_character_stat_missile_damage",
+          "effect": "wh_main_effect_character_stat_ap_missile_damage",
           "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 10.0,
+          "scope": "character_to_army_general_own",
+          "value": 20.0,
           "text": {
-            "zh": "远程威力：+10%",
-            "en": "Missile strength: +10%"
+            "zh": "远程破甲杀伤：+20%\\n（[[img:icon_general]][[/img]]领主）",
+            "en": "Armour-piercing missile damage: +20%\\n([[img:icon_general]][[/img]]Lord)"
           },
           "template": {
-            "zh": "远程威力：%+n%",
-            "en": "Missile strength: %+n%"
+            "zh": "远程破甲杀伤：%+n%",
+            "en": "Armour-piercing missile damage: %+n%"
           },
-          "priority": 240,
+          "priority": 250,
           "icon": {
             "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/ranged_damage_character.png",
+            "file": "icons/campaign ui/effect_bundles/armour_piercing_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_character_stat_reload_time_reduction",
+          "effect_source": "vanilla",
+          "scope": "character_to_army_general_own",
+          "value": 10.0,
+          "text": {
+            "zh": "装弹时间降低：+10%\\n（[[img:icon_general]][[/img]]领主）",
+            "en": "Reload time reduction: +10%\\n([[img:icon_general]][[/img]]Lord)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%",
+            "en": "Reload time reduction: %+n%"
+          },
+          "priority": 260,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_character.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -10441,12 +10464,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Missile strength: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程威力：潮風武装团、火器与炮兵部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +10% for Shiokaze Armed Company, gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
-            "en": "Missile strength: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
+            "zh": "远程威力：潮風武装团、火器与炮兵部队%+n%",
+            "en": "Missile strength: %+n% for Shiokaze Armed Company, gunpowder and artillery units"
           },
           "priority": 541,
           "icon": {
@@ -10464,12 +10487,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload time reduction: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "装弹时间降低：潮風武装团、火器与炮兵部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +10% for Shiokaze Armed Company, gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
-            "en": "Reload time reduction: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
+            "zh": "装弹时间降低：潮風武装团、火器与炮兵部队%+n%",
+            "en": "Reload time reduction: %+n% for Shiokaze Armed Company, gunpowder and artillery units"
           },
           "priority": 561,
           "icon": {
@@ -10656,11 +10679,11 @@
           "level": 1,
           "effect": "wh_main_effect_character_stat_ap_missile_damage",
           "effect_source": "vanilla",
-          "scope": "character_to_character_own",
+          "scope": "character_to_army_general_own",
           "value": 30.0,
           "text": {
-            "zh": "远程破甲杀伤：+30%",
-            "en": "Armour-piercing missile damage: +30%"
+            "zh": "远程破甲杀伤：+30%\\n（[[img:icon_general]][[/img]]领主）",
+            "en": "Armour-piercing missile damage: +30%\\n([[img:icon_general]][[/img]]Lord)"
           },
           "template": {
             "zh": "远程破甲杀伤：%+n%",

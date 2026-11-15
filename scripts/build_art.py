@@ -85,9 +85,10 @@ CHARS = {
     "samurai-taisho-02": "samurai_daisho/samurai_taisho_02_full.png",
     "samurai-taisho-03": "samurai_daisho/samurai_taisho_03_full.png",
     "miko": "miko/miko_head1_full.png",
-    "fleet-admiral-01": "admiral/admiral_01_full.png",
-    "fleet-admiral-02": "admiral/admiral_02_full.png",
-    "fleet-admiral-03": "admiral/admiral_03_full.png",
+    # 10-30 已进游戏的三席对齐母版；admiral 根目录 *_full.png 仍是旧构图。
+    "fleet-admiral-01": "admiral/old/vanguard_portraits_codex_20261030/card_a2_aligned_full.png",
+    "fleet-admiral-02": "admiral/old/paoling_portraits_codex_20261030/old_card_aligned_full.png",
+    "fleet-admiral-03": "admiral/old/yuchao_portraits_codex_20261030/card_b_aligned_full.png",
 }
 
 # 同伴横幅：除瑟兰娜使用完成事件的 panel 扩展图外，统一使用各自第一章正本。

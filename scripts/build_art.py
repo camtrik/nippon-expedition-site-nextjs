@@ -16,6 +16,7 @@ mod 那边重画了兵牌 / 立绘之后重跑一次，产物入库。
     assets/chars/full/<key>.webp        人物页大图 640 宽，12:26，不撕边（同兵种页）
     assets/scenes/<slug>.jpg            同伴横幅 800×450
     assets/site/poster-1800.webp        背景故事页头图
+    assets/site/harbour-{1800,1100}.webp 首页封面，与游戏当前 loading 图同步
 
 撕边遮罩全站共用一张：取 design/source 快照里 tide_guard_full_torn_edge.png 的 alpha，
 按目标尺寸缩放——和 mod 仓库 tools/build_torn_edge.py 是同一张遮罩。mod 那边重画后
@@ -100,7 +101,8 @@ SCENES = {
     "ibuki": "ibuki/scenes/ibuki_quest_ch1_dawn_oath.png",
 }
 
-POSTER = "loading_posters/npex_loading_poster_v4_rain_backview_1920x1080.png"
+# 直接取现役 loading 运行图，避免概念图候选编号与实际游戏版本不一致。
+POSTER = "ui/loading_ui/load_images/cth_npex_jade_sea_fleet.png"
 
 
 def fit(im: Image.Image, size: tuple[int, int]) -> Image.Image:
@@ -161,9 +163,11 @@ def main() -> None:
 
     if "poster" in args.only:
         print("头图")
-        poster = Image.open(concepts / POSTER).convert("RGB")
+        poster = Image.open(args.mod / POSTER).convert("RGB")
         save_webp(poster.resize((1800, round(poster.height * 1800 / poster.width)), Image.LANCZOS),
                   ROOT / "assets/site/poster-1800.webp", 82)
+        for width in (1800, 1100):
+            save_webp(to_width(poster, width), ROOT / "assets/site" / f"harbour-{width}.webp", 82)
 
 
 if __name__ == "__main__":

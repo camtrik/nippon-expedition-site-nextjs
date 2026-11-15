@@ -20,8 +20,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁战场能力「舷侧齐射」",
-                  "en": "Unlocks the battlefield ability \"Broadside\""
+                  "zh": "技能：『舷侧齐射』",
+                  "en": "Ability: \"Broadside\""
                 }
               ]
             }
@@ -90,8 +90,8 @@
                   "en": "Melee defence: +4"
                 },
                 {
-                  "zh": "解锁战场能力「死士怒吼」",
-                  "en": "Enables battle ability: Death-Defying Roar"
+                  "zh": "技能：『死士怒吼』",
+                  "en": "Ability: \"Death-Defying Roar\""
                 }
               ]
             }
@@ -123,8 +123,8 @@
                   "en": "Campaign movement range: +10% (Lord's army)"
                 },
                 {
-                  "zh": "遭受公海与礁石损耗：-50%（领主军队）",
-                  "en": "High seas and reef attrition suffered: -50% (Lord's army)"
+                  "zh": "部队损耗：深海与暗礁部队损耗-50%（领主军队）",
+                  "en": "Attrition: -50% casualties suffered from high seas and reef attrition (Lord's army)"
                 }
               ]
             }
@@ -296,8 +296,8 @@
                   "en": "Enables sundering attacks"
                 },
                 {
-                  "zh": "解锁战场能力「横江」",
-                  "en": "Unlocks the battlefield ability \"River Sweep\""
+                  "zh": "技能：『横江』",
+                  "en": "Ability: \"River Sweep\""
                 }
               ]
             }
@@ -386,8 +386,8 @@
           "icon": "cth_npex_skill_admiral_ship_renown.png",
           "reuse": false,
           "unlock": {
-            "zh": "前置：赶路人",
-            "en": "Requires Route Marcher"
+            "zh": "角色等级 9 解锁 · 前置：赶路人",
+            "en": "Unlocks at rank 9 · Requires Route Marcher"
           },
           "hub": null
         }
@@ -449,8 +449,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁战场被动「踏浪惊涛」",
-                  "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+                  "zh": "被动技能：『踏浪惊涛』",
+                  "en": "Passive ability: \"Wake of Breaking Waves\""
                 }
               ]
             }

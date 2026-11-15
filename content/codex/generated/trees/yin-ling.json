@@ -20,8 +20,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "被动技能：怪兽爱好者",
-                  "en": "Passive ability: Monster Enthusiast"
+                  "zh": "被动技能：『怪兽爱好者』",
+                  "en": "Passive ability: \"Monster Enthusiast\""
                 },
                 {
                   "zh": "对抗大型部队加成：+15",
@@ -90,12 +90,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "新募等级：怪兽与战兽部队+2（领主军队）",
+                  "zh": "新募部队等级：怪兽与战兽部队+2（领主军队）",
                   "en": "Recruit rank: +2 for monsters and war beasts (Lord's army)"
                 },
                 {
-                  "zh": "主动技能：真龙天威",
-                  "en": "Active ability: Might of the True Dragon"
+                  "zh": "技能：『真龙天威』",
+                  "en": "Ability: \"Might of the True Dragon\""
                 }
               ]
             }
@@ -131,8 +131,8 @@
                   "en": "Replenishes 10% campaign movement range after winning a battle (Lord's army)"
                 },
                 {
-                  "zh": "怪兽与战兽部队获得先锋部署（领主军队）",
-                  "en": "Vanguard deployment for monsters and war beasts (Lord's army)"
+                  "zh": "解锁属性：为怪兽与战兽部队解锁先锋部署技能（领主军队）",
+                  "en": "Attribute: Vanguard Deployment for monsters and war beasts (Lord's army)"
                 }
               ]
             }
@@ -164,12 +164,12 @@
                   "en": "Vigour loss: -15% for monsters and war beasts (Lord's army)"
                 },
                 {
-                  "zh": "速度：怪兽与战兽部队+10%（领主军队）",
+                  "zh": "移动速度：怪兽与战兽部队+10%（领主军队）",
                   "en": "Speed: +10% for monsters and war beasts (Lord's army)"
                 },
                 {
-                  "zh": "怪兽与战兽部队获得漫游者（领主军队）",
-                  "en": "Strider for monsters and war beasts (Lord's army)"
+                  "zh": "解锁属性：为怪兽与战兽部队解锁地形适性技能（领主军队）",
+                  "en": "Attribute: Strider for monsters and war beasts (Lord's army)"
                 }
               ]
             }
@@ -205,8 +205,8 @@
                   "en": "Weapon strength: +10% for Pelagic Wyrms and Rotting Leviathans (Lord's army)"
                 },
                 {
-                  "zh": "怪兽与战兽部队获得狂暴（领主军队）",
-                  "en": "Frenzy for monsters and war beasts (Lord's army)"
+                  "zh": "被动技能：怪兽与战兽部队获得『狂暴』（领主军队）",
+                  "en": "Passive ability: \"Frenzy\" for monsters and war beasts (Lord's army)"
                 }
               ]
             }

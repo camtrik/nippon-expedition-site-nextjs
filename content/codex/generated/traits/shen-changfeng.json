@@ -28,15 +28,15 @@
               "en": "Campaign movement range: +10% whilst at sea"
             },
             {
-              "zh": "维持费：-15%（舰队兵种）（领主军队）",
+              "zh": "维持费：舰队兵种-15%（领主军队）",
               "en": "Upkeep: -15% for fleet units (Lord's army)"
             },
             {
-              "zh": "武器威力：+10%（潮汐禁卫、云霄禁卫）（领主军队）",
+              "zh": "武器威力：潮汐禁卫与云霄禁卫部队+10%（领主军队）",
               "en": "Weapon strength: +10% for Tide Guard and Empyrean Guard (Lord's army)"
             },
             {
-              "zh": "远程威力：+10%（潮汐禁卫）（领主军队）",
+              "zh": "远程威力：潮汐禁卫部队+10%（领主军队）",
               "en": "Missile strength: +10% for Tide Guard (Lord's army)"
             }
           ]

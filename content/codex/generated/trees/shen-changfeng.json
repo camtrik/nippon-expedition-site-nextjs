@@ -28,8 +28,8 @@
                   "en": "Melee defence: +6"
                 },
                 {
-                  "zh": "解锁战场能力「玉海剑舞」",
-                  "en": "Unlocks the battlefield ability \"Jade Blade Dance\""
+                  "zh": "技能：『玉海剑舞』",
+                  "en": "Ability: \"Jade Blade Dance\""
                 }
               ]
             }
@@ -57,15 +57,15 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+4（舰队兵种）（领主军队）",
+                  "zh": "近战攻击：舰队兵种+4（领主军队）",
                   "en": "Melee attack: +4 for fleet units (Lord's army)"
                 },
                 {
-                  "zh": "近战防御：+4（舰队兵种）（领主军队）",
+                  "zh": "近战防御：舰队兵种+4（领主军队）",
                   "en": "Melee defence: +4 for fleet units (Lord's army)"
                 },
                 {
-                  "zh": "领导力：+5（舰队兵种）（领主军队）",
+                  "zh": "领导力：舰队兵种+5（领主军队）",
                   "en": "Leadership: +5 for fleet units (Lord's army)"
                 }
               ]
@@ -98,11 +98,11 @@
                   "en": "Spell intensity: +10%"
                 },
                 {
-                  "zh": "弹药容量：+20%（舰队远程兵种）（领主军队）",
+                  "zh": "弹药容量：舰队远程兵种+20%（领主军队）",
                   "en": "Ammunition: +20% for fleet missile units (Lord's army)"
                 },
                 {
-                  "zh": "远程威力：+5%（舰队远程兵种）（领主军队）",
+                  "zh": "远程威力：舰队远程兵种+5%（领主军队）",
                   "en": "Missile strength: +5% for fleet missile units (Lord's army)"
                 }
               ]
@@ -136,7 +136,7 @@
                 },
                 {
                   "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』-20%",
-                  "en": "Cooldown: -20% to \"Jade Blade Dance\" and \"Broadside\""
+                  "en": "Cooldown: -20% for \"Jade Blade Dance\" and \"Broadside\""
                 }
               ]
             }
@@ -396,8 +396,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁战场被动「潮随刃动」",
-                  "en": "Unlocks the battlefield passive \"Tide Follows the Blade\""
+                  "zh": "被动技能：『潮随刃动』",
+                  "en": "Passive ability: \"Tide Follows the Blade\""
                 }
               ]
             }

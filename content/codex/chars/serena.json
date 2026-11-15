@@ -161,7 +161,7 @@
       },
       {
         "name": { "zh": "潮信（托付）", "en": "Tidemark (Sworn)" },
-        "desc": { "zh": "星象罗盘引指航路，全军皆随其风标乘风破浪、一日千里。", "en": "Her star compass charts the course, and the whole army follows her heading, running before the wind and sweeping across vast leagues." },
+        "desc": { "zh": "星月罗盘引指航路，全军皆随其风标乘风破浪、一日千里。", "en": "Her star compass charts the course, and the whole army follows her heading, running before the wind and sweeping across vast leagues." },
         "rewards": [
           { "zh": "洛瑟恩海卫（持盾）容量 +3", "en": "Lothern Sea Guard (Shields) capacity +3" },
           { "zh": "纯水精魂容量 +3（可直接征召 1 队）", "en": "Oceanids capacity +3 (1 can be recruited directly)" },

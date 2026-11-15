@@ -191,7 +191,7 @@
     {
       "node": "cth_npex_skill_node_serena_magic_1_2",
       "node_source": "npex",
-      "skill": "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud",
+      "skill": "wh2_main_skill_magic_heavens_01_harmonic_convergence_loremaster",
       "tier": 2,
       "indent": 3,
       "points_on_creation": "0",
@@ -331,7 +331,7 @@
     {
       "node": "cth_npex_skill_node_serena_magic_1_4",
       "node_source": "npex",
-      "skill": "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds",
+      "skill": "wh_main_skill_all_magic_heavens_05_urannons_thunderbolt",
       "tier": 4,
       "indent": 3,
       "points_on_creation": "0",
@@ -456,7 +456,7 @@
     {
       "node": "cth_npex_skill_node_serena_magic_3_1",
       "node_source": "npex",
-      "skill": "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps",
+      "skill": "wh2_main_skill_all_magic_high_10_fiery_convocation",
       "tier": 6,
       "indent": 3,
       "points_on_creation": "0",

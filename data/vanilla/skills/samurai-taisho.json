@@ -5,7 +5,7 @@
   "set_key": "cth_npex_skill_set_samurai_taisho",
   "agent_type": "general",
   "agent_subtype": "cth_npex_samurai_taisho",
-  "node_count": 59,
+  "node_count": 60,
   "vanilla_skill_count": 41,
   "nodes": [
     {
@@ -936,6 +936,17 @@
       "points_on_creation": "0",
       "required_num_parents": "0",
       "visible_in_ui": true,
+      "parents": []
+    },
+    {
+      "node": "cth_npex_skill_node_innate_akashi_house_law",
+      "node_source": "npex",
+      "skill": "cth_npex_skill_innate_akashi_house_law",
+      "tier": 99,
+      "indent": 9,
+      "points_on_creation": "0",
+      "required_num_parents": "0",
+      "visible_in_ui": false,
       "parents": []
     }
   ]

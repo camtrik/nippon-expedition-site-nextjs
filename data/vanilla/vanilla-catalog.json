@@ -274314,6 +274314,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh2_dlc17_effect_enable_attribute_perfect_vigour_bst_minotaurs_units": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_fatigue_immune.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_fatigue_immune.png",
+      "priority": "4",
+      "category": "both",
+      "is_positive_value_good": true
+    },
     "wh2_dlc17_effect_enable_attribute_snipe_chameleon_skinks": {
       "template": {
         "zh": "解锁属性：为变色龙解锁狙击技能",
@@ -275714,7 +275722,7 @@
       "icon_negative": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
       "priority": "202",
       "category": "battle",
-      "is_positive_value_good": false
+      "is_positive_value_good": true
     },
     "wh2_dlc17_effect_siege_tower_missile_damage_enemy": {
       "template": {
@@ -290080,11 +290088,8 @@
       "category": "battle",
       "is_positive_value_good": false
     },
-    "wh2_main_effect_force_stat_missile_ap_skv_plagueclaw_warplightning_doomwheel": {
-      "template": {
-        "zh": "远程破甲杀伤：瘟疫利爪投石机、次元闪电炮与毁灭巨轮部队%+n",
-        "en": "Armour-piercing missile damage: %+n for Plague Claw Catapult, Warp Lightning Cannon and Doomwheel units"
-      },
+    "wh2_main_effect_force_stat_missile_ap_skv_plagueclaw_warplightning_doomwheel_warpmagma": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/armour_piercing_ranged.png",
       "icon_negative": "icons/campaign ui/effect_bundles/armour_piercing_ranged.png",
       "priority": "471",
@@ -330642,6 +330647,14 @@
       "category": "both",
       "is_positive_value_good": false
     },
+    "wh3_dlc26_effect_ability_cooldown_eye_of_khorne": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "priority": "49",
+      "category": "both",
+      "is_positive_value_good": false
+    },
     "wh3_dlc26_effect_ability_cooldown_focus_instincts": {
       "template": {
         "zh": "冷却速率：『专注天赋』%+n%",
@@ -345711,11 +345724,8 @@
       "category": "battle",
       "is_positive_value_good": true
     },
-    "wh3_dlc27_effect_force_stat_charge_bonus_vs_vampcounts_vampcoast_tombkings": {
-      "template": {
-        "zh": "冲锋加成：对抗吸血鬼伯爵、吸血鬼海岸与古墓王时%+n%",
-        "en": "Charge bonus: %+n% when fighting against Vampire Counts, Vampire Coast and Tomb Kings"
-      },
+    "wh3_dlc27_effect_force_stat_charge_bonus_vs_undead": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/charge.png",
       "icon_negative": "icons/campaign ui/effect_bundles/charge.png",
       "priority": "501",
@@ -345917,7 +345927,7 @@
       "icon": "icons/campaign ui/effect_bundles/morale.png",
       "icon_negative": "icons/campaign ui/effect_bundles/morale.png",
       "priority": "432",
-      "category": "campaign",
+      "category": "battle",
       "is_positive_value_good": true
     },
     "wh3_dlc27_effect_force_stat_leadership_throgg_trolls": {
@@ -347288,6 +347298,14 @@
       "category": "battle",
       "is_positive_value_good": false
     },
+    "wh3_dlc27_effect_force_stat_vigour_loss_reduction_vs_undead": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/vigour.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/vigour.png",
+      "priority": "101",
+      "category": "battle",
+      "is_positive_value_good": false
+    },
     "wh3_dlc27_effect_force_stat_vigour_loss_reduction_vs_vampcounts": {
       "template": {
         "zh": "疲劳速率降低：对吸血鬼伯爵时%+n%",
@@ -347296,17 +347314,6 @@
       "icon": "icons/campaign ui/effect_bundles/vigour.png",
       "icon_negative": "icons/campaign ui/effect_bundles/vigour.png",
       "priority": "10",
-      "category": "battle",
-      "is_positive_value_good": false
-    },
-    "wh3_dlc27_effect_force_stat_vigour_loss_reduction_vs_vampcounts_vampcoast_tombkings": {
-      "template": {
-        "zh": "疲劳速率降低：对吸血鬼伯爵、吸血鬼海岸与古墓王时%+n%",
-        "en": "Vigour loss reduction: %+n% when fighting against Vampire Counts, Vampire Coast and Tomb Kings"
-      },
-      "icon": "icons/campaign ui/effect_bundles/vigour.png",
-      "icon_negative": "icons/campaign ui/effect_bundles/vigour.png",
-      "priority": "101",
       "category": "battle",
       "is_positive_value_good": false
     },
@@ -355183,6 +355190,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_attribute_enable_vanguard_nag_ethereal_infantry": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_guerrilla_deploy.png",
+      "priority": "600",
+      "category": "both",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_attribute_enable_vanguard_nag_nehekhara": {
       "template": {
         "zh": "解锁属性：为尼赫喀拉骑手部队解锁先锋部署技能",
@@ -355681,6 +355696,14 @@
       "category": "both",
       "is_positive_value_good": false
     },
+    "wh3_dlc29_effect_ability_cooldown_arrow_of_kurnous": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "priority": "605",
+      "category": "both",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_ability_cooldown_battle_of_wills_nag_coven_throne": {
       "template": {
         "zh": "冷却速率：『意志之争』%+n%",
@@ -355701,6 +355724,14 @@
       "icon": "icons/campaign ui/effect_bundles/magic_cooldown.png",
       "icon_negative": "icons/campaign ui/effect_bundles/magic_cooldown.png",
       "priority": "293",
+      "category": "both",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ability_cooldown_black_ark_bombardments": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+      "priority": "704",
       "category": "both",
       "is_positive_value_good": false
     },
@@ -356109,6 +356140,14 @@
       "category": "both",
       "is_positive_value_good": false
     },
+    "wh3_dlc29_effect_ability_cost_lore_of_ice": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/magic_character.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/magic_character.png",
+      "priority": "294",
+      "category": "both",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_ability_death_to_all": {
       "template": {
         "zh": "被动技能：『万物皆亡』",
@@ -356433,6 +356472,14 @@
       "icon": "icons/campaign ui/effect_bundles/general_ability.png",
       "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
       "priority": "130",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_ability_duration_wardens_cage": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/general_ability.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
+      "priority": "1",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -359382,6 +359429,14 @@
       "category": "both",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_ability_uses_arrow_of_kurnous": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/general_ability.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
+      "priority": "606",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_ability_uses_bilespurter": {
       "template": {
         "zh": "技能可用次数：『喷胆』%+n",
@@ -360946,6 +361001,14 @@
       "category": "both",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_attribute_enable_devastating_flanker_ksl_melee_cavalry": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/devastating_flanker.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/devastating_flanker.png",
+      "priority": "646",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_attribute_enable_devastating_flanker_nag_knights_lance_rank7": {
       "template": {
         "zh": "解锁属性：为冲击骑兵与怪物骑兵部队（至少[[img:rank7]][[/img]]7级）解锁致命迂回者技能",
@@ -361035,6 +361098,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_attribute_enable_flanking_immune_cst_necrofex_colossus": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/flanking_immune.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/flanking_immune.png",
+      "priority": "600",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_attribute_enable_frenzy_nag_knights_swords_rank7": {
       "template": {
         "zh": "被动技能：剑盾骑士部队（至少[[img:rank7]][[/img]]7级）获得『狂暴』",
@@ -361055,6 +361126,14 @@
       "icon": "icons/campaign ui/effect_bundles/attribute_glorious_charge.png",
       "icon_negative": "icons/campaign ui/effect_bundles/attribute_glorious_charge.png",
       "priority": "250",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_attribute_enable_glorious_charge_brt_knights": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_glorious_charge.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_glorious_charge.png",
+      "priority": "603",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -361093,6 +361172,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_attribute_enable_immune_to_flanking_zombie_melee_infantry": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/flanking_immune.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/flanking_immune.png",
+      "priority": "121",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_attribute_enable_immune_to_psychology_melee_infantry": {
       "template": {
         "zh": "解锁属性：为近战步兵部队解锁心理免疫技能",
@@ -361127,6 +361214,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_attribute_enable_perfect_vigour_ksl_bears": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_fatigue_immune.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_fatigue_immune.png",
+      "priority": "620",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_attribute_enable_perfect_vigour_vmp_blood_knights_drakenhof_templars_rank_7": {
       "template": {
         "zh": "解锁属性：为血骑士与邓肯霍夫圣殿骑士部队（至少[[img:rank7]][[/img]]7级）解锁体力充沛技能",
@@ -361148,7 +361243,7 @@
       "icon_negative": "icons/campaign ui/effect_bundles/vigour.png",
       "priority": "101",
       "category": "battle",
-      "is_positive_value_good": false
+      "is_positive_value_good": true
     },
     "wh3_dlc29_effect_attribute_enable_silenced_vmp_necromancer_heroes": {
       "template": {
@@ -361227,6 +361322,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_attribute_enable_unbreakable_bst_ungor_gor_bestigor_rank7": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_unbreakable.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_unbreakable.png",
+      "priority": "320",
+      "category": "both",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_attribute_enable_unbreakable_nag_undead_monsters_rank7": {
       "template": {
         "zh": "解锁属性：为亡灵怪兽部队（至少[[img:rank7]][[/img]]7级）解锁永不战败技能",
@@ -361247,6 +361350,14 @@
       "icon": "icons/campaign ui/effect_bundles/attribute_unspottable.png",
       "icon_negative": "icons/campaign ui/effect_bundles/attribute_unspottable.png",
       "priority": "620",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_attribute_enable_unyielding_assault_bst_ungor_gor_bestigor": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/attribute_unyielding_assault.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/attribute_unyielding_assault.png",
+      "priority": "319",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -361712,6 +361823,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_building_construction_cost_ksl_animal_den_haunted_forest_chains": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_building_construction_cost_mod_burial_chambers": {
       "template": {
         "zh": "建筑成本：陵寝建筑%+n%",
@@ -361728,6 +361847,14 @@
         "zh": "建筑成本：所有深隧建筑%+n%",
         "en": "Construction cost: %+n% for all The Deeps buildings"
       },
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_building_construction_cost_mod_geomantic_buildings": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/treasury.png",
       "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
       "priority": "101",
@@ -361789,11 +361916,8 @@
       "category": "campaign",
       "is_positive_value_good": false
     },
-    "wh3_dlc29_effect_building_construction_time_ksl_animal_den_chain": {
-      "template": {
-        "zh": "建筑时间：兽穴建筑%+n",
-        "en": "Construction time: %+n for Animal Den buildings"
-      },
+    "wh3_dlc29_effect_building_construction_time_ksl_animal_den_haunted_forest_chains": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/construction.png",
       "icon_negative": "icons/campaign ui/effect_bundles/construction.png",
       "priority": "110",
@@ -362187,6 +362311,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_character_stat_weapon_strength_vs_nagash_vamp_counts": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/weapon_damage_character.png",
+      "priority": "161",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_charge_bonus_nag_undead_monster_monstrous": {
       "template": {
         "zh": "冲锋加成：亡灵怪兽与怪物步兵部队%+n%",
@@ -362512,8 +362644,8 @@
         "zh": "建筑时间：食人魔营地城镇序列%+n%",
         "en": "Construction Time: %+n% for Ogre Camp settlement chains"
       },
-      "icon": "icons/campaign ui/effect_bundles/meat_bundle.png",
-      "icon_negative": "icons/campaign ui/effect_bundles/meat_bundle.png",
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
       "priority": "33",
       "category": "campaign",
       "is_positive_value_good": false
@@ -363148,6 +363280,22 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_def_ritual_cooldown_reduction_anath_raema": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_def_ritual_cooldown_reduction_sacrifice_to_khaine": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_def_slaves_captured_post_battle": {
       "template": {
         "zh": "战后获得奴隶：%+n%",
@@ -363396,6 +363544,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_emp_faction_chose_of_ulric_capacity_count": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "priority": "650",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_emp_fervour_gain_add": {
       "template": {
         "zh": "崇信：每回合%n",
@@ -363530,6 +363686,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_enable_attribute_expert_charge_defence_ksl_melee_infantry": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/charge_reflector.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/charge_reflector.png",
+      "priority": "645",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_enable_black_pyramid_nagashizzar_portal_dummy": {
       "template": {
         "zh": "为纳迦什的军队启用在纳迦什黑色金字塔与纳迦什扎之间快速旅行的技能",
@@ -363562,6 +363726,14 @@
       "icon_negative": "icons/campaign ui/effect_bundles/attribute_causes_fear.png",
       "priority": "620",
       "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_enable_frenzy_grn_melee_infantry": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/general_ability.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
+      "priority": "600",
+      "category": "battle",
       "is_positive_value_good": true
     },
     "wh3_dlc29_effect_enable_hammer_axe_of_skoll": {
@@ -364017,6 +364189,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_force_army_campaign_experience_base_skv_cauldron_of_a_thousand_poxes": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/experience.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/experience.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_force_army_campaign_experience_emp_hunting_hound": {
       "template": {
         "zh": "新募部队等级：猎犬部队%+n",
@@ -364340,6 +364520,14 @@
       "icon_negative": "icons/campaign ui/effect_bundles/defence.png",
       "priority": "451",
       "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_merc_capacity_gifted_units": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/merc.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/merc.png",
+      "priority": "900",
+      "category": "campaign",
       "is_positive_value_good": true
     },
     "wh3_dlc29_effect_force_merc_capacity_summoned_pool": {
@@ -365275,6 +365463,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_force_stat_battle_healing_cap_vampire_heroes": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/health_character.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/health_character.png",
+      "priority": "34",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_force_stat_block_chance_nag_tomb_guards": {
       "template": {
         "zh": "远程格挡概率：古墓守卫部队%+n%",
@@ -365492,6 +365688,14 @@
       "icon": "icons/campaign ui/effect_bundles/charge.png",
       "icon_negative": "icons/campaign ui/effect_bundles/charge.png",
       "priority": "850",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_charge_bonus_add_brt_knights": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/charge.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/charge.png",
+      "priority": "602",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -366505,8 +366709,8 @@
         "zh": "近战攻击：所有重型武器部队%+n",
         "en": "Melee attack: %+n for all Great Weapon units"
       },
-      "icon": "icons/campaign ui/effect_bundles/charge.png",
-      "icon_negative": "icons/campaign ui/effect_bundles/charge.png",
+      "icon": "icons/campaign ui/effect_bundles/melee.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/melee.png",
       "priority": "105",
       "category": "battle",
       "is_positive_value_good": true
@@ -366669,6 +366873,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_force_stat_melee_attack_nur_plaguebearers": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/melee.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/melee.png",
+      "priority": "460",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_force_stat_melee_attack_nurgle_rain": {
       "template": {
         "zh": "近战攻击：%+n",
@@ -366740,6 +366952,14 @@
         "zh": "近战攻击：近战暴风鼠魔部队%+n",
         "en": "Melee attack: %+n for Melee Stormfiend units"
       },
+      "icon": "icons/campaign ui/effect_bundles/melee.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/melee.png",
+      "priority": "431",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_melee_attack_sla_mortal_infantry": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/melee.png",
       "icon_negative": "icons/campaign ui/effect_bundles/melee.png",
       "priority": "431",
@@ -368111,17 +368331,6 @@
       "category": "battle",
       "is_positive_value_good": true
     },
-    "wh3_dlc29_effect_force_stat_physical_resistance_wraiths_hexwraiths": {
-      "template": {
-        "zh": "物理抗性：石冢缚灵与缚灵骑士部队%n%",
-        "en": "Physical resistance: %n% for Cairn Wraiths and Hexwraits units"
-      },
-      "icon": "icons/campaign ui/effect_bundles/resistance_physical.png",
-      "icon_negative": "icons/campaign ui/effect_bundles/resistance_physical.png",
-      "priority": "581",
-      "category": "battle",
-      "is_positive_value_good": true
-    },
     "wh3_dlc29_effect_force_stat_physical_resistance_zombies_skeletons_grave_guards": {
       "template": {
         "zh": "物理抗性：僵尸、骷髅战士、骷髅矛手与荒坟守卫部队%n%",
@@ -368970,12 +369179,28 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_force_stat_ward_save_brt_knights": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "priority": "601",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_force_stat_ward_save_chs_nur_non_daemonic_r7": {
       "template": {
         "zh": "特殊保护：纳垢与混沌统合非恶魔部队（至少[[img:rank7]][[/img]]7级）%+n%",
         "en": "Ward save: %+n% for Nurgle and Undivided non-Daemonic units ([[img:rank7]][[/img]]Rank 7 and above)",
         "_via_tr": true
       },
+      "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "priority": "581",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_ward_save_cst_necrofex_colossus": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "priority": "581",
@@ -369012,6 +369237,14 @@
       "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "priority": "581",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_ward_save_mistwalkers": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "priority": "106",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -369124,6 +369357,14 @@
       "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
       "priority": "90",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_ward_save_wraiths_hexwraiths": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/resistance_ward_save.png",
+      "priority": "2",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -369391,6 +369632,14 @@
         "zh": "武器威力：飞行部队%+n",
         "en": "Weapon strength: %+n% for flying units"
       },
+      "icon": "icons/campaign ui/effect_bundles/weapon_damage.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/weapon_damage.png",
+      "priority": "461",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_force_stat_weapon_strength_rank7_no_char": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/weapon_damage.png",
       "icon_negative": "icons/campaign ui/effect_bundles/weapon_damage.png",
       "priority": "461",
@@ -370914,6 +371163,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_healing_cap_vmp_blood_knights_drakenhof_templars": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/health_character.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/health_character.png",
+      "priority": "402",
+      "category": "both",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_healing_cap_zombie_infantry": {
       "template": {
         "zh": "战斗治疗上限：僵尸步兵与浮肿行尸部队%+n%",
@@ -371325,6 +371582,38 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_lzd_ritual_cooldown_reduction_rite_of_sotek": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_lzd_ritual_cooldown_reduction_rite_of_tzunki": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_lzd_ritual_cost_tehenhauin_sacrifices_to_sotek": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "131",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_lzd_tiktaqto_terradon_bombardment_abilities_increase_uses": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/general_ability.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
+      "priority": "600",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_magic_attack_mournguls": {
       "template": {
         "zh": "允许丧妖部队进行魔法攻击",
@@ -371659,6 +371948,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_melee_attack_von_carstein_armies": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/melee.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/melee.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_melee_defence_cost_nag_undead_monster_monstrous": {
       "template": {
         "zh": "近战防御：亡灵怪兽与怪物步兵部队%+n",
@@ -371679,6 +371976,14 @@
       "icon_negative": "icons/campaign ui/effect_bundles/defence.png",
       "priority": "452",
       "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_melee_defence_von_carstein_armies": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/defence.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/defence.png",
+      "priority": "102",
+      "category": "campaign",
       "is_positive_value_good": true
     },
     "wh3_dlc29_effect_merc_xp_nur_daemonic_units": {
@@ -371724,6 +372029,14 @@
       "priority": "105",
       "category": "campaign",
       "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_missions_ksl_spirit_essence": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/spirit_essence.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/spirit_essence.png",
+      "priority": "1",
+      "category": "campaign",
+      "is_positive_value_good": true
     },
     "wh3_dlc29_effect_morale_versus_emp_chs": {
       "template": {
@@ -372337,6 +372650,62 @@
       "category": "campaign",
       "is_positive_value_good": false
     },
+    "wh3_dlc29_effect_nag_recruit_cost_construct_monsters_monstrous": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_artillery": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_beasts_monstrous_monsters": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_cav_chariot": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_ethereal": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_melee_inf": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_recruit_cost_undead_ranged_inf_flyers": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/treasury.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/treasury.png",
+      "priority": "110",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_nag_recruit_rank_cst_heroes_lords": {
       "template": {
         "zh": "新募部队等级：吸血鬼海岸领主与英雄%+n",
@@ -372345,6 +372714,14 @@
       "icon": "icons/campaign ui/effect_bundles/army.png",
       "icon_negative": "icons/campaign ui/effect_bundles/army.png",
       "priority": "13",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_nag_recruit_rank_cst_heroes_lords_hidden": {
+      "template": null,
+      "icon": null,
+      "icon_negative": null,
+      "priority": "0",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -372359,6 +372736,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_nag_recruit_rank_tmb_heroes_lords_hidden": {
+      "template": null,
+      "icon": null,
+      "icon_negative": null,
+      "priority": "0",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_nag_recruit_rank_vmp_heroes_lords": {
       "template": {
         "zh": "新募部队等级：吸血鬼伯爵领主与英雄%+n",
@@ -372367,6 +372752,14 @@
       "icon": "icons/campaign ui/effect_bundles/army.png",
       "icon_negative": "icons/campaign ui/effect_bundles/army.png",
       "priority": "13",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_nag_recruit_rank_vmp_heroes_lords_hidden": {
+      "template": null,
+      "icon": null,
+      "icon_negative": null,
+      "priority": "0",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -372497,6 +372890,206 @@
       "priority": "1",
       "category": "battle",
       "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_nag_upkeep_construct_monsters_monstrous_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_construct_monsters_monstrous_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_construct_monsters_monstrous_tier4": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "104",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_construct_monsters_monstrous_tier5": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "105",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_artillery_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_artillery_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_artillery_tier4": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "104",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_beasts_monstrous_monsters_tier1": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_beasts_monstrous_monsters_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_beasts_monstrous_monsters_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_beasts_monstrous_monsters_tier4": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "104",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_beasts_monstrous_monsters_tier5": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "105",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_cav_chariot_tier1": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_cav_chariot_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_cav_chariot_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_cav_chariot_tier4": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "104",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ethereal_tier1": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ethereal_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ethereal_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_melee_inf_tier1": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_melee_inf_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_melee_inf_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ranged_inf_flyers_tier1": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "101",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ranged_inf_flyers_tier2": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_nag_upkeep_undead_ranged_inf_flyers_tier3": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
     },
     "wh3_dlc29_effect_nagash_cst_ror_unlock_dummy": {
       "template": {
@@ -372707,6 +373300,14 @@
       "priority": "0",
       "category": "campaign",
       "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_nor_ritual_cooldown_reduction_call_the_monstrous_horde": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
     },
     "wh3_dlc29_effect_nor_sayl_ritual_cost_mod_always_minimum_value": {
       "template": {
@@ -373007,6 +373608,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_pirate_cove_buildings_income_increase_dummy": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/income.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/income.png",
+      "priority": "670",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_plague_immunity_nurgle_mark_mod_bad": {
       "template": {
         "zh": "『胆汁之父的怜悯』获得瘟疫免疫持续时间：%n回合",
@@ -373155,7 +373764,7 @@
       },
       "icon": "icons/campaign ui/effect_bundles/blessed_spawning_resource.png",
       "icon_negative": "icons/campaign ui/effect_bundles/blessed_spawning_resource.png",
-      "priority": "102",
+      "priority": "103",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -373266,6 +373875,14 @@
       "icon": "icons/campaign ui/effect_bundles/replenishment.png",
       "icon_negative": "icons/campaign ui/effect_bundles/replenishment.png",
       "priority": "111",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_post_battle_unit_saving_chance_lords_hidden": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/replenishment.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/replenishment.png",
+      "priority": "0",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -373890,11 +374507,8 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
-    "wh3_dlc29_effect_raise_dead_recruitment_rank_mod_zombies": {
-      "template": {
-        "zh": "新募部队等级：通过驱役亡灵招募的僵尸部队%+n",
-        "en": "Recruit rank: %+n for Zombies units via Raise Dead"
-      },
+    "wh3_dlc29_effect_raise_dead_recruitment_rank_mod_zombies_skeleton_warriors": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/experience.png",
       "icon_negative": "icons/campaign ui/effect_bundles/experience.png",
       "priority": "120",
@@ -374498,6 +375112,78 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_ritual_cooldown_reduction_high_elves_all_rites": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cooldown_reduction_rite_of_mastery": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cooldown_reduction_rite_of_resilience": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cooldown_reduction_rite_of_the_warmaster": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cooldown_tyrants_demands_tier_3_4": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "130",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cost_rite_of_allegiance": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "129",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cost_rite_of_mastery": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "129",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cost_rite_of_resilience": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "129",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cost_rite_of_the_warmaster": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "129",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_ritual_cost_ritual_of_undeath": {
       "template": {
         "zh": "亡灵仪式成本：%+n%",
@@ -374541,6 +375227,14 @@
       "icon": "icons/campaign ui/effect_bundles/icon_necromantic_power.png",
       "icon_negative": "icons/campaign ui/effect_bundles/icon_necromantic_power.png",
       "priority": "51",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_ritual_cost_tyrants_demands": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "129",
       "category": "campaign",
       "is_positive_value_good": false
     },
@@ -375065,6 +375759,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_sla_dechala_thralls_events": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/icon_thralls_cost.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/icon_thralls_cost.png",
+      "priority": "700",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_sla_dechala_thralls_harvest_mod_percentage": {
       "template": {
         "zh": "添加至全局池的奴工：每回合%+n%",
@@ -375197,6 +375899,14 @@
       "icon": "icons/campaign ui/effect_bundles/stat_healing_received.png",
       "icon_negative": "icons/campaign ui/effect_bundles/stat_healing_received.png",
       "priority": "33",
+      "category": "battle",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_stat_mass_nag_melee_zombies": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/mass.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/mass.png",
+      "priority": "430",
       "category": "battle",
       "is_positive_value_good": true
     },
@@ -375431,6 +376141,30 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_unit_cap_bst_monsters": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "priority": "900",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_unit_cap_tmb_all": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "priority": "1",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_effect_unit_cap_ungor_gor_bestigor": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "priority": "1",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_unit_cap_vmp_blood_dragon_bloodline_units": {
       "template": {
         "zh": "部队容量：%+n\\n黑骑士、邓肯霍夫圣殿骑士与血骑士部队",
@@ -375565,6 +376299,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_unit_cst_lord_upkeep_all": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "106",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_unit_enable_attribute_expert_charge_defence_nag_skeleton_spearmen": {
       "template": {
         "zh": "解锁属性：持矛与长戟骷髅步兵部队解锁专擅抵御冲锋技能",
@@ -375644,6 +376386,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_unit_tmb_lord_upkeep_all": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "106",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_unit_upgrade_unlock_putrid_blightkings_context_dummy": {
       "template": {
         "zh": "解锁战帮升级：腐毒疫王",
@@ -375693,6 +376443,14 @@
         "zh": "维持费：吸血鬼伯爵部队%+n%",
         "en": "Upkeep: %+n% for Vampire Count units"
       },
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "106",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_unit_vmp_lord_upkeep_all": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/military_spending.png",
       "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
       "priority": "106",
@@ -375916,6 +376674,22 @@
       "icon": "icons/campaign ui/effect_bundles/military_spending.png",
       "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
       "priority": "106",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_upkeep_cost_reduction_mistwalkers": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "105",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_upkeep_cost_reduction_rakarth_monsters": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "105",
       "category": "campaign",
       "is_positive_value_good": false
     },
@@ -376241,6 +377015,14 @@
       "category": "campaign",
       "is_positive_value_good": false
     },
+    "wh3_dlc29_effect_upkeep_von_carstein_armies": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
     "wh3_dlc29_effect_vampire_covens_dummy": {
       "template": {
         "zh": "可使用[[b]]吸血鬼秘盟[[/b]]",
@@ -376404,6 +377186,14 @@
       "icon": "icons/campaign ui/effect_bundles/construction.png",
       "icon_negative": "icons/campaign ui/effect_bundles/construction.png",
       "priority": "102",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh3_dlc29_effect_vmp_construction_time_vegeful_spirits": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/turns.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "103",
       "category": "campaign",
       "is_positive_value_good": false
     },
@@ -376939,6 +377729,14 @@
       "category": "battle",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_effect_xp_gain_increase_vs_contract": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/experience.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/experience.png",
+      "priority": "611",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_effect_xp_gain_rate_all_non_daemonic_units": {
       "template": {
         "zh": "部队获取经验：非恶魔部队%+n%",
@@ -377216,17 +378014,6 @@
       "category": "battle",
       "is_positive_value_good": true
     },
-    "wh3_dlc29_enable_volcano_rituals_at_range": {
-      "template": {
-        "zh": null,
-        "en": "Unlocks volcano cataclysmic events in range around the character."
-      },
-      "icon": "icons/campaign ui/effect_bundles/general_ability.png",
-      "icon_negative": "icons/campaign ui/effect_bundles/general_ability.png",
-      "priority": "0",
-      "category": "campaign",
-      "is_positive_value_good": true
-    },
     "wh3_dlc29_endgame_crisis_the_vermintide_beast_pack": {
       "template": {
         "zh": null,
@@ -377345,6 +378132,14 @@
       "icon": "icons/campaign ui/effect_bundles/diplomacy.png",
       "icon_negative": "icons/campaign ui/effect_bundles/diplomacy.png",
       "priority": "5",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_faction_xp_increase_heroes_army_recruit": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/army.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/army.png",
+      "priority": "0",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -378346,6 +379141,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_dlc29_spawning_blessed_chameleon_capacity_count": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "priority": "11",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_dlc29_spawning_blessed_kroxigor_capacity_count": {
       "template": {
         "zh": "神佑巨蜥与神佑神圣巨蜥的神佑孵化招募池容量：%+n",
@@ -378358,12 +379161,8 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
-    "wh3_dlc29_spawning_blessed_saurus_warrior_capacity_count": {
-      "template": {
-        "zh": "神佑蜥人战士（持盾）的神佑孵化招募池容量：%+n",
-        "en": "Blessed Spawnings pool capacity for Blessed Saurus Warriors (Shields): %+n",
-        "_via_tr": true
-      },
+    "wh3_dlc29_spawning_blessed_saurus_warrior_spearmen_capacity_count": {
+      "template": null,
       "icon": "icons/campaign ui/effect_bundles/merc_replen.png",
       "icon_negative": "icons/campaign ui/effect_bundles/merc_replen.png",
       "priority": "11",
@@ -378460,6 +379259,22 @@
       "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
       "icon_negative": null,
       "priority": "10",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_unit_cap_vmp_all": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "priority": "1",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_unit_cap_vmp_ethereal": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/unit_capacity.png",
+      "priority": "1",
       "category": "campaign",
       "is_positive_value_good": true
     },
@@ -378832,6 +379647,22 @@
       "priority": "105",
       "category": "campaign",
       "is_positive_value_good": false
+    },
+    "wh3_dlc29_wef_wild_spirits_capacity_count": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "priority": "680",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
+    "wh3_dlc29_wef_wild_spirits_merc_replenishment": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/merc_replen.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/turns.png",
+      "priority": "10",
+      "category": "campaign",
+      "is_positive_value_good": true
     },
     "wh3_dlc29_woc_agent_action_cooldown_glottkin_nur_marked_hero": {
       "template": {
@@ -409926,6 +410757,14 @@
       "category": "campaign",
       "is_positive_value_good": true
     },
+    "wh3_main_effect_unit_cap_vmp_hidden": {
+      "template": null,
+      "icon": null,
+      "icon_negative": null,
+      "priority": "0",
+      "category": "campaign",
+      "is_positive_value_good": true
+    },
     "wh3_main_effect_unit_cap_zombies_dummy": {
       "template": {
         "zh": "所有僵尸、骷髅与凶暴蝙蝠部队获得无限部队容量",
@@ -414201,6 +415040,14 @@
       "priority": "310",
       "category": "battle",
       "is_positive_value_good": true
+    },
+    "wh3_main_ritual_cost_lokhir": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/effect_rite.png",
+      "priority": "103",
+      "category": "campaign",
+      "is_positive_value_good": false
     },
     "wh3_main_ritual_def_lokhir_slave_3_reward_black_ark_scaling_dummy": {
       "template": {
@@ -432942,6 +433789,14 @@
       "icon": "icons/campaign ui/effect_bundles/military_spending.png",
       "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
       "priority": "999",
+      "category": "campaign",
+      "is_positive_value_good": false
+    },
+    "wh_main_effect_force_all_campaign_upkeep_nagash": {
+      "template": null,
+      "icon": "icons/campaign ui/effect_bundles/military_spending.png",
+      "icon_negative": "icons/campaign ui/effect_bundles/military_spending.png",
+      "priority": "70",
       "category": "campaign",
       "is_positive_value_good": false
     },

@@ -1038,13 +1038,13 @@
         {
           short: { zh: "叁", en: "III" },
           n: { zh: "第叁章", en: "Chapter III" },
-          title: { zh: "星象罗盘", en: "The Star Compass" },
+          title: { zh: "星月罗盘", en: "The Star Compass" },
           bond: { zh: "托付", en: "Sworn" },
           goal: { zh: "瑟兰娜升至 12 级", en: "Bring Serena to level 12" },
-          box: { zh: "深夜船舷，沈长风认出瑟兰娜手中的罗盘是震旦星象罗盘。她谈起父亲：一位长期往来震旦与奥苏安、被戏称心向东方者的高等精灵。他留给她这面罗盘，和名字望舒。", en: "At the rail late at night, Shen Changfeng recognises the compass in Serena's hand as a Cathayan star compass. Serena speaks of her father — a High Elf who travelled long between Cathay and Ulthuan, teased as the east-facing one. He left her the compass, and the name Wangshu." },
+          box: { zh: "深夜船舷，沈长风认出瑟兰娜手中的罗盘是震旦星月罗盘。她谈起父亲：一位长期往来震旦与奥苏安、被戏称心向东方者的高等精灵。他留给她这面罗盘，和名字望舒。", en: "At the rail late at night, Shen Changfeng recognises the compass in Serena's hand as a Cathayan star compass. Serena speaks of her father — a High Elf who travelled long between Cathay and Ulthuan, teased as the east-facing one. He left her the compass, and the name Wangshu." },
           story: [
             { zh: "海卫们归队之后，瑟兰娜的话多了些。她是一名技术高超的法师，也是我见过的最好的航海士。我有时惊讯于她的知识之渊博，或许只有精灵通过年月积累才能达到如此地步吧。", en: "With the sea guard back she talks a little more. She is a highly skilled mage and the best navigator I have met. Sometimes the breadth of what she knows startles me; perhaps only an elf, given the years, gets there." },
-            { zh: "一日深夜，瑟兰娜倚在船舷上，掌心里摊着那面罗盘。月光落下来的一瞬我第一次看清它的构造。那不是精灵的形制，磁针之外还刻着一环月相，是震旦的星象罗盘。我问她这罗盘的来历。她沉默了很久，说那是父亲留下的东西。高等精灵在上古时期就已经与东方帝国建立了联系。她的父亲便曾经长期在震旦与奥苏安两方来往，常被人戏称为『心向东方者』。", en: "Late one night she was leaning on the rail with the compass open in her palm. In the moment the moonlight fell on it I saw its make for the first time: not elven work — a ring of lunar phases cut outside the needle. A Cathayan star compass. I asked where it came from. She was quiet a long while, then said it was her father's. The High Elves made contact with the eastern empire in the deep past, and her father travelled long between Cathay and Ulthuan; they used to tease him as the one whose heart faced east." },
+            { zh: "一日深夜，瑟兰娜倚在船舷上，掌心里摊着那面罗盘。月光落下来的一瞬我第一次看清它的构造。那不是精灵的形制，磁针之外还刻着一环月相，是震旦的星月罗盘。我问她这罗盘的来历。她沉默了很久，说那是父亲留下的东西。高等精灵在上古时期就已经与东方帝国建立了联系。她的父亲便曾经长期在震旦与奥苏安两方来往，常被人戏称为『心向东方者』。", en: "Late one night she was leaning on the rail with the compass open in her palm. In the moment the moonlight fell on it I saw its make for the first time: not elven work — a ring of lunar phases cut outside the needle. A Cathayan star compass. I asked where it came from. She was quiet a long while, then said it was her father's. The High Elves made contact with the eastern empire in the deep past, and her father travelled long between Cathay and Ulthuan; they used to tease him as the one whose heart faced east." },
             { zh: "『他给我起了一个震旦的名字，叫望舒』，瑟兰娜说道，『他说含义是月神的引路者』。", en: "\"He gave me a Cathayan name — Wangshu,\" she said. \"He told me it means the one who leads the moon.\"" }
           ],
           reward: { zh: "洛瑟恩海卫（持盾）容量 +3；纯水精魄容量 +3（其中 1 队直接入池）；解锁海元素", en: "+3 Lothern Sea Guard capacity; +3 Oceanid capacity, one straight into the pool; unlocks Sea Elementals" },

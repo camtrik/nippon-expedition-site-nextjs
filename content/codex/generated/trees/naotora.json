@@ -53,15 +53,15 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+6（武士部队）（英雄所在军队）",
+                  "zh": "近战攻击：武士部队+6（英雄所在军队）",
                   "en": "Melee attack: +6 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "领导力：+6（武士部队）（英雄所在军队）",
+                  "zh": "领导力：武士部队+6（英雄所在军队）",
                   "en": "Leadership: +6 for Samurai units (Hero's army)"
                 },
                 {
-                  "zh": "远程威力：+10%（武士部队）（英雄所在军队）",
+                  "zh": "远程威力：武士部队+10%（英雄所在军队）",
                   "en": "Missile strength: +10% for Samurai units (Hero's army)"
                 }
               ]
@@ -131,19 +131,19 @@
                   "en": "Hit points: +10%"
                 },
                 {
-                  "zh": "武器威力：+15%（雷刃旗本）（英雄所在军队）",
+                  "zh": "武器威力：雷刃旗本部队+15%（英雄所在军队）",
                   "en": "Weapon strength: +15% for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {
-                  "zh": "冲锋加成：+10（雷刃旗本）（英雄所在军队）",
+                  "zh": "冲锋加成：雷刃旗本部队+10（英雄所在军队）",
                   "en": "Charge bonus: +10 for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {
-                  "zh": "特殊抗性：+8%（雷刃旗本）（英雄所在军队）",
+                  "zh": "特殊保护：雷刃旗本部队+8%（英雄所在军队）",
                   "en": "Ward save: +8% for Thunderblade Hatamoto units (Hero's army)"
                 },
                 {
-                  "zh": "移动速度：+20%（雷刃旗本）（英雄所在军队）",
+                  "zh": "移动速度：雷刃旗本部队+20%（英雄所在军队）",
                   "en": "Speed: +20% for Thunderblade Hatamoto units (Hero's army)"
                 }
               ]
@@ -205,8 +205,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁『紫电一闪』",
-                  "en": "Unlocks \"Shiden Flash\""
+                  "zh": "技能：『紫电一闪』",
+                  "en": "Ability: \"Shiden Flash\""
                 }
               ]
             }

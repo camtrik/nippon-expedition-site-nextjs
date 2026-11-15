@@ -20,8 +20,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁战场被动「神懸かり」",
-                  "en": "Unlocks the battlefield passive \"Kamigakari\""
+                  "zh": "被动技能：『神懸かり』",
+                  "en": "Passive ability: \"Kamigakari\""
                 },
                 {
                   "zh": "魔法之风法力储量：+3",
@@ -90,11 +90,11 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "魔法抗性：+15%（神兽部队）（英雄所在军队）",
+                  "zh": "魔法抗性：神兽部队+15%（英雄所在军队）",
                   "en": "Magic resistance: +15% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "物理抗性：+15%（神兽部队）（英雄所在军队）",
+                  "zh": "物理抗性：神兽部队+15%（英雄所在军队）",
                   "en": "Physical resistance: +15% for divine beast units (Hero's army)"
                 }
               ]
@@ -160,11 +160,11 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "维持费：-15%（稻荷灵狐使者、麒麟）（英雄所在军队）",
+                  "zh": "维持费：稻荷灵狐使者与麒麟部队-15%（英雄所在军队）",
                   "en": "Upkeep: -15% for Inari Fox Emissary and Kirin units (Hero's army)"
                 },
                 {
-                  "zh": "新募部队等级：+1（稻荷灵狐使者、麒麟）（英雄所在军队）",
+                  "zh": "新募部队等级：稻荷灵狐使者与麒麟部队+1（英雄所在军队）",
                   "en": "Recruit rank: +1 for Inari Fox Emissary and Kirin units (Hero's army)"
                 },
                 {
@@ -172,7 +172,7 @@
                   "en": "Local recruitment capacity: +1 (local province)"
                 },
                 {
-                  "zh": "武器威力：+6%（稻荷灵狐使者、麒麟）（英雄所在军队）",
+                  "zh": "武器威力：稻荷灵狐使者与麒麟部队+6%（英雄所在军队）",
                   "en": "Weapon strength: +6% for Inari Fox Emissary and Kirin units (Hero's army)"
                 }
               ]
@@ -205,8 +205,8 @@
                   "en": "Enemy Hero action success chance: -15% (enemy characters in region)"
                 },
                 {
-                  "zh": "解锁战场光环「神域」",
-                  "en": "Unlocks the battlefield aura \"Divine Domain\""
+                  "zh": "被动技能：『神域』",
+                  "en": "Passive ability: \"Divine Domain\""
                 },
                 {
                   "zh": "敌方部队领导力：-6（所在地区的敌方军队）",

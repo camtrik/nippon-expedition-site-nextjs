@@ -329,12 +329,12 @@
         "en": "Ryuka"
       },
       "desc": {
-        "zh": "潮風商社的掌舵人，刀铳齐鸣的天辰流浪客。在日升之塔的狂涛之间，她的算盘与转轮短铳同样致命。",
-        "en": "The head of the Shiokaze Trading Company and a wandering Tianchen swordswoman, as deadly with her ledger as with her pistol."
+        "zh": "潮風商社的社长，精通枪法与剑道，同时也有着极高的商业才能。",
+        "en": "President of the Shiokaze Trading Company, skilled with both pistol and sword, and possessed of sharp commercial acumen."
       },
       "story": {
-        "zh": "在尼朋幕府泛黄的通缉卷宗里，才谷直柔的名字早在十年前就已被朱笔勾销。相传这位出身嵐浜边陲的剑客曾以天辰流长刀皆传之技名动一时，却因狂妄起草开海合议之策，在客栈中引来大批幕府死士围杀，最终身死名裂。然而大洋彼岸的波涛从不理会死人的案卷。在南方重洋的高等精灵商都塔尔艾利提斯，一名自称琉華的女子身着西洋提督长风衣，带着腰间的名刀与改装短铳横空出世，一手建立了通吃四海的潮風商社。当混沌的疫病风暴吞噬了商都，退守日升之塔的琉華面对步步紧逼的恶魔黑帆，拔出太刀扣响了短铳。时代的潮風正从重洋吹来，而这位死而复生的社长，誓要用万国钢铁与震旦巨炮轰碎紧锁故土的国门。",
-        "en": "Once declared dead by the shogunate, Ryuka reappeared across the sea as the head of the Shiokaze Trading Company. Driven from her trading port by the storms of Chaos, she now holds the Tower of the Rising Sun with sword and pistol, determined to break open the closed gates of her homeland with steel and cannon from across the world."
+        "zh": "琉華作为「潮風商社」的掌舵人而闻名于旧世界的各大港口，但很少有人知道她的身世。她的商船上既有东方的奇珍异宝，也有西方的军械与奇巧造物。虽然传闻她出身尼朋，她麾下的商船却极少在尼朋故土靠岸。",
+        "en": "Ryuka is known across the great ports of the Old World as the helmswoman of the Shiokaze Trading Company, yet few know anything of her origins. Her merchantmen carry rare treasures from the East alongside firearms and fine curiosities from the West. Though rumour has it that she hails from Nippon, the ships under her command rarely drop anchor in her homeland."
       }
     },
     "cth_npex_cha_ryuka_1": {
@@ -343,12 +343,12 @@
         "en": "Ryuka (Promethean)"
       },
       "desc": {
-        "zh": "潮風商社的掌舵人，刀铳齐鸣的天辰流浪客。在日升之塔的狂涛之间，她的算盘与转轮短铳同样致命。",
-        "en": "The head of the Shiokaze Trading Company and a wandering Tianchen swordswoman, as deadly with her ledger as with her pistol."
+        "zh": "潮風商社的社长，精通枪法与剑道，同时也有着极高的商业才能。",
+        "en": "President of the Shiokaze Trading Company, skilled with both pistol and sword, and possessed of sharp commercial acumen."
       },
       "story": {
-        "zh": "在尼朋幕府泛黄的通缉卷宗里，才谷直柔的名字早在十年前就已被朱笔勾销。相传这位出身嵐浜边陲的剑客曾以天辰流长刀皆传之技名动一时，却因狂妄起草开海合议之策，在客栈中引来大批幕府死士围杀，最终身死名裂。然而大洋彼岸的波涛从不理会死人的案卷。在南方重洋的高等精灵商都塔尔艾利提斯，一名自称琉華的女子身着西洋提督长风衣，带着腰间的名刀与改装短铳横空出世，一手建立了通吃四海的潮風商社。当混沌的疫病风暴吞噬了商都，退守日升之塔的琉華面对步步紧逼的恶魔黑帆，拔出太刀扣响了短铳。时代的潮風正从重洋吹来，而这位死而复生的社长，誓要用万国钢铁与震旦巨炮轰碎紧锁故土的国门。",
-        "en": "Once declared dead by the shogunate, Ryuka reappeared across the sea as the head of the Shiokaze Trading Company. Driven from her trading port by the storms of Chaos, she now holds the Tower of the Rising Sun with sword and pistol, determined to break open the closed gates of her homeland with steel and cannon from across the world."
+        "zh": "琉華作为「潮風商社」的掌舵人而闻名于旧世界的各大港口，但很少有人知道她的身世。她的商船上既有东方的奇珍异宝，也有西方的军械与奇巧造物。虽然传闻她出身尼朋，她麾下的商船却极少在尼朋故土靠岸。",
+        "en": "Ryuka is known across the great ports of the Old World as the helmswoman of the Shiokaze Trading Company, yet few know anything of her origins. Her merchantmen carry rare treasures from the East alongside firearms and fine curiosities from the West. Though rumour has it that she hails from Nippon, the ships under her command rarely drop anchor in her homeland."
       }
     },
     "cth_npex_cha_ryuka_2": {
@@ -357,12 +357,12 @@
         "en": "Ryuka (Shiokaze Land Ship)"
       },
       "desc": {
-        "zh": "潮風商社的掌舵人，刀铳齐鸣的天辰流浪客。在日升之塔的狂涛之间，她的算盘与转轮短铳同样致命。",
-        "en": "The head of the Shiokaze Trading Company and a wandering Tianchen swordswoman, as deadly with her ledger as with her pistol."
+        "zh": "潮風商社的社长，精通枪法与剑道，同时也有着极高的商业才能。",
+        "en": "President of the Shiokaze Trading Company, skilled with both pistol and sword, and possessed of sharp commercial acumen."
       },
       "story": {
-        "zh": "在尼朋幕府泛黄的通缉卷宗里，才谷直柔的名字早在十年前就已被朱笔勾销。相传这位出身嵐浜边陲的剑客曾以天辰流长刀皆传之技名动一时，却因狂妄起草开海合议之策，在客栈中引来大批幕府死士围杀，最终身死名裂。然而大洋彼岸的波涛从不理会死人的案卷。在南方重洋的高等精灵商都塔尔艾利提斯，一名自称琉華的女子身着西洋提督长风衣，带着腰间的名刀与改装短铳横空出世，一手建立了通吃四海的潮風商社。当混沌的疫病风暴吞噬了商都，退守日升之塔的琉華面对步步紧逼的恶魔黑帆，拔出太刀扣响了短铳。时代的潮風正从重洋吹来，而这位死而复生的社长，誓要用万国钢铁与震旦巨炮轰碎紧锁故土的国门。",
-        "en": "Once declared dead by the shogunate, Ryuka reappeared across the sea as the head of the Shiokaze Trading Company. Driven from her trading port by the storms of Chaos, she now holds the Tower of the Rising Sun with sword and pistol, determined to break open the closed gates of her homeland with steel and cannon from across the world."
+        "zh": "琉華作为「潮風商社」的掌舵人而闻名于旧世界的各大港口，但很少有人知道她的身世。她的商船上既有东方的奇珍异宝，也有西方的军械与奇巧造物。虽然传闻她出身尼朋，她麾下的商船却极少在尼朋故土靠岸。",
+        "en": "Ryuka is known across the great ports of the Old World as the helmswoman of the Shiokaze Trading Company, yet few know anything of her origins. Her merchantmen carry rare treasures from the East alongside firearms and fine curiosities from the West. Though rumour has it that she hails from Nippon, the ships under her command rarely drop anchor in her homeland."
       }
     },
     "cth_npex_cha_sayo_0": {
@@ -371,12 +371,12 @@
         "en": "Sayo, the Onmyo Miko"
       },
       "desc": {
-        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
-        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+        "zh": "镜山神社的末代巫女，阴阳与式神之术的传人。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the arts of Onmyo and shikigami."
       },
       "story": {
-        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
-        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+        "zh": "纱代是镜山神社仅存的巫女。镜山一脉的术法源出古时传入尼朋的震旦阴阳术，又与本地神乐及式神之法相融。内战期间大社遭焚毁，师父临终前将刻有阴阳符与镜山纹的神乐铃交到她手中，此后她便独自守在废社之中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to native Kagura and the way of the shikigami. When the shrine burned down during the Nipponese civil war, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama, and she has kept vigil among the ruins ever since."
       }
     },
     "cth_npex_cha_sayo_1": {
@@ -385,12 +385,12 @@
         "en": "Sayo, the Onmyo Miko"
       },
       "desc": {
-        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
-        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+        "zh": "镜山神社的末代巫女，阴阳与式神之术的传人。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the arts of Onmyo and shikigami."
       },
       "story": {
-        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
-        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+        "zh": "纱代是镜山神社仅存的巫女。镜山一脉的术法源出古时传入尼朋的震旦阴阳术，又与本地神乐及式神之法相融。内战期间大社遭焚毁，师父临终前将刻有阴阳符与镜山纹的神乐铃交到她手中，此后她便独自守在废社之中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to native Kagura and the way of the shikigami. When the shrine burned down during the Nipponese civil war, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama, and she has kept vigil among the ruins ever since."
       }
     },
     "cth_npex_cha_sayo_2": {
@@ -399,12 +399,12 @@
         "en": "Sayo, the Onmyo Miko"
       },
       "desc": {
-        "zh": "镜山神社最后的巫女，阴阳之术的传人。神乐铃响处，式神听令。",
-        "en": "The last miko of Kagamiyama Shrine, heir to the Onmyo arts. Where her kagura bell rings, the shikigami obey."
+        "zh": "镜山神社的末代巫女，阴阳与式神之术的传人。",
+        "en": "The last miko of Kagamiyama Shrine, heir to the arts of Onmyo and shikigami."
       },
       "story": {
-        "zh": "纱代是镜山神社的末代巫女。阴阳之术古时自震旦传入尼朋，在镜山一脉与山中古老的本土神乐相融，发扬光大，兼修式神之法。神社毁于尼朋内战，师父临终将一枚刻有阴阳符与镜山纹的神乐铃交到她手中。",
-        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to the ancient native Kagura of the mountains, carried to new heights, and joined with the way of the shikigami. When the Nipponese civil war burned the shrine down, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama."
+        "zh": "纱代是镜山神社仅存的巫女。镜山一脉的术法源出古时传入尼朋的震旦阴阳术，又与本地神乐及式神之法相融。内战期间大社遭焚毁，师父临终前将刻有阴阳符与镜山纹的神乐铃交到她手中，此后她便独自守在废社之中。",
+        "en": "Sayo is the last miko of Kagamiyama Shrine. The Onmyo arts came over the sea from Cathay in ages past; in the line of Kagamiyama they were wedded to native Kagura and the way of the shikigami. When the shrine burned down during the Nipponese civil war, her dying master pressed into her hands a kagura bell engraved with the sigil of yin and yang and the crest of Kagamiyama, and she has kept vigil among the ruins ever since."
       }
     },
     "cth_npex_cha_serena_0": {
@@ -413,12 +413,12 @@
         "en": "Serena"
       },
       "desc": {
-        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
-        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+        "zh": "来自奥苏安的迷雾法师，独自漂泊远东的高等精灵航海士。",
+        "en": "A Mist Mage from Ulthuan, a High Elf navigator wandering alone across the Far East."
       },
       "story": {
-        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
-        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+        "zh": "瑟兰娜曾在海领主艾斯林麾下的海上巡逻队担任迷雾法师。她不仅擅长使用迷雾法术，对其他法术与航海术也熟稔于心。她独自沿着远东航路辗转至今，少有人知她为何滞留于此。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. She is not only skilled in mist magic, but well versed in other lores and the art of navigation besides. She has drifted along the sea lanes of the Far East ever since, and few know why she lingers here."
       }
     },
     "cth_npex_cha_serena_1": {
@@ -427,12 +427,12 @@
         "en": "Serena"
       },
       "desc": {
-        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
-        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+        "zh": "来自奥苏安的迷雾法师，独自漂泊远东的高等精灵航海士。",
+        "en": "A Mist Mage from Ulthuan, a High Elf navigator wandering alone across the Far East."
       },
       "story": {
-        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
-        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+        "zh": "瑟兰娜曾在海领主艾斯林麾下的海上巡逻队担任迷雾法师。她不仅擅长使用迷雾法术，对其他法术与航海术也熟稔于心。她独自沿着远东航路辗转至今，少有人知她为何滞留于此。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. She is not only skilled in mist magic, but well versed in other lores and the art of navigation besides. She has drifted along the sea lanes of the Far East ever since, and few know why she lingers here."
       }
     },
     "cth_npex_cha_serena_2": {
@@ -441,12 +441,12 @@
         "en": "Serena"
       },
       "desc": {
-        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
-        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+        "zh": "来自奥苏安的迷雾法师，独自漂泊远东的高等精灵航海士。",
+        "en": "A Mist Mage from Ulthuan, a High Elf navigator wandering alone across the Far East."
       },
       "story": {
-        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
-        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+        "zh": "瑟兰娜曾在海领主艾斯林麾下的海上巡逻队担任迷雾法师。她不仅擅长使用迷雾法术，对其他法术与航海术也熟稔于心。她独自沿着远东航路辗转至今，少有人知她为何滞留于此。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. She is not only skilled in mist magic, but well versed in other lores and the art of navigation besides. She has drifted along the sea lanes of the Far East ever since, and few know why she lingers here."
       }
     },
     "cth_npex_cha_serena_3": {
@@ -455,12 +455,12 @@
         "en": "Serena"
       },
       "desc": {
-        "zh": "高等精灵的迷雾法师，重洋而来的流浪者。迷雾听她号令。",
-        "en": "A Mist Mage of the High Elves, a wanderer from beyond the ocean. The mists answer her command."
+        "zh": "来自奥苏安的迷雾法师，独自漂泊远东的高等精灵航海士。",
+        "en": "A Mist Mage from Ulthuan, a High Elf navigator wandering alone across the Far East."
       },
       "story": {
-        "zh": "瑟兰娜曾在海领主艾斯林的海上巡逻队任迷雾法师。她的迷雾法术登峰造极，并且精通航海之术，是最娴熟的航海士之一。",
-        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. Her mist magic has reached its very summit, and she is versed in the seaman's craft besides, standing among the most accomplished navigators on any sea."
+        "zh": "瑟兰娜曾在海领主艾斯林麾下的海上巡逻队担任迷雾法师。她不仅擅长使用迷雾法术，对其他法术与航海术也熟稔于心。她独自沿着远东航路辗转至今，少有人知她为何滞留于此。",
+        "en": "Serena once served as a Mist Mage in the sea patrols of Sea Lord Aislinn. She is not only skilled in mist magic, but well versed in other lores and the art of navigation besides. She has drifted along the sea lanes of the Far East ever since, and few know why she lingers here."
       }
     },
     "cth_npex_cha_tachibana_naotora_0": {
@@ -473,8 +473,8 @@
         "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
       },
       "story": {
-        "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
-        "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+        "zh": "立花直虎出身尼朋名门，因家中无男嗣，年幼时便破例继承家督，亲执双刀「紫电」领兵出阵。内战中立花家所在阵营战败、领地被没收，直虎自此下落不明。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+        "en": "Tachibana Naotora was born to a great house of Nippon. With no male heir in the family, she inherited the headship of the clan while still young – against all custom – and took the field in person, wielding the twin blades Shiden. When the side her house had taken in the civil war was defeated and its lands confiscated, Naotora vanished without a trace. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
       }
     },
     "cth_npex_cha_tachibana_naotora_1": {
@@ -487,8 +487,8 @@
         "en": "The Daughter of Raijin, wielding the twin blades Shiden; before foes can mark her form, they fall beneath the lightning."
       },
       "story": {
-        "zh": "立花直虎出身尼朋名门，是家中独女，年幼时便破例继承家督。少年时，她亲执双刀「紫电」，率旗本冲锋陷阵。尼朋内战爆发，立花家所属的阵营战败，领地被没收，直虎自此音讯不明。内战虽已完结，混沌势力仍在尼朋横行。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
-        "en": "Tachibana Naotora was born to a great house of Nippon, an only daughter, and inherited the headship of the clan while still young – against all custom. In her youth she wielded the twin blades Shiden at the head of the Hatamoto, breaking the enemy line in the charge. When the Nipponese civil war broke out, the side her house had taken was beaten and its lands confiscated, and from that time no word was heard of Naotora. The civil war is over, but the forces of Chaos still range through Nippon. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
+        "zh": "立花直虎出身尼朋名门，因家中无男嗣，年幼时便破例继承家督，亲执双刀「紫电」领兵出阵。内战中立花家所在阵营战败、领地被没收，直虎自此下落不明。相传有带着鬼面的少女手持双刀，出没于战火未熄的乡野。她的刀光快过视线，雷鸣随刀而至，被劈中的邪物焦黑如炭。",
+        "en": "Tachibana Naotora was born to a great house of Nippon. With no male heir in the family, she inherited the headship of the clan while still young – against all custom – and took the field in person, wielding the twin blades Shiden. When the side her house had taken in the civil war was defeated and its lands confiscated, Naotora vanished without a trace. Rumour tells of a girl in an oni mask, twin blades in hand, abroad in the countryside where the fires of war have not yet gone out. The gleam of her blades is quicker than sight, thunder arrives with every stroke, and the wicked things she cleaves are left scorched black as charcoal."
       }
     },
     "cth_npex_empyrean_guard_0": {
@@ -913,7 +913,7 @@
     },
     "cth_npex_shiokaze": {
       "name": {
-        "zh": "潮風武装団",
+        "zh": "潮風武装团",
         "en": "Shiokaze Armed Company"
       },
       "desc": {
@@ -927,7 +927,7 @@
     },
     "cth_npex_shiokaze_flamethrower": {
       "name": {
-        "zh": "潮風武装団（喷火枪）",
+        "zh": "潮風武装团（喷火枪）",
         "en": "Shiokaze Armed Company (Flamethrowers)"
       },
       "desc": {

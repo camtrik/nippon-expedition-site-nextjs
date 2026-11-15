@@ -82,11 +82,11 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "近战攻击：+6（妖怪部队）（英雄所在军队）",
+                  "zh": "近战攻击：妖怪部队+6（英雄所在军队）",
                   "en": "Melee attack: +6 for Yokai units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+6（妖怪部队）（英雄所在军队）",
+                  "zh": "近战防御：妖怪部队+6（英雄所在军队）",
                   "en": "Melee defence: +6 for Yokai units (Hero's army)"
                 },
                 {
@@ -94,7 +94,7 @@
                   "en": "Recruit rank: +2 for Yokai units (Hero's army)"
                 },
                 {
-                  "zh": "装弹时间降低：+15%（妖怪部队）（英雄所在军队）",
+                  "zh": "装弹时间降低：妖怪部队+15%（英雄所在军队）",
                   "en": "Reload time reduction: +15% for Yokai units (Hero's army)"
                 }
               ]
@@ -246,8 +246,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁『鬼力绽放』",
-                  "en": "Unlocks \"Oni Might Unleashed\""
+                  "zh": "技能：『鬼力绽放』",
+                  "en": "Ability: \"Oni Might Unleashed\""
                 }
               ]
             },
@@ -255,8 +255,8 @@
               "level": 2,
               "lines": [
                 {
-                  "zh": "解锁强化版『鬼力绽放』",
-                  "en": "Unlocks the upgraded \"Oni Might Unleashed\""
+                  "zh": "技能：『鬼力绽放（强化）』",
+                  "en": "Ability: \"Oni Might Unleashed (Upgraded)\""
                 }
               ]
             }
@@ -284,8 +284,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁『鬼威慑魂』",
-                  "en": "Unlocks \"Dread of the Oni\""
+                  "zh": "技能：『鬼威慑魂』",
+                  "en": "Ability: \"Dread of the Oni\""
                 }
               ]
             },
@@ -293,8 +293,8 @@
               "level": 2,
               "lines": [
                 {
-                  "zh": "解锁强化版『鬼威慑魂』",
-                  "en": "Unlocks the upgraded \"Dread of the Oni\""
+                  "zh": "技能：『鬼威慑魂（强化）』",
+                  "en": "Ability: \"Dread of the Oni (Upgraded)\""
                 }
               ]
             }

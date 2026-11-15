@@ -24,8 +24,8 @@
               "en": "Construction cost: -20% for all buildings (local province)"
             },
             {
-              "zh": "武器威力（近战+远程）：+10%（武士部队）（英雄所在军队）",
-              "en": "Weapon Strength and Missile Strength: +10% for Samurai units (Hero's army)"
+              "zh": "武器威力与远程威力：武士部队+10%（英雄所在军队）",
+              "en": "Weapon strength and missile strength: +10% for Samurai units (Hero's army)"
             }
           ]
         }

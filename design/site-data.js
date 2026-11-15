@@ -345,7 +345,7 @@
         chapters: [
           { zh: "半张面具", en: "Half a Mask" },
           { zh: "輝山阴影", en: "The Shadow of Hikariya" },
-          { zh: "星象罗盘", en: "The Star Compass" },
+          { zh: "星月罗盘", en: "The Star Compass" },
           { zh: "望舒·瑟兰娜·顾", en: "Wangshu Selana Gu" }
         ]
       }

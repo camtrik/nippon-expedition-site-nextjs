@@ -28,8 +28,8 @@
                   "en": "Melee defence: +4"
                 },
                 {
-                  "zh": "解锁战场能力「武器大师」",
-                  "en": "Unlocks the battlefield ability \"Weapon Master\""
+                  "zh": "技能：『武器大师』",
+                  "en": "Ability: \"Weapon Master\""
                 }
               ]
             }
@@ -57,15 +57,15 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "远程威力：+10%（铁炮部队）（领主军队）",
+                  "zh": "远程威力：铁炮部队+10%（领主军队）",
                   "en": "Missile strength: +10% for Teppo units (Lord's army)"
                 },
                 {
-                  "zh": "装填速度：+10%（铁炮部队）（领主军队）",
+                  "zh": "装弹时间降低：铁炮部队+10%（领主军队）",
                   "en": "Reload time reduction: +10% for Teppo units (Lord's army)"
                 },
                 {
-                  "zh": "射程范围：+10%（铁炮部队）（领主军队）",
+                  "zh": "射程范围：铁炮部队+10%（领主军队）",
                   "en": "Range: +10% for Teppo units (Lord's army)"
                 }
               ]
@@ -106,15 +106,15 @@
                   "en": "Bonus vs Large: +5"
                 },
                 {
-                  "zh": "武器威力：+10%（近战武士部队）（领主军队）",
+                  "zh": "武器威力：近战武士部队+10%（领主军队）",
                   "en": "Weapon strength: +10% for melee Samurai units (Lord's army)"
                 },
                 {
-                  "zh": "对抗大型部队加成：+5（近战武士部队）（领主军队）",
+                  "zh": "对抗大型部队加成：近战武士部队+5（领主军队）",
                   "en": "Bonus vs Large: +5 for melee Samurai units (Lord's army)"
                 },
                 {
-                  "zh": "近战攻击：+4（近战武士部队）（领主军队）",
+                  "zh": "近战攻击：近战武士部队+4（领主军队）",
                   "en": "Melee attack: +4 for melee Samurai units (Lord's army)"
                 }
               ]
@@ -143,16 +143,16 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "冲锋加成：+10（灵兽）（领主军队）",
-                  "en": "Charge bonus: +10 for Divine Beast units (Lord's army)"
+                  "zh": "冲锋加成：麒麟部队+10（领主军队）",
+                  "en": "Charge bonus: +10 for Kirin units (Lord's army)"
                 },
                 {
-                  "zh": "近战攻击：+6（灵兽）（领主军队）",
-                  "en": "Melee attack: +6 for Divine Beast units (Lord's army)"
+                  "zh": "近战攻击：麒麟部队+6（领主军队）",
+                  "en": "Melee attack: +6 for Kirin units (Lord's army)"
                 },
                 {
-                  "zh": "近战防御：+4（灵兽）（领主军队）",
-                  "en": "Melee defence: +4 for Divine Beast units (Lord's army)"
+                  "zh": "近战防御：麒麟部队+4（领主军队）",
+                  "en": "Melee defence: +4 for Kirin units (Lord's army)"
                 }
               ]
             }
@@ -221,12 +221,12 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "「武器大师」由「向死而生」取代",
+                  "zh": "『武器大师』被『向死而生』取代",
                   "en": "\"Weapon Master\" is replaced by \"Death Gives Life\""
                 },
                 {
-                  "zh": "解锁战场能力「向死而生」",
-                  "en": "Unlocks the battlefield ability \"Death Gives Life\""
+                  "zh": "技能：『向死而生』",
+                  "en": "Ability: \"Death Gives Life\""
                 },
                 {
                   "zh": "解锁属性：永不战败",

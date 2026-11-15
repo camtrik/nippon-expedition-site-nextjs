@@ -24,8 +24,8 @@
                   "en": "Winds of Magic power reserve capacity: +5"
                 },
                 {
-                  "zh": "解锁『阴阳之巫』",
-                  "en": "Unlocks \"Onmyo Miko\""
+                  "zh": "被动技能：『阴阳之巫』",
+                  "en": "Passive ability: \"Onmyo Miko\""
                 }
               ]
             }
@@ -123,11 +123,11 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "魔法抗性：+15%（神兽部队）（英雄所在军队）",
+                  "zh": "魔法抗性：神兽部队+15%（英雄所在军队）",
                   "en": "Magic resistance: +15% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "物理抗性：+15%（神兽部队）（英雄所在军队）",
+                  "zh": "物理抗性：神兽部队+15%（英雄所在军队）",
                   "en": "Physical resistance: +15% for divine beast units (Hero's army)"
                 }
               ]
@@ -156,8 +156,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁『神明庇护』",
-                  "en": "Unlocks \"Divine Protection\""
+                  "zh": "被动技能：『神明庇护』",
+                  "en": "Passive ability: \"Divine Protection\""
                 }
               ]
             }
@@ -185,8 +185,8 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "解锁『封印之钥』",
-                  "en": "Unlocks \"Key of Sealing\""
+                  "zh": "被动技能：『封印之钥』",
+                  "en": "Passive ability: \"Key of Sealing\""
                 }
               ]
             }
@@ -212,7 +212,17 @@
             "zh": "神乐铃三振，云气自镜面翻涌而出。",
             "en": "Three shakes of the kagura bells, and clouds surge forth from the mirror's surface."
           },
-          "levels": [],
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "技能：『神兽召来：麒麟』",
+                  "en": "Ability: \"Summon Divine Beast: Kirin\""
+                }
+              ]
+            }
+          ],
           "icon": "cth_npex_skill_sayo_unique_1_6.png",
           "reuse": false,
           "unlock": {
@@ -924,19 +934,19 @@
               "level": 1,
               "lines": [
                 {
-                  "zh": "武器威力：+10%（神兽部队）（英雄所在军队）",
+                  "zh": "武器威力：神兽部队+10%（英雄所在军队）",
                   "en": "Weapon strength: +10% for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "近战攻击：+6（神兽部队）（英雄所在军队）",
+                  "zh": "近战攻击：神兽部队+6（英雄所在军队）",
                   "en": "Melee attack: +6 for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "近战防御：+6（神兽部队）（英雄所在军队）",
+                  "zh": "近战防御：神兽部队+6（英雄所在军队）",
                   "en": "Melee defence: +6 for divine beast units (Hero's army)"
                 },
                 {
-                  "zh": "领导力：+8（神兽部队）（英雄所在军队）",
+                  "zh": "领导力：神兽部队+8（英雄所在军队）",
                   "en": "Leadership: +8 for divine beast units (Hero's army)"
                 }
               ]

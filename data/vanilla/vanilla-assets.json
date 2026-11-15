@@ -946,12 +946,12 @@
           "scope": "general_to_force_own",
           "value": 2.0,
           "text": {
-            "zh": "新募部队经验等级：+2（火器与炮兵部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Recruit rank: +2 for gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "新募部队等级：鹤铳手、南皋霹雳手、铁炮足轻与巨炮等指定部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruit rank: +2 for eligible units such as Crane Gunners, Nan-Gau Grenadiers, Matchlock Ashigaru and Grand Cannons\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "新募部队经验等级：%+n（火器与炮兵部队）",
-            "en": "Recruit rank: %+n for gunpowder and artillery units"
+            "zh": "新募部队等级：鹤铳手、南皋霹雳手、铁炮足轻与巨炮等指定部队%+n",
+            "en": "Recruit rank: %+n for eligible units such as Crane Gunners, Nan-Gau Grenadiers, Matchlock Ashigaru and Grand Cannons"
           },
           "priority": 450,
           "icon": {
@@ -969,11 +969,11 @@
           "scope": "general_to_force_own",
           "value": 5.0,
           "text": {
-            "zh": "远程威力：+5%（远程部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：远程部队+5%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +5% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（远程部队）",
+            "zh": "远程威力：远程部队%+n%",
             "en": "Missile strength: %+n% for missile units"
           },
           "priority": 540,
@@ -1115,11 +1115,11 @@
           "scope": "general_to_force_own",
           "value": 2.0,
           "text": {
-            "zh": "新募部队经验等级：+2（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "新募部队等级：骑兵部队（不含领主与英雄）+2\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Recruit rank: +2 for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "新募部队经验等级：%+n（骑兵部队，不含领主与英雄）",
+            "zh": "新募部队等级：骑兵部队（不含领主与英雄）%+n",
             "en": "Recruit rank: %+n for cavalry units (excluding lords and heroes)"
           },
           "priority": 450,
@@ -1138,11 +1138,11 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "骑兵部队获得属性：地形适性（不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "解锁属性：为骑兵部队（不含领主与英雄）解锁地形适性技能\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Attribute: Strider for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "骑兵部队获得属性：地形适性（不含领主与英雄）",
+            "zh": "解锁属性：为骑兵部队（不含领主与英雄）解锁地形适性技能",
             "en": "Attribute: Strider for cavalry units (excluding lords and heroes)"
           },
           "priority": 450,
@@ -1274,12 +1274,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "template": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "priority": 300,
           "icon": {
@@ -1329,12 +1329,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "template": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "priority": 300,
           "icon": {
@@ -1384,12 +1384,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "template": {
-            "zh": "解锁战场被动「踏浪惊涛」",
-            "en": "Unlocks the battlefield passive \"Wake of Breaking Waves\""
+            "zh": "被动技能：『踏浪惊涛』",
+            "en": "Passive ability: \"Wake of Breaking Waves\""
           },
           "priority": 300,
           "icon": {
@@ -1837,12 +1837,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「横江」",
-            "en": "Unlocks the battlefield ability \"River Sweep\""
+            "zh": "技能：『横江』",
+            "en": "Ability: \"River Sweep\""
           },
           "template": {
-            "zh": "解锁战场能力「横江」",
-            "en": "Unlocks the battlefield ability \"River Sweep\""
+            "zh": "技能：『横江』",
+            "en": "Ability: \"River Sweep\""
           },
           "priority": 300,
           "icon": {
@@ -1934,7 +1934,11 @@
         "from": "game ui pack"
       },
       "unlocked_at_rank": "0",
-      "level_ranks": null,
+      "level_ranks": {
+        "1": 8,
+        "2": 12,
+        "3": 16
+      },
       "referenced_by": [
         "skills/admiral-01.json",
         "skills/admiral-02.json",
@@ -2048,12 +2052,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「舷侧齐射」",
-            "en": "Unlocks the battlefield ability \"Broadside\""
+            "zh": "技能：『舷侧齐射』",
+            "en": "Ability: \"Broadside\""
           },
           "template": {
-            "zh": "解锁战场能力「舷侧齐射」",
-            "en": "Unlocks the battlefield ability \"Broadside\""
+            "zh": "技能：『舷侧齐射』",
+            "en": "Ability: \"Broadside\""
           },
           "priority": 300,
           "icon": {
@@ -2170,11 +2174,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（远程部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：远程部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +10% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（远程部队）",
+            "zh": "远程威力：远程部队%+n%",
             "en": "Missile strength: %+n% for missile units"
           },
           "priority": 540,
@@ -2193,12 +2197,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "装填速度：+10%（远程部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload speed: +10% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "装弹时间降低：远程部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +10% for missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装填速度：%+n%（远程部队）",
-            "en": "Reload speed: %+n% for missile units"
+            "zh": "装弹时间降低：远程部队%+n%",
+            "en": "Reload time reduction: %+n% for missile units"
           },
           "priority": 541,
           "icon": {
@@ -2266,12 +2270,12 @@
           "scope": "general_to_force_own",
           "value": -50.0,
           "text": {
-            "zh": "遭受公海与礁石损耗：-50%\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "High seas and reef attrition suffered: -50%\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "部队损耗：深海与暗礁部队损耗-50%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attrition: -50% casualties suffered from high seas and reef attrition\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "遭受公海与礁石损耗：%+n%",
-            "en": "High seas and reef attrition suffered: %+n%"
+            "zh": "部队损耗：深海与暗礁部队损耗%+n%",
+            "en": "Attrition: %+n% casualties suffered from high seas and reef attrition"
           },
           "priority": 450,
           "icon": {
@@ -2483,11 +2487,11 @@
           "scope": "general_to_force_own",
           "value": 20.0,
           "text": {
-            "zh": "武器破甲杀伤：+20%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "武器破甲杀伤：骑兵部队（不含领主与英雄）+20%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Armour-piercing weapon damage: +20% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器破甲杀伤：%+n%（骑兵部队，不含领主与英雄）",
+            "zh": "武器破甲杀伤：骑兵部队（不含领主与英雄）%+n%",
             "en": "Armour-piercing weapon damage: %+n% for cavalry units (excluding lords and heroes)"
           },
           "priority": 450,
@@ -2577,12 +2581,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「死士怒吼」",
-            "en": "Enables battle ability: Death-Defying Roar"
+            "zh": "技能：『死士怒吼』",
+            "en": "Ability: \"Death-Defying Roar\""
           },
           "template": {
-            "zh": "解锁战场能力「死士怒吼」",
-            "en": "Enables battle ability: Death-Defying Roar"
+            "zh": "技能：『死士怒吼』",
+            "en": "Ability: \"Death-Defying Roar\""
           },
           "priority": 450,
           "icon": {
@@ -2653,12 +2657,12 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "弹药容量：+15%（火器与炮兵部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Ammunition: +15% for gunpowder and artillery units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "弹药容量：鹤铳手、南皋霹雳手、铁炮足轻与巨炮等指定部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ammunition: +15% for eligible units such as Crane Gunners, Nan-Gau Grenadiers, Matchlock Ashigaru and Grand Cannons\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "弹药容量：%+n%（火器与炮兵部队）",
-            "en": "Ammunition: %+n% for gunpowder and artillery units"
+            "zh": "弹药容量：鹤铳手、南皋霹雳手、铁炮足轻与巨炮等指定部队%+n%",
+            "en": "Ammunition: %+n% for eligible units such as Crane Gunners, Nan-Gau Grenadiers, Matchlock Ashigaru and Grand Cannons"
           },
           "priority": 450,
           "icon": {
@@ -2727,11 +2731,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "移动速度：+10%（骑兵部队，不含领主与英雄）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "移动速度：骑兵部队（不含领主与英雄）+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Speed: +10% for cavalry units (excluding lords and heroes)\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "移动速度：%+n%（骑兵部队，不含领主与英雄）",
+            "zh": "移动速度：骑兵部队（不含领主与英雄）%+n%",
             "en": "Speed: %+n% for cavalry units (excluding lords and heroes)"
           },
           "priority": 500,
@@ -5428,12 +5432,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『鬼力绽放』",
-            "en": "Unlocks \"Oni Might Unleashed\""
+            "zh": "技能：『鬼力绽放』",
+            "en": "Ability: \"Oni Might Unleashed\""
           },
           "template": {
-            "zh": "解锁『鬼力绽放』",
-            "en": "Unlocks \"Oni Might Unleashed\""
+            "zh": "技能：『鬼力绽放』",
+            "en": "Ability: \"Oni Might Unleashed\""
           },
           "priority": 500,
           "icon": {
@@ -5451,12 +5455,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁强化版『鬼力绽放』",
-            "en": "Unlocks the upgraded \"Oni Might Unleashed\""
+            "zh": "技能：『鬼力绽放（强化）』",
+            "en": "Ability: \"Oni Might Unleashed (Upgraded)\""
           },
           "template": {
-            "zh": "解锁强化版『鬼力绽放』",
-            "en": "Unlocks the upgraded \"Oni Might Unleashed\""
+            "zh": "技能：『鬼力绽放（强化）』",
+            "en": "Ability: \"Oni Might Unleashed (Upgraded)\""
           },
           "priority": 500,
           "icon": {
@@ -5507,12 +5511,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『鬼威慑魂』",
-            "en": "Unlocks \"Dread of the Oni\""
+            "zh": "技能：『鬼威慑魂』",
+            "en": "Ability: \"Dread of the Oni\""
           },
           "template": {
-            "zh": "解锁『鬼威慑魂』",
-            "en": "Unlocks \"Dread of the Oni\""
+            "zh": "技能：『鬼威慑魂』",
+            "en": "Ability: \"Dread of the Oni\""
           },
           "priority": 500,
           "icon": {
@@ -5530,12 +5534,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁强化版『鬼威慑魂』",
-            "en": "Unlocks the upgraded \"Dread of the Oni\""
+            "zh": "技能：『鬼威慑魂（强化）』",
+            "en": "Ability: \"Dread of the Oni (Upgraded)\""
           },
           "template": {
-            "zh": "解锁强化版『鬼威慑魂』",
-            "en": "Unlocks the upgraded \"Dread of the Oni\""
+            "zh": "技能：『鬼威慑魂（强化）』",
+            "en": "Ability: \"Dread of the Oni (Upgraded)\""
           },
           "priority": 500,
           "icon": {
@@ -5605,11 +5609,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "领导力：妖怪部队+8\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Leadership: +8 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "领导力：%+n（妖怪部队）",
+            "zh": "领导力：妖怪部队%+n",
             "en": "Leadership: %+n for Yokai units"
           },
           "priority": 500,
@@ -5676,11 +5680,11 @@
           "scope": "general_to_force_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "领导力：妖怪部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Leadership: +8 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "领导力：%+n（妖怪部队）",
+            "zh": "领导力：妖怪部队%+n",
             "en": "Leadership: %+n for Yokai units"
           },
           "priority": 500,
@@ -5856,11 +5860,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战攻击：妖怪部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee attack: +6 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（妖怪部队）",
+            "zh": "近战攻击：妖怪部队%+n",
             "en": "Melee attack: %+n for Yokai units"
           },
           "priority": 500,
@@ -5879,11 +5883,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "近战防御：+6（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战防御：妖怪部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee defence: +6 for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（妖怪部队）",
+            "zh": "近战防御：妖怪部队%+n",
             "en": "Melee defence: %+n for Yokai units"
           },
           "priority": 500,
@@ -5925,11 +5929,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 15.0,
           "text": {
-            "zh": "装弹时间降低：+15%（妖怪部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "装弹时间降低：妖怪部队+15%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Reload time reduction: +15% for Yokai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "装弹时间降低：%+n%（妖怪部队）",
+            "zh": "装弹时间降低：妖怪部队%+n%",
             "en": "Reload time reduction: %+n% for Yokai units"
           },
           "priority": 562,
@@ -5975,11 +5979,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：妖怪部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +6 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（妖怪部队）",
+            "zh": "近战攻击：妖怪部队%+n",
             "en": "Melee attack: %+n for Yokai units"
           },
           "priority": 500,
@@ -5998,11 +6002,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战防御：+6（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战防御：妖怪部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee defence: +6 for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（妖怪部队）",
+            "zh": "近战防御：妖怪部队%+n",
             "en": "Melee defence: %+n for Yokai units"
           },
           "priority": 500,
@@ -6044,11 +6048,11 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "装弹时间降低：+15%（妖怪部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "装弹时间降低：妖怪部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Reload time reduction: +15% for Yokai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装弹时间降低：%+n%（妖怪部队）",
+            "zh": "装弹时间降低：妖怪部队%+n%",
             "en": "Reload time reduction: %+n% for Yokai units"
           },
           "priority": 562,
@@ -6601,6 +6605,148 @@
           "icon": {
             "source": "vanilla",
             "file": "icons/campaign ui/effect_bundles/weapon_damage.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ]
+    },
+    "cth_npex_skill_innate_akashi_house_law": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "家中军法",
+        "en": "Household Law"
+      },
+      "desc": {
+        "zh": "明石光英严明军纪，尤善整训火器部队。",
+        "en": "Akashi Mitsuhide keeps strict discipline and excels at drilling firearm troops."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/trait_personality.png",
+        "size": "68x69",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/samurai-taisho.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_upkeep",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": -20.0,
+          "text": {
+            "zh": "维持费：-20%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -20%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "维持费：%+n%",
+            "en": "Upkeep: %+n%"
+          },
+          "priority": 70,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/military_spending.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_all_campaign_replenishment_rate",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 8.0,
+          "text": {
+            "zh": "补员速率：+8%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Casualty replenishment rate: +8%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "补员速率：%+n%",
+            "en": "Casualty replenishment rate: %+n%"
+          },
+          "priority": 101,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/replenishment.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh3_dlc27_effect_attribute_enable_immune_to_flanking_infantry",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁属性：为步兵部队解锁免疫侧袭技能\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Immune to Flanking for Infantry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "解锁属性：为步兵部队解锁免疫侧袭技能",
+            "en": "Attribute: Immune to Flanking for Infantry units"
+          },
+          "priority": 121,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/flanking_immune.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "cth_npex_effect_akashi_cavalry_devastating_flanker",
+          "effect_source": "npex",
+          "scope": "general_to_force_own",
+          "value": 1.0,
+          "text": {
+            "zh": "解锁属性：为骑兵部队解锁致命迂回者技能\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Devastating Flanker for cavalry units\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "解锁属性：为骑兵部队解锁致命迂回者技能",
+            "en": "Attribute: Devastating Flanker for cavalry units"
+          },
+          "priority": 500,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/devastating_flanker.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
+          "effect": "wh_main_effect_force_stat_reload_time_reduction",
+          "effect_source": "vanilla",
+          "scope": "general_to_force_own",
+          "value": 15.0,
+          "text": {
+            "zh": "装弹时间降低：+15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +15%\\n([[img:icon_general]][[/img]]Lord's army)"
+          },
+          "template": {
+            "zh": "装弹时间降低：%+n%",
+            "en": "Reload time reduction: %+n%"
+          },
+          "priority": 560,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/icon_stat_reload_time_force.png",
             "size": "24x24",
             "origin": "ui/campaign ui/effect_bundles",
             "from": "game ui pack"
@@ -9169,12 +9315,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场被动「神懸かり」",
-            "en": "Unlocks the battlefield passive \"Kamigakari\""
+            "zh": "被动技能：『神懸かり』",
+            "en": "Passive ability: \"Kamigakari\""
           },
           "template": {
-            "zh": "解锁战场被动「神懸かり」",
-            "en": "Unlocks the battlefield passive \"Kamigakari\""
+            "zh": "被动技能：『神懸かり』",
+            "en": "Passive ability: \"Kamigakari\""
           },
           "priority": 311,
           "icon": {
@@ -9339,11 +9485,11 @@
           "scope": "agent_to_parent_army_own",
           "value": -15.0,
           "text": {
-            "zh": "维持费：-15%（稻荷灵狐使者、麒麟）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "维持费：稻荷灵狐使者与麒麟部队-15%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Upkeep: -15% for Inari Fox Emissary and Kirin units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "维持费：%n%（稻荷灵狐使者、麒麟）",
+            "zh": "维持费：稻荷灵狐使者与麒麟部队%n%",
             "en": "Upkeep: %n% for Inari Fox Emissary and Kirin units"
           },
           "priority": 105,
@@ -9362,11 +9508,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 1.0,
           "text": {
-            "zh": "新募部队等级：+1（稻荷灵狐使者、麒麟）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "新募部队等级：稻荷灵狐使者与麒麟部队+1\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Recruit rank: +1 for Inari Fox Emissary and Kirin units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "新募部队等级：%+n（稻荷灵狐使者、麒麟）",
+            "zh": "新募部队等级：稻荷灵狐使者与麒麟部队%+n",
             "en": "Recruit rank: %+n for Inari Fox Emissary and Kirin units"
           },
           "priority": 120,
@@ -9408,11 +9554,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "武器威力：+6%（稻荷灵狐使者、麒麟）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "武器威力：稻荷灵狐使者与麒麟部队+6%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Weapon strength: +6% for Inari Fox Emissary and Kirin units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（稻荷灵狐使者、麒麟）",
+            "zh": "武器威力：稻荷灵狐使者与麒麟部队%+n%",
             "en": "Weapon strength: %+n% for Inari Fox Emissary and Kirin units"
           },
           "priority": 461,
@@ -9480,12 +9626,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场光环「神域」",
-            "en": "Unlocks the battlefield aura \"Divine Domain\""
+            "zh": "被动技能：『神域』",
+            "en": "Passive ability: \"Divine Domain\""
           },
           "template": {
-            "zh": "解锁战场光环「神域」",
-            "en": "Unlocks the battlefield aura \"Divine Domain\""
+            "zh": "被动技能：『神域』",
+            "en": "Passive ability: \"Divine Domain\""
           },
           "priority": 312,
           "icon": {
@@ -9577,12 +9723,12 @@
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力（近战+远程）：+10%（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
-            "en": "Weapon Strength and Missile Strength: +10% for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
+            "zh": "武器威力与远程威力：武士部队+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "en": "Weapon strength and missile strength: +10% for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "武器威力（近战+远程）：%+n%（武士部队）",
-            "en": "Weapon Strength and Missile Strength: %+n% for Samurai units"
+            "zh": "武器威力与远程威力：武士部队%+n%",
+            "en": "Weapon strength and missile strength: %+n% for Samurai units"
           },
           "priority": 461,
           "icon": {
@@ -9648,12 +9794,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力（近战+远程）：+10%（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Weapon Strength and Missile Strength: +10% for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "武器威力与远程威力：武士部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Weapon strength and missile strength: +10% for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力（近战+远程）：%+n%（武士部队）",
-            "en": "Weapon Strength and Missile Strength: %+n% for Samurai units"
+            "zh": "武器威力与远程威力：武士部队%+n%",
+            "en": "Weapon strength and missile strength: %+n% for Samurai units"
           },
           "priority": 461,
           "icon": {
@@ -9713,9 +9859,9 @@
         "origin": "ui/campaign ui/skills",
         "from": "game ui pack"
       },
-      "unlocked_at_rank": "7",
+      "unlocked_at_rank": "9",
       "level_ranks": {
-        "1": 7
+        "1": 9
       },
       "referenced_by": [
         "skills/ryuka.json"
@@ -9744,6 +9890,34 @@
       "unlocked_at_rank": "5",
       "level_ranks": {
         "1": 5
+      },
+      "referenced_by": [
+        "skills/ryuka.json"
+      ],
+      "effects": []
+    },
+    "cth_npex_skill_ryuka_mount_landship": {
+      "kind": "character_skill",
+      "source": "npex",
+      "pack": null,
+      "name": {
+        "zh": "潮風陆行船",
+        "en": "Shiokaze Land Ship"
+      },
+      "desc": {
+        "zh": "琉華登上桅杆顶的瞭望台，以手枪协同船上火炮与船员作战。",
+        "en": "Ryuka takes her place in the crow's nest, firing her pistol alongside the ship's cannon and crew."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/mount_steam_tank.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "15",
+      "level_ranks": {
+        "1": 15
       },
       "referenced_by": [
         "skills/ryuka.json"
@@ -9805,12 +9979,12 @@
           "scope": "general_to_force_own",
           "value": -20.0,
           "text": {
-            "zh": "招募费：-20%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Recruitment cost: -20% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "招募成本：潮風武装团部队-20%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Recruitment cost: -20% for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "招募费：%+n%（潮風武装団）",
-            "en": "Recruitment cost: %+n% for the Shiokaze Armed Company"
+            "zh": "招募成本：潮風武装团部队%+n%",
+            "en": "Recruitment cost: %+n% for Shiokaze Armed Company units"
           },
           "priority": 6,
           "icon": {
@@ -9874,12 +10048,12 @@
           "scope": "general_to_force_own",
           "value": -20.0,
           "text": {
-            "zh": "维护费：-20%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Upkeep: -20% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "维持费：潮風武装团部队-20%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -20% for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "维护费：%+n%（潮風武装団）",
-            "en": "Upkeep: %+n% for the Shiokaze Armed Company"
+            "zh": "维持费：潮風武装团部队%+n%",
+            "en": "Upkeep: %+n% for Shiokaze Armed Company units"
           },
           "priority": 105,
           "icon": {
@@ -9897,12 +10071,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "免疫公海损耗（所在军队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Immunity to high seas attrition for the army\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "免疫深海损耗\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Immune to High Seas attrition\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "免疫公海损耗（所在军队）",
-            "en": "Immunity to high seas attrition for the army"
+            "zh": "免疫深海损耗",
+            "en": "Immune to High Seas attrition"
           },
           "priority": 105,
           "icon": {
@@ -9947,12 +10121,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场技能：天辰乱舞式",
-            "en": "Enables battle ability: Tianchen Sword-and-Pistol Dance"
+            "zh": "技能：『天辰乱舞式』",
+            "en": "Ability: \"Tianchen Sword-and-Pistol Dance\""
           },
           "template": {
-            "zh": "解锁战场技能：天辰乱舞式",
-            "en": "Enables battle ability: Tianchen Sword-and-Pistol Dance"
+            "zh": "技能：『天辰乱舞式』",
+            "en": "Ability: \"Tianchen Sword-and-Pistol Dance\""
           },
           "priority": 130,
           "icon": {
@@ -10077,12 +10251,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "属性：先锋部署（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Attribute: Vanguard Deployment for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "解锁属性：为潮風武装团部队解锁先锋部署技能\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Vanguard Deployment for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "属性：先锋部署（潮風武装団）",
-            "en": "Attribute: Vanguard Deployment for the Shiokaze Armed Company"
+            "zh": "解锁属性：为潮風武装团部队解锁先锋部署技能",
+            "en": "Attribute: Vanguard Deployment for Shiokaze Armed Company units"
           },
           "priority": 130,
           "icon": {
@@ -10100,12 +10274,12 @@
           "scope": "general_to_force_own",
           "value": 8.0,
           "text": {
-            "zh": "近战攻击：+8（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee attack: +8 for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战攻击：潮風武装团部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +8 for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（潮風武装団）",
-            "en": "Melee attack: %+n for the Shiokaze Armed Company"
+            "zh": "近战攻击：潮風武装团部队%+n",
+            "en": "Melee attack: %+n for Shiokaze Armed Company units"
           },
           "priority": 131,
           "icon": {
@@ -10123,12 +10297,12 @@
           "scope": "general_to_force_own",
           "value": 8.0,
           "text": {
-            "zh": "近战防御：+8（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +8 for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战防御：潮風武装团部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +8 for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（潮風武装団）",
-            "en": "Melee defence: %+n for the Shiokaze Armed Company"
+            "zh": "近战防御：潮風武装团部队%+n",
+            "en": "Melee defence: %+n for Shiokaze Armed Company units"
           },
           "priority": 151,
           "icon": {
@@ -10146,12 +10320,12 @@
           "scope": "general_to_force_own",
           "value": 25.0,
           "text": {
-            "zh": "弹药量：+25%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Ammunition: +25% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "弹药容量：潮風武装团部队+25%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Ammunition: +25% for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "弹药量：%+n%（潮風武装団）",
-            "en": "Ammunition: %+n% for the Shiokaze Armed Company"
+            "zh": "弹药容量：潮風武装团部队%+n%",
+            "en": "Ammunition: %+n% for Shiokaze Armed Company units"
           },
           "priority": 512,
           "icon": {
@@ -10169,12 +10343,12 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "远程破甲杀伤：+15%（潮風武装団）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Armour-piercing missile damage: +15% for the Shiokaze Armed Company\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程破甲杀伤：潮風武装团部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Armour-piercing missile damage: +15% for Shiokaze Armed Company units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程破甲杀伤：%+n%（潮風武装団）",
-            "en": "Armour-piercing missile damage: %+n% for the Shiokaze Armed Company"
+            "zh": "远程破甲杀伤：潮風武装团部队%+n%",
+            "en": "Armour-piercing missile damage: %+n% for Shiokaze Armed Company units"
           },
           "priority": 541,
           "icon": {
@@ -10221,12 +10395,12 @@
           "scope": "general_to_force_own",
           "value": -10.0,
           "text": {
-            "zh": "维护费：-10%（所在军队火器与炮兵）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Upkeep: -10% for firearms and artillery in the army\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队-10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Upkeep: -10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "维护费：%+n%（所在军队火器与炮兵）",
-            "en": "Upkeep: %+n% for firearms and artillery in the army"
+            "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
+            "en": "Upkeep: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
           },
           "priority": 105,
           "icon": {
@@ -10267,12 +10441,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（所在军队火器与炮兵）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Missile strength: +10% for firearms and artillery in the army\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Missile strength: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（所在军队火器与炮兵）",
-            "en": "Missile strength: %+n% for firearms and artillery in the army"
+            "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
+            "en": "Missile strength: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
           },
           "priority": 541,
           "icon": {
@@ -10290,12 +10464,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "装填技能：+10（所在军队火器与炮兵）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Reload skill: +10 for firearms and artillery in the army\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Reload time reduction: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装填技能：%+n（所在军队火器与炮兵）",
-            "en": "Reload skill: %+n for firearms and artillery in the army"
+            "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队%+n%",
+            "en": "Reload time reduction: %+n% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers"
           },
           "priority": 561,
           "icon": {
@@ -10366,12 +10540,12 @@
           "scope": "character_to_faction_unseen",
           "value": 15.0,
           "text": {
-            "zh": "外交关系：+15（帝国、矮人、高等精灵、震旦）",
-            "en": "Diplomatic relations: +15 with the Empire, Dwarfs, High Elves and Cathay"
+            "zh": "外交立场：与帝国、矮人、高等精灵和震旦天朝外交+15",
+            "en": "Diplomatic relations: +15 with the Empire, Dwarfs, High Elves and Grand Cathay"
           },
           "template": {
-            "zh": "外交关系：%+n（帝国、矮人、高等精灵、震旦）",
-            "en": "Diplomatic relations: %+n with the Empire, Dwarfs, High Elves and Cathay"
+            "zh": "外交立场：与帝国、矮人、高等精灵和震旦天朝外交%+n",
+            "en": "Diplomatic relations: %+n with the Empire, Dwarfs, High Elves and Grand Cathay"
           },
           "priority": 33,
           "icon": {
@@ -10439,12 +10613,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场技能：时代号令",
-            "en": "Enables battle ability: Command of a New Era"
+            "zh": "技能：『时代号令』",
+            "en": "Ability: \"Command of a New Era\""
           },
           "template": {
-            "zh": "解锁战场技能：时代号令",
-            "en": "Enables battle ability: Command of a New Era"
+            "zh": "技能：『时代号令』",
+            "en": "Ability: \"Command of a New Era\""
           },
           "priority": 130,
           "icon": {
@@ -10462,12 +10636,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "属性：心理免疫（所在军队所有部队）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Attribute: Immune to Psychology for all units in the army\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "解锁属性：心理免疫\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Immune to Psychology\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "属性：心理免疫（所在军队所有部队）",
-            "en": "Attribute: Immune to Psychology for all units in the army"
+            "zh": "解锁属性：心理免疫",
+            "en": "Attribute: Immune to Psychology"
           },
           "priority": 130,
           "icon": {
@@ -10698,12 +10872,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「武器大师」",
-            "en": "Unlocks the battlefield ability \"Weapon Master\""
+            "zh": "技能：『武器大师』",
+            "en": "Ability: \"Weapon Master\""
           },
           "template": {
-            "zh": "解锁战场能力「武器大师」",
-            "en": "Unlocks the battlefield ability \"Weapon Master\""
+            "zh": "技能：『武器大师』",
+            "en": "Ability: \"Weapon Master\""
           },
           "priority": 300,
           "icon": {
@@ -10752,11 +10926,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（铁炮部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：铁炮部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +10% for Teppo units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（铁炮部队）",
+            "zh": "远程威力：铁炮部队%+n%",
             "en": "Missile strength: %+n% for Teppo units"
           },
           "priority": 540,
@@ -10775,11 +10949,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "装填速度：+10%（铁炮部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "装弹时间降低：铁炮部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Reload time reduction: +10% for Teppo units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装填速度：%+n%（铁炮部队）",
+            "zh": "装弹时间降低：铁炮部队%+n%",
             "en": "Reload time reduction: %+n% for Teppo units"
           },
           "priority": 541,
@@ -10798,11 +10972,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "射程范围：+10%（铁炮部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "射程范围：铁炮部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Range: +10% for Teppo units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "射程范围：%+n%（铁炮部队）",
+            "zh": "射程范围：铁炮部队%+n%",
             "en": "Range: %+n% for Teppo units"
           },
           "priority": 542,
@@ -10918,11 +11092,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力：+10%（近战武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "武器威力：近战武士部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Weapon strength: +10% for melee Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（近战武士部队）",
+            "zh": "武器威力：近战武士部队%+n%",
             "en": "Weapon strength: %+n% for melee Samurai units"
           },
           "priority": 461,
@@ -10941,11 +11115,11 @@
           "scope": "general_to_force_own",
           "value": 5.0,
           "text": {
-            "zh": "对抗大型部队加成：+5（近战武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "对抗大型部队加成：近战武士部队+5\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Bonus vs Large: +5 for melee Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "对抗大型部队加成：%+n（近战武士部队）",
+            "zh": "对抗大型部队加成：近战武士部队%+n",
             "en": "Bonus vs Large: %+n for melee Samurai units"
           },
           "priority": 462,
@@ -10964,11 +11138,11 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战攻击：+4（近战武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：近战武士部队+4\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +4 for melee Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（近战武士部队）",
+            "zh": "近战攻击：近战武士部队%+n",
             "en": "Melee attack: %+n for melee Samurai units"
           },
           "priority": 500,
@@ -11015,12 +11189,12 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "冲锋加成：+10（灵兽）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Charge bonus: +10 for Divine Beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "冲锋加成：麒麟部队+10\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Charge bonus: +10 for Kirin units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "冲锋加成：%+n（灵兽）",
-            "en": "Charge bonus: %+n for Divine Beast units"
+            "zh": "冲锋加成：麒麟部队%+n",
+            "en": "Charge bonus: %+n for Kirin units"
           },
           "priority": 500,
           "icon": {
@@ -11038,12 +11212,12 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（灵兽）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee attack: +6 for Divine Beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战攻击：麒麟部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee attack: +6 for Kirin units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（灵兽）",
-            "en": "Melee attack: %+n for Divine Beast units"
+            "zh": "近战攻击：麒麟部队%+n",
+            "en": "Melee attack: %+n for Kirin units"
           },
           "priority": 500,
           "icon": {
@@ -11061,12 +11235,12 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战防御：+4（灵兽）\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Melee defence: +4 for Divine Beast units\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "近战防御：麒麟部队+4\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Melee defence: +4 for Kirin units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（灵兽）",
-            "en": "Melee defence: %+n for Divine Beast units"
+            "zh": "近战防御：麒麟部队%+n",
+            "en": "Melee defence: %+n for Kirin units"
           },
           "priority": 500,
           "icon": {
@@ -11231,11 +11405,11 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "「武器大师」由「向死而生」取代",
+            "zh": "『武器大师』被『向死而生』取代",
             "en": "\"Weapon Master\" is replaced by \"Death Gives Life\""
           },
           "template": {
-            "zh": "「武器大师」由「向死而生」取代",
+            "zh": "『武器大师』被『向死而生』取代",
             "en": "\"Weapon Master\" is replaced by \"Death Gives Life\""
           },
           "priority": 300,
@@ -11254,12 +11428,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「向死而生」",
-            "en": "Unlocks the battlefield ability \"Death Gives Life\""
+            "zh": "技能：『向死而生』",
+            "en": "Ability: \"Death Gives Life\""
           },
           "template": {
-            "zh": "解锁战场能力「向死而生」",
-            "en": "Unlocks the battlefield ability \"Death Gives Life\""
+            "zh": "技能：『向死而生』",
+            "en": "Ability: \"Death Gives Life\""
           },
           "priority": 301,
           "icon": {
@@ -11354,8 +11528,8 @@
         "en": "Summon Divine Beast: Kirin"
       },
       "desc": {
-        "zh": "踏云的瑞兽自镜中降临，独角贯雷。不耗魔法之风，每场战斗只能召来一次。契约只能维持片刻，时限一到灵体自行溃散。",
-        "en": "The cloud-treading divine beast descends from the mirror, its single horn charged with lightning. Costs no Winds of Magic, and can be summoned only once per battle. The pact holds only for a brief moment: once the time runs out, the spirit disperses on its own."
+        "zh": "麒麟自云雾中降临。",
+        "en": "The Kirin descends from the clouds."
       },
       "icon": {
         "source": "npex",
@@ -11416,8 +11590,14 @@
           "effect_source": "npex",
           "scope": "character_to_character_own",
           "value": 1.0,
-          "text": null,
-          "template": null,
+          "text": {
+            "zh": "解锁英雄行动：补充军队",
+            "en": "Unlocks hero action: Replenish Troops"
+          },
+          "template": {
+            "zh": "解锁英雄行动：补充军队",
+            "en": "Unlocks hero action: Replenish Troops"
+          },
           "priority": 0,
           "icon": null
         },
@@ -11564,11 +11744,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力：+10%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "武器威力：神兽部队+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Weapon strength: +10% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（神兽部队）",
+            "zh": "武器威力：神兽部队%+n%",
             "en": "Weapon strength: %+n% for divine beast units"
           },
           "priority": 461,
@@ -11587,11 +11767,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战攻击：神兽部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee attack: +6 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（神兽部队）",
+            "zh": "近战攻击：神兽部队%+n",
             "en": "Melee attack: %+n for divine beast units"
           },
           "priority": 500,
@@ -11610,11 +11790,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "近战防御：+6（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战防御：神兽部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee defence: +6 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（神兽部队）",
+            "zh": "近战防御：神兽部队%+n",
             "en": "Melee defence: %+n for divine beast units"
           },
           "priority": 500,
@@ -11633,11 +11813,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "领导力：神兽部队+8\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Leadership: +8 for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "领导力：%+n（神兽部队）",
+            "zh": "领导力：神兽部队%+n",
             "en": "Leadership: %+n for divine beast units"
           },
           "priority": 500,
@@ -11684,11 +11864,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力：+10%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "武器威力：神兽部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Weapon strength: +10% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（神兽部队）",
+            "zh": "武器威力：神兽部队%+n%",
             "en": "Weapon strength: %+n% for divine beast units"
           },
           "priority": 461,
@@ -11707,11 +11887,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：神兽部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +6 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（神兽部队）",
+            "zh": "近战攻击：神兽部队%+n",
             "en": "Melee attack: %+n for divine beast units"
           },
           "priority": 500,
@@ -11730,11 +11910,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战防御：+6（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战防御：神兽部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee defence: +6 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（神兽部队）",
+            "zh": "近战防御：神兽部队%+n",
             "en": "Melee defence: %+n for divine beast units"
           },
           "priority": 500,
@@ -11753,11 +11933,11 @@
           "scope": "general_to_force_own",
           "value": 8.0,
           "text": {
-            "zh": "领导力：+8（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "领导力：神兽部队+8\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Leadership: +8 for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "领导力：%+n（神兽部队）",
+            "zh": "领导力：神兽部队%+n",
             "en": "Leadership: %+n for divine beast units"
           },
           "priority": 500,
@@ -12182,12 +12362,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『阴阳之巫』",
-            "en": "Unlocks \"Onmyo Miko\""
+            "zh": "被动技能：『阴阳之巫』",
+            "en": "Passive ability: \"Onmyo Miko\""
           },
           "template": {
-            "zh": "解锁『阴阳之巫』",
-            "en": "Unlocks \"Onmyo Miko\""
+            "zh": "被动技能：『阴阳之巫』",
+            "en": "Passive ability: \"Onmyo Miko\""
           },
           "priority": 500,
           "icon": {
@@ -12477,11 +12657,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 15.0,
           "text": {
-            "zh": "魔法抗性：+15%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "魔法抗性：神兽部队+15%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Magic resistance: +15% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "魔法抗性：%+n%（神兽部队）",
+            "zh": "魔法抗性：神兽部队%+n%",
             "en": "Magic resistance: %+n% for divine beast units"
           },
           "priority": 500,
@@ -12500,11 +12680,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 15.0,
           "text": {
-            "zh": "物理抗性：+15%（神兽部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "物理抗性：神兽部队+15%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Physical resistance: +15% for divine beast units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "物理抗性：%+n%（神兽部队）",
+            "zh": "物理抗性：神兽部队%+n%",
             "en": "Physical resistance: %+n% for divine beast units"
           },
           "priority": 500,
@@ -12549,11 +12729,11 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "魔法抗性：+15%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "魔法抗性：神兽部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Magic resistance: +15% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "魔法抗性：%+n%（神兽部队）",
+            "zh": "魔法抗性：神兽部队%+n%",
             "en": "Magic resistance: %+n% for divine beast units"
           },
           "priority": 500,
@@ -12572,11 +12752,11 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "物理抗性：+15%（神兽部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "物理抗性：神兽部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Physical resistance: +15% for divine beast units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "物理抗性：%+n%（神兽部队）",
+            "zh": "物理抗性：神兽部队%+n%",
             "en": "Physical resistance: %+n% for divine beast units"
           },
           "priority": 500,
@@ -12622,12 +12802,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『神明庇护』",
-            "en": "Unlocks \"Divine Protection\""
+            "zh": "被动技能：『神明庇护』",
+            "en": "Passive ability: \"Divine Protection\""
           },
           "template": {
-            "zh": "解锁『神明庇护』",
-            "en": "Unlocks \"Divine Protection\""
+            "zh": "被动技能：『神明庇护』",
+            "en": "Passive ability: \"Divine Protection\""
           },
           "priority": 500,
           "icon": {
@@ -12675,12 +12855,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『封印之钥』",
-            "en": "Unlocks \"Key of Sealing\""
+            "zh": "被动技能：『封印之钥』",
+            "en": "Passive ability: \"Key of Sealing\""
           },
           "template": {
-            "zh": "解锁『封印之钥』",
-            "en": "Unlocks \"Key of Sealing\""
+            "zh": "被动技能：『封印之钥』",
+            "en": "Passive ability: \"Key of Sealing\""
           },
           "priority": 500,
           "icon": {
@@ -12729,8 +12909,14 @@
           "effect_source": "npex",
           "scope": "character_to_character_own",
           "value": 1.0,
-          "text": null,
-          "template": null,
+          "text": {
+            "zh": "技能：『神兽召来：麒麟』",
+            "en": "Ability: \"Summon Divine Beast: Kirin\""
+          },
+          "template": {
+            "zh": "技能：『神兽召来：麒麟』",
+            "en": "Ability: \"Summon Divine Beast: Kirin\""
+          },
           "priority": 500,
           "icon": {
             "source": "vanilla",
@@ -13126,11 +13312,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 7.0,
           "text": {
-            "zh": "射程范围：+7%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "射程范围：舰队远程兵种+7%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Range: +7% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "zh": "射程范围：舰队远程兵种%+n%",
             "en": "Range: %+n% for fleet missile units"
           },
           "priority": 531,
@@ -13149,11 +13335,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 7.0,
           "text": {
-            "zh": "装弹时间降低：+7%（舰队远程兵种）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "装弹时间降低：舰队远程兵种+7%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Reload time reduction: +7% for fleet missile units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "zh": "装弹时间降低：舰队远程兵种%+n%",
             "en": "Reload time reduction: %+n% for fleet missile units"
           },
           "priority": 562,
@@ -13199,11 +13385,11 @@
           "scope": "general_to_force_own",
           "value": 7.0,
           "text": {
-            "zh": "射程范围：+7%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "射程范围：舰队远程兵种+7%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Range: +7% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "射程范围：%+n%（舰队远程兵种）",
+            "zh": "射程范围：舰队远程兵种%+n%",
             "en": "Range: %+n% for fleet missile units"
           },
           "priority": 531,
@@ -13222,11 +13408,11 @@
           "scope": "general_to_force_own",
           "value": 7.0,
           "text": {
-            "zh": "装弹时间降低：+7%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "装弹时间降低：舰队远程兵种+7%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Reload time reduction: +7% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "装弹时间降低：%+n%（舰队远程兵种）",
+            "zh": "装弹时间降低：舰队远程兵种%+n%",
             "en": "Reload time reduction: %+n% for fleet missile units"
           },
           "priority": 562,
@@ -13494,8 +13680,8 @@
         "en": "Wave Rider"
       },
       "desc": {
-        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她召唤的潮汐之灵。",
-        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits she calls forth."
+        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她麾下的潮汐之灵。",
+        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits under her command."
       },
       "icon": {
         "source": "vanilla",
@@ -13517,11 +13703,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 4.0,
           "text": {
-            "zh": "近战攻击：+4（纯水精魂、海元素）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战攻击：纯水精魂与海元素部队+4\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee attack: +4 for Oceanids and Sea Elemental units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（纯水精魂、海元素）",
+            "zh": "近战攻击：纯水精魂与海元素部队%+n",
             "en": "Melee attack: %+n for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13540,11 +13726,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 4.0,
           "text": {
-            "zh": "近战防御：+4（纯水精魂、海元素）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战防御：纯水精魂与海元素部队+4\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee defence: +4 for Oceanids and Sea Elemental units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（纯水精魂、海元素）",
+            "zh": "近战防御：纯水精魂与海元素部队%+n",
             "en": "Melee defence: %+n for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13563,11 +13749,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "特殊抗性：+10%（纯水精魂、海元素）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "特殊保护：纯水精魂与海元素部队+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Ward save: +10% for Oceanids and Sea Elemental units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "特殊抗性：%+n%（纯水精魂、海元素）",
+            "zh": "特殊保护：纯水精魂与海元素部队%+n%",
             "en": "Ward save: %+n% for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13590,8 +13776,8 @@
         "en": "Wave Rider"
       },
       "desc": {
-        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她召唤的潮汐之灵。",
-        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits she calls forth."
+        "zh": "深海生灵与她共鸣，海神马瑟兰的眷顾延伸至她麾下的潮汐之灵。",
+        "en": "Creatures of the deep resonate with her, and Mathlann's favour extends to the tidal spirits under her command."
       },
       "icon": {
         "source": "vanilla",
@@ -13613,11 +13799,11 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战攻击：+4（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：纯水精魂与海元素部队+4\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +4 for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（纯水精魂、海元素）",
+            "zh": "近战攻击：纯水精魂与海元素部队%+n",
             "en": "Melee attack: %+n for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13636,11 +13822,11 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战防御：+4（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战防御：纯水精魂与海元素部队+4\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee defence: +4 for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（纯水精魂、海元素）",
+            "zh": "近战防御：纯水精魂与海元素部队%+n",
             "en": "Melee defence: %+n for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13659,11 +13845,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "特殊抗性：+10%（纯水精魂、海元素）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "特殊保护：纯水精魂与海元素部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Ward save: +10% for Oceanids and Sea Elemental units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "特殊抗性：%+n%（纯水精魂、海元素）",
+            "zh": "特殊保护：纯水精魂与海元素部队%+n%",
             "en": "Ward save: %+n% for Oceanids and Sea Elemental units"
           },
           "priority": 500,
@@ -13701,6 +13887,29 @@
       "effects": [
         {
           "level": 1,
+          "effect": "wh2_main_effect_grant_immortality_lord",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "这名[[img:icon_general]][[/img]]领主会在战斗中受伤，但不会因此而被击杀",
+            "en": "This [[img:icon_general]][[/img]]Lord will be wounded instead of killed in battle"
+          },
+          "template": {
+            "zh": "这名[[img:icon_general]][[/img]]领主会在战斗中受伤，但不会因此而被击杀",
+            "en": "This [[img:icon_general]][[/img]]Lord will be wounded instead of killed in battle"
+          },
+          "priority": 1,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/wound_time.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 1,
           "effect": "wh2_dlc11_effect_ability_enable_tidecall",
           "effect_source": "vanilla",
           "scope": "character_to_character_own",
@@ -13729,12 +13938,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「舷侧齐射」",
-            "en": "Unlocks the battlefield ability \"Broadside\""
+            "zh": "技能：『舷侧齐射』",
+            "en": "Ability: \"Broadside\""
           },
           "template": {
-            "zh": "解锁战场能力「舷侧齐射」",
-            "en": "Unlocks the battlefield ability \"Broadside\""
+            "zh": "技能：『舷侧齐射』",
+            "en": "Ability: \"Broadside\""
           },
           "priority": 300,
           "icon": {
@@ -13814,12 +14023,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场被动「潮随刃动」",
-            "en": "Unlocks the battlefield passive \"Tide Follows the Blade\""
+            "zh": "被动技能：『潮随刃动』",
+            "en": "Passive ability: \"Tide Follows the Blade\""
           },
           "template": {
-            "zh": "解锁战场被动「潮随刃动」",
-            "en": "Unlocks the battlefield passive \"Tide Follows the Blade\""
+            "zh": "被动技能：『潮随刃动』",
+            "en": "Passive ability: \"Tide Follows the Blade\""
           },
           "priority": 300,
           "icon": {
@@ -13957,11 +14166,11 @@
           "scope": "general_to_force_own",
           "value": -15.0,
           "text": {
-            "zh": "维持费：-15%（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "维持费：舰队兵种-15%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Upkeep: -15% for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "维持费：%n%（舰队兵种）",
+            "zh": "维持费：舰队兵种%n%",
             "en": "Upkeep: %n% for fleet units"
           },
           "priority": 70,
@@ -13980,11 +14189,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "武器威力：+10%（潮汐禁卫、云霄禁卫）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "武器威力：潮汐禁卫与云霄禁卫部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Weapon strength: +10% for Tide Guard and Empyrean Guard\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（潮汐禁卫、云霄禁卫）",
+            "zh": "武器威力：潮汐禁卫与云霄禁卫部队%+n%",
             "en": "Weapon strength: %+n% for Tide Guard and Empyrean Guard"
           },
           "priority": 461,
@@ -14003,11 +14212,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（潮汐禁卫）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：潮汐禁卫部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +10% for Tide Guard\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（潮汐禁卫）",
+            "zh": "远程威力：潮汐禁卫部队%+n%",
             "en": "Missile strength: %+n% for Tide Guard"
           },
           "priority": 540,
@@ -14100,12 +14309,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁战场能力「玉海剑舞」",
-            "en": "Unlocks the battlefield ability \"Jade Blade Dance\""
+            "zh": "技能：『玉海剑舞』",
+            "en": "Ability: \"Jade Blade Dance\""
           },
           "template": {
-            "zh": "解锁战场能力「玉海剑舞」",
-            "en": "Unlocks the battlefield ability \"Jade Blade Dance\""
+            "zh": "技能：『玉海剑舞』",
+            "en": "Ability: \"Jade Blade Dance\""
           },
           "priority": 300,
           "icon": {
@@ -14151,11 +14360,11 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战攻击：+4（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：舰队兵种+4\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +4 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（舰队兵种）",
+            "zh": "近战攻击：舰队兵种%+n",
             "en": "Melee attack: %+n for fleet units"
           },
           "priority": 500,
@@ -14174,11 +14383,11 @@
           "scope": "general_to_force_own",
           "value": 4.0,
           "text": {
-            "zh": "近战防御：+4（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战防御：舰队兵种+4\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee defence: +4 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战防御：%+n（舰队兵种）",
+            "zh": "近战防御：舰队兵种%+n",
             "en": "Melee defence: %+n for fleet units"
           },
           "priority": 500,
@@ -14197,11 +14406,11 @@
           "scope": "general_to_force_own",
           "value": 5.0,
           "text": {
-            "zh": "领导力：+5（舰队兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "领导力：舰队兵种+5\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Leadership: +5 for fleet units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "领导力：%+n（舰队兵种）",
+            "zh": "领导力：舰队兵种%+n",
             "en": "Leadership: %+n for fleet units"
           },
           "priority": 500,
@@ -14269,11 +14478,11 @@
           "value": -20.0,
           "text": {
             "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』-20%",
-            "en": "Cooldown: -20% to \"Jade Blade Dance\" and \"Broadside\""
+            "en": "Cooldown: -20% for \"Jade Blade Dance\" and \"Broadside\""
           },
           "template": {
             "zh": "冷却速率：『玉海剑舞』与『舷侧齐射』%+n%",
-            "en": "Cooldown: %+n% to \"Jade Blade Dance\" and \"Broadside\""
+            "en": "Cooldown: %+n% for \"Jade Blade Dance\" and \"Broadside\""
           },
           "priority": 60,
           "icon": {
@@ -14532,11 +14741,11 @@
           "scope": "general_to_force_own",
           "value": 20.0,
           "text": {
-            "zh": "弹药容量：+20%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "弹药容量：舰队远程兵种+20%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Ammunition: +20% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "弹药容量：%+n%（舰队远程兵种）",
+            "zh": "弹药容量：舰队远程兵种%+n%",
             "en": "Ammunition: %+n% for fleet missile units"
           },
           "priority": 510,
@@ -14555,11 +14764,11 @@
           "scope": "general_to_force_own",
           "value": 5.0,
           "text": {
-            "zh": "远程威力：+5%（舰队远程兵种）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：舰队远程兵种+5%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +5% for fleet missile units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（舰队远程兵种）",
+            "zh": "远程威力：舰队远程兵种%+n%",
             "en": "Missile strength: %+n% for fleet missile units"
           },
           "priority": 540,
@@ -15181,11 +15390,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "近战攻击：武士部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Melee attack: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（武士部队）",
+            "zh": "近战攻击：武士部队%+n",
             "en": "Melee attack: %+n for Samurai units"
           },
           "priority": 500,
@@ -15204,11 +15413,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 6.0,
           "text": {
-            "zh": "领导力：+6（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "领导力：武士部队+6\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Leadership: +6 for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "领导力：%+n（武士部队）",
+            "zh": "领导力：武士部队%+n",
             "en": "Leadership: %+n for Samurai units"
           },
           "priority": 500,
@@ -15227,11 +15436,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（武士部队）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "远程威力：武士部队+10%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Missile strength: +10% for Samurai units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（武士部队）",
+            "zh": "远程威力：武士部队%+n%",
             "en": "Missile strength: %+n% for Samurai units"
           },
           "priority": 540,
@@ -15276,11 +15485,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "近战攻击：+6（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "近战攻击：武士部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Melee attack: +6 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "近战攻击：%+n（武士部队）",
+            "zh": "近战攻击：武士部队%+n",
             "en": "Melee attack: %+n for Samurai units"
           },
           "priority": 500,
@@ -15299,11 +15508,11 @@
           "scope": "general_to_force_own",
           "value": 6.0,
           "text": {
-            "zh": "领导力：+6（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "领导力：武士部队+6\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Leadership: +6 for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "领导力：%+n（武士部队）",
+            "zh": "领导力：武士部队%+n",
             "en": "Leadership: %+n for Samurai units"
           },
           "priority": 500,
@@ -15322,11 +15531,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "远程威力：+10%（武士部队）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "远程威力：武士部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Missile strength: +10% for Samurai units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "远程威力：%+n%（武士部队）",
+            "zh": "远程威力：武士部队%+n%",
             "en": "Missile strength: %+n% for Samurai units"
           },
           "priority": 540,
@@ -15589,11 +15798,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 15.0,
           "text": {
-            "zh": "武器威力：+15%（雷刃旗本）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "武器威力：雷刃旗本部队+15%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Weapon strength: +15% for Thunderblade Hatamoto units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（雷刃旗本）",
+            "zh": "武器威力：雷刃旗本部队%+n%",
             "en": "Weapon strength: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 461,
@@ -15612,11 +15821,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 10.0,
           "text": {
-            "zh": "冲锋加成：+10（雷刃旗本）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "冲锋加成：雷刃旗本部队+10\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Charge bonus: +10 for Thunderblade Hatamoto units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "冲锋加成：%+n（雷刃旗本）",
+            "zh": "冲锋加成：雷刃旗本部队%+n",
             "en": "Charge bonus: %+n for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15635,11 +15844,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 8.0,
           "text": {
-            "zh": "特殊抗性：+8%（雷刃旗本）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "特殊保护：雷刃旗本部队+8%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Ward save: +8% for Thunderblade Hatamoto units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "特殊抗性：%+n%（雷刃旗本）",
+            "zh": "特殊保护：雷刃旗本部队%+n%",
             "en": "Ward save: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15658,11 +15867,11 @@
           "scope": "agent_to_parent_army_own",
           "value": 20.0,
           "text": {
-            "zh": "移动速度：+20%（雷刃旗本）\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
+            "zh": "移动速度：雷刃旗本部队+20%\\n（[[img:icon_hero]][[/img]]英雄所在军队）",
             "en": "Speed: +20% for Thunderblade Hatamoto units\\n([[img:icon_hero]][[/img]]Hero's army)"
           },
           "template": {
-            "zh": "移动速度：%+n%（雷刃旗本）",
+            "zh": "移动速度：雷刃旗本部队%+n%",
             "en": "Speed: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15731,11 +15940,11 @@
           "scope": "general_to_force_own",
           "value": 15.0,
           "text": {
-            "zh": "武器威力：+15%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "武器威力：雷刃旗本部队+15%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Weapon strength: +15% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "武器威力：%+n%（雷刃旗本）",
+            "zh": "武器威力：雷刃旗本部队%+n%",
             "en": "Weapon strength: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 461,
@@ -15754,11 +15963,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "冲锋加成：+10（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "冲锋加成：雷刃旗本部队+10\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Charge bonus: +10 for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "冲锋加成：%+n（雷刃旗本）",
+            "zh": "冲锋加成：雷刃旗本部队%+n",
             "en": "Charge bonus: %+n for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15777,11 +15986,11 @@
           "scope": "general_to_force_own",
           "value": 8.0,
           "text": {
-            "zh": "特殊抗性：+8%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "特殊保护：雷刃旗本部队+8%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Ward save: +8% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "特殊抗性：%+n%（雷刃旗本）",
+            "zh": "特殊保护：雷刃旗本部队%+n%",
             "en": "Ward save: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15800,11 +16009,11 @@
           "scope": "general_to_force_own",
           "value": 20.0,
           "text": {
-            "zh": "移动速度：+20%（雷刃旗本）\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "移动速度：雷刃旗本部队+20%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Speed: +20% for Thunderblade Hatamoto units\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "移动速度：%+n%（雷刃旗本）",
+            "zh": "移动速度：雷刃旗本部队%+n%",
             "en": "Speed: %+n% for Thunderblade Hatamoto units"
           },
           "priority": 500,
@@ -15924,12 +16133,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "解锁『紫电一闪』",
-            "en": "Unlocks \"Shiden Flash\""
+            "zh": "技能：『紫电一闪』",
+            "en": "Ability: \"Shiden Flash\""
           },
           "template": {
-            "zh": "解锁『紫电一闪』",
-            "en": "Unlocks \"Shiden Flash\""
+            "zh": "技能：『紫电一闪』",
+            "en": "Ability: \"Shiden Flash\""
           },
           "priority": 500,
           "icon": {
@@ -16577,12 +16786,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "怪兽与战兽部队获得狂暴\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Frenzy for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "被动技能：怪兽与战兽部队获得『狂暴』\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Passive ability: \"Frenzy\" for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "怪兽与战兽部队获得狂暴",
-            "en": "Frenzy for monsters and war beasts"
+            "zh": "被动技能：怪兽与战兽部队获得『狂暴』",
+            "en": "Passive ability: \"Frenzy\" for monsters and war beasts"
           },
           "priority": 10,
           "icon": {
@@ -16625,11 +16834,11 @@
           "scope": "general_to_force_own",
           "value": 2.0,
           "text": {
-            "zh": "新募等级：怪兽与战兽部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "新募部队等级：怪兽与战兽部队+2\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Recruit rank: +2 for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "新募等级：怪兽与战兽部队%+n",
+            "zh": "新募部队等级：怪兽与战兽部队%+n",
             "en": "Recruit rank: %+n for monsters and war beasts"
           },
           "priority": 10,
@@ -16648,12 +16857,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "主动技能：真龙天威",
-            "en": "Active ability: Might of the True Dragon"
+            "zh": "技能：『真龙天威』",
+            "en": "Ability: \"Might of the True Dragon\""
           },
           "template": {
-            "zh": "主动技能：真龙天威",
-            "en": "Active ability: Might of the True Dragon"
+            "zh": "技能：『真龙天威』",
+            "en": "Ability: \"Might of the True Dragon\""
           },
           "priority": 10,
           "icon": {
@@ -16701,12 +16910,12 @@
           "scope": "character_to_character_own",
           "value": 1.0,
           "text": {
-            "zh": "被动技能：怪兽爱好者",
-            "en": "Passive ability: Monster Enthusiast"
+            "zh": "被动技能：『怪兽爱好者』",
+            "en": "Passive ability: \"Monster Enthusiast\""
           },
           "template": {
-            "zh": "被动技能：怪兽爱好者",
-            "en": "Passive ability: Monster Enthusiast"
+            "zh": "被动技能：『怪兽爱好者』",
+            "en": "Passive ability: \"Monster Enthusiast\""
           },
           "priority": 10,
           "icon": {
@@ -16800,11 +17009,11 @@
           "scope": "general_to_force_own",
           "value": 10.0,
           "text": {
-            "zh": "速度：怪兽与战兽部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
+            "zh": "移动速度：怪兽与战兽部队+10%\\n（[[img:icon_general]][[/img]]领主军队）",
             "en": "Speed: +10% for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "速度：怪兽与战兽部队%+n%",
+            "zh": "移动速度：怪兽与战兽部队%+n%",
             "en": "Speed: %+n% for monsters and war beasts"
           },
           "priority": 10,
@@ -16823,12 +17032,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "怪兽与战兽部队获得漫游者\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Strider for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "解锁属性：为怪兽与战兽部队解锁地形适性技能\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Strider for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "怪兽与战兽部队获得漫游者",
-            "en": "Strider for monsters and war beasts"
+            "zh": "解锁属性：为怪兽与战兽部队解锁地形适性技能",
+            "en": "Attribute: Strider for monsters and war beasts"
           },
           "priority": 10,
           "icon": {
@@ -16919,12 +17128,12 @@
           "scope": "general_to_force_own",
           "value": 1.0,
           "text": {
-            "zh": "怪兽与战兽部队获得先锋部署\\n（[[img:icon_general]][[/img]]领主军队）",
-            "en": "Vanguard deployment for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
+            "zh": "解锁属性：为怪兽与战兽部队解锁先锋部署技能\\n（[[img:icon_general]][[/img]]领主军队）",
+            "en": "Attribute: Vanguard Deployment for monsters and war beasts\\n([[img:icon_general]][[/img]]Lord's army)"
           },
           "template": {
-            "zh": "怪兽与战兽部队获得先锋部署",
-            "en": "Vanguard deployment for monsters and war beasts"
+            "zh": "解锁属性：为怪兽与战兽部队解锁先锋部署技能",
+            "en": "Attribute: Vanguard Deployment for monsters and war beasts"
           },
           "priority": 10,
           "icon": {
@@ -22136,6 +22345,222 @@
         }
       ]
     },
+    "wh2_main_skill_all_magic_high_10_fiery_convocation": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "万焰燃集",
+        "en": "Fiery Convocation"
+      },
+      "desc": {
+        "zh": "施法者吟唱充满力量的咒语，召唤出一只以纯净火焰构成的凤凰，向着敌人猛扑过去，令其淹没在净化的烈焰之中",
+        "en": "The caster utters words of power and a phoenix of pure fire manifests to swoop upon the enemy, bathing them in cleansing flame."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_main_spell_high_magic_fiery_convocation.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh2_main_effect_ability_enable_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『万焰燃集』",
+            "en": "Spell: \"Fiery Convocation\""
+          },
+          "template": {
+            "zh": "法术：『万焰燃集』",
+            "en": "Spell: \"Fiery Convocation\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级万焰燃集』",
+            "en": "Overcast spell: \"Fiery Convocation Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级万焰燃集』",
+            "en": "Overcast spell: \"Fiery Convocation Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_cooldown_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『万焰燃集』-30%",
+            "en": "Cooldown: -30% to \"Fiery Convocation\""
+          },
+          "template": {
+            "zh": "冷却速率：『万焰燃集』%+n%",
+            "en": "Cooldown: %+n% to \"Fiery Convocation\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_overcast_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级万焰燃集』",
+            "en": "Overcast spell: \"Fiery Convocation Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级万焰燃集』",
+            "en": "Overcast spell: \"Fiery Convocation Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_cooldown_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『万焰燃集』-50%",
+            "en": "Cooldown: -50% to \"Fiery Convocation\""
+          },
+          "template": {
+            "zh": "冷却速率：『万焰燃集』%+n%",
+            "en": "Cooldown: %+n% to \"Fiery Convocation\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_fiery_convocation",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -3.0,
+          "text": {
+            "zh": "魔法之风耗费：『万焰燃集』-3",
+            "en": "Winds of Magic cost: -3 for \"Fiery Convocation\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『万焰燃集』%n",
+            "en": "Winds of Magic cost: %n for \"Fiery Convocation\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_fiery_convocation_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -4.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级万焰燃集』-4",
+            "en": "Winds of Magic cost: -4 for \"Fiery Convocation Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级万焰燃集』%n",
+            "en": "Winds of Magic cost: %n for \"Fiery Convocation Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_miscast_fiery_convocation_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级万焰燃集』-15%",
+            "en": "Miscast base chance: -15% for \"Fiery Convocation Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级万焰燃集』%+n%",
+            "en": "Miscast base chance: %+n% for \"Fiery Convocation Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh2_main_spell_high_magic_fiery_convocation"
+      ],
+      "desc_via_ability": "wh2_main_spell_high_magic_fiery_convocation"
+    },
     "wh2_main_skill_hef_alastar_unique_heroic_killing_blow": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -22355,6 +22780,222 @@
           }
         }
       ]
+    },
+    "wh2_main_skill_magic_heavens_01_harmonic_convergence_loremaster": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "name": {
+        "zh": "和音汇集",
+        "en": "Harmonic Convergence"
+      },
+      "desc": {
+        "zh": "施法者占卜吉相，指引着目标的心智，赋予他们远见，并带给他们胜利",
+        "en": "Divining auspicious signs, the caster guides the minds of targets, augmenting them with the foresight needed for victory."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_main_spell_heavens_harmonic_convergence.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_ability_enable_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『和音汇集』",
+            "en": "Spell: \"Harmonic Convergence\""
+          },
+          "template": {
+            "zh": "法术：『和音汇集』",
+            "en": "Spell: \"Harmonic Convergence\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级和音汇集』",
+            "en": "Overcast spell: \"Harmonic Convergence Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级和音汇集』",
+            "en": "Overcast spell: \"Harmonic Convergence Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_ability_cooldown_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『和音汇集』-30%",
+            "en": "Cooldown: -30% to \"Harmonic Convergence\""
+          },
+          "template": {
+            "zh": "冷却速率：『和音汇集』%+n%",
+            "en": "Cooldown: %+n% to \"Harmonic Convergence\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_overcast_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级和音汇集』",
+            "en": "Overcast spell: \"Harmonic Convergence Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级和音汇集』",
+            "en": "Overcast spell: \"Harmonic Convergence Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh_main_effect_ability_cooldown_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『和音汇集』-50%",
+            "en": "Cooldown: -50% to \"Harmonic Convergence\""
+          },
+          "template": {
+            "zh": "冷却速率：『和音汇集』%+n%",
+            "en": "Cooldown: %+n% to \"Harmonic Convergence\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_harmonic_convergence",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -1.0,
+          "text": {
+            "zh": "魔法之风耗费：『和音汇集』-1",
+            "en": "Winds of Magic cost: -1 for \"Harmonic Convergence\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『和音汇集』%n",
+            "en": "Winds of Magic cost: %n for \"Harmonic Convergence\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_harmonic_convergence_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级和音汇集』-2",
+            "en": "Winds of Magic cost: -2 for \"Harmonic Convergence Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级和音汇集』%n",
+            "en": "Winds of Magic cost: %n for \"Harmonic Convergence Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_miscast_harmonic_convergence_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级和音汇集』-15%",
+            "en": "Miscast base chance: -15% for \"Harmonic Convergence Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级和音汇集』%+n%",
+            "en": "Miscast base chance: %+n% for \"Harmonic Convergence Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_main_spell_heavens_harmonic_convergence"
+      ],
+      "desc_via_ability": "wh_main_spell_heavens_harmonic_convergence"
     },
     "wh2_main_skill_magic_life_wizard_earth_blood_lord": {
       "kind": "character_skill",
@@ -22996,6 +23637,30 @@
       ],
       "unlocks_abilities": [
         "wh_dlc05_spell_life_regrowth"
+      ]
+    },
+    "wh2_main_spell_high_magic_fiery_convocation": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh2_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "万焰燃集",
+        "en": "Fiery Convocation"
+      },
+      "desc": {
+        "zh": "施法者吟唱充满力量的咒语，召唤出一只以纯净火焰构成的凤凰，向着敌人猛扑过去，令其淹没在净化的烈焰之中",
+        "en": "The caster utters words of power and a phoenix of pure fire manifests to swoop upon the enemy, bathing them in cleansing flame."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh2_main_spell_high_magic_fiery_convocation.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
       ]
     },
     "wh2_main_unit_passive_primal_instincts": {
@@ -35284,6 +35949,222 @@
       ],
       "desc_via_ability": "wh_main_character_abilities_arcane_conduit"
     },
+    "wh_main_skill_all_magic_heavens_05_urannons_thunderbolt": {
+      "kind": "character_skill",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "name": {
+        "zh": "尤瑞诺闪电箭",
+        "en": "Urannon's Thunderbolt"
+      },
+      "desc": {
+        "zh": "施法者召唤出强大的闪电球并投向敌人，被击中者必定粉身碎骨！",
+        "en": "The caster calls down a mighty ball of lightning and hurls it - should the foe be struck they will surely be shattered!"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/campaign ui/skills/wh_main_spell_heavens_urannons_thunderbolt.png",
+        "size": "72x72",
+        "origin": "ui/campaign ui/skills",
+        "from": "game ui pack"
+      },
+      "unlocked_at_rank": "0",
+      "level_ranks": null,
+      "referenced_by": [
+        "skills/serena-lord.json",
+        "skills/serena.json"
+      ],
+      "effects": [
+        {
+          "level": 1,
+          "effect": "wh_main_effect_ability_enable_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "法术：『尤瑞诺闪电箭』",
+            "en": "Spell: \"Urannon's Thunderbolt\""
+          },
+          "template": {
+            "zh": "法术：『尤瑞诺闪电箭』",
+            "en": "Spell: \"Urannon's Thunderbolt\""
+          },
+          "priority": 290,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh2_main_effect_ability_overcast_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级尤瑞诺闪电箭』",
+            "en": "Overcast spell: \"Urannon's Thunderbolt Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级尤瑞诺闪电箭』",
+            "en": "Overcast spell: \"Urannon's Thunderbolt Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 2,
+          "effect": "wh_main_effect_ability_cooldown_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -30.0,
+          "text": {
+            "zh": "冷却速率：『尤瑞诺闪电箭』-30%",
+            "en": "Cooldown: -30% to \"Urannon's Thunderbolt\""
+          },
+          "template": {
+            "zh": "冷却速率：『尤瑞诺闪电箭』%+n%",
+            "en": "Cooldown: %+n% to \"Urannon's Thunderbolt\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_overcast_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": 1.0,
+          "text": {
+            "zh": "增幅法术：『高级尤瑞诺闪电箭』",
+            "en": "Overcast spell: \"Urannon's Thunderbolt Upgraded\""
+          },
+          "template": {
+            "zh": "增幅法术：『高级尤瑞诺闪电箭』",
+            "en": "Overcast spell: \"Urannon's Thunderbolt Upgraded\""
+          },
+          "priority": 292,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh_main_effect_ability_cooldown_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -50.0,
+          "text": {
+            "zh": "冷却速率：『尤瑞诺闪电箭』-50%",
+            "en": "Cooldown: -50% to \"Urannon's Thunderbolt\""
+          },
+          "template": {
+            "zh": "冷却速率：『尤瑞诺闪电箭』%+n%",
+            "en": "Cooldown: %+n% to \"Urannon's Thunderbolt\""
+          },
+          "priority": 293,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_urannons_thunderbolt",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『尤瑞诺闪电箭』-2",
+            "en": "Winds of Magic cost: -2 for \"Urannon's Thunderbolt\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『尤瑞诺闪电箭』%n",
+            "en": "Winds of Magic cost: %n for \"Urannon's Thunderbolt\""
+          },
+          "priority": 294,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_wom_cost_urannons_thunderbolt_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -2.0,
+          "text": {
+            "zh": "魔法之风耗费：『高级尤瑞诺闪电箭』-2",
+            "en": "Winds of Magic cost: -2 for \"Urannon's Thunderbolt Upgraded\""
+          },
+          "template": {
+            "zh": "魔法之风耗费：『高级尤瑞诺闪电箭』%n",
+            "en": "Winds of Magic cost: %n for \"Urannon's Thunderbolt Upgraded\""
+          },
+          "priority": 295,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic_character.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        },
+        {
+          "level": 3,
+          "effect": "wh2_main_effect_ability_miscast_urannons_thunderbolt_upgraded",
+          "effect_source": "vanilla",
+          "scope": "character_to_character_own",
+          "value": -15.0,
+          "text": {
+            "zh": "法术失误基础概率：『高级尤瑞诺闪电箭』-15%",
+            "en": "Miscast base chance: -15% for \"Urannon's Thunderbolt Upgraded\""
+          },
+          "template": {
+            "zh": "法术失误基础概率：『高级尤瑞诺闪电箭』%+n%",
+            "en": "Miscast base chance: %+n% for \"Urannon's Thunderbolt Upgraded\""
+          },
+          "priority": 298,
+          "icon": {
+            "source": "vanilla",
+            "file": "icons/campaign ui/effect_bundles/magic.png",
+            "size": "24x24",
+            "origin": "ui/campaign ui/effect_bundles",
+            "from": "game ui pack"
+          }
+        }
+      ],
+      "unlocks_abilities": [
+        "wh_main_spell_heavens_urannons_thunderbolt"
+      ],
+      "desc_via_ability": "wh_main_spell_heavens_urannons_thunderbolt"
+    },
     "wh_main_skill_all_spy_self_fleet-footed": {
       "kind": "character_skill",
       "source": "vanilla",
@@ -35914,6 +36795,54 @@
         }
       ]
     },
+    "wh_main_spell_heavens_harmonic_convergence": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "和音汇集",
+        "en": "Harmonic Convergence"
+      },
+      "desc": {
+        "zh": "施法者占卜吉相，指引着目标的心智，赋予他们远见，并带给他们胜利",
+        "en": "Divining auspicious signs, the caster guides the minds of targets, augmenting them with the foresight needed for victory."
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_main_spell_heavens_harmonic_convergence.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
+    "wh_main_spell_heavens_urannons_thunderbolt": {
+      "kind": "unit_ability",
+      "source": "vanilla",
+      "pack": "wh_main",
+      "ability_type": "spell",
+      "name": {
+        "zh": "尤瑞诺闪电箭",
+        "en": "Urannon's Thunderbolt"
+      },
+      "desc": {
+        "zh": "施法者召唤出强大的闪电球并投向敌人，被击中者必定粉身碎骨！",
+        "en": "The caster calls down a mighty ball of lightning and hurls it - should the foe be struck they will surely be shattered!"
+      },
+      "icon": {
+        "source": "vanilla",
+        "file": "icons/battle ui/ability_icons/wh_main_spell_heavens_urannons_thunderbolt.png",
+        "size": "59x59",
+        "origin": "ui/battle ui/ability_icons",
+        "from": "game ui pack"
+      },
+      "referenced_by": [
+        "skills/serena.json"
+      ]
+    },
     "wh_main_unit_passive_frenzy": {
       "kind": "unit_ability",
       "source": "vanilla",
@@ -35988,665 +36917,6 @@
         "units/jade-sea-fleet-gunners.json",
         "units/tide-guard.json"
       ]
-    },
-    "wh3_dlc27_skill_all_magic_mists_02_ladrielles_shroud": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "拉德莉莉之麾",
-        "en": "Ladrielle's Shroud",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
-        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『拉德莉莉之麾』",
-            "en": "Spell: \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "法术：『拉德莉莉之麾』",
-            "en": "Spell: \"Ladrielle's Shroud\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『拉德莉莉之麾』-30%",
-            "en": "Cooldown: -30% for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
-            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_overcast_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级拉德莉莉之麾』",
-            "en": "Overcast spell: \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_cooldown_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『拉德莉莉之麾』-50%",
-            "en": "Cooldown: -50% for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "冷却速率：『拉德莉莉之麾』%+n%",
-            "en": "Cooldown: %+n% for \"Ladrielle's Shroud\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_cooldown.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -1.0,
-          "text": {
-            "zh": "魔法之风耗费：『拉德莉莉之麾』-1",
-            "en": "Winds of Magic cost: -1 for \"Ladrielle's Shroud\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『拉德莉莉之麾』%n",
-            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_ladrielles_shroud_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级拉德莉莉之麾』-2",
-            "en": "Winds of Magic cost: -2 for \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级拉德莉莉之麾』%n",
-            "en": "Winds of Magic cost: %n for \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_miscast_ladrielles_shroud_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级拉德莉莉之麾』-15%",
-            "en": "Miscast base chance: -15% for \"Ladrielle's Shroud Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级拉德莉莉之麾』%+n%",
-            "en": "Miscast base chance: %+n% for \"Ladrielle's Shroud Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_ladrielles_shroud"
-      ]
-    },
-    "wh3_dlc27_skill_all_magic_mists_04_walk_between_worlds": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "寰宇步虚",
-        "en": "Walk Between Worlds",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
-        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_walk_between_worlds.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『寰宇步虚』",
-            "en": "Spell: \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "法术：『寰宇步虚』",
-            "en": "Spell: \"Walk Between Worlds\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『寰宇步虚』-30%",
-            "en": "Cooldown: -30% for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "冷却速率：『寰宇步虚』%+n%",
-            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_overcast_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "增幅法术：『高级寰宇步虚』",
-            "en": "Overcast spell: \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 292,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_cooldown_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -50.0,
-          "text": {
-            "zh": "冷却速率：『寰宇步虚』-50%",
-            "en": "Cooldown: -50% for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "冷却速率：『寰宇步虚』%+n%",
-            "en": "Cooldown: %+n% for \"Walk Between Worlds\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『寰宇步虚』-2",
-            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『寰宇步虚』%n",
-            "en": "Winds of Magic cost: %n for \"Walk Between Worlds\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_walk_between_worlds_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『高级寰宇步虚』-2",
-            "en": "Winds of Magic cost: -2 for \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『高级寰宇步虚』%n",
-            "en": "Winds of Magic cost: %n for \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 295,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 3,
-          "effect": "wh3_dlc27_effect_ability_miscast_walk_between_worlds_upgraded",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -15.0,
-          "text": {
-            "zh": "法术失误基础概率：『高级寰宇步虚』-15%",
-            "en": "Miscast base chance: -15% for \"Walk Between Worlds Upgraded\""
-          },
-          "template": {
-            "zh": "法术失误基础概率：『高级寰宇步虚』%+n%",
-            "en": "Miscast base chance: %+n% for \"Walk Between Worlds Upgraded\""
-          },
-          "priority": 298,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_walk_between_worlds"
-      ]
-    },
-    "wh3_dlc27_skill_all_magic_mists_06_mistress_of_the_deeps": {
-      "kind": "character_skill",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "name": {
-        "zh": "深海情人",
-        "en": "Mistress of the Deeps",
-        "_via_tr": true
-      },
-      "desc": {
-        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
-        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them.",
-        "_via_tr": true
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "0",
-      "level_ranks": null,
-      "referenced_by": [
-        "skills/serena-lord.json",
-        "skills/serena.json"
-      ],
-      "effects": [
-        {
-          "level": 1,
-          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_enable_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": 1.0,
-          "text": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "法术：『深渊女主』",
-            "en": "Spell: \"Mistress of the Deeps\""
-          },
-          "priority": 290,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_cooldown_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -30.0,
-          "text": {
-            "zh": "冷却速率：『深渊女主』-30%",
-            "en": "Cooldown: -30% for \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "冷却速率：『深渊女主』%+n%",
-            "en": "Cooldown: %+n% for \"Mistress of the Deeps\""
-          },
-          "priority": 293,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        },
-        {
-          "level": 2,
-          "effect": "wh3_dlc27_effect_ability_wom_cost_mistress_of_the_deeps",
-          "effect_source": "vanilla",
-          "scope": "character_to_character_own",
-          "value": -2.0,
-          "text": {
-            "zh": "魔法之风耗费：『深渊女主』-2",
-            "en": "Winds of Magic cost: -2 for \"Mistress of the Deeps\""
-          },
-          "template": {
-            "zh": "魔法之风耗费：『深渊女主』%n",
-            "en": "Winds of Magic cost: %n for \"Mistress of the Deeps\""
-          },
-          "priority": 294,
-          "icon": {
-            "source": "vanilla",
-            "file": "icons/campaign ui/effect_bundles/magic_character.png",
-            "size": "24x24",
-            "origin": "ui/campaign ui/effect_bundles",
-            "from": "game ui pack"
-          }
-        }
-      ],
-      "unlocks_abilities": [
-        "wh3_dlc27_spell_mists_mistress_of_the_deeps"
-      ]
-    },
-    "wh3_dlc27_spell_mists_ladrielles_shroud": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "拉德莉莉之麾",
-        "en": "Ladrielle's Shroud"
-      },
-      "desc": {
-        "zh": "迷障薄雾萦绕友方周身，令受困者望见早已陨落的同袍幻影，从而重获力量。然而，这场大捷的预兆始终萦绕着悲怆的余韵",
-        "en": "A veil of vapour manifests around an ally, invigorating the beleaguered with glimpses of long-fallen kin. A portent of a mighty victory, tinged with the aftertaste of sadness."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_ladrielles_shroud.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
-    "wh3_dlc27_spell_mists_mistress_of_the_deeps": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "深海情人",
-        "en": "Mistress of the Deeps"
-      },
-      "desc": {
-        "zh": "纵使身陷激战幻光之中，阿苏尔之敌仍会为纯水精魂的歌声魅惑纠缠，旋即遭其彻底吞没",
-        "en": "Even amidst the glamour of pitched battle, the Asur’s enemies are haunted by the beguiling tones of the Oceanids' song, moments before being utterly overwhelmed by them."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_mistress_of_the_deeps.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
-    "wh3_dlc27_spell_mists_walk_between_worlds": {
-      "kind": "unit_ability",
-      "source": "vanilla",
-      "pack": "wh3_dlc27",
-      "ability_type": "spell",
-      "name": {
-        "zh": "寰宇步虚",
-        "en": "Walk Between Worlds"
-      },
-      "desc": {
-        "zh": "刹那间，生灵可踏足不朽之路，在现实与虚幻间徜徉",
-        "en": "For a moment, one may tread immortal pathways by way of drifting in and out of reality."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/battle ui/ability_icons/wh3_dlc27_spell_mists_walk_between_worlds.png",
-        "size": "59x59",
-        "origin": "ui/battle ui/ability_icons",
-        "from": "game ui pack"
-      },
-      "referenced_by": [
-        "skills/serena.json"
-      ]
-    },
-    "cth_npex_skill_ryuka_mount_landship": {
-      "kind": "character_skill",
-      "source": "npex",
-      "pack": null,
-      "name": {
-        "zh": "潮風陆行船",
-        "en": "Shiokaze Land Ship"
-      },
-      "desc": {
-        "zh": "琉華登上桅杆顶的瞭望台，以手枪协同船上火炮与船员作战。",
-        "en": "Ryuka takes her place in the crow's nest, firing her pistol alongside the ship's cannon and crew."
-      },
-      "icon": {
-        "source": "vanilla",
-        "file": "icons/campaign ui/skills/mount_steam_tank.png",
-        "size": "72x72",
-        "origin": "ui/campaign ui/skills",
-        "from": "game ui pack"
-      },
-      "unlocked_at_rank": "15",
-      "level_ranks": {
-        "1": 15
-      },
-      "referenced_by": [
-        "skills/ryuka.json"
-      ],
-      "effects": []
     }
   }
 }

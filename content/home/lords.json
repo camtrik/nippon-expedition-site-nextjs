@@ -40,6 +40,22 @@
               "zh": "执掌万兽舱的传奇女提督，可乘骑冷蜥、碧水金睛兽、远洋妖龙、雷泽与利维坦五种异兽，兼修深渊系与生命系混合法术。",
               "en": "Legendary Admiral of the Menagerie Hold; mounts Cold Ones, Golden-Eyed Beasts, Pelagic Wyrms, Leize, and the Leviathan while wielding a hybrid lore of the Deep and Life."
             }
+          },
+          {
+            "rank": "legendary",
+            "slug": "ryuka",
+            "kind": {
+              "zh": "传奇领主",
+              "en": "Legendary Lord"
+            },
+            "name": {
+              "zh": "琉華",
+              "en": "Ryuka"
+            },
+            "body": {
+              "zh": "潮風商社的社长，精通枪法与剑道，同时也有着极高的商业才能。",
+              "en": "President of the Shiokaze Trading Company, skilled with both pistol and sword, and possessed of sharp commercial acumen."
+            }
           }
         ]
       },

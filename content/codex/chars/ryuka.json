@@ -1,0 +1,237 @@
+{
+  "_comment": "1.3.0 待发布内容；来源：琉华角色与数值.md、琉华技能树.md、tools/heroes/ryuka/profile.py。描述与故事走 loc，技能树走 DB。",
+  "slug": "ryuka",
+  "unit": "cth_npex_cha_ryuka_0",
+  "rank": "legendary-lord",
+  "name": {
+    "zh": "琉華",
+    "en": "Ryuka"
+  },
+  "rankLabel": {
+    "zh": "传奇领主 · 刀铳混战",
+    "en": "Legendary Lord · hybrid melee and ranged"
+  },
+  "looks": [
+    {
+      "key": "ryuka"
+    }
+  ],
+  "identity": [
+    {
+      "k": {
+        "zh": "角色位阶",
+        "en": "Rank"
+      },
+      "v": {
+        "zh": "传奇领主",
+        "en": "Legendary Lord"
+      }
+    },
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "远征同伴任务链",
+        "en": "Expedition Companions quest chain"
+      }
+    },
+    {
+      "k": {
+        "zh": "数量限制",
+        "en": "Limit"
+      },
+      "v": {
+        "zh": "唯一",
+        "en": "Unique"
+      }
+    }
+  ],
+  "tree": {
+    "subject": "ryuka",
+    "branches": [
+      {
+        "indent": 1,
+        "label": {
+          "zh": "潮風掌舵",
+          "en": "At Shiokaze’s Helm"
+        }
+      },
+      {
+        "indent": 0,
+        "only": "npex",
+        "label": {
+          "zh": "坐骑与通用节点",
+          "en": "Mounts and general skills"
+        }
+      }
+    ]
+  },
+  "mounts": [
+    {
+      "k": {
+        "zh": "魔蟹",
+        "en": "Promethean"
+      },
+      "v": {
+        "zh": "6 级自动解锁",
+        "en": "Automatically unlocked at rank 6"
+      }
+    },
+    {
+      "k": {
+        "zh": "潮風陆行船",
+        "en": "Shiokaze Land Ship"
+      },
+      "v": {
+        "zh": "16 级自动解锁",
+        "en": "Automatically unlocked at rank 16"
+      }
+    }
+  ],
+  "traits": [
+    {
+      "k": {
+        "zh": "同舟商约",
+        "en": "A Compact at Sea"
+      },
+      "v": {
+        "zh": "派系贸易收入 +5%／+10%／+15%／+20%；所领军队领导力固定 +6，各阶不累加",
+        "en": "Faction trade income +5% / +10% / +15% / +20%; leadership +6 for her army at every tier. Tiers do not stack."
+      }
+    }
+  ],
+  "companion": {
+    "trait": {
+      "zh": "同舟商约",
+      "en": "A Compact at Sea"
+    },
+    "tiers": [
+      {
+        "name": {
+          "zh": "同舟商约（结缘）",
+          "en": "A Compact at Sea (Bound)"
+        },
+        "desc": {
+          "zh": "残船虽尚未聚齐，人心却仍未失去希望。",
+          "en": "Though the scattered ships have yet to gather, their people have not lost hope."
+        },
+        "rewards": [
+          {
+            "zh": "解锁潮風武装团",
+            "en": "Unlocks Shiokaze Armed Company"
+          },
+          {
+            "zh": "获得特性「同舟商约」",
+            "en": "Grants the trait \"A Compact at Sea\""
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "同舟商约（信任）",
+          "en": "A Compact at Sea (Trusted)"
+        },
+        "desc": {
+          "zh": "日升之塔再次亮起灯火，四散在外的商船也终于有了归处。",
+          "en": "The Tower of the Rising Sun is alight once more, and the scattered merchant ships at last have a home to return to."
+        },
+        "rewards": [
+          {
+            "zh": "潮風武装团容量 +3",
+            "en": "Shiokaze Armed Company capacity +3"
+          },
+          {
+            "zh": "解锁潮風武装团（喷火枪）",
+            "en": "Unlocks Shiokaze Armed Company (Flamethrowers)"
+          },
+          {
+            "zh": "「同舟商约」提升至「信任」",
+            "en": "A Compact at Sea advances to Trusted"
+          },
+          {
+            "zh": "其他奖励",
+            "en": "Other rewards"
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "同舟商约（托付）",
+          "en": "A Compact at Sea (Sworn)"
+        },
+        "desc": {
+          "zh": "塔尔·艾利提斯的旧旗重升，她也愿意说出了自己的过往。",
+          "en": "The old banner flies again over Tor Elithis, and she is willing at last to speak of her past."
+        },
+        "rewards": [
+          {
+            "zh": "潮風武装团容量 +2",
+            "en": "Shiokaze Armed Company capacity +2"
+          },
+          {
+            "zh": "潮風武装团（喷火枪）容量 +4",
+            "en": "Shiokaze Armed Company (Flamethrowers) capacity +4"
+          },
+          {
+            "zh": "解锁潮風陆行船",
+            "en": "Unlocks Shiokaze Land Ship"
+          },
+          {
+            "zh": "「同舟商约」提升至「托付」",
+            "en": "A Compact at Sea advances to Sworn"
+          },
+          {
+            "zh": "其他奖励",
+            "en": "Other rewards"
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "同舟商约（生死之交）",
+          "en": "A Compact at Sea (Devoted)"
+        },
+        "desc": {
+          "zh": "黑帆与风浪既平，潮風商社的船队自此与玉海舰队同舟共济，再无保留。",
+          "en": "With the black sails driven off and the storms abated, the Shiokaze Trading Company's fleet now sails as one with the Jade Sea Fleet, holding nothing back."
+        },
+        "rewards": [
+          {
+            "zh": "潮風武装团容量 +2",
+            "en": "Shiokaze Armed Company capacity +2"
+          },
+          {
+            "zh": "潮風武装团（喷火枪）容量 +2",
+            "en": "Shiokaze Armed Company (Flamethrowers) capacity +2"
+          },
+          {
+            "zh": "潮風陆行船容量 +2",
+            "en": "Shiokaze Land Ship capacity +2"
+          },
+          {
+            "zh": "「同舟商约」提升至「生死之交」",
+            "en": "A Compact at Sea advances to Devoted"
+          },
+          {
+            "zh": "其他奖励",
+            "en": "Other rewards"
+          }
+        ]
+      }
+    ],
+    "effects": [
+      {
+        "k": {
+          "zh": "贸易与统帅",
+          "en": "Trade and command"
+        },
+        "v": {
+          "zh": "派系贸易收入 +5%／+10%／+15%／+20%；所领军队领导力固定 +6，各阶不累加",
+          "en": "Faction trade income +5% / +10% / +15% / +20%; leadership +6 for her army at every tier. Tiers do not stack."
+        }
+      }
+    ]
+  }
+}

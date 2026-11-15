@@ -1,0 +1,14 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 unit 从 data/vanilla/unit-texts.json（loc 原文）生成。",
+  "unit": "cth_npex_cha_ryuka_0",
+  "desc": {
+    "zh": "潮風商社的社长，精通枪法与剑道，同时也有着极高的商业才能。",
+    "en": "President of the Shiokaze Trading Company, skilled with both pistol and sword, and possessed of sharp commercial acumen."
+  },
+  "story": [
+    {
+      "zh": "琉華作为「潮風商社」的掌舵人而闻名于旧世界的各大港口，但很少有人知道她的身世。她的商船上既有东方的奇珍异宝，也有西方的军械与奇巧造物。虽然传闻她出身尼朋，她麾下的商船却极少在尼朋故土靠岸。",
+      "en": "Ryuka is known across the great ports of the Old World as the helmswoman of the Shiokaze Trading Company, yet few know anything of her origins. Her merchantmen carry rare treasures from the East alongside firearms and fine curiosities from the West. Though rumour has it that she hails from Nippon, the ships under her command rarely drop anchor in her homeland."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/skills 里藏起来的第 6 行生成。",
+  "kind": "fixed",
+  "subjects": [
+    "ryuka"
+  ],
+  "nodes": [
+    {
+      "key": "cth_npex_skill_ryuka_trait",
+      "name": {
+        "zh": "潮風社长",
+        "en": "President of Shiokaze"
+      },
+      "desc": {
+        "zh": "潮風商社的大当家。她手握算盘与名刀，无论面对汹涌恶浪还是藩阀封锁，总能带着她的船队杀出生路。",
+        "en": "The head of the Shiokaze Trading Company carries ledger and blade alike, steering her fleet through raging seas and hostile blockades."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "lines": [
+            {
+              "zh": "战略地图移动距离：在海上时+10%（领主军队）",
+              "en": "Campaign movement range: +10% whilst at sea (Lord's army)"
+            },
+            {
+              "zh": "招募成本：潮風武装团部队-20%（领主军队）",
+              "en": "Recruitment cost: -20% for Shiokaze Armed Company units (Lord's army)"
+            },
+            {
+              "zh": "战略地图移动距离：+10%（领主军队）",
+              "en": "Campaign movement range: +10% (Lord's army)"
+            },
+            {
+              "zh": "可贸易资源产量：+15%",
+              "en": "Tradable resources produced: +15%"
+            },
+            {
+              "zh": "维持费：潮風武装团部队-20%（领主军队）",
+              "en": "Upkeep: -20% for Shiokaze Armed Company units (Lord's army)"
+            },
+            {
+              "zh": "免疫深海损耗（领主军队）",
+              "en": "Immune to High Seas attrition (Lord's army)"
+            }
+          ]
+        }
+      ],
+      "icon": "cth_npex_skill_ryuka_trait.png",
+      "reuse": false,
+      "unlock": null,
+      "hub": null
+    }
+  ]
+}

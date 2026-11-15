@@ -87,6 +87,27 @@
               "zh": "利维坦",
               "en": "Leviathan"
             }
+          },
+          {
+            "slug": "shiokaze-armed-company",
+            "name": {
+              "zh": "潮風武装团",
+              "en": "Shiokaze Armed Company"
+            }
+          },
+          {
+            "slug": "shiokaze-hand-cannons",
+            "name": {
+              "zh": "潮風武装团（喷火枪）",
+              "en": "Shiokaze Armed Company (Flamethrowers)"
+            }
+          },
+          {
+            "slug": "shiokaze-land-ship",
+            "name": {
+              "zh": "潮風陆行船",
+              "en": "Shiokaze Land Ship"
+            }
           }
         ]
       },

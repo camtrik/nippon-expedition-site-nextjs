@@ -134,6 +134,31 @@
             "en": "Blade of the Dawn"
           }
         ]
+      },
+      {
+        "slug": "ryuka",
+        "name": {
+          "zh": "琉華",
+          "en": "Ryuka"
+        },
+        "chapters": [
+          {
+            "zh": "武士刀与转轮铳",
+            "en": "Katana and Revolver"
+          },
+          {
+            "zh": "归航之塔",
+            "en": "Tower of Homecoming"
+          },
+          {
+            "zh": "故港旧梦",
+            "en": "Dreams of the Old Harbour"
+          },
+          {
+            "zh": "大洋风清",
+            "en": "Clear Seas"
+          }
+        ]
       }
     ],
     "numerals": {
@@ -160,8 +185,8 @@
         "en": "**Renown**: spend it in the panel to buy the units you have unlocked"
       },
       {
-        "zh": "**章节任务链**：四条独立任务链。完成任务以推进羁绊等级",
-        "en": "**Chapter quest lines**: four separate chains. Complete them to raise the bond tier"
+        "zh": "**章节任务链**：五条独立任务链。完成任务以推进羁绊等级",
+        "en": "**Chapter quest lines**: five separate chains. Complete them to raise the bond tier"
       }
     ]
   }

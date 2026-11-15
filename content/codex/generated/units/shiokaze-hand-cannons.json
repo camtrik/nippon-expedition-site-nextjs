@@ -1,0 +1,74 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 从 data/vanilla/units、unit-texts.json 与 vanilla-assets.json 生成。",
+  "unit": "cth_npex_shiokaze_flamethrower",
+  "name": {
+    "zh": "潮風武装团（喷火枪）",
+    "en": "Shiokaze Armed Company (Flamethrowers)"
+  },
+  "desc": {
+    "zh": "配备重型喷火枪的武装团战士。他们的武器由旧世界矮人的精湛工艺改制而来。",
+    "en": "Armed Company warriors equipped with heavy flamethrowers, adapted from the finely crafted weapons of the Dwarfs of the Old World."
+  },
+  "story": [
+    {
+      "zh": "潮風武装团中既有冒死追随琉華，远渡重洋的志士，也有琉華在海外开拓商路时，被其胆识与手腕折服而自愿入伙的旧世界水手。他们不仅掌握了远洋航海术与新式火器，也真正见识到了故土之外的广阔大洋。对他们而言，护卫商社既是立身之所，也是积聚力量的漫长积累。而终有一日，他们将追随社长归来，亲手敲开那座紧闭已久的国门。",
+      "en": "The Shiokaze Armed Company includes idealists who risked their lives to follow Ryuka across the open sea, and sailors from the Old World who joined of their own accord after being impressed by her courage and skill as she opened trade routes abroad. They have mastered ocean-going navigation and new firearms, and have seen the vast ocean beyond their homeland. To them, escorting the Trading Company is both a means of making their way in the world and a long effort to build strength. One day, they will follow their president home and personally knock open the gates of a country long shut away."
+    }
+  ],
+  "abilities": [
+    {
+      "key": "cth_npex_unit_passive_shiokaze_maneuver",
+      "source": "npex",
+      "name": {
+        "zh": "乘风掠阵",
+        "en": "Windward Maneuver"
+      },
+      "desc": {
+        "zh": "武装团成员融汇多方战法，总能躲避最凶猛的火力。",
+        "en": "The Armed Company's fighters draw on many fighting traditions, always finding a way to evade the fiercest fire."
+      },
+      "icon": "cth_npex_unit_passive_shiokaze_maneuver.png"
+    }
+  ],
+  "attrs": [
+    {
+      "key": "hide_forest",
+      "source": "vanilla",
+      "name": {
+        "zh": "于森林中隐蔽",
+        "en": "Hide (forest)"
+      },
+      "desc": {
+        "zh": "这支部队可以隐蔽在森林里，除非敌人走到近前，否则他们不会被发现",
+        "en": "This unit can hide in forests until enemy units get too close."
+      },
+      "icon": "hide_forest.png"
+    }
+  ],
+  "stats": {
+    "recruit_cost": 900,
+    "upkeep_cost": 225,
+    "num_men": 28,
+    "melee_attack": 24,
+    "melee_defence": 27,
+    "charge_bonus": 8,
+    "leadership": 76,
+    "armour": 75,
+    "hp": 120,
+    "bonus_hp": 112,
+    "speed": 36,
+    "melee_damage": [
+      17,
+      3
+    ],
+    "melee_interval": 4.2,
+    "missile_damage": [
+      8,
+      4
+    ],
+    "range": 80,
+    "ammo": 100,
+    "reload": 9,
+    "resist_flame": 30
+  }
+}

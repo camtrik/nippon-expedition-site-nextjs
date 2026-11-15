@@ -39,6 +39,9 @@ SCENE = (800, 450)
 
 # 站点 slug -> art_source/concepts 下的 `_full.png`
 UNITS = {
+    "shiokaze-armed-company": "shiokaze/cards_codex_20261109_r3_background/pistol_c_full.png",
+    "shiokaze-hand-cannons": "shiokaze/cards_codex_20261109_r5_flame/flame_d_fix2_full.png",
+    "shiokaze-land-ship": "shiokaze/cards_codex_20261109_r2/ship_a_full.png",
     "jade-sea-warriors": "jade_sea_sailors/jade_sea_sailors_full.png",
     "jade-sea-sailors-dual": "jade_sea_sailors_dual/jade_sea_sailors_dual_full.png",
     "axe-guard": "axe_guard/axe_guard_full.png",
@@ -69,6 +72,7 @@ UNITS = {
 # 2026-10-12 起七张原本只有 159–257 宽的（沈长风、直虎、纱代、瑟兰娜、伊吹两形、巫女）
 # 已在 mod 那边高清化到约 709×1536（mod 提交 9b6fddc4），和武士大将、水师提督同一规格。
 CHARS = {
+    "ryuka": "ryu/portraits_codex_20261104/card_b3_full.png",
     "shen-changfeng": "shen_changfeng/shen_changfeng_full.png",
     "yin-ling": "yinling/yinling_full.png",
     "naotora": "tachibana_naotora/tachibana_naotora_full.png",
@@ -87,6 +91,7 @@ CHARS = {
 
 # 同伴横幅：任务弹窗插画的 16:9 母版（游戏里的 ui/eventpics 是它的 800×450 缩图）
 SCENES = {
+    "ryuka": "ryu/scenes/ryuka_quest_ch1_katana_and_revolver.png",
     "sayo": "sayo/sayo_background_landscape_16x9.png",
     "serena": "serena/serena_background.png",
     "naotora": "tachibana_naotora/tachibana_naotora_16x9.png",

@@ -1,0 +1,279 @@
+{
+  "_comment": "生成物，别手改。scripts/export-codex.ts 按 content/codex/chars 里的 tree.branches 从 data/vanilla/skills 生成。",
+  "subject": "ryuka",
+  "branches": [
+    {
+      "indent": 1,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_ryuka_unique_0",
+          "name": {
+            "zh": "天辰乱舞式",
+            "en": "Tianchen Sword-and-Pistol Dance"
+          },
+          "desc": {
+            "zh": "琉華在少年时就已取得了天辰流的免许皆传，并将其融入了自己的战斗风格。",
+            "en": "A master of the Tianchen school since her youth, Ryuka has made its swordsmanship part of her own fighting style."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "技能：『天辰乱舞式』",
+                  "en": "Ability: \"Tianchen Sword-and-Pistol Dance\""
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_0.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁",
+            "en": "Unlocks at rank 10"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_unique_1",
+          "name": {
+            "zh": "算盘与商约",
+            "en": "Abacus and Contracts"
+          },
+          "desc": {
+            "zh": "社长大人精通算盘账目与各种商约。",
+            "en": "The company president is a master of ledgers and contracts."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "贸易关税收入：+30%",
+                  "en": "Income from trade tariffs: +30%"
+                },
+                {
+                  "zh": "战后掳掠收入：+20%",
+                  "en": "Income from post-battle loot: +20%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_1.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁 · 前置：天辰乱舞式",
+            "en": "Unlocks at rank 10 · Requires Tianchen Sword-and-Pistol Dance"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_unique_2",
+          "name": {
+            "zh": "武装团统领",
+            "en": "Commander of the Armed Company"
+          },
+          "desc": {
+            "zh": "潮風武装团由琉華亲自训练，刀枪混合的流派独树一帜。",
+            "en": "Ryuka personally drills the Shiokaze Armed Company in its distinctive blend of sword and gun."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "解锁属性：为潮風武装团部队解锁先锋部署技能（领主军队）",
+                  "en": "Attribute: Vanguard Deployment for Shiokaze Armed Company units (Lord's army)"
+                },
+                {
+                  "zh": "近战攻击：潮風武装团部队+8（领主军队）",
+                  "en": "Melee attack: +8 for Shiokaze Armed Company units (Lord's army)"
+                },
+                {
+                  "zh": "近战防御：潮風武装团部队+8（领主军队）",
+                  "en": "Melee defence: +8 for Shiokaze Armed Company units (Lord's army)"
+                },
+                {
+                  "zh": "弹药容量：潮風武装团部队+25%（领主军队）",
+                  "en": "Ammunition: +25% for Shiokaze Armed Company units (Lord's army)"
+                },
+                {
+                  "zh": "远程破甲杀伤：潮風武装团部队+15%（领主军队）",
+                  "en": "Armour-piercing missile damage: +15% for Shiokaze Armed Company units (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_2.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁 · 前置：天辰乱舞式",
+            "en": "Unlocks at rank 10 · Requires Tianchen Sword-and-Pistol Dance"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_unique_3",
+          "name": {
+            "zh": "万国枪炮",
+            "en": "Guns of Many Nations"
+          },
+          "desc": {
+            "zh": "在与各国的交易中，商社能让最精良的火药与枪械流转于全军。",
+            "en": "Through trade with distant nations, the company supplies the army with the finest powder and firearms."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "维持费：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队-10%（领主军队）",
+                  "en": "Upkeep: -10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                },
+                {
+                  "zh": "远程威力：+10%",
+                  "en": "Missile strength: +10%"
+                },
+                {
+                  "zh": "远程威力：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%（领主军队）",
+                  "en": "Missile strength: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                },
+                {
+                  "zh": "装弹时间降低：潮風武装团、鹤铳手、火蜥蜴捕猎队与孬不拉投石者等指定部队+10%（领主军队）",
+                  "en": "Reload time reduction: +10% for eligible units such as the Shiokaze Armed Company, Crane Gunners, Salamander Hunting Packs and Gnoblar Flingers (Lord's army)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_3.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁 · 前置：天辰乱舞式",
+            "en": "Unlocks at rank 10 · Requires Tianchen Sword-and-Pistol Dance"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_unique_4",
+          "name": {
+            "zh": "船中方略",
+            "en": "Plans Aboard Ship"
+          },
+          "desc": {
+            "zh": "在远渡重洋的贸易期间，琉華写下了新政方略。胸怀四海之人，万邦皆敬。",
+            "en": "During her voyages, Ryuka set down her plans for a new government. Her vision commands respect across nations."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "掌控力：+6（所在行省）",
+                  "en": "Control: +6 (local province)"
+                },
+                {
+                  "zh": "外交立场：与帝国、矮人、高等精灵和震旦天朝外交+15",
+                  "en": "Diplomatic relations: +15 with the Empire, Dwarfs, High Elves and Grand Cathay"
+                },
+                {
+                  "zh": "腐蚀：-5（所在行省）",
+                  "en": "Corruption: -5 (local province)"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_4.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁 · 前置：天辰乱舞式",
+            "en": "Unlocks at rank 10 · Requires Tianchen Sword-and-Pistol Dance"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_unique_5",
+          "name": {
+            "zh": "时代的潮風",
+            "en": "Winds of a New Era"
+          },
+          "desc": {
+            "zh": "琉華拔刀向天，时代的暴风骤雨在枪炮齐鸣中席卷全军。",
+            "en": "Ryuka raises her blade to the sky, and the storm of a new era sweeps through the army amid thunderous gunfire."
+          },
+          "levels": [
+            {
+              "level": 1,
+              "lines": [
+                {
+                  "zh": "技能：『时代号令』",
+                  "en": "Ability: \"Command of a New Era\""
+                },
+                {
+                  "zh": "解锁属性：心理免疫（领主军队）",
+                  "en": "Attribute: Immune to Psychology (Lord's army)"
+                },
+                {
+                  "zh": "远程破甲杀伤：+30%",
+                  "en": "Armour-piercing missile damage: +30%"
+                }
+              ]
+            }
+          ],
+          "icon": "cth_npex_skill_ryuka_unique_5.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 10 解锁 · 前置：算盘与商约、武装团统领、万国枪炮、船中方略",
+            "en": "Unlocks at rank 10 · Requires Abacus and Contracts, Commander of the Armed Company, Guns of Many Nations, Plans Aboard Ship"
+          },
+          "hub": {
+            "zh": "需 4/4",
+            "en": "4 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "nodes": [
+        {
+          "key": "cth_npex_skill_ryuka_mount_crab",
+          "name": {
+            "zh": "魔蟹",
+            "en": "Promethean"
+          },
+          "desc": {
+            "zh": "深海中的魔蟹大多凶猛异常，但有少部分也愿意亲近其他生物。",
+            "en": "Most deep-sea Prometheans are exceptionally ferocious, though a rare few are willing to befriend other creatures."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_ryuka_mount_crab.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 6 解锁",
+            "en": "Unlocks at rank 6"
+          },
+          "hub": null
+        },
+        {
+          "key": "cth_npex_skill_ryuka_mount_landship",
+          "name": {
+            "zh": "潮風陆行船",
+            "en": "Shiokaze Land Ship"
+          },
+          "desc": {
+            "zh": "琉華登上桅杆顶的瞭望台，以手枪协同船上火炮与船员作战。",
+            "en": "Ryuka takes her place in the crow's nest, firing her pistol alongside the ship's cannon and crew."
+          },
+          "levels": [],
+          "icon": "cth_npex_skill_ryuka_mount_landship.png",
+          "reuse": false,
+          "unlock": {
+            "zh": "角色等级 16 解锁",
+            "en": "Unlocks at rank 16"
+          },
+          "hub": null
+        }
+      ]
+    }
+  ]
+}

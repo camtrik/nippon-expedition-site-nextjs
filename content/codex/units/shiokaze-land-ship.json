@@ -1,0 +1,147 @@
+{
+  "_comment": "1.3.0 待发布内容。来源：主 mod 兵种设计书、building_units_allowed、tools/heroes/ryuka/profile.py；名字与描述走 loc，数值走 DB。",
+  "slug": "shiokaze-land-ship",
+  "unit": "cth_npex_shiokaze_land_ship",
+  "group": "fleet",
+  "kind": "ranged",
+  "role": {
+    "zh": "四本重型陆行船",
+    "en": "Tier 4 heavy land ship"
+  },
+  "type": [
+    {
+      "k": {
+        "zh": "武器配置",
+        "en": "Equipment"
+      },
+      "v": {
+        "zh": "船首长炮、甲板连发枪、喷火手炮、瞭望台长管步枪",
+        "en": "Bow cannon, deck repeater guns, flame hand cannons and lookout rifle"
+      }
+    }
+  ],
+  "recruit": [
+    {
+      "k": {
+        "zh": "招募来源",
+        "en": "Recruited from"
+      },
+      "v": {
+        "zh": "四本商社精兵所；潮風商社本部；琉華同伴征召",
+        "en": "Company Veteran Quarters (tier 4); Shiokaze Trading Company Headquarters; Ryuka companion recruitment"
+      }
+    },
+    {
+      "k": {
+        "zh": "同伴征召",
+        "en": "Companion recruitment"
+      },
+      "v": {
+        "zh": "随琉華羁绊档位解锁并增加容量",
+        "en": "Unlocks and gains capacity with Ryuka’s Bond tiers"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "k": {
+        "zh": "近战攻击",
+        "en": "Melee attack"
+      },
+      "stat": "melee_attack"
+    },
+    {
+      "k": {
+        "zh": "近战防御",
+        "en": "Melee defence"
+      },
+      "stat": "melee_defence"
+    },
+    {
+      "k": {
+        "zh": "武器威力（基础／破甲）",
+        "en": "Weapon strength (base / AP)"
+      },
+      "stat": "melee_damage"
+    },
+    {
+      "k": {
+        "zh": "冲锋加成",
+        "en": "Charge bonus"
+      },
+      "stat": "charge_bonus"
+    },
+    {
+      "k": {
+        "zh": "远程武器威力（基础／破甲）",
+        "en": "Missile strength (base / AP)"
+      },
+      "stat": "missile_damage"
+    },
+    {
+      "k": {
+        "zh": "射程",
+        "en": "Range"
+      },
+      "stat": "range"
+    },
+    {
+      "k": {
+        "zh": "弹药",
+        "en": "Ammunition"
+      },
+      "stat": "ammo"
+    },
+    {
+      "k": {
+        "zh": "基础装填时间",
+        "en": "Base reload time"
+      },
+      "stat": "reload"
+    },
+    {
+      "k": {
+        "zh": "护甲",
+        "en": "Armour"
+      },
+      "stat": "armour"
+    },
+    {
+      "k": {
+        "zh": "领导力",
+        "en": "Leadership"
+      },
+      "stat": "leadership"
+    },
+    {
+      "k": {
+        "zh": "速度",
+        "en": "Speed"
+      },
+      "stat": "speed"
+    },
+    {
+      "k": {
+        "zh": "单模型生命值",
+        "en": "Health per model"
+      },
+      "stat": "hp"
+    },
+    {
+      "k": {
+        "zh": "人数",
+        "en": "Unit size"
+      },
+      "stat": "num_men"
+    },
+    {
+      "k": {
+        "zh": "火焰抗性",
+        "en": "Fire resistance"
+      },
+      "stat": "resist_flame"
+    }
+  ],
+  "traits": [],
+  "effects": {}
+}

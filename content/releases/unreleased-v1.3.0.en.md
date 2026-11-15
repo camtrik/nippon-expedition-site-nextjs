@@ -1,0 +1,35 @@
+---
+version: 1.3.0
+type: content
+tags: [main]
+---
+
+Unreleased: these changes are planned for version 1.3.0 and have not yet been published to the Steam Workshop. The current public version remains 1.2.0.
+
+### Changes
+
+- Sayo's Divine Protection: ward save +15 → +10; radius 45 m → 35 m.
+- The Miko's Misogi, normal / overcast: healing targets unlimited → at most 4 units; radius 45 / 55 m → 35 m for both; duration 20 / 26 seconds → 16 / 22 seconds; Winds of Magic cost 12 / 18 → 13 / 18 (with mastery, 11 / 16 → 12 / 16).
+- The Cult of Tsien-Tsin's second starting army: Chaos Warriors of Tzeentch (Halberds) 1 → 2 units; total units excluding the general 12 → 13.
+- Added the fifth Expedition Companion, Legendary Lord Ryuka:
+  - She has a unique merchant-ship horde building tree, starting with a tier 1 main cabin and 1 growth point, with a maximum building tier of 4. Companion chapters II and III each award her ship 2 growth points.
+  - Added three exclusive units: Shiokaze Armed Company (Hand Cannons), Shiokaze Armed Company (Flamethrowers), and Shiokaze Armed Company (Land Ship).
+- Reworked the Expedition Companions panel. A button on its left switches back to the old panel, and MCT can restore the old character illustrations.
+- Companion Lord / Hero conversion is disabled by default. MCT can enable conversion for Sayo, Tachibana Naotora, Serena and Ibuki; conversion to Lord still requires the Devoted Bond tier.
+- Replaced all companion portraits and chapter event illustrations. Every chapter now has its own animated illustration.
+- Updated Shen Changfeng's portrait and Lord-selection artwork, adjusted model detail switching distances, and fixed several model issues affecting Ryuka and the Shiokaze Armed Company.
+- Added a Japanese translation pack.
+- Fixed a problem that could prevent Shen Changfeng from being recruited after confederation.
+- The three ranks of Admiral's Renown for Shen Changfeng, the Vanguard, Artillery and Cavalry Admirals, and Yin Ling now require character ranks 8 / 12 / 16, instead of having no rank requirement.
+- Fixed Shen Changfeng starting with a generic appearance when used with [Instant Quest Items (Without Battles)](https://steamcommunity.com/sharedfiles/filedetails/?id=2790621216).
+- Serena's spells, in both Hero and Lord forms: Ladrielle's Shroud → Harmonic Convergence; Walk Between Worlds → Urannon's Thunderbolt; Mistress of the Deeps → Fiery Convocation.
+- Fixed the Jade Sea Admiralty's bottom recruitment buttons being cut off at some resolutions and UI scale settings.
+- Fixed other Legendary Lords temporarily disappearing from the recruitment tab while Shen Changfeng or Yin Ling awaited recruitment.
+- Moved the Lord red-line bonuses for Oceanids and Sea Elementals to Stone Gaze.
+- Updated short and long campaign victory rewards:
+  - Short victory: the unique Samurai Taisho Akashi Mitsuhide and other rewards.
+  - Long victory: recruitment, replenishment, diplomacy and caravan bonuses depending on the chosen route.
+- Added the vanilla Leadbelchers' firing sound to the Kunikuzushi Oni.
+- Fixed the Mirror-Mountain Miko's Hamaya, Senbonzakura, Misogi, Sealing Ofuda and Spirited Away not benefiting from spell intensity, for both normal and overcast versions.
+- On loading an older save, Ibuki now receives the Oni Magatama and Nameless Odachi if he has reached their required ranks but has not received them.
+- Completed the effect descriptions for Sayo's Summon Divine Beast: Kirin and Replenish Troops.

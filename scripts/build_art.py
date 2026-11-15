@@ -4,6 +4,7 @@ build_art.py — 从 mod 仓库的美术母版生成站点用的图。
 
     pip install pillow
     python3 scripts/build_art.py [--mod <nippon_expedition 目录>]
+    python3 scripts/build_art.py --only chars scenes
 
 --mod 默认是 ../nippon_expedition（本仓库在 mod 工作区里时的相对位置）。
 mod 那边重画了兵牌 / 立绘之后重跑一次，产物入库。
@@ -89,13 +90,13 @@ CHARS = {
     "fleet-admiral-03": "admiral/admiral_03_full.png",
 }
 
-# 同伴横幅：任务弹窗插画的 16:9 母版（游戏里的 ui/eventpics 是它的 800×450 缩图）
+# 同伴横幅：除瑟兰娜使用完成事件的 panel 扩展图外，统一使用各自第一章正本。
 SCENES = {
     "ryuka": "ryu/scenes/ryuka_quest_ch1_katana_and_revolver.png",
-    "sayo": "sayo/sayo_background_landscape_16x9.png",
-    "serena": "serena/serena_background.png",
-    "naotora": "tachibana_naotora/tachibana_naotora_16x9.png",
-    "ibuki": "ibuki/ibuki_event_16x9.png",
+    "sayo": "sayo/scenes/sayo_quest_ch1_shrine_bell.png",
+    "serena": "serena/scenes/serena_completion.png",
+    "naotora": "tachibana_naotora/scenes/naotora_quest_ch1_one_exchange.png",
+    "ibuki": "ibuki/scenes/ibuki_quest_ch1_dawn_oath.png",
 }
 
 POSTER = "loading_posters/npex_loading_poster_v4_rain_backview_1920x1080.png"
@@ -130,6 +131,8 @@ def save_webp(im: Image.Image, dst: Path, quality: int) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--mod", type=Path, default=ROOT.parent / "nippon_expedition")
+    ap.add_argument("--only", nargs="+", choices=("units", "chars", "scenes", "poster"),
+                    default=("units", "chars", "scenes", "poster"), help="只生成指定类型")
     args = ap.parse_args()
     concepts = args.mod / "art_source" / "concepts"
     if not concepts.is_dir():
@@ -138,27 +141,28 @@ def main() -> None:
     mask = Image.open(MASK_SRC).convert("RGBA").getchannel("A")
 
     print("兵牌")
-    for slug, rel in UNITS.items():
+    for slug, rel in (UNITS.items() if "units" in args.only else ()):
         src = concepts / rel
         save_webp(torn_card(src, mask), ROOT / "assets/units" / f"{slug}.webp", 90)
         save_webp(to_width(Image.open(src).convert("RGB"), FULL_W), ROOT / "assets/units/full" / f"{slug}.webp", 85)
 
     print("人物")
-    for key, rel in CHARS.items():
+    for key, rel in (CHARS.items() if "chars" in args.only else ()):
         src = concepts / rel
         save_webp(torn_card(src, mask), ROOT / "assets/chars" / f"{key}.webp", 90)
         save_webp(to_width(Image.open(src).convert("RGB"), FULL_W), ROOT / "assets/chars/full" / f"{key}.webp", 85)
 
     print("同伴横幅")
-    for slug, rel in SCENES.items():
+    for slug, rel in (SCENES.items() if "scenes" in args.only else ()):
         dst = ROOT / "assets/scenes" / f"{slug}.jpg"
         fit(Image.open(concepts / rel).convert("RGB"), SCENE).save(dst, "JPEG", quality=86, optimize=True, progressive=True)
         print(f"  {dst.relative_to(ROOT)}  {dst.stat().st_size // 1024} KB")
 
-    print("头图")
-    poster = Image.open(concepts / POSTER).convert("RGB")
-    save_webp(poster.resize((1800, round(poster.height * 1800 / poster.width)), Image.LANCZOS),
-              ROOT / "assets/site/poster-1800.webp", 82)
+    if "poster" in args.only:
+        print("头图")
+        poster = Image.open(concepts / POSTER).convert("RGB")
+        save_webp(poster.resize((1800, round(poster.height * 1800 / poster.width)), Image.LANCZOS),
+                  ROOT / "assets/site/poster-1800.webp", 82)
 
 
 if __name__ == "__main__":

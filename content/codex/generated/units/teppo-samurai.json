@@ -72,10 +72,9 @@
     "speed": 28,
     "melee_damage": [
       20,
-      10
+      8
     ],
     "melee_interval": 4.2,
-    "bonus_v_infantry": 14,
     "missile_damage": [
       6,
       24

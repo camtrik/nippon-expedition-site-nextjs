@@ -1,7 +1,7 @@
 # 原版复用素材导出
 
 技能树与兵种页要渲染的**原版（Creative Assembly）**图标与中英文案。
-由 `nippon_expedition/tools/build_site_vanilla_export.py` 生成，**不要手改**——
+由 `nippon_expedition/_tools/build_site_vanilla_export.py` 生成，**不要手改**——
 改了下次重跑就没了。数值或技能树一变，重跑一次即可。
 
 **位置**：站点仓库 `data/vanilla/`，2026-09-14 从 `design/source/vanilla/` 挪过来。

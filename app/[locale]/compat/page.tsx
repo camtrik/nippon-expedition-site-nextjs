@@ -73,7 +73,7 @@ export default function CompatPage() {
 
         <div className="cp-wrap">
           <style>{focusRules()}</style>
-          <div className="cp-stage">
+          <div className="cp-stage" style={{ '--stage-height': G.stageHeight } as CSSProperties}>
             {G.lanes.map((l, i) => (
               <div className={`cp-lane cp-lane--${l.group}`} style={at(l.x + l.w / 2, l.y, l.w, l.w, l.h)} key={i}>
                 <p className="cp-lane__label">
@@ -83,7 +83,7 @@ export default function CompatPage() {
               </div>
             ))}
 
-            <svg className="cp-edges" viewBox={`0 0 ${STAGE.w} ${STAGE.h}`} aria-hidden="true">
+            <svg className="cp-edges" viewBox={`0 0 ${STAGE.w} ${G.stageHeight}`} aria-hidden="true">
               <defs>
                 {(['full', 'ok', 'conflict', 'required', 'lang'] as const).map((g) => (
                   <marker id={`cp-mk-${g}`} key={g} viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">

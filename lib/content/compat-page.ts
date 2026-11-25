@@ -1,7 +1,7 @@
 // 兼容性页：content/compat.json 加上拓扑图的布局。
 //
 // 布局照设计稿的算法（design/远征尼朋官网.dc.html:2052 起，「React Flow 风格：左→右分层」）：
-// 1240×992 的画布，中心是本体（圆）；右边三条泳道（兼容包接通 / 可直接共存 / 冲突）竖排，
+// 画布宽 1240，初始高 992，按泳道高度向下延伸。中心是本体（圆）；右边三条泳道竖排，
 // 左边是前置；兼容包作为中间一列，纵向对齐到它接通的那几个条目的平均高度。
 // 设计稿在浏览器里现算、还能拖动节点；这里在构建时算好坐标，页面上零 JS——
 // 缩放靠 CSS 容器查询单位，悬停高亮靠 :has()（见 styles/86-compat.css）。
@@ -16,7 +16,7 @@ export const compatPage: CompatPageData = (() => {
   }
 })()
 
-export const STAGE = { w: 1240, h: 992 }
+export const STAGE = { w: 1240, minHeight: 992 }
 export const HUB = { x: 424, y: 500, r: 82 }
 export const NODE = { w: 244, h: 54, exp: 322 }
 export const REQ = { w: 196, exp: 274 }
@@ -156,5 +156,7 @@ export function layout(data: CompatPageData) {
   // 被挂语言包的节点也要认它这个亲戚
   for (const l of langs) for (const k of l.kin) nodes.find((n) => n.key === k)?.kin.push(l.key)
 
-  return { lanes, vias, nodes, langs, edges }
+  // 画布随泳道向下扩展，底部留出与首条泳道顶部同样的空间。
+  const stageHeight = Math.max(STAGE.minHeight, ...lanes.map((lane) => lane.y + lane.h + 45))
+  return { lanes, vias, nodes, langs, edges, stageHeight }
 }

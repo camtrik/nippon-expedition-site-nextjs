@@ -94,6 +94,30 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859968660"
     },
     {
+      "key": "sfo",
+      "group": "full",
+      "name": {
+        "zh": "SFO: Grimhammer III",
+        "en": "SFO: Grimhammer III"
+      },
+      "short": {
+        "zh": "SFO",
+        "en": "SFO"
+      },
+      "note": {
+        "zh": "DoubleFishes 制作的社区兼容包，为 SFO 调整玉海舰队的兵种、角色和坐骑数值。",
+        "en": "A community patch by DoubleFishes that rebalances the Jade Sea Fleet's units, characters and mounts for SFO."
+      },
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2792731173",
+      "via": {
+        "label": {
+          "zh": "SFO 兼容包",
+          "en": "SFO Compatibility Patch"
+        },
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3845857857"
+      }
+    },
+    {
       "key": "nrs",
       "group": "full",
       "name": {

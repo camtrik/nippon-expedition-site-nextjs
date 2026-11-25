@@ -1,5 +1,5 @@
 /* 兼容性拓扑图。设计稿 v.stats（:1190）。
-   整张图按 1240×992 的设计坐标排，--u 是「一个设计像素」：用容器查询单位跟着容器宽度缩放，
+   图按 1240 宽的设计坐标排，高度由泳道决定。--u 是「一个设计像素」：跟着容器宽度缩放，
    最小缩到 0.5。所有尺寸都写成 N × --u，所以图整体等比缩放，不用 JS 去量宽度。
    悬停高亮的规则按节点逐条生成在页面里的 <style> 中（app/[locale]/compat/page.tsx）。 */
 
@@ -89,7 +89,7 @@
   --cp-ring: 0 0 0 calc(4 * var(--u)) rgba(47, 169, 138, 0.18), 0 6px 14px rgba(0, 0, 0, 0.05);
   position: relative;
   width: calc(1240 * var(--u));
-  height: calc(992 * var(--u));
+  height: calc(var(--stage-height) * var(--u));
   background-color: var(--surface-card);
   background-image: radial-gradient(circle at 1px 1px, rgba(27, 28, 28, 0.115) 1px, transparent 0);
   background-size: calc(22 * var(--u)) calc(22 * var(--u));

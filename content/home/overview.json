@@ -18,6 +18,17 @@
         "en": "Relocates vanilla legendary lords to Nippon and the lands around it (can be switched off in MCT)"
       },
       {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3845857857",
+        "name": {
+          "zh": "远征尼朋 · SFO 兼容包",
+          "en": "Nippon Expedition · SFO Compatibility Patch"
+        },
+        "note": {
+          "zh": "DoubleFishes 制作的社区兼容包，为 SFO: Grimhammer III 调整玉海舰队的兵种、角色和坐骑数值。",
+          "en": "A community patch by DoubleFishes that rebalances the Jade Sea Fleet's units, characters and mounts for SFO: Grimhammer III."
+        }
+      },
+      {
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3792001152",
         "name": {
           "zh": "远征尼朋 · NRS 兼容包",

@@ -158,8 +158,8 @@
           },
           "answer": [
             {
-              "zh": "暂时没有制作 SFO/Radious 兼容的计划。如果有人感兴趣，欢迎自行制作。",
-              "en": "No plans to make an SFO/Radious version for now. Anyone interested is welcome to make one."
+              "zh": "SFO 玩家可以订阅 DoubleFishes 制作的[社区兼容包](https://steamcommunity.com/sharedfiles/filedetails/?id=3845857857)。Radious 兼容包暂时没有制作计划，欢迎社区作者制作。",
+              "en": "SFO players can subscribe to the [community compatibility patch](https://steamcommunity.com/sharedfiles/filedetails/?id=3845857857) by DoubleFishes. We have no plans for a Radious patch at the moment and welcome community patches."
             }
           ]
         },
